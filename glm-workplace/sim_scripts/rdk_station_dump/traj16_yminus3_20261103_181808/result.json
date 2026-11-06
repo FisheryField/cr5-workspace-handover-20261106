@@ -1,0 +1,38 @@
+[
+  {
+    "case": "paired_P8_P11",
+    "changed_points": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "candidate_file": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\traj16_yminus3_20261103_181808\\paired_P8_P11.json",
+    "production_profile_matches": false,
+    "test_profile_hash": "419e7d2c7a102c1d86893977900d36e0fbd473e346542fa056ee3b97f5722500",
+    "original_trajectory_sha256": "660b303af02f6a207fcb30a59401eabcc9eab594d95c738e5cc6ea1b9a84c01a",
+    "script_sha256": "550a84de7f2ca19d9399a26d23fbe6369a668e7144c63ed77243b5f38a419762",
+    "start_joints": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "tcp": [
+      0.0,
+      0.0,
+      130.0,
+      0.0,
+      -0.0,
+      0.0
+    ],
+    "hardware_access": false,
+    "result": "FAIL",
+    "error": "ValueError: 目标点不可达，尚未搜索连接路径：P9：没有逆解；换算后的法兰中心（基座系）XYZ=(-120.0, -684.5, 587.5) mm，法兰Z轴方向=(0.0, -0.0, -1.0)；P11：没有逆解；换算后的法兰中心（基座系）XYZ=(120.0, -684.5, 587.5) mm，法兰Z轴方向=(0.0, 0.0, -1.0)",
+    "logs": [
+      "v15.20：启用已验证轨迹16的校准本体分支搜索；两段直线将在本次预检重新认证。"
+    ]
+  }
+]

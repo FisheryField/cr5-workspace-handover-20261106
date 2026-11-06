@@ -1,0 +1,43 @@
+{
+  "version": "v15.21-20261103",
+  "source_sha256": "2bd8a532d6899d928b429bbdf974a4bed200db55335d985f19f4c6d72d956610",
+  "station": "新建工作站 (1)",
+  "macro": "TCP真实运动_P2P版_16稳定版",
+  "backup_macro": "TCP真实运动_P2P版_16稳定版_替换前_20261103_183559",
+  "actual_joints_before": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "tcp": 130,
+  "hardware_motion_sent": false,
+  "station_file_saved": false,
+  "trajectory_modified": false,
+  "isolated_precheck": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\traj16_v1521_check_20261103_183314\\result.json",
+  "precheck_result": "PASS",
+  "main_precheck": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\traj16_v1521_installed_20261103_183559\\result.json",
+  "main_precheck_result": "PASS",
+  "final_tcp": [
+    0.0,
+    0.0,
+    130.0,
+    0.0,
+    -0.0,
+    0.0
+  ],
+  "continuous_linear_points": [
+    3,
+    5,
+    8,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19,
+    22
+  ]
+}

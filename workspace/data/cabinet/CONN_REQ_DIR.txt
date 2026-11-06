@@ -1,0 +1,841 @@
+﻿PLT stubs resolved: 2932 ; symtab FUNC entries: 4256
+
+======================================================================================
+_ZN14DataSubProcess12conn_req_dirEP14evhttp_requestPv  @0x001002c4  2560 B
+======================================================================================
+  PLT stub(s) for this symbol: 
+  call sites (direct OR via PLT): 0
+  001002c4  push.w     {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+  001002c8  sub.w      sp, sp, #0x204                    
+  001002cc  ldr.w      r4, [pc, #0x900]                  
+  001002d0  ldr.w      r3, [pc, #0x900]                  
+  001002d4  add        r4, pc                            
+  001002d6  ldr        r3, [r4, r3]                      
+  001002d8  ldrb       r3, [r3]                          
+  001002da  cbnz       r3, #0x1002e4                     
+  001002dc  add.w      sp, sp, #0x204                    
+  001002e0  pop.w      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+  001002e4  str        r1, [sp, #0x10]                   
+  001002e6  mov        r5, r0                            
+  001002e8  blx        #0xb77a8                             ; PLT:evhttp_request_get_uri
+  001002ec  ldr.w      r1, [pc, #0x8e8]                  
+  001002f0  add.w      sl, sp, #0x24                     
+  001002f4  add.w      r8, sp, #0x28                     
+  001002f8  movw       r3, #0x1f7                        
+  001002fc  mov        r7, r0                            
+  001002fe  str.w      r0, [sl]                          
+  00100302  add        r1, pc                            
+  00100304  str.w      r3, [r8]                          
+  00100308  blx        #0xbb340                             ; PLT:strcmp
+  0010030c  cbz        r0, #0x10037a                     
+  0010030e  mov        r0, r7                            
+  00100310  blx        #0xba6b8                             ; PLT:strlen
+  00100314  cmp        r0, #1                            
+  00100316  bls        #0x10037a                         
+  00100318  add        r3, sp, #0x138                    
+  0010031a  mov.w      r1, #-1                           
+  0010031e  mov        r6, r3                            
+  00100320  mov        r0, r7                            
+  00100322  add.w      fp, sp, #0x2c                     
+  00100326  str        r3, [sp, #0x14]                   
+  00100328  blx        #0xb6468                             ; PLT:_ZN7QString16fromAscii_helperEPKci
+  0010032c  movs       r1, #0x2f                         
+  0010032e  str.w      r0, [fp]                          
+  00100332  mov        r0, r6                            
+  00100334  blx        #0xb6718                             ; PLT:_ZN5QCharC1Ec
+  00100338  movs       r3, #1                            
+  0010033a  add        r7, sp, #0x30                     
+  0010033c  str        r3, [sp]                          
+  0010033e  mov        r0, r7                            
+  00100340  movs       r3, #0                            
+  00100342  mov        r2, r6                            
+  00100344  mov        r1, fp                            
+  00100346  blx        #0xb9464                             ; PLT:_ZNK7QString5splitERK5QCharNS_13SplitBehaviorEN2Qt15CaseSensitivityE
+  0010034a  ldr        r3, [r7]                          
+  0010034c  ldr        r0, [r3, #8]                      
+  0010034e  ldr        r2, [r3, #0xc]                    
+  00100350  subs       r2, r2, r0                        
+  00100352  cmp        r2, #2                            
+  00100354  bgt        #0x100392                         
+  00100356  ldr.w      r2, [pc, #0x884]                  
+  0010035a  mov        r0, r5                            
+  0010035c  ldr.w      r1, [r8]                          
+  00100360  add        r2, pc                            
+  00100362  blx        #0xbc3b4                             ; PLT:evhttp_send_error
+  00100366  mov        r0, r7                            
+  00100368  blx        #0xbacc8                             ; PLT:_ZN5QListI7QStringED2Ev
+  0010036c  mov        r0, fp                            
+  0010036e  blx        #0xbbcd0                             ; PLT:_ZN7QStringD1Ev
+  00100372  add.w      sp, sp, #0x204                    
+  00100376  pop.w      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+  0010037a  ldr.w      r2, [pc, #0x864]                  
+  0010037e  mov        r0, r5                            
+  00100380  movw       r1, #0x1f7                        
+  00100384  add        r2, pc                            
+  00100386  blx        #0xbc3b4                             ; PLT:evhttp_send_error
+  0010038a  add.w      sp, sp, #0x204                    
+  0010038e  pop.w      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+  00100392  ldr        r2, [r3]                          
+  00100394  cmp        r2, #1                            
+  00100396  beq        #0x1003a4                         
+  00100398  ldr        r1, [r3, #4]                      
+  0010039a  mov        r0, r7                            
+  0010039c  blx        #0xb7ef4                             ; PLT:_ZN5QListI7QStringE13detach_helperEi
+  001003a0  ldr        r3, [r7]                          
+  001003a2  ldr        r0, [r3, #8]                      
+  001003a4  ldr.w      r1, [pc, #0x83c]                  
+  001003a8  add.w      r0, r3, r0, lsl #2                
+  001003ac  adds       r0, #0x18                         
+  001003ae  add        r1, pc                            
+  001003b0  blx        #0xb735c                             ; PLT:_Z23qStringComparisonHelperRK7QStringPKc
+  001003b4  cmp        r0, #0                            
+  001003b6  beq.w      #0x100574                         
+  001003ba  ldr        r2, [sp, #0x10]                   
+  001003bc  ldr        r3, [r7]                          
+  001003be  add.w      sl, r2, #0x10c0                   
+  001003c2  ldr        r2, [r3]                          
+  001003c4  add.w      sl, sl, #0xc                      
+  001003c8  cmp        r2, #1                            
+  001003ca  beq        #0x1003d6                         
+  001003cc  ldr        r1, [r3, #4]                      
+  001003ce  mov        r0, r7                            
+  001003d0  blx        #0xb7ef4                             ; PLT:_ZN5QListI7QStringE13detach_helperEi
+  001003d4  ldr        r3, [r7]                          
+  001003d6  ldr        r1, [r3, #8]                      
+  001003d8  movs       r2, #0                            
+  001003da  mov        r0, sl                            
+  001003dc  add.w      r1, r3, r1, lsl #2                
+  001003e0  adds       r1, #0x18                         
+  001003e2  blx        #0xb7c74                             ; PLT:_ZNK5QHashI7QStringPS_IS0_PFiP14evhttp_requestPvEEE8findNodeERKS0_Pj
+  001003e6  ldr        r1, [sp, #0x10]                   
+  001003e8  movw       r3, #0x10cc                       
+  001003ec  ldr        r2, [r0]                          
+  001003ee  ldr        r3, [r1, r3]                      
+  001003f0  cmp        r2, r3                            
+  001003f2  beq.w      #0x100660                         
+  001003f6  ldr        r3, [r7]                          
+  001003f8  ldr        r2, [r3]                          
+  001003fa  cmp        r2, #1                            
+  001003fc  beq        #0x100408                         
+  001003fe  ldr        r1, [r3, #4]                      
+  00100400  mov        r0, r7                            
+  00100402  blx        #0xb7ef4                             ; PLT:_ZN5QListI7QStringE13detach_helperEi
+  00100406  ldr        r3, [r7]                          
+  00100408  ldr        r0, [r3, #8]                      
+  0010040a  ldr.w      r1, [pc, #0x7dc]                  
+  0010040e  add.w      r0, r3, r0, lsl #2                
+  00100412  add        r1, pc                            
+  00100414  adds       r0, #0x18                         
+  00100416  blx        #0xb735c                             ; PLT:_Z23qStringComparisonHelperRK7QStringPKc
+  0010041a  cmp        r0, #0                            
+  0010041c  bne.w      #0x1006f4                         
+  00100420  ldr        r3, [r7]                          
+  00100422  movw       r2, #0x1050                       
+  00100426  ldr        r0, [sp, #0x10]                   
+  00100428  movs       r1, #0                            
+  0010042a  str        r1, [r0, r2]                      
+  0010042c  ldr        r2, [r3]                          
+  0010042e  cmp        r2, #1                            
+  00100430  beq        #0x10043c                         
+  00100432  ldr        r1, [r3, #4]                      
+  00100434  mov        r0, r7                            
+  00100436  blx        #0xb7ef4                             ; PLT:_ZN5QListI7QStringE13detach_helperEi
+  0010043a  ldr        r3, [r7]                          
+  0010043c  ldr        r1, [r3, #8]                      
+  0010043e  mov        r0, sl                            
+  00100440  add.w      r1, r3, r1, lsl #2                
+  00100444  adds       r1, #0x18                         
+  00100446  blx        #0xb4634                             ; PLT:_ZN5QHashI7QStringPS_IS0_PFiP14evhttp_requestPvEEEixERKS0_
+  0010044a  ldr        r3, [r7]                          
+  0010044c  ldr.w      sb, [r0]                          
+  00100450  ldr        r2, [r3]                          
+  00100452  cmp        r2, #1                            
+  00100454  beq        #0x100460                         
+  00100456  ldr        r1, [r3, #4]                      
+  00100458  mov        r0, r7                            
+  0010045a  blx        #0xb7ef4                             ; PLT:_ZN5QListI7QStringE13detach_helperEi
+  0010045e  ldr        r3, [r7]                          
+  00100460  ldr        r1, [r3, #8]                      
+  00100462  movs       r2, #0                            
+  00100464  mov        r0, sb                            
+  00100466  add.w      r1, r3, r1, lsl #2                
+  0010046a  adds       r1, #0x1c                         
+  0010046c  blx        #0xb8530                             ; PLT:_ZNK5QHashI7QStringPFiP14evhttp_requestPvEE8findNodeERKS0_Pj
+  00100470  ldr        r2, [r0]                          
+  00100472  ldr.w      r3, [sb]                          
+  00100476  cmp        r2, r3                            
+  00100478  beq.w      #0x1007d0                         
+  0010047c  ldr        r3, [r7]                          
+  0010047e  ldr        r2, [r3]                          
+  00100480  cmp        r2, #1                            
+  00100482  beq        #0x10048e                         
+  00100484  ldr        r1, [r3, #4]                      
+  00100486  mov        r0, r7                            
+  00100488  blx        #0xb7ef4                             ; PLT:_ZN5QListI7QStringE13detach_helperEi
+  0010048c  ldr        r3, [r7]                          
+  0010048e  ldr        r1, [r3, #8]                      
+  00100490  mov        r0, sl                            
+  00100492  add.w      r1, r3, r1, lsl #2                
+  00100496  adds       r1, #0x18                         
+  00100498  blx        #0xb4634                             ; PLT:_ZN5QHashI7QStringPS_IS0_PFiP14evhttp_requestPvEEEixERKS0_
+  0010049c  ldr        r3, [r7]                          
+  0010049e  ldr.w      sb, [r0]                          
+  001004a2  ldr        r2, [r3]                          
+  001004a4  cmp        r2, #1                            
+  001004a6  beq        #0x1004b2                         
+  001004a8  ldr        r1, [r3, #4]                      
+  001004aa  mov        r0, r7                            
+  001004ac  blx        #0xb7ef4                             ; PLT:_ZN5QListI7QStringE13detach_helperEi
+  001004b0  ldr        r3, [r7]                          
+  001004b2  ldr.w      r2, [sb]                          
+  001004b6  ldr        r1, [r3, #8]                      
+  001004b8  ldr        r2, [r2, #0xc]                    
+  001004ba  cmp        r2, #0                            
+  001004bc  bne.w      #0x1007b0                         
+  001004c0  movs       r3, #0                            
+  001004c2  ldr        r1, [sp, #0x10]                   
+  001004c4  mov        r0, r5                            
+  001004c6  blx        r3                                
+  001004c8  cmp        r0, #0xc8                         
+  001004ca  str.w      r0, [r8]                          
+  001004ce  beq.w      #0x1008f4                         
+  001004d2  ldr.w      r3, [pc, #0x718]                  
+  001004d6  cmp.w      r0, #0x194                        
+  001004da  add.w      sb, sp, #0x70                     
+  001004de  ldr        r6, [r4, r3]                      
+  001004e0  add.w      r3, r6, #0xc                      
+  001004e4  str.w      r3, [sb]                          
+  001004e8  beq.w      #0x100a8c                         
+  001004ec  ble.w      #0x1006ca                         
+  001004f0  movw       r3, #0x1a1                        
+  001004f4  cmp        r0, r3                            
+  001004f6  beq.w      #0x100abc                         
+  001004fa  cmp.w      r0, #0x1a2                        
+  001004fe  blt.w      #0x1008d4                         
+  00100502  movw       r3, #0x1f5                        
+  00100506  cmp        r0, r3                            
+  00100508  beq.w      #0x100ab0                         
+  0010050c  movw       r3, #0x1f7                        
+  00100510  cmp        r0, r3                            
+  00100512  beq.w      #0x100aa4                         
+  00100516  cmp.w      r0, #0x1f4                        
+  0010051a  beq.w      #0x100a74                         
+  0010051e  blx        #0xb4a54                             ; PLT:_ZN6spdlog11logTerminal8InstanceEv
+  00100522  ldr.w      lr, [pc, #0x6cc]                  
+  00100526  movs       r3, #4                            
+  00100528  ldr        r4, [sp, #0x14]                   
+  0010052a  movw       r1, #0x2d11                       
+  0010052e  ldr.w      r2, [pc, #0x6c4]                  
+  00100532  mvn        r0, #0xf                          
+  00100536  add        lr, pc                            
+  00100538  str.w      r8, [sp, #4]                      
+  0010053c  str        r4, [sp, #8]                      
+  0010053e  str.w      lr, [sp]                          
+  00100542  add        r2, pc                            
+  00100544  ldr.w      r4, [sb]                          
+  00100548  add.w      r2, r2, #0x274                    
+  0010054c  str        r4, [sp, #0x138]                  
+  0010054e  blx        #0xbb110                             ; PLT:_ZN6spdlog11logTerminal8basicLogIIRiPKcEEEviiS4_NS_5level10level_enumES4_DpOT_
+  00100552  ldr.w      r1, [r8]                          
+  00100556  mov        r0, r5                            
+  00100558  ldr.w      r2, [sb]                          
+  0010055c  blx        #0xbc3b4                             ; PLT:evhttp_send_error
+  00100560  ldr.w      r0, [sb]                          
+  00100564  subs       r0, #0xc                          
+  00100566  cmp        r0, r6                            
+  00100568  beq.w      #0x100366                         
+  0010056c  ldr        r1, [sp, #0x14]                   
+  0010056e  bl         #0xe3e24                             ; _ZNSs4_Rep10_M_disposeERKSaIcE.part.8
+  00100572  b          #0x100366                         
+  00100574  mov        r0, r7                            
+  00100576  blx        #0xbbcdc                             ; PLT:_ZN5QListI7QStringE6detachEv
+  0010057a  ldr        r3, [r7]                          
+  0010057c  ldr.w      r1, [pc, #0x678]                  
+  00100580  ldr        r2, [r3, #8]                      
+  00100582  add        r1, pc                            
+  00100584  add.w      r0, r3, r2, lsl #2                
+  00100588  adds       r0, #0x18                         
+  0010058a  blx        #0xb735c                             ; PLT:_Z23qStringComparisonHelperRK7QStringPKc
+  0010058e  cmp        r0, #0                            
+  00100590  bne.w      #0x1003ba                         
+  00100594  mov        r0, r5                            
+  00100596  blx        #0xb6aa4                             ; PLT:evhttp_request_get_connection
+  0010059a  cmp        r0, #0                            
+  0010059c  beq.w      #0x1009ee                         
+  001005a0  add        r3, sp, #0x68                     
+  001005a2  add        r2, sp, #0x60                     
+  001005a4  mov.w      lr, #0                            
+  001005a8  mov        r1, r3                            
+  001005aa  str        r3, [sp, #0x18]                   
+  001005ac  mov        r6, r2                            
+  001005ae  str.w      lr, [sp, #0x68]                   
+  001005b2  strh.w     lr, [r2]                          
+  001005b6  blx        #0xb6938                             ; PLT:evhttp_connection_get_peer
+  001005ba  mov        r0, r5                            
+  001005bc  blx        #0xb41bc                             ; PLT:evhttp_request_get_command
+  001005c0  mov        sb, r0                            
+  001005c2  blx        #0xb4a54                             ; PLT:_ZN6spdlog11logTerminal8InstanceEv
+  001005c6  cmp.w      sb, #2                            
+  001005ca  beq.w      #0x1008b2                         
+  001005ce  cmp.w      sb, #1                            
+  001005d2  beq.w      #0x10098a                         
+  001005d6  ldr.w      r3, [pc, #0x624]                  
+  001005da  add        r3, pc                            
+  001005dc  add.w      sb, sp, #0x70                     
+  001005e0  movs       r2, #0xc8                         
+  001005e2  mov        r0, sb                            
+  001005e4  movs       r1, #0                            
+  001005e6  str        r3, [sp, #0x138]                  
+  001005e8  blx        #0xb6948                             ; PLT:memset
+  001005ec  blx        #0xb4a54                             ; PLT:_ZN6spdlog11logTerminal8InstanceEv
+  001005f0  ldr        r3, [r0, #0x78]                   
+  001005f2  cmp        r3, #0                            
+  001005f4  beq.w      #0x1003ba                         
+  001005f8  movw       r2, #0x2cac                       
+  001005fc  ldr.w      r3, [pc, #0x600]                  
+  00100600  ldr.w      lr, [pc, #0x600]                  
+  00100604  movs       r1, #0xc8                         
+  00100606  str        r2, [sp]                          
+  00100608  mov        r0, sb                            
+  0010060a  ldr.w      r2, [pc, #0x5fc]                  
+  0010060e  add        r3, pc                            
+  00100610  add        lr, pc                            
+  00100612  add.w      r3, r3, #0x274                    
+  00100616  str.w      lr, [sp, #4]                      
+  0010061a  add        r2, pc                            
+  0010061c  blx        #0xb6db4                             ; PLT:snprintf
+  00100620  blx        #0xb4a54                             ; PLT:_ZN6spdlog11logTerminal8InstanceEv
+  00100624  ldr        r2, [r0, #0x78]                   
+  00100626  add        r3, sp, #0x48                     
+  00100628  str.w      sb, [sp, #0x48]                   
+  0010062c  add.w      sb, sp, #0x58                     
+  00100630  mov        r1, r3                            
+  00100632  mov        r0, sb                            
+  00100634  str        r2, [sp, #0x1c]                   
+  00100636  blx        #0xb7d34                             ; PLT:_ZN3fmt2v819basic_format_stringIcIRPcRtPKcRS6_EEC1IS6_Li0EEERKT_
+  0010063a  ldr        r3, [sp, #0x14]                   
+  0010063c  ldm.w      sb, {r0, r1}                      
+  00100640  ldr        r2, [sp, #0x1c]                   
+  00100642  str        r3, [sp, #8]                      
+  00100644  ldr        r3, [sp, #0x18]                   
+  00100646  str.w      sl, [sp, #0xc]                    
+  0010064a  str        r6, [sp, #4]                      
+  0010064c  str        r3, [sp]                          
+  0010064e  add        r3, sp, #0x50                     
+  00100650  stm.w      r3, {r0, r1}                      
+  00100654  mov        r0, r2                            
+  00100656  movs       r1, #2                            
+  00100658  ldm        r3, {r2, r3}                      
+  0010065a  blx        #0xb6f5c                             ; PLT:_ZN6spdlog6logger3logIIRPcRtPKcRS6_EEEvNS_5level10level_enumEN3fmt2v819basic_format_stringIcIDpNSB_13type_identityIT_E4typeEEEEDpOSE_
+  0010065e  b          #0x1003ba                         
+  00100660  mov        r0, r7                            
+  00100662  blx        #0xbbcdc                             ; PLT:_ZN5QListI7QStringE6detachEv
+  00100666  ldr        r3, [r7]                          
+  00100668  ldr.w      r1, [pc, #0x5a0]                  
+  0010066c  ldr        r2, [r3, #8]                      
+  0010066e  add        r1, pc                            
+  00100670  add.w      r0, r3, r2, lsl #2                
+  00100674  adds       r0, #0x18                         
+  00100676  blx        #0xb735c                             ; PLT:_Z23qStringComparisonHelperRK7QStringPKc
+  0010067a  cmp        r0, #0                            
+  0010067c  beq.w      #0x100990                         
+  00100680  ldr        r6, [sp, #0x10]                   
+  00100682  mov        r0, r5                            
+  00100684  mov        r1, r6                            
+  00100686  blx        #0xba3bc                             ; PLT:_ZN14DataSubProcess12filesHandlerEP14evhttp_requestPv
+  0010068a  mov        r4, r0                            
+  0010068c  mov        r0, r5                            
+  0010068e  blx        #0xb4b08                             ; PLT:evhttp_request_get_output_headers
+  00100692  ldr.w      r2, [pc, #0x57c]                  
+  00100696  mov        r8, r0                            
+  00100698  ldr.w      r1, [pc, #0x578]                  
+  0010069c  add        r2, pc                            
+  0010069e  add        r1, pc                            
+  001006a0  blx        #0xb9190                             ; PLT:evhttp_add_header
+  001006a4  ldr.w      r2, [pc, #0x570]                  
+  001006a8  mov        r0, r8                            
+  001006aa  ldr.w      r1, [pc, #0x570]                  
+  001006ae  add        r2, pc                            
+  001006b0  add        r1, pc                            
+  001006b2  blx        #0xb9190                             ; PLT:evhttp_add_header
+  001006b6  ldr.w      r2, [pc, #0x568]                  
+  001006ba  mov        r1, r4                            
+  001006bc  ldr.w      r3, [r6, #0xf34]                  
+  001006c0  mov        r0, r5                            
+  001006c2  add        r2, pc                            
+  001006c4  blx        #0xb82c8                             ; PLT:evhttp_send_reply
+  001006c8  b          #0x100366                         
+  001006ca  cmp.w      r0, #0x12e                        
+  001006ce  beq.w      #0x100a80                         
+  001006d2  bgt.w      #0x1008b8                         
+  001006d6  cmp        r0, #0xcc                         
+  001006d8  beq.w      #0x100ad4                         
+  001006dc  movw       r3, #0x12d                        
+  001006e0  cmp        r0, r3                            
+  001006e2  bne.w      #0x10051e                         
+  001006e6  ldr.w      r1, [pc, #0x53c]                  
+  001006ea  mov        r0, sb                            
+  001006ec  add        r1, pc                            
+  001006ee  blx        #0xb9f14                             ; PLT:_ZNSs6assignEPKc
+  001006f2  b          #0x10051e                         
+  001006f4  mov        r0, r7                            
+  001006f6  blx        #0xbbcdc                             ; PLT:_ZN5QListI7QStringE6detachEv
+  001006fa  ldr        r3, [r7]                          
+  001006fc  ldr.w      r1, [pc, #0x528]                  
+  00100700  ldr        r2, [r3, #8]                      
+  00100702  add        r1, pc                            
+  00100704  add.w      r0, r3, r2, lsl #2                
+  00100708  adds       r0, #0x1c                         
+  0010070a  blx        #0xb735c                             ; PLT:_Z23qStringComparisonHelperRK7QStringPKc
+  0010070e  cmp        r0, #0                            
+  00100710  beq.w      #0x100a18                         
+  00100714  mov        r0, r7                            
+  00100716  blx        #0xbbcdc                             ; PLT:_ZN5QListI7QStringE6detachEv
+  0010071a  ldr        r3, [r7]                          
+  0010071c  add        r2, sp, #0x38                     
+  0010071e  mov        r0, r2                            
+  00100720  mov        r6, r2                            
+  00100722  str        r2, [sp, #0x18]                   
+  00100724  ldr        r1, [r3, #8]                      
+  00100726  add.w      r1, r3, r1, lsl #2                
+  0010072a  adds       r1, #0x1c                         
+  0010072c  blx        #0xb63e4                             ; PLT:_ZNK7QString11toLocal8BitEv
+  00100730  mov        r0, r6                            
+  00100732  blx        #0xbc5f8                             ; PLT:_ZN10QByteArray6detachEv
+  00100736  ldr        r3, [r6]                          
+  00100738  add.w      sb, sp, #0x70                     
+  0010073c  str        r6, [sp, #0x18]                   
+  0010073e  mov        r0, sb                            
+  00100740  ldr        r6, [sp, #0x14]                   
+  00100742  ldr        r1, [r3, #0xc]                    
+  00100744  mov        r2, r6                            
+  00100746  blx        #0xb8b78                             ; PLT:_ZNSsC1EPKcRKSaIcE
+  0010074a  ldr        r0, [sp, #0x18]                   
+  0010074c  blx        #0xb9f9c                             ; PLT:_ZN10QByteArrayD1Ev
+  00100750  blx        #0xb4a54                             ; PLT:_ZN6spdlog11logTerminal8InstanceEv
+  00100754  ldr.w      lr, [pc, #0x4d4]                  
+  00100758  movs       r3, #2                            
+  0010075a  ldr.w      ip, [pc, #0x4d4]                  
+  0010075e  movw       r1, #0x2cc7                       
+  00100762  str        r6, [sp, #4]                      
+  00100764  mvn        r0, #0xf                          
+  00100768  add        lr, pc                            
+  0010076a  str.w      lr, [sp]                          
+  0010076e  add        ip, pc                            
+  00100770  ldr.w      r6, [sb]                          
+  00100774  add.w      r2, ip, #0x274                    
+  00100778  str        r6, [sp, #0x138]                  
+  0010077a  blx        #0xb3d7c                             ; PLT:_ZN6spdlog11logTerminal8basicLogIIPKcEEEviiS3_NS_5level10level_enumES3_DpOT_
+  0010077e  ldr        r6, [sp, #0x10]                   
+  00100780  mov        r1, sb                            
+  00100782  add.w      r0, r6, #0x21c0                   
+  00100786  adds       r0, #8                            
+  00100788  blx        #0xb95e4                             ; PLT:_ZNSs6assignERKSs
+  0010078c  mov        r2, r6                            
+  0010078e  mov        r1, r5                            
+  00100790  mov        r0, r6                            
+  00100792  blx        #0xb5d34                             ; PLT:_ZN14DataSubProcess20sendHttpDebugResponeEP14evhttp_requestPv
+  00100796  ldr.w      r3, [pc, #0x454]                  
+  0010079a  ldr.w      r0, [sb]                          
+  0010079e  ldr        r3, [r4, r3]                      
+  001007a0  subs       r0, #0xc                          
+  001007a2  cmp        r0, r3                            
+  001007a4  beq.w      #0x100420                         
+  001007a8  ldr        r1, [sp, #0x14]                   
+  001007aa  bl         #0xe3e24                             ; _ZNSs4_Rep10_M_disposeERKSaIcE.part.8
+  001007ae  b          #0x100420                         
+  001007b0  add.w      r1, r3, r1, lsl #2                
+  001007b4  movs       r2, #0                            
+  001007b6  mov        r0, sb                            
+  001007b8  adds       r1, #0x1c                         
+  001007ba  blx        #0xb8530                             ; PLT:_ZNK5QHashI7QStringPFiP14evhttp_requestPvEE8findNodeERKS0_Pj
+  001007be  ldr        r3, [r0]                          
+  001007c0  ldr.w      r2, [sb]                          
+  001007c4  cmp        r3, r2                            
+  001007c6  it         ne                                
+  001007c8  ldrne      r3, [r3, #0xc]                    
+  001007ca  bne.w      #0x1004c2                         
+  001007ce  b          #0x1004c0                         
+  001007d0  blx        #0xb4a54                             ; PLT:_ZN6spdlog11logTerminal8InstanceEv
+  001007d4  mov        r0, r7                            
+  001007d6  blx        #0xbbcdc                             ; PLT:_ZN5QListI7QStringE6detachEv
+  001007da  ldr        r3, [r7]                          
+  001007dc  add        r4, sp, #0x40                     
+  001007de  mov        r0, r4                            
+  001007e0  ldr        r2, [r3, #8]                      
+  001007e2  add.w      r1, r3, r2, lsl #2                
+  001007e6  adds       r1, #0x1c                         
+  001007e8  blx        #0xb63e4                             ; PLT:_ZNK7QString11toLocal8BitEv
+  001007ec  mov        r0, r4                            
+  001007ee  blx        #0xbc5f8                             ; PLT:_ZN10QByteArray6detachEv
+  001007f2  ldr        r3, [r4]                          
+  001007f4  add.w      r8, sp, #0x58                     
+  001007f8  mov        r0, r7                            
+  001007fa  ldr        r3, [r3, #0xc]                    
+  001007fc  str.w      r3, [r8]                          
+  00100800  blx        #0xbbcdc                             ; PLT:_ZN5QListI7QStringE6detachEv
+  00100804  ldr        r3, [r7]                          
+  00100806  add        r6, sp, #0x44                     
+  00100808  mov        r0, r6                            
+  0010080a  ldr        r2, [r3, #8]                      
+  0010080c  add.w      r1, r3, r2, lsl #2                
+  00100810  adds       r1, #0x18                         
+  00100812  blx        #0xb63e4                             ; PLT:_ZNK7QString11toLocal8BitEv
+  00100816  mov        r0, r6                            
+  00100818  blx        #0xbc5f8                             ; PLT:_ZN10QByteArray6detachEv
+  0010081c  ldr        r3, [r6]                          
+  0010081e  add.w      sb, sp, #0x70                     
+  00100822  movs       r2, #0xc8                         
+  00100824  movs       r1, #0                            
+  00100826  ldr        r0, [sp, #0x14]                   
+  00100828  ldr        r3, [r3, #0xc]                    
+  0010082a  str.w      r3, [sb]                          
+  0010082e  blx        #0xb6948                             ; PLT:memset
+  00100832  blx        #0xb4a54                             ; PLT:_ZN6spdlog11logTerminal8InstanceEv
+  00100836  ldr        r3, [r0, #0x78]                   
+  00100838  cbz        r3, #0x100896                     
+  0010083a  movw       r2, #0x2d16                       
+  0010083e  ldr        r3, [pc, #0x3f4]                  
+  00100840  ldr.w      lr, [pc, #0x3f4]                  
+  00100844  movs       r1, #0xc8                         
+  00100846  str        r2, [sp]                          
+  00100848  ldr.w      sl, [sp, #0x14]                   
+  0010084c  add        r3, pc                            
+  0010084e  ldr        r2, [pc, #0x3ec]                  
+  00100850  add        lr, pc                            
+  00100852  add.w      r3, r3, #0x274                    
+  00100856  str.w      lr, [sp, #4]                      
+  0010085a  mov        r0, sl                            
+  0010085c  add        r2, pc                            
+  0010085e  blx        #0xb6db4                             ; PLT:snprintf
+  00100862  blx        #0xb4a54                             ; PLT:_ZN6spdlog11logTerminal8InstanceEv
+  00100866  ldr        r2, [r0, #0x78]                   
+  00100868  add        r3, sp, #0x4c                     
+  0010086a  str.w      sl, [sp, #0x4c]                   
+  0010086e  add.w      sl, sp, #0x68                     
+  00100872  mov        r1, r3                            
+  00100874  mov        r0, sl                            
+  00100876  str        r2, [sp, #0x10]                   
+  00100878  blx        #0xb89b8                             ; PLT:_ZN3fmt2v819basic_format_stringIcIPcS2_EEC1IPKcLi0EEERKT_
+  0010087c  ldm.w      sl, {r0, r1}                      
+  00100880  add        r3, sp, #0x60                     
+  00100882  ldr        r2, [sp, #0x10]                   
+  00100884  stm.w      sp, {r8, sb}                      
+  00100888  stm.w      r3, {r0, r1}                      
+  0010088c  movs       r1, #4                            
+  0010088e  mov        r0, r2                            
+  00100890  ldm        r3, {r2, r3}                      
+  00100892  blx        #0xbaa3c                             ; PLT:_ZN6spdlog6logger3logIIPcS2_EEEvNS_5level10level_enumEN3fmt2v819basic_format_stringIcIDpNS6_13type_identityIT_E4typeEEEEDpOS9_
+  00100896  mov        r0, r6                            
+  00100898  blx        #0xb9f9c                             ; PLT:_ZN10QByteArrayD1Ev
+  0010089c  mov        r0, r4                            
+  0010089e  blx        #0xb9f9c                             ; PLT:_ZN10QByteArrayD1Ev
+  001008a2  ldr        r2, [pc, #0x39c]                  
+  001008a4  mov        r0, r5                            
+  001008a6  movw       r1, #0x195                        
+  001008aa  add        r2, pc                            
+  001008ac  blx        #0xbc3b4                             ; PLT:evhttp_send_error
+  001008b0  b          #0x100366                         
+  001008b2  ldr        r3, [pc, #0x390]                  
+  001008b4  add        r3, pc                            
+  001008b6  b          #0x1005dc                         
+  001008b8  cmp.w      r0, #0x130                        
+  001008bc  beq.w      #0x100ac8                         
+  001008c0  cmp.w      r0, #0x190                        
+  001008c4  bne.w      #0x10051e                         
+  001008c8  ldr        r1, [pc, #0x37c]                  
+  001008ca  mov        r0, sb                            
+  001008cc  add        r1, pc                            
+  001008ce  blx        #0xb9f14                             ; PLT:_ZNSs6assignEPKc
+  001008d2  b          #0x10051e                         
+  001008d4  movw       r3, #0x195                        
+  001008d8  cmp        r0, r3                            
+  001008da  beq.w      #0x100a98                         
+  001008de  movw       r3, #0x19d                        
+  001008e2  cmp        r0, r3                            
+  001008e4  bne.w      #0x10051e                         
+  001008e8  ldr        r1, [pc, #0x360]                  
+  001008ea  mov        r0, sb                            
+  001008ec  add        r1, pc                            
+  001008ee  blx        #0xb9f14                             ; PLT:_ZNSs6assignEPKc
+  001008f2  b          #0x10051e                         
+  001008f4  mov        r0, r7                            
+  001008f6  blx        #0xbbcdc                             ; PLT:_ZN5QListI7QStringE6detachEv
+  001008fa  ldr        r3, [r7]                          
+  001008fc  ldr        r1, [pc, #0x350]                  
+  001008fe  ldr        r2, [r3, #8]                      
+  00100900  add        r1, pc                            
+  00100902  add.w      r0, r3, r2, lsl #2                
+  00100906  adds       r0, #0x1c                         
+  00100908  blx        #0xb735c                             ; PLT:_Z23qStringComparisonHelperRK7QStringPKc
+  0010090c  cmp        r0, #0                            
+  0010090e  beq.w      #0x100ae0                         
+  00100912  mov        r0, r7                            
+  00100914  blx        #0xbbcdc                             ; PLT:_ZN5QListI7QStringE6detachEv
+  00100918  ldr        r3, [r7]                          
+  0010091a  add        r5, sp, #0x3c                     
+  0010091c  mov        r0, r5                            
+  0010091e  ldr        r2, [r3, #8]                      
+  00100920  add.w      r1, r3, r2, lsl #2                
+  00100924  adds       r1, #0x1c                         
+  00100926  blx        #0xb63e4                             ; PLT:_ZNK7QString11toLocal8BitEv
+  0010092a  mov        r0, r5                            
+  0010092c  blx        #0xbc5f8                             ; PLT:_ZN10QByteArray6detachEv
+  00100930  ldr        r3, [r5]                          
+  00100932  add.w      sb, sp, #0x70                     
+  00100936  ldr.w      r8, [sp, #0x14]                   
+  0010093a  mov        r0, sb                            
+  0010093c  ldr        r1, [r3, #0xc]                    
+  0010093e  mov        r2, r8                            
+  00100940  blx        #0xb8b78                             ; PLT:_ZNSsC1EPKcRKSaIcE
+  00100944  mov        r0, r5                            
+  00100946  blx        #0xb9f9c                             ; PLT:_ZN10QByteArrayD1Ev
+  0010094a  blx        #0xb4a54                             ; PLT:_ZN6spdlog11logTerminal8InstanceEv
+  0010094e  ldr.w      r5, [sb]                          
+  00100952  movs       r3, #2                            
+  00100954  ldr        r2, [pc, #0x2fc]                  
+  00100956  movw       r1, #0x2cd1                       
+  0010095a  ldr        r6, [pc, #0x2fc]                  
+  0010095c  mvn        r0, #0xf                          
+  00100960  str        r5, [sp, #0x10]                   
+  00100962  ldr        r5, [sp, #0x10]                   
+  00100964  add        r2, pc                            
+  00100966  add        r6, pc                            
+  00100968  str.w      r8, [sp, #4]                      
+  0010096c  add.w      r2, r2, #0x274                    
+  00100970  str        r6, [sp]                          
+  00100972  str        r5, [sp, #0x138]                  
+  00100974  blx        #0xb3d7c                             ; PLT:_ZN6spdlog11logTerminal8basicLogIIPKcEEEviiS3_NS_5level10level_enumES3_DpOT_
+  00100978  ldr        r3, [pc, #0x270]                  
+  0010097a  ldr.w      r0, [sb]                          
+  0010097e  ldr        r3, [r4, r3]                      
+  00100980  subs       r0, #0xc                          
+  00100982  cmp        r0, r3                            
+  00100984  beq.w      #0x100366                         
+  00100988  b          #0x10056c                         
+  0010098a  ldr        r3, [pc, #0x2d0]                  
+  0010098c  add        r3, pc                            
+  0010098e  b          #0x1005dc                         
+  00100990  blx        #0xb4a54                             ; PLT:_ZN6spdlog11logTerminal8InstanceEv
+  00100994  mov        r0, r7                            
+  00100996  blx        #0xbbcdc                             ; PLT:_ZN5QListI7QStringE6detachEv
+  0010099a  ldr        r3, [r7]                          
+  0010099c  add        r6, sp, #0x34                     
+  0010099e  mov        r0, r6                            
+  001009a0  ldr        r2, [r3, #8]                      
+  001009a2  add.w      r1, r3, r2, lsl #2                
+  001009a6  adds       r1, #0x18                         
+  001009a8  blx        #0xb63e4                             ; PLT:_ZNK7QString11toLocal8BitEv
+  001009ac  mov        r0, r6                            
+  001009ae  blx        #0xbc5f8                             ; PLT:_ZN10QByteArray6detachEv
+  001009b2  ldr        r4, [r6]                          
+  001009b4  movs       r3, #4                            
+  001009b6  ldr        r2, [pc, #0x2a8]                  
+  001009b8  movw       r1, #0x2cbe                       
+  001009bc  ldr        r0, [pc, #0x2a4]                  
+  001009be  ldr        r4, [r4, #0xc]                    
+  001009c0  add        r2, pc                            
+  001009c2  add        r0, pc                            
+  001009c4  add.w      r2, r2, #0x274                    
+  001009c8  str        r4, [sp, #0x138]                  
+  001009ca  ldr        r4, [sp, #0x14]                   
+  001009cc  stm.w      sp, {r0, r4}                      
+  001009d0  mvn        r0, #0xf                          
+  001009d4  blx        #0xbbd84                             ; PLT:_ZN6spdlog11logTerminal8basicLogIIPcEEEviiPKcNS_5level10level_enumES4_DpOT_
+  001009d8  mov        r0, r6                            
+  001009da  blx        #0xb9f9c                             ; PLT:_ZN10QByteArrayD1Ev
+  001009de  ldr        r2, [pc, #0x288]                  
+  001009e0  mov        r0, r5                            
+  001009e2  movw       r1, #0x195                        
+  001009e6  add        r2, pc                            
+  001009e8  blx        #0xbc3b4                             ; PLT:evhttp_send_error
+  001009ec  b          #0x100366                         
+  001009ee  blx        #0xb4a54                             ; PLT:_ZN6spdlog11logTerminal8InstanceEv
+  001009f2  ldr        r2, [pc, #0x278]                  
+  001009f4  movs       r3, #4                            
+  001009f6  ldr.w      lr, [pc, #0x278]                  
+  001009fa  movw       r1, #0x2cae                       
+  001009fe  str.w      sl, [sp, #4]                      
+  00100a02  mvn        r0, #0xf                          
+  00100a06  add        r2, pc                            
+  00100a08  add        lr, pc                            
+  00100a0a  add.w      r2, r2, #0x274                    
+  00100a0e  str.w      lr, [sp]                          
+  00100a12  blx        #0xb45dc                             ; PLT:_ZN6spdlog11logTerminal8basicLogIIRPKcEEEviiS3_NS_5level10level_enumES3_DpOT_
+  00100a16  b          #0x1003ba                         
+  00100a18  mov        r0, r7                            
+  00100a1a  blx        #0xbbcdc                             ; PLT:_ZN5QListI7QStringE6detachEv
+  00100a1e  ldr        r3, [r7]                          
+  00100a20  ldr        r1, [pc, #0x250]                  
+  00100a22  ldr        r2, [r3, #8]                      
+  00100a24  add        r1, pc                            
+  00100a26  add.w      r0, r3, r2, lsl #2                
+  00100a2a  adds       r0, #0x1c                         
+  00100a2c  blx        #0xb735c                             ; PLT:_Z23qStringComparisonHelperRK7QStringPKc
+  00100a30  cmp        r0, #0                            
+  00100a32  bne.w      #0x100714                         
+  00100a36  mov        r0, r7                            
+  00100a38  blx        #0xbbcdc                             ; PLT:_ZN5QListI7QStringE6detachEv
+  00100a3c  ldr        r3, [r7]                          
+  00100a3e  ldr        r1, [pc, #0x238]                  
+  00100a40  ldr        r2, [r3, #8]                      
+  00100a42  add        r1, pc                            
+  00100a44  add.w      r0, r3, r2, lsl #2                
+  00100a48  adds       r0, #0x1c                         
+  00100a4a  blx        #0xb735c                             ; PLT:_Z23qStringComparisonHelperRK7QStringPKc
+  00100a4e  cmp        r0, #0                            
+  00100a50  bne.w      #0x100714                         
+  00100a54  mov        r0, r7                            
+  00100a56  blx        #0xbbcdc                             ; PLT:_ZN5QListI7QStringE6detachEv
+  00100a5a  ldr        r3, [r7]                          
+  00100a5c  ldr        r1, [pc, #0x21c]                  
+  00100a5e  ldr        r2, [r3, #8]                      
+  00100a60  add        r1, pc                            
+  00100a62  add.w      r0, r3, r2, lsl #2                
+  00100a66  adds       r0, #0x1c                         
+  00100a68  blx        #0xb735c                             ; PLT:_Z23qStringComparisonHelperRK7QStringPKc
+  00100a6c  cmp        r0, #0                            
+  00100a6e  bne.w      #0x100714                         
+  00100a72  b          #0x100420                         
+  00100a74  ldr        r1, [pc, #0x208]                  
+  00100a76  mov        r0, sb                            
+  00100a78  add        r1, pc                            
+  00100a7a  blx        #0xb9f14                             ; PLT:_ZNSs6assignEPKc
+  00100a7e  b          #0x10051e                         
+  00100a80  ldr        r1, [pc, #0x200]                  
+  00100a82  mov        r0, sb                            
+  00100a84  add        r1, pc                            
+  00100a86  blx        #0xb9f14                             ; PLT:_ZNSs6assignEPKc
+  00100a8a  b          #0x10051e                         
+  00100a8c  ldr        r1, [pc, #0x1f8]                  
+  00100a8e  mov        r0, sb                            
+  00100a90  add        r1, pc                            
+  00100a92  blx        #0xb9f14                             ; PLT:_ZNSs6assignEPKc
+  00100a96  b          #0x10051e                         
+  00100a98  ldr        r1, [pc, #0x1f0]                  
+  00100a9a  mov        r0, sb                            
+  00100a9c  add        r1, pc                            
+  00100a9e  blx        #0xb9f14                             ; PLT:_ZNSs6assignEPKc
+  00100aa2  b          #0x10051e                         
+  00100aa4  ldr        r1, [pc, #0x1e8]                  
+  00100aa6  mov        r0, sb                            
+  00100aa8  add        r1, pc                            
+  00100aaa  blx        #0xb9f14                             ; PLT:_ZNSs6assignEPKc
+  00100aae  b          #0x10051e                         
+  00100ab0  ldr        r1, [pc, #0x1e0]                  
+  00100ab2  mov        r0, sb                            
+  00100ab4  add        r1, pc                            
+  00100ab6  blx        #0xb9f14                             ; PLT:_ZNSs6assignEPKc
+  00100aba  b          #0x10051e                         
+  00100abc  ldr        r1, [pc, #0x1d8]                  
+  00100abe  mov        r0, sb                            
+  00100ac0  add        r1, pc                            
+  00100ac2  blx        #0xb9f14                             ; PLT:_ZNSs6assignEPKc
+  00100ac6  b          #0x10051e                         
+  00100ac8  ldr        r1, [pc, #0x1d0]                  
+  00100aca  mov        r0, sb                            
+  00100acc  add        r1, pc                            
+  00100ace  blx        #0xb9f14                             ; PLT:_ZNSs6assignEPKc
+  00100ad2  b          #0x10051e                         
+  00100ad4  ldr        r1, [pc, #0x1c8]                  
+  00100ad6  mov        r0, sb                            
+  00100ad8  add        r1, pc                            
+  00100ada  blx        #0xb9f14                             ; PLT:_ZNSs6assignEPKc
+  00100ade  b          #0x10051e                         
+  00100ae0  mov        r0, r7                            
+  00100ae2  blx        #0xbbcdc                             ; PLT:_ZN5QListI7QStringE6detachEv
+  00100ae6  ldr        r3, [r7]                          
+  00100ae8  ldr        r1, [pc, #0x1b8]                  
+  00100aea  ldr        r2, [r3, #8]                      
+  00100aec  add        r1, pc                            
+  00100aee  add.w      r0, r3, r2, lsl #2                
+  00100af2  adds       r0, #0x1c                         
+  00100af4  blx        #0xb735c                             ; PLT:_Z23qStringComparisonHelperRK7QStringPKc
+  00100af8  cmp        r0, #0                            
+  00100afa  bne.w      #0x100912                         
+  00100afe  mov        r0, r7                            
+  00100b00  blx        #0xbbcdc                             ; PLT:_ZN5QListI7QStringE6detachEv
+  00100b04  ldr        r3, [r7]                          
+  00100b06  ldr        r1, [pc, #0x1a0]                  
+  00100b08  ldr        r2, [r3, #8]                      
+  00100b0a  add        r1, pc                            
+  00100b0c  add.w      r0, r3, r2, lsl #2                
+  00100b10  adds       r0, #0x1c                         
+  00100b12  blx        #0xb735c                             ; PLT:_Z23qStringComparisonHelperRK7QStringPKc
+  00100b16  cmp        r0, #0                            
+  00100b18  bne.w      #0x100912                         
+  00100b1c  mov        r0, r7                            
+  00100b1e  blx        #0xbbcdc                             ; PLT:_ZN5QListI7QStringE6detachEv
+  00100b22  ldr        r3, [r7]                          
+  00100b24  ldr        r1, [pc, #0x184]                  
+  00100b26  ldr        r2, [r3, #8]                      
+  00100b28  add        r1, pc                            
+  00100b2a  add.w      r0, r3, r2, lsl #2                
+  00100b2e  adds       r0, #0x1c                         
+  00100b30  blx        #0xb735c                             ; PLT:_Z23qStringComparisonHelperRK7QStringPKc
+  00100b34  cmp        r0, #0                            
+  00100b36  bne.w      #0x100912                         
+  00100b3a  mov        r0, r5                            
+  00100b3c  blx        #0xb4b08                             ; PLT:evhttp_request_get_output_headers
+  00100b40  ldr        r2, [pc, #0x16c]                  
+  00100b42  mov        r4, r0                            
+  00100b44  ldr        r1, [pc, #0x16c]                  
+  00100b46  add        r2, pc                            
+  00100b48  add        r1, pc                            
+  00100b4a  blx        #0xb9190                             ; PLT:evhttp_add_header
+  00100b4e  ldr        r2, [pc, #0x168]                  
+  00100b50  mov        r0, r4                            
+  00100b52  ldr        r1, [pc, #0x168]                  
+  00100b54  add        r2, pc                            
+  00100b56  add        r1, pc                            
+  00100b58  blx        #0xb9190                             ; PLT:evhttp_add_header
+  00100b5c  ldr        r3, [sp, #0x10]                   
+  00100b5e  mov        r0, r5                            
+  00100b60  ldr        r2, [pc, #0x15c]                  
+  00100b62  movs       r1, #0xc8                         
+  00100b64  ldr.w      r3, [r3, #0xf34]                  
+  00100b68  add        r2, pc                            
+  00100b6a  blx        #0xb82c8                             ; PLT:evhttp_send_reply
+  00100b6e  b.w        #0x100366                         
+  00100b72  ldr        r3, [pc, #0x78]                   
+  00100b74  ldr.w      r0, [sb]                          
+  00100b78  ldr        r3, [r4, r3]                      
+  00100b7a  subs       r0, #0xc                          
+  00100b7c  cmp        r0, r3                            
+  00100b7e  bne        #0x100ba2                         
+  00100b80  mov        r0, r7                            
+  00100b82  blx        #0xbacc8                             ; PLT:_ZN5QListI7QStringED2Ev
+  00100b86  mov        r0, fp                            
+  00100b88  blx        #0xbbcd0                             ; PLT:_ZN7QStringD1Ev
+  00100b8c  blx        #0xb8a64                             ; PLT:__cxa_end_cleanup
+  00100b90  mov        r0, r5                            
+  00100b92  blx        #0xb9f9c                             ; PLT:_ZN10QByteArrayD1Ev
+  00100b96  b          #0x100b80                         
+  00100b98  ldr.w      r0, [sb]                          
+  00100b9c  subs       r0, #0xc                          
+  00100b9e  cmp        r0, r6                            
+  00100ba0  beq        #0x100b80                         
+  00100ba2  ldr        r1, [sp, #0x14]                   
+  00100ba4  bl         #0xe3e24                             ; _ZNSs4_Rep10_M_disposeERKSaIcE.part.8
+  00100ba8  b          #0x100b80                         
+  00100baa  ldr        r0, [sp, #0x18]                   
+  00100bac  blx        #0xb9f9c                             ; PLT:_ZN10QByteArrayD1Ev
+  00100bb0  b          #0x100b80                         
+  00100bb2  b          #0x100b72                         
+  00100bb4  mov        r0, r6                            
+  00100bb6  blx        #0xb9f9c                             ; PLT:_ZN10QByteArrayD1Ev
+  00100bba  b          #0x100b80                         
+  00100bbc  mov        r0, r6                            
+  00100bbe  blx        #0xb9f9c                             ; PLT:_ZN10QByteArrayD1Ev
+  00100bc2  mov        r0, r4                            
+  00100bc4  blx        #0xb9f9c                             ; PLT:_ZN10QByteArrayD1Ev
+  00100bc8  b          #0x100b80                         
+  00100bca  b          #0x100bc2                         
+  00100bcc  b          #0x100b80                         
+  00100bce  b          #0x100b86                         
+  00100bd0  str        r6, [sp, #0x120]                  
+  00100bd2  movs       r6, r2                            
+  00100bd4  adds       r7, #0x2c                         
+  00100bd6  movs       r0, r0                            
+  00100bd8  ldr        r5, [sp, #0x3c8]                  
+  00100bda  movs       r0, r2                            

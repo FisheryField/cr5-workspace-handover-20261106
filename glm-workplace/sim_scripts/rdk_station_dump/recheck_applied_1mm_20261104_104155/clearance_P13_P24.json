@@ -1,0 +1,122 @@
+[
+  {
+    "segment": [
+      12,
+      13
+    ],
+    "min_mm": 1.0274077014404013,
+    "endpoint_mm": 35.99720522381041,
+    "sample_index": 1604,
+    "samples": 161
+  },
+  {
+    "segment": [
+      13,
+      14
+    ],
+    "min_mm": 0.9922959280629374,
+    "endpoint_mm": 0.9922959280629374,
+    "sample_index": 1802,
+    "samples": 39
+  },
+  {
+    "segment": [
+      14,
+      15
+    ],
+    "min_mm": 0.9922959280629374,
+    "endpoint_mm": 36.04279467658782,
+    "sample_index": 1802,
+    "samples": 93
+  },
+  {
+    "segment": [
+      15,
+      16
+    ],
+    "min_mm": 1.001248944444748,
+    "endpoint_mm": 1.001248944444748,
+    "sample_index": 1932,
+    "samples": 39
+  },
+  {
+    "segment": [
+      16,
+      17
+    ],
+    "min_mm": 0.8730247429288869,
+    "endpoint_mm": 36.03770815323191,
+    "sample_index": 1961,
+    "samples": 183
+  },
+  {
+    "segment": [
+      17,
+      18
+    ],
+    "min_mm": 0.9961094975559709,
+    "endpoint_mm": 0.9961094975559709,
+    "sample_index": 2152,
+    "samples": 39
+  },
+  {
+    "segment": [
+      18,
+      19
+    ],
+    "min_mm": 0.9961094975559709,
+    "endpoint_mm": 24.066215075511455,
+    "sample_index": 2152,
+    "samples": 32
+  },
+  {
+    "segment": [
+      19,
+      20
+    ],
+    "min_mm": 0.9954100982405082,
+    "endpoint_mm": 0.9954100982405082,
+    "sample_index": 2221,
+    "samples": 39
+  },
+  {
+    "segment": [
+      20,
+      21
+    ],
+    "min_mm": 0.9954100982405082,
+    "endpoint_mm": 35.99591203365006,
+    "sample_index": 2221,
+    "samples": 122
+  },
+  {
+    "segment": [
+      21,
+      22
+    ],
+    "min_mm": 15.155319216322763,
+    "endpoint_mm": 15.155319216322763,
+    "sample_index": 2465,
+    "samples": 124
+  },
+  {
+    "segment": [
+      22,
+      23
+    ],
+    "min_mm": 0.992144884884136,
+    "endpoint_mm": 0.992144884884136,
+    "sample_index": 2502,
+    "samples": 38
+  },
+  {
+    "segment": [
+      23,
+      24
+    ],
+    "min_mm": 0.9921448848818945,
+    "endpoint_mm": 18.320742578996757,
+    "sample_index": 2503,
+    "samples": 43
+  }
+]

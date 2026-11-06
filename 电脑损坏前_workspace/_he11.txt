@@ -1,0 +1,81 @@
+=== SlaveInfos recipe ===
+:=DINT:=GVL.Slave_Nums:=9
+:=DINT:=GVL.Slave_ProductID[0]:=545
+:=DINT:=GVL.Slave_ProductID[1]:=546
+:=DINT:=GVL.Slave_ProductID[2]:=289
+:=DINT:=GVL.Slave_ProductID[3]:=289
+:=DINT:=GVL.Slave_ProductID[4]:=289
+:=DINT:=GVL.Slave_ProductID[5]:=289
+:=DINT:=GVL.Slave_ProductID[6]:=289
+:=DINT:=GVL.Slave_ProductID[7]:=289
+:=DINT:=GVL.Slave_ProductID[8]:=560
+:=DINT:=GVL.Slave_ProductID[9]:=0
+:=DINT:=GVL.Slave_SoftVersion[0]:=259
+:=DINT:=GVL.Slave_SoftVersion[1]:=259
+:=DINT:=GVL.Slave_SoftVersion[2]:=131073
+:=DINT:=GVL.Slave_SoftVersion[3]:=131073
+:=DINT:=GVL.Slave_SoftVersion[4]:=131073
+:=DINT:=GVL.Slave_SoftVersion[5]:=131073
+:=DINT:=GVL.Slave_SoftVersion[6]:=131073
+:=DINT:=GVL.Slave_SoftVersion[7]:=131073
+:=DINT:=GVL.Slave_SoftVersion[8]:=259
+:=DINT:=GVL.Slave_SoftVersion[9]:=0
+
+=== /mToolServer 与伺服固件 ===
+total 7500
+drwxr-xr-x    4 root     root          4096 Feb 19  1976 .
+drwxr-xr-x   22 root     root          4096 Sep 18 19:29 ..
+drwxr-xr-x    2 root     root          4096 Sep 18 19:20 control
+-rw-r--r--    1 root     root         38842 Sep 18 19:20 controlRunProcess.log
+-rwxr-xr-x    1 root     root       2302802 Sep 18 19:20 mToolServer
+-rwxr-xr-x    1 root     root        691048 Sep 18 19:20 mToolServer.log
+drwxr-xr-x    2 root     root          4096 Aug 21  1975 overTurn
+-rwxr-xr-x    1 root     root       4597495 Feb 11  1976 tcpdump
+-rw-r--r--    1 root     root             1 Sep 18 19:20 updateRunResult.log
+=== 日志里的伺服版本/固件信息 ===
+=== 日志里的 3.1.5 ===
+09-18 17:29:53.549] [15] [info] [settVersion#4494] servo1  :3.1.5.0
+09-18 17:29:53.549] [15] [info] [settVersion#4495] servo2  :3.1.5.0
+09-18 17:29:53.549] [15] [info] [settVersion#4496] servo3  :3.1.5.0
+09-18 17:29:53.549] [15] [info] [settVersion#4497] servo4  :3.1.5.0
+09-18 17:29:53.549] [15] [info] [settVersion#4498] servo5  :3.1.5.0
+09-18 17:29:53.549] [15] [info] [settVersion#4499] servo6  :3.1.5.0
+09-18 17:30:15.025] [15] [info] [settVersion#4494] servo1  :3.1.5.0
+09-18 17:30:15.025] [15] [info] [settVersion#4495] servo2  :3.1.5.0
+09-18 17:30:15.025] [15] [info] [settVersion#4496] servo3  :3.1.5.0
+09-18 17:30:15.025] [15] [info] [settVersion#4497] servo4  :3.1.5.0
+=== libCmpDobot6Axes strings ===
+/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/glibc.git~release~2.25~master/csu
+/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/glibc.git~release~2.25~master/csu
+m_TorqueOffset
+/home/dobot/Desktop/SVN/CmpDobot6Axes/CmpDobot6Axes_Corobot_V1.1/Linux
+m_PositonScalingNum
+m_EncoderType
+m_PositonScalingDen
+m_SetEncoderCnt
+m_PositionOffset
+dwOffset
+byHomeRobot
+_old_offset
+ENCODERTYPE
+ulOffsetExtRefFunctionPointer
+m_TorqueScaling
+m_EncoderCnt
+a_byHomeState
+_vtable_offset
+HomeFlag
+xwMonitoringOffset
+byBitOffset
+m_EncoderResolution
+ulOffset
+_GLOBAL_OFFSET_TABLE_
+=== 版本文件 ===
+010000
+api.ini
+ioctrl.json
+iscara.conf
+modbusctrl.json
+redis.conf
+smb.conf
+smb.conf.bak-20260918
+version.conf

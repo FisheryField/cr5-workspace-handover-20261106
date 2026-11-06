@@ -1,0 +1,718 @@
+﻿########## FP / soft-float skeleton of each enclosing function
+-- 3150  [08024864..08024B84]
+   08024868  vpush      {d8, d9}
+   0802496E  bl         #0x8010222
+   080249A2  vldr       s0, [r0, #0x18]
+   080249A6  vcvt.f32.s32 s1, s0
+   080249AA  vldr       s0, [r4, #0xc]
+   080249AE  vcvt.f32.s32 s0, s0
+   080249B2  vdiv.f32   s2, s1, s0
+   080249B6  vstr       s2, [r0, #0x10]
+   080249BA  vldr       s0, [r0, #0x10]
+   080249BE  vmov       r1, s0
+   080249C4  bl         #0x8010720
+   080249C8  vmov       d9, r0, r1
+   080249CC  vldr       d0, [pc, #0x1d4]
+   080249D0  vmov       r2, r3, d0
+   080249D4  bl         #0x8010368
+   080249D8  vmov       d8, r0, r1
+   080249DC  bl         #0x80106e2
+   08024A20  vldr       s0, [r0, #0x18]
+   08024A24  vcvt.f32.s32 s1, s0
+   08024A28  vldr       s0, [r4, #0xc]
+   08024A2C  vcvt.f32.s32 s0, s0
+   08024A30  vdiv.f32   s2, s1, s0
+   08024A34  vstr       s2, [r0, #0x10]
+   08024A38  vldr       s0, [r0, #0x10]
+   08024A3C  vmov       r1, s0
+   08024A42  bl         #0x8010720
+   08024A46  vmov       d9, r0, r1
+   08024A4A  vldr       d0, [pc, #0x158]
+   08024A4E  vmov       r2, r3, d0
+   08024A52  bl         #0x80104aa
+   08024A56  vmov       d8, r0, r1
+   08024A5A  bl         #0x80106e2
+   08024ACC  bl         #0x8010222
+   08024B60  blx        r2
+   08024B76  bl         #0x8025778
+   08024B7C  vpop       {d8, d9}
+
+-- 328d8  [08025398..0802566C]
+   080254A2  bl         #0x8010222
+   080254D6  vldr       s0, [r0, #0x18]
+   080254DA  vcvt.f32.s32 s1, s0
+   080254DE  vldr       s0, [r5, #0xc]
+   080254E2  vcvt.f32.s32 s0, s0
+   080254E6  vdiv.f32   s2, s1, s0
+   080254EA  vstr       s2, [r0, #0x10]
+   080254EE  vldr       s0, [r0, #0x10]
+   080254F2  vmov.f32   s1, #5.000000e-01
+   080254F6  vadd.f32   s0, s0, s1
+   080254FA  vcvt.s32.f32 s0, s0
+   080254FE  vstr       s0, [r0, #0x14]
+   0802553E  vldr       s0, [r0, #0x18]
+   08025542  vcvt.f32.s32 s1, s0
+   08025546  vldr       s0, [r5, #0xc]
+   0802554A  vcvt.f32.s32 s0, s0
+   0802554E  vdiv.f32   s2, s1, s0
+   08025552  vstr       s2, [r0, #0x10]
+   08025556  vldr       s0, [r0, #0x10]
+   0802555A  vmov.f32   s1, #5.000000e-01
+   0802555E  vsub.f32   s0, s0, s1
+   08025562  vcvt.s32.f32 s0, s0
+   08025566  vstr       s0, [r0, #0x14]
+   080255CC  bl         #0x8010222
+   080255FC  blx        r2
+   08025638  ldr        r3, [pc, #0x1d0]
+
+########## "third addend" globals: literal pool entries and their loaders
+-- 3150 global 0x20003DB0  pool entries: 08024BB0 08025B88 08025DFC
+   loaders found: 79
+   @08024AF0 -> literal 08024BB0 (r1):
+        08024AF0  ldr        r1, [pc, #0xbc]
+        08024AF2  str        r0, [r1, #0x18]
+        08024AF4  ldr        r0, [sp, #0x14]
+        08024AF6  ldr        r0, [r0, #0x10]
+        08024AF8  ldr.w      r1, [r5, #0xa8]
+        08024AFC  add        r0, r1
+   @08024AFE -> literal 08024BB0 (r1):
+        08024AFE  ldr        r1, [pc, #0xb0]
+        08024B00  ldr        r1, [r1, #0x18]
+        08024B02  add        r1, r0
+        08024B04  str.w      r1, [sb, #0x234]
+        08024B08  ldr.w      r0, [sb, #0x234]
+   @08024B1A -> literal 08024BB0 (r1):
+        08024B1A  ldr        r1, [pc, #0x94]
+        08024B1C  str        r0, [r1, #4]
+        08024B1E  ldr.w      r0, [sb, #0x234]
+        08024B22  ldr        r1, [r4, #0xc]
+        08024B24  sdiv       r2, r0, r1
+   @08024B2C -> literal 08024BB0 (r1):
+        08024B2C  ldr        r1, [pc, #0x80]
+        08024B2E  str        r0, [r1]
+        08024B30  b          #0x8024b56
+        08024B32  ldr.w      r0, [sb, #0x234]
+        08024B36  ldr        r1, [r4, #0xc]
+   @08024B3E -> literal 08024BB0 (r1):
+        08024B3E  ldr        r1, [pc, #0x70]
+        08024B40  str        r0, [r1, #4]
+        08024B42  ldr.w      r0, [sb, #0x234]
+        08024B46  ldr        r1, [r4, #0xc]
+        08024B48  sdiv       r2, r0, r1
+   @08024B52 -> literal 08024BB0 (r1):
+        08024B52  ldr        r1, [pc, #0x5c]
+        08024B54  str        r0, [r1]
+        08024B56  ldr.w      r1, [sb, #0x234]
+        08024B5A  ldr        r0, [pc, #0x58]
+        08024B5C  ldr        r2, [r0, #8]
+        08024B5E  mov        r0, r8
+   @080257D4 -> literal 08025B88 (r5):
+        080257D4  ldr        r5, [pc, #0x3b0]
+        080257D6  ldr        r5, [r5]
+        080257D8  sdiv       r6, r5, r3
+        080257DC  mls        r3, r3, r6, r5
+        080257E0  ldr        r5, [pc, #0x3a4]
+   @080257E0 -> literal 08025B88 (r5):
+        080257E0  ldr        r5, [pc, #0x3a4]
+        080257E2  str        r3, [r5, #8]
+        080257E4  movs       r3, #0
+        080257E6  str        r3, [r5, #0x10]
+        080257E8  b          #0x802580e
+        080257EA  ldrh       r3, [r1, #0x22]
+        080257EC  cmp        r3, #3
+   @080257FA -> literal 08025B88 (r5):
+        080257FA  ldr        r5, [pc, #0x38c]
+        080257FC  ldr        r5, [r5]
+        080257FE  sdiv       r6, r5, r3
+        08025802  mls        r3, r3, r6, r5
+        08025806  ldr        r5, [pc, #0x380]
+   @08025806 -> literal 08025B88 (r5):
+        08025806  ldr        r5, [pc, #0x380]
+        08025808  str        r3, [r5, #0xc]
+        0802580A  movs       r3, #1
+        0802580C  str        r3, [r5, #0x10]
+        0802580E  b          #0x8025bf8
+        08025810  ldrh       r3, [r1, #0x22]
+        08025812  cmp        r3, #1
+   @08025820 -> literal 08025B88 (r5):
+        08025820  ldr        r5, [pc, #0x364]
+        08025822  ldr        r5, [r5]
+        08025824  sdiv       r6, r5, r3
+        08025828  mls        r3, r3, r6, r5
+        0802582C  ldr        r5, [pc, #0x358]
+   @0802582C -> literal 08025B88 (r5):
+        0802582C  ldr        r5, [pc, #0x358]
+        0802582E  str        r3, [r5, #8]
+        08025830  movs       r3, #0xcc
+        08025832  ldr        r3, [r3, r0]
+        08025834  ldr        r5, [r0, #0xc]
+        08025836  sdiv       r3, r5, r3
+   @0802583A -> literal 08025B88 (r5):
+        0802583A  ldr        r5, [pc, #0x34c]
+        0802583C  ldr        r5, [r5, #8]
+        0802583E  add        r5, r3
+        08025840  movs       r3, #0xcc
+        08025842  ldr        r3, [r3, r0]
+        08025844  ldr        r6, [r0, #0xc]
+   @08025864 -> literal 08025B88 (r5):
+        08025864  ldr        r5, [pc, #0x320]
+        08025866  str        r3, [r5, #8]
+        08025868  movs       r3, #0
+        0802586A  str        r3, [r5, #0x10]
+        0802586C  b          #0x80258ce
+        0802586E  ldrh       r3, [r1, #0x22]
+        08025870  cmp        r3, #2
+   @0802587E -> literal 08025B88 (r5):
+        0802587E  ldr        r5, [pc, #0x308]
+        08025880  ldr        r5, [r5]
+        08025882  sdiv       r6, r5, r3
+        08025886  mls        r3, r3, r6, r5
+        0802588A  ldr        r5, [pc, #0x2fc]
+   @0802588A -> literal 08025B88 (r5):
+        0802588A  ldr        r5, [pc, #0x2fc]
+        0802588C  str        r3, [r5, #0xc]
+        0802588E  movs       r3, #0xcc
+        08025890  ldr        r3, [r3, r0]
+        08025892  ldr        r5, [r0, #0xc]
+        08025894  sdiv       r3, r5, r3
+   @08025898 -> literal 08025B88 (r5):
+        08025898  ldr        r5, [pc, #0x2ec]
+        0802589A  ldr        r5, [r5, #0xc]
+        0802589C  add        r5, r3
+        0802589E  movs       r3, #0xcc
+        080258A0  ldr        r3, [r3, r0]
+        080258A2  ldr        r6, [r0, #0xc]
+   @080258C6 -> literal 08025B88 (r5):
+        080258C6  ldr        r5, [pc, #0x2c0]
+        080258C8  str        r3, [r5, #0xc]
+        080258CA  movs       r3, #1
+        080258CC  str        r3, [r5, #0x10]
+        080258CE  b          #0x8025bf8
+        080258D0  ldrh       r3, [r1, #0x22]
+        080258D2  cmp        r3, #3
+   @080258E0 -> literal 08025B88 (r5):
+        080258E0  ldr        r5, [pc, #0x2a4]
+        080258E2  ldr        r5, [r5]
+        080258E4  sdiv       r6, r5, r3
+        080258E8  mls        r3, r3, r6, r5
+        080258EC  ldr        r5, [pc, #0x298]
+   @080258EC -> literal 08025B88 (r5):
+        080258EC  ldr        r5, [pc, #0x298]
+        080258EE  str        r3, [r5, #8]
+        080258F0  movs       r3, #0xcc
+        080258F2  ldr        r3, [r3, r0]
+        080258F4  ldr        r5, [r0, #0xc]
+        080258F6  sdiv       r3, r5, r3
+   @080258FA -> literal 08025B88 (r5):
+        080258FA  ldr        r5, [pc, #0x28c]
+        080258FC  ldr        r5, [r5, #8]
+        080258FE  add        r5, r3
+        08025900  movs       r3, #0xcc
+        08025902  ldr        r3, [r3, r0]
+        08025904  ldr        r6, [r0, #0xc]
+   @08025928 -> literal 08025B88 (r5):
+        08025928  ldr        r5, [pc, #0x25c]
+        0802592A  str        r3, [r5, #8]
+        0802592C  movs       r3, #0
+        0802592E  str        r3, [r5, #0x10]
+        08025930  b          #0x8025992
+        08025932  ldrh       r3, [r1, #0x22]
+        08025934  cmp        r3, #6
+   @08025942 -> literal 08025B88 (r5):
+        08025942  ldr        r5, [pc, #0x244]
+        08025944  ldr        r5, [r5]
+        08025946  sdiv       r6, r5, r3
+        0802594A  mls        r3, r3, r6, r5
+        0802594E  ldr        r5, [pc, #0x238]
+   @0802594E -> literal 08025B88 (r5):
+        0802594E  ldr        r5, [pc, #0x238]
+        08025950  str        r3, [r5, #0xc]
+        08025952  movs       r3, #0xcc
+        08025954  ldr        r3, [r3, r0]
+        08025956  ldr        r5, [r0, #0xc]
+        08025958  sdiv       r3, r5, r3
+   @0802595C -> literal 08025B88 (r5):
+        0802595C  ldr        r5, [pc, #0x228]
+        0802595E  ldr        r5, [r5, #0xc]
+        08025960  add        r5, r3
+        08025962  movs       r3, #0xcc
+        08025964  ldr        r3, [r3, r0]
+        08025966  ldr        r6, [r0, #0xc]
+   @0802598A -> literal 08025B88 (r5):
+        0802598A  ldr        r5, [pc, #0x1fc]
+        0802598C  str        r3, [r5, #0xc]
+        0802598E  movs       r3, #1
+        08025990  str        r3, [r5, #0x10]
+        08025992  b          #0x8025bf8
+        08025994  ldrh       r3, [r1, #0x22]
+        08025996  cmp        r3, #2
+   @080259A4 -> literal 08025B88 (r5):
+        080259A4  ldr        r5, [pc, #0x1e0]
+        080259A6  ldr        r5, [r5]
+        080259A8  sdiv       r6, r5, r3
+        080259AC  mls        r3, r3, r6, r5
+        080259B0  ldr        r5, [pc, #0x1d4]
+   @080259B0 -> literal 08025B88 (r5):
+        080259B0  ldr        r5, [pc, #0x1d4]
+        080259B2  b          #0x80259b8
+        080259B4  b          #0x8025b22
+        080259B6  b          #0x8025a5e
+        080259B8  str        r3, [r5, #8]
+        080259BA  movs       r3, #0xcc
+        080259BC  ldr        r3, [r3, r0]
+   @080259C4 -> literal 08025B88 (r5):
+        080259C4  ldr        r5, [pc, #0x1c0]
+        080259C6  ldr        r5, [r5, #8]
+        080259C8  add        r5, r3
+        080259CA  movs       r3, #0xcc
+        080259CC  ldr        r3, [r3, r0]
+        080259CE  ldr        r6, [r0, #0xc]
+   @080259F2 -> literal 08025B88 (r5):
+        080259F2  ldr        r5, [pc, #0x194]
+        080259F4  str        r3, [r5, #8]
+        080259F6  movs       r3, #0
+        080259F8  str        r3, [r5, #0x10]
+        080259FA  b          #0x8025a5c
+        080259FC  ldrh       r3, [r1, #0x22]
+        080259FE  cmp        r3, #4
+   @08025A0C -> literal 08025B88 (r5):
+        08025A0C  ldr        r5, [pc, #0x178]
+        08025A0E  ldr        r5, [r5]
+        08025A10  sdiv       r6, r5, r3
+        08025A14  mls        r3, r3, r6, r5
+        08025A18  ldr        r5, [pc, #0x16c]
+   @08025A18 -> literal 08025B88 (r5):
+        08025A18  ldr        r5, [pc, #0x16c]
+        08025A1A  str        r3, [r5, #0xc]
+        08025A1C  movs       r3, #0xcc
+        08025A1E  ldr        r3, [r3, r0]
+        08025A20  ldr        r5, [r0, #0xc]
+        08025A22  sdiv       r3, r5, r3
+   @08025A26 -> literal 08025B88 (r5):
+        08025A26  ldr        r5, [pc, #0x160]
+        08025A28  ldr        r5, [r5, #0xc]
+        08025A2A  add        r5, r3
+        08025A2C  movs       r3, #0xcc
+        08025A2E  ldr        r3, [r3, r0]
+        08025A30  ldr        r6, [r0, #0xc]
+   @08025A54 -> literal 08025B88 (r5):
+        08025A54  ldr        r5, [pc, #0x130]
+        08025A56  str        r3, [r5, #0xc]
+        08025A58  movs       r3, #1
+        08025A5A  str        r3, [r5, #0x10]
+        08025A5C  b          #0x8025bf8
+        08025A5E  ldrh       r3, [r1, #0x22]
+        08025A60  cmp        r3, #6
+   @08025A6E -> literal 08025B88 (r5):
+        08025A6E  ldr        r5, [pc, #0x118]
+        08025A70  ldr        r5, [r5]
+        08025A72  sdiv       r6, r5, r3
+        08025A76  mls        r3, r3, r6, r5
+        08025A7A  ldr        r5, [pc, #0x10c]
+   @08025A7A -> literal 08025B88 (r5):
+        08025A7A  ldr        r5, [pc, #0x10c]
+        08025A7C  str        r3, [r5, #8]
+        08025A7E  movs       r3, #0xcc
+        08025A80  ldr        r3, [r3, r0]
+        08025A82  ldr        r5, [r0, #0xc]
+        08025A84  sdiv       r3, r5, r3
+   @08025A88 -> literal 08025B88 (r5):
+        08025A88  ldr        r5, [pc, #0xfc]
+        08025A8A  ldr        r5, [r5, #8]
+        08025A8C  add        r5, r3
+        08025A8E  movs       r3, #0xcc
+        08025A90  ldr        r3, [r3, r0]
+        08025A92  ldr        r6, [r0, #0xc]
+   @08025AB6 -> literal 08025B88 (r5):
+        08025AB6  ldr        r5, [pc, #0xd0]
+        08025AB8  str        r3, [r5, #8]
+        08025ABA  movs       r3, #0
+        08025ABC  str        r3, [r5, #0x10]
+        08025ABE  b          #0x8025b20
+        08025AC0  ldrh       r3, [r1, #0x22]
+        08025AC2  cmp        r3, #5
+   @08025AD0 -> literal 08025B88 (r5):
+        08025AD0  ldr        r5, [pc, #0xb4]
+        08025AD2  ldr        r5, [r5]
+        08025AD4  sdiv       r6, r5, r3
+        08025AD8  mls        r3, r3, r6, r5
+        08025ADC  ldr        r5, [pc, #0xa8]
+   @08025ADC -> literal 08025B88 (r5):
+        08025ADC  ldr        r5, [pc, #0xa8]
+        08025ADE  str        r3, [r5, #0xc]
+        08025AE0  movs       r3, #0xcc
+        08025AE2  ldr        r3, [r3, r0]
+        08025AE4  ldr        r5, [r0, #0xc]
+        08025AE6  sdiv       r3, r5, r3
+   @08025AEA -> literal 08025B88 (r5):
+        08025AEA  ldr        r5, [pc, #0x9c]
+        08025AEC  ldr        r5, [r5, #0xc]
+        08025AEE  add        r5, r3
+        08025AF0  movs       r3, #0xcc
+        08025AF2  ldr        r3, [r3, r0]
+        08025AF4  ldr        r6, [r0, #0xc]
+   @08025B18 -> literal 08025B88 (r5):
+        08025B18  ldr        r5, [pc, #0x6c]
+        08025B1A  str        r3, [r5, #0xc]
+        08025B1C  movs       r3, #1
+        08025B1E  str        r3, [r5, #0x10]
+        08025B20  b          #0x8025bf8
+        08025B22  ldrh       r3, [r1, #0x22]
+        08025B24  cmp        r3, #4
+   @08025B32 -> literal 08025B88 (r5):
+        08025B32  ldr        r5, [pc, #0x54]
+        08025B34  ldr        r5, [r5]
+        08025B36  sdiv       r6, r5, r3
+        08025B3A  mls        r3, r3, r6, r5
+        08025B3E  ldr        r5, [pc, #0x48]
+   @08025B3E -> literal 08025B88 (r5):
+        08025B3E  ldr        r5, [pc, #0x48]
+        08025B40  str        r3, [r5, #8]
+        08025B42  movs       r3, #0xcc
+        08025B44  ldr        r3, [r3, r0]
+        08025B46  ldr        r5, [r0, #0xc]
+        08025B48  sdiv       r3, r5, r3
+   @08025B4C -> literal 08025B88 (r5):
+        08025B4C  ldr        r5, [pc, #0x38]
+        08025B4E  ldr        r5, [r5, #8]
+        08025B50  add        r5, r3
+        08025B52  movs       r3, #0xcc
+        08025B54  ldr        r3, [r3, r0]
+        08025B56  ldr        r6, [r0, #0xc]
+   @08025B8C -> literal 08025DFC (r5):
+        08025B8C  ldr        r5, [pc, #0x26c]
+        08025B8E  str        r3, [r5, #8]
+        08025B90  movs       r3, #0
+        08025B92  str        r3, [r5, #0x10]
+        08025B94  b          #0x8025bf6
+        08025B96  ldrh       r3, [r1, #0x22]
+        08025B98  cmp        r3, #1
+   @08025BA6 -> literal 08025DFC (r5):
+        08025BA6  ldr        r5, [pc, #0x254]
+        08025BA8  ldr        r5, [r5]
+        08025BAA  sdiv       r6, r5, r3
+        08025BAE  mls        r3, r3, r6, r5
+        08025BB2  ldr        r5, [pc, #0x248]
+   @08025BB2 -> literal 08025DFC (r5):
+        08025BB2  ldr        r5, [pc, #0x248]
+        08025BB4  str        r3, [r5, #0xc]
+        08025BB6  movs       r3, #0xcc
+        08025BB8  ldr        r3, [r3, r0]
+        08025BBA  ldr        r5, [r0, #0xc]
+        08025BBC  sdiv       r3, r5, r3
+   @08025BC0 -> literal 08025DFC (r5):
+        08025BC0  ldr        r5, [pc, #0x238]
+        08025BC2  ldr        r5, [r5, #0xc]
+        08025BC4  add        r5, r3
+        08025BC6  movs       r3, #0xcc
+        08025BC8  ldr        r3, [r3, r0]
+        08025BCA  ldr        r6, [r0, #0xc]
+   @08025BEE -> literal 08025DFC (r5):
+        08025BEE  ldr        r5, [pc, #0x20c]
+        08025BF0  str        r3, [r5, #0xc]
+        08025BF2  movs       r3, #1
+        08025BF4  str        r3, [r5, #0x10]
+        08025BF6  nop        
+        08025BF8  nop        
+        08025BFA  ldr        r3, [pc, #0x204]
+   @08025C02 -> literal 08025DFC (r5):
+        08025C02  ldr        r5, [pc, #0x1f8]
+        08025C04  str        r3, [r5, #0x14]
+        08025C06  movs       r3, #0
+        08025C08  str        r3, [r5, #0x18]
+        08025C0A  mov        r3, r5
+        08025C0C  ldr        r3, [r3, #0x10]
+        08025C0E  cbnz       r3, #0x8025c50
+   @08025C28 -> literal 08025DFC (r3):
+        08025C28  ldr        r3, [pc, #0x1d0]
+        08025C2A  ldr        r3, [r3, #8]
+        08025C2C  rsb        r5, r2, r2, lsl #5
+        08025C30  add.w      r5, r5, r2, lsl #6
+   @08025C50 -> literal 08025DFC (r3):
+        08025C50  ldr        r3, [pc, #0x1a8]
+        08025C52  ldr        r3, [r3, #0x10]
+        08025C54  cmp        r3, #1
+        08025C56  bne        #0x8025c96
+        08025C58  ldr        r5, [pc, #0x1a0]
+        08025C5A  str        r3, [r5, #0x20]
+        08025C5C  movs       r3, #0x63
+   @08025C58 -> literal 08025DFC (r5):
+        08025C58  ldr        r5, [pc, #0x1a0]
+        08025C5A  str        r3, [r5, #0x20]
+        08025C5C  movs       r3, #0x63
+        08025C5E  rsb        r5, r2, r2, lsl #5
+        08025C62  add.w      r5, r5, r2, lsl #6
+   @08025C70 -> literal 08025DFC (r3):
+        08025C70  ldr        r3, [pc, #0x188]
+        08025C72  ldr        r3, [r3, #0xc]
+        08025C74  rsb        r5, r2, r2, lsl #5
+        08025C78  add.w      r5, r5, r2, lsl #6
+   @08025C96 -> literal 08025DFC (r3):
+        08025C96  ldr        r3, [pc, #0x164]
+        08025C98  ldr        r3, [r3, #0x1c]
+        08025C9A  cmp        r3, #1
+        08025C9C  bne        #0x8025cb2
+        08025C9E  ldr        r3, [pc, #0x15c]
+        08025CA0  ldr        r3, [r3, #0x20]
+        08025CA2  cmp        r3, #1
+   @08025C9E -> literal 08025DFC (r3):
+        08025C9E  ldr        r3, [pc, #0x15c]
+        08025CA0  ldr        r3, [r3, #0x20]
+        08025CA2  cmp        r3, #1
+        08025CA4  bne        #0x8025cb2
+        08025CA6  movs       r3, #0
+        08025CA8  ldr        r5, [pc, #0x154]
+        08025CAA  strh       r3, [r5]
+   @08025CAC -> literal 08025DFC (r5):
+        08025CAC  ldr        r5, [pc, #0x14c]
+        08025CAE  str        r3, [r5, #0x1c]
+        08025CB0  str        r3, [r5, #0x20]
+        08025CB2  b          #0x8025df4
+        08025CB4  ldr        r3, [pc, #0x144]
+        08025CB6  ldr        r3, [r3, #0x14]
+        08025CB8  cmp        r3, #0
+   @08025CB4 -> literal 08025DFC (r3):
+        08025CB4  ldr        r3, [pc, #0x144]
+        08025CB6  ldr        r3, [r3, #0x14]
+        08025CB8  cmp        r3, #0
+        08025CBA  bne        #0x8025d58
+        08025CBC  ldr        r3, [pc, #0x13c]
+        08025CBE  ldr        r3, [r3, #0x10]
+        08025CC0  cbnz       r3, #0x8025d40
+   @08025CBC -> literal 08025DFC (r3):
+        08025CBC  ldr        r3, [pc, #0x13c]
+        08025CBE  ldr        r3, [r3, #0x10]
+        08025CC0  cbnz       r3, #0x8025d40
+        08025CC2  rsb        r3, r2, r2, lsl #5
+        08025CC6  add.w      r3, r3, r2, lsl #6
+   @08025CE8 -> literal 08025DFC (r5):
+        08025CE8  ldr        r5, [pc, #0x110]
+        08025CEA  ldr        r5, [r5, #8]
+        08025CEC  subs       r3, r3, r5
+        08025CEE  ldr        r5, [pc, #0x10c]
+        08025CF0  str        r3, [r5, #0x18]
+        08025CF2  movs       r5, #0xcc
+        08025CF4  ldr        r5, [r5, r0]
+   @08025CEE -> literal 08025DFC (r5):
+        08025CEE  ldr        r5, [pc, #0x10c]
+        08025CF0  str        r3, [r5, #0x18]
+        08025CF2  movs       r5, #0xcc
+        08025CF4  ldr        r5, [r5, r0]
+        08025CF6  ldr        r6, [r0, #0xc]
+        08025CF8  sdiv       r3, r6, r5
+   @08025CFC -> literal 08025DFC (r5):
+        08025CFC  ldr        r5, [pc, #0xfc]
+        08025CFE  ldr        r5, [r5, #0x18]
+        08025D00  add.w      r6, r3, r3, lsr #31
+        08025D04  cmp.w      r5, r6, asr #1
+        08025D08  ble        #0x8025d20
+   @08025D14 -> literal 08025DFC (r5):
+        08025D14  ldr        r5, [pc, #0xe4]
+        08025D16  ldr        r5, [r5, #0x18]
+        08025D18  subs       r3, r5, r3
+        08025D1A  ldr        r5, [pc, #0xe0]
+        08025D1C  str        r3, [r5, #0x18]
+        08025D1E  b          #0x8025d52
+        08025D20  movs       r5, #0xcc
+   @08025D1A -> literal 08025DFC (r5):
+        08025D1A  ldr        r5, [pc, #0xe0]
+        08025D1C  str        r3, [r5, #0x18]
+        08025D1E  b          #0x8025d52
+        08025D20  movs       r5, #0xcc
+        08025D22  ldr        r5, [r5, r0]
+        08025D24  ldr        r6, [r0, #0xc]
+   @08025D2C -> literal 08025DFC (r5):
+        08025D2C  ldr        r5, [pc, #0xcc]
+        08025D2E  ldr        r5, [r5, #0x18]
+        08025D30  add.w      r6, r3, r3, lsr #31
+        08025D34  cmp.w      r5, r6, asr #1
+        08025D38  bge        #0x8025d52
+   @08025D48 -> literal 08025DFC (r5):
+        08025D48  ldr        r5, [pc, #0xb0]
+        08025D4A  ldr        r5, [r5, #0x18]
+        08025D4C  add        r3, r5
+        08025D4E  ldr        r5, [pc, #0xac]
+        08025D50  str        r3, [r5, #0x18]
+        08025D52  movs       r3, #1
+        08025D54  ldr        r5, [pc, #0xa4]
+   @08025D4E -> literal 08025DFC (r5):
+        08025D4E  ldr        r5, [pc, #0xac]
+        08025D50  str        r3, [r5, #0x18]
+        08025D52  movs       r3, #1
+        08025D54  ldr        r5, [pc, #0xa4]
+        08025D56  str        r3, [r5, #0x14]
+        08025D58  b          #0x8025df4
+        08025D5A  ldr        r3, [pc, #0xa0]
+   @08025D54 -> literal 08025DFC (r5):
+        08025D54  ldr        r5, [pc, #0xa4]
+        08025D56  str        r3, [r5, #0x14]
+        08025D58  b          #0x8025df4
+        08025D5A  ldr        r3, [pc, #0xa0]
+        08025D5C  ldr        r3, [r3, #0x10]
+        08025D5E  cmp        r3, #1
+        08025D60  bne        #0x8025df4
+   @08025D5A -> literal 08025DFC (r3):
+        08025D5A  ldr        r3, [pc, #0xa0]
+        08025D5C  ldr        r3, [r3, #0x10]
+        08025D5E  cmp        r3, #1
+        08025D60  bne        #0x8025df4
+        08025D62  rsb        r3, r2, r2, lsl #5
+   @08025D88 -> literal 08025DFC (r5):
+        08025D88  ldr        r5, [pc, #0x70]
+        08025D8A  ldr        r5, [r5, #0xc]
+        08025D8C  subs       r3, r3, r5
+        08025D8E  ldr        r5, [pc, #0x6c]
+        08025D90  str        r3, [r5, #0x18]
+        08025D92  movs       r5, #0xcc
+        08025D94  ldr        r5, [r5, r0]
+   @08025D8E -> literal 08025DFC (r5):
+        08025D8E  ldr        r5, [pc, #0x6c]
+        08025D90  str        r3, [r5, #0x18]
+        08025D92  movs       r5, #0xcc
+        08025D94  ldr        r5, [r5, r0]
+        08025D96  ldr        r6, [r0, #0xc]
+        08025D98  sdiv       r3, r6, r5
+   @08025D9C -> literal 08025DFC (r5):
+        08025D9C  ldr        r5, [pc, #0x5c]
+        08025D9E  ldr        r5, [r5, #0x18]
+        08025DA0  add.w      r6, r3, r3, lsr #31
+        08025DA4  cmp.w      r5, r6, asr #1
+        08025DA8  ble        #0x8025dc0
+   @08025DB4 -> literal 08025DFC (r5):
+        08025DB4  ldr        r5, [pc, #0x44]
+        08025DB6  ldr        r5, [r5, #0x18]
+        08025DB8  subs       r3, r5, r3
+        08025DBA  ldr        r5, [pc, #0x40]
+        08025DBC  str        r3, [r5, #0x18]
+        08025DBE  b          #0x8025dee
+        08025DC0  movs       r5, #0xcc
+   @08025DBA -> literal 08025DFC (r5):
+        08025DBA  ldr        r5, [pc, #0x40]
+        08025DBC  str        r3, [r5, #0x18]
+        08025DBE  b          #0x8025dee
+        08025DC0  movs       r5, #0xcc
+        08025DC2  ldr        r5, [r5, r0]
+        08025DC4  ldr        r6, [r0, #0xc]
+   @08025DCC -> literal 08025DFC (r5):
+        08025DCC  ldr        r5, [pc, #0x2c]
+        08025DCE  ldr        r5, [r5, #0x18]
+        08025DD0  add.w      r6, r3, r3, lsr #31
+        08025DD4  cmp.w      r5, r6, asr #1
+        08025DD8  bge        #0x8025dee
+   @08025DE4 -> literal 08025DFC (r5):
+        08025DE4  ldr        r5, [pc, #0x14]
+        08025DE6  ldr        r5, [r5, #0x18]
+        08025DE8  add        r3, r5
+        08025DEA  ldr        r5, [pc, #0x10]
+        08025DEC  str        r3, [r5, #0x18]
+        08025DEE  movs       r3, #1
+        08025DF0  ldr        r5, [pc, #8]
+   @08025DEA -> literal 08025DFC (r5):
+        08025DEA  ldr        r5, [pc, #0x10]
+        08025DEC  str        r3, [r5, #0x18]
+        08025DEE  movs       r3, #1
+        08025DF0  ldr        r5, [pc, #8]
+        08025DF2  str        r3, [r5, #0x14]
+        08025DF4  ldrh       r3, [r1, #0x20]
+        08025DF6  strh       r3, [r1, #0x22]
+   @08025DF0 -> literal 08025DFC (r5):
+        08025DF0  ldr        r5, [pc, #8]
+        08025DF2  str        r3, [r5, #0x14]
+        08025DF4  ldrh       r3, [r1, #0x20]
+        08025DF6  strh       r3, [r1, #0x22]
+        08025DF8  pop        {r4, r5, r6, pc}
+        08025DFA  movs       r0, r0
+        08025DFC  subs       r5, #0xb0
+
+-- 328d8 global 0x20003EF8  pool entries: 0801E478 0801E4D8 0801E520 0801E57C 0801EA68 0801EAE0 0801EB48 0801F7D0 0801F8F0 0801F944 0801F974 0801F9EC 0801FA1C 0801FA4C 0801FA7C 080221DC
+   loaders found: 17
+   @0801E464 -> literal 0801E478 (r3):
+        0801E464  ldr        r3, [pc, #0x10]
+        0801E466  add.w      r2, r3, r2, lsl #2
+        0801E46A  vldr       s2, [r2, #0x2c]
+        0801E46E  vdiv.f32   s0, s1, s2
+   @0801E4C0 -> literal 0801E4D8 (r3):
+        0801E4C0  ldr        r3, [pc, #0x14]
+        0801E4C2  add.w      r2, r3, r2, lsl #2
+        0801E4C6  vldr       s1, [r2, #0x28]
+        0801E4CA  vmov       s0, r1
+   @0801E510 -> literal 0801E520 (r1):
+        0801E510  ldr        r1, [pc, #0xc]
+        0801E512  add.w      r0, r1, r0, lsl #2
+        0801E516  vldr       s1, [r0, #0x30]
+        0801E51A  vmul.f32   s0, s0, s1
+   @0801E552 -> literal 0801E57C (r3):
+        0801E552  ldr        r3, [pc, #0x28]
+        0801E554  add.w      r2, r3, r2, lsl #2
+        0801E558  vldr       s2, [r2, #0x14]
+        0801E55C  vmov       s0, r1
+   @0801EA5A -> literal 0801EA68 (r3):
+        0801EA5A  ldr        r3, [pc, #0xc]
+        0801EA5C  add.w      r0, r3, r0, lsl #2
+        0801EA60  ldr        r0, [r0, #0x24]
+        0801EA62  muls       r0, r1, r0
+        0801EA64  bx         lr
+        0801EA66  movs       r0, r0
+   @0801EAB0 -> literal 0801EAE0 (r3):
+        0801EAB0  ldr        r3, [pc, #0x2c]
+        0801EAB2  add.w      r0, r3, r0, lsl #2
+        0801EAB6  vldr       s2, [r0, #0x14]
+        0801EABA  vmov       s0, r1
+   @0801EB18 -> literal 0801EB48 (r3):
+        0801EB18  ldr        r3, [pc, #0x2c]
+        0801EB1A  add.w      r0, r3, r0, lsl #2
+        0801EB1E  vldr       s2, [r0, #0x14]
+        0801EB22  vmov       s0, r1
+   @0801F7AC -> literal 0801F7D0 (r2):
+        0801F7AC  ldr        r2, [pc, #0x20]
+        0801F7AE  add.w      r0, r2, r0, lsl #2
+        0801F7B2  vldr       s2, [r0, #0x14]
+        0801F7B6  vldr       s3, [pc, #0x1c]
+   @0801F8CC -> literal 0801F8F0 (r3):
+        0801F8CC  ldr        r3, [pc, #0x20]
+        0801F8CE  add.w      r0, r3, r0, lsl #2
+        0801F8D2  vldr       s1, [r0, #0x14]
+        0801F8D6  vldr       s2, [pc, #0x1c]
+   @0801F902 -> literal 0801F944 (r3):
+        0801F902  ldr        r3, [pc, #0x40]
+        0801F904  add.w      r0, r3, r0, lsl #2
+        0801F908  vldr       s0, [r0, #0x10]
+        0801F90C  vcmpe.f32  s0, #0
+   @0801F922 -> literal 0801F944 (r3):
+        0801F922  ldr        r3, [pc, #0x20]
+        0801F924  add.w      r0, r3, r0, lsl #2
+        0801F928  vldr       s1, [r0, #0x10]
+        0801F92C  vmov       s0, r1
+   @0801F952 -> literal 0801F974 (r3):
+        0801F952  ldr        r3, [pc, #0x20]
+        0801F954  add.w      r0, r3, r0, lsl #2
+        0801F958  vldr       s1, [r0, #0x10]
+        0801F95C  vmov       s0, r1
+   @0801F9CA -> literal 0801F9EC (r3):
+        0801F9CA  ldr        r3, [pc, #0x20]
+        0801F9CC  add.w      r0, r3, r0, lsl #2
+        0801F9D0  vldr       s1, [r0, #0x1c]
+        0801F9D4  vmov       s0, r1
+   @0801F9FA -> literal 0801FA1C (r3):
+        0801F9FA  ldr        r3, [pc, #0x20]
+        0801F9FC  add.w      r0, r3, r0, lsl #2
+        0801FA00  vldr       s1, [r0, #0x10]
+        0801FA04  vmov       s0, r1
+   @0801FA2A -> literal 0801FA4C (r3):
+        0801FA2A  ldr        r3, [pc, #0x20]
+        0801FA2C  add.w      r0, r3, r0, lsl #2
+        0801FA30  vldr       s1, [r0, #0x10]
+        0801FA34  vmov       s0, r1
+   @0801FA5A -> literal 0801FA7C (r3):
+        0801FA5A  ldr        r3, [pc, #0x20]
+        0801FA5C  add.w      r0, r3, r0, lsl #2
+        0801FA60  vldr       s1, [r0, #0x1c]
+        0801FA64  vmov       s0, r1
+   @08022078 -> literal 080221DC (r5):
+        08022078  ldr        r5, [pc, #0x160]
+        0802207A  add.w      r0, r5, r4, lsl #2
+        0802207E  movw       r4, #0x329
+        08022082  muls       r4, r3, r4
+        08022084  ldr        r5, [pc, #0x158]
+
+POSITIVE CONTROL (3150 loader of 0x20003DB0 must include 08024AFE): True

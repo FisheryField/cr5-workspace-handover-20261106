@@ -1,0 +1,41 @@
+=== baseline: log line count before starting ===
+12864
+
+=== ports BEFORE ===
+45
+
+=== starting mToolServer ===
+started, pid=4412
+
+=== is it running? ===
+ 4412 root       0:00 ./mToolServer
+
+=== ports AFTER (new ones) ===
+0.0.0.0:22002
+--- full listen list (for reference) ---
+tcp        0      0 0.0.0.0:22002           0.0.0.0:*               LISTEN      4412/mToolServer
+
+=== stdout of mToolServer ===
+
+=== new log lines since start ===
+[2026-09-23 15:43:27][INFO][dobot_info.cpp@exitUpdateThd()#140]end update pthread.
+[2026-09-23 15:43:35][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-23 15:43:46][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-23 15:43:56][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-23 15:45:29][INFO][main.cpp@main()#20]This is mTool server, version is 2.0.0sv2023d1128h2149.
+[2026-09-23 15:45:29][INFO][main.cpp@main()#26]get arm type is : CR
+[2026-09-23 15:45:29][INFO][main.cpp@main()#27]get arm name is : CR5
+[2026-09-23 15:45:29][INFO][http_server.cpp@start()#109]<--- enter this function.
+[2026-09-23 15:45:31][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-23 15:45:31][INFO][http_server.cpp@protocolFunc_getVersion()#1216]get version is {"toolVersion":"2.0.0sv2023d1128h2149","pathInfo":{"slave":"/tmp/tUpdate/slave/","control":"/tmp/tUpdate/control/","kernel":"/tmp/tUpdate/kernel/"}}.
+[2026-09-23 16:18:08][INFO][main.cpp@main()#20]This is mTool server, version is 2.0.0sv2023d1128h2149.
+[2026-09-23 16:18:08][INFO][main.cpp@main()#26]get arm type is : CR
+[2026-09-23 16:18:08][INFO][main.cpp@main()#27]get arm name is : CR5
+[2026-09-23 16:18:08][INFO][http_server.cpp@start()#109]<--- enter this function.
+[2026-09-23 16:18:10][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-23 16:18:10][INFO][http_server.cpp@protocolFunc_getVersion()#1216]get version is {"toolVersion":"2.0.0sv2023d1128h2149","pathInfo":{"slave":"/tmp/tUpdate/slave/","control":"/tmp/tUpdate/control/","kernel":"/tmp/tUpdate/kernel/"}}.
+[2026-09-24 14:55:28][INFO][main.cpp@main()#20]This is mTool server, version is 2.0.0sv2023d1128h2149.
+[2026-09-24 14:55:28][INFO][main.cpp@main()#26]get arm type is : CR
+[2026-09-24 14:55:28][INFO][main.cpp@main()#27]get arm name is : CR5
+[2026-09-24 14:55:28][INFO][http_server.cpp@start()#109]<--- enter this function.
+=== DONE ===

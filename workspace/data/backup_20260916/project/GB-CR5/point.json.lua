@@ -1,0 +1,10 @@
+P1={armOrientation={1,1,1,1},coordinate={-650.0,-117.0,345.0,-167.0,0.0,82.0},tool=1,user=0}
+P2={armOrientation={1,1,1,1},coordinate={-470.0,63.0,525.0,-167.0,0.0,82.0},tool=1,user=0}
+P3={armOrientation={1,1,1,-1},coordinate={-470.0,-297.0,525.0,-167.0,0.0,82.0},tool=1,user=0}
+P4={armOrientation={1,1,1,1},coordinate={-830.0,-297.0,165.0,-167.0,0.0,82.0},tool=1,user=0}
+P5={armOrientation={1,1,1,1},coordinate={-830.0,63.0,165.0,-167.0,0.0,82.0},tool=1,user=0}
+P6={armOrientation={1,1,1,1},coordinate={-635.0,-102.0,330.0,-167.5,-5.0,76.5},tool=1,user=0}
+P7={armOrientation={1,1,1,-1},coordinate={-455.0,78.0,540.0,-172.5,-10.0,91.0},tool=1,user=0}
+P8={armOrientation={1,1,1,1},coordinate={-455.0,-312.0,540.0,-173.5,-8.5,75.0},tool=1,user=0}
+P9={armOrientation={1,1,1,1},coordinate={-845.0,-312.0,150.0,-160.0,3.5,71.0},tool=1,user=0}
+P10={armOrientation={1,1,1,-1},coordinate={-845.0,78.0,150.0,-160.0,10.0,91.5},tool=1,user=0}

@@ -1,0 +1,22 @@
+{
+  "version": "v15.22-20261104",
+  "macro": "TCP真实运动_P2P版_16稳定版",
+  "backup_macro": "TCP真实运动_P2P版_16稳定版_替换前_20261104_095940",
+  "trajectory": "D:\\mydata\\working things\\dobot_arm\\RoboDK files 2\\连续轨迹17.json",
+  "trajectory_sha256": "b8f95ddd70b7c47c133c7926fa2554e9579e128f88272c97a1442c8b7a38dddf",
+  "source_sha256": "39723b1d9d9901433cceb34b6fc55e89d4f0b32310755cbfb592d478fc4f20d6",
+  "precheck": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\traj17_v1522_20261104_095649\\result.json",
+  "extra_y_points_2_to_5_mm": 30,
+  "p4_j6_from": -180.61087626609094,
+  "p4_j6_to": -0.6108762660909406,
+  "controller_joints": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "hardware_motion_sent": false,
+  "station_file_saved": false
+}

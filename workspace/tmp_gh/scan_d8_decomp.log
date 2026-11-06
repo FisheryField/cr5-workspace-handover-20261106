@@ -1,0 +1,85 @@
+INFO  Using log config file: jar:file:/D:/software/disassembly/ghidra/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\FisheryField\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\FisheryField\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (757 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (2099 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    D:\mydata\workspace\tools
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\software\disassembly\ghproj_servo_a\servo328d8 (HeadlessAnalyzer)  
+INFO  Opening project: D:\software\disassembly\ghproj_servo_a\servo328d8 (HeadlessProject)  
+INFO  REPORT: Processing project file: /v328d8.elf (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: zf_scan.java 'decomp' '0802BE80'  (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\mydata\workspace\tools\zf_scan.java (HeadlessAnalyzer)  
+INFO  zf_scan.java> # program=v328d8.elf  mode=decomp (GhidraScript)  
+INFO  zf_scan.java>  (GhidraScript)  
+INFO  zf_scan.java> ================================================================================ (GhidraScript)  
+INFO  zf_scan.java> ## 0802be80 -> FUN_0802be80 @0802be80 (GhidraScript)  
+INFO  zf_scan.java> ================================================================================ (GhidraScript)  
+WARN  Decompiling 0802be80, pcode error at 0802b858: Unable to resolve constructor at 0802b858 (DecompileCallback)  
+WARN  Decompiling 0802be80, pcode error at 080ac1c0: Could not follow disassembly flow into non-existing memory at 080ac1c0 (DecompileCallback)  
+INFO  zf_scan.java> 
+/* WARNING: Control flow encountered bad instruction data */
+/* WARNING: Removing unreachable block (ram,0x0802b7ca) */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_0802be80(void)
+
+{
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  int unaff_r5;
+  int unaff_r6;
+  int unaff_r8;
+  
+  uRam00000000 = 0;
+  uRam00000010 = 0x21;
+  uRam00000020 = 0x84;
+  iRam00000021 = iRam0802bf20;
+  uRam00000025 = 0xd4;
+  iRam00000029 = unaff_r5;
+  *(int *)((iRam0802bf20 >> 8) + iRam0802bf20) = iRam0802bf20 >> 8;
+  *(int *)(unaff_r8 + 0x24) = unaff_r8;
+  iVar1 = _DAT_0802bf9c;
+  uVar3 = (uint)*(ushort *)(unaff_r5 + 2);
+  iVar2 = *(int *)(unaff_r6 + 0x7c);
+  *(undefined1 *)(uVar3 + 0x10) = 0;
+  *(int *)(iVar1 + 0x24) = iVar2 << 5;
+  *(undefined2 *)(uVar3 + 8) = 0;
+  *(undefined2 *)(uVar3 * 0x4000 + 0x52) = 0x94;
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+ (GhidraScript)  
+INFO  zf_scan.java> [zf_scan] wrote D:\mydata\workspace\tmp_gh\scan_d8_decomp.txt (6 lines) (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /v328d8.elf (HeadlessAnalyzer)  

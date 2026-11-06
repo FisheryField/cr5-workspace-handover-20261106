@@ -1,0 +1,51 @@
+=== locks dir ===
+total 392
+drwxr-xr-x    3 root     root          4096 Sep 18 15:28 .
+drwxr-xr-x    5 root     root          4096 Sep 18 15:27 ..
+-rw-------    1 root     root         16384 Sep 18 15:27 account_policy.tdb
+-rw-r--r--    1 root     root         40200 Sep 18 15:27 brlock.tdb
+-rw-r--r--    1 root     root           144 Sep 18 15:28 browse.dat
+-rw-r--r--    1 root     root        114688 Sep 18 15:31 connections.tdb
+-rw-r--r--    1 root     root           696 Sep 18 15:27 gencache.tdb
+-rw-r--r--    1 root     root           696 Sep 18 15:27 gencache_notrans.tdb
+-rw-------    1 root     root           696 Sep 18 15:27 group_mapping.tdb
+-rw-r--r--    1 root     root         77824 Sep 18 15:29 locking.tdb
+-rw-------    1 root     root           696 Sep 18 15:38 messages.tdb
+-rw-------    1 root     root           696 Sep 18 15:27 mutex.tdb
+-rw-r--r--    1 root     root             4 Sep 18 15:27 nmbd-smb.conf.pid
+-rw-r--r--    1 root     root           696 Sep 18 15:27 notify.tdb
+-rw-r--r--    1 root     root           696 Sep 18 15:27 notify_onelevel.tdb
+-rw-r--r--    1 root     root         12288 Sep 18 15:27 printer_list.tdb
+drwxr-xr-x    2 root     root          4096 Sep 18 15:27 printing
+-rw-------    1 root     root         49152 Sep 18 15:27 registry.tdb
+-rw-r--r--    1 root     root          8192 Sep 18 15:38 serverid.tdb
+-rw-r--r--    1 root     root           696 Sep 18 15:27 sessionid.tdb
+-rw-------    1 root     root         16384 Sep 18 15:27 share_info.tdb
+-rw-r--r--    1 root     root             4 Sep 18 15:27 smbd-smb.conf.pid
+=== remove stale pid files ===
+=== testparm ===
+sh: testparm: not found
+=== start nmbd ===
+rc=0
+=== start smbd ===
+rc=0
+=== processes ===
+ 1885 root       0:00 /dobot/bin/bin/nmbd -s /dobot/bin/etc/smb.conf -D
+ 1892 root       0:00 /dobot/bin/bin/smbd -s /dobot/bin/etc/smb.conf -D
+ 1894 root       0:00 /dobot/bin/bin/smbd -s /dobot/bin/etc/smb.conf -D
+=== ports ===
+tcp        0      0 0.0.0.0:139             0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:445             0.0.0.0:*               LISTEN      
+=== log tail ===
+[2026/09/18 15:35:29.651683,  0] ../lib/util/charset/codepoints.c:319(get_conv_handle)
+  dos charset 'CP850' unavailable - using ASCII
+[2026/09/18 15:38:40,  0] smbd/server.c:1072(main)
+  smbd version 3.6.25 started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2011
+[2026/09/18 15:38:40.518430,  0] lib/pidfile.c:154(pidfile_create)
+  ERROR: can't open /usr/local/samba/var/locks/smbd-smb.conf.pid: Error was File exists
+[2026/09/18 15:38:52,  0] smbd/server.c:1072(main)
+  smbd version 3.6.25 started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2011
+[2026/09/18 15:38:52.546415,  0] printing/print_standard.c:68(std_pcap_cache_reload)
+  Unable to open printcap file /etc/printcap for read!

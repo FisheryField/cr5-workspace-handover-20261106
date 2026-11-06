@@ -1,0 +1,21 @@
+{
+ "tried": [
+  {
+   "style": 0,
+   "yellow_curve": false
+  },
+  {
+   "style": 1,
+   "yellow_curve": false
+  },
+  {
+   "style": 2,
+   "yellow_curve": false
+  },
+  {
+   "style": 3,
+   "yellow_curve": false
+  }
+ ],
+ "best": null
+}

@@ -1,0 +1,55 @@
+=== controller date ===
+Fri Sep 18 15:15:43 CST 2026
+=== files touched in last 12h ===
+/dobot/userdata/SlaveLog
+/dobot/userdata/CR5_sys_files/project/properties/controlCabType.json
+/dobot/userdata/CR5_sys_files/project/logs/gcontrol/log.2
+/dobot/userdata/CR5_sys_files/project/logs/gcontrol/log.1
+/dobot/userdata/CR5_sys_files/project/logs/gcontrol/log.4
+/dobot/userdata/CR5_sys_files/project/logs/gcontrol/log.5
+/dobot/userdata/CR5_sys_files/project/logs/gcontrol/log
+/dobot/userdata/CR5_sys_files/project/logs/gcontrol/log.3
+/dobot/userdata/CR5_sys_files/project/logs/gcontrol/log.6
+/dobot/userdata/CR5_sys_files/project/logs/codesys/log.2
+/dobot/userdata/CR5_sys_files/project/logs/codesys/log.1
+/dobot/userdata/CR5_sys_files/project/logs/codesys/log.4
+/dobot/userdata/CR5_sys_files/project/logs/codesys/log.5
+/dobot/userdata/CR5_sys_files/project/logs/codesys/log
+/dobot/userdata/CR5_sys_files/project/logs/codesys/log.3
+/dobot/userdata/CR5_sys_files/project/logs/codesys/log.6
+/dobot/userdata/CR5_sys_files/project/redis/stdout
+/dobot/userdata/CR5_sys_files/project/settings/function/remoteControl.json
+/dobot/userdata/CR5_sys_files/project/settings/function/loadParams.json
+/dobot/userdata/CR5_sys_files/project/settings/function/CustomPoint.json
+/dobot/userdata/CR5_sys_files/project/settings/workTime/WorkTimeRec.json
+/dobot/userdata/CR5_sys_files/project/settings/teach/inch.json
+/home/ftp/PlcLogic/Recipe/SlaveInfos.SlaveInfos.txtrecipe
+/home/ftp/PlcLogic/Recipe/SavePos.txt
+/home/ftp/PlcLogic/Application/Application.app
+/home/ftp/PlcLogic/Application/Application.crc
+/home/ftp/.dobotConfig/StartCnt
+/etc/resolv.conf
+=== Recipe dir mtimes ===
+total 24
+drwxrwxr-x    2 1025     1025          4096 Sep 18 09:30 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+-rwxrwxr-x    1 1025     1025           439 Feb 18  1976 SaveAxesValue.AxesValues.txtrecipe
+-rw-r--r--    1 root     root           100 Sep 18 14:53 SavePos.txt
+-rw-r--r--    1 root     root           780 Sep 18 14:55 SlaveInfos.SlaveInfos.txtrecipe
+-rw-r--r--    1 root     root             4 Sep 17 09:47 Update.txt
+=== properties mtimes ===
+=== newest gcontrol log: zero/calib grep ===
+=== gcontrol log tail ===
+] create shm success,key:-385810405;shmid:851994;shm entry:0x74e72000,size:10485760[robotMap::robotMap]  init this memoryenter ModbusRtuSlave_Handler function.create the modbus context success!start create shm.open only shm success.modbus rtu init success!m_cx = 1951401072enterwhile ....can not open file modbus_io_config.json!!!!!!LoadModbusTCPConf err !!!!.[init] bind and listen port:30004 success!befor accept...[init] bind and listen port:30005 success!befor accept...enter StartHttpServer[start_tcp_server] : bind success.[start_tcp_server] : listen success.[StartHttpServer] bind port 22001 success![init] bind and listen port:30006 success!befor accept...[start_tcp_server] : new client conn[16] accepted.----------------------------------------------[start_tcp_server] : client ip=192.168.5.100, port=51297[AppProtocol::fullRead] fd:[16], Select timeout.[AppProtocol::fullRead] fd:[16], Select timeout.[AppProtocol::fullRead] fd:[16], Select timeout.[AppProtocol::fullRead] fd:[16], Select timeout.[AppProtocol::fullRead] fd:[16], Select timeout.[AppProtocol::fullRead] fd:[16], Select timeout.[AppProtocol::fullRead] fd:[16], Select timeout.[AppProtocol::fullRead] fd:[16], Select timeout.=== codesys log tail ===
+fe-operational1789714555: Cmp=IoDrvEtherCAT, Class=1, Error=0, Info=0, pszInfo= Set operational mode1789714556: Cmp=IoDrvEtherCAT, Class=1, Error=0, Info=0, pszInfo= All slaves operational1789714556: Cmp=IoDrvEtherCAT, Class=1, Error=0, Info=0, pszInfo= All slaves done !1789714556: Cmp=IoDrvEtherCAT, Class=1, Error=0, Info=0, pszInfo= InitSlaves successfull[DetectStatesLoop], into ...[TRACE|processProtocolPacket@subProcess/coreSubProcess.cpp,257] try_count: 2, id: 47, diff: 2000 ms, Package timeout...[END] id: 47, recv_flag is true !!! reset .[TRACE|processProtocolPacket@subProcess/coreSubProcess.cpp,257] try_count: 2, id: 26, diff: 2000 ms, Package timeout...[END] id: 26, recv_flag is true !!! reset .start create shm.open only shm success.deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1deal 2deal 1Don't find default gateway = 0=== SavePos / AxesValue now ===
+A1:=LREAL:=GVL.rt_AxisPos[0]:=2.67340099678251e-3F16#AF3439D9AB9A30H-10
+A2:=LREAL:=GVL.rt_AxisPos[1]:=4.30239333748866e-1F16#6E242A3BE77A20H-E
+A3:=LREAL:=GVL.rt_AxisPos[2]:=5.23986595369372e-2F16#D69FFA110BD010H-F
+A4:=LREAL:=GVL.rt_AxisPos[3]:=-1.12282841864866e-2F16#-2DFDB595F03EDEH-F
+A5:=LREAL:=GVL.rt_AxisPos[4]:=-6.2379356591592e-3F16#-198CF31A69067CH-F
+A6:=LREAL:=GVL.rt_AxisPos[5]:=-2.85162772990135e-3F16#-BAE25FD71D7140H-10
+--- SavePos hex ---
+0000000 99 cb ba 5a 2e 17 78 3f e7 6f bf 37 cb 6f a3 3f
+0000016 0f e0 01 5c 1b 40 a2 bf c3 77 7d ea 81 2f 89 bf
+0000032 0f e0 01 5c 1b 40 72 3f d0 5e ee 39 9a bd 7b 3f
+0000048 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

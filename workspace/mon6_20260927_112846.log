@@ -1,0 +1,339 @@
+11:28:46 [MON] v6(paramiko) 输出=D:\mydata\workspace\mon6_20260927_112846.log 时长=2400s
+11:44:06 [LOG] [2026-09-27 11:44:00.019] [15] [info] [CallProcess#191] recv = JointMovJ(0.000000,0.000000,0.000000,0.000000,0.000000,0.000000)
+11:44:06 [LOG] [INFO][algs/inc/PackedCmd.h@PackedCmdPrintf()#208] Command OnPTPCmd queuedCmdIndex:16; cp:0; ptpMode:4-MOVJ_ANGLE   ; StopDI:0;   handtype RDNC: 1,1,-1,0
+11:44:06 [LOG] [INFO][algs/src/common/PreDealDataCalculate.cpp@PreDealDataCalculate()#1345] packedcmd type 2-PackedPTPCmdType; queuedCmdIndex:16
+11:44:06 [LOG] [INFO][algs/src/common/PreDealDataRunning.cpp@PreDealDataRunning()#831] PreDealDataRunning: get new PreDealData packedcmd queuedCmdIndex:16, type : 2-PackedPTPCmdType, motion type : 4-MOVJ_ANGLE   , gPreDealData.transition : 0.000000
+11:44:08 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  0.581915,-0.239295,-3.971976,1.013858,3.197413,-2.615498
+11:44:08 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  0.534502,-0.246131,-3.536018,0.912877,2.841112,-2.328354
+11:44:08 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  8.833986,12.637345,-6.896483,21.875549,18.801673,17.533590
+11:44:15 [LOG] [2026-09-27 11:44:08.943] [15] [info] [CallProcess#191] recv = JointMovJ(-77.933681,-57.346998,-65.452613,122.799611,77.933681,-0.000000)
+11:44:15 [LOG] [INFO][algs/inc/PackedCmd.h@PackedCmdPrintf()#208] Command OnPTPCmd queuedCmdIndex:18; cp:0; ptpMode:4-MOVJ_ANGLE   ; StopDI:0;   handtype RDNC: -1,-1,-1,0
+11:44:15 [LOG] [INFO][algs/src/common/PreDealDataCalculate.cpp@PreDealDataCalculate()#1345] packedcmd type 2-PackedPTPCmdType; queuedCmdIndex:18
+11:44:15 [LOG] [INFO][algs/src/common/PreDealDataRunning.cpp@PreDealDataRunning()#831] PreDealDataRunning: get new PreDealData packedcmd queuedCmdIndex:18, type : 2-PackedPTPCmdType, motion type : 4-MOVJ_ANGLE   , gPreDealData.transition : 0.000000
+11:44:15 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  16.374274,-6.738483,-111.799595,28.543164,89.999318,-73.616229
+11:44:15 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  16.377789,-6.648214,-111.731943,28.568676,90.000936,-73.618156
+11:44:15 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  24.699017,6.112999,-115.188651,49.517803,105.976467,-53.775461
+11:44:18 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -69.445631,-52.792052,-69.624005,114.316202,79.019628,-6.625719
+11:44:18 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -68.752745,-52.249484,-69.886267,113.636830,79.099341,-7.162041
+11:44:18 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -60.413159,-39.560810,-73.360975,134.583462,95.087170,12.662653
+11:44:33 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -40.279024,-29.639061,-33.828346,63.467409,40.279024,0.000000
+11:44:33 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -40.941710,-29.957240,-34.308646,64.526632,40.950800,0.000356
+11:44:33 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -32.643830,-17.294053,-37.789949,85.525841,56.940055,19.844656
+11:49:22 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  10.297357,-4.234479,-70.286632,17.940863,56.580246,-46.282888
+11:49:22 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  10.159102,-4.116146,-69.168013,17.710212,55.725618,-45.591111
+11:49:22 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  18.459121,8.679285,-72.594422,38.645081,71.688139,-25.727742
+11:49:29 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -35.636801,-34.649207,-86.239117,80.525836,83.345087,-33.016692
+11:49:29 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -34.592383,-33.949341,-86.677007,79.496074,83.466965,-33.837058
+11:49:29 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -26.237114,-21.220922,-90.156528,100.426130,99.459607,-14.015037
+11:51:03 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -63.327846,-46.599389,-53.185903,99.785295,63.327846,0.000000
+11:51:03 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -63.988922,-46.882542,-53.663535,100.845141,63.996764,0.000356
+11:51:03 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -55.692646,-34.254465,-57.147511,121.843637,79.988871,19.844656
+11:51:05 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -0.188307,-0.138565,-0.158150,0.296714,0.188307,0.000000
+11:51:05 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -0.275539,-0.208169,-0.237576,0.451092,0.287301,0.000356
+11:51:05 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  8.018955,12.627364,-3.639212,21.453508,16.277269,19.844656
+11:53:03 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -22.678503,-33.823142,19.046545,14.776598,22.678503,0.000000
+11:53:03 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -21.986406,-32.681258,18.486033,14.327112,21.971257,0.000356
+11:53:03 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -13.634702,-19.894737,15.051961,35.284437,37.930926,19.844656
+11:53:05 [LOG] [ERROR][algs/inc/alarms.h@AlarmSysSetBit()#406] index=0x63,isOn=1
+11:53:05 [LOG] [2026-09-27 11:52:58.497] [15] [error] [logServoError#540] servo2 error ID update : 0 -> 29056
+11:53:05 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -68.099071,-100.812120,60.793871,70.771806,92.395296,19.844656
+11:53:05 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.500261,-112.150063,64.334682,49.860889,76.505964,0.000535
+11:53:05 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -68.072097,-100.771890,60.771217,70.754231,92.368321,19.844656
+11:53:05 [LOG] [2026-09-27 11:52:58.535] [15] [info] [monitorServoUptime#490] robot disabled,this enable last 4479 sec ,all enable at this poweron 4491, all 409777
+11:53:05 [LOG] [2026-09-27 11:52:58.543] [15] [error] [logServoError#540] servo2 error ID update : 29056 -> 33921
+11:53:05 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.478517,-112.153271,64.223647,49.827561,76.472457,0.001248
+11:53:05 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.478339,-112.153271,64.223647,49.827561,76.472457,0.001248
+11:53:05 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -76.478517,-112.153271,64.223647,49.827561,76.472457,0.001248
+11:53:58 [LOG] [ERROR][algs/inc/alarms.h@AlarmSysSetBit()#406] index=0x74,isOn=1
+11:53:58 [LOG] [2026-09-27 11:53:51.064] [15] [info] [handleEmergency#184] gPowerDown = true, g_isRobotPowerOn = 0
+11:53:58 [LOG] [2026-09-27 11:53:51.066] [15] [error] [logServoError#540] servo2 error ID update : 33921 -> 0
+11:53:58 [LOG] [ERROR][algs/inc/alarms.h@AlarmSysSetBit()#406] index=0x7e,isOn=1
+11:54:03 [MON] SSH EXC SSH session not active
+11:54:06 [MON] SSH EXC SSH session not active
+11:54:09 [MON] SSH EXC SSH session not active
+11:54:12 [MON] SSH EXC SSH session not active
+11:54:15 [MON] SSH EXC SSH session not active
+11:54:18 [MON] SSH EXC SSH session not active
+11:54:21 [MON] SSH EXC SSH session not active
+11:54:24 [MON] SSH EXC SSH session not active
+11:54:27 [MON] SSH EXC SSH session not active
+11:54:30 [MON] SSH EXC SSH session not active
+11:54:33 [MON] SSH EXC SSH session not active
+11:54:36 [MON] SSH EXC SSH session not active
+11:54:39 [MON] SSH EXC SSH session not active
+11:54:42 [MON] SSH EXC SSH session not active
+11:54:45 [MON] SSH EXC SSH session not active
+11:54:48 [MON] SSH EXC SSH session not active
+11:54:51 [MON] SSH EXC SSH session not active
+11:54:54 [MON] SSH EXC SSH session not active
+11:54:57 [MON] SSH EXC SSH session not active
+11:55:00 [MON] SSH EXC SSH session not active
+11:55:03 [MON] SSH EXC SSH session not active
+11:55:06 [MON] SSH EXC SSH session not active
+11:55:09 [MON] SSH EXC SSH session not active
+11:55:12 [MON] SSH EXC SSH session not active
+11:55:15 [MON] SSH EXC SSH session not active
+11:55:18 [MON] SSH EXC SSH session not active
+11:55:21 [MON] SSH EXC SSH session not active
+11:55:24 [MON] SSH EXC SSH session not active
+11:55:27 [MON] SSH EXC SSH session not active
+11:55:30 [MON] SSH EXC SSH session not active
+11:55:33 [MON] SSH EXC SSH session not active
+11:55:36 [MON] SSH EXC SSH session not active
+11:55:39 [MON] SSH EXC SSH session not active
+11:55:42 [MON] SSH EXC SSH session not active
+11:55:45 [MON] SSH EXC SSH session not active
+11:55:48 [MON] SSH EXC SSH session not active
+11:55:51 [MON] SSH EXC SSH session not active
+11:55:54 [MON] SSH EXC SSH session not active
+11:55:57 [MON] SSH EXC SSH session not active
+11:56:00 [MON] SSH EXC SSH session not active
+11:56:03 [MON] SSH EXC SSH session not active
+11:56:06 [MON] SSH EXC SSH session not active
+11:56:09 [MON] SSH EXC SSH session not active
+11:56:12 [MON] SSH EXC SSH session not active
+11:56:15 [MON] SSH EXC SSH session not active
+11:56:18 [MON] SSH EXC SSH session not active
+11:56:21 [MON] SSH EXC SSH session not active
+11:56:24 [MON] SSH EXC SSH session not active
+11:56:27 [MON] SSH EXC SSH session not active
+11:56:30 [MON] SSH EXC SSH session not active
+11:56:33 [MON] SSH EXC SSH session not active
+11:56:36 [MON] SSH EXC SSH session not active
+11:56:39 [MON] SSH EXC SSH session not active
+11:56:42 [MON] SSH EXC SSH session not active
+11:56:45 [MON] SSH EXC SSH session not active
+11:56:48 [MON] SSH EXC SSH session not active
+11:56:51 [MON] SSH EXC SSH session not active
+11:56:54 [MON] SSH EXC SSH session not active
+11:56:57 [MON] SSH EXC SSH session not active
+11:57:00 [MON] SSH EXC SSH session not active
+11:57:03 [MON] SSH EXC SSH session not active
+11:57:06 [MON] SSH EXC SSH session not active
+11:57:09 [MON] SSH EXC SSH session not active
+11:57:12 [MON] SSH EXC SSH session not active
+11:57:15 [MON] SSH EXC SSH session not active
+11:57:18 [MON] SSH EXC SSH session not active
+11:57:21 [MON] SSH EXC SSH session not active
+11:57:24 [MON] SSH EXC SSH session not active
+11:57:27 [MON] SSH EXC SSH session not active
+11:57:30 [MON] SSH EXC SSH session not active
+11:57:33 [MON] SSH EXC SSH session not active
+11:57:36 [MON] SSH EXC SSH session not active
+11:57:39 [MON] SSH EXC SSH session not active
+11:57:42 [MON] SSH EXC SSH session not active
+11:57:45 [MON] SSH EXC SSH session not active
+11:57:48 [MON] SSH EXC SSH session not active
+11:57:51 [MON] SSH EXC SSH session not active
+11:57:54 [MON] SSH EXC SSH session not active
+11:57:57 [MON] SSH EXC SSH session not active
+11:58:00 [MON] SSH EXC SSH session not active
+11:58:03 [MON] SSH EXC SSH session not active
+11:58:06 [MON] SSH EXC SSH session not active
+11:58:09 [MON] SSH EXC SSH session not active
+11:58:12 [MON] SSH EXC SSH session not active
+11:58:15 [MON] SSH EXC SSH session not active
+11:58:18 [MON] SSH EXC SSH session not active
+11:58:21 [MON] SSH EXC SSH session not active
+11:58:24 [MON] SSH EXC SSH session not active
+11:58:27 [MON] SSH EXC SSH session not active
+11:58:30 [MON] SSH EXC SSH session not active
+11:58:33 [MON] SSH EXC SSH session not active
+11:58:36 [MON] SSH EXC SSH session not active
+11:58:39 [MON] SSH EXC SSH session not active
+11:58:42 [MON] SSH EXC SSH session not active
+11:58:45 [MON] SSH EXC SSH session not active
+11:58:48 [MON] SSH EXC SSH session not active
+11:58:51 [MON] SSH EXC SSH session not active
+11:58:54 [MON] SSH EXC SSH session not active
+11:58:57 [MON] SSH EXC SSH session not active
+11:59:00 [MON] SSH EXC SSH session not active
+11:59:03 [MON] SSH EXC SSH session not active
+11:59:06 [MON] SSH EXC SSH session not active
+11:59:09 [MON] SSH EXC SSH session not active
+11:59:12 [MON] SSH EXC SSH session not active
+11:59:15 [MON] SSH EXC SSH session not active
+11:59:18 [MON] SSH EXC SSH session not active
+11:59:21 [MON] SSH EXC SSH session not active
+11:59:24 [MON] SSH EXC SSH session not active
+11:59:27 [MON] SSH EXC SSH session not active
+11:59:30 [MON] SSH EXC SSH session not active
+11:59:33 [MON] SSH EXC SSH session not active
+11:59:36 [MON] SSH EXC SSH session not active
+11:59:39 [MON] SSH EXC SSH session not active
+11:59:42 [MON] SSH EXC SSH session not active
+11:59:45 [MON] SSH EXC SSH session not active
+11:59:48 [MON] SSH EXC SSH session not active
+11:59:51 [MON] SSH EXC SSH session not active
+11:59:54 [MON] SSH EXC SSH session not active
+11:59:57 [MON] SSH EXC SSH session not active
+12:00:00 [MON] SSH EXC SSH session not active
+12:00:03 [MON] SSH EXC SSH session not active
+12:00:06 [MON] SSH EXC SSH session not active
+12:00:09 [MON] SSH EXC SSH session not active
+12:00:12 [MON] SSH EXC SSH session not active
+12:00:15 [MON] SSH EXC SSH session not active
+12:00:18 [MON] SSH EXC SSH session not active
+12:00:21 [MON] SSH EXC SSH session not active
+12:00:24 [MON] SSH EXC SSH session not active
+12:00:27 [MON] SSH EXC SSH session not active
+12:00:30 [MON] SSH EXC SSH session not active
+12:00:33 [MON] SSH EXC SSH session not active
+12:00:36 [MON] SSH EXC SSH session not active
+12:00:39 [MON] SSH EXC SSH session not active
+12:00:42 [MON] SSH EXC SSH session not active
+12:00:45 [MON] SSH EXC SSH session not active
+12:00:48 [MON] SSH EXC SSH session not active
+12:00:51 [MON] SSH EXC SSH session not active
+12:00:54 [MON] SSH EXC SSH session not active
+12:00:57 [MON] SSH EXC SSH session not active
+12:01:00 [MON] SSH EXC SSH session not active
+12:01:03 [MON] SSH EXC SSH session not active
+12:01:06 [MON] SSH EXC SSH session not active
+12:01:09 [MON] SSH EXC SSH session not active
+12:01:12 [MON] SSH EXC SSH session not active
+12:01:15 [MON] SSH EXC SSH session not active
+12:01:18 [MON] SSH EXC SSH session not active
+12:01:21 [MON] SSH EXC SSH session not active
+12:01:25 [MON] SSH EXC SSH session not active
+12:01:28 [MON] SSH EXC SSH session not active
+12:01:31 [MON] SSH EXC SSH session not active
+12:01:34 [MON] SSH EXC SSH session not active
+12:01:37 [MON] SSH EXC SSH session not active
+12:01:40 [MON] SSH EXC SSH session not active
+12:01:43 [MON] SSH EXC SSH session not active
+12:01:46 [MON] SSH EXC SSH session not active
+12:01:49 [MON] SSH EXC SSH session not active
+12:01:52 [MON] SSH EXC SSH session not active
+12:01:55 [MON] SSH EXC SSH session not active
+12:01:58 [MON] SSH EXC SSH session not active
+12:02:01 [MON] SSH EXC SSH session not active
+12:02:04 [MON] SSH EXC SSH session not active
+12:02:07 [MON] SSH EXC SSH session not active
+12:02:10 [MON] SSH EXC SSH session not active
+12:02:13 [MON] SSH EXC SSH session not active
+12:02:16 [MON] SSH EXC SSH session not active
+12:02:19 [MON] SSH EXC SSH session not active
+12:02:22 [MON] SSH EXC SSH session not active
+12:02:25 [MON] SSH EXC SSH session not active
+12:02:28 [MON] SSH EXC SSH session not active
+12:02:31 [MON] SSH EXC SSH session not active
+12:02:34 [MON] SSH EXC SSH session not active
+12:02:37 [MON] SSH EXC SSH session not active
+12:02:40 [MON] SSH EXC SSH session not active
+12:02:43 [MON] SSH EXC SSH session not active
+12:02:46 [MON] SSH EXC SSH session not active
+12:02:49 [MON] SSH EXC SSH session not active
+12:02:52 [MON] SSH EXC SSH session not active
+12:02:55 [MON] SSH EXC SSH session not active
+12:02:58 [MON] SSH EXC SSH session not active
+12:03:01 [MON] SSH EXC SSH session not active
+12:03:04 [MON] SSH EXC SSH session not active
+12:03:07 [MON] SSH EXC SSH session not active
+12:03:10 [MON] SSH EXC SSH session not active
+12:03:13 [MON] SSH EXC SSH session not active
+12:03:16 [MON] SSH EXC SSH session not active
+12:03:19 [MON] SSH EXC SSH session not active
+12:03:22 [MON] SSH EXC SSH session not active
+12:03:25 [MON] SSH EXC SSH session not active
+12:03:28 [MON] SSH EXC SSH session not active
+12:03:31 [MON] SSH EXC SSH session not active
+12:03:34 [MON] SSH EXC SSH session not active
+12:03:37 [MON] SSH EXC SSH session not active
+12:03:40 [MON] SSH EXC SSH session not active
+12:03:43 [MON] SSH EXC SSH session not active
+12:03:46 [MON] SSH EXC SSH session not active
+12:03:49 [MON] SSH EXC SSH session not active
+12:03:52 [MON] SSH EXC SSH session not active
+12:03:55 [MON] SSH EXC SSH session not active
+12:03:58 [MON] SSH EXC SSH session not active
+12:04:01 [MON] SSH EXC SSH session not active
+12:04:04 [MON] SSH EXC SSH session not active
+12:04:07 [MON] SSH EXC SSH session not active
+12:04:10 [MON] SSH EXC SSH session not active
+12:04:13 [MON] SSH EXC SSH session not active
+12:04:16 [MON] SSH EXC SSH session not active
+12:04:19 [MON] SSH EXC SSH session not active
+12:04:22 [MON] SSH EXC SSH session not active
+12:04:25 [MON] SSH EXC SSH session not active
+12:04:28 [MON] SSH EXC SSH session not active
+12:04:31 [MON] SSH EXC SSH session not active
+12:04:34 [MON] SSH EXC SSH session not active
+12:04:37 [MON] SSH EXC SSH session not active
+12:04:40 [MON] SSH EXC SSH session not active
+12:04:43 [MON] SSH EXC SSH session not active
+12:04:46 [MON] SSH EXC SSH session not active
+12:04:49 [MON] SSH EXC SSH session not active
+12:04:52 [MON] SSH EXC SSH session not active
+12:04:55 [MON] SSH EXC SSH session not active
+12:04:58 [MON] SSH EXC SSH session not active
+12:05:01 [MON] SSH EXC SSH session not active
+12:05:04 [MON] SSH EXC SSH session not active
+12:05:07 [MON] SSH EXC SSH session not active
+12:05:10 [MON] SSH EXC SSH session not active
+12:05:13 [MON] SSH EXC SSH session not active
+12:05:16 [MON] SSH EXC SSH session not active
+12:05:19 [MON] SSH EXC SSH session not active
+12:05:22 [MON] SSH EXC SSH session not active
+12:05:25 [MON] SSH EXC SSH session not active
+12:05:28 [MON] SSH EXC SSH session not active
+12:05:31 [MON] SSH EXC SSH session not active
+12:05:34 [MON] SSH EXC SSH session not active
+12:05:37 [MON] SSH EXC SSH session not active
+12:05:40 [MON] SSH EXC SSH session not active
+12:05:43 [MON] SSH EXC SSH session not active
+12:05:46 [MON] SSH EXC SSH session not active
+12:05:49 [MON] SSH EXC SSH session not active
+12:05:52 [MON] SSH EXC SSH session not active
+12:05:55 [MON] SSH EXC SSH session not active
+12:05:58 [MON] SSH EXC SSH session not active
+12:06:01 [MON] SSH EXC SSH session not active
+12:06:04 [MON] SSH EXC SSH session not active
+12:06:07 [MON] SSH EXC SSH session not active
+12:06:10 [MON] SSH EXC SSH session not active
+12:06:13 [MON] SSH EXC SSH session not active
+12:06:16 [MON] SSH EXC SSH session not active
+12:06:19 [MON] SSH EXC SSH session not active
+12:06:22 [MON] SSH EXC SSH session not active
+12:06:25 [MON] SSH EXC SSH session not active
+12:06:28 [MON] SSH EXC SSH session not active
+12:06:31 [MON] SSH EXC SSH session not active
+12:06:34 [MON] SSH EXC SSH session not active
+12:06:37 [MON] SSH EXC SSH session not active
+12:06:40 [MON] SSH EXC SSH session not active
+12:06:43 [MON] SSH EXC SSH session not active
+12:06:46 [MON] SSH EXC SSH session not active
+12:06:49 [MON] SSH EXC SSH session not active
+12:06:52 [MON] SSH EXC SSH session not active
+12:06:55 [MON] SSH EXC SSH session not active
+12:06:58 [MON] SSH EXC SSH session not active
+12:07:01 [MON] SSH EXC SSH session not active
+12:07:04 [MON] SSH EXC SSH session not active
+12:07:07 [MON] SSH EXC SSH session not active
+12:07:10 [MON] SSH EXC SSH session not active
+12:07:13 [MON] SSH EXC SSH session not active
+12:07:16 [MON] SSH EXC SSH session not active
+12:07:19 [MON] SSH EXC SSH session not active
+12:07:22 [MON] SSH EXC SSH session not active
+12:07:25 [MON] SSH EXC SSH session not active
+12:07:28 [MON] SSH EXC SSH session not active
+12:07:31 [MON] SSH EXC SSH session not active
+12:07:34 [MON] SSH EXC SSH session not active
+12:07:37 [MON] SSH EXC SSH session not active
+12:07:40 [MON] SSH EXC SSH session not active
+12:07:43 [MON] SSH EXC SSH session not active
+12:07:46 [MON] SSH EXC SSH session not active
+12:07:49 [MON] SSH EXC SSH session not active
+12:07:52 [MON] SSH EXC SSH session not active
+12:07:55 [MON] SSH EXC SSH session not active
+12:07:58 [MON] SSH EXC SSH session not active
+12:08:01 [MON] SSH EXC SSH session not active
+12:08:04 [MON] SSH EXC SSH session not active
+12:08:07 [MON] SSH EXC SSH session not active
+12:08:10 [MON] SSH EXC SSH session not active
+12:08:13 [MON] SSH EXC SSH session not active
+12:08:16 [MON] SSH EXC SSH session not active
+12:08:19 [MON] SSH EXC SSH session not active
+12:08:22 [MON] SSH EXC SSH session not active
+12:08:25 [MON] SSH EXC SSH session not active
+12:08:28 [MON] SSH EXC SSH session not active

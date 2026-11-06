@@ -1,0 +1,101 @@
+[2026-09-16 15:30:54][INFO][general_tools.cpp@diffFile()#60]run cmd : diff /tmp/tUpdate/slave/CR_Servo_ST_XML_V3.0.0.bin /tmp/tUpdate/slave/readXml.
+[2026-09-16 15:30:54][INFO][general_tools.cpp@diffFile()#62]the result of diff is same.
+[2026-09-16 15:30:54][INFO][dobot_foe.cpp@updateSlaveXml()#640]success-update slave xml end!
+[2026-09-16 15:30:54][INFO][dobot_foe.cpp@singleUpdateThdFunc()#1072]<--- exit this function. ret=1,ret2=0.
+[2026-09-16 15:30:54][INFO][dobot_info.cpp@exitUpdateThd()#140]end update pthread.
+[2026-09-16 15:30:56][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 15:31:04][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 15:31:07][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 15:31:15][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 15:31:18][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 15:33:19][INFO][main.cpp@main()#20]This is mTool server, version is 2.0.0sv2023d1128h2149.
+[2026-09-16 15:33:19][INFO][main.cpp@main()#26]get arm type is : CR
+[2026-09-16 15:33:19][INFO][main.cpp@main()#27]get arm name is : CR5
+[2026-09-16 15:33:19][INFO][http_server.cpp@start()#109]<--- enter this function.
+[2026-09-16 15:33:22][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 15:33:22][INFO][http_server.cpp@protocolFunc_getVersion()#1216]get version is {"toolVersion":"2.0.0sv2023d1128h2149","pathInfo":{"slave":"/tmp/tUpdate/slave/","control":"/tmp/tUpdate/control/","kernel":"/tmp/tUpdate/kernel/"}}.
+[2026-09-16 15:40:57][INFO][main.cpp@main()#20]This is mTool server, version is 2.0.0sv2023d1128h2149.
+[2026-09-16 15:40:57][INFO][main.cpp@main()#26]get arm type is : CR
+[2026-09-16 15:40:57][INFO][main.cpp@main()#27]get arm name is : CR5
+[2026-09-16 15:40:57][INFO][http_server.cpp@start()#109]<--- enter this function.
+[2026-09-16 15:40:59][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 15:40:59][INFO][http_server.cpp@protocolFunc_getVersion()#1216]get version is {"toolVersion":"2.0.0sv2023d1128h2149","pathInfo":{"slave":"/tmp/tUpdate/slave/","control":"/tmp/tUpdate/control/","kernel":"/tmp/tUpdate/kernel/"}}.
+[2026-09-16 16:26:32][INFO][main.cpp@main()#20]This is mTool server, version is 2.0.0sv2023d1128h2149.
+[2026-09-16 16:26:32][INFO][main.cpp@main()#26]get arm type is : CR
+[2026-09-16 16:26:32][INFO][main.cpp@main()#27]get arm name is : CR5
+[2026-09-16 16:26:32][INFO][http_server.cpp@start()#109]<--- enter this function.
+[2026-09-16 16:26:34][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 16:26:34][INFO][http_server.cpp@protocolFunc_getVersion()#1216]get version is {"toolVersion":"2.0.0sv2023d1128h2149","pathInfo":{"slave":"/tmp/tUpdate/slave/","control":"/tmp/tUpdate/control/","kernel":"/tmp/tUpdate/kernel/"}}.
+[2026-09-16 16:29:27][INFO][main.cpp@main()#20]This is mTool server, version is 2.0.0sv2023d1128h2149.
+[2026-09-16 16:29:27][INFO][main.cpp@main()#26]get arm type is : CR
+[2026-09-16 16:29:27][INFO][main.cpp@main()#27]get arm name is : CR5
+[2026-09-16 16:29:27][INFO][http_server.cpp@start()#109]<--- enter this function.
+[2026-09-16 16:29:30][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 16:29:30][INFO][http_server.cpp@protocolFunc_getVersion()#1216]get version is {"toolVersion":"2.0.0sv2023d1128h2149","pathInfo":{"slave":"/tmp/tUpdate/slave/","control":"/tmp/tUpdate/control/","kernel":"/tmp/tUpdate/kernel/"}}.
+[2026-09-16 16:32:12][INFO][main.cpp@main()#20]This is mTool server, version is 2.0.0sv2023d1128h2149.
+[2026-09-16 16:32:12][INFO][main.cpp@main()#26]get arm type is : CR
+[2026-09-16 16:32:12][INFO][main.cpp@main()#27]get arm name is : CR5
+[2026-09-16 16:32:12][INFO][http_server.cpp@start()#109]<--- enter this function.
+[2026-09-16 16:32:14][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 16:32:14][INFO][http_server.cpp@protocolFunc_getVersion()#1216]get version is {"toolVersion":"2.0.0sv2023d1128h2149","pathInfo":{"slave":"/tmp/tUpdate/slave/","control":"/tmp/tUpdate/control/","kernel":"/tmp/tUpdate/kernel/"}}.
+total 0
+drwxr-xr-x    2 root     root            40 Sep 16 16:32 .
+drwxr-xr-x    5 root     root           100 Sep 16 16:32 ..
+ec_init on eth0 succeeded.
+9 slaves found and configured.
+Calculated workcounter 27
+
+Slave:1
+Slave:2
+Slave:3
+Slave:4
+Slave:5
+Slave:6
+Slave:7
+Slave:8
+Slave:9
+00 vid:0x00000a62 pid:0x00000221 rev:0x00000103 CoRobot Safety IO
+
+01 vid:0x00000a62 pid:0x00000222 rev:0x00000103 CoRobot Uni IO
+
+02 vid:0x00000a62 pid:0x00000121 rev:0x00020001 Dobot DS121
+
+03 vid:0x00000a62 pid:0x00000121 rev:0x00020001 Dobot DS121
+
+04 vid:0x00000a62 pid:0x00000121 rev:0x00020001 Dobot DS121
+
+05 vid:0x00000a62 pid:0x00000121 rev:0x00020001 Dobot DS121
+
+06 vid:0x00000a62 pid:0x00000121 rev:0x00020001 Dobot DS121
+
+07 vid:0x00000a62 pid:0x00000121 rev:0x00020001 Dobot DS121
+
+08 vid:0x00000a62 pid:0x00000230 rev:0x00000103 CoRobot Terminal IO
+
+result : 
+:=DINT:=GVL.Slave_Nums:=9
+:=DINT:=GVL.Slave_ProductID[0]:=545
+:=DINT:=GVL.Slave_ProductID[1]:=546
+:=DINT:=GVL.Slave_ProductID[2]:=289
+:=DINT:=GVL.Slave_ProductID[3]:=289
+:=DINT:=GVL.Slave_ProductID[4]:=289
+:=DINT:=GVL.Slave_ProductID[5]:=289
+:=DINT:=GVL.Slave_ProductID[6]:=289
+:=DINT:=GVL.Slave_ProductID[7]:=289
+:=DINT:=GVL.Slave_ProductID[8]:=560
+:=DINT:=GVL.Slave_ProductID[9]:=0
+:=DINT:=GVL.Slave_SoftVersion[0]:=259
+:=DINT:=GVL.Slave_SoftVersion[1]:=259
+:=DINT:=GVL.Slave_SoftVersion[2]:=131073
+:=DINT:=GVL.Slave_SoftVersion[3]:=131073
+:=DINT:=GVL.Slave_SoftVersion[4]:=131073
+:=DINT:=GVL.Slave_SoftVersion[5]:=131073
+:=DINT:=GVL.Slave_SoftVersion[6]:=131073
+:=DINT:=GVL.Slave_SoftVersion[7]:=131073
+:=DINT:=GVL.Slave_SoftVersion[8]:=259
+:=DINT:=GVL.Slave_SoftVersion[9]:=0
+
+9 9 9 0 
+codesys check success at 0
+codesys check success result : /dobot/userdata/codesys/allST/
+{"controlCab":"NormalCab"} 

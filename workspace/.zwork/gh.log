@@ -1,0 +1,88 @@
+--- FORCEFN 08022390 (GhidraScript)  
+  createFunction -> FUN_08012390 (GhidraScript)  
+  OK FUN_08012390 @ 08022390 size=188 (GhidraScript)  
+--- DECOMP FUN_08012390 @ 08022390 size=188 (GhidraScript)  
+  [decompiled=true err=] (GhidraScript)  
+----- C BEGIN ----- (GhidraScript)  
+
+void FUN_08012390(int param_1)
+
+{
+  int iVar1;
+  ushort uVar2;
+  ushort *puVar3;
+  
+  puVar3 = (ushort *)(param_1 * 0x78 + 0x20008210);
+  iVar1 = param_1 * 0x8a0;
+  if ((*(short *)(iVar1 + 0x20007e90) != 0) && (*(short *)(iVar1 + 0x20007e92) != 0)) {
+    *(undefined4 *)(iVar1 + 0x20007e34) = *(undefined4 *)(iVar1 + 0x20007844);
+    *(undefined4 *)(iVar1 + 0x20007d50) = *(undefined4 *)(iVar1 + 0x20007e74);
+    (*pcRam200033f0)(param_1,iVar1 + 0x20007d60);
+    (*pcRam200011a0)(iVar1 + 0x20007d48,*(undefined2 *)(iVar1 + 0x20007e92));
+    if (*(short *)(iVar1 + 0x20007d6c) != 0) {
+      *puVar3 = (*puVar3 & 0xfffd) + 2;
+      *(undefined2 *)(iVar1 + 0x20007d6c) = 0;
+    }
+    uVar2 = (*pcRam200034a8)(*(undefined4 *)(iVar1 + 0x20007d54),*(undefined4 *)(iVar1 + 0x20007d58)
+                             ,*(undefined4 *)(iVar1 + 0x20007d5c),
+                             *(undefined4 *)(iVar1 + 0x20007844),param_1);
+    *puVar3 = *puVar3 & 0xff7f | (uVar2 & 1) << 7;
+  }
+  return;
+}
+
+----- C END (1016 chars) ----- (GhidraScript)  
+
+=== RAW TAIL ===
+_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\software\disassembly\ghproj_servo_b\servo3150 (HeadlessAnalyzer)  
+INFO  Opening project: D:\software\disassembly\ghproj_servo_b\servo3150 (HeadlessProject)  
+INFO  REPORT: Processing project file: /v3150.elf (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: z_gh.java 'dc' '0x8012390'  (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\mydata\workspace\.zgh\z_gh.java (HeadlessAnalyzer)  
+INFO  z_gh.java> --- FORCEFN 08012390 (GhidraScript)  
+INFO  z_gh.java>   createFunction -> FUN_08012390 (GhidraScript)  
+INFO  z_gh.java>   OK FUN_08012390 @ 08012390 size=188 (GhidraScript)  
+INFO  z_gh.java> --- DECOMP FUN_08012390 @ 08012390 size=188 (GhidraScript)  
+INFO  z_gh.java>   [decompiled=true err=] (GhidraScript)  
+INFO  z_gh.java> ----- C BEGIN ----- (GhidraScript)  
+INFO  z_gh.java>  (GhidraScript)  
+INFO  z_gh.java> void FUN_08012390(int param_1) (GhidraScript)  
+INFO  z_gh.java>  (GhidraScript)  
+INFO  z_gh.java> { (GhidraScript)  
+INFO  z_gh.java>   int iVar1; (GhidraScript)  
+INFO  z_gh.java>   ushort uVar2; (GhidraScript)  
+INFO  z_gh.java>   ushort *puVar3; (GhidraScript)  
+INFO  z_gh.java>    (GhidraScript)  
+INFO  z_gh.java>   puVar3 = (ushort *)(param_1 * 0x78 + 0x20008210); (GhidraScript)  
+INFO  z_gh.java>   iVar1 = param_1 * 0x8a0; (GhidraScript)  
+INFO  z_gh.java>   if ((*(short *)(iVar1 + 0x20007e90) != 0) && (*(short *)(iVar1 + 0x20007e92) != 0)) { (GhidraScript)  
+INFO  z_gh.java>     *(undefined4 *)(iVar1 + 0x20007e34) = *(undefined4 *)(iVar1 + 0x20007844); (GhidraScript)  
+INFO  z_gh.java>     *(undefined4 *)(iVar1 + 0x20007d50) = *(undefined4 *)(iVar1 + 0x20007e74); (GhidraScript)  
+INFO  z_gh.java>     (*pcRam200033f0)(param_1,iVar1 + 0x20007d60); (GhidraScript)  
+INFO  z_gh.java>     (*pcRam200011a0)(iVar1 + 0x20007d48,*(undefined2 *)(iVar1 + 0x20007e92)); (GhidraScript)  
+INFO  z_gh.java>     if (*(short *)(iVar1 + 0x20007d6c) != 0) { (GhidraScript)  
+INFO  z_gh.java>       *puVar3 = (*puVar3 & 0xfffd) + 2; (GhidraScript)  
+INFO  z_gh.java>       *(undefined2 *)(iVar1 + 0x20007d6c) = 0; (GhidraScript)  
+INFO  z_gh.java>     } (GhidraScript)  
+INFO  z_gh.java>     uVar2 = (*pcRam200034a8)(*(undefined4 *)(iVar1 + 0x20007d54),*(undefined4 *)(iVar1 + 0x20007d58) (GhidraScript)  
+INFO  z_gh.java>                              ,*(undefined4 *)(iVar1 + 0x20007d5c), (GhidraScript)  
+INFO  z_gh.java>                              *(undefined4 *)(iVar1 + 0x20007844),param_1); (GhidraScript)  
+INFO  z_gh.java>     *puVar3 = *puVar3 & 0xff7f | (uVar2 & 1) << 7; (GhidraScript)  
+INFO  z_gh.java>   } (GhidraScript)  
+INFO  z_gh.java>   return; (GhidraScript)  
+INFO  z_gh.java> } (GhidraScript)  
+INFO  z_gh.java>  (GhidraScript)  
+INFO  z_gh.java> ----- C END (1016 chars) ----- (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /v3150.elf (HeadlessAnalyzer)  

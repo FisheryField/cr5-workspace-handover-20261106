@@ -1,0 +1,10 @@
+for obj in 0x6064 0x6063 0x607C 0x6098 0x6060 0x6061 0x60B0 0x60B1; do
+  echo "--- J6 (0x3f0) $obj ---"
+  /tmp/ecat_mbx rd eth0 0x3f0 $obj 0 2>&1 | tail -2
+done
+echo
+echo "================ J1 (3.2.D.8) ================"
+for obj in 0x6064 0x6063 0x607C 0x6098 0x6060 0x6061 0x60B0 0x60B1; do
+  echo "--- J1 (0x3eb) $obj ---"
+  /tmp/ecat_mbx rd eth0 0x3eb $obj 0 2>&1 | tail -2
+done

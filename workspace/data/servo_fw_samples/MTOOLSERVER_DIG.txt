@@ -1,0 +1,580 @@
+
+==============================================================================
+1. HTTP routes (start with /)
+==============================================================================
+  @0x05756a  /0yh
+  @0x057594  /0yh
+  @0x0575be  /0yh
+  @0x061c51  /0FJF
+  @0x06aaca  /H1F
+  @0x073354  /home/guoyanzhang/mToolServer/cr_factory_tool/main.cpp
+  @0x073648  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/internal/pow10.h
+  @0x0736c4  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/internal/dtoa.h
+  @0x073744  /home/guoyanzhang/mToolServer/cr_factory_tool/http_server.cpp
+  @0x0738dc  /tmp/tUpdate/control/check_files_result.txt
+  @0x073b88  /tmp/tUpdate/kernel/kernel0804.tar.gz
+  @0x073bdc  /tmp/tUpdate/kernel/
+  @0x073c54  /tmp/tUpdate/kernel/run.sh
+  @0x073ce8  /mToolServer/updateRunResult.log
+  @0x073d20  /mToolServer/control/checkPO.sh
+  @0x074234  /etc/resolv.conf
+  @0x074410  /mToolServer/control/checkFiles.sh
+  @0x074460  /home/ftp/PlcLogic/Recipe/SavePos.txt
+  @0x074488  /mToolServer/overTurn/SavePos.txt
+  @0x0744e0  /home/ftp/PlcLogic/Recipe/SaveAxesValue.AxesValues.txtrecipe
+  @0x074520  /mToolServer/overTurn/SaveAxesValue.AxesValues.txtrecipe
+  @0x074884  /etc/eth2.conf
+  @0x074c50  /etc/localtime
+  @0x074ff0  /tmp/tUpdate/slave/
+  @0x075004  /tmp/tUpdate/control/
+  @0x0750ec  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/document.h
+  @0x0751d0  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/internal/stack.h
+  @0x075298  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/writer.h
+  @0x075404  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/reader.h
+  @0x075500  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/encodings.h
+  @0x079a58  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/internal/pow10.h
+  @0x079ad4  /tmp/tUpdate/slave/
+  @0x079af0  /home/guoyanzhang/mToolServer/cr_factory_tool/general_tools.cpp
+  @0x079df4  /tmp/tUpdate/slave/readXml
+  @0x079e28  /dobot/userdata/project/properties/controllerType.json
+  @0x079f80  /mToolServer/updateRunResult.log
+  @0x07a434  /mToolServer/control/supportRules.json
+  @0x07a5b8  /mToolServer/control/version.json
+  @0x07a714  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/document.h
+  @0x07a78c  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/internal/stack.h
+  @0x07a8e4  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/reader.h
+  @0x07aa0c  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/encodings.h
+  @0x07d204  /home/guoyanzhang/mToolServer/cr_factory_tool/dobot_foe.cpp
+  @0x07d368  /home/ftp/PlcLogic/Recipe/SavePos.txt
+  @0x07df38  /tmp/tUpdate/slave/readXml
+  @0x07e3b8  /tmp/tUpdate/slave/
+  @0x07e564  /mToolServer/control/
+  @0x07e588  /tmp/tUpdate/control/run.sh
+  @0x07e5e0  /tmp/tUpdate/control/toolUtils.sh
+  @0x07e604  /mToolServer/control/toolUtils.sh
+  @0x07e6b0  /mToolServer/controlRunProcess.log
+  @0x07e74c  /tmp/tUpdate/control/
+  @0x07eb40  /home/guoyanzhang/mToolServer/cr_factory_tool/dobot_info.cpp
+  @0x07ee50  /proc/bus/i2c
+  @0x07ee60  /home/guoyanzhang/mToolServer/cr_factory_tool/i2cset.cpp
+  @0x07eec0  /proc/mounts
+  @0x07fd44  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatfoe.c
+  @0x07fefc  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatmain.c
+  @0x084bc4  /mToolServer/mToolServer.log
+  @0x087140  /dev/srandom
+  @0x087150  /proc/sys/kernel/random/uuid
+  @0x087170  /dev/urandom
+  @0x087180  /dev/random
+  @0x0d6a18  /eof
+  @0x120c04  /bev
+  @0x120c54  /bev
+  @0x1210c1  /now
+  @0x1216e0  /now
+  @0x121974  /now
+  @0x1221b3  /cfg
+  @0x1304ed  /sin
+  @0x13104d  /res
+  @0x1315f8  /out
+  @0x131645  /dot
+  @0x131655  /eow
+  @0x131dd1  /err
+  @0x13253e  /len
+  @0x1326a7  /sin
+  @0x132e3c  /sin
+  @0x138bad  /old
+  @0x159c35  /0////
+  @0x159dde  /home/guoyanzhang/mToolServer/cr_factory_tool
+  @0x159f59  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/jungleLog
+  @0x15ae5e  /home/guoyanzhang/mToolServer/cr_factory_tool
+  @0x15ae8c  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson
+  @0x15aee1  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/internal
+  @0x15af3f  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/error
+  @0x15b24e  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/jungleLog
+  @0x15da52  /Yug
+  @0x160736  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson
+  @0x16078b  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/internal
+  @0x1607e9  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/error
+  @0x160844  /home/guoyanzhang/mToolServer/cr_factory_tool
+  @0x160a7c  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/jungleLog
+  @0x163da6  /home/guoyanzhang/mToolServer/cr_factory_tool
+  @0x164088  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal
+  @0x1640cb  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem
+  @0x16410e  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux
+  @0x164157  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/jungleLog
+  @0x166117  /home/guoyanzhang/mToolServer/cr_factory_tool
+  @0x166292  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/jungleLog
+  @0x1688f2  /home/guoyanzhang/mToolServer/cr_factory_tool
+  @0x168bcf  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/jungleLog
+  @0x168f09  ////
+  @0x1691f4  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem
+  @0x1692da  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal
+  @0x16931d  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux
+  @0x169513  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem
+  @0x1695f9  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal
+  @0x16963c  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux
+  @0x169895  /KhL
+  @0x169b79  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem
+  @0x169c5f  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal
+  @0x169ca2  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux
+  @0x16a120  /////6
+  @0x16a1bd  /////6
+  @0x16a42e  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem
+  @0x16a514  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal
+  @0x16a557  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux
+  @0x16a78f  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem
+  @0x16a875  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal
+  @0x16a8b8  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux
+  @0x16a901  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/jungleLog
+  @0x16aad1  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem
+  @0x16abb7  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal
+  @0x16abfa  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux
+  @0x16ac43  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/jungleLog
+  @0x16b4ac  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem
+  @0x16b592  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal
+  @0x16b5d5  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux
+  @0x16b741  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem
+  @0x16b827  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal
+  @0x16b86a  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux
+  @0x16babb  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal/linux
+  @0x16bc4e  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal
+  @0x16bd9f  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux
+  @0x16bf37  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal
+  @0x16bf7a  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem
+  @0x16c246  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux
+  @0x16c331  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal
+  @0x16c374  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem
+  @0x16c458  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/jungleLog
+  @0x171adc  ///0/
+  @0x192914  /home/guoyanzhang/mToolServer/cr_factory_tool/main.cpp
+  @0x196628  /home/guoyanzhang/mToolServer/cr_factory_tool/build
+  @0x1a5b9f  /home/guoyanzhang/mToolServer/cr_factory_tool/http_server.cpp
+  @0x1b619a  /home/guoyanzhang/mToolServer/cr_factory_tool/general_tools.cpp
+  @0x1b7517  /home/guoyanzhang/mToolServer/cr_factory_tool/dobot_foe.cpp
+  @0x1bb27f  /home/guoyanzhang/mToolServer/cr_factory_tool/dobot_info.cpp
+  @0x1bf23d  /home/guoyanzhang/mToolServer/cr_factory_tool/i2cset.cpp
+  @0x1bf628  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatbase.c
+  @0x1bfb1d  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatcoe.c
+  @0x1c003e  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatconfig.c
+  @0x1c0287  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatdc.c
+  @0x1c0322  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatfoe.c
+  @0x1c0a76  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatmain.c
+  @0x1c0dca  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatprint.c
+  @0x1c0f3f  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatsoe.c
+  @0x1c123f  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal/linux/osal.c
+  @0x1c14e5  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux/nicdrv.c
+  @0x1c166f  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux/oshw.c
+  @0x1c17d5  /home/guoyanzhang/mToolServer/cr_factory_tool/third_part/jungleLog/jungle_log.cpp
+  @0x1c1849  /home/guoyanzhang/mToolServer/cr_factory_tool/build/third_part/jungleLog
+
+==============================================================================
+2. lines mentioning update / foe / firmware
+==============================================================================
+  @0x00e2d4  _ZNKSt9type_infoeqERKS_
+  @0x00e315  _ZTVN10__cxxabiv117__class_type_infoE
+  @0x00e4ee  _ZTVN10__cxxabiv120__si_class_type_infoE
+  @0x00ed12  _ZTISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISA_ELN9__gnu_cxx12_Lock_policyE2EE
+  @0x00eef4  _ZNSt6threadC2IRFvPvEJP13_HttpInitInfoEEEOT_DpOT0_
+  @0x00f633  _ZSt3getILj1EIPFvPvEP13_HttpInitInfoEENSt9__add_refINSt13tuple_elementIXT_ESt5tupleIIDpT0_EEE4typeEE4typeERSA_
+  @0x00f800  _ZN10HttpServer29updateFunc_checkKernelVersionEP14evhttp_requestPv
+  @0x00f9d9  _ZSt13__bind_simpleIRFvPvEJP13_HttpInitInfoEENSt19_Bind_simple_helperIT_JDpT0_EE6__typeEOS6_DpOS7_
+  @0x00facb  _ZNSt16allocator_traitsISaISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISB_ELN9__gnu_cxx12_Lock_policyE2EEEE9constructISF_IKSC_SA_EEEvRSG_PT_DpOT0_
+  @0x00fba8  _ZNSt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEC2IJS4_EvEEOS2_DpOT_
+  @0x00ff04  _ZNSt16allocator_traitsISaISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISB_ELN9__gnu_cxx12_Lock_policyE2EEEE9constructISF_JKSC_SA_EEEvRSG_PT_DpOT0_
+  @0x010451  _ZSt3getILj1EJPFvPvEP13_HttpInitInfoEENSt9__add_refINSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeEE4typeERSA_
+  @0x0104db  _ZN10HttpServer16packUpdateResultEPKcRSs
+  @0x010951  _ZNSt16allocator_traitsISaINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEEE9constructISA_JS9_EEEvRSB_PT_DpOT0_
+  @0x011134  _ZN9DobotInfo13exitUpdateThdEv
+  @0x01135c  _ZN9__gnu_cxx13new_allocatorISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISC_ELNS_12_Lock_policyE2EEEC2Ev
+  @0x0114ef  _ZN8DobotFoe15processFWUpdateEPKcti
+  @0x011685  event_base_update_cache_time
+  @0x01192c  _ZN10HttpServer20updateFunc_diskCheckEP14evhttp_requestPv
+  @0x011c1a  _ZNSt14_Sp_ebo_helperILi0ESaINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEELb1EEC1ERKSB_
+  @0x011db3  _ZNSt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISA_ELN9__gnu_cxx12_Lock_policyE2EED1Ev
+  @0x01217d  _ZN10HttpServer23updateFunc_updateKernelEP14evhttp_requestPv
+  @0x0123b7  g_FoeWriteErrCode
+  @0x0123fb  _ZNSaINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEEC2ERKSA_
+  @0x012448  _ZN8DobotFoeD1Ev
+  @0x0124bd  _ZNSt5tupleIIPFvPvEP13_HttpInitInfoEEC2IS2_S4_vEEOT_OT0_
+  @0x01268a  _ZNSt5tupleIJPFvPvEP13_HttpInitInfoEEC2IS2_S4_vEEOT_OT0_
+  @0x0127a6  _ZNSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEC1EOS8_
+  @0x012a30  _ZNSt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEclEv
+  @0x012ef3  _ZNSt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEC1EOS6_
+  @0x012f28  _ZN9__gnu_cxx13new_allocatorISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISC_ELNS_12_Lock_policyE2EEE10deallocateEPSF_j
+  @0x01355b  _ZN8DobotFoe13updateSlaveFWEtPc
+  @0x01357b  _ZNSt5tupleIJPFvPvEP13_HttpInitInfoEEC2EOS5_
+  @0x013aab  ecx_FOEwrite
+  @0x013bc7  _ZNSt16allocator_traitsISaISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISB_ELN9__gnu_cxx12_Lock_policyE2EEEE8allocateERSG_j
+  @0x013fda  _ZZN8DobotFoe8instanceEvE3ins
+  @0x014054  _ZNSt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISA_ELN9__gnu_cxx12_Lock_policyE2EE5_ImplD1Ev
+  @0x01421c  _ZNSt12__shared_ptrINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEELN9__gnu_cxx12_Lock_policyE2EEC2ISaISA_EJS9_EEESt19_Sp_make_shared_tagRKT_DpOT0_
+  @0x014501  _ZSt12__get_helperILj0EPFvPvEJP13_HttpInitInfoEENSt9__add_refIT0_E4typeERSt11_Tuple_implIXT_EJS6_DpT1_EE
+  @0x014a14  _ZSt13__bind_simpleIRFvPvEIP13_HttpInitInfoEENSt19_Bind_simple_helperIT_IDpT0_EE6__typeEOS6_DpOS7_
+  @0x014bb9  _ZNSt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEC2IIS4_EvEEOS2_DpOT_
+  @0x014e3b  _ZNSt16allocator_traitsISaISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISB_ELN9__gnu_cxx12_Lock_policyE2EEEE7destroyISF_EEvRSG_PT_
+  @0x0152a5  _ZN9__gnu_cxx13new_allocatorINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEEC1Ev
+  @0x0154b3  _ZSt3getILj0EIPFvPvEP13_HttpInitInfoEENSt9__add_refINSt13tuple_elementIXT_ESt5tupleIIDpT0_EEE4typeEE4typeERSA_
+  @0x0158d5  _ZNSaINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEED2Ev
+  @0x015cbe  _ZN8DobotFoe20findAndUpdateSlaveFWEPKcS1_t
+  @0x015dc9  _ZNSt11_Tuple_implILj0EJPFvPvEP13_HttpInitInfoEEC2EOS5_
+  @0x016249  _ZNSaINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEED1Ev
+  @0x016616  _ZNSt11_Tuple_implILj1EJP13_HttpInitInfoEEC1IS1_JEvEEOT_DpOT0_
+  @0x0167a6  _ZSt7forwardIP13_HttpInitInfoEOT_RNSt16remove_referenceIS2_E4typeE
+  @0x01680d  _ZNSt11_Tuple_implILj0EIPFvPvEP13_HttpInitInfoEEC2IS2_IS4_EvEEOT_DpOT0_
+  @0x016ade  _ZNSt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISA_ELN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv
+  @0x016cc0  _ZNSt16allocator_traitsISaISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISB_ELN9__gnu_cxx12_Lock_policyE2EEEE10deallocateERSG_PSF_j
+  @0x016f72  _ZN9DobotInfo18setAllUpdateStatusEi
+  @0x0170a1  _ZN10HttpServer22packSingleUpdateResultEPKciRSs
+  @0x0171db  _ZN8DobotFoeD2Ev
+  @0x0172e7  _ZN9__gnu_cxx13new_allocatorISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISC_ELNS_12_Lock_policyE2EEE8allocateEjPKv
+  @0x01738a  _ZNSt6threadC1IRFvPvEIP13_HttpInitInfoEEEOT_DpOT0_
+  @0x0174d1  _ZNSt12__shared_ptrINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEELN9__gnu_cxx12_Lock_policyE2EEC2ISaISA_EIS9_EEESt19_Sp_make_shared_tagRKT_DpOT0_
+  @0x0176b7  _ZN8DobotFoe18sendRSToServoBySDOEi
+  @0x017b3d  _ZNSaINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEEC1ERKSA_
+  @0x01897c  _ZN9__gnu_cxx16__aligned_bufferINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEE6_M_ptrEv
+  @0x018b8e  ec_FOEread
+  @0x018e56  _ZNSt11_Tuple_implILj1EIP13_HttpInitInfoEE7_M_tailERS2_
+  @0x018eab  _ZNSt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISA_ELN9__gnu_cxx12_Lock_policyE2EEC2IJS9_EEESB_DpOT_
+  @0x0192f8  _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC1INSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISE_EISD_EEESt19_Sp_make_shared_tagPT_RKT0_DpOT1_
+  @0x0193a0  _ZNSt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEC2EOS6_
+  @0x0193d5  _ZN8DobotFoe11eepromWriteEiii
+  @0x019424  _ZNSt11_Tuple_implILj0EJPFvPvEP13_HttpInitInfoEE7_M_headERS5_
+  @0x0198d4  _ZN8DobotFoe14updateSlaveXmlEiPc
+  @0x01995d  _ZNSt6threadC2IRFvPvEIP13_HttpInitInfoEEEOT_DpOT0_
+  @0x0199c2  _ZSt15allocate_sharedINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISA_EIS9_EESt10shared_ptrIT_ERKT0_DpOT1_
+  @0x019a40  _ZNSt11_Tuple_implILj1EIP13_HttpInitInfoEEC2IS1_IEvEEOT_DpOT0_
+  @0x019b0c  _ZN10HttpServer22updateFunc_CRAllStatusEP14evhttp_requestPv
+  @0x019b48  _ZNSt11_Tuple_implILj0EJPFvPvEP13_HttpInitInfoEE7_M_tailERS5_
+  @0x019b86  _ZNSt10shared_ptrINSt6thread10_Impl_baseEEC1INS0_5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEvEEOS_IT_E
+  @0x019c76  _ZNSaINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEEC1Ev
+  @0x019eca  _ZNSt10shared_ptrINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEEC1ISaISA_EJS9_EEESt19_Sp_make_shared_tagRKT_DpOT0_
+  @0x019fb0  _ZN8DobotFoe16allUpdateThdFuncEv
+  @0x01a1b5  _ZNSt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEC1IJS4_EvEEOS2_DpOT_
+  ... (truncated)
+
+==============================================================================
+3. 'no need to update' / version compare
+==============================================================================
+  @0x00f800  _ZN10HttpServer29updateFunc_checkKernelVersionEP14evhttp_requestPv
+  @0x0106c9  event_get_version_number
+  @0x013162  _ZN12GeneralTools22getVersionFromFileNameERKSs
+  @0x01e691  _ZN10HttpServer20packActualXmlVersionERSs
+  @0x0200f3  event_get_version
+  @0x0201d0  g_ToolVersion
+  @0x024d76  _ZN12GeneralTools14getToolVersionEv
+  @0x026f72  _ZN10HttpServer30updateFunc_getActualXmlVersionEP14evhttp_requestPv
+  @0x027083  _ZN10HttpServer23protocolFunc_getVersionEP14evhttp_requestPv
+  @0x027368  _ZN12GeneralTools10comVersionESsSs
+  @0x027e6d  _ZN12GeneralTools17getControlVersionERSs
+  @0x07338c  This is mTool server, version is %s.
+  @0x073978  version
+  @0x073a94  cabVersion
+  @0x073b14  the key cabVersion is not V1 or V2.
+  @0x073b4c  the key cabVersion is error.
+  @0x073b6c  the key-cabVersion is %s.
+  @0x073e4c  the key-cabVersion is error.
+  @0x073e6c  request cabVersion is %s.
+  @0x073e88  updateControlVersion
+  @0x073ea0  request controlVersion is %s.
+  @0x073f08  currentVersion
+  @0x073f18  the key-currentVersion is error.
+  @0x0740e4  checkKernelVersion
+  @0x074160  xmlVersion
+  @0x074db8  this version don't support.
+  @0x074dd4  start to check files, the control version is %s
+  @0x074e04  tmpVersion is %s
+  @0x074fdc  toolVersion
+  @0x075028  get version is %s.
+  @0x078804  updateFunc_checkKernelVersion
+  @0x07892c  updateFunc_getActualXmlVersion
+  @0x0789f0  protocolFunc_getVersion
+  @0x07a0b8  this version does't support to update.
+  @0x07a518  version
+  @0x07a558  the control version after parsing is (%s).
+  @0x07a584  the shell script of the version %s is (%s).
+  @0x07a5b8  /mToolServer/control/version.json
+  @0x07a5dc  failed to open file version.json
+  @0x07a600  the version.json is not an object.
+  @0x07a654  the key-version in version.json is not an string.
+  @0x07d078  getControlVersion
+  @0x07d09c  getToolVersion
+  @0x07db04  failed to find spacify version.
+  @0x07db24  fileNameVersion=%s,currentVersion=%s.
+  @0x07db4c  The firmware version is the same, slave%d no need to update %s.
+  @0x07e530  this version is not support.g_FoeWriteErrCode=0x%x
+  @0x07e780  update version:%s
+  @0x07f114  i2cset version %s
+  @0x088834  Added a signal to event base %p with signals already added to event_base %p.  Only one can have signals at a time with the %s backend.  The base with the most recently added signal or the most recent 
+  @0x088ae8  evhttp_parse_http_version
+  @0x08909c  %s: bad version %s on message %p from %s
+  @0x089d2c  HTTP Version not supported
+  @0x160b7e  string_conversions.h
+  @0x18d646  m_cabVersion
+  @0x18e189  m_currentVersionMap
+  @0x18ee11  protocolFunc_getVersion
+  @0x18f605  _ZN10HttpServer20packActualXmlVersionERSs
+  @0x18f74c  m_updateControlVersion
+  @0x1905bc  _ZN10HttpServer23protocolFunc_getVersionEP14evhttp_requestPv
+  @0x19088f  packActualXmlVersion
+  @0x198115  _ZN10HttpServer29updateFunc_checkKernelVersionEP14evhttp_requestPv
+  @0x198426  _GLOBAL__sub_I_g_ToolVersion
+  @0x19a3f1  m_xmlActualVersion
+  @0x19df9a  updateFunc_checkKernelVersion
+  @0x19e73a  _ZN10HttpServer30updateFunc_getActualXmlVersionEP14evhttp_requestPv
+  @0x19f762  updateFunc_getActualXmlVersion
+  @0x1a2d29  versionStr
+  @0x1ac84d  tmpVersion
+  @0x1b486f  getVersionFromFileName
+  @0x1b4d06  _ZN12GeneralTools14getToolVersionEv
+  @0x1b5392  _ZN12GeneralTools22getVersionFromFileNameERKSs
+  @0x1b550d  fileNameVersion
+  @0x1b558f  getToolVersion
+  @0x1b5629  versionValue
+  @0x1b5992  currentVersion
+  @0x1b59a1  getControlVersion
+  @0x1b5c06  controlVersion
+  @0x1b5f14  _ZN12GeneralTools10comVersionESsSs
+  @0x1b6bc1  _ZN12GeneralTools17getControlVersionERSs
+  ... (truncated)
+
+==============================================================================
+4. POST / multipart / form fields
+==============================================================================
+  @0x013162  _ZN12GeneralTools22getVersionFromFileNameERKSs
+  @0x01d316  _ZN12GeneralTools17dealErrorFileNameESsSs
+  @0x01e86f  _ZNK9rapidjson8internal5DiyFp17NormalizeBoundaryEv
+  @0x07aaac  dealErrorFileName
+  @0x07d910  start FoE write....,updateFileName=%s,filesize=%d.
+  @0x07db24  fileNameVersion=%s,currentVersion=%s.
+  @0x07dd44  tmp.fileNameCount = %d.
+  @0x1a8437  NormalizeBoundary
+  @0x1a8804  _ZNK9rapidjson8internal5DiyFp17NormalizeBoundaryEv
+  @0x1b486f  getVersionFromFileName
+  @0x1b49dd  updateFileName
+  @0x1b5392  _ZN12GeneralTools22getVersionFromFileNameERKSs
+  @0x1b53c1  _ZN12GeneralTools17dealErrorFileNameESsSs
+  @0x1b550d  fileNameVersion
+  @0x1b5818  dealErrorFileName
+  @0x1b77e0  fileNameKey
+  @0x1b7f86  updateFilename
+  @0x1b9082  fileName
+  @0x1b99e0  fileNameCount
+  @0x1c1908  logFileName
+  @0x1c7c00  arc4random_urandom_filename
+  @0x1c7f0b  filenames
+  @0x2111b7  _ZZN12GeneralTools17dealErrorFileNameESsSsE12__FUNCTION__
+  @0x212579  filenames.8662
+  @0x2125a9  arc4random_urandom_filename
+  @0x21788e  _ZN12GeneralTools22getVersionFromFileNameERKSs
+  @0x222269  _ZN12GeneralTools17dealErrorFileNameESsSs
+  @0x223850  _ZNK9rapidjson8internal5DiyFp17NormalizeBoundaryEv
+
+==============================================================================
+5. port numbers / listen
+==============================================================================
+  @0x00e6bd  listen
+  @0x00e914  evhttp_bound_socket_get_listener
+  @0x00ed12  _ZTISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISA_ELN9__gnu_cxx12_Lock_policyE2EE
+  @0x00f013  _ZN9__gnu_cxx13new_allocatorISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEESaIS9_ELNS_12_Lock_policyE2EEE8allocateEjPKv
+  @0x00f262  _ZSt13__bind_simpleIPFvvEJEENSt19_Bind_simple_helperIT_JDpT0_EE6__typeEOS3_DpOS4_
+  @0x00f485  _ZNSt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEESaIS7_ELN9__gnu_cxx12_Lock_policyE2EED1Ev
+  @0x00f8ce  evconnlistener_enable
+  @0x00f9d9  _ZSt13__bind_simpleIRFvPvEJP13_HttpInitInfoEENSt19_Bind_simple_helperIT_JDpT0_EE6__typeEOS6_DpOS7_
+  @0x00facb  _ZNSt16allocator_traitsISaISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISB_ELN9__gnu_cxx12_Lock_policyE2EEEE9constructISF_IKSC_SA_EEEvRSG_PT_DpOT0_
+  @0x00fba8  _ZNSt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEC2IJS4_EvEEOS2_DpOT_
+  @0x00fc4f  _ZSt15allocate_sharedINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEESaIS7_EIS6_EESt10shared_ptrIT_ERKT0_DpOT1_
+  @0x00fef0  evconnlistener_free
+  @0x00ff04  _ZNSt16allocator_traitsISaISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISB_ELN9__gnu_cxx12_Lock_policyE2EEEE9constructISF_JKSC_SA_EEEvRSG_PT_DpOT0_
+  @0x010209  _ZNSt10shared_ptrINSt6thread10_Impl_baseEEC1INS0_5_ImplISt12_Bind_simpleIFPFvvEvEEEEvEEOS_IT_E
+  @0x010618  _ZNSt14_Sp_ebo_helperILi0ESaINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEEELb1EE6_S_getERS9_
+  @0x010951  _ZNSt16allocator_traitsISaINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEEE9constructISA_JS9_EEEvRSB_PT_DpOT0_
+  @0x010c64  _ZNSt14_Sp_ebo_helperILi0ESaINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEEELb1EED2Ev
+  @0x010d45  _ZNSt12_Bind_simpleIFPFvvEvEEC2IJEvEEOS1_DpOT_
+  @0x0111ae  _ZNSt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEESaIS7_ELN9__gnu_cxx12_Lock_policyE2EE5_ImplC1ES8_
+  @0x01135c  _ZN9__gnu_cxx13new_allocatorISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISC_ELNS_12_Lock_policyE2EEEC2Ev
+  @0x0113f5  _ZNSt16allocator_traitsISaISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEESaIS8_ELN9__gnu_cxx12_Lock_policyE2EEEE7destroyISC_EEvRSD_PT_
+  @0x011609  evutil_make_listen_socket_reuseable
+  @0x01171a  _ZNSaINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEEEC2Ev
+  @0x011a60  _ZN9__gnu_cxx13new_allocatorINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEEEC2ERKS9_
+  @0x011c1a  _ZNSt14_Sp_ebo_helperILi0ESaINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEELb1EEC1ERKSB_
+  @0x011ca6  _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2INSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEESaISB_EISA_EEESt19_Sp_make_shared_tagPT_RKT0_DpOT1_
+  @0x011db3  _ZNSt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISA_ELN9__gnu_cxx12_Lock_policyE2EED1Ev
+  @0x0121ba  _ZNSt16allocator_traitsISaINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEEEE9constructIS7_JS6_EEEvRS8_PT_DpOT0_
+  @0x0123fb  _ZNSaINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEEC2ERKSA_
+  @0x0127a6  _ZNSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEC1EOS8_
+  @0x012a30  _ZNSt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEclEv
+  @0x012a73  _ZNSt10shared_ptrINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEEED2Ev
+  @0x012ef3  _ZNSt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEC1EOS6_
+  @0x012f28  _ZN9__gnu_cxx13new_allocatorISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISC_ELNS_12_Lock_policyE2EEE10deallocateEPSF_j
+  @0x0130ad  _ZN9__gnu_cxx13new_allocatorINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEEEC1ERKS9_
+  @0x013191  _ZNSt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEESaIS7_ELN9__gnu_cxx12_Lock_policyE2EE5_Impl8_M_allocEv
+  @0x013b74  evconnlistener_get_base
+  @0x013bc7  _ZNSt16allocator_traitsISaISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISB_ELN9__gnu_cxx12_Lock_policyE2EEEE8allocateERSG_j
+  @0x014054  _ZNSt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISA_ELN9__gnu_cxx12_Lock_policyE2EE5_ImplD1Ev
+  @0x01421c  _ZNSt12__shared_ptrINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEELN9__gnu_cxx12_Lock_policyE2EEC2ISaISA_EJS9_EEESt19_Sp_make_shared_tagRKT_DpOT0_
+  @0x014943  _ZNSt16allocator_traitsISaINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEEEE7destroyIS7_EEvRS8_PT_
+  @0x014a14  _ZSt13__bind_simpleIRFvPvEIP13_HttpInitInfoEENSt19_Bind_simple_helperIT_IDpT0_EE6__typeEOS6_DpOS7_
+  @0x014bb9  _ZNSt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEC2IIS4_EvEEOS2_DpOT_
+  @0x014dc6  _ZTSNSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEE
+  @0x014e3b  _ZNSt16allocator_traitsISaISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISB_ELN9__gnu_cxx12_Lock_policyE2EEEE7destroyISF_EEvRSG_PT_
+  @0x0152a5  _ZN9__gnu_cxx13new_allocatorINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEEC1Ev
+  @0x0158d5  _ZNSaINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEED2Ev
+  @0x015b2b  _ZNSt10shared_ptrINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEEEC1ISaIS7_EJS6_EEESt19_Sp_make_shared_tagRKT_DpOT0_
+  @0x015e2e  _ZNSaISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEESaIS7_ELN9__gnu_cxx12_Lock_policyE2EEED1Ev
+  @0x015fa9  _ZNSt12_Bind_simpleIFPFvvEvEEC1IJEvEEOS1_DpOT_
+  @0x0161b1  _ZNSt10shared_ptrINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEEEC2ISaIS7_EJS6_EEESt19_Sp_make_shared_tagRKT_DpOT0_
+  @0x016224  _ZNSt12_Bind_simpleIFPFvvEvEEC2EOS3_
+  @0x016249  _ZNSaINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEED1Ev
+  @0x016867  _ZNSt16allocator_traitsISaISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEESaIS8_ELN9__gnu_cxx12_Lock_policyE2EEEE9constructISC_JKS9_S7_EEEvRSD_PT_DpOT0_
+  @0x016ade  _ZNSt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISA_ELN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv
+  @0x016c44  _ZSt15allocate_sharedINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEESaIS7_EJS6_EESt10shared_ptrIT_ERKT0_DpOT1_
+  @0x016cc0  _ZNSt16allocator_traitsISaISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISB_ELN9__gnu_cxx12_Lock_policyE2EEEE10deallocateERSG_PSF_j
+  @0x016d81  _ZN9__gnu_cxx13new_allocatorISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEESaIS9_ELNS_12_Lock_policyE2EEE9constructISC_IKSA_S8_EEEvPT_DpOT0_
+  @0x01711a  _ZNSt12__shared_ptrINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEELN9__gnu_cxx12_Lock_policyE2EED1Ev
+  @0x0171a3  _ZNSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEE6_M_runEv
+  @0x0171ec  _ZTVSt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEESaIS7_ELN9__gnu_cxx12_Lock_policyE2EE
+  @0x0172e7  _ZN9__gnu_cxx13new_allocatorISt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISC_ELNS_12_Lock_policyE2EEE8allocateEjPKv
+  @0x0174d1  _ZNSt12__shared_ptrINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEELN9__gnu_cxx12_Lock_policyE2EEC2ISaISA_EIS9_EEESt19_Sp_make_shared_tagRKT_DpOT0_
+  @0x017b14  evutil_make_listen_socket_reuseable_port
+  @0x017b3d  _ZNSaINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEEC1ERKSA_
+  @0x017ea0  _ZNSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEED2Ev
+  @0x01808a  evconnlistener_get_fd
+  @0x018166  _ZNSt12_Bind_simpleIFPFvvEvEEC2IIEvEEOS1_DpOT_
+  @0x018278  _ZNSt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEESaIS7_ELN9__gnu_cxx12_Lock_policyE2EED0Ev
+  @0x018558  _ZN9__gnu_cxx16__aligned_bufferINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEEE7_M_addrEv
+  @0x01897c  _ZN9__gnu_cxx16__aligned_bufferINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEE6_M_ptrEv
+  @0x018c4c  _ZN9__gnu_cxx16__aligned_bufferINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEEE6_M_ptrEv
+  @0x018eab  _ZNSt23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISA_ELN9__gnu_cxx12_Lock_policyE2EEC2IJS9_EEESB_DpOT_
+  @0x018f8f  _ZN9__gnu_cxx13new_allocatorINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEEED2Ev
+  @0x0192f8  _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC1INSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISE_EISD_EEESt19_Sp_make_shared_tagPT_RKT0_DpOT1_
+  @0x0193a0  _ZNSt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEC2EOS6_
+  @0x0195bd  _ZNSt12__shared_ptrINSt6thread5_ImplISt12_Bind_simpleIFPFvvEvEEEELN9__gnu_cxx12_Lock_policyE2EEC2ISaIS7_EIS6_EEESt19_Sp_make_shared_tagRKT_DpOT0_
+  @0x0199c2  _ZSt15allocate_sharedINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEESaISA_EIS9_EESt10shared_ptrIT_ERKT0_DpOT1_
+  @0x019b86  _ZNSt10shared_ptrINSt6thread10_Impl_baseEEC1INS0_5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEvEEOS_IT_E
+  @0x019c76  _ZNSaINSt6thread5_ImplISt12_Bind_simpleIFPFvPvEP13_HttpInitInfoEEEEEC1Ev
+  ... (truncated)
+
+==============================================================================
+6. singleFw / xml / slave paths
+==============================================================================
+  @0x011134  _ZN9DobotInfo13exitUpdateThdEv
+  @0x021dab  _ZN8DobotFoe17readXmlFromEEPromEPKc
+  @0x0249fd  _ZN10HttpServer27updateFunc_CRSingleFwAndXmlEP14evhttp_requestPv
+  @0x0738dc  /tmp/tUpdate/control/check_files_result.txt
+  @0x073b88  /tmp/tUpdate/kernel/kernel0804.tar.gz
+  @0x073bdc  /tmp/tUpdate/kernel/
+  @0x073c54  /tmp/tUpdate/kernel/run.sh
+  @0x074120  singleFwAndXml
+  @0x074ff0  /tmp/tUpdate/slave/
+  @0x075004  /tmp/tUpdate/control/
+  @0x07887c  updateFunc_CRSingleFwAndXml
+  @0x079ad4  /tmp/tUpdate/slave/
+  @0x079df4  /tmp/tUpdate/slave/readXml
+  @0x07df38  /tmp/tUpdate/slave/readXml
+  @0x07e3b8  /tmp/tUpdate/slave/
+  @0x07e588  /tmp/tUpdate/control/run.sh
+  @0x07e5e0  /tmp/tUpdate/control/toolUtils.sh
+  @0x07e74c  /tmp/tUpdate/control/
+  @0x07e864  readXmlFromEEProm
+  @0x07ecdc  exitUpdateThd
+  @0x18d0d4  _ZN9DobotInfo13exitUpdateThdEv
+  @0x18e9e4  _ZN10HttpServer27updateFunc_CRSingleFwAndXmlEP14evhttp_requestPv
+  @0x191a7e  updateFunc_CRSingleFwAndXml
+  @0x19419b  exitUpdateThd
+  @0x19b7e3  m_IsExistUpdateThread
+  @0x1a609b  readXmlFromEEProm
+  @0x1ae02a  _ZN8DobotFoe17readXmlFromEEPromEPKc
+  @0x20f32a  _ZZN10HttpServer27updateFunc_CRSingleFwAndXmlEP14evhttp_requestPvE12__FUNCTION__
+  @0x2117c9  _ZZN8DobotFoe17readXmlFromEEPromEPKcE12__FUNCTION__
+  @0x211998  _ZZN9DobotInfo13exitUpdateThdEvE12__FUNCTION__
+  @0x2155f3  _ZN9DobotInfo13exitUpdateThdEv
+  @0x227004  _ZN8DobotFoe17readXmlFromEEPromEPKc
+  @0x229e9e  _ZN10HttpServer27updateFunc_CRSingleFwAndXmlEP14evhttp_requestPv
+
+==============================================================================
+7. HTTP verbs & status text
+==============================================================================
+  @0x00e680  getprotobynumber
+  @0x00e6f4  getpid
+  @0x00e73f  getnameinfo
+  @0x00e753  getsockopt
+  @0x00e79f  getpeername
+  @0x00e7ab  getgid
+  @0x00e7ba  getenv
+  @0x00e7c8  getservbyname
+  @0x00e800  getuid
+  @0x00e807  getegid
+  @0x00e81b  getifaddrs
+  @0x00e849  geteuid
+  @0x00e86a  getsockname
+  @0x0733dc  get arm type is : %s
+  @0x0733f4  get arm name is : %s
+  @0x07389c  get %s mac : %s.
+  @0x075028  get version is %s.
+  @0x075070  post
+  @0x07516c  GetType() == kNumberType
+  @0x075264  GetSize() >= count * sizeof(T)
+  @0x0753b4  GetSize() >= sizeof(T)
+  @0x0768a4  getMAC
+  @0x07a820  GetSize() >= count * sizeof(T)
+  @0x07a9f4  GetSize() >= sizeof(T)
+  @0x07aac0  getSpecifyFolderFilesName
+  @0x07aafc  getActulArmType
+  @0x07ce80  getShellResult
+  @0x07cea4  getScriptCorrespondence
+  @0x07d078  getControlVersion
+  @0x07d08c  getShellName
+  @0x07d09c  getToolVersion
+  @0x07d0ac  getSlaveNameFromFile
+  @0x089008  getnameinfo failed
+  @0x08901c  getnameinfo failed: %s
+  @0x089070  getaddrinfo
+  @0x08907c  getaddrinfo: %s
+  @0x089298  POST
+  @0x18c095  getwchar
+  @0x18d1be  getMAC
+  @0x18d3a5  getchar
+  @0x18d414  get<0u, void (*)(void*), _HttpInitInfo*>
+  @0x19133c  get_id
+  @0x198d58  getenv
+  @0x19e3b5  get<1u, void (*)(void*), _HttpInitInfo*>
+  @0x19f632  get_allocator
+  @0x1a1ab8  GetParseError
+  @0x1a32e2  GetString
+  @0x1a36e8  GetCachedPower
+  @0x1a3edf  GetUint64
+  @0x1a46ad  GetCachedPowerByIndex
+  @0x1a473d  GetElementsPointer
+  @0x1a54f1  GetBool
+  @0x1a7c01  GetFloat
+  @0x1a81cf  GetStringLength
+  @0x1a90da  GetUint
+  @0x1a989a  GetType
+  @0x1ab8b4  GetLength
+  @0x1ab966  GetArray
+  @0x1ac01f  GetMembersPointer
+  @0x1ac380  GetStackCapacity
+  @0x1ac64b  GetCapacity
+  @0x1acc10  GetErrorOffset
+  @0x1ad748  GetObject
+  @0x1ad987  get<0u, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&&>
+  @0x1adcb2  GetAllocator
+  @0x1add8e  GetInt64
+  @0x1ae46b  GetDouble
+  @0x1ae607  GetInt
+  @0x1af1d7  GetSize
+  @0x1b06eb  GetMaxDecimalPlaces
+  @0x1b1d04  GetStringPointer
+  @0x1b26e7  GetDigitsLut
+  @0x1b2b95  GetRange
+  @0x1b4196  GetParseErrorCode
+  @0x1b459f  getShellName
+  @0x1b486f  getVersionFromFileName
+  @0x1b4890  getActulArmType
+  @0x1b48ef  getErrContent
+  @0x1b4b8b  getSlaveNameFromFile
+  @0x1b542c  getErrCode
+  ... (truncated)
+
+==============================================================================
+8. standalone numeric strings that could be a TCP port
+==============================================================================

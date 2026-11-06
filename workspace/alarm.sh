@@ -1,0 +1,3 @@
+echo "=== servo alarms around battery/zero ==="; grep -a -n -e "电池" -e "多圈" -e "绝对值" -e "零点" -e "原点" /dobot/userdata/CR5_sys_files/project/properties/alarm_servo.json 2>/dev/null | head -30
+echo "=== all servo alarm en descriptions ==="; grep -a -oE "\"description\" : \"[^\"]+\"" /dobot/userdata/CR5_sys_files/project/properties/alarm_servo.json 2>/dev/null | head -60
+echo "=== controller alarms (en) ==="; grep -a -oE "\"description\" : \"[^\"]+\"" /dobot/userdata/CR5_sys_files/project/properties/alarm_controller.json 2>/dev/null | head -50

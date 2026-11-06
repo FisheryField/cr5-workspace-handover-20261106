@@ -1,0 +1,74 @@
+=== HOMEParams 相关符号与字符串 ===
+/home/ovalgee/Projects/DobotLinux/application/lib_release/arm-linux-gnueabihf-4.7.3/tslib-1.4/lib:/home/ovalgee/Projects/DobotLinux/application/lib_release/qt-4.8.6-linux-arm/lib
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/csu
+_ZN10PluginBase19alloc_GetHOMEParamsEv
+_ZN10PluginBase19alloc_SetHOMEParamsEP13tagHOMEParamsi
+=== 包含 home 的文件路径 ===
+/home/ovalgee/Projects/DobotLinux/application/lib_release/arm-linux-gnueabihf-4.7.3/tslib-1.4/lib:/home/ovalgee/Projects/DobotLinux/application/lib_release/qt-4.8.6-linux-arm/lib
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/destdir/i686-pc-linux-gnu/lib/gcc/arm-linux-gnueabihf/4.9.4/include
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/i686-pc-linux-gnu/arm-linux-gnueabihf/eglibc.git~linaro_eglibc-2_19/csu/abi-note.o
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/i686-pc-linux-gnu/arm-linux-gnueabihf/eglibc.git~linaro_eglibc-2_19/csu/start.o
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/csu
+=== 所有 redis 相关键名 ===
+/dobot/userdata/project/settings/hot_key.json
+Bp:D
+C:FC
+CF:FIF
+CF:FQF
+DIF:F
+E:KY
+FxD:F
+GK:F
+IF:F
+KF:J
+S:ci
+_ZN5dobot7modules14rpcExecuteApis13rpcExecuteApi15SetTerminalKeysERKSt6vectorISsSaISsEERSs
+_ZZN5dobot7modules14rpcExecuteApis13rpcExecuteApi15SetTerminalKeysERKSt6vectorISsSaISsEERSsE12__FUNCTION__
+h:FHF
+h:iY
+kq:Jo
+nQ:B
+pack:null
+qvFeFDF:F
+zD:I
+=== 保存类函数符号 ===
+.............Start save identify file ..........
+../../svr/thirdParty/rapidjson/rapidjson-1.1.0/include/rapidjson/prettywriter.h
+../../svr/thirdParty/rapidjson/rapidjson-1.1.0/include/rapidjson/writer.h
+../lib/json/json_writer.cpp
+8, Write block index: %d.
+AcquireBlockToWrite
+Failed to write - {}!
+N4Json10FastWriterE
+N4Json12StreamWriter7FactoryE
+N4Json12StreamWriterE
+N4Json12StyledWriterE
+N4Json19StreamWriterBuilderE
+N4Json23BuiltStyledStreamWriterE
+N4Json6WriterE
+Start saveExcitProcess...
+Successfully restored collision back distance = {}.
+T* rapidjson::internal::Stack<Allocator>::Top() [with T = rapidjson::Writer<rapidjson::GenericStringBuffer<rapidjson::UTF8<> > >::Level; Allocator = rapidjson::CrtAllocator]
+TryLockForWrite
+[%s|%s@%s,%d] You trying to store null value
+[Segment::Write]Write block index failed.
+[{}] save data {} 
+[{}] write file {} faild ret = {}
+_ZN14DataSubProcess16saveExcitProcessEPv
+_ZN14DataSubProcess17writeDataToModbusEP13ModbusRequesti
+_ZN14DataSubProcess8tcpWriteEP14evhttp_requestPv
+_ZN15DebugSubProcess10conn_writeEP11buffereventPv
+_ZN17JsonProjectReader18st_temp_coord_saveEii
+_ZN4Json10FastWriter10writeValueERKNS_5ValueE
+_ZN4Json10FastWriter18omitEndingLineFeedEv
+_ZN4Json10FastWriter20dropNullPlaceholdersEv
+_ZN4Json10FastWriter23enableYAMLCompatibilityEv
+_ZN4Json10FastWriter5writeERKNS_5ValueE
+_ZN4Json10FastWriterC1Ev
+_ZN4Json10FastWriterC2Ev
+_ZN4Json10FastWriterD0Ev
+_ZN4Json10FastWriterD1Ev
+_ZN4Json10FastWriterD2Ev
+_ZN4Json11writeStringERKNS_12StreamWriter7FactoryERKNS_5ValueE
+_ZN4Json12StreamWriter7FactoryD0Ev
+_ZN4Json12StreamWriter7FactoryD1Ev

@@ -1,0 +1,163 @@
+=== alarm.json @53730
+
+        "en": {
+            "description" : "Encoder malfunction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "编码器异常故障",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 7382,
+        "level": 0,
+        "en": {
+            "description" : "Encoder battery abnormal protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "编码器电池异常保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8611,
+        "level": 0,
+        "en": {
+            "description" : "Postion error too large protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "位置偏差过大保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8612,
+        "level": 0,
+        "en": {
+            "description" : "Postion setting out of range",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "位置给定超限保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 3220,
+        "level": 0,
+        "en": {
+            "description" : "Power between PN low protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "PN间电压不足保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 3210,
+        "level": 0,
+        "en": {
+            "description" : "P
+
+=== alarm_servo.json @23624
+ 0,
+        "en": {
+            "description" : "Encoder malfunction",
+            "cause" : "",
+            "solution" : ""
+        },
+        "zh_CN": {
+            "description" : "编码器异常故障",
+            "cause" : "",
+            "solution" : ""
+        }
+    },
+    {
+        "id": 29570,
+        "level": 0,
+        "en": {
+            "description" : "Encoder battery abnormal protection",
+            "cause" : "",
+            "solution" : ""
+        },
+        "zh_CN": {
+            "description" : "编码器电池异常保护",
+            "cause" : "",
+            "solution" : ""
+        }
+    },
+    {
+        "id": 34321,
+        "level": 0,
+        "en": {
+            "description" : "Postion error too large protection",
+            "cause" : "",
+            "solution" : ""
+        },
+        "zh_CN": {
+            "description" : "位置偏差过大保护",
+            "cause" : "",
+            "solution" : ""
+        }
+    },
+    {
+        "id": 34322,
+        "level": 0,
+        "en": {
+            "description" : "Postion setting out of range",
+            "cause" : "",
+            "solution" : ""
+        },
+        "zh_CN": {
+            "description" : "位置给定超限保护",
+            "cause" : "",
+            "solution" : ""
+        }
+    },
+    {
+        "id": 12832,
+        "level": 0,
+        "en": {
+            "description" : "Power between PN low protection",
+            "cause" : "",
+            "solution" : ""
+        },
+        "zh_CN": {
+            "description" : "PN间电压不足保护",
+            "cause" : "",
+            "solution" : ""
+        }
+    },
+    {
+        "id": 12816,
+        "level": 0,
+        "en": {
+            "description" : "Pow
+
+=== param.csv @37826
+V相电流平衡校正,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FALSE,H0D组 全闭环功能参数,1,H0D.00,0:  内部编码器反馈,0,1,,TRUE,编码器反馈模式,254,0,FALSE,FALSE,FALSE,1,0:  内部编码器反馈,1:  外部编码器反馈,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FALSE,H0D组 全闭环功能参数,1,H0D.01,0:  以标准运行方向使用,0,1,,TRUE,外部编码器使用方式,193,0,FALSE,FALSE,FALSE,1,0:  以标准运行方向使用,1:  以反转运行方向使用,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FALSE,H0D组 全闭环功能参数,1,H0D.02,10000,0,1073741824,外部编码器单位,TRUE,电机旋转一圈外部编码器反馈脉冲数,194,0,FALSE,FALSE,FALSE,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FALSE,H0D组 全闭环功能参数,1,H0D.03,1000,0,1073741824,外部编码器单位,TRUE,全闭环位置偏差过大阈值,195,0,FALSE,FALSE,FALSE,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FALSE,H0D组 全闭环功能参数,1,H0D.04,0,0,100,Rev,TRUE,全闭环位置偏差清除设置,196,0,FALSE,FALSE,FALSE,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FALSE,H0D组 全闭环功能参数,1,H0D.05,10,10,65535,ms,TRUE,混合振动抑制滤波时间常数,197,0,FALSE,FALSE,FALSE,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FALSE,H0D组 全闭环功能参数,1,H0D.06,0,-1073741824,1073741824,外部编码器单位,TRUE,全闭环位置偏差计数器,198,0,TRUE,FALSE,FALSE,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FALSE,H0D组 全闭环功能参数,1,H0D.07,0,-1073741824,1073741824,外部编码器单位,TRUE,内部编码器反馈脉冲计数器,199,0,TRUE,FALSE,FALSE,0,,,,,,,,,,,,,,,,,,,
+
+ALARMCTX:             "cause" : "",             "solution" : "",         },         "zh_CN": {             "description" : "速度偏差过大保护",             "cause" : "",             "solution" : "",         }     },     {         "id": 8482,         
+ALARMCTX:             "cause" : "",             "solution" : "",         },         "zh_CN": {             "description" : "位置偏差过大保护",             "cause" : "",             "solution" : "",         }     },     {         "id": 8612,         

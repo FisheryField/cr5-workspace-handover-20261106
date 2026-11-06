@@ -1,0 +1,136 @@
+{
+  "candidate": "D:\\mydata\\working things\\dobot_arm\\RoboDK files 2\\连续轨迹16_YZ微调_本体130_候选.json",
+  "sha256": "660b303af02f6a207fcb30a59401eabcc9eab594d95c738e5cc6ea1b9a84c01a",
+  "changed_points": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "dy": 2.5,
+  "dz": -2.5,
+  "all23_have_verified_ik": true,
+  "max_position_error_mm": 9.640798018624414e-05,
+  "max_angle_error_deg": 1.3115919625095442e-05,
+  "auxiliary_numeric_plan": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\traj16_yz_numeric_20261103_165218\\result.json",
+  "original_preserved": true,
+  "p9_method": "MoveJ",
+  "p11_method": "MoveL",
+  "errors": [
+    {
+      "point": 1,
+      "position_mm": 1.8921986268044644e-06,
+      "orientation_deg": 0.0
+    },
+    {
+      "point": 2,
+      "position_mm": 8.113321360754106e-07,
+      "orientation_deg": 0.0
+    },
+    {
+      "point": 3,
+      "position_mm": 1.6432345821851952e-06,
+      "orientation_deg": 0.0
+    },
+    {
+      "point": 4,
+      "position_mm": 1.6432345816043876e-06,
+      "orientation_deg": 0.0
+    },
+    {
+      "point": 5,
+      "position_mm": 1.7005239476838277e-06,
+      "orientation_deg": 1.2074182697257333e-06
+    },
+    {
+      "point": 6,
+      "position_mm": 9.640798018624414e-05,
+      "orientation_deg": 2.9575586669421963e-06
+    },
+    {
+      "point": 7,
+      "position_mm": 8.102593897100926e-07,
+      "orientation_deg": 0.0
+    },
+    {
+      "point": 8,
+      "position_mm": 2.2691954975708134e-05,
+      "orientation_deg": 1.7075472925031877e-06
+    },
+    {
+      "point": 9,
+      "position_mm": 4.7938817578399554e-05,
+      "orientation_deg": 6.613302226726415e-06
+    },
+    {
+      "point": 10,
+      "position_mm": 4.7938817552967945e-05,
+      "orientation_deg": 6.613302226726415e-06
+    },
+    {
+      "point": 11,
+      "position_mm": 9.587688222880434e-05,
+      "orientation_deg": 1.3115919625095442e-05
+    },
+    {
+      "point": 12,
+      "position_mm": 1.7779446792170436e-06,
+      "orientation_deg": 1.2074182697257333e-06
+    },
+    {
+      "point": 13,
+      "position_mm": 5.090480387970957e-06,
+      "orientation_deg": 0.0
+    },
+    {
+      "point": 14,
+      "position_mm": 1.7779446261003893e-06,
+      "orientation_deg": 0.0
+    },
+    {
+      "point": 15,
+      "position_mm": 5.090479901914418e-06,
+      "orientation_deg": 1.2074182697257333e-06
+    },
+    {
+      "point": 16,
+      "position_mm": 1.7779447869205834e-06,
+      "orientation_deg": 1.2074182697257333e-06
+    },
+    {
+      "point": 17,
+      "position_mm": 5.090480065271459e-06,
+      "orientation_deg": 1.2074182697257333e-06
+    },
+    {
+      "point": 18,
+      "position_mm": 1.777741772587843e-06,
+      "orientation_deg": 0.0
+    },
+    {
+      "point": 19,
+      "position_mm": 4.996761953934934e-06,
+      "orientation_deg": 0.0
+    },
+    {
+      "point": 20,
+      "position_mm": 1.767990802949652e-06,
+      "orientation_deg": 0.0
+    },
+    {
+      "point": 21,
+      "position_mm": 2.4026734086624615e-06,
+      "orientation_deg": 0.0
+    },
+    {
+      "point": 22,
+      "position_mm": 5.9483877060504795e-06,
+      "orientation_deg": 0.0
+    },
+    {
+      "point": 23,
+      "position_mm": 1.2063737399207762e-06,
+      "orientation_deg": 0.0
+    }
+  ]
+}

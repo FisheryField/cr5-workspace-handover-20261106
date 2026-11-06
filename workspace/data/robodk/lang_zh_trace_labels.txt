@@ -1,0 +1,25 @@
+file: D:\software\RoboDK\Lang\Lang_zh.qm (351709 bytes)
+
+=== source 'Trace' : 0 hit(s)
+
+=== source 'References' : 0 hit(s)
+
+=== source 'Points' : 0 hit(s)
+
+=== source 'Dots' : 0 hit(s)
+
+=== source 'Spheres' : 0 hit(s)
+
+=== source 'Lines' : 0 hit(s)
+
+=== source 'Line' : 0 hit(s)
+
+=== source 'Reset' : 0 hit(s)
+
+=== source 'Trace On' : 0 hit(s)
+
+=== source 'Trace References' : 0 hit(s)
+
+=== source 'Show trace' : 0 hit(s)
+
+=== source 'References Off' : 0 hit(s)

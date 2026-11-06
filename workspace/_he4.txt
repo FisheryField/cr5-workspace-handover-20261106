@@ -1,0 +1,42 @@
+=== loadParams.json ===
+{
+    "centerX": 0,
+    "centerY": 0,
+    "centerZ": 0,
+    "loadValue": 0.2
+}
+=== log 中 homeEncoder 全部出现(带上下文) ===
+379326:[2026-09-18 19:27:04.896] [15] [info] [writeJsonFile#3114] enter this function, write file:/dobot/userdata/project/settings/function/homeEncoder.json.
+
+=== 上下文 (前3行/后12行) ===
+
+[2026-09-18 19:27:04.896] [15] [info] [updateEncoderData#15790]  enter ...
+
+[2026-09-18 19:27:04.896] [15] [info] [writeJsonFile#3114] enter this function, write file:/dobot/userdata/project/settings/function/homeEncoder.json.
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2054] PoseTrace: gRobotAxisMove.nextPos:  0.000000,0.000000,0.000000,0.000000,0.000000,0.000000
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2055] PoseTrace: (PDO0x6062)Position demand value:  8.230689,12.523636,-3.431578,21.034675,15.904241,20.123224
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2056] PoseTrace: gActualPosition:  -0.000000,-0.013367,-0.000535,-0.002317,-0.000178,-0.001248
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2058] PoseTrace: nextPose: 1.119989, -245.184613, 1047.933038, -89.767143, -0.000067, 179.863859 
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2060] PoseTrace: DemandPose: -145.374919, -264.696517, 1032.141405, -77.752451, 48.646654, -148.928710 
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2062] PoseTrace: ActualPose: 1.339001, -245.184660, 1047.932891, -89.767114, -0.017533, 179.863684 
+
+=== 谁 READ homeEncoder / read file ===
+=== libdataSvr 里该路径字符串 ===
+/dobot/userdata/project/settings/function/homeEncoder.json
+/dobot/userdata/project/settings/function/servoParams.json
+/dobot/userdata/project/settings/function/ioctrl.json
+/dobot/userdata/project/settings/function/minicab_ioctrl.json
+/dobot/userdata/project/settings/function/modbusctrl.json
+/dobot/userdata/project/settings/function/workModeDI.json
+=== loadParams 在 log ===
+[2026-09-18 17:29:30.342] [15] [info] [getLoadParams#1660] enter this function...
+#2980] enter this function, read file:/dobot/userdata/project/settings/function/loadParams.json.
+[2026-09-18 17:29:30.343] [15] [info] [DataSubProcess#12441] getLoadParams         = 0 
+5] [info] [conn_req_dir#10692] 192.168.5.100:65330 GET uri : /settings/function/loadParams
+[2026-09-18 17:29:52.777] [15] [info] [getLoadParams#1733] enter this function ...

@@ -1,0 +1,156 @@
+=== iscara.conf (full) ===
+[DataSvr]
+#data svr
+datasvr_data_port = 22000
+datasvr_lua_port = 12346
+datasvr_debug_port = 11000
+
+#broadcast
+broadcast_port=6000
+broadcast_msg=dobotM1_
+broadcast_chkmsg=WhoisDobotM1
+
+# M4 serial tiemout
+timeout=3
+
+# buffer
+buffer_size=8
+packet_size=20
+debug_size = 1200
+
+eth0_ip=192.168.0.1
+eth0_mask=255.255.255.0
+eth0_gw=192.168.0.1
+eth0_dns=202.96.134.133
+
+[Scara_Framewrok]
+posZero1=1
+posZero1=2
+posZero1=3
+posZero1=4
+
+[SerialSvr]
+ttylist=/dev/ttymxc4
+buffer_size=8
+packet_size=20
+speed=115200
+bits=8
+event=N
+stop=1
+
+[UdpSvr]
+port=12345
+maxclient=10
+buffer_size=8
+packet_size=20
+=== redis ===
+PONG
+0
+
+=== dobot_setting ===
+/bin/sqlite3: error while loading shared libraries: libsqlite3.so.0: cannot open shared object file: No such file or directory
+=== strings: save.sh refs ===
+/dobot/bin/gcontrol                                     0
+/dobot/bin/getVersion                                   0
+/dobot/bin/logServer                                    0
+/dobot/bin/lib/libalgs_framework.so.1.0.0               0
+/dobot/bin/lib/libdataSvr.so.1.0.0                      0
+/dobot/bin/lib/libprocessPlugin.so.1.0.0                0
+/home/ftp/.lib/libCmpDobot6Axes.so                      0
+/home/ftp/.lib/libIoDrvDobIO.so                         0
+=== strings: zero/calib tokens in CODESYS dobot comp ===
+ENCODERTYPE
+m_EncoderCnt
+m_EncoderResolution
+m_EncoderType
+m_SetEncoderCnt
+m_ZeroVelocity
+=== strings: zero/calib in gcontrol ===
+### nEncoderChannel : {} ###
+/dobot/userdata/project/process/sixForce/calibProcess.json
+/dobot/userdata/project/process/sixForce/calibProcess.json parse faild!
+IsRobotCalib
+[%s] #%d: calibResult[%d] is not a number !!!
+[AppProtocol::OnIoAoABZ] mode cycle is ing, return
+[AppProtocol::OnIoAoABZ] mode is 0
+[AppProtocol::OnIoAoABZ] mode is 1
+[AppProtocol::OnIoAoABZ] timeout 150ms, no data !!!!!!!!!
+[AppProtocol::OnIoAoABZ]: reply len: %d
+[AppProtocol::TransportIoAoABZCycle]: reply len: %d
+[PackDualCalibrationResult] : %s
+[ParseDualCalibration] parse error!
+_ZN10PluginBase12alloc_GetABZEP8tagIOABZ
+_ZN10PluginBase12alloc_SetABZEP8tagIOABZb
+_ZN10PluginBase19alloc_SetFCCalibCmdEP9tagFCLoadi
+_ZN10PluginBase21alloc_GetEncoderValueEPhb
+_ZN10PluginBase29alloc_GetLRHandCalibrateValueEv
+_ZN10PluginBase29alloc_SetLRHandCalibrateValueEf
+_ZN3fmt2v86detail6bigint20remove_leading_zerosEv
+_ZN5dobot6common4util8JsonUtil20ParseDualCalibrationEPKcRbP15DualInputParamsS7_P9DualTrans
+_ZN5dobot6common4util8JsonUtil25PackDualCalibrationResultEP16DualOutputParamsS4_
+_ZN5dobot7modules7service11AppProtocol21TransportIoAoABZCycleEiPht
+_ZN5dobot7modules7service11AppProtocol9OnIoAoABZEiPht
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_14big_decimal_fpEcEET_S5_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESA_E4zero
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_9dragonbox10decimal_fpIdEEcEET_S7_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESC_E4zero
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_9dragonbox10decimal_fpIfEEcEET_S7_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESC_E4zero
+bzero
+bzero@@GLIBC_2.4
+calib
+calibResult
+calibType
+encoder
+encoder_channel
+exit AppProtocol::TransportIoAoABZCycle .
+zero
+=== strings: in Application.app ===
+Encoder
+Invalid angular velocity or acceleration (quaternion with non-zero real part, internal error).
+Nenner der Encoderumrechnung 0
+The radius is zero.
+Velocity or acceleration or deceleration is zero
+anderer FB wollte Encoder-Achse steuern
+denominator equals zero
+denominator for encoder zero
+invalid (zero) parameters
+other FB tried to control encoder axis
+set velocity of path equals zero
+velocity at corner more than zero
+=== UTF8 byte search 零点/标定 ===
+/home/ftp/PlcLogic/Application/Application.app               0
+/dobot/bin/gcontrol                                          0
+/home/ftp/.lib/libCmpDobot6Axes.so                           0
+/dobot/bin/lib/libalgs_framework.so.1.0.0                    0
+/dobot/bin/dobot.db                                          0
+=== codesys resource contents (allST) ===
+total 1050
+drwxr-xr-x    2 1022     1024          1024 Sep 18 09:28 .
+drwxr-xr-x   10 1022     1024          1024 Sep 18 09:28 ..
+-rwxr-xr-x    1 1022     1024       1065764 Dec 30  2022 Application.app
+-rwxr-xr-x    1 1022     1024            28 Dec 30  2022 Application.crc
+=== slaveinfo head ===
+.......................................................p..............................................................................................................................................................................................................................t...............................i......in....r.............................................................[:.............=== properties dir ===
+total 310
+drwxr-xr-x    2 1022     1024          1024 Sep 18 09:28 .
+drwxr-xr-x    8 1022     1024          1024 Dec 30  2022 ..
+-rwxr-xr-x    1 1022     1024          1003 Dec 30  2022 AdvancedFunction.json
+-rwxr-xr-x    1 1022     1024          2049 Dec 30  2022 PoseSelfInterference.json
+-rwxr-xr-x    1 root     root         59785 Feb 19  1976 alarm.json
+-rwxr-xr-x    1 1022     1024        190994 Dec 30  2022 alarm_controller.json
+-rwxr-xr-x    1 1022     1024         40958 Dec 30  2022 alarm_servo.json
+-rwxr-xr-x    1 1022     1024            14 Dec 30  2022 axis.json
+-rwxr-xr-x    1 1022     1024            26 Dec 30  2022 businessType.json
+-rwxr-xr-x    1 root     root            26 Sep 18 14:12 controlCabType.json
+-rwxr-xr-x    1 1022     1024            34 Dec 30  2022 controllerType.json
+-rwxr-xr-x    1 1022     1024          4867 Dec 30  2022 default.json
+-rwxr-xr-x    1 root     root           975 Feb 19  1976 ratio_default.json
+-rwxr-xr-x    1 root     root          4539 Feb 19  1976 structure.json
+total 19
+drwxr-xr-x    9 1022     1024          1024 Sep 18 09:28 .
+drwxr-xr-x    8 1022     1024          1024 Dec 30  2022 ..
+-rwxr-xr-x    1 root     root            21 Feb 19  1976 Dobot+.json
+-rwxr-xr-x    1 root     root           103 Feb 19  1976 My.lua
+-rwxr-xr-x    1 root     root            98 Feb 19  1976 My_api.lua
+-rwxr-xr-x    1 1022     1024          1584 Dec 30  2022 Plugin.lua
+-rwxr-xr-x    1 1022     1024           240 Dec 30  2022 api.lua
+-rwxr-xr-x    1 root     root            20 Feb 19  1976 common.json
+drwxr-xr-x    2 root     root          1024 Sep 16 16:27 coordinate

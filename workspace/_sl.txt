@@ -1,0 +1,121 @@
+=== full SlaveLog ===
+ec_init on eth0 succeeded.
+9 slaves found and configured.
+Calculated workcounter 27
+
+Slave:1
+Slave:2
+Slave:3
+Slave:4
+Slave:5
+Slave:6
+Slave:7
+Slave:8
+Slave:9
+00 vid:0x00000a62 pid:0x00000221 rev:0x00000103 CoRobot Safety IO
+
+01 vid:0x00000a62 pid:0x00000222 rev:0x00000103 CoRobot Uni IO
+
+02 vid:0x00000a62 pid:0x00000121 rev:0x00020001 Dobot DS121
+
+03 vid:0x00000a62 pid:0x00000121 rev:0x00020001 Dobot DS121
+
+04 vid:0x00000a62 pid:0x00000121 rev:0x00020001 Dobot DS121
+
+05 vid:0x00000a62 pid:0x00000121 rev:0x00020001 Dobot DS121
+
+06 vid:0x00000a62 pid:0x00000121 rev:0x00020001 Dobot DS121
+
+07 vid:0x00000a62 pid:0x00000121 rev:0x00020001 Dobot DS121
+
+08 vid:0x00000a62 pid:0x00000230 rev:0x00000103 CoRobot Terminal IO
+
+result : 
+:=DINT:=GVL.Slave_Nums:=9
+:=DINT:=GVL.Slave_ProductID[0]:=545
+:=DINT:=GVL.Slave_ProductID[1]:=546
+:=DINT:=GVL.Slave_ProductID[2]:=289
+:=DINT:=GVL.Slave_ProductID[3]:=289
+:=DINT:=GVL.Slave_ProductID[4]:=289
+:=DINT:=GVL.Slave_ProductID[5]:=289
+:=DINT:=GVL.Slave_ProductID[6]:=289
+:=DINT:=GVL.Slave_ProductID[7]:=289
+:=DINT:=GVL.Slave_ProductID[8]:=560
+:=DINT:=GVL.Slave_ProductID[9]:=0
+:=DINT:=GVL.Slave_SoftVersion[0]:=259
+:=DINT:=GVL.Slave_SoftVersion[1]:=259
+:=DINT:=GVL.Slave_SoftVersion[2]:=131073
+:=DINT:=GVL.Slave_SoftVersion[3]:=131073
+:=DINT:=GVL.Slave_SoftVersion[4]:=131073
+:=DINT:=GVL.Slave_SoftVersion[5]:=131073
+:=DINT:=GVL.Slave_SoftVersion[6]:=131073
+:=DINT:=GVL.Slave_SoftVersion[7]:=131073
+:=DINT:=GVL.Slave_SoftVersion[8]:=259
+:=DINT:=GVL.Slave_SoftVersion[9]:=0
+
+9 9 9 0 
+codesys check success at 0
+codesys check success result : /dobot/userdata/codesys/allST/
+{"controlCab":"NormalCab"} 
+=== getVersion strings (ethercat?) ===
+Starting slaveinfo
+ec_init on %s succeeded.
+%d slaves found and configured.
+Not all slaves reached safe operational state.
+Slave %d State=%2x StatusCode=%4x : %s
+slaves
+Slave:%d
+No slaves found!
+slaves
+:=DINT:=GVL.Slave_Nums:=
+:=DINT:=GVL.Slave_ProductID[%d]:=%d
+:=DINT:=GVL.Slave_SoftVersion[%d]:=%d
+/tmp/slave.json
+/home/ftp/PlcLogic/Recipe/SlaveInfos.SlaveInfos.txtrecipe
+/home/guoyanzhang/SOEgetVersion/soemgetversion/json/json.cpp
+Slave needs cold start
+Slave needs INIT
+Slave needs PREOP
+Slave needs SAFEOP
+Slave restarted locally
+No more memory in slave
+%s SDO slave:%d index:%4.4x.%2.2x error:%8.8x %s
+%s EMERGENCY slave:%d error:%4.4x
+%s PACKET slave:%d index:%4.4x.%2.2x error:%d
+%s SoE slave:%d IDN:%4.4x error:%4.4x %s
+%s MBX slave:%d error:%4.4x %s
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/csu
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/csu
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/csu
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/destdir/i686-pc-linux-gnu/lib/gcc/arm-linux-gnueabihf/4.9.4/include
+=== slaveinfo strings (functions) ===
+Starting slaveinfo
+ec_init on %s succeeded.
+%d slaves found and configured.
+Not all slaves reached safe operational state.
+Slave %d State=%2x StatusCode=%4x : %s
+Slave:%d
+No slaves found!
+End slaveinfo, close socket
+SOEM (Simple Open EtherCAT Master)
+Slaveinfo
+Usage: slaveinfo ifname [options]
+ -sdo : print SDO info
+Slave needs cold start
+Slave needs INIT
+Slave needs PREOP
+Slave needs SAFEOP
+Slave restarted locally
+No more memory in slave
+%s SDO slave:%d index:%4.4x.%2.2x error:%8.8x %s
+%s EMERGENCY slave:%d error:%4.4x
+%s PACKET slave:%d index:%4.4x.%2.2x error:%d
+%s SoE slave:%d IDN:%4.4x error:%4.4x %s
+%s MBX slave:%d error:%4.4x %s
+slaveinfo.c
+ethercattype.h
+ethercatmain.h
+ethercatcoe.h
+ethercatcoe.c
+ethercattype.h
+ethercatmain.h

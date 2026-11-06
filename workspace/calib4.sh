@@ -1,0 +1,11 @@
+echo "=== iscara.conf (full) ==="; cat /dobot/bin/etc/iscara.conf
+echo "=== redis ==="; /dobot/bin/bin/redis-cli -h 127.0.0.1 -p 6379 ping 2>&1; /dobot/bin/bin/redis-cli -h 127.0.0.1 -p 6379 dbsize 2>&1; /dobot/bin/bin/redis-cli -h 127.0.0.1 -p 6379 keys "*" 2>&1 | head -60
+echo "=== dobot_setting ==="; /bin/sqlite3 /dobot/bin/dobot.db "select key,value from dobot_setting;" 2>&1 | head -50
+echo "=== strings: save.sh refs ==="; for f in /dobot/bin/gcontrol /dobot/bin/getVersion /dobot/bin/logServer /dobot/bin/lib/libalgs_framework.so.1.0.0 /dobot/bin/lib/libdataSvr.so.1.0.0 /dobot/bin/lib/libprocessPlugin.so.1.0.0 /home/ftp/.lib/libCmpDobot6Axes.so /home/ftp/.lib/libIoDrvDobIO.so; do printf "%-55s " "$f"; strings "$f" 2>/dev/null | grep -ciE "save\.sh|/opt/\.zero"; done
+echo "=== strings: zero/calib tokens in CODESYS dobot comp ==="; strings /home/ftp/.lib/libCmpDobot6Axes.so 2>/dev/null | grep -iE "zero|calib|encoder" | sort -u | head -40
+echo "=== strings: zero/calib in gcontrol ==="; strings /dobot/bin/gcontrol 2>/dev/null | grep -iE "zero|calib|abz|encoder" | sort -u | head -50
+echo "=== strings: in Application.app ==="; strings /home/ftp/PlcLogic/Application/Application.app 2>/dev/null | grep -iE "zero|calib|encoder|GVL\." | sort -u | head -50
+echo "=== UTF8 byte search 零点/标定 ==="; printf "\351\233\266\347\202\271\n\346\240\207\345\256\232\n" > /tmp/zd.txt; for f in /home/ftp/PlcLogic/Application/Application.app /dobot/bin/gcontrol /home/ftp/.lib/libCmpDobot6Axes.so /dobot/bin/lib/libalgs_framework.so.1.0.0 /dobot/bin/dobot.db; do printf "%-60s " "$f"; grep -a -c -F -f /tmp/zd.txt "$f" 2>/dev/null; done
+echo "=== codesys resource contents (allST) ==="; ls -la /dobot/userdata/codesys/allST 2>/dev/null | head -15
+echo "=== slaveinfo head ==="; head -c 400 /dobot/userdata/slaveinfo | tr -c "[:print:]\n" "."
+echo "=== properties dir ==="; ls -la /dobot/userdata/CR5_sys_files/project/properties 2>/dev/null; ls -la /dobot/userdata/CR5_sys_files/project/settings 2>/dev/null | head

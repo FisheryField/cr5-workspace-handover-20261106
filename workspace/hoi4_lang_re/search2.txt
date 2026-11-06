@@ -1,0 +1,52 @@
+﻿== search 'language' ==
+  off=0x2233f30 va=0x142234b30 .text    <<	||DÿH}D||HUI×HzHBvHHø
+u3H
+H¸>>H+ÈuJ¸s.ymH+Èu¶J¸l|||¶ÀH+ÈHÉtlIcøWÀHÁç
+  off=0x2700265 va=0x142701065 .rdata   <<|||allowoldsaves|||start_save||||||localisation/>>s.yml||||||KMWBGRbgYTH!||||language||||||||DataC
+  off=0x2700288 va=0x142701088 .rdata   <<localisation/languages.yml||||||KMWBGRbgYTH!||||>>||||||||DataChecksum: %s
+|||||||AppChecksum: %s
+
+  off=0x270564d va=0x14270644d .rdata   <<sum_changed||||||||mod_service|psn|pdx|||||game_>>|||os_language|||||game_integrity||file_integrit
+  off=0x270565b va=0x14270645b .rdata   <<|||||mod_service|psn|pdx|||||game_language|||os_>>|||||game_integrity||file_integrity_verified|int
+  off=0x2ad3220 va=0x142ad4020 .rdata   <<checksum||||||||artillery_equipment|||||has_set_>>||||||||anti_tank_equipment|||||click_to_front||
+  off=0x2ad5ab8 va=0x142ad68b8 .rdata   <<s|||Ê:||multiline|||Ë:||bitmapfont_override|Ì:||>>s|||Í:||first_tag|||||||third_party_warn||||Î:||
+  off=0x2b0c940 va=0x142b0d740 .rdata   << sensor manager event sink||
+èACouldn't obtain >> info|||GetUserPreferredUILanguages|||||CoInitia
+  off=0x2b17c8f va=0x142b18a8f .rdata   <<%d|||||||GL_ARB_shader_objects|||GL_ARB_shading_>>_100|||||GL_ARB_vertex_shader||||GL_ARB_fragment
+  off=0x2b444fd va=0x142b452fd .rdata   <<||| A@|||p
+@|||p
+@|||à@|||à@||| for >> ||||||||||C:\mnt\gsg\hoi4\hoi4_merged\clausewit
+  off=0x2b44650 va=0x142b45450 .rdata   <<e ||||||Illegal break character (utf32=|\t||
+|||>>s.yml|||unknown_file||||_tag||||:ÝB|||Â@|||
+  off=0x2b66fdf va=0x142b67ddf .rdata   <<|GL_ARB_shader_texture_lod|||||||GL_ARB_shading_>>_420pack|GL_ARB_shading_language_include|GL_ARB_
+  off=0x2b66fff va=0x142b67dff .rdata   <<|GL_ARB_shading_language_420pack|GL_ARB_shading_>>_include|GL_ARB_shading_language_packing|GL_ARB_
+  off=0x2b6701f va=0x142b67e1f .rdata   <<|GL_ARB_shading_language_include|GL_ARB_shading_>>_packing|GL_ARB_shadow|||GL_ARB_shadow_ambient||
+== search 'Unknown setting for System' ==
+  off=0x2b28c30 va=0x142b29a30 .rdata   <<sewitz\clausewitzlib\launcher_settings.cpp||||||>> category in pdx_settings.txt|display_index|||di
+== search 'pdx_settings' ==
+  off=0x2700370 va=0x142701170 .rdata   <<p|||||||settings.txt||||gameplaysettings.txt||||>>.txt||||||||dlc_load.json|||mods_registry.json||
+  off=0x2b28b18 va=0x142b29918 .rdata   <<T+||||||Failed to convert keyevent to string||||>>.txt||||||||`LÜB|||`è%B|||ðJB|||°@|||0JB
+  off=0x2b28c57 va=0x142b29a57 .rdata   <<cpp||||||Unknown setting for System category in >>.txt|display_index|||display_mode||||borderless_
+  off=0x2b28ce4 va=0x142b29ae4 .rdata   <<n|||windowed_resolution|||||Unknown renderer in >>.txt||||Unknown setting for Graphics category in
+  off=0x2b28d21 va=0x142b29b21 .rdata   <<txt||||Unknown setting for Graphics category in >>.txt|||||||Unknown Category in pdx_settings.txt|
+  off=0x2b28d4c va=0x142b29b4c .rdata   <<y in pdx_settings.txt|||||||Unknown Category in >>.txt||||Unknown screen mode!||||Mesh.Wireframe||
+== search 'settings.txt' ==
+  off=0x2700348 va=0x142701148 .rdata   <<n v1.19.2.0.a729||||hoi4||||||||full_dump|||||||>>||||gameplaysettings.txt||||pdx_settings.txt||||
+  off=0x2700360 va=0x142701160 .rdata   <<||||||||full_dump|||||||settings.txt||||gameplay>>||||pdx_settings.txt||||||||dlc_load.json|||mods
+  off=0x2700374 va=0x142701174 .rdata   <<||||settings.txt||||gameplaysettings.txt||||pdx_>>||||||||dlc_load.json|||mods_registry.json||||||
+  off=0x2700550 va=0x142701350 .rdata   <<-error_title||||SDL_Init failed: |||||||autotest>>||||mod|dlc|forcenodlc||||||force_no_dlc||||Unkn
+  off=0x2a03e89 va=0x142a04c89 .rdata   <<DB missing version number, assuming same|||||||/>>|||||||||||C:\mnt\gsg\hoi4\hoi4_merged\hoi4\sour
+  off=0x2b28b1c va=0x142b2991c .rdata   <<||||Failed to convert keyevent to string||||pdx_>>||||||||`LÜB|||`è%B|||ðJB|||°@|||0JB|||
+  off=0x2b28c5b va=0x142b29a5b .rdata   <<|||||Unknown setting for System category in pdx_>>|display_index|||display_mode||||borderless_full
+  off=0x2b28ce8 va=0x142b29ae8 .rdata   <<windowed_resolution|||||Unknown renderer in pdx_>>||||Unknown setting for Graphics category in pdx
+  off=0x2b28d25 va=0x142b29b25 .rdata   <<|||Unknown setting for Graphics category in pdx_>>|||||||Unknown Category in pdx_settings.txt||||U
+  off=0x2b28d50 va=0x142b29b50 .rdata   << pdx_settings.txt|||||||Unknown Category in pdx_>>||||Unknown screen mode!||||Mesh.Wireframe||Mesh
+  off=0x2b58fc9 va=0x142b59dc9 .rdata   <<|||||||Graphic Adapters: ||||||||||||||Error in >>. "adapter" has an invalid value. Setting it to 
+  off=0x2b591ab va=0x142b59fab .rdata   <<s card.
+You could try to write adapter=1 in the >> file.|||Failed to create a graphics device.
+Thi
+  off=0x2b5924f va=0x142b5a04f .rdata   <<s card.
+You could try to write adapter=1 in the >> file.|||||||Failed to create a graphics device.
+== search 'gameplaysettings' ==
+  off=0x2700358 va=0x142701158 .rdata   <<||||hoi4||||||||full_dump|||||||settings.txt||||>>.txt||||pdx_settings.txt||||||||dlc_load.json|||
+  off=0x2aca3f0 va=0x142acb1f0 .rdata   <<¹||||||setgameplayoptions||H||º||»||H||||||>>||||H||¼||||||move_capital||||½||H||naval_at

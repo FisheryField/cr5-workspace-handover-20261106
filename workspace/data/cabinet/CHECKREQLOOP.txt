@@ -1,0 +1,959 @@
+﻿libdataSvr.so : 11986 functions in .symtab
+======================================================================================
+_ZN13robot_control16checkRequestLoopEPS_  @0x001db1f0  1452 B  475 insns
+======================================================================================
+  001db1f0  push.w     {r4, r5, r6, r7, r8, sb, sl, lr}
+  001db1f4  sub        sp, #0x10                       
+  001db1f6  mov        r4, r0                          
+  001db1f8  ldr.w      r5, [pc, #0x528]                
+  001db1fc  blx        #0xb4a54                        
+  001db200  ldr.w      r2, [pc, #0x524]                
+  001db204  add        r5, pc                             ; PIC -> 0x0020a274 "<--- enter this function."
+  001db206  movs       r3, #2                          
+  001db208  mov.w      r1, #0x208                      
+  001db20c  mvn        r0, #0xf                        
+  001db210  str        r5, [sp]                        
+  001db212  add        r2, pc                             ; PIC -> 0x00234336
+  001db214  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x00234862
+  001db218  blx        #0xba8fc                        
+  001db21c  ldrb       r3, [r4]                        
+  001db21e  cmp        r3, #0                          
+  001db220  beq.w      #0x1db71c                       
+  001db224  ldr.w      r7, [pc, #0x504]                
+  001db228  add        r5, sp, #8                      
+  001db22a  ldr.w      r6, [pc, #0x504]                
+  001db22e  ldr.w      sb, [pc, #0x504]                
+  001db232  ldr.w      r8, [pc, #0x504]                
+  001db236  add        r7, pc                             ; PIC -> 0x00234336
+  001db238  add        r6, pc                             ; PIC -> 0x00234338 "interCall"
+  001db23a  addw       r7, r7, #0x52c                     ; PIC+0x52c -> 0x00234864 "checkRequestLoop"
+  001db23e  add        sb, pc                             ; PIC -> 0x002351f2
+  001db240  addw       r6, r6, #0x52c                     ; PIC+0x52c -> 0x0023571e
+  001db244  add        r8, pc                             ; PIC -> 0x0023520c " isRequestPowerOn true"
+  001db246  b          #0x1db386                       
+  001db248  blx        #0xb7d04                        
+  001db24c  ldr        r3, [r0, #8]                    
+  001db24e  add.w      r3, r3, #0x41000                
+  001db252  add.w      r3, r3, #0x37c                  
+  001db256  ldr        r3, [r3]                        
+  001db258  cmp        r3, #0                          
+  001db25a  bne.w      #0x1db68c                       
+  001db25e  blx        #0xb7d04                        
+  001db262  ldr        r3, [r0, #8]                    
+  001db264  add.w      r3, r3, #0x41000                
+  001db268  add.w      r3, r3, #0x384                  
+  001db26c  ldr        r3, [r3]                        
+  001db26e  cmp        r3, #0                          
+  001db270  bne.w      #0x1db64e                       
+  001db274  blx        #0xb7d04                        
+  001db278  ldr        r3, [r0, #8]                    
+  001db27a  add.w      r3, r3, #0x41000                
+  001db27e  add.w      r3, r3, #0x388                  
+  001db282  ldr        r3, [r3]                        
+  001db284  cmp        r3, #0                          
+  001db286  bne.w      #0x1db610                       
+  001db28a  blx        #0xb7d04                        
+  001db28e  ldr        r3, [r0, #8]                    
+  001db290  add.w      r3, r3, #0x41000                
+  001db294  add.w      r3, r3, #0x38c                  
+  001db298  ldr        r3, [r3]                        
+  001db29a  cmp        r3, #0                          
+  001db29c  bne.w      #0x1db5d2                       
+  001db2a0  blx        #0xb7d04                        
+  001db2a4  ldr        r3, [r0, #8]                    
+  001db2a6  add.w      r3, r3, #0x41000                
+  001db2aa  add.w      r3, r3, #0x390                  
+  001db2ae  ldr        r3, [r3]                        
+  001db2b0  cmp        r3, #0                          
+  001db2b2  bne.w      #0x1db594                       
+  001db2b6  blx        #0xb7d04                        
+  001db2ba  ldr        r3, [r0, #8]                    
+  001db2bc  add.w      r3, r3, #0x41000                
+  001db2c0  add.w      r3, r3, #0x394                  
+  001db2c4  ldr        r3, [r3]                        
+  001db2c6  cmp        r3, #0                          
+  001db2c8  bne.w      #0x1db556                       
+  001db2cc  blx        #0xb7d04                        
+  001db2d0  ldr        r3, [r0, #8]                    
+  001db2d2  add.w      r3, r3, #0x41000                
+  001db2d6  add.w      r3, r3, #0x398                  
+  001db2da  ldr        r3, [r3]                        
+  001db2dc  cmp        r3, #0                          
+  001db2de  bne.w      #0x1db518                       
+  001db2e2  blx        #0xb7d04                        
+  001db2e6  ldr        r3, [r0, #8]                    
+  001db2e8  add.w      r3, r3, #0x41000                
+  001db2ec  add.w      r3, r3, #0x39c                  
+  001db2f0  ldr        r3, [r3]                        
+  001db2f2  cmp        r3, #0                          
+  001db2f4  bne.w      #0x1db4da                       
+  001db2f8  blx        #0xb7d04                        
+  001db2fc  ldr        r3, [r0, #8]                    
+  001db2fe  add.w      r3, r3, #0x41000                
+  001db302  add.w      r3, r3, #0x3a0                  
+  001db306  ldr        r3, [r3]                        
+  001db308  cmp        r3, #0                          
+  001db30a  bne.w      #0x1db49c                       
+  001db30e  blx        #0xb7d04                        
+  001db312  ldr        r3, [r0, #8]                    
+  001db314  add.w      r3, r3, #0x41000                
+  001db318  add.w      r3, r3, #0x3a4                  
+  001db31c  ldr        r3, [r3]                        
+  001db31e  cmp        r3, #0                          
+  001db320  bne.w      #0x1db45e                       
+  001db324  blx        #0xb7d04                        
+  001db328  ldr        r3, [r0, #8]                    
+  001db32a  add.w      r3, r3, #0x41000                
+  001db32e  add.w      r3, r3, #0x3a8                  
+  001db332  ldr        r3, [r3]                        
+  001db334  cmp        r3, #0                          
+  001db336  bne        #0x1db40c                       
+  001db338  blx        #0xb7d04                        
+  001db33c  ldr        r3, [r0, #8]                    
+  001db33e  add.w      r3, r3, #0x41000                
+  001db342  ldr.w      sl, [r3, #8]                    
+  001db346  cmp.w      sl, #2                          
+  001db34a  beq.w      #0x1db6be                       
+  001db34e  blx        #0xb7d04                        
+  001db352  ldr        r3, [r0, #8]                    
+  001db354  add.w      r3, r3, #0x41800                
+  001db358  add.w      r3, r3, #0x3cc                  
+  001db35c  ldr        r3, [r3]                        
+  001db35e  cbnz       r3, #0x1db3ce                   
+  001db360  mov.w      lr, #0                          
+  001db364  mov.w      ip, #0xfa0                      
+  001db368  mov        r3, lr                          
+  001db36a  str        r5, [sp]                        
+  001db36c  mov        r2, lr                          
+  001db36e  mov        r1, lr                          
+  001db370  mov        r0, lr                          
+  001db372  str.w      lr, [sp, #8]                    
+  001db376  str.w      ip, [sp, #0xc]                  
+  001db37a  blx        #0xb96cc                        
+  001db37e  ldrb       r3, [r4]                        
+  001db380  cmp        r3, #0                          
+  001db382  beq.w      #0x1db71c                       
+  001db386  blx        #0xb7d04                        
+  001db38a  ldr        r3, [r0, #8]                    
+  001db38c  add.w      r3, r3, #0x41000                
+  001db390  add.w      r3, r3, #0x378                  
+  001db394  ldr        r3, [r3]                        
+  001db396  cmp        r3, #0                          
+  001db398  beq.w      #0x1db248                       
+  001db39c  blx        #0xb4a54                        
+  001db3a0  movs       r3, #2                          
+  001db3a2  mov        r2, r7                          
+  001db3a4  movw       r1, #0x20b                      
+  001db3a8  mvn        r0, #0xf                        
+  001db3ac  str.w      sb, [sp]                        
+  001db3b0  blx        #0xba8fc                        
+  001db3b4  blx        #0xb93e0                        
+  001db3b8  blx        #0xb9fb4                        
+  001db3bc  blx        #0xb7d04                        
+  001db3c0  ldr        r3, [r0, #8]                    
+  001db3c2  movs       r2, #0                          
+  001db3c4  add.w      r3, r3, #0x41000                
+  001db3c8  str.w      r2, [r3, #0x378]                
+  001db3cc  b          #0x1db248                       
+  001db3ce  blx        #0xb4a54                        
+  001db3d2  ldr        r2, [pc, #0x368]                
+  001db3d4  movs       r3, #2                          
+  001db3d6  ldr.w      lr, [pc, #0x368]                
+  001db3da  movw       r1, #0x253                      
+  001db3de  mvn        r0, #0xf                        
+  001db3e2  add        r2, pc                             ; PIC -> 0x00234336
+  001db3e4  add        lr, pc                             ; PIC -> 0x00235324 "isRequestCalihome true"
+  001db3e6  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x00235850 "iterOneChannel"
+  001db3ea  str.w      lr, [sp]                        
+  001db3ee  blx        #0xba8fc                        
+  001db3f2  blx        #0xb93e0                        
+  001db3f6  blx        #0xb6fbc                        
+  001db3fa  blx        #0xb7d04                        
+  001db3fe  ldr        r3, [r0, #8]                    
+  001db400  movs       r2, #0                          
+  001db402  add.w      r3, r3, #0x41800                
+  001db406  str.w      r2, [r3, #0x3cc]                
+  001db40a  b          #0x1db360                       
+  001db40c  blx        #0xb4a54                        
+  001db410  blx        #0xb7d04                        
+  001db414  ldr        r2, [r0, #8]                    
+  001db416  movs       r3, #2                          
+  001db418  ldr.w      sl, [pc, #0x328]                
+  001db41c  movw       r1, #0x247                      
+  001db420  ldr.w      ip, [pc, #0x324]                
+  001db424  mvn        r0, #0xf                        
+  001db428  add.w      lr, r2, #0x41000                
+  001db42c  add.w      lr, lr, #0x3a8                  
+  001db430  add        sl, pc                             ; PIC -> 0x00234338 "interCall"
+  001db432  add        ip, pc                             ; PIC -> 0x00235302
+  001db434  addw       r2, sl, #0x52c                     ; PIC+0x52c -> 0x0023582e
+  001db438  str.w      lr, [sp, #4]                    
+  001db43c  str.w      ip, [sp]                        
+  001db440  blx        #0xb6c54                        
+  001db444  blx        #0xb93e0                        
+  001db448  blx        #0xb8090                        
+  001db44c  blx        #0xb7d04                        
+  001db450  ldr        r3, [r0, #8]                    
+  001db452  movs       r2, #0                          
+  001db454  add.w      r3, r3, #0x41000                
+  001db458  str.w      r2, [r3, #0x3a8]                
+  001db45c  b          #0x1db338                       
+  001db45e  blx        #0xb4a54                        
+  001db462  ldr        r2, [pc, #0x2e8]                
+  001db464  movs       r3, #2                          
+  001db466  ldr.w      lr, [pc, #0x2e8]                
+  001db46a  movw       r1, #0x241                      
+  001db46e  mvn        r0, #0xf                        
+  001db472  add        r2, pc                             ; PIC -> 0x00234336
+  001db474  add        lr, pc                             ; PIC -> 0x00235270 " isRequestStartQueue true"
+  001db476  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x0023579c
+  001db47a  str.w      lr, [sp]                        
+  001db47e  blx        #0xba8fc                        
+  001db482  blx        #0xb93e0                        
+  001db486  blx        #0xbc144                        
+  001db48a  blx        #0xb7d04                        
+  001db48e  ldr        r3, [r0, #8]                    
+  001db490  movs       r2, #0                          
+  001db492  add.w      r3, r3, #0x41000                
+  001db496  str.w      r2, [r3, #0x3a4]                
+  001db49a  b          #0x1db324                       
+  001db49c  blx        #0xb4a54                        
+  001db4a0  ldr        r2, [pc, #0x2b0]                
+  001db4a2  movs       r3, #2                          
+  001db4a4  ldr.w      lr, [pc, #0x2b0]                
+  001db4a8  mov.w      r1, #0x23c                      
+  001db4ac  mvn        r0, #0xf                        
+  001db4b0  add        r2, pc                             ; PIC -> 0x00234338 "interCall"
+  001db4b2  add        lr, pc                             ; PIC -> 0x002352de "e"
+  001db4b4  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x0023580a
+  001db4b8  str.w      lr, [sp]                        
+  001db4bc  blx        #0xba8fc                        
+  001db4c0  blx        #0xb93e0                        
+  001db4c4  blx        #0xba974                        
+  001db4c8  blx        #0xb7d04                        
+  001db4cc  ldr        r3, [r0, #8]                    
+  001db4ce  movs       r2, #0                          
+  001db4d0  add.w      r3, r3, #0x41000                
+  001db4d4  str.w      r2, [r3, #0x3a0]                
+  001db4d8  b          #0x1db30e                       
+  001db4da  blx        #0xb4a54                        
+  001db4de  ldr        r2, [pc, #0x27c]                
+  001db4e0  movs       r3, #2                          
+  001db4e2  ldr.w      lr, [pc, #0x27c]                
+  001db4e6  movw       r1, #0x237                      
+  001db4ea  mvn        r0, #0xf                        
+  001db4ee  add        r2, pc                             ; PIC -> 0x00234336
+  001db4f0  add        lr, pc                             ; PIC -> 0x002352c8 " isRequestExitDrag true"
+  001db4f2  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x002357f4
+  001db4f6  str.w      lr, [sp]                        
+  001db4fa  blx        #0xba8fc                        
+  001db4fe  blx        #0xb93e0                        
+  001db502  blx        #0xb7450                        
+  001db506  blx        #0xb7d04                        
+  001db50a  ldr        r3, [r0, #8]                    
+  001db50c  movs       r2, #0                          
+  001db50e  add.w      r3, r3, #0x41000                
+  001db512  str.w      r2, [r3, #0x39c]                
+  001db516  b          #0x1db2f8                       
+  001db518  blx        #0xb4a54                        
+  001db51c  ldr        r2, [pc, #0x244]                
+  001db51e  movs       r3, #2                          
+  001db520  ldr.w      lr, [pc, #0x244]                
+  001db524  movw       r1, #0x232                      
+  001db528  mvn        r0, #0xf                        
+  001db52c  add        r2, pc                             ; PIC -> 0x00234338 "interCall"
+  001db52e  add        lr, pc                             ; PIC -> 0x002352a6
+  001db530  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x002357d2
+  001db534  str.w      lr, [sp]                        
+  001db538  blx        #0xba8fc                        
+  001db53c  blx        #0xb93e0                        
+  001db540  blx        #0xbc510                        
+  001db544  blx        #0xb7d04                        
+  001db548  ldr        r3, [r0, #8]                    
+  001db54a  movs       r2, #0                          
+  001db54c  add.w      r3, r3, #0x41000                
+  001db550  str.w      r2, [r3, #0x398]                
+  001db554  b          #0x1db2e2                       
+  001db556  blx        #0xb4a54                        
+  001db55a  ldr        r2, [pc, #0x210]                
+  001db55c  movs       r3, #2                          
+  001db55e  ldr.w      lr, [pc, #0x210]                
+  001db562  movw       r1, #0x22d                      
+  001db566  mvn        r0, #0xf                        
+  001db56a  add        r2, pc                             ; PIC -> 0x00234336
+  001db56c  add        lr, pc                             ; PIC -> 0x0023528c " isRequestStopQueue true"
+  001db56e  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x002357b8
+  001db572  str.w      lr, [sp]                        
+  001db576  blx        #0xba8fc                        
+  001db57a  blx        #0xb93e0                        
+  001db57e  blx        #0xbc690                        
+  001db582  blx        #0xb7d04                        
+  001db586  ldr        r3, [r0, #8]                    
+  001db588  movs       r2, #0                          
+  001db58a  add.w      r3, r3, #0x41000                
+  001db58e  str.w      r2, [r3, #0x394]                
+  001db592  b          #0x1db2cc                       
+  001db594  blx        #0xb4a54                        
+  001db598  ldr        r2, [pc, #0x1d8]                
+  001db59a  movs       r3, #2                          
+  001db59c  ldr.w      lr, [pc, #0x1d8]                
+  001db5a0  mov.w      r1, #0x228                      
+  001db5a4  mvn        r0, #0xf                        
+  001db5a8  add        r2, pc                             ; PIC -> 0x00234338 "interCall"
+  001db5aa  add        lr, pc                             ; PIC -> 0x0023526e
+  001db5ac  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x0023579a
+  001db5b0  str.w      lr, [sp]                        
+  001db5b4  blx        #0xba8fc                        
+  001db5b8  blx        #0xb93e0                        
+  001db5bc  blx        #0xb6fb0                        
+  001db5c0  blx        #0xb7d04                        
+  001db5c4  ldr        r3, [r0, #8]                    
+  001db5c6  movs       r2, #0                          
+  001db5c8  add.w      r3, r3, #0x41000                
+  001db5cc  str.w      r2, [r3, #0x390]                
+  001db5d0  b          #0x1db2b6                       
+  001db5d2  blx        #0xb4a54                        
+  001db5d6  ldr        r2, [pc, #0x1a4]                
+  001db5d8  movs       r3, #2                          
+  001db5da  ldr.w      lr, [pc, #0x1a4]                
+  001db5de  movw       r1, #0x223                      
+  001db5e2  mvn        r0, #0xf                        
+  001db5e6  add        r2, pc                             ; PIC -> 0x00234336
+  001db5e8  add        lr, pc                             ; PIC -> 0x00235254 " isRequestClearError true"
+  001db5ea  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x00235780
+  001db5ee  str.w      lr, [sp]                        
+  001db5f2  blx        #0xba8fc                        
+  001db5f6  blx        #0xb93e0                        
+  001db5fa  blx        #0xb87b0                        
+  001db5fe  blx        #0xb7d04                        
+  001db602  ldr        r3, [r0, #8]                    
+  001db604  movs       r2, #0                          
+  001db606  add.w      r3, r3, #0x41000                
+  001db60a  str.w      r2, [r3, #0x38c]                
+  001db60e  b          #0x1db2a0                       
+  001db610  blx        #0xb4a54                        
+  001db614  ldr        r2, [pc, #0x16c]                
+  001db616  movs       r3, #2                          
+  001db618  ldr.w      lr, [pc, #0x16c]                
+  001db61c  movw       r1, #0x21d                      
+  001db620  mvn        r0, #0xf                        
+  001db624  add        r2, pc                             ; PIC -> 0x00234338 "interCall"
+  001db626  add        lr, pc                             ; PIC -> 0x0023523a
+  001db628  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x00235766
+  001db62c  str.w      lr, [sp]                        
+  001db630  blx        #0xba8fc                        
+  001db634  blx        #0xb93e0                        
+  001db638  blx        #0xb8bf4                        
+  001db63c  blx        #0xb7d04                        
+  001db640  ldr        r3, [r0, #8]                    
+  001db642  movs       r2, #0                          
+  001db644  add.w      r3, r3, #0x41000                
+  001db648  str.w      r2, [r3, #0x388]                
+  001db64c  b          #0x1db28a                       
+  001db64e  blx        #0xb4a54                        
+  001db652  ldr        r2, [pc, #0x138]                
+  001db654  movs       r3, #2                          
+  001db656  ldr.w      lr, [pc, #0x138]                
+  001db65a  movw       r1, #0x217                      
+  001db65e  mvn        r0, #0xf                        
+  001db662  add        r2, pc                             ; PIC -> 0x00234336
+  001db664  add        lr, pc                             ; PIC -> 0x00235224 " isRequestEnable true"
+  001db666  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x00235750
+  001db66a  str.w      lr, [sp]                        
+  001db66e  blx        #0xba8fc                        
+  001db672  blx        #0xb93e0                        
+  001db676  blx        #0xb53ac                        
+  001db67a  blx        #0xb7d04                        
+  001db67e  ldr        r3, [r0, #8]                    
+  001db680  movs       r2, #0                          
+  001db682  add.w      r3, r3, #0x41000                
+  001db686  str.w      r2, [r3, #0x384]                
+  001db68a  b          #0x1db274                       
+  001db68c  blx        #0xb4a54                        
+  001db690  movs       r3, #2                          
+  001db692  mov        r2, r6                          
+  001db694  movw       r1, #0x211                      
+  001db698  mvn        r0, #0xf                        
+  001db69c  str.w      r8, [sp]                        
+  001db6a0  blx        #0xba8fc                        
+  001db6a4  blx        #0xb93e0                        
+  001db6a8  blx        #0xb46a0                        
+  001db6ac  blx        #0xb7d04                        
+  001db6b0  ldr        r3, [r0, #8]                    
+  001db6b2  movs       r2, #0                          
+  001db6b4  add.w      r3, r3, #0x41000                
+  001db6b8  str.w      r2, [r3, #0x37c]                
+  001db6bc  b          #0x1db25e                       
+  001db6be  blx        #0xb7d04                        
+  001db6c2  ldr        r3, [r0, #8]                    
+  001db6c4  add.w      r3, r3, #0x41000                
+  001db6c8  adds       r3, #0x64                       
+  001db6ca  ldr        r3, [r3]                        
+  001db6cc  cmp        r3, #0                          
+  001db6ce  beq.w      #0x1db34e                       
+  001db6d2  blx        #0xb4a54                        
+  001db6d6  blx        #0xb7d04                        
+  001db6da  ldr        r0, [r0, #8]                    
+  001db6dc  mov        r3, sl                          
+  001db6de  ldr        r2, [pc, #0xb4]                 
+  001db6e0  movw       r1, #0x24e                      
+  001db6e4  ldr.w      lr, [pc, #0xb0]                 
+  001db6e8  add.w      r0, r0, #0x41000                
+  001db6ec  adds       r0, #0x64                       
+  001db6ee  add        r2, pc                             ; PIC -> 0x00234336
+  001db6f0  add        lr, pc                             ; PIC -> 0x0023533c " isRequestUpdateRemoteScript {}"
+  001db6f2  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x00235868 "CaptureManager"
+  001db6f6  str.w      lr, [sp]                        
+  001db6fa  str        r0, [sp, #4]                    
+  001db6fc  mvn        r0, #0xf                        
+  001db700  blx        #0xb6c54                        
+  001db704  blx        #0xb93e0                        
+  001db708  blx        #0xbb3e8                        
+  001db70c  blx        #0xb7d04                        
+  001db710  ldr        r3, [r0, #8]                    
+  001db712  movs       r2, #0                          
+  001db714  add.w      r3, r3, #0x41000                
+  001db718  str        r2, [r3, #0x64]                 
+  001db71a  b          #0x1db34e                       
+  001db71c  add        sp, #0x10                       
+  001db71e  pop.w      {r4, r5, r6, r7, r8, sb, sl, pc}
+  001db722  nop                                        
+  001db724  orn        r0, ip, #2                      
+  001db728  str        r1, [sp, #0x88]                 
+  001db72a  movs       r5, r0                          
+  001db72c  str        r0, [sp, #0x3f8]                
+  001db72e  movs       r5, r0                          
+  001db730  str        r0, [sp, #0x3f0]                
+  001db732  movs       r5, r0                          
+  001db734  ldr        r7, [sp, #0x2c8]                
+  001db736  movs       r5, r0                          
+  001db738  ldr        r7, [sp, #0x310]                
+  001db73a  movs       r5, r0                          
+  001db73c  ldrh       r2, [r2, #0x3a]                 
+  001db73e  movs       r5, r0                          
+  001db740  ldr        r7, [sp, #0xf0]                 
+  001db742  movs       r5, r0                          
+  001db744  ldrh       r4, [r0, #0x38]                 
+  001db746  movs       r5, r0                          
+  001db748  ldr        r6, [sp, #0x338]                
+  001db74a  movs       r5, r0                          
+  001db74c  ldrh       r2, [r0, #0x36]                 
+  001db74e  movs       r5, r0                          
+  001db750  ldr        r5, [sp, #0x3e0]                
+  001db752  movs       r5, r0                          
+  001db754  ldrh       r4, [r0, #0x34]                 
+  001db756  movs       r5, r0                          
+  001db758  ldr        r6, [sp, #0xa8]                 
+  001db75a  movs       r5, r0                          
+  001db75c  ldrh       r6, [r0, #0x32]                 
+  001db75e  movs       r5, r0                          
+  001db760  ldr        r5, [sp, #0x350]                
+  001db762  movs       r5, r0                          
+  001db764  ldrh       r0, [r1, #0x30]                 
+  001db766  movs       r5, r0                          
+  001db768  ldr        r5, [sp, #0x1d8]                
+  001db76a  movs       r5, r0                          
+  001db76c  ldrh       r2, [r1, #0x2e]                 
+  001db76e  movs       r5, r0                          
+  001db770  ldr        r5, [sp, #0x70]                 
+  001db772  movs       r5, r0                          
+  001db774  ldrh       r4, [r1, #0x2c]                 
+  001db776  movs       r5, r0                          
+  001db778  ldr        r4, [sp, #0x308]                
+  001db77a  movs       r5, r0                          
+  001db77c  ldrh       r6, [r1, #0x2a]                 
+  001db77e  movs       r5, r0                          
+  001db780  ldr        r4, [sp, #0x1a0]                
+  001db782  movs       r5, r0                          
+  001db784  ldrh       r0, [r2, #0x28]                 
+  001db786  movs       r5, r0                          
+  001db788  ldr        r4, [sp, #0x48]                 
+  001db78a  movs       r5, r0                          
+  001db78c  ldrh       r2, [r2, #0x26]                 
+  001db78e  movs       r5, r0                          
+  001db790  ldr        r3, [sp, #0x2f0]                
+  001db792  movs       r5, r0                          
+  001db794  ldrh       r6, [r0, #0x22]                 
+  001db796  movs       r5, r0                          
+  001db798  ldr        r4, [sp, #0x120]                
+  001db79a  movs       r5, r0                          
+
+======================================================================================
+_ZN13robot_control16checkRequestLoopEPS_  @0x001db1f0  1452 B  475 insns
+======================================================================================
+  001db1f0  push.w     {r4, r5, r6, r7, r8, sb, sl, lr}
+  001db1f4  sub        sp, #0x10                       
+  001db1f6  mov        r4, r0                          
+  001db1f8  ldr.w      r5, [pc, #0x528]                
+  001db1fc  blx        #0xb4a54                        
+  001db200  ldr.w      r2, [pc, #0x524]                
+  001db204  add        r5, pc                             ; PIC -> 0x0020a274 "<--- enter this function."
+  001db206  movs       r3, #2                          
+  001db208  mov.w      r1, #0x208                      
+  001db20c  mvn        r0, #0xf                        
+  001db210  str        r5, [sp]                        
+  001db212  add        r2, pc                             ; PIC -> 0x00234336
+  001db214  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x00234862
+  001db218  blx        #0xba8fc                        
+  001db21c  ldrb       r3, [r4]                        
+  001db21e  cmp        r3, #0                          
+  001db220  beq.w      #0x1db71c                       
+  001db224  ldr.w      r7, [pc, #0x504]                
+  001db228  add        r5, sp, #8                      
+  001db22a  ldr.w      r6, [pc, #0x504]                
+  001db22e  ldr.w      sb, [pc, #0x504]                
+  001db232  ldr.w      r8, [pc, #0x504]                
+  001db236  add        r7, pc                             ; PIC -> 0x00234336
+  001db238  add        r6, pc                             ; PIC -> 0x00234338 "interCall"
+  001db23a  addw       r7, r7, #0x52c                     ; PIC+0x52c -> 0x00234864 "checkRequestLoop"
+  001db23e  add        sb, pc                             ; PIC -> 0x002351f2
+  001db240  addw       r6, r6, #0x52c                     ; PIC+0x52c -> 0x0023571e
+  001db244  add        r8, pc                             ; PIC -> 0x0023520c " isRequestPowerOn true"
+  001db246  b          #0x1db386                       
+  001db248  blx        #0xb7d04                        
+  001db24c  ldr        r3, [r0, #8]                    
+  001db24e  add.w      r3, r3, #0x41000                
+  001db252  add.w      r3, r3, #0x37c                  
+  001db256  ldr        r3, [r3]                        
+  001db258  cmp        r3, #0                          
+  001db25a  bne.w      #0x1db68c                       
+  001db25e  blx        #0xb7d04                        
+  001db262  ldr        r3, [r0, #8]                    
+  001db264  add.w      r3, r3, #0x41000                
+  001db268  add.w      r3, r3, #0x384                  
+  001db26c  ldr        r3, [r3]                        
+  001db26e  cmp        r3, #0                          
+  001db270  bne.w      #0x1db64e                       
+  001db274  blx        #0xb7d04                        
+  001db278  ldr        r3, [r0, #8]                    
+  001db27a  add.w      r3, r3, #0x41000                
+  001db27e  add.w      r3, r3, #0x388                  
+  001db282  ldr        r3, [r3]                        
+  001db284  cmp        r3, #0                          
+  001db286  bne.w      #0x1db610                       
+  001db28a  blx        #0xb7d04                        
+  001db28e  ldr        r3, [r0, #8]                    
+  001db290  add.w      r3, r3, #0x41000                
+  001db294  add.w      r3, r3, #0x38c                  
+  001db298  ldr        r3, [r3]                        
+  001db29a  cmp        r3, #0                          
+  001db29c  bne.w      #0x1db5d2                       
+  001db2a0  blx        #0xb7d04                        
+  001db2a4  ldr        r3, [r0, #8]                    
+  001db2a6  add.w      r3, r3, #0x41000                
+  001db2aa  add.w      r3, r3, #0x390                  
+  001db2ae  ldr        r3, [r3]                        
+  001db2b0  cmp        r3, #0                          
+  001db2b2  bne.w      #0x1db594                       
+  001db2b6  blx        #0xb7d04                        
+  001db2ba  ldr        r3, [r0, #8]                    
+  001db2bc  add.w      r3, r3, #0x41000                
+  001db2c0  add.w      r3, r3, #0x394                  
+  001db2c4  ldr        r3, [r3]                        
+  001db2c6  cmp        r3, #0                          
+  001db2c8  bne.w      #0x1db556                       
+  001db2cc  blx        #0xb7d04                        
+  001db2d0  ldr        r3, [r0, #8]                    
+  001db2d2  add.w      r3, r3, #0x41000                
+  001db2d6  add.w      r3, r3, #0x398                  
+  001db2da  ldr        r3, [r3]                        
+  001db2dc  cmp        r3, #0                          
+  001db2de  bne.w      #0x1db518                       
+  001db2e2  blx        #0xb7d04                        
+  001db2e6  ldr        r3, [r0, #8]                    
+  001db2e8  add.w      r3, r3, #0x41000                
+  001db2ec  add.w      r3, r3, #0x39c                  
+  001db2f0  ldr        r3, [r3]                        
+  001db2f2  cmp        r3, #0                          
+  001db2f4  bne.w      #0x1db4da                       
+  001db2f8  blx        #0xb7d04                        
+  001db2fc  ldr        r3, [r0, #8]                    
+  001db2fe  add.w      r3, r3, #0x41000                
+  001db302  add.w      r3, r3, #0x3a0                  
+  001db306  ldr        r3, [r3]                        
+  001db308  cmp        r3, #0                          
+  001db30a  bne.w      #0x1db49c                       
+  001db30e  blx        #0xb7d04                        
+  001db312  ldr        r3, [r0, #8]                    
+  001db314  add.w      r3, r3, #0x41000                
+  001db318  add.w      r3, r3, #0x3a4                  
+  001db31c  ldr        r3, [r3]                        
+  001db31e  cmp        r3, #0                          
+  001db320  bne.w      #0x1db45e                       
+  001db324  blx        #0xb7d04                        
+  001db328  ldr        r3, [r0, #8]                    
+  001db32a  add.w      r3, r3, #0x41000                
+  001db32e  add.w      r3, r3, #0x3a8                  
+  001db332  ldr        r3, [r3]                        
+  001db334  cmp        r3, #0                          
+  001db336  bne        #0x1db40c                       
+  001db338  blx        #0xb7d04                        
+  001db33c  ldr        r3, [r0, #8]                    
+  001db33e  add.w      r3, r3, #0x41000                
+  001db342  ldr.w      sl, [r3, #8]                    
+  001db346  cmp.w      sl, #2                          
+  001db34a  beq.w      #0x1db6be                       
+  001db34e  blx        #0xb7d04                        
+  001db352  ldr        r3, [r0, #8]                    
+  001db354  add.w      r3, r3, #0x41800                
+  001db358  add.w      r3, r3, #0x3cc                  
+  001db35c  ldr        r3, [r3]                        
+  001db35e  cbnz       r3, #0x1db3ce                   
+  001db360  mov.w      lr, #0                          
+  001db364  mov.w      ip, #0xfa0                      
+  001db368  mov        r3, lr                          
+  001db36a  str        r5, [sp]                        
+  001db36c  mov        r2, lr                          
+  001db36e  mov        r1, lr                          
+  001db370  mov        r0, lr                          
+  001db372  str.w      lr, [sp, #8]                    
+  001db376  str.w      ip, [sp, #0xc]                  
+  001db37a  blx        #0xb96cc                        
+  001db37e  ldrb       r3, [r4]                        
+  001db380  cmp        r3, #0                          
+  001db382  beq.w      #0x1db71c                       
+  001db386  blx        #0xb7d04                        
+  001db38a  ldr        r3, [r0, #8]                    
+  001db38c  add.w      r3, r3, #0x41000                
+  001db390  add.w      r3, r3, #0x378                  
+  001db394  ldr        r3, [r3]                        
+  001db396  cmp        r3, #0                          
+  001db398  beq.w      #0x1db248                       
+  001db39c  blx        #0xb4a54                        
+  001db3a0  movs       r3, #2                          
+  001db3a2  mov        r2, r7                          
+  001db3a4  movw       r1, #0x20b                      
+  001db3a8  mvn        r0, #0xf                        
+  001db3ac  str.w      sb, [sp]                        
+  001db3b0  blx        #0xba8fc                        
+  001db3b4  blx        #0xb93e0                        
+  001db3b8  blx        #0xb9fb4                        
+  001db3bc  blx        #0xb7d04                        
+  001db3c0  ldr        r3, [r0, #8]                    
+  001db3c2  movs       r2, #0                          
+  001db3c4  add.w      r3, r3, #0x41000                
+  001db3c8  str.w      r2, [r3, #0x378]                
+  001db3cc  b          #0x1db248                       
+  001db3ce  blx        #0xb4a54                        
+  001db3d2  ldr        r2, [pc, #0x368]                
+  001db3d4  movs       r3, #2                          
+  001db3d6  ldr.w      lr, [pc, #0x368]                
+  001db3da  movw       r1, #0x253                      
+  001db3de  mvn        r0, #0xf                        
+  001db3e2  add        r2, pc                             ; PIC -> 0x00234336
+  001db3e4  add        lr, pc                             ; PIC -> 0x00235324 "isRequestCalihome true"
+  001db3e6  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x00235850 "iterOneChannel"
+  001db3ea  str.w      lr, [sp]                        
+  001db3ee  blx        #0xba8fc                        
+  001db3f2  blx        #0xb93e0                        
+  001db3f6  blx        #0xb6fbc                        
+  001db3fa  blx        #0xb7d04                        
+  001db3fe  ldr        r3, [r0, #8]                    
+  001db400  movs       r2, #0                          
+  001db402  add.w      r3, r3, #0x41800                
+  001db406  str.w      r2, [r3, #0x3cc]                
+  001db40a  b          #0x1db360                       
+  001db40c  blx        #0xb4a54                        
+  001db410  blx        #0xb7d04                        
+  001db414  ldr        r2, [r0, #8]                    
+  001db416  movs       r3, #2                          
+  001db418  ldr.w      sl, [pc, #0x328]                
+  001db41c  movw       r1, #0x247                      
+  001db420  ldr.w      ip, [pc, #0x324]                
+  001db424  mvn        r0, #0xf                        
+  001db428  add.w      lr, r2, #0x41000                
+  001db42c  add.w      lr, lr, #0x3a8                  
+  001db430  add        sl, pc                             ; PIC -> 0x00234338 "interCall"
+  001db432  add        ip, pc                             ; PIC -> 0x00235302
+  001db434  addw       r2, sl, #0x52c                     ; PIC+0x52c -> 0x0023582e
+  001db438  str.w      lr, [sp, #4]                    
+  001db43c  str.w      ip, [sp]                        
+  001db440  blx        #0xb6c54                        
+  001db444  blx        #0xb93e0                        
+  001db448  blx        #0xb8090                        
+  001db44c  blx        #0xb7d04                        
+  001db450  ldr        r3, [r0, #8]                    
+  001db452  movs       r2, #0                          
+  001db454  add.w      r3, r3, #0x41000                
+  001db458  str.w      r2, [r3, #0x3a8]                
+  001db45c  b          #0x1db338                       
+  001db45e  blx        #0xb4a54                        
+  001db462  ldr        r2, [pc, #0x2e8]                
+  001db464  movs       r3, #2                          
+  001db466  ldr.w      lr, [pc, #0x2e8]                
+  001db46a  movw       r1, #0x241                      
+  001db46e  mvn        r0, #0xf                        
+  001db472  add        r2, pc                             ; PIC -> 0x00234336
+  001db474  add        lr, pc                             ; PIC -> 0x00235270 " isRequestStartQueue true"
+  001db476  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x0023579c
+  001db47a  str.w      lr, [sp]                        
+  001db47e  blx        #0xba8fc                        
+  001db482  blx        #0xb93e0                        
+  001db486  blx        #0xbc144                        
+  001db48a  blx        #0xb7d04                        
+  001db48e  ldr        r3, [r0, #8]                    
+  001db490  movs       r2, #0                          
+  001db492  add.w      r3, r3, #0x41000                
+  001db496  str.w      r2, [r3, #0x3a4]                
+  001db49a  b          #0x1db324                       
+  001db49c  blx        #0xb4a54                        
+  001db4a0  ldr        r2, [pc, #0x2b0]                
+  001db4a2  movs       r3, #2                          
+  001db4a4  ldr.w      lr, [pc, #0x2b0]                
+  001db4a8  mov.w      r1, #0x23c                      
+  001db4ac  mvn        r0, #0xf                        
+  001db4b0  add        r2, pc                             ; PIC -> 0x00234338 "interCall"
+  001db4b2  add        lr, pc                             ; PIC -> 0x002352de "e"
+  001db4b4  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x0023580a
+  001db4b8  str.w      lr, [sp]                        
+  001db4bc  blx        #0xba8fc                        
+  001db4c0  blx        #0xb93e0                        
+  001db4c4  blx        #0xba974                        
+  001db4c8  blx        #0xb7d04                        
+  001db4cc  ldr        r3, [r0, #8]                    
+  001db4ce  movs       r2, #0                          
+  001db4d0  add.w      r3, r3, #0x41000                
+  001db4d4  str.w      r2, [r3, #0x3a0]                
+  001db4d8  b          #0x1db30e                       
+  001db4da  blx        #0xb4a54                        
+  001db4de  ldr        r2, [pc, #0x27c]                
+  001db4e0  movs       r3, #2                          
+  001db4e2  ldr.w      lr, [pc, #0x27c]                
+  001db4e6  movw       r1, #0x237                      
+  001db4ea  mvn        r0, #0xf                        
+  001db4ee  add        r2, pc                             ; PIC -> 0x00234336
+  001db4f0  add        lr, pc                             ; PIC -> 0x002352c8 " isRequestExitDrag true"
+  001db4f2  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x002357f4
+  001db4f6  str.w      lr, [sp]                        
+  001db4fa  blx        #0xba8fc                        
+  001db4fe  blx        #0xb93e0                        
+  001db502  blx        #0xb7450                        
+  001db506  blx        #0xb7d04                        
+  001db50a  ldr        r3, [r0, #8]                    
+  001db50c  movs       r2, #0                          
+  001db50e  add.w      r3, r3, #0x41000                
+  001db512  str.w      r2, [r3, #0x39c]                
+  001db516  b          #0x1db2f8                       
+  001db518  blx        #0xb4a54                        
+  001db51c  ldr        r2, [pc, #0x244]                
+  001db51e  movs       r3, #2                          
+  001db520  ldr.w      lr, [pc, #0x244]                
+  001db524  movw       r1, #0x232                      
+  001db528  mvn        r0, #0xf                        
+  001db52c  add        r2, pc                             ; PIC -> 0x00234338 "interCall"
+  001db52e  add        lr, pc                             ; PIC -> 0x002352a6
+  001db530  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x002357d2
+  001db534  str.w      lr, [sp]                        
+  001db538  blx        #0xba8fc                        
+  001db53c  blx        #0xb93e0                        
+  001db540  blx        #0xbc510                        
+  001db544  blx        #0xb7d04                        
+  001db548  ldr        r3, [r0, #8]                    
+  001db54a  movs       r2, #0                          
+  001db54c  add.w      r3, r3, #0x41000                
+  001db550  str.w      r2, [r3, #0x398]                
+  001db554  b          #0x1db2e2                       
+  001db556  blx        #0xb4a54                        
+  001db55a  ldr        r2, [pc, #0x210]                
+  001db55c  movs       r3, #2                          
+  001db55e  ldr.w      lr, [pc, #0x210]                
+  001db562  movw       r1, #0x22d                      
+  001db566  mvn        r0, #0xf                        
+  001db56a  add        r2, pc                             ; PIC -> 0x00234336
+  001db56c  add        lr, pc                             ; PIC -> 0x0023528c " isRequestStopQueue true"
+  001db56e  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x002357b8
+  001db572  str.w      lr, [sp]                        
+  001db576  blx        #0xba8fc                        
+  001db57a  blx        #0xb93e0                        
+  001db57e  blx        #0xbc690                        
+  001db582  blx        #0xb7d04                        
+  001db586  ldr        r3, [r0, #8]                    
+  001db588  movs       r2, #0                          
+  001db58a  add.w      r3, r3, #0x41000                
+  001db58e  str.w      r2, [r3, #0x394]                
+  001db592  b          #0x1db2cc                       
+  001db594  blx        #0xb4a54                        
+  001db598  ldr        r2, [pc, #0x1d8]                
+  001db59a  movs       r3, #2                          
+  001db59c  ldr.w      lr, [pc, #0x1d8]                
+  001db5a0  mov.w      r1, #0x228                      
+  001db5a4  mvn        r0, #0xf                        
+  001db5a8  add        r2, pc                             ; PIC -> 0x00234338 "interCall"
+  001db5aa  add        lr, pc                             ; PIC -> 0x0023526e
+  001db5ac  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x0023579a
+  001db5b0  str.w      lr, [sp]                        
+  001db5b4  blx        #0xba8fc                        
+  001db5b8  blx        #0xb93e0                        
+  001db5bc  blx        #0xb6fb0                        
+  001db5c0  blx        #0xb7d04                        
+  001db5c4  ldr        r3, [r0, #8]                    
+  001db5c6  movs       r2, #0                          
+  001db5c8  add.w      r3, r3, #0x41000                
+  001db5cc  str.w      r2, [r3, #0x390]                
+  001db5d0  b          #0x1db2b6                       
+  001db5d2  blx        #0xb4a54                        
+  001db5d6  ldr        r2, [pc, #0x1a4]                
+  001db5d8  movs       r3, #2                          
+  001db5da  ldr.w      lr, [pc, #0x1a4]                
+  001db5de  movw       r1, #0x223                      
+  001db5e2  mvn        r0, #0xf                        
+  001db5e6  add        r2, pc                             ; PIC -> 0x00234336
+  001db5e8  add        lr, pc                             ; PIC -> 0x00235254 " isRequestClearError true"
+  001db5ea  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x00235780
+  001db5ee  str.w      lr, [sp]                        
+  001db5f2  blx        #0xba8fc                        
+  001db5f6  blx        #0xb93e0                        
+  001db5fa  blx        #0xb87b0                        
+  001db5fe  blx        #0xb7d04                        
+  001db602  ldr        r3, [r0, #8]                    
+  001db604  movs       r2, #0                          
+  001db606  add.w      r3, r3, #0x41000                
+  001db60a  str.w      r2, [r3, #0x38c]                
+  001db60e  b          #0x1db2a0                       
+  001db610  blx        #0xb4a54                        
+  001db614  ldr        r2, [pc, #0x16c]                
+  001db616  movs       r3, #2                          
+  001db618  ldr.w      lr, [pc, #0x16c]                
+  001db61c  movw       r1, #0x21d                      
+  001db620  mvn        r0, #0xf                        
+  001db624  add        r2, pc                             ; PIC -> 0x00234338 "interCall"
+  001db626  add        lr, pc                             ; PIC -> 0x0023523a
+  001db628  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x00235766
+  001db62c  str.w      lr, [sp]                        
+  001db630  blx        #0xba8fc                        
+  001db634  blx        #0xb93e0                        
+  001db638  blx        #0xb8bf4                        
+  001db63c  blx        #0xb7d04                        
+  001db640  ldr        r3, [r0, #8]                    
+  001db642  movs       r2, #0                          
+  001db644  add.w      r3, r3, #0x41000                
+  001db648  str.w      r2, [r3, #0x388]                
+  001db64c  b          #0x1db28a                       
+  001db64e  blx        #0xb4a54                        
+  001db652  ldr        r2, [pc, #0x138]                
+  001db654  movs       r3, #2                          
+  001db656  ldr.w      lr, [pc, #0x138]                
+  001db65a  movw       r1, #0x217                      
+  001db65e  mvn        r0, #0xf                        
+  001db662  add        r2, pc                             ; PIC -> 0x00234336
+  001db664  add        lr, pc                             ; PIC -> 0x00235224 " isRequestEnable true"
+  001db666  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x00235750
+  001db66a  str.w      lr, [sp]                        
+  001db66e  blx        #0xba8fc                        
+  001db672  blx        #0xb93e0                        
+  001db676  blx        #0xb53ac                        
+  001db67a  blx        #0xb7d04                        
+  001db67e  ldr        r3, [r0, #8]                    
+  001db680  movs       r2, #0                          
+  001db682  add.w      r3, r3, #0x41000                
+  001db686  str.w      r2, [r3, #0x384]                
+  001db68a  b          #0x1db274                       
+  001db68c  blx        #0xb4a54                        
+  001db690  movs       r3, #2                          
+  001db692  mov        r2, r6                          
+  001db694  movw       r1, #0x211                      
+  001db698  mvn        r0, #0xf                        
+  001db69c  str.w      r8, [sp]                        
+  001db6a0  blx        #0xba8fc                        
+  001db6a4  blx        #0xb93e0                        
+  001db6a8  blx        #0xb46a0                        
+  001db6ac  blx        #0xb7d04                        
+  001db6b0  ldr        r3, [r0, #8]                    
+  001db6b2  movs       r2, #0                          
+  001db6b4  add.w      r3, r3, #0x41000                
+  001db6b8  str.w      r2, [r3, #0x37c]                
+  001db6bc  b          #0x1db25e                       
+  001db6be  blx        #0xb7d04                        
+  001db6c2  ldr        r3, [r0, #8]                    
+  001db6c4  add.w      r3, r3, #0x41000                
+  001db6c8  adds       r3, #0x64                       
+  001db6ca  ldr        r3, [r3]                        
+  001db6cc  cmp        r3, #0                          
+  001db6ce  beq.w      #0x1db34e                       
+  001db6d2  blx        #0xb4a54                        
+  001db6d6  blx        #0xb7d04                        
+  001db6da  ldr        r0, [r0, #8]                    
+  001db6dc  mov        r3, sl                          
+  001db6de  ldr        r2, [pc, #0xb4]                 
+  001db6e0  movw       r1, #0x24e                      
+  001db6e4  ldr.w      lr, [pc, #0xb0]                 
+  001db6e8  add.w      r0, r0, #0x41000                
+  001db6ec  adds       r0, #0x64                       
+  001db6ee  add        r2, pc                             ; PIC -> 0x00234336
+  001db6f0  add        lr, pc                             ; PIC -> 0x0023533c " isRequestUpdateRemoteScript {}"
+  001db6f2  addw       r2, r2, #0x52c                     ; PIC+0x52c -> 0x00235868 "CaptureManager"
+  001db6f6  str.w      lr, [sp]                        
+  001db6fa  str        r0, [sp, #4]                    
+  001db6fc  mvn        r0, #0xf                        
+  001db700  blx        #0xb6c54                        
+  001db704  blx        #0xb93e0                        
+  001db708  blx        #0xbb3e8                        
+  001db70c  blx        #0xb7d04                        
+  001db710  ldr        r3, [r0, #8]                    
+  001db712  movs       r2, #0                          
+  001db714  add.w      r3, r3, #0x41000                
+  001db718  str        r2, [r3, #0x64]                 
+  001db71a  b          #0x1db34e                       
+  001db71c  add        sp, #0x10                       
+  001db71e  pop.w      {r4, r5, r6, r7, r8, sb, sl, pc}
+  001db722  nop                                        
+  001db724  orn        r0, ip, #2                      
+  001db728  str        r1, [sp, #0x88]                 
+  001db72a  movs       r5, r0                          
+  001db72c  str        r0, [sp, #0x3f8]                
+  001db72e  movs       r5, r0                          
+  001db730  str        r0, [sp, #0x3f0]                
+  001db732  movs       r5, r0                          
+  001db734  ldr        r7, [sp, #0x2c8]                
+  001db736  movs       r5, r0                          
+  001db738  ldr        r7, [sp, #0x310]                
+  001db73a  movs       r5, r0                          
+  001db73c  ldrh       r2, [r2, #0x3a]                 
+  001db73e  movs       r5, r0                          
+  001db740  ldr        r7, [sp, #0xf0]                 
+  001db742  movs       r5, r0                          
+  001db744  ldrh       r4, [r0, #0x38]                 
+  001db746  movs       r5, r0                          
+  001db748  ldr        r6, [sp, #0x338]                
+  001db74a  movs       r5, r0                          
+  001db74c  ldrh       r2, [r0, #0x36]                 
+  001db74e  movs       r5, r0                          
+  001db750  ldr        r5, [sp, #0x3e0]                
+  001db752  movs       r5, r0                          
+  001db754  ldrh       r4, [r0, #0x34]                 
+  001db756  movs       r5, r0                          
+  001db758  ldr        r6, [sp, #0xa8]                 
+  001db75a  movs       r5, r0                          
+  001db75c  ldrh       r6, [r0, #0x32]                 
+  001db75e  movs       r5, r0                          
+  001db760  ldr        r5, [sp, #0x350]                
+  001db762  movs       r5, r0                          
+  001db764  ldrh       r0, [r1, #0x30]                 
+  001db766  movs       r5, r0                          
+  001db768  ldr        r5, [sp, #0x1d8]                
+  001db76a  movs       r5, r0                          
+  001db76c  ldrh       r2, [r1, #0x2e]                 
+  001db76e  movs       r5, r0                          
+  001db770  ldr        r5, [sp, #0x70]                 
+  001db772  movs       r5, r0                          
+  001db774  ldrh       r4, [r1, #0x2c]                 
+  001db776  movs       r5, r0                          
+  001db778  ldr        r4, [sp, #0x308]                
+  001db77a  movs       r5, r0                          
+  001db77c  ldrh       r6, [r1, #0x2a]                 
+  001db77e  movs       r5, r0                          
+  001db780  ldr        r4, [sp, #0x1a0]                
+  001db782  movs       r5, r0                          
+  001db784  ldrh       r0, [r2, #0x28]                 
+  001db786  movs       r5, r0                          
+  001db788  ldr        r4, [sp, #0x48]                 
+  001db78a  movs       r5, r0                          
+  001db78c  ldrh       r2, [r2, #0x26]                 
+  001db78e  movs       r5, r0                          
+  001db790  ldr        r3, [sp, #0x2f0]                
+  001db792  movs       r5, r0                          
+  001db794  ldrh       r6, [r0, #0x22]                 
+  001db796  movs       r5, r0                          
+  001db798  ldr        r4, [sp, #0x120]                
+  001db79a  movs       r5, r0                          
+

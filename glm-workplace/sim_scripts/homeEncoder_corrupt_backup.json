@@ -1,0 +1,284 @@
+{
+    "encoder": [
+        {
+            "innerEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "outEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "jointHomeState": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "date": "2026-09-25",
+            "time": "18:13:29"
+        },
+        {
+            "innerEncoder": [
+                204984.0,
+                -988411.0,
+                -877546.0,
+                695220.0,
+                -320522.0,
+                608969.0
+            ],
+            "outEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "jointHomeState": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "date": "2026-09-27",
+            "time": "17:56:18"
+        },
+        {
+            "innerEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "outEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "jointHomeState": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "date": "2026-09-27",
+            "time": "18:33:34"
+        },
+        {
+            "innerEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "outEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "jointHomeState": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "date": "2026-09-27",
+            "time": "18:34:09"
+        },
+        {
+            "innerEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "outEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "jointHomeState": [
+                true,
+                true,
+                false,
+                false,
+                false,
+                false
+            ],
+            "date": "2026-09-28",
+            "time": "09:32:39"
+        },
+        {
+            "innerEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "outEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "jointHomeState": [
+                true,
+                true,
+                false,
+                false,
+                false,
+                false
+            ],
+            "date": "2026-09-28",
+            "time": "09:37:09"
+        },
+        {
+            "innerEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "outEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "jointHomeState": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "date": "2026-09-28",
+            "time": "09:44:43"
+        },
+        {
+            "innerEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "outEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "jointHomeState": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "date": "2026-09-28",
+            "time": "09:46:50"
+        },
+        {
+            "innerEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "outEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "jointHomeState": [
+                true,
+                true,
+                false,
+                false,
+                false,
+                false
+            ],
+            "date": "2026-09-28",
+            "time": "09:54:53"
+        },
+        {
+            "innerEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "outEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "jointHomeState": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "date": "2026-09-28",
+            "time": "10:02:08"
+        }
+    ]
+}

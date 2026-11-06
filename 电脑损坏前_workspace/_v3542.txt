@@ -1,0 +1,66 @@
+=== date/uptime ===
+Fri Sep 18 19:18:33 CST 2026
+378.37 1365.87
+=== version.conf ===
+2.1.0
+010000
+
+=== codesys 启动日志里的 retain 相关 ===
+729970: Cmp=CM, Class=1, Error=0, Info=10, pszInfo= <cmp>CmpRetain</cmp>, <id>0x00000017</id> <ver>3.5.12.0</ver>1789729970: Cmp=CM, Class=1, Erro
+9729970: Cmp=CmpApp, Class=1, Error=0, Info=22, pszInfo= No retain area in bootproject of application [<app>Application</app>]1789729970: Cmp=CmpD
+=== codesys 启动时的 SDO 写入（看有没有 607C / 60B0）===
+SDO write ok: Index: 16#1600 SubIndex: 0
+SDO write ok: Index: 16#1600 SubIndex: 1
+SDO write ok: Index: 16#1600 SubIndex: 10
+SDO write ok: Index: 16#1600 SubIndex: 11
+SDO write ok: Index: 16#1600 SubIndex: 12
+SDO write ok: Index: 16#1600 SubIndex: 13
+SDO write ok: Index: 16#1600 SubIndex: 14
+SDO write ok: Index: 16#1600 SubIndex: 15
+SDO write ok: Index: 16#1600 SubIndex: 16
+SDO write ok: Index: 16#1600 SubIndex: 17
+SDO write ok: Index: 16#1600 SubIndex: 18
+SDO write ok: Index: 16#1600 SubIndex: 2
+SDO write ok: Index: 16#1600 SubIndex: 3
+SDO write ok: Index: 16#1600 SubIndex: 4
+SDO write ok: Index: 16#1600 SubIndex: 5
+SDO write ok: Index: 16#1600 SubIndex: 6
+SDO write ok: Index: 16#1600 SubIndex: 7
+SDO write ok: Index: 16#1600 SubIndex: 8
+SDO write ok: Index: 16#1600 SubIndex: 9
+SDO write ok: Index: 16#1A00 SubIndex: 0
+SDO write ok: Index: 16#1A00 SubIndex: 1
+SDO write ok: Index: 16#1A00 SubIndex: 10
+SDO write ok: Index: 16#1A00 SubIndex: 11
+SDO write ok: Index: 16#1A00 SubIndex: 12
+SDO write ok: Index: 16#1A00 SubIndex: 13
+SDO write ok: Index: 16#1A00 SubIndex: 14
+SDO write ok: Index: 16#1A00 SubIndex: 15
+SDO write ok: Index: 16#1A00 SubIndex: 16
+SDO write ok: Index: 16#1A00 SubIndex: 17
+SDO write ok: Index: 16#1A00 SubIndex: 18
+SDO write ok: Index: 16#1A00 SubIndex: 19
+SDO write ok: Index: 16#1A00 SubIndex: 2
+SDO write ok: Index: 16#1A00 SubIndex: 20
+SDO write ok: Index: 16#1A00 SubIndex: 21
+SDO write ok: Index: 16#1A00 SubIndex: 22
+SDO write ok: Index: 16#1A00 SubIndex: 23
+SDO write ok: Index: 16#1A00 SubIndex: 24
+SDO write ok: Index: 16#1A00 SubIndex: 25
+SDO write ok: Index: 16#1A00 SubIndex: 26
+SDO write ok: Index: 16#1A00 SubIndex: 27
+=== 有没有新的零点相关文件 ===
+/dobot/userdata/projectOld/process/vision_calibrate.json
+/dobot/userdata/CR5_sys_files/project/process/vision_calibrate.json
+=== Recipe 目录 ===
+total 24
+drwxrwxr-x    2 1025     1025          4096 Sep 18 19:11 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+-rwxrwxr-x    1 1025     1025           439 Feb 18  1976 SaveAxesValue.AxesValues.txtrecipe
+-rw-r--r--    1 root     root           100 Sep 18 19:11 SavePos.txt
+-rw-r--r--    1 root     root           780 Sep 18 19:12 SlaveInfos.SlaveInfos.txtrecipe
+-rw-r--r--    1 root     root             4 Sep 18 17:48 Update.txt
+=== ac_persistence ===
+total 8
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..

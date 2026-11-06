@@ -1,0 +1,70 @@
+{
+  "cylinder_base_bbox": [
+    [
+      -24.999996591703844,
+      -958.00107727993,
+      319.9994842548175
+    ],
+    [
+      24.99997672501149,
+      -678.0007116515768,
+      599.9993263397324
+    ]
+  ],
+  "orientation_x_bounds": [
+    {
+      "rxyz": [
+        -90,
+        0,
+        180
+      ],
+      "tool_x_min": -107.78179931640625,
+      "tool_x_max": 12.300000190734867,
+      "tcp_x_possible_overlap": [
+        -37.29999678243871,
+        132.78177604141774
+      ]
+    },
+    {
+      "rxyz": [
+        90,
+        0,
+        0
+      ],
+      "tool_x_min": -12.300000190734863,
+      "tool_x_max": 107.78179931640625,
+      "tcp_x_possible_overlap": [
+        -132.7817959081101,
+        37.299976915746356
+      ]
+    },
+    {
+      "rxyz": [
+        180,
+        0,
+        0
+      ],
+      "tool_x_min": -12.300000190734863,
+      "tool_x_max": 107.78179931640625,
+      "tcp_x_possible_overlap": [
+        -132.7817959081101,
+        37.299976915746356
+      ]
+    },
+    {
+      "rxyz": [
+        180,
+        0,
+        180
+      ],
+      "tool_x_min": -107.78179931640625,
+      "tool_x_max": 12.300000190734863,
+      "tcp_x_possible_overlap": [
+        -37.29999678243871,
+        132.78177604141774
+      ]
+    }
+  ],
+  "P5_minimum_axial_gap_mm": 7.2182040918899055,
+  "note": "Necessary axial overlap only, not sufficient contact or reachability. Y/Z translations cannot change axial gap. No station or trajectory changed."
+}

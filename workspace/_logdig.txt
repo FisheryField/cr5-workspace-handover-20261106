@@ -1,0 +1,22 @@
+=== codesys non-zero errors (newest 3 logs) ===
+--- /dobot/userdata/project/logs/codesys/log
+--- /dobot/userdata/project/logs/codesys/log.1
+--- /dobot/userdata/project/logs/codesys/log.2
+=== emergency / SDO / CoE / store ===
+=== drive / axis / 6axes messages ===
+, pszInfo= Dynamic: <cmp>CmpDobot6Axes</cmp>, <id>0x00012002</id> <ver>1.1.0.0</ver>1789714533: Cmp=CM, Class=1, Error=0, Info=10, pszInfo= Dynamic:
+/address>1789714533: Cmp=CmpDobot6Axes, Class=1, Error=0, Info=0, pszInfo= *** EVT_DenyLoadBootproject received: App=Application, bDeny=0 ***1789714
+533: Cmp=CmpDobot6Axes, Class=1, Error=0, Info=0, pszInfo= *** EVT_PrepareDownload received: App=Application ***1789714533: Cmp=Soft
+izing ...1789714533: Cmp=SoftMotion, Class=1, Error=0, Info=0, pszInfo= SM3_Basic init done. Using LREAL. Byte order: little endian.1789714533: C
+tproject]1789714533: Cmp=CmpDobot6Axes, Class=1, Error=0, Info=0, pszInfo= *** EVT_DownloadDone received: App=Application ***1789714533: Cmp=CmpOPCU
+on</app>]1789714533: Cmp=CmpDobot6Axes, Class=1, Error=0, Info=0, pszInfo= *** EVT_LoadBootprojectDone received: App=Application ***1789714533: Cmp=
+>] loaded1789714533: Cmp=CmpDobot6Axes, Class=1, Error=0, Info=0, pszInfo= *** EVT_DenyStartBootproject received: App=Application, bDeny=0 ***178971
+4533: Cmp=CmpDobot6Axes, Class=1, Error=0, Info=0, pszInfo= *** EVT_DenyStart received: App=Application, bDeny=0 ***1789714533: Cmp=C
+rol ready1789714533: Cmp=SoftMotion, Class=4, Error=0, Info=0, pszInfo=**** Drive=12: error 387 the drive device is disabled1789714533: Cmp=SoftM
+=0, Info=0, pszInfo=**** Drive=13: error 387 the drive device is disabled1789714533: Cmp=SoftMotion, Class=4, Error=0, Info=0, pszInfo=**** Dri
+ disabled1789714533: Cmp=SoftMotion, Class=4, Error=0, Info=0, pszInfo=**** Drive=15: error 387 the drive device is disabled1789714533: Cmp=SoftM
+=0, Info=0, pszInfo=**** Drive=16: error 387 the drive device is disabled1789714533: Cmp=SoftMotion, Class=4, Error=0, Info=0, pszInfo=**** Dri
+ settings1789714548: Cmp=SoftMotion, Class=4, Error=0, Info=0, pszInfo=**** FBError Drive=18: 1 general communication error1789714548: Cmp=SoftMo
+lobals.a11789714548: Cmp=SoftMotion, Class=4, Error=0, Info=0, pszInfo=**** Drive=18: error A ETC device is no longer in mode operational17897145
+48: Cmp=SoftMotion, Class=4, Error=0, Info=0, pszInfo=**** FBError Drive=19: 1 general communication error1789714548: Cmp=SoftMo
+=== gcontrol zero/calib ===

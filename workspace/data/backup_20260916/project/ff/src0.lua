@@ -1,0 +1,15 @@
+SpeedS(100)
+AccelS(100)
+while(true)
+	do
+Move(P5)
+Wait(6000)
+Move(P4)
+Wait(6000)
+Move(P3)
+Wait(6000)
+Move(P2)
+Wait(6000)
+Move(P1)
+Wait(6000)
+end

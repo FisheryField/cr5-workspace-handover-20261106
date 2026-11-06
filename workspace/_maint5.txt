@@ -1,0 +1,77 @@
+=== BEFORE ===
+Fri Sep 18 18:57:32 CST 2026
+stopped
+=== J1 (slave 3) 驱动器回零（CiA402 homing method 35）===
+slaves=9 mode=home
+=== home test on slave 3 ===
+--- before ---
+  0x6041:00 = 37432
+  0x6040:00 = 15
+  0x6060:00 = 8
+  0x6061:00 = 8
+  0x6098:00 = 35
+  0x6064:00 = 2898
+  0x6063:00 = 2898
+  0x607C:00 = 0
+  0x60B0:00 = 0
+1) 清除 RxPDO 映射 (0x1600:00 = 0) -> wkc=1
+2) 清故障 cw=0x0080 -> wkc=1
+3) cw=0x0000 -> wkc=1
+4) 切回零模式 0x6060=6 -> wkc=1
+5) 回零方式 0x6098=35 -> wkc=1
+6) cw=0x0006 shutdown -> wkc=1
+7) cw=0x0007 switch on -> wkc=1
+8) cw=0x000F enable op -> wkc=1
+   状态: sw=0x8238 mode=8
+9) cw=0x001F 启动回零
+   wkc=1
+   [00] sw=0x8238  mode=8  reached=0  homingOK=0
+   [01] sw=0x8238  mode=8  reached=0  homingOK=0
+   [02] sw=0x8238  mode=8  reached=0  homingOK=0
+   [03] sw=0x8238  mode=8  reached=0  homingOK=0
+   [04] sw=0x8238  mode=8  reached=0  homingOK=0
+   [05] sw=0x8238  mode=8  reached=0  homingOK=0
+   [06] sw=0x8238  mode=8  reached=0  homingOK=0
+   [07] sw=0x8238  mode=8  reached=0  homingOK=0
+   [08] sw=0x8238  mode=8  reached=0  homingOK=0
+   [09] sw=0x8238  mode=8  reached=0  homingOK=0
+   [10] sw=0x8238  mode=8  reached=0  homingOK=0
+   [11] sw=0x8238  mode=8  reached=0  homingOK=0
+   [12] sw=0x8238  mode=8  reached=0  homingOK=0
+   [13] sw=0x8238  mode=8  reached=0  homingOK=0
+   [14] sw=0x8238  mode=8  reached=0  homingOK=0
+   [15] sw=0x8238  mode=8  reached=0  homingOK=0
+   [16] sw=0x8238  mode=8  reached=0  homingOK=0
+   [17] sw=0x8238  mode=8  reached=0  homingOK=0
+   [18] sw=0x8238  mode=8  reached=0  homingOK=0
+   [19] sw=0x8238  mode=8  reached=0  homingOK=0
+   [20] sw=0x8238  mode=8  reached=0  homingOK=0
+   [21] sw=0x8238  mode=8  reached=0  homingOK=0
+   [22] sw=0x8238  mode=8  reached=0  homingOK=0
+   [23] sw=0x8238  mode=8  reached=0  homingOK=0
+   [24] sw=0x8238  mode=8  reached=0  homingOK=0
+   [25] sw=0x8238  mode=8  reached=0  homingOK=0
+   [26] sw=0x8238  mode=8  reached=0  homingOK=0
+   [27] sw=0x8238  mode=8  reached=0  homingOK=0
+   [28] sw=0x8238  mode=8  reached=0  homingOK=0
+   [29] sw=0x8238  mode=8  reached=0  homingOK=0
+   [30] sw=0x8238  mode=8  reached=0  homingOK=0
+   [31] sw=0x8238  mode=8  reached=0  homingOK=0
+   [32] sw=0x8238  mode=8  reached=0  homingOK=0
+   [33] sw=0x8238  mode=8  reached=0  homingOK=0
+   [34] sw=0x8238  mode=8  reached=0  homingOK=0
+   [35] sw=0x8238  mode=8  reached=0  homingOK=0
+   [36] sw=0x8238  mode=8  reached=0  homingOK=0
+   [37] sw=0x8238  mode=8  reached=0  homingOK=0
+   [38] sw=0x8238  mode=8  reached=0  homingOK=0
+   [39] sw=0x8238  mode=8  reached=0  homingOK=0
+--- after ---
+  0x6041:00 = 33336
+  0x6060:00 = 8
+  0x6061:00 = 8
+  0x6064:00 = 2898
+  0x6063:00 = 2898
+  0x607C:00 = 0
+  0x60B0:00 = 0
+=== done ===
+=== HOME_TEST_DONE ===

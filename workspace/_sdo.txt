@@ -1,0 +1,122 @@
+=== gcontrol: SDO / CoE / 0x607C / 0x1010 ===
+### nEncoderChannel : {} ###
+../thirdParty/eigen-3.2.10/Eigen/src/Core/DenseCoeffsBase.h
+Eigen::DenseCoeffsBase<Derived, 1>::Scalar& Eigen::DenseCoeffsBase<Derived, 1>::operator()(Eigen::DenseCoeffsBase<Derived, 1>::Index, Eigen::DenseCoeffsBase<Derived, 1>::Index) [with Derived = Eigen::Matrix<float, -1, -1>; Eigen::DenseCoeffsBase<Derived, 1>::Scalar = float; Eigen::DenseCoeffsBase<Derived, 1>::Index = int]
+_ZN10PluginBase21alloc_GetEncoderValueEPhb
+_ZN10PluginBase24alloc_GetAngleSensorCoefEv
+_ZN10PluginBase24alloc_SetAngleSensorCoefEfc
+_ZN5Eigen15DenseCoeffsBaseINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEELi1EEclEii
+_ZN5Eigen15DenseCoeffsBaseINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEELi1EEclEii.part.29
+_ZN5dobot7modules14rpcExecuteApis8isDoubleERKSt6vectorISsSaISsEERSs
+_ZN5dobot7modules14rpcExecuteApis8isDoubleERKSt6vectorISsSaISsEEjjRSs
+_ZNK4Json5Value8asDoubleEv
+_ZNK4Json5Value8isDoubleEv
+_ZZN5Eigen15DenseCoeffsBaseINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEELi1EEclEiiE19__PRETTY_FUNCTION__
+a_lhs.cols() == a_rhs.rows() && "invalid matrix product" && "if you wanted a coeff-wise or a dot product use the respective explicit functions"
+encoder
+encoder_channel
+isDoBackToDefault
+isDoBackToDefault              = {}
+isDoBackToDefaultAtScript
+isDoBackToDefaultAtScript      = {}
+=== libCmpDobot6Axes.so ===
+/home/dobot/Desktop/SVN/CmpDobot6Axes/CmpDobot6Axes_Corobot_V1.1/Linux
+/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/glibc.git~release~2.25~master/csu
+DriverParams
+ENCODERTYPE
+EVTPARAM_CmpApp
+EVTPARAM_CmpAppComm
+EVTPARAM_CmpAppDenyDelete
+EVTPARAM_CmpAppDenyLoadBootproject
+EVTPARAM_CmpAppDenyStart
+EVTPARAM_CmpAppDenyStop
+EVTPARAM_CmpAppException
+EVTPARAM_CmpAppExit
+EVTPARAM_CmpAppOperatingStateChanged
+EVTPARAM_CmpAppRegisterBootproject
+EVTPARAM_CmpAppSourceDownload
+EVTPARAM_CmpAppStop
+EVTPARAM_CmpApp_OEMServiceTag
+EVTPARAM_CmpApp_Reset
+HomeFlag
+PFSYSCPUCALLIECFUNCWITHPARAMS
+RTSCreateParameter
+SysCpuCallIecFuncWithParams
+_GLOBAL_OFFSET_TABLE_
+_old_offset
+_vtable_offset
+a_byHomeState
+byBitOffset
+byHomeRobot
+dwOffset
+m_EncoderCnt
+m_EncoderResolution
+m_EncoderType
+m_GeneralIOParams
+m_Params
+m_PositionOffset
+m_SafeIOParams
+m_SetEncoderCnt
+m_TerminalIOParams
+m_TorqueOffset
+m_ZeroVelocity
+pEventParam
+pParam
+pParameter
+pParameterUpdateCRC
+pUserParameter
+pfSysCpuCallIecFuncWithParams
+tagSYS_TASK_PARAM
+ulOffset
+ulOffsetExtRefFunctionPointer
+ulParam1
+=== libIoDrvDobIO.so ===
+/home/dobot/Desktop/SVN/Linux/include/uapi/linux/spi
+/home/dobot/Desktop/SVN/SZYJ_0x1_CORTEX_Linux_V3.5.12.30_NwIvVus2YS/Components
+/home/dobot/Desktop/SVN/SZYJ_0x1_CORTEX_Linux_V3.5.12.30_NwIvVus2YS/Platforms/Linux
+/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/glibc.git~release~2.25~master/csu
+APPKEY_INT_STORE_BOOTPROJECT_ONLY_ON_DOWNLOAD "Bootproject.StoreOnlyOnDownload"
+APPVALUE_INT_STORE_BOOTPROJECT_ONLY_ON_DOWNLOAD_DEFAULT 0
+APP_RBS_RESTORE 4
+CAL_AppGetAreaOffsetByAddress pfAppGetAreaOffsetByAddress
+CAL_AppRestoreRetainAreas pfAppRestoreRetainAreas
+CAL_AppRestoreRetainsFromFile pfAppRestoreRetainsFromFile
+CAL_AppRestoreRetainsFromFile2 pfAppRestoreRetainsFromFile2
+CAL_AppStoreRetainsInFile pfAppStoreRetainsInFile
+CAL_BTagReaderRestoreSavepoint pfBTagReaderRestoreSavepoint
+CAL_BTagWriterRestoreSavepoint pfBTagWriterRestoreSavepoint
+CAL_RetainPrepareStore pfRetainPrepareStore
+CAL_RetainRestore pfRetainRestore
+CAL_RetainRestoreFromFile pfRetainRestoreFromFile
+CAL_RetainStore pfRetainStore
+CAL_RetainStoreInFile pfRetainStoreInFile
+CAL_appgetareaoffsetbyaddress pfappgetareaoffsetbyaddress
+CAL_apprestoreretainsfromfile pfapprestoreretainsfromfile
+CAL_appstoreretainsinfile pfappstoreretainsinfile
+CHK_AppGetAreaOffsetByAddress (pfAppGetAreaOffsetByAddress != NULL)
+CHK_AppRestoreRetainAreas (pfAppRestoreRetainAreas != NULL)
+CHK_AppRestoreRetainsFromFile (pfAppRestoreRetainsFromFile != NULL)
+CHK_AppRestoreRetainsFromFile2 (pfAppRestoreRetainsFromFile2 != NULL)
+CHK_AppStoreRetainsInFile (pfAppStoreRetainsInFile != NULL)
+CHK_BTagReaderRestoreSavepoint (pfBTagReaderRestoreSavepoint != NULL)
+CHK_BTagWriterRestoreSavepoint (pfBTagWriterRestoreSavepoint != NULL)
+CHK_RetainPrepareStore (pfRetainPrepareStore != NULL)
+=== .lib 目录 ===
+total 964
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    6 1025     1025          4096 Jan  1  1970 ..
+-rwxrwxr-x    1 1025     1025         72688 Jun  4  2020 libCmpDobot6Axes.so
+-rwxrwxr-x    1 1025     1025         71778 May 29  2018 libIoDrvABCD
+-rwxrwxr-x    1 1025     1025        815432 Apr  9  2020 libIoDrvDobIO.so
+=== /opt/codesys 平台库 ===
+total 52
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    3 1025     1025          4096 Jan  1  1970 ..
+-rwxrwxr-x    1 1025     1025            62 May 29  2018 3S.dat
+-rwxrwxr-x    1 1025     1025         16984 Oct 28  2020 codesysload
+-rwxrwxr-x    1 1025     1025         16612 Apr 27  2020 codesysload_backup
+=== gcontrol 里的 HOMEParams 相关 ===
+_ZN10PluginBase16alloc_SetHOMECmdEP10tagHOMECmdi
+_ZN10PluginBase19alloc_GetHOMEParamsEv
+_ZN10PluginBase19alloc_SetHOMEParamsEP13tagHOMEParamsi
+_ZN10PluginBase24alloc_SetSixForceHomeCmdEi

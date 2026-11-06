@@ -1,0 +1,5 @@
+# program=v3150.elf  mode=field
+### every instruction with a memory operand [reg + 0x14d]
+    08011e18  ldrsb.w r0,[r7,#0x14d]              FUN_08011e04@08011e04
+    0801f858  movw r0,#0x14d                      FUN_0801f6a4@0801f6a4
+

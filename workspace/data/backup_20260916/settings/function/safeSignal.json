@@ -1,0 +1,20 @@
+{
+    "in": {
+        "userStop1": 0,
+        "safeStop1": 0,
+        "safeStopReset1": 0,
+        "reducedMode1": 0,
+        "autoModeConfirm1": 0,
+        "userStop2": 0,
+        "safeStop2": 0,
+        "safeStopReset2": 0,
+        "reducedMode2": 0,
+        "autoModeConfirm2": 0
+    },
+    "out": {
+        "emergencyStopStatus": 0,
+        "notStoppingStatus": 0,
+        "reducedStatus": 0,
+        "movingStatus": 0
+    }
+}

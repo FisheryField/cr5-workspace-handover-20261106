@@ -1,0 +1,77 @@
+=== settVersion 完整块 ===
+[2026-09-18 17:29:53.549] [15] [info] [settVersion#4492] feedback:2.3.3.0
+
+[2026-09-18 17:29:53.549] [15] [info] [settVersion#4493] safeio  :2.4.0.0
+
+[2026-09-18 17:29:53.549] [15] [info] [settVersion#4494] servo1  :3.1.5.0
+
+[2026-09-18 17:29:53.549] [15] [info] [settVersion#4495] servo2  :3.1.5.0
+
+[2026-09-18 17:29:53.549] [15] [info] [settVersion#4496] servo3  :3.1.5.0
+
+[2026-09-18 17:29:53.549] [15] [info] [settVersion#4497] servo4  :3.1.5.0
+
+[2026-09-18 17:29:53.549] [15] [info] [settVersion#4498] servo5  :3.1.5.0
+
+[2026-09-18 17:29:53.549] [15] [info] [settVersion#4499] servo6  :3.1.5.0
+
+[2026-09-18 17:29:53.549] [15] [info] [settVersion#4500] system  :2.1.0
+
+[2026-09-18 17:29:53.549] [15] [info] [settVersion#4501] terminal:3.3.2.0
+
+[2026-09-18 17:29:53.549] [15] [info] [settVersion#4502] unio    :2.3.2.0
+--
+[2026-09-18 17:30:15.025] [15] [info] [settVersion#4492] feedback:2.3.3.0
+
+[2026-09-18 17:30:15.025] [15] [info] [settVersion#4493] safeio  :2.4.0.0
+
+[2026-09-18 17:30:15.025] [15] [info] [settVersion#4494] servo1  :3.1.5.0
+
+[2026-09-18 17:30:15.025] [15] [info] [settVersion#4495] servo2  :3.1.5.0
+
+
+=== 硬件版本/代次 ===
+
+=== mToolServer 支持的 update 接口 ===
+
+=== mToolServer.log: update 请求历史 ===
+[2026-09-18 17:47:10][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+[2026-09-18 17:47:10][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#602]request update type is start.
+[2026-09-18 17:47:10][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#651]type:firmware,file1:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin,file2:.
+[2026-09-18 17:47:10][DEBUG][http_server.cpp@updateFunc_CRSingleFwAndXml()#661]return url:/update/CR/singleFwAndXml.
+[2026-09-18 17:47:26][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:6 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+[2026-09-18 17:47:30][INFO][general_tools.cpp@readSpecifyFile()#33]readSpecifyFile:/tmp/tUpdate/slave/CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+[2026-09-18 17:47:30][INFO][dobot_foe.cpp@updateSlaveFW()#339]File read OK,name:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin, 328892 bytes.
+[2026-09-18 17:47:30][INFO][dobot_foe.cpp@updateSlaveFW()#341]start FoE write....,updateFileName=CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin,filesize=328892.
+    "updateFile": "CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin",
+[2026-09-18 17:47:39][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+[2026-09-18 17:47:39][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#602]request update type is start.
+[2026-09-18 17:47:39][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#651]type:firmware,file1:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin,file2:.
+[2026-09-18 17:47:39][DEBUG][http_server.cpp@updateFunc_CRSingleFwAndXml()#661]return url:/update/CR/singleFwAndXml.
+[2026-09-18 17:47:55][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:5 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+[2026-09-18 17:47:59][INFO][general_tools.cpp@readSpecifyFile()#33]readSpecifyFile:/tmp/tUpdate/slave/CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+[2026-09-18 17:47:59][INFO][dobot_foe.cpp@updateSlaveFW()#339]File read OK,name:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin, 328892 bytes.
+[2026-09-18 17:47:59][INFO][dobot_foe.cpp@updateSlaveFW()#341]start FoE write....,updateFileName=CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin,filesize=328892.
+    "updateFile": "CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin",
+[2026-09-18 17:48:10][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+[2026-09-18 17:48:10][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#602]request update type is start.
+[2026-09-18 17:48:10][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#651]type:firmware,file1:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin,file2:.
+[2026-09-18 17:48:10][DEBUG][http_server.cpp@updateFunc_CRSingleFwAndXml()#661]return url:/update/CR/singleFwAndXml.
+[2026-09-18 17:48:12][INFO][http_server.cpp@httpCallback()#1290]request : get /update/singleStatus.
+[2026-09-18 17:48:26][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+[2026-09-18 17:48:30][INFO][general_tools.cpp@readSpecifyFile()#33]readSpecifyFile:/tmp/tUpdate/slave/CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+[2026-09-18 17:48:30][INFO][dobot_foe.cpp@updateSlaveFW()#339]File read OK,name:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin, 328892 bytes.
+[2026-09-18 17:48:30][INFO][dobot_foe.cpp@updateSlaveFW()#341]start FoE write....,updateFileName=CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin,filesize=328892.
+    "updateFile": "CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin",
+[2026-09-18 17:48:40][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+[2026-09-18 17:48:40][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#602]request update type is start.
+[2026-09-18 17:48:40][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#651]type:firmware,file1:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin,file2:.
+[2026-09-18 17:48:40][DEBUG][http_server.cpp@updateFunc_CRSingleFwAndXml()#661]return url:/update/CR/singleFwAndXml.
+[2026-09-18 17:48:55][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+[2026-09-18 17:48:59][INFO][general_tools.cpp@readSpecifyFile()#33]readSpecifyFile:/tmp/tUpdate/slave/CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+[2026-09-18 17:48:59][INFO][dobot_foe.cpp@updateSlaveFW()#339]File read OK,name:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin, 328892 bytes.
+[2026-09-18 17:48:59][INFO][dobot_foe.cpp@updateSlaveFW()#341]start FoE write....,updateFileName=CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin,filesize=328892.
+[2026-09-18 19:20:29][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+[2026-09-18 19:20:29][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#602]request update type is start.
+[2026-09-18 19:20:29][DEBUG][http_server.cpp@updateFunc_CRSingleFwAndXml()#661]return url:/update/CR/singleFwAndXml.
+[2026-09-18 19:20:30][INFO][http_server.cpp@httpCallback()#1290]request : get /update/singleStatus.

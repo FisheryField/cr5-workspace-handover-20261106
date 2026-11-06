@@ -1,0 +1,248 @@
+=== logs tree ===
+total 53
+drwxr-xr-x   11 root     root          4096 Aug 21  1975 .
+drwxr-xr-x    8 1022     1024          1024 Dec 30  2022 ..
+drwxr-xr-x    2 root     root          4096 Aug 21  1975 algs
+drwxr-xr-x    2 root     root          4096 Sep 16 14:51 all
+drwxr-xr-x    2 root     root          4096 Aug 21  1975 blackbox
+-rw-r--r--    1 root     root             0 Aug 21  1975 channel_5
+drwxr-xr-x    2 root     root          4096 Sep 18 14:12 codesys
+drwxr-xr-x    2 root     root          4096 Sep 18 14:12 gcontrol
+drwxr-xr-x    2 root     root          4096 Aug 21  1975 http
+drwx------    2 root     root         16384 Jan  1  1970 lost+found
+drwxr-xr-x    2 root     root          4096 Aug 21  1975 lua
+drwxr-xr-x    2 root     root          4096 Aug 21  1975 server
+--- server ---
+total 8
+drwxr-xr-x    2 root     root          4096 Aug 21  1975 .
+drwxr-xr-x   11 root     root          4096 Aug 21  1975 ..
+--- gcontrol ---
+total 64
+drwxr-xr-x    2 root     root          4096 Sep 18 14:12 .
+drwxr-xr-x   11 root     root          4096 Aug 21  1975 ..
+-rw-r--r--    1 root     root          1507 Sep 18 14:37 log
+-rw-r--r--    1 root     root          4219 Sep 18 12:12 log.1
+-rw-r--r--    1 root     root          1064 Sep 17 09:40 log.10
+-rw-r--r--    1 root     root          2101 Sep 18 09:27 log.2
+-rw-r--r--    1 root     root           931 Sep 18 09:00 log.3
+-rw-r--r--    1 root     root          5244 Sep 18 08:54 log.4
+-rw-r--r--    1 root     root          5683 Sep 17 17:47 log.5
+-rw-r--r--    1 root     root           835 Sep 17 11:18 log.6
+-rw-r--r--    1 root     root          1575 Sep 17 10:28 log.7
+-rw-r--r--    1 root     root          1511 Sep 17 09:59 log.8
+-rw-r--r--    1 root     root          1999 Sep 17 09:46 log.9
+--- lua ---
+total 8
+drwxr-xr-x    2 root     root          4096 Aug 21  1975 .
+drwxr-xr-x   11 root     root          4096 Aug 21  1975 ..
+-rw-r--r--    1 root     root             0 Aug 21  1975 logger_format
+-rw-r--r--    1 root     root             0 Aug 21  1975 logger_raw
+--- algs ---
+total 8
+drwxr-xr-x    2 root     root          4096 Aug 21  1975 .
+drwxr-xr-x   11 root     root          4096 Aug 21  1975 ..
+--- blackbox ---
+total 8
+drwxr-xr-x    2 root     root          4096 Aug 21  1975 .
+drwxr-xr-x   11 root     root          4096 Aug 21  1975 ..
+--- all ---
+total 379640
+drwxr-xr-x    2 root     root          4096 Sep 16 14:51 .
+drwxr-xr-x   11 root     root          4096 Aug 21  1975 ..
+-rw-r--r--    1 root     root      21311037 Sep 18 14:38 log
+-rw-r--r--    1 root     root      52428698 Sep 16 14:51 log.1
+-rw-r--r--    1 root     root      52428792 Sep 14 18:29 log.2
+-rw-r--r--    1 root     root      52428759 Sep 14 17:34 log.3
+-rw-r--r--    1 root     root      52428772 Sep 14 10:39 log.4
+-rw-r--r--    1 root     root      52428685 Sep 14 10:34 log.5
+-rw-r--r--    1 root     root      52428757 Feb 19  1976 log.6
+-rw-r--r--    1 root     root      52428714 Feb 18  1976 log.7
+--- http ---
+total 8
+drwxr-xr-x    2 root     root          4096 Aug 21  1975 .
+drwxr-xr-x   11 root     root          4096 Aug 21  1975 ..
+--- codesys ---
+total 888
+drwxr-xr-x    2 root     root          4096 Sep 18 14:12 .
+drwxr-xr-x   11 root     root          4096 Aug 21  1975 ..
+-rw-r--r--    1 root     root         74017 Sep 18 14:27 log
+-rw-r--r--    1 root     root         75071 Sep 18 11:31 log.1
+-rw-r--r--    1 root     root         74114 Sep 17 09:40 log.10
+-rw-r--r--    1 root     root         74222 Sep 18 09:28 log.2
+-rw-r--r--    1 root     root         74903 Sep 18 09:03 log.3
+-rw-r--r--    1 root     root         74780 Sep 18 08:54 log.4
+-rw-r--r--    1 root     root         77152 Sep 17 16:15 log.5
+-rw-r--r--    1 root     root         74275 Sep 17 11:14 log.6
+-rw-r--r--    1 root     root         74264 Sep 17 10:28 log.7
+-rw-r--r--    1 root     root         77765 Sep 17 09:59 log.8
+-rw-r--r--    1 root     root         74342 Sep 17 09:44 log.9
+=== files mentioning zero/offset in userdata (excl logs) ===
+=== default.json (first 1800 bytes) ===
+{
+	"common":{
+		"ratio":{
+			"max":100,
+			"min":1,
+			"def":50
+		}
+	},
+	"teach":{
+		"joint":{
+			"velocity":[
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				}
+			],
+			"acceleration":[
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				}
+			]
+		},
+		"coordinate":{
+			"velocity":[
+				{
+					"max":200,
+					"min":1,
+					"def":50
+				},
+				{
+					"max":200,
+					"min":1,
+					"def":50
+				},
+				{
+					"max":200,
+					"min":1,
+					"def":50
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				}
+			],
+			"acceleration":[
+				{
+					"max":1000,
+					"min":1,
+					"def":300
+				},
+				{
+					"max":1000,
+					"min":1,
+					"def":300
+				},
+				{
+					"max":1000,
+					"min":1,
+					"def":300
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				}
+			]
+		}
+	},
+	"playback":{
+		"joint":{
+			"velocity":[
+				{
+					"ma
+=== SavePos.txt vs Recipe ===
+total 24
+drwxrwxr-x    2 1025     1025          4096 Sep 18 09:30 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+-rwxrwxr-x    1 1025     1025           439 Feb 18  1976 SaveAxesValue.AxesValues.txtrecipe
+-rw-r--r--    1 root     root           100 Sep 18 12:12 SavePos.txt
+-rw-r--r--    1 root     root           780 Sep 18 14:12 SlaveInfos.SlaveInfos.txtrecipe
+-rw-r--r--    1 root     root             4 Sep 17 09:47 Update.txt
+=== blackbox contents ===
+=== server logs ===
+=== gcontrol logs ===
+/dobot/userdata/project/logs/gcontrol/log.2
+/dobot/userdata/project/logs/gcontrol/log.1
+/dobot/userdata/project/logs/gcontrol/log.4
+/dobot/userdata/project/logs/gcontrol/log.5
+/dobot/userdata/project/logs/gcontrol/log
+/dobot/userdata/project/logs/gcontrol/log.10
+/dobot/userdata/project/logs/gcontrol/log.9
+/dobot/userdata/project/logs/gcontrol/log.3
+/dobot/userdata/project/logs/gcontrol/log.7
+/dobot/userdata/project/logs/gcontrol/log.8

@@ -1,0 +1,8 @@
+# program=v328d8.elf  mode=xref
+### refs to 0x8020a38
+
+### refs to 0x8020a39
+
+### refs to 0x8020d3c
+    08020bec  FUN_08020a38@08020a38  [UNCONDITIONAL_JUMP]  b 0x08020d3c
+

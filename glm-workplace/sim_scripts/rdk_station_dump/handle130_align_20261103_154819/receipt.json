@@ -1,0 +1,20 @@
+{
+  "backup": "sim_scripts\\rdk_station_dump\\handle130_align_20261103_154819\\before.stl",
+  "grip_shift_flange_z_mm": 4,
+  "tip_flange_z_mm": 130,
+  "x_bounds": [
+    -12.300000190734863,
+    107.78179931640625
+  ],
+  "moved_vertices": 2268,
+  "total_vertices": 3000,
+  "tool": [
+    0.0,
+    0.0,
+    130.0,
+    0.0,
+    -0.0,
+    0.0
+  ],
+  "station_saved": false
+}

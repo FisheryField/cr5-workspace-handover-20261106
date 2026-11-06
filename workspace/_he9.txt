@@ -1,0 +1,167 @@
+=== 全部 HTTP uri (去重) ===
+uri : /calibrate/home
+uri : /debugger/state
+uri : /interface/6axisJointBrake
+uri : /interface/ethernet
+uri : /interface/moveJ
+uri : /interface/setAP
+uri : /panel/autoManual
+uri : /panel/emergencyStop
+uri : /panel/jog
+uri : /properties/advancedFunction
+uri : /properties/cabinetType
+uri : /properties/controllerType
+uri : /properties/suppressionConfig
+uri : /settings/controlMode
+uri : /settings/controlMode?mode=tcp
+uri : /settings/function/install
+uri : /settings/function/loadParams
+uri : /settings/function/remoteControl
+uri : /settings/function/safeSignal
+uri : /settings/productInfo/hardwareInfo
+uri : /settings/teach/inch
+uri : /settings/version
+
+=== HOMEParams / cali 相关日志 ===
+ [info] [checkRequestLoop#595] isRequestCalihome true
+5] [info] [updateEncoderData#509] servo calihome done ...
+5] [info] [updateEncoderData#512] servo calihome not done , count:7
+5] [info] [updateEncoderData#512] servo calihome not done , count:8
+5] [info] [updateEncoderData#512] servo calihome not done , count:9
+=== settings 目录树 ===
+/dobot/userdata/project/settings/api.lua
+/dobot/userdata/project/settings/My.lua
+/dobot/userdata/project/settings/coordinate/tool.json
+/dobot/userdata/project/settings/coordinate/user.json
+/dobot/userdata/project/settings/playback/joint.json
+/dobot/userdata/project/settings/playback/arch.json
+/dobot/userdata/project/settings/playback/coordinate.json
+/dobot/userdata/project/settings/Dobot+.json
+/dobot/userdata/project/settings/default.json
+/dobot/userdata/project/settings/iscara.conf
+/dobot/userdata/project/settings/Plugin.lua
+/dobot/userdata/project/settings/common.json
+/dobot/userdata/project/settings/function/collisionDect.json
+/dobot/userdata/project/settings/function/DHGripperEnable.json
+/dobot/userdata/project/settings/function/ioctrl.json
+/dobot/userdata/project/settings/function/elecSkin.json
+/dobot/userdata/project/settings/function/robotiqSixForce.json
+/dobot/userdata/project/settings/function/tcpipSecurity.json
+/dobot/userdata/project/settings/function/generalSafeSetting.json
+/dobot/userdata/project/settings/function/functionApi.json
+/dobot/userdata/project/settings/function/dragSensivity.json
+/dobot/userdata/project/settings/function/remoteControl.json
+/dobot/userdata/project/settings/function/sixForceParams.json
+/dobot/userdata/project/settings/function/endAI.json
+/dobot/userdata/project/settings/function/install.json
+/dobot/userdata/project/settings/function/dynamicsParams.json
+/dobot/userdata/project/settings/function/modbusctrl.json
+/dobot/userdata/project/settings/function/homeEncoder.json
+/dobot/userdata/project/settings/function/minicab_ioctrl.json
+/dobot/userdata/project/settings/function/jointMaxParas.json
+/dobot/userdata/project/settings/function/elecSkinParams.json
+/dobot/userdata/project/settings/function/loadParams.json
+/dobot/userdata/project/settings/function/tcp30005Feedback.json
+/dobot/userdata/project/settings/function/reTraceParams.json
+/dobot/userdata/project/settings/function/elecSkinDefault.json
+/dobot/userdata/project/settings/function/gpioAO.json
+/dobot/userdata/project/settings/function/torquelimit.json
+/dobot/userdata/project/settings/function/modbusConf.json
+/dobot/userdata/project/settings/function/CustomPoint.json
+/dobot/userdata/project/settings/function/PackPoint.json
+/dobot/userdata/project/settings/function/robotiqGripperEnable.json
+/dobot/userdata/project/settings/function/functionSystem.json
+/dobot/userdata/project/settings/function/logServerConfig.json
+/dobot/userdata/project/settings/function/tcp30006Feedback.json
+/dobot/userdata/project/settings/function/accFactor.json
+/dobot/userdata/project/settings/function/gpioAI.json
+/dobot/userdata/project/settings/function/hitbotGripperEnable.json
+/dobot/userdata/project/settings/function/safeSignal.json
+/dobot/userdata/project/settings/workTime/WorkTimeRec.json
+/dobot/userdata/project/settings/datasvr/config.json
+/dobot/userdata/project/settings/My_api.lua
+/dobot/userdata/project/settings/hot_key.json
+/dobot/userdata/project/settings/teach/joint.json
+/dobot/userdata/project/settings/teach/inch.json
+/dobot/userdata/project/settings/teach/coordinate.json
+=== libdataSvr 里的 uri 字符串 ===
+/F7`
+/F8F
+/Ff`
+/H9FxD
+/HxD
+/I FyD	
+/I/HyDxD
+/I{D/J
+/J/KzD{D
+/J0K-
+/JchzD	
+/K/J
+/K/J{DzDO
+/K0FY
+/K@"
+/K@F/J
+/KyD
+/K{D
+/K{D	
+/K|D
+/a2Fo
+/cjc
+/dobot/bin/bin/lua
+/dobot/bin/dobotM1Semphore
+/dobot/bin/etc/iscara.conf
+/dobot/bin/fifoCodesys
+/dobot/bin/lua/dobot.lua
+/dobot/userdata/project
+/dobot/userdata/project/logs/traceinfo.log
+/dobot/userdata/project/optitrack_bindata
+/dobot/userdata/project/process/elecSkin/avoidParams.json
+/dobot/userdata/project/process/elecSkin/default.json
+/dobot/userdata/project/process/elecSkin/jointLimit.json
+/dobot/userdata/project/process/elecSkin/sensitivity.json
+/dobot/userdata/project/process/elecSkin/switch.json
+/dobot/userdata/project/process/pallet/matrixParams.json
+/dobot/userdata/project/process/pallet/params.json
+/dobot/userdata/project/process/screw/
+/dobot/userdata/project/process/screw/driverDetailConfig.json
+/dobot/userdata/project/process/screw/driverModbusConfig.json
+/dobot/userdata/project/process/screw/driverSimpleConfig.json
+/dobot/userdata/project/process/screw/params.json
+/dobot/userdata/project/process/sixForce/caliParams.json
+/dobot/userdata/project/process/sixForce/calibProcess.json
+/dobot/userdata/project/process/sixForce/calibProcess.json parse faild!
+/dobot/userdata/project/process/sixForce/config.json
+/dobot/userdata/project/process/sixForce/switch.json
+/dobot/userdata/project/process/track/params.json
+/dobot/userdata/project/process/trajectory
+/dobot/userdata/project/process/trajectory/
+/dobot/userdata/project/process/trajectory/button_drag_track.json
+/dobot/userdata/project/process/trajectory/setFCParams.json
+/dobot/userdata/project/process/vision/params.json
+/dobot/userdata/project/project
+/dobot/userdata/project/project/%1/%2
+/dobot/userdata/project/project/globalVar.json
+/dobot/userdata/project/properties/AdvancedFunction.json
+/dobot/userdata/project/properties/PoseSelfInterference.json
+/dobot/userdata/project/properties/axis.json
+/dobot/userdata/project/properties/businessType.json
+/dobot/userdata/project/properties/controlCabType.json
+/dobot/userdata/project/properties/controllerType.json
+/dobot/userdata/project/properties/default.json
+/dobot/userdata/project/properties/ratio_default.json
+/dobot/userdata/project/properties/structure.json
+/dobot/userdata/project/properties/suppressionConfig.json
+/dobot/userdata/project/properties/vibrationDetection.json
+/dobot/userdata/project/settings/api.lua
+/dobot/userdata/project/settings/common.json
+/dobot/userdata/project/settings/coordinate/tool.json
+/dobot/userdata/project/settings/coordinate/user.json
+/dobot/userdata/project/settings/datasvr
+/dobot/userdata/project/settings/datasvr/config.json
+/dobot/userdata/project/settings/function/DHGripperEnable.json
+/dobot/userdata/project/settings/function/accFactor.json
+/dobot/userdata/project/settings/function/ccboxVoltage.json
+/dobot/userdata/project/settings/function/collisionDect.json
+/dobot/userdata/project/settings/function/dragSensivity.json
+/dobot/userdata/project/settings/function/dynamicsParams.json
+/dobot/userdata/project/settings/function/elecSkin.json

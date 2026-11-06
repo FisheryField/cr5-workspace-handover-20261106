@@ -1,0 +1,117 @@
+10:59:30 [MON] v5（仅 SSH 读日志，零端口占用）输出=D:\mydata\workspace\mon5_20260927_105930.log 时长=2400s
+11:01:30 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -17.457678,-24.893736,-95.173120,62.356640,85.670901,-47.207208
+11:01:30 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -16.411652,-24.216914,-95.604741,61.331383,85.794607,-48.027471
+11:01:30 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -8.057987,-11.465504,-99.090499,82.256806,101.785466,-28.205628
+11:03:45 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -17.230203,-12.678734,-14.470789,27.149524,17.230203,0.000000
+11:03:45 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -17.892538,-13.072040,-14.979779,28.206697,17.898598,0.000356
+11:03:45 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -9.595014,-0.333819,-18.432387,49.207866,33.891239,19.844656
+11:28:19 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -53.932899,6.603670,-49.685579,43.081911,53.932899,0.000000
+11:28:19 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -53.823939,6.642332,-49.538477,42.997021,53.816097,0.000356
+11:28:19 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -45.481680,19.436338,-52.951162,63.956485,69.777905,19.844656
+11:28:23 [LOG] [2026-09-27 11:28:16.717] [15] [info] [CallProcess#191] recv = JointMovJ(0.000000,0.000000,0.000000,0.000000,0.000000,0.000000)
+11:28:23 [LOG] [INFO][algs/inc/PackedCmd.h@PackedCmdPrintf()#208] Command OnPTPCmd queuedCmdIndex:14; cp:0; ptpMode:4-MOVJ_ANGLE   ; StopDI:0;   handtype RDNC: -1,-1,-1,0
+11:28:23 [LOG] [INFO][algs/src/common/PreDealDataCalculate.cpp@PreDealDataCalculate()#1345] packedcmd type 2-PackedPTPCmdType; queuedCmdIndex:14
+11:28:23 [LOG] [INFO][algs/src/common/PreDealDataRunning.cpp@PreDealDataRunning()#831] PreDealDataRunning: get new PreDealData packedcmd queuedCmdIndex:14, type : 2-PackedPTPCmdType, motion type : 4-MOVJ_ANGLE   , gPreDealData.transition : 0.000000
+11:28:23 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -54.187305,6.634820,-49.919950,43.285133,54.187305,0.000000
+11:28:23 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -54.193403,6.664432,-49.876038,43.293412,54.192333,0.000356
+11:28:23 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -45.872531,19.484103,-53.311180,64.268738,70.168756,19.844656
+11:44:18 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -69.445631,-52.792052,-69.624005,114.316202,79.019628,-6.625719
+11:44:18 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -68.752745,-52.249484,-69.886267,113.636830,79.099341,-7.162041
+11:44:18 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -60.413159,-39.560810,-73.360975,134.583462,95.087170,12.662653
+11:44:32 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -63.327846,-46.599389,-53.185903,99.785295,63.327846,0.000000
+11:44:32 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -63.988922,-46.882720,-53.663356,100.845141,63.996586,0.000356
+11:44:32 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -55.692646,-34.254465,-57.147511,121.843637,79.988871,19.844656
+11:49:23 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  15.205775,-6.252918,-103.789997,26.492693,83.550220,-68.344444
+11:49:23 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  15.126994,-6.144723,-103.046241,26.364724,83.009101,-67.905098
+11:49:23 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  23.424161,6.637520,-106.484592,47.295672,98.969483,-48.044046
+11:49:28 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  0.440304,-15.289135,-103.968957,44.468432,87.960746,-61.178267
+11:49:28 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  1.346859,-14.710478,-104.336425,43.580179,88.071097,-61.891728
+11:49:28 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  9.703198,-1.934295,-107.819153,64.505423,104.057856,-42.069707
+11:51:05 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -0.188307,-0.138565,-0.158150,0.296714,0.188307,0.000000
+11:51:05 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -0.275539,-0.208169,-0.237576,0.451092,0.287301,0.000356
+11:51:05 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  8.018955,12.627364,-3.639212,21.453508,16.277269,19.844656
+11:53:04 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -59.236768,-88.346823,49.750011,38.596812,59.236768,0.000000
+11:53:04 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -58.544096,-87.105999,49.214639,38.150502,58.528590,0.000356
+11:53:04 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -50.193104,-74.418394,45.755436,59.104797,74.489328,19.844656
+11:53:07 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.476557,-108.729714,64.091581,49.896891,76.476735,-0.002139
+11:53:07 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.476735,-108.729714,64.091581,49.896891,76.476735,-0.002139
+11:53:07 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -76.476557,-108.729714,64.091581,49.896891,76.476735,-0.002139
+11:53:07 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.476378,-108.729714,64.091581,49.901703,76.476735,-0.002139
+11:53:07 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.476378,-108.729714,64.091581,49.901703,76.476735,-0.002139
+11:53:07 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -76.476378,-108.729714,64.091581,49.901703,76.476735,-0.002139
+11:53:50 [LOG] [ERROR][algs/inc/alarms.h@AlarmSysSetBit()#406] index=0x63,isOn=1
+11:53:58 [LOG] [ERROR][algs/inc/alarms.h@AlarmSysSetBit()#406] index=0x74,isOn=1
+11:53:58 [LOG] [2026-09-27 11:53:51.064] [15] [info] [handleEmergency#184] gPowerDown = true, g_isRobotPowerOn = 0
+11:53:58 [LOG] [2026-09-27 11:53:51.066] [15] [error] [logServoError#540] servo2 error ID update : 33921 -> 0
+11:53:58 [LOG] [ERROR][algs/inc/alarms.h@AlarmSysSetBit()#406] index=0x7e,isOn=1
+11:53:58 [LOG] [2026-09-27 11:53:51.722] [15] [error] [monitorErrorStatus#429] g_isErr:3;g_isWarn:0;g_isCollision:0;g_isSkinCollision:0;
+11:55:49 [LOG] [2026-09-27 11:55:39.769] [15] [error] [monitorErrorStatus#429] g_isErr:1;g_isWarn:0;g_isCollision:0;g_isSkinCollision:0;
+11:55:49 [LOG] [2026-09-27 11:55:39.791] [15] [info] [monitorServoUptime#490] robot disabled,this enable last 1790481339 sec ,all enable at this poweron 1, all 409778
+11:56:01 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.471566,-108.665730,64.127761,49.904911,76.501686,0.013723
+11:56:01 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.471566,-108.665730,64.127761,49.904911,76.501686,0.013723
+11:56:01 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -76.471566,-108.665730,64.127761,49.904911,76.501686,0.013723
+11:56:51 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.471388,-108.665730,64.127761,49.905624,76.501865,0.013723
+11:56:51 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.471388,-108.665730,64.127761,49.905624,76.501865,0.013723
+11:56:51 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -76.471388,-108.665730,64.127761,49.905624,76.501865,0.013723
+11:56:54 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.471566,-108.665730,64.127761,49.905446,76.501865,0.013723
+11:56:54 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.471566,-108.665730,64.127761,49.905446,76.501865,0.013723
+11:56:54 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  8.327466,12.841236,-3.388268,20.977999,16.000840,19.825229
+11:56:54 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.471210,-106.911979,64.175704,49.907228,76.502399,0.012298
+11:56:54 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.471210,-106.911979,64.175704,49.907228,76.502399,0.012298
+11:56:54 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  8.333882,12.848543,-3.381139,20.983524,16.007078,19.817565
+11:56:54 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -75.793592,-105.881472,64.825875,50.591084,77.150966,-0.684569
+11:56:54 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -75.793592,-105.881472,64.825875,50.591084,77.150966,-0.684569
+11:56:54 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  9.053918,13.568579,-2.661103,21.703560,16.727114,19.097529
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -75.654931,-103.604269,64.987348,50.727249,77.283745,-0.821625
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -75.654931,-103.604269,64.987348,50.727249,77.283745,-0.821625
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  9.108812,13.621691,-2.607635,21.760237,16.782364,19.045130
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.386196,-101.181812,64.383338,49.998124,76.556402,-0.096777
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.386196,-101.181812,64.383338,49.998124,76.556402,-0.096777
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  8.388776,12.901655,-3.327671,21.040201,16.062328,19.765166
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -77.109440,-98.622119,63.716592,49.275414,75.840287,0.622724
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -77.109440,-98.622119,63.716592,49.275414,75.840287,0.622724
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  7.668740,12.181619,-4.047707,20.320165,15.342292,20.485202
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -77.372681,-96.144233,63.244647,49.015025,75.579007,0.880084
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -77.372681,-96.144233,63.244647,49.015025,75.579007,0.880084
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  7.478394,11.993055,-4.236628,20.128036,15.151589,20.673053
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.650862,-93.679179,63.958980,49.731140,76.294231,0.162186
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.650862,-93.679179,63.958980,49.731140,76.294231,0.162186
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  8.198430,12.713091,-3.516592,20.848072,15.871625,19.953017
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.484755,-91.265276,64.125444,49.894217,76.462298,-0.001426
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.484755,-91.265276,64.125444,49.894217,76.462298,-0.001426
+11:56:57 [LOG] [2026-09-27 11:56:48.364] [15] [info] [monitorServoUptime#483] robot enabled ,begin to record enable robot time ...
+11:56:57 [LOG] [2026-09-27 11:56:48.450] [15] [error] [monitorErrorStatus#429] g_isErr:1;g_isWarn:0;g_isCollision:0;g_isSkinCollision:0;
+11:56:57 [LOG] [2026-09-27 11:56:48.452] [15] [error] [logServoError#540] servo2 error ID update : 0 -> 33921
+11:56:57 [LOG] [2026-09-27 11:56:48.468] [15] [info] [monitorServoUptime#490] robot disabled,this enable last 0 sec ,all enable at this poweron 1, all 409778
+11:56:57 [LOG] [2026-09-27 11:56:48.514] [15] [error] [logServoError#540] servo2 error ID update : 33921 -> 29056
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  8.319089,-113.975639,-3.264223,20.999030,15.999949,19.825585
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.462120,-113.975639,64.306166,49.931823,76.459803,-0.000178
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  8.319089,-113.975639,-3.264223,20.999030,15.999949,19.825585
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.492419,-113.977065,-3.264223,49.908119,76.459625,0.000891
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.492419,-113.977065,64.249668,49.908297,76.459803,0.000713
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -76.492419,-113.977065,-3.264223,49.908119,76.459625,0.000891
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.308489,-110.304169,64.070372,50.011491,76.461407,0.001426
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.308489,-110.304169,64.070372,50.011669,76.461407,0.001426
+11:56:57 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -76.308489,-110.304169,64.070372,50.011491,76.461407,0.001426
+11:57:03 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.307776,-110.304169,64.070372,50.011134,76.461585,0.001426
+11:57:03 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.307419,-110.304169,64.070372,50.012025,76.461585,0.001426
+11:57:03 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -76.307776,-110.304169,64.070372,50.011134,76.461585,0.001426
+11:57:03 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.308132,-110.304169,64.070372,50.010421,76.461407,0.001426
+11:57:03 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.308132,-110.304169,64.070372,50.010421,76.461407,0.001426
+11:57:03 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -76.308132,-110.304169,64.070372,50.010421,76.461407,0.001426
+11:57:03 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.309023,-110.304169,64.070372,50.010243,76.461407,0.001426
+11:57:03 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.309023,-110.304169,64.070372,50.010243,76.461407,0.001426
+11:57:03 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -76.309023,-110.304169,64.070372,50.010243,76.461407,0.001426
+11:57:06 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.309736,-110.304347,64.070372,50.010065,76.461407,0.001426
+11:57:06 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.309736,-110.304347,64.070372,50.010243,76.461407,0.001426
+11:57:06 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -76.309736,-110.304347,64.070372,50.010065,76.461407,0.001426
+11:57:06 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.310093,-110.304347,64.070372,50.008995,76.461585,0.001426
+11:57:06 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.309380,-110.304347,64.070372,50.006322,76.461585,0.001426
+11:57:06 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -76.310093,-110.304347,64.070372,50.008995,76.461585,0.001426
+11:57:08 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.309023,-110.304347,64.070372,50.007926,76.461407,0.001426
+11:57:08 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.309023,-110.304347,64.070372,50.007926,76.461407,0.001426
+11:57:08 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -76.309023,-110.304347,64.070372,50.007926,76.461407,0.001426
+11:57:08 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1899] PoseTrace: gRobotAxisMove.nextPos:  -76.307598,-110.304347,64.070372,50.009530,76.461407,0.001426
+11:57:08 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1900] PoseTrace: (PDO0x6062)Position demand value:  -76.307598,-110.304347,64.070372,50.009530,76.461407,0.001426
+11:57:08 [LOG] [INFO][algs/src/common/run.cpp@ServoControl()#1901] PoseTrace: gActualPosition:  -76.307598,-110.304347,64.070372,50.009530,76.461407,0.001426
+12:02:41 [MON] 结束

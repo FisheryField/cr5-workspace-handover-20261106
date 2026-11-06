@@ -1,0 +1,141 @@
+=== 控制器二进制里的 API 路由 ===
+--- /dobot/bin/gcontrol
+--- /dobot/bin/lib/libdataSvr.so.1.0.0
+--- /dobot/bin/lib/libdataSvrPlugin.so.1.0.0
+--- /dobot/bin/lib/libprocessPlugin.so.1.0.0
+--- /dobot/bin/logServer
+=== 含 save/store/persist/flash/zero 的路由或关键字 ===
+--- /dobot/bin/gcontrol
+/dobot/userdata/project/process/sixForce/calibProcess.json
+/dobot/userdata/project/process/sixForce/calibProcess.json parse faild!
+/home/ovalgee/Projects/DobotLinux/application/lib_release/arm-linux-gnueabihf-4.7.3/tslib-1.4/lib:/home/ovalgee/Projects/DobotLinux/application/lib_release/qt-4.8.6-linux-arm/lib
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/destdir/i686-pc-linux-gnu/lib/gcc/arm-linux-gnueabihf/4.9.4/include
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/i686-pc-linux-gnu/arm-linux-gnueabihf/eglibc.git~linaro_eglibc-2_19/csu/abi-note.o
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/i686-pc-linux-gnu/arm-linux-gnueabihf/eglibc.git~linaro_eglibc-2_19/csu/start.o
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/csu
+IsRobotCalib
+SixForceHome
+[%s] #%d: calibResult[%d] is not a number !!!
+[PackDualCalibrationResult] : %s
+[ParseDualCalibration] parse error!
+_ZN10PluginBase16alloc_SetHOMECmdEP10tagHOMECmdi
+_ZN10PluginBase19alloc_GetHOMEParamsEv
+_ZN10PluginBase19alloc_SetFCCalibCmdEP9tagFCLoadi
+_ZN10PluginBase19alloc_SetHOMEParamsEP13tagHOMEParamsi
+_ZN10PluginBase24alloc_SetSixForceHomeCmdEi
+_ZN10PluginBase29alloc_GetLRHandCalibrateValueEv
+_ZN10PluginBase29alloc_SetLRHandCalibrateValueEf
+_ZN17JsonProjectReader18st_temp_coord_saveEii
+_ZN3fmt2v86detail6bigint20remove_leading_zerosEv
+_ZN5dobot6common4util8JsonUtil20ParseDualCalibrationEPKcRbP15DualInputParamsS7_P9DualTrans
+_ZN5dobot6common4util8JsonUtil25PackDualCalibrationResultEP16DualOutputParamsS4_
+_ZN5dobot7modules14rpcExecuteApis13rpcExecuteApi12SixForceHomeERKSt6vectorISsSaISsEERSs
+_ZZN17JsonProjectReader18st_temp_coord_saveEiiE12__FUNCTION__
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_14big_decimal_fpEcEET_S5_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESA_E4zero
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_9dragonbox10decimal_fpIdEEcEET_S7_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESC_E4zero
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_9dragonbox10decimal_fpIfEEcEET_S7_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESC_E4zero
+_ZZN5dobot7modules14rpcExecuteApis13rpcExecuteApi12SixForceHomeERKSt6vectorISsSaISsEERSsE12__FUNCTION__
+bzero
+bzero@@GLIBC_2.4
+calib
+calibResult
+calibType
+sixForce home %d
+sixForce home faild setSixForceParams return {}
+sixforcehome
+st_temp_coord_save
+st_temp_coord_save tool = {}. user = {}.
+zero
+--- /dobot/bin/lib/libdataSvr.so.1.0.0
+ get home result  is {},stop pos joint {},{},{},{},{},{},
+.............Start save identify file ..........
+/dobot/userdata/project/process/sixForce/calibProcess.json
+/dobot/userdata/project/process/sixForce/calibProcess.json parse faild!
+/home/ovalgee/Projects/DobotLinux/application/lib_release/arm-linux-gnueabihf-4.7.3/tslib-1.4/lib:/home/ovalgee/Projects/DobotLinux/application/lib_release/qt-4.8.6-linux-arm/lib
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/csu
+@@@ [tool Calibration] orgin[{}] : [{},{},{},{},{},{}]
+Calibrate tool coord result:{}
+Calibrate tool pos1:{}, pos2:{}
+Calibrate user coord result:{}
+Calibrate user pos1:{}, pos2:{}
+IsRobotCalib
+SixForceHome
+Start saveExcitProcess...
+Stop GoHome......:{}
+Successfully restored collision back distance = {}.
+TCPCalibration_Orient
+TCPCalibration_Pos
+TCPOrientCalibration3
+[%s] #%d: calibResult[%d] is not a number !!!
+[%s|%s@%s,%d] One point TCPCalibration_Orient
+[%s|%s@%s,%d] You trying to store null value
+[GetDualRobotCalibrationResult] : %s
+[PackDualCalibrationResult] : %s
+[ParseDualCalibration] parse error!
+[multiCalibration post]: {}
+[multiCalibration] : {}
+[{}] save data {} 
+_GLOBAL__sub_I_dual_calibration.cpp
+_Z12SixForceHomeP6st6DofP8st6ForceRS1_
+_Z18TCPCalibration_PosP6st6DofS0_S0_P7stPointPd
+_Z18TCPCalibration_PosP6st6DofS0_S0_S0_S0_Pd
+_Z20DualRobotCalibration15DualInputParamsS_9DualTransbR16DualOutputParamsS2_
+_Z21TCPCalibration_OrientP6st6DofPd
+_Z21TCPOrientCalibration3P7stPointP6st6DofS2_S2_Pd
+_Z25StartDualRobotCalibration15DualInputParamsS_9DualTransb
+_Z29GetDualRobotCalibrationResultRSs
+_ZL17_calibration_flag
+_ZL26DualRobotCalibrationThread15DualInputParamsS_9DualTransb
+_ZN10PluginBase16alloc_SetHOMECmdEP10tagHOMECmdi
+--- /dobot/bin/lib/libdataSvrPlugin.so.1.0.0
+/dobot/userdata/project/process/sixForce/calibProcess.json
+/dobot/userdata/project/process/sixForce/calibProcess.json parse faild!
+/home/ovalgee/Projects/DobotLinux/application/lib_release/arm-linux-gnueabihf-4.7.3/tslib-1.4/lib:/home/ovalgee/Projects/DobotLinux/application/lib_release/qt-4.8.6-linux-arm/lib
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/csu
+IsRobotCalib
+SixForceHome
+[%s] #%d: calibResult[%d] is not a number !!!
+[PackDualCalibrationResult] : %s
+[ParseDualCalibration] parse error!
+_ZN10PluginBase16alloc_SetHOMECmdEP10tagHOMECmdi
+_ZN10PluginBase19alloc_GetHOMEParamsEv
+_ZN10PluginBase19alloc_SetFCCalibCmdEP9tagFCLoadi
+_ZN10PluginBase19alloc_SetHOMEParamsEP13tagHOMEParamsi
+_ZN10PluginBase24alloc_SetSixForceHomeCmdEi
+_ZN10PluginBase29alloc_GetLRHandCalibrateValueEv
+_ZN10PluginBase29alloc_SetLRHandCalibrateValueEf
+_ZN17JsonProjectReader18st_temp_coord_saveEii
+_ZN3fmt2v816make_format_argsINS0_20basic_format_contextINS0_8appenderEcEEIA17_cffffffffffffffffffEEENS0_16format_arg_storeIT_IDpT0_EEEDpRKS8_
+_ZN3fmt2v816make_format_argsINS0_20basic_format_contextINS0_8appenderEcEEJA17_cffffffffffffffffffEEENS0_16format_arg_storeIT_JDpT0_EEEDpRKS8_
+_ZN3fmt2v86detail6bigint20remove_leading_zerosEv
+_ZN5dobot6common4util8JsonUtil20ParseDualCalibrationEPKcRbP15DualInputParamsS7_P9DualTrans
+_ZN5dobot6common4util8JsonUtil25PackDualCalibrationResultEP16DualOutputParamsS4_
+_ZN9pluginLua19plugin_sixForceHomeEP9lua_State
+_ZN9pluginLua23plugin_sixforce_FCCalibEP9lua_State
+_ZZN17JsonProjectReader18st_temp_coord_saveEiiE12__FUNCTION__
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_14big_decimal_fpEcEET_S5_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESA_E4zero
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_9dragonbox10decimal_fpIdEEcEET_S7_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESC_E4zero
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_9dragonbox10decimal_fpIfEEcEET_S7_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESC_E4zero
+_ZZN9pluginLua19plugin_sixForceHomeEP9lua_StateE12__FUNCTION__
+bzero
+bzero@@GLIBC_2.4
+calib
+calibResult
+calibType
+end alloc_SetSixForceHomeCmd.
+plugin_sixForceHome
+st_temp_coord_save
+st_temp_coord_save tool = {}. user = {}.
+--- /dobot/bin/lib/libprocessPlugin.so.1.0.0
+/home/ovalgee/Projects/DobotLinux/application/lib_release/arm-linux-gnueabihf-4.7.3/tslib-1.4/lib:/home/ovalgee/Projects/DobotLinux/application/lib_release/qt-4.8.6-linux-arm/lib
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/csu
+_ZN10PluginBase16alloc_SetHOMECmdEP10tagHOMECmdi
+_ZN10PluginBase19alloc_GetHOMEParamsEv
+_ZN10PluginBase19alloc_SetFCCalibCmdEP9tagFCLoadi
+_ZN10PluginBase19alloc_SetHOMEParamsEP13tagHOMEParamsi
+_ZN10PluginBase24alloc_SetSixForceHomeCmdEi
+_ZN10PluginBase29alloc_GetLRHandCalibrateValueEv
+_ZN10PluginBase29alloc_SetLRHandCalibrateValueEf
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_14big_decimal_fpEcEET_S5_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESA_E4zero
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_9dragonbox10decimal_fpIdEEcEET_S7_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESC_E4zero
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_9dragonbox10decimal_fpIfEEcEET_S7_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESC_E4zero

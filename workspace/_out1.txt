@@ -1,0 +1,83 @@
+===== IDENTITY =====
+Linux dobot 4.1.15-rt18 #6 SMP PREEMPT RT Wed Jul 13 15:14:50 HKT 2022 armv7l GNU/Linux
+dobot
+===== CPU/MEM =====
+armv7l
+sh: nproc: not found
+model name	: ARMv7 Processor rev 10 (v7l)
+             total       used       free     shared    buffers     cached
+Mem:           942        270        671         12          0         37
+-/+ buffers/cache:        232        709
+Swap:            0          0          0
+===== STORAGE =====
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root               968.3M    489.8M    428.4M  53% /
+devtmpfs                470.8M         0    470.8M   0% /dev
+/dev/mmcblk3p3          476.2M     62.3M    388.9M  14% /dobot
+/dev/mmcblk3p6          435.3M     21.7M    390.8M   5% /dobot/userdata
+tmpfs                   471.0M     36.0K    471.0M   0% /tmp
+/dev/mmcblk3p5            4.7G    381.5M      4.1G   8% /dobot/userdata/CR5_sys_files/project/logs
+/dev/ram13               62.0M      8.1M     50.6M  14% /udisk
+===== / =====
+total 82
+drwxr-xr-x   22 root     root          4096 Sep 18 14:12 .
+drwxr-xr-x   22 root     root          4096 Sep 18 14:12 ..
+drwxr-xr-x    2 1025     1025          4096 Jan  1  1970 bin
+drwxr-xr-x    7 root     root          3020 Jan  1  1970 dev
+drwxr-xr-x    6 root     root          1024 Feb 19  1976 dobot
+drwxrwxr-x   10 1025     1025          4096 Sep 18 09:28 etc
+drwxrwxr-x    5 1025     1025          4096 Jan  1  1970 home
+lrwxrwxrwx    1 root     root            11 Jan  1  1970 init -> bin/busybox
+drwxrwxr-x    7 1025     1025          4096 Jan  1  1970 lib
+lrwxrwxrwx    1 root     root            11 Jan  1  1970 linuxrc -> bin/busybox
+-rw-r--r--    1 root     root           507 Sep 17 09:47 log
+drwx------    2 root     root         16384 Jan  1  1970 lost+found
+drwxr-xr-x    4 root     root          4096 Feb 19  1976 mToolServer
+drwxrwxr-x    5 1025     1025          4096 Jan  1  1970 mnt
+drwxrwxr-x    3 1025     1025          4096 Jan  1  1970 opt
+dr-xr-xr-x  140 root     root             0 Jan  1  1970 proc
+lrwxrwxrwx    1 root     root            18 Sep 18 14:12 project -> /dobot/bin/project
+drwxrwxr-x    6 1025     1025          4096 Aug 29  1975 root
+drwxr-xr-x    2 1025     1025          4096 Jan  1  1970 sbin
+drwxrwxr-x    2 1025     1025          4096 Mar 20  2017 sddisk
+dr-xr-xr-x   13 root     root             0 Jan  1  1970 sys
+drwxrwxrwt    2 root     root           120 Sep 18 14:12 tmp
+drwxr-xr-x    3 root     root          1024 Sep 18 14:12 udisk
+drwxr-xr-x    7 1025     1025          4096 Jan  1  1970 usr
+drwxrwxr-x    6 1025     1025          4096 Jan  1  1970 var
+drwxrwxr-x    3 1025     1025          4096 Jan  1  1970 web
+===== /home =====
+total 284
+drwxrwxr-x    5 1025     1025          4096 Jan  1  1970 .
+drwxr-xr-x   22 root     root          4096 Sep 18 14:12 ..
+drwxrwxr-x    2 1025     1025          4096 Mar 20  2017 E9
+drwxrwxr-x    6 1025     1025          4096 Jan  1  1970 ftp
+-rwxrwxr-x    1 1025     1025        262860 Apr  9  2020 ip
+drwxrwxr-x    2 1025     1025          4096 Mar 20  2017 sky
+===== /root =====
+total 28
+drwxrwxr-x    6 1025     1025          4096 Aug 29  1975 .
+drwxr-xr-x   22 root     root          4096 Sep 18 14:12 ..
+-rw-------    1 root     root          2925 Sep 17 09:44 .ash_history
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .mplayer
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 Documents
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 Settings
+drwxrwxr-x    2 1025     1025          4096 Mar 20  2017 download
+===== /opt =====
+total 20
+drwxrwxr-x    3 1025     1025          4096 Jan  1  1970 .
+drwxr-xr-x   22 root     root          4096 Sep 18 14:12 ..
+-rwxrwxr-x    1 1025     1025            18 Jan 15  2018 .zero
+drwxrwxr-x    3 1025     1025          4096 Jan  1  1970 codesys
+-rwxrwxr-x    1 1025     1025            91 Jan 15  2018 save.sh
+===== /usr/local =====
+total 36
+drwxrwxr-x    9 1025     1025          4096 Sep 18 14:12 .
+drwxr-xr-x    7 1025     1025          4096 Jan  1  1970 ..
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 bin
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 etc
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 libexec
+drwxrwxr-x    4 1025     1025          4096 Jan  1  1970 qt-4.8.6
+drwxr-xr-x    5 root     root          4096 Sep 18 14:12 samba
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 sbin
+drwxrwxr-x    5 1025     1025          4096 Jan  1  1970 share

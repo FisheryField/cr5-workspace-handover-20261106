@@ -1,0 +1,8 @@
+PySide2 and/or tkinter is not present on the system. Please install PySide2: "python -m pip install PySide2" or "python -m pip install robodk[apps]"
+当前关节: ['0.000', '0.000', '0.000', '0.000', '0.000', '0.000']
+!! 上次被杀的矩阵脚本把关节留在半路，先还原停放位
+Traceback (most recent call last):
+  File "D:\mydata\glm-workplace\tools\run_traj8_from_origin.py", line 53, in <module>
+    tcp0 = invH(robot.PoseFrame()) * robot.SolveFK(ORIGIN) * robot.PoseTool()
+           ^^^^
+NameError: name 'invH' is not defined

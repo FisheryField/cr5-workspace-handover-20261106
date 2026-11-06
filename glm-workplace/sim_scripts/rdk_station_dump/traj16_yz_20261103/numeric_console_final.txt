@@ -1,0 +1,50 @@
+CONDITIONS {"file": "D:\\mydata\\working things\\dobot_arm\\RoboDK files 2\\连续轨迹16_YZ微调_本体130_候选.json", "trajectory_sha256": "660b303af02f6a207fcb30a59401eabcc9eab594d95c738e5cc6ea1b9a84c01a", "source_sha256": "638e6e3c2b9b806cc6a1bdac2f5a22439b6376f37a3de9ac951a532fa1ff8042", "disk_source_matches": true, "station": "轨迹16_控制器本体130验证", "robot": "Dobot CR5_本体与碰撞对齐130", "accuracy_flag": false, "body_fk_receipt": "body_alignment_20261103/aligned_fk_validation.json", "version": "v15.16-20261103", "start_joints": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "tool": [0.0, 0.0, 130.0, 0.0, -0.0, 0.0], "frame": [0.0, 0.0, 0.0, 0.0, -0.0, 0.0], "deviation_mm": 500.0, "auxiliary_numeric_branches": true, "objects": [{"name": "门把手_bs1", "pose": [0.0, 0.0, 0.0, 0.0, -0.0, 0.0], "visible": 1}, {"name": "安装台_650x650x80mm", "pose": [346.03350830078125, 1005.013427734375, 515.5225830078125, 53.4316157742267, -75.75992194221007, -161.4634965864402], "visible": 1}, {"name": "地面_禁止穿越", "pose": [346.03350830078125, 1005.013427734375, 515.5225830078125, 53.43161779044521, -75.75993060203906, -161.46349531554048], "visible": 1}, {"name": "磨砂圆柱_R150_H50", "pose": [-299.4995991685091, 1704.6951443621222, 428.4783784934693, 9.943016717327147, -11.349894712569611, -18.884157884330804], "visible": 1}, {"name": "挡板_半封闭3面", "pose": [464.25467205579304, 1131.1357840954738, 557.9596849669601, 49.29714028269232, -74.9539082223437, -157.19079776020862], "visible": 1}]}
+POINTS 23 -> 23
+—— 尝试首点分支种子 1/6：[16.6, -3.7, -66.3, -20.1, 89.7, -73.6]
+P2：最近解与直线均碰，切换IK分支救援成功。
+种子 1/6 在此构型失败（P2：全部无碰分支均落入实机自干涉组合区（|J4|>100 且 |J5|>165，-40006 实录区），本构型判死。），换下一构型整段重试…
+—— 尝试首点分支种子 2/6：[16.6, -3.7, -66.3, -20.1, 89.7, 286.4]
+P2：最近解与直线均碰，切换IK分支救援成功。
+种子 2/6 在此构型失败（P2：全部无碰分支均落入实机自干涉组合区（|J4|>100 且 |J5|>165，-40006 实录区），本构型判死。），换下一构型整段重试…
+—— 尝试首点分支种子 3/6：[163.3, 63.3, -66.2, 93.1, -89.6, -106.7]
+P2：最近解与直线均碰，切换IK分支救援成功。
+P3：前视模式（P4为±180换向，选解需兼顾换向可行性）。
+P3：短直线段（120.0mm/姿态恒定）按工艺直走 MoveL（不尝试 MoveJ 弧）。
+P5：短直线段（240.0mm/姿态恒定）按工艺直走 MoveL（不尝试 MoveJ 弧）。
+P6：回撤段且下一点为同位姿换姿——短直线让位 MoveJ 分支前视（v14w33c）。
+P8：短直线段（121.5mm/姿态恒定）按工艺直走 MoveL（不尝试 MoveJ 弧）。
+P9：前视模式（P10为±180换向，选解需兼顾换向可行性）。
+P9：短直线段 MoveL 不可通行（MoveL原生路径检查未通过（-2）：路径碰撞或关节不可行），回落 MoveJ 尝试。
+P10：J6 +180°超限，改用反方向 -180°（终点位姿不变）。
+P11：短直线段（240.0mm/姿态恒定）按工艺直走 MoveL（不尝试 MoveJ 弧）。
+P13：短直线段（31.6mm/姿态恒定）按工艺直走 MoveL（不尝试 MoveJ 弧）。
+P15：短直线段（31.6mm/姿态恒定）按工艺直走 MoveL（不尝试 MoveJ 弧）。
+P17：短直线段（31.6mm/姿态恒定）按工艺直走 MoveL（不尝试 MoveJ 弧）。
+P19：短直线段（31.6mm/姿态恒定）按工艺直走 MoveL（不尝试 MoveJ 弧）。
+P22：短直线段（125.3mm/姿态恒定）按工艺直走 MoveL（不尝试 MoveJ 弧）。
+逐段规划完成，开始整段碰撞复核（1mm/1°采样，请稍候）…
+P2P+奇异点整段路径预检通过：23点。
+P1 MoveJ waypoints=0 TCP最近解直达
+P2 MoveJ waypoints=0 IK分支救援直达
+P3 MoveL waypoints=6 短直线强制MoveL
+P4 MoveJ waypoints=0 J6换向+180°
+P5 MoveL waypoints=14 短直线强制MoveL
+P6 MoveJ waypoints=0 TCP最近解直达
+P7 MoveJ waypoints=0 TCP最近解直达
+P8 MoveL waypoints=8 短直线强制MoveL
+P9 MoveJ waypoints=0 TCP最近解直达
+P10 MoveJ waypoints=0 J6换向-180°
+P11 MoveL waypoints=9 短直线强制MoveL
+P12 MoveJ waypoints=0 TCP最近解直达
+P13 MoveL waypoints=3 短直线强制MoveL
+P14 MoveJ waypoints=0 TCP最近解直达
+P15 MoveL waypoints=3 短直线强制MoveL
+P16 MoveJ waypoints=0 TCP最近解直达
+P17 MoveL waypoints=3 短直线强制MoveL
+P18 MoveJ waypoints=0 TCP最近解直达
+P19 MoveL waypoints=3 短直线强制MoveL
+P20 MoveJ waypoints=0 TCP最近解直达
+P21 MoveJ waypoints=0 TCP最近解直达
+P22 MoveL waypoints=4 短直线强制MoveL
+P23 MoveJ waypoints=0 TCP最近解直达
+RESULT PASS REPORT D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_yz_numeric_20261103_165218\result.json

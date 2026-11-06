@@ -1,0 +1,22 @@
+=== uploaded file ===
+total 324
+drwxr-xr-x    2 root     root            60 Sep 24 14:55 .
+drwxr-xr-x    5 root     root           100 Sep 24 14:55 ..
+-rw-r--r--    1 root     root        328892 Sep 24 14:55 CR5_Servo_ST_FOE_V3.1.5.0_PATCHED_no_correction.bin
+
+=== size + md5 + sha256 ===
+328892
+42bd7a9f6b8166154eac379c47780d5d  /tmp/tUpdate/slave/CR5_Servo_ST_FOE_V3.1.5.0_PATCHED_no_correction.bin
+096803ab92b795cec242e8aa5a76ed4df12bcd360e79ec9d77b46d65b6c33897  /tmp/tUpdate/slave/CR5_Servo_ST_FOE_V3.1.5.0_PATCHED_no_correction.bin
+
+=== first 32 bytes (package header) ===
+000000 d4 c3 b2 a1 1b aa 48 0f f2 35 2c 06 e5 70 09 cc
+000010 db 05 58 e7 9c 04 05 00 00 00 00 08 ff ff ff ff
+000020
+
+=== the 6 patched bytes at payload offset 0x14AFE (= file offset 0x14B1E) ===
+expect: 01 46 00 bf 00 bf
+000000 01 46 00 bf 00 bf
+000006
+
+=== DONE ===

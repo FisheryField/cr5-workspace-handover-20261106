@@ -1,0 +1,112 @@
+# v15.18: only this exact trajectory gets calibrated-model branch recovery
+# and freshly certified single-MovL strokes. Other records keep legacy policy.
+TRAJ16_PROFILE_SHA256 = '__PROFILE_SHA__'
+TRAJ16_IK_SEEDS = __IK_SEEDS__
+_traj16_profile_active = False
+
+
+def _traj16_records_match(records):
+    import hashlib
+    canonical = [dict(type=r['type'], values=[0.0 if abs(float(v)) < 1e-12 else float(v)
+                 for v in r['values']], singular=bool(r.get('singular', False)),
+                 spin360=bool(r.get('spin360', False)), j6_delta=int(r.get('j6_delta', 0)))
+                 for r in records]
+    return hashlib.sha256(json.dumps(canonical, sort_keys=True,
+        separators=(',', ':')).encode('utf-8')).hexdigest() == TRAJ16_PROFILE_SHA256
+
+
+def _controller_body_matches():
+    expected = Fanuc_2_Pose([1.119989104069524, -245.1846134160959,
+        1047.9330384567963, -89.7671431696512, -0.00006721956284782927,
+        179.8638590144166])
+    err = invH(expected) * robot.SolveFK([0.0] * 6)
+    return norm(err.Pos()) < .001 and pose_angle(err) < math.radians(.001)
+
+
+def _profile_ik_all(flange):
+    native = robot.SolveIK_All(flange)
+    if not _traj16_profile_active:
+        return native
+    key = ('profile_ik', _cache_key_pose(flange))
+    if key in _plan_cache:
+        return _plan_cache[key]
+    raw = [list(q[:6]) for q in native]
+    for seed in TRAJ16_IK_SEEDS:
+        q = robot.SolveIK(flange, seed).list()
+        if len(q) >= 6:
+            raw.append(q[:6])
+    valid = []
+    for q in raw:
+        if len(q) != 6:
+            continue
+        q = [(float(v) + 180.0) % 360.0 - 180.0 for v in q]
+        err = invH(flange) * robot.SolveFK(q)
+        if norm(err.Pos()) > .001 or pose_angle(err) > math.radians(.001):
+            continue
+        if not any(max(abs(x-y) for x, y in zip(q, old)) < .001 for old in valid):
+            valid.append(q)
+    result = Mat(valid).tr() if valid else Mat(6, 0)
+    _plan_cache[key] = result
+    return result
+
+
+def _direct_step_allowed(number, step):
+    return number not in MOVL_DIRECT_BLOCK_POINTS or bool(step.get('direct_movl_certified'))
+
+
+def _certify_traj16_direct(plan, log):
+    if not _traj16_profile_active:
+        return
+    if RDK.RunMode() != RUNMODE_SIMULATE or not _controller_body_matches():
+        raise RuntimeError('本体或模式与轨迹16单条MovL验证条件不一致。')
+    pose, link, frame, saved = robot.PoseTool(), robot.getLink(ITEM_TYPE_TOOL), robot.PoseFrame(), robot.Joints().list()[:6]
+    lower, upper, _ = robot.JointLimits()
+    try:
+        for number in (9, 11):
+            step = plan[number-1]
+            if step['method'] != 'MoveL' or not step.get('waypoints'):
+                raise ValueError(f'P{number}未形成连续直线，禁止以MoveJ代替本次工艺段。')
+            start = plan[number-2]['joints']
+            send_q, note = _movl_digit_safe_joints(step['joints'])
+            if send_q is None:
+                raise ValueError(f'P{number}发送位姿净化失败。')
+            target = invH(frame) * robot.SolveFK(send_q)
+            robot.setPoseTool(eye(4))
+            robot.setJoints(start)
+            if robot.MoveL_Test(start, target, minstep_mm=.5) != 0:
+                raise ValueError(f'P{number}净化后的法兰直线碰撞或不可达。')
+            program = RDK.AddProgram('_轨迹16_单条MovL复核', robot)
+            try:
+                program.setVisible(False)
+                program.setPoseTool(eye(4))
+                program.setPoseFrame(frame)
+                program.MoveJ(start)
+                program.MoveL(send_q)
+                robot.setJoints(start)
+                message, matrix, status = program.InstructionListJoints(
+                    mm_step=.5, deg_step=.2, collision_check=COLLISION_ON)
+                samples = matrix.tr().rows
+                if status < 0 or 'collision' in message.lower() or not samples:
+                    raise ValueError(f'P{number}法兰整段复核失败：{message}')
+                for row in samples:
+                    q = row[:6]
+                    if (int(row[6]) != 0 or not _real_limit_ok(q, lower.list(), upper.list())
+                            or _real_interfere_combo(q)):
+                        raise ValueError(f'P{number}法兰路径存在错误、限位或自干涉。')
+                if max(abs(a-b) for a, b in zip(samples[-1][:6], send_q)) > .05:
+                    raise ValueError(f'P{number}法兰直线落点分支与认证关节不一致。')
+                err = invH(robot.SolveFK(send_q)) * robot.SolveFK(samples[-1][:6])
+                if norm(err.Pos()) > .01 or pose_angle(err) > math.radians(.01):
+                    raise ValueError(f'P{number}法兰路径终点不匹配。')
+                step['direct_movl_certified'] = True
+                step['direct_send_joints'] = list(send_q)
+                step['direct_certificate'] = dict(profile=TRAJ16_PROFILE_SHA256,
+                    samples=len(samples), flange_target=Pose_2_Fanuc(target), digit_note=note)
+                log(f'P{number}：单条法兰MovL复核通过（0.5mm采样、碰撞/实机限位/落点分支）；本次免除细分。')
+            finally:
+                program.Delete()
+                _restore_tool(pose, link)
+    finally:
+        _restore_tool(pose, link)
+        robot.setPoseFrame(frame)
+        robot.setJoints(saved)

@@ -1,0 +1,136 @@
+lrwxrwxrwx    1 root     root            19 Sep 18 19:20 /dobot/bin/lib/libdataSvr.so -> libdataSvr.so.1.0.0
+lrwxrwxrwx    1 root     root            19 Sep 18 19:20 /dobot/bin/lib/libdataSvr.so.1 -> libdataSvr.so.1.0.0
+lrwxrwxrwx    1 root     root            19 Sep 18 19:20 /dobot/bin/lib/libdataSvr.so.1.0 -> libdataSvr.so.1.0.0
+-rwxrwxrwx    1 1026     1028       3458103 Jul 18  2023 /dobot/bin/lib/libdataSvr.so.1.0.0
+=== offsets of key strings in libdataSvr ===
+homeEncoder      
+jointHomeState   
+innerEncoder     
+outEncoder       
+encoder          
+=== strings near homeEncoder ===
+grep: invalid option -- 'b'
+BusyBox v1.25.1 (2020-04-10 09:28:16 CST) multi-call binary.
+
+Usage: grep [-HhnlLoqvsriwFE] [-m N] [-A/B/C N] PATTERN/-e PATTERN.../-f FILE [FILE]...
+
+Search for PATTERN in FILEs (or stdin)
+
+	-H	Add 'filename:' prefix
+	-h	Do not add 'filename:' prefix
+	-n	Add 'line_no:' prefix
+	-l	Show only names of files that match
+	-L	Show only names of files that don't match
+	-c	Show only count of matching lines
+	-o	Show only the matching part of line
+	-q	Quiet. Return 0 if PATTERN is found, 1 otherwise
+	-v	Select non-matching lines
+	-s	Suppress open and read errors
+	-r	Recurse
+	-i	Ignore case
+	-w	Match whole words only
+	-x	Match whole lines only
+	-F	PATTERN is a literal (not regexp)
+	-E	PATTERN is an extended regexp
+	-m N	Match up to N times per file
+	-A N	Print N lines of trailing context
+	-B N	Print N lines of leading context
+	-C N	Same as '-A N -B N'
+	-e PTRN	Pattern to match
+	-f FILE	Read pattern from file
+=== 两个 homeEncoder.json 对比 ===
+total 56
+drwxr-xr-x    2 1026     1028          1024 Sep 18 19:27 .
+drwxr-xr-x    9 1026     1028          1024 Sep 18 19:20 ..
+-rwxr-xr-x    1 root     root            90 Sep 18 10:33 CustomPoint.json
+-rwxr-xr-x    1 root     root            23 Feb 19  1976 DHGripperEnable.json
+-rwxr-xr-x    1 1026     1028            38 Jul 18  2023 PackPoint.json
+-rwxr-xr-x    1 1026     1028          5442 Jul 18  2023 accFactor.json
+-rwxr-xr-x    1 1026     1028           600 Jul 18  2023 collisionDect.json
+-rwxr-xr-x    1 root     root            87 Feb 19  1976 dragSensivity.json
+-rwxr-xr-x    1 root     root          1628 Feb 19  1976 dynamicsParams.json
+-rwxr-xr-x    1 root     root            15 Feb 19  1976 elecSkin.json
+-rwxr-xr-x    1 root     root           425 Feb 19  1976 elecSkinDefault.json
+-rwxr-xr-x    1 root     root           109 Feb 19  1976 elecSkinParams.json
+-rwxr-xr-x    1 root     root            43 Feb 19  1976 endAI.json
+-rwxr-xr-x    1 root     root          1277 Feb 19  1976 functionApi.json
+-rwxr-xr-x    1 root     root           789 Feb 19  1976 functionSystem.json
+-rwxr-xr-x    1 root     root           107 Feb 19  1976 generalSafeSetting.json
+-rwxr-xr-x    1 root     root            21 Feb 19  1976 gpioAI.json
+-rwxr-xr-x    1 root     root            43 Feb 19  1976 gpioAO.json
+-rwxr-xr-x    1 root     root            16 Feb 19  1976 hitbotGripperEnable.json
+-rwxr-xr-x    1 root     root           627 Sep 18 19:27 homeEncoder.json
+-rwxr-xr-x    1 root     root            47 Feb 19  1976 install.json
+-rwxr-xr-x    1 root     root           335 Feb 19  1976 ioctrl.json
+-rwxr-xr-x    1 root     root           211 Feb 19  1976 jointMaxParas.json
+-rwxr-xr-x    1 root     root            78 Sep 18 19:30 loadParams.json
+-rwxr-xr-x    1 1026     1028          6865 Jul 18  2023 logServerConfig.json
+-rwxr-xr-x    1 root     root           327 Feb 19  1976 minicab_ioctrl.json
+-rwxr-xr-x    1 root     root            35 Feb 19  1976 modbusConf.json
+-rwxr-xr-x    1 1022     1024           356 Mar  3  2023 modbusctrl.json
+-rwxr-xr-x    1 root     root            50 Feb 19  1976 reTraceParams.json
+-rwxr-xr-x    1 root     root            36 Sep 18 18:00 remoteControl.json
+-rwxr-xr-x    1 root     root            16 Feb 19  1976 robotiqGripperEnable.json
+-rwxr-xr-x    1 root     root            24 Feb 19  1976 robotiqSixForce.json
+-rwxr-xr-x    1 root     root           430 Feb 19  1976 safeSignal.json
+-rwxr-xr-x    1 root     root           284 Feb 19  1976 sixForceParams.json
+-rwxr-xr-x    1 1026     1028            20 Jul 18  2023 tcp30005Feedback.json
+-rwxr-xr-x    1 1026     1028          2804 Jul 18  2023 tcp30006Feedback.json
+-rwxr-xr-x    1 1026     1028           806 Jul 18  2023 tcpipSecurity.json
+-rwxr-xr-x    1 1026     1028          4061 Jul 18  2023 torquelimit.json
+--- CR5_sys_files ---
+total 56
+drwxr-xr-x    2 1026     1028          1024 Sep 18 19:27 .
+drwxr-xr-x    9 1026     1028          1024 Sep 18 19:20 ..
+-rwxr-xr-x    1 root     root            90 Sep 18 10:33 CustomPoint.json
+-rwxr-xr-x    1 root     root            23 Feb 19  1976 DHGripperEnable.json
+-rwxr-xr-x    1 1026     1028            38 Jul 18  2023 PackPoint.json
+-rwxr-xr-x    1 1026     1028          5442 Jul 18  2023 accFactor.json
+-rwxr-xr-x    1 1026     1028           600 Jul 18  2023 collisionDect.json
+-rwxr-xr-x    1 root     root            87 Feb 19  1976 dragSensivity.json
+-rwxr-xr-x    1 root     root          1628 Feb 19  1976 dynamicsParams.json
+-rwxr-xr-x    1 root     root            15 Feb 19  1976 elecSkin.json
+-rwxr-xr-x    1 root     root           425 Feb 19  1976 elecSkinDefault.json
+-rwxr-xr-x    1 root     root           109 Feb 19  1976 elecSkinParams.json
+-rwxr-xr-x    1 root     root            43 Feb 19  1976 endAI.json
+-rwxr-xr-x    1 root     root          1277 Feb 19  1976 functionApi.json
+-rwxr-xr-x    1 root     root           789 Feb 19  1976 functionSystem.json
+-rwxr-xr-x    1 root     root           107 Feb 19  1976 generalSafeSetting.json
+-rwxr-xr-x    1 root     root            21 Feb 19  1976 gpioAI.json
+-rwxr-xr-x    1 root     root            43 Feb 19  1976 gpioAO.json
+-rwxr-xr-x    1 root     root            16 Feb 19  1976 hitbotGripperEnable.json
+-rwxr-xr-x    1 root     root           627 Sep 18 19:27 homeEncoder.json
+-rwxr-xr-x    1 root     root            47 Feb 19  1976 install.json
+-rwxr-xr-x    1 root     root           335 Feb 19  1976 ioctrl.json
+-rwxr-xr-x    1 root     root           211 Feb 19  1976 jointMaxParas.json
+-rwxr-xr-x    1 root     root            78 Sep 18 19:30 loadParams.json
+-rwxr-xr-x    1 1026     1028          6865 Jul 18  2023 logServerConfig.json
+-rwxr-xr-x    1 root     root           327 Feb 19  1976 minicab_ioctrl.json
+-rwxr-xr-x    1 root     root            35 Feb 19  1976 modbusConf.json
+-rwxr-xr-x    1 1022     1024           356 Mar  3  2023 modbusctrl.json
+-rwxr-xr-x    1 root     root            50 Feb 19  1976 reTraceParams.json
+-rwxr-xr-x    1 root     root            36 Sep 18 18:00 remoteControl.json
+-rwxr-xr-x    1 root     root            16 Feb 19  1976 robotiqGripperEnable.json
+-rwxr-xr-x    1 root     root            24 Feb 19  1976 robotiqSixForce.json
+-rwxr-xr-x    1 root     root           430 Feb 19  1976 safeSignal.json
+-rwxr-xr-x    1 root     root           284 Feb 19  1976 sixForceParams.json
+-rwxr-xr-x    1 1026     1028            20 Jul 18  2023 tcp30005Feedback.json
+-rwxr-xr-x    1 1026     1028          2804 Jul 18  2023 tcp30006Feedback.json
+-rwxr-xr-x    1 1026     1028           806 Jul 18  2023 tcpipSecurity.json
+-rwxr-xr-x    1 1026     1028          4061 Jul 18  2023 torquelimit.json
+=== 是否同一文件(inode) ===
+  83256 /dobot/userdata/CR5_sys_files/project/settings/function/homeEncoder.json
+  83256 /dobot/userdata/project/settings/function/homeEncoder.json
+lrwxrwxrwx    1 root     root            37 Feb 19  1976 /dobot/userdata/project -> /dobot/userdata/CR5_sys_files/project
+=== logs/all/log 里的 homeEncoder ===
+3114] enter this function, write file:/dobot/userdata/project/settings/function/homeEncoder.json.
+total 1053264
+drwxr-xr-x    2 root     root          4096 Sep 18 17:28 .
+drwxr-xr-x   13 root     root          4096 Sep 18 19:21 ..
+-rw-r--r--    1 root     root      28778374 Sep 18 19:33 log
+-rw-r--r--    1 root     root      52428779 Sep 18 17:28 log.1
+-rw-r--r--    1 root     root      52428697 Sep 18 16:35 log.10
+-rw-r--r--    1 root     root      52428702 Sep 18 16:33 log.11
+-rw-r--r--    1 root     root      52428764 Sep 18 16:31 log.12
+-rw-r--r--    1 root     root      52428657 Sep 18 16:29 log.13
+-rw-r--r--    1 root     root      52428672 Sep 18 16:27 log.14

@@ -1,0 +1,37 @@
+=== smbd version ===
+/dobot/bin/bin/smbd: error while loading shared libraries: libtalloc.so.2: cannot open shared object file: No such file or directory
+/dobot/bin/bin/smbd: error while loading shared libraries: libtalloc.so.2: cannot open shared object file: No such file or directory
+=== nmbd version ===
+/dobot/bin/bin/nmbd: error while loading shared libraries: libwbclient.so.0: cannot open shared object file: No such file or directory
+=== which libtalloc ===
+libtalloc.so
+libtalloc.so.2
+libtalloc.so.2.0.5
+=== smb.conf full ===
+[global]
+        workgroup = root
+        security = user
+        client lanman auth = yes
+        lanman auth = yes
+        map to guest = bad user
+        guest account = root
+        protocol = SMB2
+
+[project]
+        comment = project
+        path = /dobot/userdata/project
+        available = yes
+        browseable = yes
+        public = yes
+        guest ok = yes
+        writable = yes
+
+=== samba var dir ===
+total 28
+drwxr-xr-x    5 root     root          4096 Sep 18 15:27 .
+drwxr-xr-x    5 root     root          4096 Sep 18 15:27 ..
+drwx------    4 root     root          4096 Sep 18 15:27 cores
+drwxr-xr-x    3 root     root          4096 Sep 18 15:28 locks
+-rw-r--r--    1 root     root           738 Sep 18 15:28 log.nmbd
+-rw-r--r--    1 root     root           549 Sep 18 15:35 log.smbd
+drwxr-xr-x    2 root     root          4096 Sep 18 15:27 nmbd

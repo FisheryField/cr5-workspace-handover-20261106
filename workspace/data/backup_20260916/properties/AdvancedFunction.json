@@ -1,0 +1,62 @@
+{
+	"UsingTrueMotion": false,
+	"NormalAccLimit": 10000.0,
+	"DynamicOptimal": false,
+	"UsingAccType": 1,
+	"TorqueFeedforward": false,
+	"InputECP": false,
+	"UsingCompensation": true,
+	"InputShaping": false,
+	"InputShapingFreq": 12.9870,
+	"InputShapingDamp": 0.0490,
+	"BackDistance":20,
+    "FollowError": [
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05
+    ],
+    "VeloThreshold": [
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+    ],
+    "MoveFollowError": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+    ],
+    "SteadyErrorThreshold": [
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05
+    ],
+    "CollisionPosErrorThreshold": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+    ],
+    "CollisionVelErrorThreshold": [
+        30,
+        30,
+        30,
+        30,
+        30,
+        30
+    ],
+    "AfterColliisonTorqueLimitSwitch": true
+}

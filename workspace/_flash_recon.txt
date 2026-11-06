@@ -1,0 +1,62 @@
+=== A. full settVersion block ===
+621821:[2026-09-23 18:48:59.262] [15] [info] [settVersion#5130] feedback:2.3.3.0
+621823:[2026-09-23 18:48:59.262] [15] [info] [settVersion#5131] safeio  :2.4.0.0
+621828:[2026-09-23 18:48:59.263] [15] [info] [settVersion#5132] servo1  :3.2.d.8
+621830:[2026-09-23 18:48:59.263] [15] [info] [settVersion#5133] servo2  :3.2.d.8
+621832:[2026-09-23 18:48:59.263] [15] [info] [settVersion#5134] servo3  :3.2.d.8
+621834:[2026-09-23 18:48:59.263] [15] [info] [settVersion#5135] servo4  :3.2.d.8
+621836:[2026-09-23 18:48:59.263] [15] [info] [settVersion#5136] servo5  :3.2.d.8
+621838:[2026-09-23 18:48:59.263] [15] [info] [settVersion#5137] servo6  :3.1.5.0
+621840:[2026-09-23 18:48:59.263] [15] [info] [settVersion#5138] system  :2.1.0
+621842:[2026-09-23 18:48:59.263] [15] [info] [settVersion#5139] terminal:3.3.2.0
+621844:[2026-09-23 18:48:59.263] [15] [info] [settVersion#5140] unio    :2.3.2.0
+627230:[2026-09-23 18:54:40.408] [15] [info] [settVersion#5127] algs    :1.5.19
+627232:[2026-09-23 18:54:40.408] [15] [info] [settVersion#5128] codesys :3.5.4
+627234:[2026-09-23 18:54:40.408] [15] [info] [settVersion#5129] control :3.5.6.1-stable-c3db2f8d3-202307181618
+627236:[2026-09-23 18:54:40.408] [15] [info] [settVersion#5130] feedback:2.3.3.0
+627238:[2026-09-23 18:54:40.408] [15] [info] [settVersion#5131] safeio  :2.4.0.0
+627240:[2026-09-23 18:54:40.408] [15] [info] [settVersion#5132] servo1  :3.2.d.8
+627242:[2026-09-23 18:54:40.409] [15] [info] [settVersion#5133] servo2  :3.2.d.8
+627244:[2026-09-23 18:54:40.409] [15] [info] [settVersion#5134] servo3  :3.2.d.8
+627246:[2026-09-23 18:54:40.409] [15] [info] [settVersion#5135] servo4  :3.2.d.8
+627248:[2026-09-23 18:54:40.409] [15] [info] [settVersion#5136] servo5  :3.2.d.8
+627250:[2026-09-23 18:54:40.409] [15] [info] [settVersion#5137] servo6  :3.1.5.0
+627252:[2026-09-23 18:54:40.409] [15] [info] [settVersion#5138] system  :2.1.0
+627254:[2026-09-23 18:54:40.409] [15] [info] [settVersion#5139] terminal:3.3.2.0
+627256:[2026-09-23 18:54:40.409] [15] [info] [settVersion#5140] unio    :2.3.2.0
+
+=== B. historic FoE write lines ===
+
+=== C. upgrade endpoint mentions in log ===
+
+=== D. /dobot/bin listing ===
+total 2548
+drwxrwxrwx    8 1026     1028          1024 Sep 24 14:23 .
+drwxr-xr-x    6 root     root          1024 Feb 19  1976 ..
+-rwxrwxrwx    1 1026     1028           165 Jul 18  2023 autoCacheFree.sh
+-rwxrwxrwx    1 1026     1028            51 Jul 18  2023 autoSync.sh
+drwxrwxrwx    2 1026     1028          1024 Sep 22 10:53 bin
+-rwxrwxrwx    1 1026     1028          4096 Jul 18  2023 dobot.db
+-rwxrwxrwx    1 1026     1028         12605 Jul 18  2023 dobot.sh
+-rwxrwxrwx    1 root     root             0 Aug 21  1975 dobotM1Semphore
+drwxrwxrwx    2 1026     1028          1024 Sep 22 10:53 etc
+prwxrwxrwx    1 root     root             0 Sep 24 14:24 fifoCodesys
+prwxrwxrwx    1 root     root             0 Sep 24 14:24 fifoGcontrol
+-rwxrwxrwx    1 1026     1028       2007768 Jul 18  2023 gcontrol
+-rwxrwxrwx    1 1026     1028        157945 Jul 18  2023 getVersion
+drwxrwxrwx    4 1026     1028          3072 Sep 22 10:53 lib
+drwxrwxrwx    2 1026     1028          1024 Sep 22 10:53 log
+-rwxrwxrwx    1 1026     1028        397524 Jul 18  2023 logServer
+drwxrwxrwx    2 1026     1028          1024 Sep 22 10:53 lua
+-rwxrwxrwx    1 root     root             0 Aug 21  1975 stdout
+drwxrwxrwx    3 root     root          1024 Sep 24 14:23 tmp
+
+=== E. CR5_sys_files listing ===
+total 232
+drwxr-xr-x    3 1026     1028          1024 Sep 22 10:53 .
+drwxr-xr-x   25 root     1028          1024 Jul 18  2023 ..
+-rwxr-xr-x    1 1026     1028         14280 Jul 18  2023 port
+drwxr-xr-x    8 1026     1028          1024 Jul 18  2023 project
+-rwxr-xr-x    1 1026     1028        210427 Jul 18  2023 slaveinfo
+-rwxr-xr-x    1 1026     1028          6720 Jul 18  2023 tty2ssh
+=== DONE ===

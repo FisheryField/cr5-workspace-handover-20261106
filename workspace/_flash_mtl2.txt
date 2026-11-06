@@ -1,0 +1,590 @@
+=== A. exact JSON request body for singleFwAndXml ===
+12609-    "updateFile": "CR5_Servo_ST_FOE_V3.2.D.8.bin",
+12610-    "updateFile2": "",
+12611-    "updateType": "firmware"
+12612-}
+12613-
+12614:[2026-09-23 09:17:10][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+--
+12673-[2026-09-23 09:17:40][INFO][ethercatmain.c@ecx_statecheck_new()#969]state=1,reqstate=1,isTimeout=0,rval=0x1.
+12674-[2026-09-23 09:17:40][INFO][dobot_foe.cpp@updateSlaveFW()#387]switch state to init successfully.
+12675-[2026-09-23 09:17:40][INFO][dobot_foe.cpp@singleUpdateThdFunc()#1072]<--- exit this function. ret=1,ret2=1.
+12676-[2026-09-23 09:17:40][INFO][dobot_info.cpp@exitUpdateThd()#140]end update pthread.
+12677-[2026-09-23 09:17:48][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12678-[2026-09-23 09:17:58][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12679-[2026-09-23 09:18:09][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12680-[2026-09-23 09:18:20][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12681-[2026-09-23 09:18:30][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12682-[2026-09-23 09:18:41][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12683-[2026-09-23 09:18:51][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12684-[2026-09-23 09:19:02][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12685-[2026-09-23 09:19:12][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12686-[2026-09-23 09:19:23][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12687-[2026-09-23 09:19:31][INFO][http_server.cpp@httpCallback()#1276]the content of post is 
+12688-{
+12689-    "cabType": "big",
+12690-    "cabVersion": "V1",
+12691-    "operationType": "start",
+12692-    "slaveId": 4,
+12693-    "updateFile": "CR5_Servo_ST_FOE_V3.2.D.8.bin",
+12694-    "updateFile2": "",
+12695-    "updateType": "firmware"
+12696-}
+12697-
+12698:[2026-09-23 09:19:31][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+--
+12763-[2026-09-23 09:20:37][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12764-[2026-09-23 09:20:47][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12765-[2026-09-23 09:20:58][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12766-[2026-09-23 09:21:08][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12767-[2026-09-23 09:21:19][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12768-[2026-09-23 09:21:30][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12769-[2026-09-23 09:21:40][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12770-[2026-09-23 09:21:51][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12771-[2026-09-23 15:42:14][INFO][main.cpp@main()#20]This is mTool server, version is 2.0.0sv2023d1128h2149.
+12772-[2026-09-23 15:42:14][INFO][main.cpp@main()#26]get arm type is : CR
+12773-[2026-09-23 15:42:14][INFO][main.cpp@main()#27]get arm name is : CR5
+12774-[2026-09-23 15:42:14][INFO][http_server.cpp@start()#109]<--- enter this function.
+12775-[2026-09-23 15:42:17][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+12776-[2026-09-23 15:42:17][INFO][http_server.cpp@protocolFunc_getVersion()#1216]get version is {"toolVersion":"2.0.0sv2023d1128h2149","pathInfo":{"slave":"/tmp/tUpdate/slave/","control":"/tmp/tUpdate/control/","kernel":"/tmp/tUpdate/kernel/"}}.
+12777-[2026-09-23 15:42:57][INFO][http_server.cpp@httpCallback()#1276]the content of post is 
+12778-{
+12779-    "cabType": "big",
+12780-    "cabVersion": "V1",
+12781-    "operationType": "start",
+12782-    "slaveId": 8,
+12783-    "updateFile": "CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin",
+12784-    "updateFile2": "",
+12785-    "updateType": "firmware"
+12786-}
+12787-
+12788:[2026-09-23 15:42:57][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+
+=== B. any 'no need to update' anywhere in the log? ===
+0
+
+=== C. every singleFwAndXml request in the log (with slaveId) ===
+36:[1975-08-21 15:59:50][INFO][http_server.cpp@httpCallback()#1630]request : post /update/CR/singleFwAndXml.
+123:[1976-02-18 17:05:03][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+150:[1976-02-18 17:05:13][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:1 using file:CR_SafeIO_ST_FOE_2.4.0.0.bin.
+169:[1976-02-18 17:05:20][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+190:[1976-02-18 17:05:32][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+218:[1976-02-18 17:05:41][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:9 using file:CR_TerminalIO_ST_FOE_V3.3.2.0.bin.
+242:[1976-02-18 17:05:45][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=32777
+251:[1976-02-18 17:05:45][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+258:[1976-02-18 17:05:45][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+265:[1976-02-18 17:05:45][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+272:[1976-02-18 17:05:45][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+279:[1976-02-18 17:05:45][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+281:[1976-02-18 17:05:47][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is success.
+301:[1976-02-18 17:06:03][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+328:[1976-02-18 17:06:12][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+349:[1976-02-18 17:06:24][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=28673
+354:[1976-02-18 17:06:32][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+358:[1976-02-18 17:06:40][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+362:[1976-02-18 17:06:48][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+384:[1976-02-18 17:10:07][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+411:[1976-02-18 17:10:18][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+432:[1976-02-18 17:10:30][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=28673
+438:[1976-02-18 17:10:38][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+442:[1976-02-18 17:10:46][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+445:[1976-02-18 17:10:54][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+476:[1976-02-18 17:17:57][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+509:[1976-02-18 17:18:29][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+535:[1976-02-18 17:18:39][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+555:[1976-02-18 17:18:51][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=28673
+561:[1976-02-18 17:18:59][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+565:[1976-02-18 17:19:07][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+568:[1976-02-18 17:19:15][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+612:[1976-02-18 17:28:02][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+640:[1976-02-18 17:28:13][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:1 using file:CR_FeedBack_FOEV2.3.3.0.bin.
+660:[1976-02-18 17:28:24][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+681:[1976-02-18 17:28:49][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+711:[1976-02-18 17:28:58][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:1 using file:CR_SafeIO_ST_FOE_2.4.0.0.bin.
+730:[1976-02-18 17:29:04][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+751:[1976-02-18 17:29:27][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+779:[1976-02-18 17:29:37][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:9 using file:CR_TerminalIO_ST_FOE_V3.3.2.0.bin.
+798:[1976-02-18 17:29:42][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+818:[1976-02-18 17:29:59][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+854:[1976-02-18 17:30:15][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+873:[1976-02-18 17:30:25][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+892:[1976-02-18 17:30:31][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+926:[1976-02-18 17:30:46][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:7 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+945:[1976-02-18 17:30:56][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+964:[1976-02-18 17:31:00][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+998:[1976-02-18 17:31:16][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:6 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+1017:[1976-02-18 17:31:26][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+1037:[1976-02-18 17:31:29][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+1074:[1976-02-18 17:31:45][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:5 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+1093:[1976-02-18 17:31:55][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+1112:[1976-02-18 17:32:00][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+1147:[1976-02-18 17:32:16][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+1166:[1976-02-18 17:32:26][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+1185:[1976-02-18 17:32:30][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+1219:[1976-02-18 17:32:45][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+1238:[1976-02-18 17:32:55][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+1259:[1976-02-18 17:33:18][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+1327:[1976-02-18 17:33:50][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+1396:[1976-02-18 17:34:14][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+1463:[1976-02-18 17:34:39][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+1531:[1976-02-18 17:35:04][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+1598:[1976-02-18 17:35:29][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+1666:[1976-02-18 17:35:55][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+1737:[1976-02-18 17:36:32][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+1805:[1976-02-18 17:37:22][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+1871:[1976-02-18 17:38:03][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+1899:[1976-02-18 17:38:13][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+1919:[1976-02-18 17:38:25][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=28673
+1925:[1976-02-18 17:38:33][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+1929:[1976-02-18 17:38:41][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+1933:[1976-02-18 17:38:49][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+1967:[2026-09-11 17:46:16][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+1996:[2026-09-11 17:46:27][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:1 using file:CR_SafeIO_ST_FOE_2.4.0.0.bin.
+2016:[2026-09-11 17:46:33][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+2037:[2026-09-11 17:46:53][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+2104:[2026-09-11 17:47:28][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+2131:[2026-09-11 17:47:37][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:1 using file:CR_FeedBack_FOEV2.3.3.0.bin.
+2150:[2026-09-11 17:47:47][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+2170:[2026-09-11 17:48:02][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+2198:[2026-09-11 17:48:11][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+2217:[2026-09-11 17:48:17][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+2237:[2026-09-11 17:48:33][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+2303:[2026-09-11 17:49:06][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+2338:[2026-09-11 17:49:22][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+2357:[2026-09-11 17:49:32][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+2376:[2026-09-11 17:49:36][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+2412:[2026-09-11 17:49:52][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:7 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+2431:[2026-09-11 17:50:02][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+2450:[2026-09-11 17:50:06][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+2488:[2026-09-11 17:50:22][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:6 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+2507:[2026-09-11 17:50:32][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+2526:[2026-09-11 17:50:36][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+2560:[2026-09-11 17:50:52][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:5 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+2579:[2026-09-11 17:51:02][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+2599:[2026-09-11 17:51:05][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+2633:[2026-09-11 17:51:21][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+2652:[2026-09-11 17:51:31][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+2671:[2026-09-11 17:51:36][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+2707:[2026-09-11 17:51:51][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+2726:[2026-09-11 17:52:01][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+2746:[2026-09-11 17:52:16][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+2813:[2026-09-11 17:52:40][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+2881:[2026-09-11 17:53:05][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+2947:[2026-09-11 17:53:30][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+3014:[2026-09-11 17:53:56][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+3082:[2026-09-11 17:54:20][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+3151:[2026-09-11 17:54:57][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+3179:[2026-09-11 17:55:06][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:9 using file:CR_TerminalIO_ST_FOE_V3.3.2.0.bin.
+3198:[2026-09-11 17:55:12][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+3218:[2026-09-11 17:55:28][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+3298:[2026-09-16 14:56:40][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+3324:[2026-09-16 14:56:50][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:1 using file:CR_SafeIO_ST_FOE_2.4.0.0.bin.
+3344:[2026-09-16 14:56:56][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+3364:[2026-09-16 14:57:11][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+3432:[2026-09-16 14:57:45][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+3460:[2026-09-16 14:57:54][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:1 using file:CR_FeedBack_FOEV2.3.3.0.bin.
+3479:[2026-09-16 14:58:05][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+3507:[2026-09-16 14:59:42][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+3535:[2026-09-16 14:59:51][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+3554:[2026-09-16 14:59:57][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+3576:[2026-09-16 15:00:31][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+3646:[2026-09-16 15:01:28][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+3681:[2026-09-16 15:01:44][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+3700:[2026-09-16 15:01:54][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+3719:[2026-09-16 15:01:58][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+3754:[2026-09-16 15:02:14][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:7 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+3773:[2026-09-16 15:02:24][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+3792:[2026-09-16 15:02:28][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+3830:[2026-09-16 15:02:44][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:6 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+3849:[2026-09-16 15:02:54][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+3868:[2026-09-16 15:02:58][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+3903:[2026-09-16 15:03:14][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:5 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+3922:[2026-09-16 15:03:24][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+3942:[2026-09-16 15:03:27][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+3977:[2026-09-16 15:03:43][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+3996:[2026-09-16 15:03:53][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+4015:[2026-09-16 15:03:58][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+4051:[2026-09-16 15:04:13][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+4071:[2026-09-16 15:04:23][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+4093:[2026-09-16 15:04:52][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+4158:[2026-09-16 15:05:17][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+4225:[2026-09-16 15:05:42][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+4293:[2026-09-16 15:06:08][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+4362:[2026-09-16 15:06:31][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+4430:[2026-09-16 15:06:55][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+4505:[2026-09-16 15:08:59][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+4533:[2026-09-16 15:09:08][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:9 using file:CR_TerminalIO_ST_FOE_V3.3.2.0.bin.
+4552:[2026-09-16 15:09:14][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+4578:[2026-09-16 15:10:30][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+4657:[2026-09-16 15:16:14][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+4685:[2026-09-16 15:16:24][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:1 using file:CR_SafeIO_ST_FOE_2.4.0.0.bin.
+4704:[2026-09-16 15:16:31][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+4725:[2026-09-16 15:16:44][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+4808:[2026-09-16 15:27:51][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+4843:[2026-09-16 15:28:08][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+4862:[2026-09-16 15:28:18][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+4889:[2026-09-16 15:30:29][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+4993:[2026-09-16 17:31:24][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+5028:[2026-09-16 17:31:41][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+5047:[2026-09-16 17:31:51][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+5299:[2026-09-17 09:39:58][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+5335:[2026-09-17 09:40:15][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+5354:[2026-09-17 09:40:25][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+5381:[2026-09-17 09:44:19][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+5416:[2026-09-17 09:44:36][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+5435:[2026-09-17 09:44:46][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+5454:[2026-09-17 09:44:51][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+5489:[2026-09-17 09:45:07][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:7 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+5508:[2026-09-17 09:45:17][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+5527:[2026-09-17 09:45:21][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+5564:[2026-09-17 09:45:37][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:6 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+5583:[2026-09-17 09:45:47][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+5602:[2026-09-17 09:45:51][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+5638:[2026-09-17 09:46:06][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:5 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+5657:[2026-09-17 09:46:16][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+5677:[2026-09-17 09:46:19][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+5712:[2026-09-17 09:46:35][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+5731:[2026-09-17 09:46:45][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+5750:[2026-09-17 09:46:51][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+5787:[2026-09-17 09:47:06][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+5806:[2026-09-17 09:47:16][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+5853:[2026-09-18 17:08:28][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+5888:[2026-09-18 17:08:45][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+5907:[2026-09-18 17:08:55][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+5926:[2026-09-18 17:08:59][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+5963:[2026-09-18 17:09:14][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:7 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+5982:[2026-09-18 17:09:24][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+6001:[2026-09-18 17:09:28][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+6035:[2026-09-18 17:09:44][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:6 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+6054:[2026-09-18 17:09:54][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+6073:[2026-09-18 17:09:58][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+6108:[2026-09-18 17:10:14][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:5 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+6127:[2026-09-18 17:10:24][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+6147:[2026-09-18 17:10:27][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+6182:[2026-09-18 17:10:43][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+6201:[2026-09-18 17:10:53][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+6220:[2026-09-18 17:10:58][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+6255:[2026-09-18 17:11:13][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+6274:[2026-09-18 17:11:23][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+6306:[2026-09-18 17:15:40][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+6342:[2026-09-18 17:15:57][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+6361:[2026-09-18 17:16:07][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+6380:[2026-09-18 17:16:11][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+6414:[2026-09-18 17:16:27][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:7 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+6433:[2026-09-18 17:16:37][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+6452:[2026-09-18 17:16:41][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+6489:[2026-09-18 17:16:57][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:6 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+6508:[2026-09-18 17:17:06][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+6527:[2026-09-18 17:17:11][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+6561:[2026-09-18 17:17:26][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:5 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+6580:[2026-09-18 17:17:36][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+6600:[2026-09-18 17:17:39][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+6635:[2026-09-18 17:17:55][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+6654:[2026-09-18 17:18:05][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+6673:[2026-09-18 17:18:10][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+6708:[2026-09-18 17:18:26][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+6727:[2026-09-18 17:18:36][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+6754:[2026-09-18 17:36:45][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+6787:[2026-09-18 17:37:01][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+6806:[2026-09-18 17:37:11][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+6826:[2026-09-18 17:37:15][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+6862:[2026-09-18 17:37:30][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:7 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+6881:[2026-09-18 17:37:40][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+6900:[2026-09-18 17:37:46][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+6934:[2026-09-18 17:38:01][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:6 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+6953:[2026-09-18 17:38:11][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+6972:[2026-09-18 17:38:15][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+7006:[2026-09-18 17:38:31][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:5 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+7025:[2026-09-18 17:38:41][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+7044:[2026-09-18 17:38:45][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+7080:[2026-09-18 17:39:01][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+7099:[2026-09-18 17:39:11][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+7119:[2026-09-18 17:39:14][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+7153:[2026-09-18 17:39:30][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+7172:[2026-09-18 17:39:39][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+7205:[2026-09-18 17:46:09][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+7238:[2026-09-18 17:46:26][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+7257:[2026-09-18 17:46:36][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+7276:[2026-09-18 17:46:40][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+7313:[2026-09-18 17:46:56][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:7 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+7332:[2026-09-18 17:47:06][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+7351:[2026-09-18 17:47:10][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+7386:[2026-09-18 17:47:26][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:6 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+7405:[2026-09-18 17:47:36][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+7425:[2026-09-18 17:47:39][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+7458:[2026-09-18 17:47:55][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:5 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+7477:[2026-09-18 17:48:04][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+7496:[2026-09-18 17:48:10][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+7532:[2026-09-18 17:48:26][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+7551:[2026-09-18 17:48:35][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+7570:[2026-09-18 17:48:40][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+7606:[2026-09-18 17:48:55][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+7625:[2026-09-18 17:49:05][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+7664:[2026-09-18 19:20:29][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+7710:[2026-09-21 16:13:32][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+7736:[2026-09-21 16:13:43][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+7759:[2026-09-21 16:14:04][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=28673
+7765:[2026-09-21 16:14:12][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+7769:[2026-09-21 16:14:20][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+7773:[2026-09-21 16:14:28][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+7790:[2026-09-21 16:14:58][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+7874:[2026-09-21 16:19:34][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+7901:[2026-09-21 16:19:45][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+7922:[2026-09-21 16:19:57][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=28673
+7927:[2026-09-21 16:20:05][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+7931:[2026-09-21 16:20:13][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+7935:[2026-09-21 16:20:21][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+7954:[2026-09-21 16:21:14][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+7992:[2026-09-21 16:26:07][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+8019:[2026-09-21 16:26:17][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+8040:[2026-09-21 16:26:29][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=28673
+8046:[2026-09-21 16:26:37][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8050:[2026-09-21 16:26:45][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8054:[2026-09-21 16:26:53][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8069:[2026-09-21 16:27:12][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+8143:[2026-09-21 16:30:06][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+8171:[2026-09-21 16:30:17][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+8192:[2026-09-21 16:30:29][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=28673
+8198:[2026-09-21 16:30:37][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8202:[2026-09-21 16:30:45][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8206:[2026-09-21 16:30:53][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8226:[2026-09-21 16:34:23][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+8252:[2026-09-21 16:34:34][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+8273:[2026-09-21 16:34:46][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=28673
+8279:[2026-09-21 16:34:54][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8283:[2026-09-21 16:35:02][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8287:[2026-09-21 16:35:10][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8311:[2026-09-21 16:37:04][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+8341:[2026-09-21 16:37:14][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:1 using file:CR_SafeIO_ST_FOE_2.4.0.0.bin.
+8360:[2026-09-21 16:37:20][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+8384:[2026-09-21 16:38:15][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+8452:[2026-09-21 16:38:59][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+8479:[2026-09-21 16:39:09][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:1 using file:CR_FeedBack_FOEV2.3.3.0.bin.
+8498:[2026-09-21 16:39:19][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+8526:[2026-09-21 16:40:52][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+8554:[2026-09-21 16:41:08][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+8574:[2026-09-21 16:41:20][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=28673
+8580:[2026-09-21 16:41:28][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8584:[2026-09-21 16:41:36][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8588:[2026-09-21 16:41:44][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8604:[2026-09-21 16:42:03][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+8674:[2026-09-21 16:43:03][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+8705:[2026-09-21 16:43:12][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:9 using file:CR_TerminalIO_ST_FOE_V3.3.2.0.bin.
+8723:[2026-09-21 16:43:18][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+8751:[2026-09-21 16:44:49][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+8824:[2026-09-21 16:48:10][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+8851:[2026-09-21 16:48:21][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+8872:[2026-09-21 16:48:33][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=28673
+8878:[2026-09-21 16:48:41][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8882:[2026-09-21 16:48:49][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8886:[2026-09-21 16:48:57][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8909:[2026-09-21 16:54:00][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+8935:[2026-09-21 16:54:11][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+8957:[2026-09-21 16:54:23][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=28673
+8962:[2026-09-21 16:54:31][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8966:[2026-09-21 16:54:39][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8970:[2026-09-21 16:54:47][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+8999:[2026-09-21 17:10:31][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+9026:[2026-09-21 17:10:42][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+9047:[2026-09-21 17:10:54][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=28673
+9053:[2026-09-21 17:11:02][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+9057:[2026-09-21 17:11:10][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+9061:[2026-09-21 17:11:18][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+9081:[2026-09-21 17:12:26][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+9111:[2026-09-21 17:12:55][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+9140:[2026-09-21 17:13:04][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:1 using file:CR_SafeIO_ST_FOE_2.4.0.0.bin.
+9159:[2026-09-21 17:13:11][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+9184:[2026-09-21 17:14:13][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+9261:[2026-09-21 17:16:36][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+9289:[2026-09-21 17:16:46][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:1 using file:CR_FeedBack_FOEV2.3.3.0.bin.
+9308:[2026-09-21 17:16:56][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+9333:[2026-09-21 17:17:55][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+9364:[2026-09-21 17:18:05][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+9385:[2026-09-21 17:18:17][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=28673
+9390:[2026-09-21 17:18:25][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+9394:[2026-09-21 17:18:33][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+9398:[2026-09-21 17:18:41][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+9431:[2026-09-21 18:08:03][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+9459:[2026-09-21 18:08:13][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:2 using file:CR_UniIO_ST_FOE_V2.3.2.0.bin.
+9480:[2026-09-21 18:08:25][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=28673
+9486:[2026-09-21 18:08:33][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+9490:[2026-09-21 18:08:41][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+9493:[2026-09-21 18:08:49][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is failed.
+9934:[2026-09-22 10:52:47][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+9983:[2026-09-22 11:10:16][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+10017:[2026-09-22 11:10:33][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+10036:[2026-09-22 11:10:42][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+10062:[2026-09-22 11:11:53][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+10153:[2026-09-22 11:48:17][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+10186:[2026-09-22 11:48:34][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+10205:[2026-09-22 11:48:44][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+10224:[2026-09-22 11:48:48][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+10259:[2026-09-22 11:49:03][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:7 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+10278:[2026-09-22 11:49:13][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+10297:[2026-09-22 11:49:17][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+10333:[2026-09-22 11:49:33][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:6 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+10352:[2026-09-22 11:49:43][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+10371:[2026-09-22 11:49:47][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+10407:[2026-09-22 11:50:03][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:5 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+10426:[2026-09-22 11:50:13][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+10446:[2026-09-22 11:50:16][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+10480:[2026-09-22 11:50:32][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+10499:[2026-09-22 11:50:42][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+10518:[2026-09-22 11:50:47][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+10553:[2026-09-22 11:51:03][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+10572:[2026-09-22 11:51:13][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+10603:[2026-09-22 14:27:00][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+10637:[2026-09-22 14:27:17][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+10656:[2026-09-22 14:27:27][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+10675:[2026-09-22 14:27:32][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+10710:[2026-09-22 14:27:48][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:7 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+10729:[2026-09-22 14:27:58][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+10748:[2026-09-22 14:28:02][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+10784:[2026-09-22 14:28:18][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:6 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+10803:[2026-09-22 14:28:28][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+10823:[2026-09-22 14:28:31][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+10858:[2026-09-22 14:28:47][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:5 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+10877:[2026-09-22 14:28:57][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+10896:[2026-09-22 14:29:02][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+10932:[2026-09-22 14:29:18][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+10951:[2026-09-22 14:29:27][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+10970:[2026-09-22 14:29:32][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+11007:[2026-09-22 14:29:47][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+11026:[2026-09-22 14:29:57][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+11055:[2026-09-22 15:35:25][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+11092:[2026-09-22 15:35:42][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+11111:[2026-09-22 15:35:51][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+11130:[2026-09-22 15:35:57][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+11165:[2026-09-22 15:36:12][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:7 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+11184:[2026-09-22 15:36:22][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+11203:[2026-09-22 15:36:26][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+11238:[2026-09-22 15:36:42][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:6 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+11257:[2026-09-22 15:36:52][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+11277:[2026-09-22 15:36:56][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+11311:[2026-09-22 15:37:11][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:5 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+11330:[2026-09-22 15:37:21][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+11349:[2026-09-22 15:37:26][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+11386:[2026-09-22 15:37:42][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+11405:[2026-09-22 15:37:52][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+11424:[2026-09-22 15:37:56][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+11461:[2026-09-22 15:38:12][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+11480:[2026-09-22 15:38:22][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+11514:[2026-09-22 16:10:50][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+11549:[2026-09-22 16:11:07][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+11568:[2026-09-22 16:11:16][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+11587:[2026-09-22 16:11:21][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+11624:[2026-09-22 16:11:37][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:7 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+11643:[2026-09-22 16:11:46][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+11662:[2026-09-22 16:11:51][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+11698:[2026-09-22 16:12:06][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:6 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+11717:[2026-09-22 16:12:16][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+11737:[2026-09-22 16:12:20][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+11770:[2026-09-22 16:12:35][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:5 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+11789:[2026-09-22 16:12:45][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+11808:[2026-09-22 16:12:50][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+11845:[2026-09-22 16:13:06][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+11864:[2026-09-22 16:13:16][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+11883:[2026-09-22 16:13:20][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+11920:[2026-09-22 16:13:36][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+11939:[2026-09-22 16:13:46][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+12015:[2026-09-23 09:04:51][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+12048:[2026-09-23 09:05:08][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+12068:[2026-09-23 09:05:17][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+12088:[2026-09-23 09:05:21][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+12123:[2026-09-23 09:05:36][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:7 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+12142:[2026-09-23 09:05:46][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+12161:[2026-09-23 09:05:51][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+12195:[2026-09-23 09:06:07][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:6 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+12209:[2026-09-23 09:06:07][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+12229:[2026-09-23 09:06:17][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+12275:[2026-09-23 09:10:58][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+12310:[2026-09-23 09:11:14][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+12334:[2026-09-23 09:11:21][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=32779
+12339:[2026-09-23 09:11:27][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is success.
+12358:[2026-09-23 09:11:32][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+12392:[2026-09-23 09:11:48][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:7 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+12415:[2026-09-23 09:11:55][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=32779
+12420:[2026-09-23 09:12:01][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is success.
+12439:[2026-09-23 09:12:05][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+12474:[2026-09-23 09:12:21][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:6 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+12498:[2026-09-23 09:12:28][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is failed.g_TempFoeWriteErrCode=32779
+12503:[2026-09-23 09:12:34][INFO][dobot_foe.cpp@updateSlaveFW()#361]foe write result is success.
+12522:[2026-09-23 09:12:38][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+12557:[2026-09-23 09:12:54][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:5 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+12576:[2026-09-23 09:13:04][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=32779
+12614:[2026-09-23 09:17:10][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+12649:[2026-09-23 09:17:27][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+12668:[2026-09-23 09:17:37][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+12698:[2026-09-23 09:19:31][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+12733:[2026-09-23 09:19:46][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:4 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+12752:[2026-09-23 09:19:56][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+12788:[2026-09-23 15:42:57][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+12821:[2026-09-23 15:43:14][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+12841:[2026-09-23 15:43:24][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+
+=== D. how is mToolServer started? (dobot.sh / rc / init) ===
+
+=== E. the port: search log for listen/port ===
+50:[1975-08-21 15:59:50][INFO][dobot_foe.cpp@SavePose()#99]connect port 30005 success.
+51:[1975-08-21 15:59:50][INFO][dobot_foe.cpp@SavePose()#108]date length:-1 from port 30005.
+52:[1975-08-21 15:59:51][INFO][dobot_foe.cpp@SavePose()#108]date length:-1 from port 30005.
+53:[1975-08-21 15:59:51][INFO][dobot_foe.cpp@SavePose()#108]date length:-1 from port 30005.
+54:[1975-08-21 15:59:51][INFO][dobot_foe.cpp@SavePose()#108]date length:-1 from port 30005.
+55:[1975-08-21 15:59:51][INFO][dobot_foe.cpp@SavePose()#108]date length:1440 from port 30005.
+137:[1976-02-18 17:05:03][INFO][dobot_foe.cpp@SavePose()#95]connect port 30005 success.
+138:[1976-02-18 17:05:03][INFO][dobot_foe.cpp@SavePose()#104]date length:-1 from port 30005.
+139:[1976-02-18 17:05:03][INFO][dobot_foe.cpp@SavePose()#104]date length:1440 from port 30005.
+205:[1976-02-18 17:05:32][INFO][dobot_foe.cpp@SavePose()#95]connect port 30005 success.
+206:[1976-02-18 17:05:32][INFO][dobot_foe.cpp@SavePose()#104]date length:-1 from port 30005.
+207:[1976-02-18 17:05:32][INFO][dobot_foe.cpp@SavePose()#104]date length:-1 from port 30005.
+208:[1976-02-18 17:05:32][INFO][dobot_foe.cpp@SavePose()#104]date length:1440 from port 30005.
+316:[1976-02-18 17:06:03][INFO][dobot_foe.cpp@SavePose()#95]connect port 30005 success.
+317:[1976-02-18 17:06:03][INFO][dobot_foe.cpp@SavePose()#104]date length:-1 from port 30005.
+318:[1976-02-18 17:06:03][INFO][dobot_foe.cpp@SavePose()#104]date length:1440 from port 30005.
+398:[1976-02-18 17:10:07][INFO][dobot_foe.cpp@SavePose()#95]connect port 30005 success.
+399:[1976-02-18 17:10:07][INFO][dobot_foe.cpp@SavePose()#104]date length:-1 from port 30005.
+400:[1976-02-18 17:10:07][INFO][dobot_foe.cpp@SavePose()#104]date length:1440 from port 30005.
+523:[1976-02-18 17:18:29][INFO][dobot_foe.cpp@SavePose()#95]connect port 30005 success.
+
+=== F. mToolServer version banner + start lines (head 40) ===
+[1975-08-21 15:36:45][INFO][main.cpp@main()#20]This is mTool server, version is 2.0.0sv2025d1016h2028.
+[1975-08-21 15:36:45][WARNING][general_tools.cpp@getCPUType()#572]Failed to open file: /etc/CPU_TYPE
+[1975-08-21 15:36:45][INFO][main.cpp@main()#28]get arm type is : CR
+[1975-08-21 15:36:45][INFO][main.cpp@main()#29]get arm name is : CR10
+[1975-08-21 15:36:45][INFO][main.cpp@main()#30]get cpu type is : 
+[1975-08-21 15:36:45][INFO][http_server.cpp@start()#134]<--- enter this function.
+[1975-08-21 15:36:47][INFO][http_server.cpp@httpCallback()#1630]request : get /protocol/version.
+[1975-08-21 15:36:47][INFO][http_server.cpp@protocolFunc_getVersion()#1413]get version is {"toolVersion":"2.0.0sv2025d1016h2028","pathInfo":{"slave":"/tmp/tUpdate/slave/","control":"/tmp/tUpdate/control/","kernel":"/tmp/tUpdate/kernel/"}}.
+[1975-08-21 15:49:47][INFO][main.cpp@main()#20]This is mTool server, version is 2.0.0sv2025d1016h2028.
+[1975-08-21 15:49:47][WARNING][general_tools.cpp@getCPUType()#572]Failed to open file: /etc/CPU_TYPE
+[1975-08-21 15:49:47][INFO][main.cpp@main()#28]get arm type is : CR
+[1975-08-21 15:49:47][INFO][main.cpp@main()#29]get arm name is : CR10
+[1975-08-21 15:49:47][INFO][main.cpp@main()#30]get cpu type is : 
+[1975-08-21 15:49:47][INFO][http_server.cpp@start()#134]<--- enter this function.
+[1975-08-21 15:49:49][INFO][http_server.cpp@httpCallback()#1630]request : get /protocol/version.
+[1975-08-21 15:49:49][INFO][http_server.cpp@protocolFunc_getVersion()#1413]get version is {"toolVersion":"2.0.0sv2025d1016h2028","pathInfo":{"slave":"/tmp/tUpdate/slave/","control":"/tmp/tUpdate/control/","kernel":"/tmp/tUpdate/kernel/"}}.
+[1975-08-21 15:58:47][INFO][main.cpp@main()#20]This is mTool server, version is 2.0.0sv2025d1016h2028.
+[1975-08-21 15:58:47][WARNING][general_tools.cpp@getCPUType()#572]Failed to open file: /etc/CPU_TYPE
+[1975-08-21 15:58:47][INFO][main.cpp@main()#28]get arm type is : CR
+[1975-08-21 15:58:47][INFO][main.cpp@main()#29]get arm name is : CR10
+[1975-08-21 15:58:47][INFO][main.cpp@main()#30]get cpu type is : 
+[1975-08-21 15:58:47][INFO][http_server.cpp@start()#134]<--- enter this function.
+[1975-08-21 15:58:49][INFO][http_server.cpp@httpCallback()#1630]request : get /protocol/version.
+[1975-08-21 15:58:49][INFO][http_server.cpp@protocolFunc_getVersion()#1413]get version is {"toolVersion":"2.0.0sv2025d1016h2028","pathInfo":{"slave":"/tmp/tUpdate/slave/","control":"/tmp/tUpdate/control/","kernel":"/tmp/tUpdate/kernel/"}}.
+[1975-08-21 15:59:50][INFO][http_server.cpp@httpCallback()#1613]the content of post is 
+{
+    "cabType": "big",
+    "cabVersion": "V1",
+    "operationType": "start",
+    "slaveId": 8,
+    "updateFile": "CR_Servo_ST_XML_V3.0.0.bin",
+    "updateFile2": "",
+    "updateType": "xml"
+}
+
+[1975-08-21 15:59:50][INFO][http_server.cpp@httpCallback()#1630]request : post /update/CR/singleFwAndXml.
+[1975-08-21 15:59:50][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#707]request update type is start.
+[1975-08-21 15:59:50][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#764]type:xml,file1:CR_Servo_ST_XML_V3.0.0.bin,file2:,file3:.
+[1975-08-21 15:59:50][INFO][dobot_info.cpp@createUpdateThd()#120]<--- enter this function
+[1975-08-21 15:59:50][INFO][dobot_info.cpp@createUpdateThd()#125]ready to create update thread
+=== DONE ===

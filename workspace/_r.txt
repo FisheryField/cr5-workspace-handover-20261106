@@ -1,0 +1,15 @@
+=== files changed since ref (whole FS) ===
+/usr/local/samba/var/locks/locking.tdb
+/dobot/userdata/CR5_sys_files/project/logs/gcontrol/log
+/dobot/userdata/CR5_sys_files/project/logs/all/log
+/dobot/userdata/CR5_sys_files/project/settings/function/loadParams.json
+=== /opt /udisk /var /usr/local /dobot/bin ===
+/usr/local/samba/var/locks/locking.tdb
+=== SavePos/AxesValue now ===
+total 24
+drwxrwxr-x    2 1025     1025          4096 Sep 18 09:30 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+-rwxrwxr-x    1 1025     1025           439 Feb 18  1976 SaveAxesValue.AxesValues.txtrecipe
+-rw-r--r--    1 root     root           100 Sep 18 15:59 SavePos.txt
+-rw-r--r--    1 root     root           780 Sep 18 16:00 SlaveInfos.SlaveInfos.txtrecipe
+-rw-r--r--    1 root     root             4 Sep 17 09:47 Update.txt

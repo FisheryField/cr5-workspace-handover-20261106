@@ -1,0 +1,42 @@
+=== uptime ===
+453.36 1645.30
+=== codesys log: EtherCAT 状态与错误 ===
+All slaves init
+All slaves pre-operational
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 0
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 0
+All slaves safe-operational
+Set operational mode
+All slaves operational
+All slaves done
+InitSlaves successfull
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 0
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 0
+=== SlaveLog ===
+:=DINT:=GVL.Slave_ProductID[0]:=545
+:=DINT:=GVL.Slave_ProductID[1]:=546
+:=DINT:=GVL.Slave_ProductID[2]:=289
+:=DINT:=GVL.Slave_ProductID[3]:=289
+:=DINT:=GVL.Slave_ProductID[4]:=289
+:=DINT:=GVL.Slave_ProductID[5]:=289
+:=DINT:=GVL.Slave_ProductID[6]:=289
+:=DINT:=GVL.Slave_ProductID[7]:=289
+:=DINT:=GVL.Slave_ProductID[8]:=560
+:=DINT:=GVL.Slave_ProductID[9]:=0
+:=DINT:=GVL.Slave_SoftVersion[0]:=259
+:=DINT:=GVL.Slave_SoftVersion[1]:=259
+:=DINT:=GVL.Slave_SoftVersion[2]:=131073
+:=DINT:=GVL.Slave_SoftVersion[3]:=131073
+:=DINT:=GVL.Slave_SoftVersion[4]:=131073
+:=DINT:=GVL.Slave_SoftVersion[5]:=131073
+:=DINT:=GVL.Slave_SoftVersion[6]:=131073
+:=DINT:=GVL.Slave_SoftVersion[7]:=131073
+:=DINT:=GVL.Slave_SoftVersion[8]:=259
+:=DINT:=GVL.Slave_SoftVersion[9]:=0
+
+9 9 9 0 
+codesys check success at 0
+codesys check success result : /dobot/userdata/codesys/allST/
+{"controlCab":"NormalCab"} 
+=== gcontrol log tail ===
+d listen port:30004 success!befor accept...[init] bind and listen port:30005 success!befor accept...enter StartHttpServer[start_tcp_server] : bind success.[start_tcp_server] : listen success.[StartHttpServer] bind port 22001 success![init] bind and listen port:30006 success!befor accept...[start_tcp_server] : new client conn[16] accepted.----------------------------------------------[start_tcp_server] : client ip=192.168.5.100, port=63359[AppProtocol::fullRead] fd:[16], Select timeout.[AppProtocol::fullRead] fd:[16], Select timeout."-178""178""-178""178""-160""160""-178""178""-178""178""-357""357"[AppProtocol::fullRead] fd:[16], Select timeout.[AppProtocol::fullRead] fd:[16], Select timeout.

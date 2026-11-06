@@ -1,0 +1,137 @@
+[poll] start 15:21:40
+[2026-10-10 15:05:01.935] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 1937 sec ,all enable at this poweron 1944, all 447018
+[2026-10-10 15:10:26.557] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 1791616226 sec ,all enable at this poweron 4, all 447022
+[2026-10-10 15:22:45.562] [15] [info] [monitorServoUptime#527] robot enabled ,begin to record enable robot time ...
+[2026-10-10 15:22:48.382] [15] [info] [conn_req_dir#11436] 192.168.5.2:52458 POST uri : /calibrate/home
+[2026-10-10 15:22:48.387] [15] [info] [updateEncoderData#507] HomeNumdone : 0
+[2026-10-10 15:22:48.387] [15] [info] [updateEncoderData#512] servo calihome not done , count:9
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x60,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x60,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x60,isOn=1
+[2026-10-10 15:22:48.540] [15] [error] [logServoError#584] servo1 error ID update : 0 -> 34322 
+[2026-10-10 15:22:48.560] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 3 sec ,all enable at this poweron 7, all 447025
+[2026-10-10 15:22:48.688] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:48.688] [15] [info] [updateEncoderData#512] servo calihome not done , count:8
+[2026-10-10 15:22:48.988] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:48.988] [15] [info] [updateEncoderData#512] servo calihome not done , count:7
+[2026-10-10 15:22:49.288] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:49.288] [15] [info] [updateEncoderData#512] servo calihome not done , count:6
+[2026-10-10 15:22:49.588] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:49.588] [15] [info] [updateEncoderData#512] servo calihome not done , count:5
+[2026-10-10 15:22:49.888] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:49.888] [15] [info] [updateEncoderData#512] servo calihome not done , count:4
+[2026-10-10 15:22:50.188] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:50.188] [15] [info] [updateEncoderData#512] servo calihome not done , count:3
+[2026-10-10 15:22:50.488] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:50.488] [15] [info] [updateEncoderData#512] servo calihome not done , count:2
+[2026-10-10 15:22:50.788] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:50.788] [15] [info] [updateEncoderData#512] servo calihome not done , count:1
+[2026-10-10 15:22:51.088] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:51.088] [15] [info] [updateEncoderData#512] servo calihome not done , count:0
+[2026-10-10 15:22:51.389] [15] [info] [readJsonFile#3074] enter this function, read file:/dobot/userdata/project/settings/function/homeEncoder.json.
+[2026-10-10 15:22:51.399] [15] [info] [writeJsonFile#3114] enter this function, write file:/dobot/userdata/project/settings/function/homeEncoder.json.
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x60,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x60,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x60,isOn=1
+[2026-10-10 15:22:55.482] [15] [error] [logServoError#584] servo1 error ID update : 34322 -> 0 
+[2026-10-10 15:23:21.741] [15] [info] [monitorServoUptime#527] robot enabled ,begin to record enable robot time ...
+[poll] ssh fail #1 rc=1
+[2026-10-10 15:10:26.557] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 1791616226 sec ,all enable at this poweron 4, all 447022
+[2026-10-10 15:22:45.562] [15] [info] [monitorServoUptime#527] robot enabled ,begin to record enable robot time ...
+[2026-10-10 15:22:48.382] [15] [info] [conn_req_dir#11436] 192.168.5.2:52458 POST uri : /calibrate/home
+[2026-10-10 15:22:48.387] [15] [info] [updateEncoderData#507] HomeNumdone : 0
+[2026-10-10 15:22:48.387] [15] [info] [updateEncoderData#512] servo calihome not done , count:9
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x60,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x60,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x60,isOn=1
+[2026-10-10 15:22:48.540] [15] [error] [logServoError#584] servo1 error ID update : 0 -> 34322 
+[2026-10-10 15:22:48.560] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 3 sec ,all enable at this poweron 7, all 447025
+[2026-10-10 15:22:48.688] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:48.688] [15] [info] [updateEncoderData#512] servo calihome not done , count:8
+[2026-10-10 15:22:48.988] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:48.988] [15] [info] [updateEncoderData#512] servo calihome not done , count:7
+[2026-10-10 15:22:49.288] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:49.288] [15] [info] [updateEncoderData#512] servo calihome not done , count:6
+[2026-10-10 15:22:49.588] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:49.588] [15] [info] [updateEncoderData#512] servo calihome not done , count:5
+[2026-10-10 15:22:49.888] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:49.888] [15] [info] [updateEncoderData#512] servo calihome not done , count:4
+[2026-10-10 15:22:50.188] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:50.188] [15] [info] [updateEncoderData#512] servo calihome not done , count:3
+[2026-10-10 15:22:50.488] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:50.488] [15] [info] [updateEncoderData#512] servo calihome not done , count:2
+[2026-10-10 15:22:50.788] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:50.788] [15] [info] [updateEncoderData#512] servo calihome not done , count:1
+[2026-10-10 15:22:51.088] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:22:51.088] [15] [info] [updateEncoderData#512] servo calihome not done , count:0
+[2026-10-10 15:22:51.389] [15] [info] [readJsonFile#3074] enter this function, read file:/dobot/userdata/project/settings/function/homeEncoder.json.
+[2026-10-10 15:22:51.399] [15] [info] [writeJsonFile#3114] enter this function, write file:/dobot/userdata/project/settings/function/homeEncoder.json.
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x60,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x60,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x60,isOn=1
+[2026-10-10 15:22:55.482] [15] [error] [logServoError#584] servo1 error ID update : 34322 -> 0 
+[2026-10-10 15:23:21.741] [15] [info] [monitorServoUptime#527] robot enabled ,begin to record enable robot time ...
+[2026-10-10 15:29:54.785] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 1791617394 sec ,all enable at this poweron 4, all 447334
+[2026-10-10 15:31:10.930] [15] [info] [monitorServoUptime#527] robot enabled ,begin to record enable robot time ...
+[2026-10-10 15:31:20.088] [15] [info] [conn_req_dir#11436] 192.168.5.2:49677 POST uri : /calibrate/home
+[2026-10-10 15:31:20.092] [15] [info] [updateEncoderData#507] HomeNumdone : 0
+[2026-10-10 15:31:20.092] [15] [info] [updateEncoderData#512] servo calihome not done , count:9
+[2026-10-10 15:31:20.392] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:31:20.393] [15] [info] [updateEncoderData#512] servo calihome not done , count:8
+[2026-10-10 15:31:20.693] [15] [info] [updateEncoderData#507] HomeNumdone : 4
+[2026-10-10 15:31:20.693] [15] [info] [updateEncoderData#512] servo calihome not done , count:7
+[2026-10-10 15:31:20.993] [15] [info] [updateEncoderData#507] HomeNumdone : 6
+[2026-10-10 15:31:20.993] [15] [info] [updateEncoderData#509] servo calihome done ...
+[2026-10-10 15:31:20.993] [15] [info] [readJsonFile#3074] enter this function, read file:/dobot/userdata/project/settings/function/homeEncoder.json.
+[2026-10-10 15:31:21.005] [15] [info] [writeJsonFile#3114] enter this function, write file:/dobot/userdata/project/settings/function/homeEncoder.json.
+[2026-10-10 15:31:24.486] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 14 sec ,all enable at this poweron 18, all 447348
+[2026-10-10 15:31:34.534] [15] [info] [monitorServoUptime#527] robot enabled ,begin to record enable robot time ...
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x74,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x74,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x74,isOn=1
+[2026-10-10 15:39:34.236] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 480 sec ,all enable at this poweron 498, all 447828
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x7e,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x7e,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x7e,isOn=1
+[poll] ssh fail #1 rc=1
+[poll] ssh fail #2 rc=1
+[2026-10-10 15:29:54.785] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 1791617394 sec ,all enable at this poweron 4, all 447334
+[2026-10-10 15:31:10.930] [15] [info] [monitorServoUptime#527] robot enabled ,begin to record enable robot time ...
+[2026-10-10 15:31:20.088] [15] [info] [conn_req_dir#11436] 192.168.5.2:49677 POST uri : /calibrate/home
+[2026-10-10 15:31:20.092] [15] [info] [updateEncoderData#507] HomeNumdone : 0
+[2026-10-10 15:31:20.092] [15] [info] [updateEncoderData#512] servo calihome not done , count:9
+[2026-10-10 15:31:20.392] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+[2026-10-10 15:31:20.393] [15] [info] [updateEncoderData#512] servo calihome not done , count:8
+[2026-10-10 15:31:20.693] [15] [info] [updateEncoderData#507] HomeNumdone : 4
+[2026-10-10 15:31:20.693] [15] [info] [updateEncoderData#512] servo calihome not done , count:7
+[2026-10-10 15:31:20.993] [15] [info] [updateEncoderData#507] HomeNumdone : 6
+[2026-10-10 15:31:20.993] [15] [info] [updateEncoderData#509] servo calihome done ...
+[2026-10-10 15:31:20.993] [15] [info] [readJsonFile#3074] enter this function, read file:/dobot/userdata/project/settings/function/homeEncoder.json.
+[2026-10-10 15:31:21.005] [15] [info] [writeJsonFile#3114] enter this function, write file:/dobot/userdata/project/settings/function/homeEncoder.json.
+[2026-10-10 15:31:24.486] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 14 sec ,all enable at this poweron 18, all 447348
+[2026-10-10 15:31:34.534] [15] [info] [monitorServoUptime#527] robot enabled ,begin to record enable robot time ...
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x74,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x74,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x74,isOn=1
+[2026-10-10 15:39:34.236] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 480 sec ,all enable at this poweron 498, all 447828
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x7e,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x7e,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x7e,isOn=1
+[2026-10-10 15:41:15.017] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 1791618075 sec ,all enable at this poweron 5, all 447793
+[2026-10-10 15:41:39.668] [15] [info] [monitorServoUptime#527] robot enabled ,begin to record enable robot time ...
+[poll] ssh fail #1 rc=1
+[poll] ssh fail #2 rc=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x74,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x74,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x74,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x7e,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x7e,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x7e,isOn=1
+[2026-10-10 16:04:07.574] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 1348 sec ,all enable at this poweron 1353, all 449141
+[2026-10-10 16:05:34.615] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 1791619534 sec ,all enable at this poweron 4, all 449093
+[2026-10-10 16:09:00.065] [15] [info] [monitorServoUptime#527] robot enabled ,begin to record enable robot time ...
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x86,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x86,isOn=1
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x86,isOn=1
+[2026-10-10 16:09:00.213] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 0 sec ,all enable at this poweron 4, all 449093
+[poll] stop 16:10:08

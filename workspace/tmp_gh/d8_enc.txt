@@ -1,0 +1,40 @@
+# program=v328d8.elf  mode=decomp
+
+================================================================================
+## 0802be80 -> FUN_0802be80 @0802be80
+================================================================================
+
+/* WARNING: Control flow encountered bad instruction data */
+/* WARNING: Removing unreachable block (ram,0x0802b7ca) */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_0802be80(void)
+
+{
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  int unaff_r5;
+  int unaff_r6;
+  int unaff_r8;
+  
+  uRam00000000 = 0;
+  uRam00000010 = 0x21;
+  uRam00000020 = 0x84;
+  iRam00000021 = iRam0802bf20;
+  uRam00000025 = 0xd4;
+  iRam00000029 = unaff_r5;
+  *(int *)((iRam0802bf20 >> 8) + iRam0802bf20) = iRam0802bf20 >> 8;
+  *(int *)(unaff_r8 + 0x24) = unaff_r8;
+  iVar1 = _DAT_0802bf9c;
+  uVar3 = (uint)*(ushort *)(unaff_r5 + 2);
+  iVar2 = *(int *)(unaff_r6 + 0x7c);
+  *(undefined1 *)(uVar3 + 0x10) = 0;
+  *(int *)(iVar1 + 0x24) = iVar2 << 5;
+  *(undefined2 *)(uVar3 + 8) = 0;
+  *(undefined2 *)(uVar3 * 0x4000 + 0x52) = 0x94;
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+

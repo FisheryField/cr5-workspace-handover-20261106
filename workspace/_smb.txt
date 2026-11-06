@@ -1,0 +1,45 @@
+=== smbd/nmbd processes ===
+  274 root       0:00 /dobot/bin/bin/nmbd -s /dobot/bin/etc/smb.conf -D
+  276 root       0:00 /dobot/bin/bin/smbd -s /dobot/bin/etc/smb.conf -D
+  296 root       0:00 /dobot/bin/bin/smbd -s /dobot/bin/etc/smb.conf -D
+=== listening 139/445 ===
+tcp        0      0 0.0.0.0:139             0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:445             0.0.0.0:*               LISTEN      
+=== established to 445/139 ===
+=== /dobot/bin/etc/smb.conf ===
+[global]
+        workgroup = root
+        security = user
+        client lanman auth = yes
+        lanman auth = yes
+        map to guest = bad user
+        guest account = root
+        protocol = SMB2
+
+[project]
+        comment = project
+        path = /dobot/userdata/project
+        available = yes
+        browseable = yes
+        public = yes
+        guest ok = yes
+        writable = yes
+
+=== /usr/local/samba ===
+total 20
+drwxr-xr-x    5 root     root          4096 Sep 18 15:27 .
+drwxrwxr-x    9 1025     1025          4096 Sep 18 15:27 ..
+drwxr-xr-x    2 root     root          4096 Sep 18 15:27 private
+drwxr-xr-x    2 root     root          4096 Sep 18 15:27 swat
+drwxr-xr-x    5 root     root          4096 Sep 18 15:27 var
+=== /usr/local/samba/private ===
+total 48
+drwxr-xr-x    2 root     root          4096 Sep 18 15:27 .
+drwxr-xr-x    5 root     root          4096 Sep 18 15:27 ..
+-rw-------    1 root     root         16384 Sep 18 15:27 passdb.tdb
+-rw-------    1 root     root         24576 Sep 18 15:27 secrets.tdb
+=== share path exists? ===
+lrwxrwxrwx    1 root     root            37 Feb 19  1976 /dobot/userdata/project -> /dobot/userdata/CR5_sys_files/project
+=== smbpasswd file? ===
+-rw-------    1 root     root         16384 Sep 18 15:27 /usr/local/samba/private/passdb.tdb
+-rw-------    1 root     root         24576 Sep 18 15:27 /usr/local/samba/private/secrets.tdb

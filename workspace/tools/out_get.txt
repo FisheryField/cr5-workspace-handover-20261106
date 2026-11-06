@@ -1,0 +1,403 @@
+==============================================================================================================
+parseAndReqGetServoParams  @0xec03c (1080 B)
+==============================================================================================================
+  0x0ec03c  push.w  {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+  0x0ec040  sub     sp, #0x4c                       
+  0x0ec042  mov     r5, r1                          
+  0x0ec044  str     r0, [sp, #0x2c]                 
+  0x0ec046  ldr     r4, [pc, #0x3cc]                   ; =0x11e21e
+  0x0ec048  blx     #0xb4a54                           ; -> _ZN6spdlog11logTerminal8InstanceEv
+  0x0ec04c  ldr     r2, [pc, #0x3c8]                   ; =0x11c39a
+  0x0ec04e  movs    r3, #2                          
+  0x0ec050  ldr     r7, [pc, #0x3c8]                   ; =0x11f780
+  0x0ec052  add     r4, pc                          
+  0x0ec054  ldr     r6, [pc, #0x3c8]                   ; =0x17d8b4
+  0x0ec056  movw    r1, #0x124d                     
+  0x0ec05a  add     r2, pc                          
+  0x0ec05c  mvn     r0, #0xf                        
+  0x0ec060  add.w   r2, r2, #0xb20                  
+  0x0ec064  add     r7, pc                          
+  0x0ec066  str     r4, [sp]                        
+  0x0ec068  add     r6, pc                          
+  0x0ec06a  blx     #0xba8fc                           ; -> _ZN6spdlog11logTerminal8basicLogIIEEEviiPKcNS_5level10level_enumES3_DpOT_
+  0x0ec06e  mov     r0, r5                          
+  0x0ec070  mov     r1, r7                          
+  0x0ec072  blx     #0xba750                           ; -> _ZNK9rapidjson12GenericValueINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAllo
+  0x0ec076  cbnz    r0, #0xec084                    
+  0x0ec078  mov.w   r5, #-1                         
+  0x0ec07c  mov     r0, r5                          
+  0x0ec07e  add     sp, #0x4c                       
+  0x0ec080  pop.w   {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+  0x0ec084  mov     r0, r5                          
+  0x0ec086  mov     r1, r7                          
+  0x0ec088  blx     #0xb4560                           ; -> _ZN9rapidjson12GenericValueINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAlloc
+  0x0ec08c  ldrh    r3, [r0, #0xe]                  
+  0x0ec08e  mov     r5, r0                          
+  0x0ec090  cmp     r3, #4                          
+  0x0ec092  bne     #0xec078                        
+  0x0ec094  add     r2, sp, #0x44                   
+  0x0ec096  ldr     r3, [pc, #0x38c]                   ; =0x3510
+  0x0ec098  str     r2, [sp, #0x14]                 
+  0x0ec09a  add     r1, sp, #0x3c                   
+  0x0ec09c  ldr     r2, [r0]                        
+  0x0ec09e  add.w   sl, sp, #0x40                   
+  0x0ec0a2  str     r1, [sp, #0x18]                 
+  0x0ec0a4  ldr     r3, [r6, r3]                    
+  0x0ec0a6  cmp.w   r2, #0x12c0                     
+  0x0ec0aa  ldr     r4, [pc, #0x37c]                   ; =0x129000
+  0x0ec0ac  it      hs                              
+  0x0ec0ae  movhs.w r2, #0x12c0                     
+  0x0ec0b2  str     r2, [r3]                        
+  0x0ec0b4  mov     r7, r2                          
+  0x0ec0b6  str     r2, [sp, #0x1c]                 
+  0x0ec0b8  add     r4, pc                          
+  0x0ec0ba  blx     #0xb7d04                           ; -> _ZN8robotMap8instanceEv
+  0x0ec0be  ldr     r3, [r0, #8]                    
+  0x0ec0c0  mov     r1, r4                          
+  0x0ec0c2  ldr.w   r8, [sp, #0x14]                 
+  0x0ec0c6  ldr     r0, [sp, #0x18]                 
+  0x0ec0c8  add.w   r3, r3, #0x40000                
+  0x0ec0cc  ldr     r3, [r3, #8]                    
+  0x0ec0ce  mov     r2, r8                          
+  0x0ec0d0  sub.w   r3, r3, #1                      
+  0x0ec0d4  clz     r3, r3                          
+  0x0ec0d8  lsrs    r3, r3, #5                      
+  0x0ec0da  str     r3, [sp, #0x20]                 
+  0x0ec0dc  blx     #0xb8b78                           ; -> _ZNSsC1EPKcRKSaIcE
+  0x0ec0e0  mov     r1, r4                          
+  0x0ec0e2  mov     r2, r8                          
+  0x0ec0e4  mov     r0, sl                          
+  0x0ec0e6  blx     #0xb8b78                           ; -> _ZNSsC1EPKcRKSaIcE
+  0x0ec0ea  cmp     r7, #0                          
+  0x0ec0ec  beq.w   #0xec2f0                        
+  0x0ec0f0  ldrh    r3, [r5, #0xe]                  
+  0x0ec0f2  cmp     r3, #4                          
+  0x0ec0f4  bne.w   #0xec3a6                        
+  0x0ec0f8  ldr     r3, [r5]                        
+  0x0ec0fa  mov     r7, r3                          
+  0x0ec0fc  cmp     r3, #0                          
+  0x0ec0fe  beq.w   #0xec278                        
+  0x0ec102  movs    r3, #0                          
+  0x0ec104  ldr     r2, [pc, #0x324]                   ; =0x2e98
+  0x0ec106  str     r3, [sp, #0xc]                  
+  0x0ec108  ldr     r3, [pc, #0x324]                   ; =0x11c2e4
+  0x0ec10a  ldr     r2, [r6, r2]                    
+  0x0ec10c  ldr.w   fp, [pc, #0x324]                
+  0x0ec110  add     r3, pc                             ; => ":UTF8<>; StackAllocator = rapidjson::CrtAllocator]"
+  0x0ec112  ldr     r1, [pc, #0x324]                   ; =0x11f6fa
+  0x0ec114  add.w   r3, r3, #0xb20                  
+  0x0ec118  add.w   r8, r2, #4                      
+  0x0ec11c  str     r3, [sp, #0x34]                 
+  0x0ec11e  add     fp, pc                          
+  0x0ec120  ldr     r3, [pc, #0x318]                   ; =0x11f700
+  0x0ec122  add     r1, pc                             ; => "oNum"
+  0x0ec124  str     r2, [sp, #0x28]                 
+  0x0ec126  str     r1, [sp, #0x10]                 
+  0x0ec128  add     r3, pc                          
+  0x0ec12a  str     r3, [sp, #0x24]                 
+  0x0ec12c  ldr     r3, [pc, #0x310]                   ; =0x11f6fe
+  0x0ec12e  add     r3, pc                          
+  0x0ec130  str     r3, [sp, #0x30]                 
+  0x0ec132  ldr     r2, [sp, #0xc]                  
+  0x0ec134  mov     r1, fp                          
+  0x0ec136  ldr     r3, [r5, #8]                    
+  0x0ec138  lsl.w   sb, r2, #4                      
+  0x0ec13c  add.w   r4, r3, sb                      
+  0x0ec140  mov     r0, r4                          
+  0x0ec142  blx     #0xba750                           ; -> _ZNK9rapidjson12GenericValueINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAllo
+  0x0ec146  cbnz    r0, #0xec16a                    
+  0x0ec148  ldr     r3, [pc, #0x2f8]                   ; =0x2ec8
+  0x0ec14a  mov.w   r5, #-1                         
+  0x0ec14e  ldr     r4, [r6, r3]                    
+  0x0ec150  ldr     r0, [sp, #0x40]                 
+  0x0ec152  subs    r0, #0xc                        
+  0x0ec154  cmp     r0, r4                          
+  0x0ec156  bne.w   #0xec36a                        
+  0x0ec15a  ldr     r0, [sp, #0x3c]                 
+  0x0ec15c  subs    r0, #0xc                        
+  0x0ec15e  cmp     r0, r4                          
+  0x0ec160  beq     #0xec07c                        
+  0x0ec162  add     r1, sp, #0x38                   
+  0x0ec164  bl      #0xe3e24                        
+  0x0ec168  b       #0xec07c                        
+  0x0ec16a  ldr     r1, [sp, #0xc]                  
+  0x0ec16c  mov     r0, r5                          
+  0x0ec16e  blx     #0xbc108                           ; -> _ZN9rapidjson12GenericValueINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAlloc
+  0x0ec172  mov     r1, fp                          
+  0x0ec174  blx     #0xb4560                           ; -> _ZN9rapidjson12GenericValueINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAlloc
+  0x0ec178  ldrh    r2, [r0, #0xe]                  
+  0x0ec17a  lsls    r3, r2, #0x15                   
+  0x0ec17c  bpl     #0xec148                        
+  0x0ec17e  ldr     r2, [sp, #0xc]                  
+  0x0ec180  cmp     r7, r2                          
+  0x0ec182  bls     #0xec278                        
+  0x0ec184  mov     r0, r4                          
+  0x0ec186  mov     r1, fp                          
+  0x0ec188  blx     #0xb4560                           ; -> _ZN9rapidjson12GenericValueINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAlloc
+  0x0ec18c  ldrh    r3, [r0, #0xe]                  
+  0x0ec18e  lsls    r7, r3, #0x15                   
+  0x0ec190  bpl.w   #0xec3a2                        
+  0x0ec194  lsls    r4, r3, #0x13                   
+  0x0ec196  ite     pl                              
+  0x0ec198  ldrpl   r4, [r0, #8]                    
+  0x0ec19a  movmi   r4, r0                          
+  0x0ec19c  mov     r0, r4                          
+  0x0ec19e  blx     #0xba6b8                           ; -> strlen
+  0x0ec1a2  ldr     r3, [pc, #0x2a0]                   ; =0x2ec8
+  0x0ec1a4  mov     r2, r0                          
+  0x0ec1a6  mov     r1, r4                          
+  0x0ec1a8  ldr     r0, [sp, #0x18]                 
+  0x0ec1aa  ldr     r4, [r6, r3]                    
+  0x0ec1ac  blx     #0xb53c8                           ; -> _ZNSs6assignEPKcj
+  0x0ec1b0  ldrh    r3, [r5, #0xe]                  
+  0x0ec1b2  cmp     r3, #4                          
+  0x0ec1b4  bne.w   #0xec3a6                        
+  0x0ec1b8  ldr     r3, [r5]                        
+  0x0ec1ba  ldr     r2, [sp, #0xc]                  
+  0x0ec1bc  cmp     r2, r3                          
+  0x0ec1be  bhs     #0xec278                        
+  0x0ec1c0  ldr     r3, [r5, #8]                    
+  0x0ec1c2  ldr     r1, [sp, #0x10]                 
+  0x0ec1c4  add     sb, r3                          
+  0x0ec1c6  mov     r0, sb                          
+  0x0ec1c8  blx     #0xba750                           ; -> _ZNK9rapidjson12GenericValueINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAllo
+  0x0ec1cc  cmp     r0, #0                          
+  0x0ec1ce  beq     #0xec148                        
+  0x0ec1d0  ldr     r1, [sp, #0xc]                  
+  0x0ec1d2  mov     r0, r5                          
+  0x0ec1d4  blx     #0xbc108                           ; -> _ZN9rapidjson12GenericValueINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAlloc
+  0x0ec1d8  ldr     r1, [sp, #0x10]                 
+  0x0ec1da  blx     #0xb4560                           ; -> _ZN9rapidjson12GenericValueINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAlloc
+  0x0ec1de  ldrh    r3, [r0, #0xe]                  
+  0x0ec1e0  lsls    r1, r3, #0x15                   
+  0x0ec1e2  bpl     #0xec148                        
+  0x0ec1e4  mov     r0, sb                          
+  0x0ec1e6  ldr     r1, [sp, #0x10]                 
+  0x0ec1e8  blx     #0xb4560                           ; -> _ZN9rapidjson12GenericValueINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAlloc
+  0x0ec1ec  ldrh    r3, [r0, #0xe]                  
+  0x0ec1ee  lsls    r2, r3, #0x15                   
+  0x0ec1f0  bpl.w   #0xec3a2                        
+  0x0ec1f4  lsls    r3, r3, #0x13                   
+  0x0ec1f6  ite     pl                              
+  0x0ec1f8  ldrpl   r4, [r0, #8]                    
+  0x0ec1fa  movmi   r4, r0                          
+  0x0ec1fc  mov     r0, r4                          
+  0x0ec1fe  blx     #0xba6b8                           ; -> strlen
+  0x0ec202  ldr     r3, [pc, #0x240]                   ; =0x2ec8
+  0x0ec204  mov     r2, r0                          
+  0x0ec206  mov     r1, r4                          
+  0x0ec208  mov     r0, sl                          
+  0x0ec20a  ldr     r4, [r6, r3]                    
+  0x0ec20c  blx     #0xb53c8                           ; -> _ZNSs6assignEPKcj
+  0x0ec210  ldr     r3, [pc, #0x230]                   ; =0x2ec8
+  0x0ec212  mov     r0, sl                          
+  0x0ec214  ldr     r1, [sp, #0x24]                 
+  0x0ec216  ldr     r4, [r6, r3]                    
+  0x0ec218  blx     #0xb47d4                           ; -> _ZNKSs7compareEPKc
+  0x0ec21c  cbnz    r0, #0xec27c                    
+  0x0ec21e  ldr     r3, [sp, #0x20]                 
+  0x0ec220  rsb.w   r2, r3, #3                      
+  0x0ec224  ldr     r3, [pc, #0x21c]                   ; =0x2ec8
+  0x0ec226  str     r2, [r8, #-0x4]                 
+  0x0ec22a  ldr     r1, [sp, #0x18]                 
+  0x0ec22c  ldr     r0, [sp, #0x14]                 
+  0x0ec22e  ldr     r4, [r6, r3]                    
+  0x0ec230  blx     #0xb6090                           ; -> _ZNSsC1ERKSs
+  0x0ec234  add.w   r2, r8, #4                      
+  0x0ec238  mov     r1, r8                          
+  0x0ec23a  ldr     r0, [sp, #0x14]                 
+  0x0ec23c  blx     #0xb86ec                           ; -> _Z16GetIndexFromAddrSsRiS_
+  0x0ec240  ldr     r3, [pc, #0x200]                   ; =0x2ec8
+  0x0ec242  mov     sb, r0                          
+  0x0ec244  ldr     r0, [sp, #0x44]                 
+  0x0ec246  ldr     r4, [r6, r3]                    
+  0x0ec248  subs    r0, #0xc                        
+  0x0ec24a  cmp     r0, r4                          
+  0x0ec24c  bne     #0xec2b6                        
+  0x0ec24e  cmp.w   sb, #-1                         
+  0x0ec252  beq     #0xec292                        
+  0x0ec254  ldr     r2, [sp, #0xc]                  
+  0x0ec256  ldr     r3, [sp, #0x1c]                 
+  0x0ec258  adds    r2, #1                          
+  0x0ec25a  cmp     r2, r3                          
+  0x0ec25c  str     r2, [sp, #0xc]                  
+  0x0ec25e  beq     #0xec2f4                        
+  0x0ec260  ldrh    r3, [r5, #0xe]                  
+  0x0ec262  cmp     r3, #4                          
+  0x0ec264  bne.w   #0xec3a6                        
+  0x0ec268  ldr     r3, [r5]                        
+  0x0ec26a  add.w   r8, r8, #0x18                   
+  0x0ec26e  ldr     r2, [sp, #0xc]                  
+  0x0ec270  mov     r7, r3                          
+  0x0ec272  cmp     r2, r3                          
+  0x0ec274  blo.w   #0xec132                        
+  0x0ec278  bl      #0xbcc28                        
+  0x0ec27c  ldr     r3, [pc, #0x1c4]                   ; =0x2ec8
+  0x0ec27e  mov     r0, sl                          
+  0x0ec280  ldr     r1, [sp, #0x30]                 
+  0x0ec282  ldr     r4, [r6, r3]                    
+  0x0ec284  blx     #0xb47d4                           ; -> _ZNKSs7compareEPKc
+  0x0ec288  cbnz    r0, #0xec2be                    
+  0x0ec28a  ldr     r3, [sp, #0x20]                 
+  0x0ec28c  rsb.w   r2, r3, #4                      
+  0x0ec290  b       #0xec224                        
+  0x0ec292  blx     #0xb4a54                           ; -> _ZN6spdlog11logTerminal8InstanceEv
+  0x0ec296  ldr     r0, [pc, #0x1b0]                   ; =0x11f59a
+  0x0ec298  movs    r3, #2                          
+  0x0ec29a  ldr     r1, [sp, #0x14]                 
+  0x0ec29c  ldr     r7, [sp, #0x3c]                 
+  0x0ec29e  add     r0, pc                          
+  0x0ec2a0  ldr     r2, [sp, #0x34]                 
+  0x0ec2a2  str     r1, [sp, #4]                    
+  0x0ec2a4  movw    r1, #0x1266                     
+  0x0ec2a8  str     r0, [sp]                        
+  0x0ec2aa  mvn     r0, #0xf                        
+  0x0ec2ae  str     r7, [sp, #0x44]                 
+  0x0ec2b0  blx     #0xb3d7c                           ; -> _ZN6spdlog11logTerminal8basicLogIIPKcEEEviiS3_NS_5level10level_enumES3_DpOT_
+  0x0ec2b4  b       #0xec254                        
+  0x0ec2b6  add     r1, sp, #0x38                   
+  0x0ec2b8  bl      #0xe3e24                        
+  0x0ec2bc  b       #0xec24e                        
+  0x0ec2be  ldr     r1, [pc, #0x18c]                   ; =0x11f56c
+  0x0ec2c0  mov     r0, sl                          
+  0x0ec2c2  ldr     r3, [pc, #0x180]                   ; =0x2ec8
+  0x0ec2c4  add     r1, pc                          
+  0x0ec2c6  ldr     r4, [r6, r3]                    
+  0x0ec2c8  blx     #0xb47d4                           ; -> _ZNKSs7compareEPKc
+  0x0ec2cc  cbnz    r0, #0xec2d6                    
+  0x0ec2ce  ldr     r3, [sp, #0x20]                 
+  0x0ec2d0  rsb.w   r2, r3, #5                      
+  0x0ec2d4  b       #0xec224                        
+  0x0ec2d6  ldr     r1, [pc, #0x178]                   ; =0x12d34c
+  0x0ec2d8  mov     r0, sl                          
+  0x0ec2da  ldr     r3, [pc, #0x168]                   ; =0x2ec8
+  0x0ec2dc  add     r1, pc                          
+  0x0ec2de  ldr     r4, [r6, r3]                    
+  0x0ec2e0  blx     #0xb47d4                           ; -> _ZNKSs7compareEPKc
+  0x0ec2e4  cmp     r0, #0                          
+  0x0ec2e6  bne     #0xec352                        
+  0x0ec2e8  ldr     r3, [sp, #0x20]                 
+  0x0ec2ea  rsb.w   r2, r3, #6                      
+  0x0ec2ee  b       #0xec224                        
+  0x0ec2f0  ldr     r3, [pc, #0x150]                   ; =0x2ec8
+  0x0ec2f2  ldr     r4, [r6, r3]                    
+  0x0ec2f4  blx     #0xb4a54                           ; -> _ZN6spdlog11logTerminal8InstanceEv
+  0x0ec2f8  ldr     r2, [pc, #0x158]                   ; =0x11c0ee
+  0x0ec2fa  movs    r3, #2                          
+  0x0ec2fc  ldr     r5, [pc, #0x158]                   ; =0x11f59c
+  0x0ec2fe  movw    r1, #0x126c                     
+  0x0ec302  mvn     r0, #0xf                        
+  0x0ec306  add     r2, pc                             ; => "}."
+  0x0ec308  add     r5, pc                          
+  0x0ec30a  add.w   r2, r2, #0xb20                  
+  0x0ec30e  str     r5, [sp]                        
+  0x0ec310  blx     #0xba8fc                           ; -> _ZN6spdlog11logTerminal8basicLogIIEEEviiPKcNS_5level10level_enumES3_DpOT_
+  0x0ec314  ldr     r3, [pc, #0x144]                   ; =0x3660
+  0x0ec316  movs    r2, #1                          
+  0x0ec318  ldr     r7, [r6, r3]                    
+  0x0ec31a  ldr     r3, [sp, #0x1c]                 
+  0x0ec31c  str     r2, [r7]                        
+  0x0ec31e  cbz     r3, #0xec34a                    
+  0x0ec320  ldr     r1, [sp, #0x1c]                 
+  0x0ec322  movs    r5, #0                          
+  0x0ec324  ldr     r3, [pc, #0x104]                   ; =0x2e98
+  0x0ec326  lsl.w   r8, r1, #5                      
+  0x0ec32a  ldr     r3, [r6, r3]                    
+  0x0ec32c  sub.w   r8, r8, r1, lsl #3              
+  0x0ec330  str     r3, [sp, #0x28]                 
+  0x0ec332  ldr     r3, [sp, #0x28]                 
+  0x0ec334  movw    r2, #0xd090                     
+  0x0ec338  movt    r2, #3                          
+  0x0ec33c  ldr     r0, [sp, #0x2c]                 
+  0x0ec33e  adds    r1, r3, r5                      
+  0x0ec340  blx     #0xb4868                           ; -> _ZN14DataSubProcess7readSDOEPS_R8_SDOInfoi
+  0x0ec344  adds    r5, #0x18                       
+  0x0ec346  cmp     r5, r8                          
+  0x0ec348  bne     #0xec332                        
+  0x0ec34a  movs    r3, #3                          
+  0x0ec34c  movs    r5, #0                          
+  0x0ec34e  str     r3, [r7]                        
+  0x0ec350  b       #0xec150                        
+  0x0ec352  ldr     r1, [pc, #0x10c]                   ; =0x12d300
+  0x0ec354  mov     r0, sl                          
+  0x0ec356  ldr     r3, [pc, #0xec]                    ; =0x2ec8
+  0x0ec358  add     r1, pc                          
+  0x0ec35a  ldr     r4, [r6, r3]                    
+  0x0ec35c  blx     #0xb47d4                           ; -> _ZNKSs7compareEPKc
+  0x0ec360  cbnz    r0, #0xec372                    
+  0x0ec362  ldr     r3, [sp, #0x20]                 
+  0x0ec364  rsb.w   r2, r3, #7                      
+  0x0ec368  b       #0xec224                        
+  0x0ec36a  add     r1, sp, #0x38                   
+  0x0ec36c  bl      #0xe3e24                        
+  0x0ec370  b       #0xec15a                        
+  0x0ec372  ldr     r1, [pc, #0xf0]                    ; =0x11f4bc
+  0x0ec374  mov     r0, sl                          
+  0x0ec376  ldr     r3, [pc, #0xcc]                    ; =0x2ec8
+  0x0ec378  add     r1, pc                          
+  0x0ec37a  ldr     r4, [r6, r3]                    
+  0x0ec37c  blx     #0xb47d4                           ; -> _ZNKSs7compareEPKc
+  0x0ec380  cbnz    r0, #0xec38a                    
+  0x0ec382  ldr     r3, [sp, #0x20]                 
+  0x0ec384  rsb.w   r2, r3, #8                      
+  0x0ec388  b       #0xec224                        
+  0x0ec38a  ldr     r0, [sp, #0xc]                  
+  0x0ec38c  movs    r1, #0                          
+  0x0ec38e  ldr     r3, [pc, #0xb4]                    ; =0x2ec8
+  0x0ec390  mov.w   r5, #-1                         
+  0x0ec394  lsls    r2, r0, #5                      
+  0x0ec396  sub.w   r7, r2, r0, lsl #3              
+  0x0ec39a  ldr     r2, [sp, #0x28]                 
+  0x0ec39c  str     r1, [r2, r7]                    
+  0x0ec39e  ldr     r4, [r6, r3]                    
+  0x0ec3a0  b       #0xec150                        
+  0x0ec3a2  bl      #0xe3d40                        
+  0x0ec3a6  ldr     r3, [pc, #0xc0]                    ; =0x118d5c
+  0x0ec3a8  movw    r2, #0x5d9                      
+  0x0ec3ac  ldr     r1, [pc, #0xbc]                    ; =0x11d832
+  0x0ec3ae  ldr     r0, [pc, #0xc0]                    ; =0x11d8ac
+  0x0ec3b0  add     r3, pc                             ; => "cator_"
+  0x0ec3b2  add     r1, pc                          
+  0x0ec3b4  add.w   r3, r3, #0x710                  
+  0x0ec3b8  add     r0, pc                          
+  0x0ec3ba  blx     #0xb7e04                           ; -> __assert_fail
+  0x0ec3be  ldr     r0, [sp, #0x40]                 
+  0x0ec3c0  subs    r0, #0xc                        
+  0x0ec3c2  cmp     r0, r4                          
+  0x0ec3c4  beq     #0xec3cc                        
+  0x0ec3c6  add     r1, sp, #0x38                   
+  0x0ec3c8  bl      #0xe3e24                        
+  0x0ec3cc  ldr     r0, [sp, #0x3c]                 
+  0x0ec3ce  subs    r0, #0xc                        
+  0x0ec3d0  cmp     r0, r4                          
+  0x0ec3d2  beq     #0xec3da                        
+  0x0ec3d4  add     r1, sp, #0x38                   
+  0x0ec3d6  bl      #0xe3e24                        
+  0x0ec3da  blx     #0xb8a64                           ; -> __cxa_end_cleanup
+  0x0ec3de  ldr     r3, [pc, #0x64]                    ; =0x2ec8
+  0x0ec3e0  mov     r5, r0                          
+  0x0ec3e2  ldr     r0, [sp, #0x44]                 
+  0x0ec3e4  mov     r7, r1                          
+  0x0ec3e6  ldr     r4, [r6, r3]                    
+  0x0ec3e8  subs    r0, #0xc                        
+  0x0ec3ea  cmp     r0, r4                          
+  0x0ec3ec  beq     #0xec3f4                        
+  0x0ec3ee  add     r1, sp, #0x38                   
+  0x0ec3f0  bl      #0xe3e24                        
+  0x0ec3f4  mov     r0, r5                          
+  0x0ec3f6  mov     r1, r7                          
+  0x0ec3f8  cmp     r1, #1                          
+  0x0ec3fa  bne     #0xec3be                        
+  0x0ec3fc  mov.w   r5, #-1                         
+  0x0ec400  blx     #0xb54bc                           ; -> __cxa_begin_catch
+  0x0ec404  blx     #0xbaf40                           ; -> __cxa_end_catch
+  0x0ec408  b       #0xec150                        
+  0x0ec40a  b       #0xec3f8                        
+  0x0ec40c  ldr     r3, [pc, #0x34]                    ; =0x2ec8
+  0x0ec40e  ldr     r4, [r6, r3]                    
+  0x0ec410  b       #0xec3cc                        
+  0x0ec412  nop                                     
+  0x0ec414  b       #0xec854                        
+  0x0ec416  movs    r1, r2                          
+  0x0ec418  stm     r3!, {r1, r3, r4, r7}           
+  0x0ec41a  movs    r1, r2                          

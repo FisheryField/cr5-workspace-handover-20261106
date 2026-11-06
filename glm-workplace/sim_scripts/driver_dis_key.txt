@@ -1,0 +1,244 @@
+
+================ SendJointMovJCommands (line 80) ================ 82           0 LOAD_FAST                0 (self)
+              2 LOAD_ATTR                0 (CONNECTED)
+              4 POP_JUMP_IF_TRUE         9 (to 18)
+
+ 83           6 LOAD_GLOBAL              1 (UpdateStatus)
+              8 LOAD_GLOBAL              2 (ROBOTCOM_NOT_CONNECTED)
+             10 CALL_FUNCTION            1
+             12 POP_TOP
+
+ 84          14 LOAD_CONST               1 (False)
+             16 RETURN_VALUE
+
+ 86     >>   18 LOAD_GLOBAL              3 (print)
+             20 LOAD_CONST               2 ('Enabling Robot..')
+             22 CALL_FUNCTION            1
+             24 POP_TOP
+
+ 87          26 SETUP_FINALLY            7 (to 42)
+
+ 88          28 LOAD_FAST                0 (self)
+             30 LOAD_ATTR                4 (robot)
+             32 LOAD_METHOD              5 (EnableRobot)
+             34 CALL_METHOD              0
+             36 POP_TOP
+             38 POP_BLOCK
+             40 JUMP_FORWARD            12 (to 66)
+
+ 89     >>   42 POP_TOP
+             44 POP_TOP
+             46 POP_TOP
+
+ 90          48 LOAD_GLOBAL              6 (print_message)
+             50 LOAD_CONST               3 ('Unable to enable the robot. Is the robot already connected?')
+             52 CALL_FUNCTION            1
+             54 POP_TOP
+
+ 91          56 LOAD_GLOBAL              7 (quit)
+             58 LOAD_CONST               4 (0)
+             60 CALL_FUNCTION            1
+             62 POP_TOP
+             64 POP_EXCEPT
+
+ 93     >>   66 LOAD_GLOBAL              3 (print)
+             68 LOAD_CONST               5 ('Start to MoveJoint..')
+             70 CALL_FUNCTION            1
+             72 POP_TOP
+
+ 94          74 LOAD_FAST                0 (self)
+             76 LOAD_ATTR                4 (robot)
+             78 LOAD_METHOD              8 (JointMovJ)
+             80 LOAD_FAST                1 (values)
+             82 LOAD_CONST               4 (0)
+             84 BINARY_SUBSCR
+             86 LOAD_FAST                1 (values)
+             88 LOAD_CONST               6 (1)
+             90 BINARY_SUBSCR
+             92 LOAD_FAST                1 (values)
+             94 LOAD_CONST               7 (2)
+             96 BINARY_SUBSCR
+             98 LOAD_FAST                1 (values)
+            100 LOAD_CONST               8 (3)
+            102 BINARY_SUBSCR
+            104 LOAD_FAST                1 (values)
+            106 LOAD_CONST               9 (4)
+            108 BINARY_SUBSCR
+            110 LOAD_FAST                1 (values)
+            112 LOAD_CONST              10 (5)
+            114 BINARY_SUBSCR
+            116 CALL_METHOD              6
+            118 POP_TOP
+            120 LOAD_CONST               0 (None)
+            122 RETURN_VALUE
+
+================ UpdateStatus (line 260) ================269           0 LOAD_FAST                0 (set_status)
+              2 LOAD_CONST               1 (None)
+              4 IS_OP                    1
+              6 POP_JUMP_IF_FALSE        6 (to 12)
+
+270           8 LOAD_FAST                0 (set_status)
+             10 STORE_GLOBAL             0 (STATUS)
+
+272     >>   12 LOAD_GLOBAL              0 (STATUS)
+             14 LOAD_GLOBAL              1 (ROBOTCOM_CONNECTION_PROBLEMS)
+             16 COMPARE_OP               2 (==)
+             18 POP_JUMP_IF_FALSE       16 (to 32)
+
+273          20 LOAD_GLOBAL              2 (print_message)
+             22 LOAD_CONST               2 ('Connection problems')
+             24 CALL_FUNCTION            1
+             26 POP_TOP
+             28 LOAD_CONST               1 (None)
+             30 RETURN_VALUE
+
+274     >>   32 LOAD_GLOBAL              0 (STATUS)
+             34 LOAD_GLOBAL              3 (ROBOTCOM_DISCONNECTED)
+             36 COMPARE_OP               2 (==)
+             38 POP_JUMP_IF_FALSE       26 (to 52)
+
+275          40 LOAD_GLOBAL              2 (print_message)
+             42 LOAD_CONST               3 ('Disconnected')
+             44 CALL_FUNCTION            1
+             46 POP_TOP
+             48 LOAD_CONST               1 (None)
+             50 RETURN_VALUE
+
+276     >>   52 LOAD_GLOBAL              0 (STATUS)
+             54 LOAD_GLOBAL              4 (ROBOTCOM_NOT_CONNECTED)
+             56 COMPARE_OP               2 (==)
+             58 POP_JUMP_IF_FALSE       36 (to 72)
+
+277          60 LOAD_GLOBAL              2 (print_message)
+             62 LOAD_CONST               4 ('Not connected')
+             64 CALL_FUNCTION            1
+             66 POP_TOP
+             68 LOAD_CONST               1 (None)
+             70 RETURN_VALUE
+
+278     >>   72 LOAD_GLOBAL              0 (STATUS)
+             74 LOAD_GLOBAL              5 (ROBOTCOM_READY)
+             76 COMPARE_OP               2 (==)
+             78 POP_JUMP_IF_FALSE       46 (to 92)
+
+279          80 LOAD_GLOBAL              2 (print_message)
+             82 LOAD_CONST               5 ('Ready')
+             84 CALL_FUNCTION            1
+             86 POP_TOP
+             88 LOAD_CONST               1 (None)
+             90 RETURN_VALUE
+
+280     >>   92 LOAD_GLOBAL              0 (STATUS)
+             94 LOAD_GLOBAL              6 (ROBOTCOM_WORKING)
+             96 COMPARE_OP               2 (==)
+             98 POP_JUMP_IF_FALSE       56 (to 112)
+
+281         100 LOAD_GLOBAL              2 (print_message)
+            102 LOAD_CONST               6 ('Working...')
+            104 CALL_FUNCTION            1
+            106 POP_TOP
+            108 LOAD_CONST               1 (None)
+            110 RETURN_VALUE
+
+282     >>  112 LOAD_GLOBAL              0 (STATUS)
+            114 LOAD_GLOBAL              7 (ROBOTCOM_WAITING)
+            116 COMPARE_OP               2 (==)
+            118 POP_JUMP_IF_FALSE       66 (to 132)
+
+283         120 LOAD_GLOBAL              2 (print_message)
+            122 LOAD_CONST               7 ('Waiting...')
+            124 CALL_FUNCTION            1
+            126 POP_TOP
+            128 LOAD_CONST               1 (None)
+            130 RETURN_VALUE
+
+285     >>  132 LOAD_GLOBAL              2 (print_message)
+            134 LOAD_CONST               8 ('Unknown status')
+            136 CALL_FUNCTION            1
+            138 POP_TOP
+            140 LOAD_CONST               1 (None)
+            142 RETURN_VALUE
+
+================ connect (line 46) ================ 49           0 LOAD_FAST                0 (self)
+              2 LOAD_METHOD              0 (disconnect)
+              4 CALL_METHOD              0
+              6 POP_TOP
+
+ 50           8 LOAD_GLOBAL              1 (print_message)
+             10 LOAD_CONST               1 ('Connecting to robot %s:%i')
+             12 LOAD_FAST                1 (ip)
+             14 LOAD_FAST                2 (port)
+             16 BUILD_TUPLE              2
+             18 BINARY_MODULO
+             20 CALL_FUNCTION            1
+             22 POP_TOP
+
+ 52          24 LOAD_GLOBAL              2 (DobotApiExtendFromRoboDK)
+             26 LOAD_FAST                1 (ip)
+             28 LOAD_FAST                2 (port)
+             30 CALL_FUNCTION            2
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               3 (robot)
+
+ 53          36 LOAD_GLOBAL              4 (UpdateStatus)
+             38 LOAD_GLOBAL              5 (ROBOTCOM_WORKING)
+             40 CALL_FUNCTION            1
+             42 POP_TOP
+
+ 54          44 LOAD_CONST               2 (True)
+             46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               6 (CONNECTED)
+
+ 55          50 NOP
+
+ 71          52 LOAD_CONST               2 (True)
+             54 RETURN_VALUE
+
+================ disconnect (line 36) ================ 38           0 LOAD_CONST               1 (False)
+              2 LOAD_FAST                0 (self)
+              4 STORE_ATTR               0 (CONNECTED)
+
+ 39           6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                1 (sock)
+             10 POP_JUMP_IF_FALSE       25 (to 50)
+
+ 40          12 SETUP_FINALLY            8 (to 30)
+
+ 41          14 LOAD_FAST                0 (self)
+             16 LOAD_ATTR                2 (robot)
+             18 LOAD_METHOD              3 (close)
+             20 CALL_METHOD              0
+             22 POP_TOP
+             24 POP_BLOCK
+
+ 44          26 LOAD_CONST               2 (True)
+             28 RETURN_VALUE
+
+ 42     >>   30 DUP_TOP
+             32 LOAD_GLOBAL              4 (OSError)
+             34 JUMP_IF_NOT_EXC_MATCH    24 (to 48)
+             36 POP_TOP
+             38 POP_TOP
+             40 POP_TOP
+
+ 43          42 POP_EXCEPT
+             44 LOAD_CONST               1 (False)
+             46 RETURN_VALUE
+
+ 42     >>   48 RERAISE                  0
+
+ 44     >>   50 LOAD_CONST               2 (True)
+             52 RETURN_VALUE
+
+================ SendCommand (line 141) ================142           0 LOAD_GLOBAL              0 (self)
+              2 LOAD_ATTR                1 (robot)
+              4 LOAD_METHOD              2 (send_data)
+              6 LOAD_FAST                0 (cmd_str)
+              8 CALL_METHOD              1
+             10 POP_TOP
+
+143          12 LOAD_GLOBAL              0 (self)
+             14 LOAD_ATTR                1 (robot)
+             16 LOAD_METHOD              3 (wait_reply)
+             18 CALL_METHOD              0
+             20 RETURN_VALUE

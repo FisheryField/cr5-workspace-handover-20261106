@@ -1,0 +1,42 @@
+{
+  "version": "v15.19-20261103",
+  "station": "新建工作站 (1)",
+  "robot": "Dobot CR5",
+  "backup_station": "本体更新前备份_20261103_174941",
+  "macro_backup": "TCP真实运动_P2P版_替换前_20261103_175039",
+  "source_sha256": "468d378c8eaba69942f1facfd453839442c6925e15ffbc606073e95736069a1c",
+  "trajectory_sha256": "660b303af02f6a207fcb30a59401eabcc9eab594d95c738e5cc6ea1b9a84c01a",
+  "actual_joints_before": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "max_fk_position_difference_mm": 8.405309325523812e-07,
+  "max_fk_angle_difference_deg": 1.7075472925031877e-06,
+  "max_collision_mesh_fk_difference_mm": 0.0,
+  "tcp": [
+    0.0,
+    0.0,
+    130.0,
+    0.0,
+    -0.0,
+    0.0
+  ],
+  "original_mode": 1,
+  "mode_after_install": 1,
+  "connected": false,
+  "hardware_motion_sent": false,
+  "station_file_saved": false,
+  "final_precheck": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\traj16_v1519_installed_20261103_175113\\result.json",
+  "final_precheck_result": "PASS",
+  "final_mode": 6,
+  "gui_launched": true,
+  "gui_launch_result": 0,
+  "ready_strokes": [
+    9,
+    11
+  ]
+}

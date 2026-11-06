@@ -1,0 +1,91 @@
+=== /dobot/bin/etc/version.conf ===
+010000
+
+=== /mToolServer/control/version.json ===
+{"version":"2.0.0sv2023d1128h2149"}
+
+=== /mToolServer/control/supportRules.json ===
+{
+	"rules": [
+		{
+			"version": "3.5.2.",
+			"shell": "352run.sh"
+		},
+		{
+			"version": "3.5.3.",
+			"shell": "353run.sh"
+		},
+		{
+			"version": "3.5.4.",
+			"shell": "353run.sh"
+		},
+		{
+			"version": "3.5.5.",
+			"shell": "353run.sh"
+		},
+		{
+			"version": "3.5.6.",
+			"shell": "353run.sh"
+		},
+		{
+			"version": "3.5.7.",
+			"shell": "353run.sh"
+		},
+		{
+			"version": "4.3.1.",
+			"shell": "431run.sh"
+		},
+		{
+			"version": "4.4.0.",
+			"shell": "440run.sh"
+		},
+		{
+			"version": "4.4.1.",
+			"shell": "440run.sh"
+		},
+		{
+			"version": "4.5.0.",
+			"shell": "450run.sh"
+		}
+	]
+}
+=== 353run.sh (3.5.6 升级脚本) ===
+dos2unix /tmp/tUpdate/control/toolUtils.sh
+chmod +x /tmp/tUpdate/control/toolUtils.sh
+source /tmp/tUpdate/control/toolUtils.sh
+execute_command "pwd"
+
+updateFile="/tmp/tUpdate/control/bin.tar.gz"
+
+memsize=$(free | awk 'NR==2{print $2}')
+memsize=$((memsize))
+if [ $memsize -gt 1025000 ]; then
+    echo "20480" > ${runResult_file}
+    echo "not enough memory" >> ${controlRunProcess_file}
+    exit 1
+else 
+    if [ -f ${updateFile} ]; then   
+        echo "the memory is enough" >> ${controlRunProcess_file}
+        if [ -f "/home/ftp/PlcLogic/Recipe/SavePos.txt"]; then
+            rm -rf /home/ftp/PlcLogic/Recipe/SavePos.txt
+        fi
+        execute_command "mv ${control_base_path}/bin.tar.gz /tmp/"
+        execute_command "mv ${control_base_path}/afterUpdate.sh /tmp/"
+        execute_command "chmod +x /tmp/afterUpdate.sh"
+        execute_command "dos2unix /tmp/afterUpdate.sh"
+        /tmp/afterUpdate.sh >>${controlRunProcess_file} 2>&1
+        if [ $? -eq 0 ]; then
+            echo "run afterUpdate.sh successfully" >> ${controlRunProcess_file}
+        else 
+            echo "20482" > ${runResult_file}
+            echo "failed to run afterUpdate.sh" >> ${controlRunProcess_file}
+			exit 1
+        fi
+        execute_command "sync"
+        exit 0
+    else 
+        echo "20481" > ${runResult_file}
+        echo "failed to find ${updateFile}" >> ${controlRunProcess_file}
+        exit 1     
+    fi
+fi

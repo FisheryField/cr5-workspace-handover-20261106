@@ -1,0 +1,3 @@
+Warning: Permanently added '192.168.5.1' (ECDSA) to the list of known hosts.
+CONNECTED_OK
+uid=0(root) gid=0(root) groups=0(root)

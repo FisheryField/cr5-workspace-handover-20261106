@@ -1,0 +1,30 @@
+{
+  "status": "UNVERIFIED CANDIDATE - NOT FLASH TESTED",
+  "source": "C:\\Users\\FisheryField\\Desktop\\3.1.5.hex",
+  "source_sha256": "4996320d0deaf00b505fb3172780e7d82c4cedfa94bb955b7364380281b4bc21",
+  "reference": "D:\\software\\DobotStudio\\V1.3.4-stable\\V1.3.4-stable\\upgradeFiles\\3.5.4\\3.5.4.1\\files\\CR5_Servo_ST_FOE_V3.2.D.8.bin",
+  "reference_sha256": "644fe9361f69ff8d4aaf933a56351c4e55f1b9bc946657a1f3fa55c80366dbe7",
+  "output": "C:\\Users\\FisheryField\\Desktop\\3.1.5_candidate_upgrade\\CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin",
+  "output_sha256": "36fd7a8e103aca025953c3eb9c8dbc63da23f356bd35a7cb2db5381589017cd1",
+  "package_bytes": 328892,
+  "payload_bytes": 328860,
+  "start_address": "0x8010000",
+  "end_address_exclusive": "0x806049c",
+  "payload_md5": "f4f8d656fc02488bd946112c6130d068",
+  "header_hex": "d4c3b2a1f4f8d656fc02488bd946112c6130d0689c04050008000000ffffffff",
+  "assumptions": [
+    "Application starts at 0x08010000.",
+    "Application ends after last non-FF byte; required trailing FF padding is unknown.",
+    "Header classification value 8 and reserved bytes copied from reference; hardware compatibility is unverified."
+  ],
+  "verification": [
+    "Intel HEX record lengths and checksums passed.",
+    "Reference payload length and MD5 verified.",
+    "Output payload matches selected HEX addresses byte-for-byte.",
+    "Output header length and MD5 verified."
+  ],
+  "limitations": [
+    "No controller connection or flashing performed.",
+    "Backup feature coverage of servo firmware, bootloader and calibration is not verified."
+  ]
+}

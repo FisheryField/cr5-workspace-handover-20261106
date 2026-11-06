@@ -1,0 +1,136 @@
+--- v14k
++++ v14l
+@@ -22,5 +22,5 @@
+ _log_queue = _queue_mod.Queue()  # 后台线程日志经队列回流主线程，GUI 不冻结
+ LOG_PATH = r'D:\mydata\glm-workplace\sim_scripts\real_gui_log_p2p.txt'  # P2P版独立日志，不覆盖v13黑匣子
+-LOG_VERSION = 'v14k-20261012-1040'  # 停用长运动分瓣：假断连容忍器扛单指令收尾，去掉每瓣停顿税（MoveL细分途经点保留）
++LOG_VERSION = 'v14l-20261012-1117'  # MOVL试航开关（默认关）：短直线段可跳过MoveJ细分直发驱动直线，给v13死刑判决一次现场重审
+ # v12 黑匣子：原生崩溃时把 Python 调用栈转储到独立文件（被动，不影响逻辑）
+ # 注意：faulthandler.enable 只接受文件对象，传路径字符串会 AttributeError（v12 首版踩坑，已被 except 吞掉）
+@@ -742,9 +742,13 @@
+             end, _ = _linear_path_endpoint(start, fanuc_to_pose(*values))
+             if end is not None:
+-                # v13：单点 MoveL 同样不信任驱动 MOVL（纯J6自转也一样，关节插值=同一路径），
+-                # 改细分途经点+MoveJ 执行
+-                waypoints = _linear_waypoints(start, fanuc_to_pose(*values))
+-                if waypoints:
+-                    log('单点 MoveL 改细分执行：%d 个途经点（步长≤%.0fmm）。' % (len(waypoints), LINEAR_SUBSTEP_MM))
++                movl_trial_sp = bool(real_movl_trial_var.get()) if _movl_trial_ready() else False
++                if movl_trial_sp and norm((fanuc_to_pose(*values) * invH(_trajectory_pose(start))).Pos()) <= MOVL_TRIAL_MAX_MM:
++                    log('单点 MoveL 试航：段长≤%.0fmm，跳过细分直发驱动 MOVL。' % MOVL_TRIAL_MAX_MM)
++                else:
++                    # v13：单点 MoveL 同样不信任驱动 MOVL（纯J6自转也一样，关节插值=同一路径），
++                    # 改细分途经点+MoveJ 执行
++                    waypoints = _linear_waypoints(start, fanuc_to_pose(*values))
++                    if waypoints:
++                        log('单点 MoveL 改细分执行：%d 个途经点（步长≤%.0fmm）。' % (len(waypoints), LINEAR_SUBSTEP_MM))
+         if end is None:
+             end = _obstacle_joint_target(start, values, deviation if method=='MoveL' else None)
+@@ -831,4 +835,17 @@
+ LINEAR_SUBSTEP_MM = 20.0        # 作业面细分步长：36 途经点，TCP 直线度预期 <0.5mm
+ 
++# v14l：MOVL 试航段长上限（默认关，勾选 GUI 复选框才生效）。短于它的直线段在试航时
++# 跳过 MoveJ 细分直发驱动直线指令；长段仍走细分（首次重审范围收敛在作业面短段）。
++MOVL_TRIAL_MAX_MM = 150.0
++
++
++def _movl_trial_ready():
++    """MOVL 试航开关是否可用：GUI 变量已建（正常运行）才开；离线 verify 的 exec 命名空间
++    里没有 real_movl_trial_var（NameError），自动回 False，保证离线验证路径与试航无关。"""
++    try:
++        return isinstance(real_movl_trial_var, tk.BooleanVar)
++    except NameError:
++        return False
++
+ 
+ MOVE_SEGMENT_MAX_DEG = 64.0  # 每瓣最大关节跨度：驱动约8秒无完成回报即断连，20°/s下64°≈3秒，留足裕量
+@@ -887,4 +904,5 @@
+         return
+     _real_running = True
++    movl_trial = False  # v14l：入口预置，防异常早于赋值时 except 块二次 NameError
+     completed = 0
+     try:
+@@ -942,4 +960,5 @@
+         RDK.Command('Trace','Reset')
+         RDK.Command('Trace','On')
++        _real_movl_trial = bool(real_movl_trial_var.get()) if (single_method is None and _movl_trial_ready()) else False
+         expected = start
+         # v14k：停用长运动分瓣（split_moves 恒 False）。2026-10-12 实测日志坐实：假断连与跨度无关，
+@@ -949,4 +968,7 @@
+         # （未自然收尾/未到位）随时把本行改回 single_method is None and len(records) > 1 即可恢复。
+         split_moves = False
++        movl_trial = _real_movl_trial
++        if movl_trial:
++            log('【MOVL试航】开启：短直线段（≤%.0fmm）跳过细分途经点，直发驱动 MOVL（v13 判死后的现场重审，出断连指纹立即去勾回退）。' % MOVL_TRIAL_MAX_MM)
+         for i, step in enumerate(plan, 1):
+             for rewind in step['rewinds']:
+@@ -957,6 +979,19 @@
+             _require_joints(expected)
+             waypoints = step.get('waypoints') or []
+-            if step['method'] == 'MoveL' and not waypoints:
++            if (movl_trial and step['method'] == 'MoveL' and waypoints
++                    and norm((_trajectory_pose(step['joints']) * invH(_trajectory_pose(expected))).Pos()) <= MOVL_TRIAL_MAX_MM):
++                # v14l 试航核心：短直线段不逐跳执行细分途经点，一指令直发驱动 MOVL；
++                # 路径安全由规划层 MoveL_Test@1mm + 整段带碰撞复核背书（它们验的一直是真直线）。
++                # ⚠ 2026-10-12 11:30 实机判决：试航失败，死因升级——驱动 MOVL 无工具补偿：
++                # 停机时法兰位姿=命令TCP目标（差 5.5mm），真实尖端多探出一个工具长（159.63mm），
++                # 偏离认证直线 154.8mm 并进入障碍包络（探针 probe_movl_tool_offset.py 实证）。
++                # v13 死刑维持且定性升级：断连指纹的本源是驱动落到完全不同构型→到位永不到来。
++                # 细分途经点是关节目标（MoveJ 与工具无关），客观上绕开该驱动缺陷——勿再删。
++                # 本开关保留仅供复现实验，默认必须关。
++                log(f"P{i}：MOVL试航：直线段≤{MOVL_TRIAL_MAX_MM:.0f}mm，跳过 {len(waypoints)} 个细分途经点，直发驱动直线指令。")
++                waypoints = []
++            if step['method'] == 'MoveL' and not waypoints and not movl_trial:
+                 # 理论不可达：v13 起所有 MoveL 步都带细分途经点；不带则说明规划层契约被破坏
++                # v14l 例外：MOVL 试航开启时，短直线段允许不带途经点直发驱动 MOVL（见 _prepare_real_plan）
+                 raise RuntimeError(f"P{i}：MoveL 步缺少细分途经点，拒绝发送驱动 MOVL（已判死）。")
+             if waypoints:
+@@ -975,4 +1010,6 @@
+     except Exception as exc:
+         log(f'实机任务停止，已完成{completed}点：{type(exc).__name__}: {exc}')
++        if movl_trial and ('断连' in str(exc) or '未到位' in str(exc) or '落点偏差' in str(exc)):
++            log('【MOVL试航】检测到断连/未到位指纹，建议去勾回退（细分途经点路径不变）。')
+         try:
+             actual, velocity, mode = _controller_feedback()
+@@ -1274,6 +1311,7 @@
+                 program.MoveJ(q)
+             if step['method'] == 'MoveL' and not step.get('waypoints'):
+-                # v13 防呆：MoveL 步必须带细分途经点，否则规划层契约被破坏
+-                raise ValueError('整段碰撞复核：MoveL 步缺少细分途经点，拒绝。')
++                # v13 防呆：MoveL 步必须带细分途经点，否则规划层契约被破坏。
++                # v14l 例外：MOVL 试航步按“真直线”复核（途经点只是执行细节，1mm 带碰撞权威复核不变）。
++                log('MOVL试航步：整段碰撞复核按真直线 1mm 带碰撞复核（无途经点）。')
+             getattr(program, step['method'])(step['joints'])
+         message, matrix, status = program.InstructionListJoints(
+@@ -1641,5 +1679,5 @@
+ 
+ root = tk.Tk()
+-root.title("RoboDK - 机械臂运动控制（P2P v14k）")
++root.title("RoboDK - 机械臂运动控制（P2P v14l）")
+ root.geometry("1200x750")
+ root.resizable(True, True)
+@@ -1939,4 +1977,17 @@
+ tk.Label(frame_deviation, text="默认500：与TCP仿真/轨迹7~11验证口径一致；实机速度保持20 mm/s").pack(side=tk.LEFT, padx=8)
+ 
++# v14l：MOVL 试航开关（默认关）。v13 曾以 3 次断连指纹+pyc 反汇编判死驱动 MOVL，
++# 但那发生在假断连容忍器成熟之前；2026-10-12 实测每条 MoveJ 也在假报断连且容忍器全数扛住，
++# 故给死刑判决一次现场重审机会：勾上后短直线段（≤MOVL_TRIAL_MAX_MM）跳过 MoveJ 细分
++# 直发驱动直线指令。路径安全不变：MoveL_Test@1mm 预检+整段 1mm 带碰撞复核照旧。
++# 出断连指纹（未自然收尾/未到位）→去勾即回退，途经点路径不受影响。
++real_movl_trial_var = tk.BooleanVar(value=False)
++frame_movl_trial = tk.Frame(root)
++frame_movl_trial.pack(fill=tk.X, padx=10, pady=3)
++tk.Checkbutton(
++    frame_movl_trial, variable=real_movl_trial_var,
++    text="MOVL试航：短直线段（≤150mm）直发驱动直线指令，不走MoveJ细分（默认关，v13判死重审）"
++).pack(side=tk.LEFT)
++
+ # ---- 日志区 ----
+ frame_log = tk.LabelFrame(root, text="日志")
+@@ -1953,5 +2004,5 @@
+ log("单点：输入坐标 -> 检测可达性 -> 执行 MoveL/MoveJ")
+ log("目标关节：输入 J1~J6 -> 实机 MoveJ（不经过 TCP/Fanuc 转换和 IK）")
+-log("连续运动（P2P v14k）：MoveJ 直达优先；前视选解（换向可行性）+前视绑定执行；同位姿停顿不重选；弧碰退回 MoveL；死路分支救援+避障选解；换向碰撞自动换向（反方向坐标修复）/回绕/切分支/MoveL到场；首点种子枚举+整段重试；长运动不分瓣一指令直达（MoveL 仍细分）。")
++log("连续运动（P2P v14l）：MoveJ 直达优先；前视选解（换向可行性）+前视绑定执行；同位姿停顿不重选；弧碰退回 MoveL；死路分支救援+避障选解；换向碰撞自动换向（反方向坐标修复）/回绕/切分支/MoveL到场；首点种子枚举+整段重试；长运动不分瓣；MOVL试航开关（默认关，短直线直发驱动）。")
+ 
+ def _log_pump():

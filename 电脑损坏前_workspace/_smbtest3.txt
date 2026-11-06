@@ -1,0 +1,16 @@
+ Volume in drive \\192.168.5.1\project is project
+ Volume Serial Number is D8D9-EDC5
+
+ Directory of \\192.168.5.1\project
+
+2022/12/30  10:29    <DIR>          .
+2026/09/18  09:28    <DIR>          ..
+1975/08/21  23:35    <DIR>          logs
+2022/12/30  10:29    <DIR>          process
+2022/12/30  10:29    <DIR>          project
+2026/09/18  09:28    <DIR>          properties
+2026/09/18  15:27    <DIR>          redis
+2026/09/18  09:28    <DIR>          settings
+1976/02/19  01:18             1,554 test.lua
+               1 File(s)          1,554 bytes
+               8 Dir(s)     409,740,288 bytes free

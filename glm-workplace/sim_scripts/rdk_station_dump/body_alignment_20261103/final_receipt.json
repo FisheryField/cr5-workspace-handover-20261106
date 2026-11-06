@@ -1,0 +1,34 @@
+{
+  "station": "轨迹16_控制器本体130验证",
+  "robot": "Dobot CR5_本体与碰撞对齐130",
+  "tcp": [
+    0.0,
+    0.0,
+    130.0,
+    0.0,
+    -0.0,
+    0.0
+  ],
+  "frame": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.0,
+    0.0
+  ],
+  "base_matrix_error": 1.57882402585928e-06,
+  "max_collision_link_fk_difference_mm": 0.0,
+  "original_station": "新建工作站 (1)",
+  "original_preserved": true,
+  "trajectory_modified": false,
+  "hardware_motion": false,
+  "original_joints": [
+    -3.572142581731441e-14,
+    -9.96425164601078e-15,
+    9.842127113302013e-14,
+    -1.1463052729254741e-14,
+    1.8618440122963875e-13,
+    8.406608742461685e-13
+  ]
+}

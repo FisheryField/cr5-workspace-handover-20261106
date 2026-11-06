@@ -1,0 +1,207 @@
+=== A. /mToolServer dir ===
+total 7964
+drwxr-xr-x    4 root     root          4096 Feb 19  1976 .
+drwxr-xr-x   22 root     root          4096 Sep 24 14:23 ..
+drwxr-xr-x    2 root     root          4096 Sep 23 16:18 control
+-rw-r--r--    1 root     root         38842 Sep 22 10:53 controlRunProcess.log
+-rwxr-xr-x    1 root     root       2302802 Sep 23 16:18 mToolServer
+-rwxr-xr-x    1 root     root       1164222 Sep 23 16:18 mToolServer.log
+drwxr-xr-x    2 root     root          4096 Aug 21  1975 overTurn
+-rwxr-xr-x    1 root     root       4597495 Sep 21 16:10 tcpdump
+-rw-r--r--    1 root     root             1 Sep 22 10:52 updateRunResult.log
+
+=== B. control subdir ===
+total 96
+drwxr-xr-x    2 root     root          4096 Sep 23 16:18 .
+drwxr-xr-x    4 root     root          4096 Feb 19  1976 ..
+-rwxr-xr-x    1 root     root           968 Sep 23 16:18 352run.sh
+-rwxr-xr-x    1 root     root          1411 Sep 23 16:18 353run.sh
+-rwxr-xr-x    1 root     root           848 Sep 23 16:18 431run.sh
+-rwxr-xr-x    1 root     root           848 Sep 23 16:18 440run.sh
+-rwxr-xr-x    1 root     root          1517 Sep 23 16:18 450run.sh
+-rwxr-xr-x    1 root     root          2118 Sep 21 16:10 464run.sh
+-rwxr-xr-x    1 root     root          2030 Sep 21 16:10 470run.sh
+-rwxr-xr-x    1 root     root          1964 Sep 21 16:10 480run.sh
+-rwxr-xr-x    1 root     root         35541 Sep 23 16:18 checkFiles.sh
+-rwxr-xr-x    1 root     root           315 Sep 23 16:18 checkPO.sh
+-rwxr-xr-x    1 root     root           701 Sep 21 16:10 operatePO.sh
+-rwxr-xr-x    1 root     root           587 Sep 23 16:18 supportRules.json
+-rwxr-xr-x    1 root     root           531 Sep 23 16:18 toolUtils.sh
+-rwxr-xr-x    1 root     root            36 Sep 23 16:18 version.json
+
+=== C. mToolServer.log (tail 80, no grep filtering) ===
+    "updateType": "firmware"
+}
+
+[2026-09-23 15:42:57][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+[2026-09-23 15:42:57][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#602]request update type is start.
+[2026-09-23 15:42:57][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#651]type:firmware,file1:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin,file2:.
+[2026-09-23 15:42:57][INFO][dobot_info.cpp@createUpdateThd()#92]<--- enter this function
+[2026-09-23 15:42:57][INFO][dobot_info.cpp@createUpdateThd()#97]ready to create update thread
+[2026-09-23 15:42:57][INFO][dobot_foe.cpp@singleUpdateThdFunc()#995]<--- enter this function
+[2026-09-23 15:42:57][INFO][dobot_info.cpp@createUpdateThd()#126]setting thread affinity successfully.
+[2026-09-23 15:42:57][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#660]success create update thread.
+[2026-09-23 15:42:57][DEBUG][http_server.cpp@updateFunc_CRSingleFwAndXml()#661]return url:/update/CR/singleFwAndXml.
+[2026-09-23 15:43:00][INFO][general_tools.cpp@pkillCodesysControl()#417]run '/dobot/bin/bin/redis/redis-cli BGSAVE' successfully.
+[2026-09-23 15:43:01][INFO][general_tools.cpp@pkillCodesysControl()#435]pkill -9 codesyscontrol successfully.
+[2026-09-23 15:43:01][INFO][dobot_foe.cpp@sendRSToServoBySDO()#1229]eth0 init success.
+[2026-09-23 15:43:02][INFO][dobot_foe.cpp@sendRSToServoBySDO()#1237]slaves config read done.
+[2026-09-23 15:43:02][INFO][dobot_foe.cpp@sendRSToServoBySDO()#1246]wkc = 1, data = 1.
+[2026-09-23 15:43:04][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-23 15:43:05][INFO][dobot_foe.cpp@init()#162]Start initializing eth0.
+[2026-09-23 15:43:05][INFO][dobot_foe.cpp@SavePose()#60]create socket to save points.
+[2026-09-23 15:43:05][INFO][dobot_foe.cpp@SavePose()#76]net name: eth2.
+[2026-09-23 15:43:05][INFO][dobot_foe.cpp@SavePose()#77]ip: 192.168.5.1 .
+[2026-09-23 15:43:05][INFO][dobot_foe.cpp@SavePose()#83]local addrIP:192.168.5.1
+[2026-09-23 15:43:05][INFO][dobot_foe.cpp@SavePose()#95]connect port 30005 success.
+[2026-09-23 15:43:05][INFO][dobot_foe.cpp@SavePose()#104]date length:-1 from port 30005.
+[2026-09-23 15:43:05][INFO][dobot_foe.cpp@SavePose()#104]date length:-1 from port 30005.
+[2026-09-23 15:43:05][INFO][dobot_foe.cpp@SavePose()#104]date length:1440 from port 30005.
+[2026-09-23 15:43:05][INFO][dobot_foe.cpp@SavePose()#124]Joint1:-8.038382,Joint2:6.009984,Joint3:6.005350,Joint4:5.039896,Joint5:0.909669,Joint6:0.003921.
+[2026-09-23 15:43:05][INFO][dobot_foe.cpp@SavePose()#151]SavePos data -8.038382, 6.009984, 6.005350, 5.039896, 0.909669, 0.003921.
+[2026-09-23 15:43:05][INFO][dobot_foe.cpp@init()#168]run '/dobot/bin/bin/redis/redis-cli BGSAVE' successfully.
+[2026-09-23 15:43:08][INFO][general_tools.cpp@pkillCodesysControl()#417]run '/dobot/bin/bin/redis/redis-cli BGSAVE' successfully.
+[2026-09-23 15:43:08][INFO][general_tools.cpp@pkillCodesysControl()#435]pkill -9 codesyscontrol successfully.
+[2026-09-23 15:43:14][INFO][dobot_foe.cpp@init()#182]eth0 init success.
+[2026-09-23 15:43:14][INFO][dobot_foe.cpp@init()#190]slaves config read done.
+[2026-09-23 15:43:14][INFO][dobot_foe.cpp@init()#203]9 slaves found and configured, start to update firmware and xml.
+[2026-09-23 15:43:14][INFO][dobot_foe.cpp@init()#210]End of initialization eth0.
+[2026-09-23 15:43:14][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:8 using file:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+[2026-09-23 15:43:14][INFO][dobot_foe.cpp@updateSlaveFW()#250]change slave[8] state to init=1.
+[2026-09-23 15:43:14][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-23 15:43:15][INFO][ethercatmain.c@ecx_statecheck_new()#969]state=1,reqstate=1,isTimeout=0,rval=0x1.
+[2026-09-23 15:43:15][INFO][dobot_foe.cpp@updateSlaveFW()#273]sm0 data=0x2001800.
+[2026-09-23 15:43:15][INFO][dobot_foe.cpp@updateSlaveFW()#284]sm1 data=0x2001a30.
+[2026-09-23 15:43:15][INFO][dobot_foe.cpp@updateSlaveFW()#294]SM0 A:1800 L: 512 F:00010026.
+[2026-09-23 15:43:15][INFO][dobot_foe.cpp@updateSlaveFW()#296]SM1 A:1a30 L: 512 F:00010022.
+[2026-09-23 15:43:15][INFO][dobot_foe.cpp@updateSlaveFW()#302]change slave[8] state to boot=3.
+[2026-09-23 15:43:15][INFO][http_server.cpp@httpCallback()#1290]request : get /update/singleStatus.
+[2026-09-23 15:43:16][INFO][ethercatmain.c@ecx_statecheck_new()#969]state=3,reqstate=3,isTimeout=0,rval=0x3.
+[2026-09-23 15:43:16][INFO][dobot_foe.cpp@updateSlaveFW()#316]change slave[8] state to init=1.
+[2026-09-23 15:43:17][INFO][ethercatmain.c@ecx_statecheck_new()#969]state=1,reqstate=1,isTimeout=0,rval=0x1.
+[2026-09-23 15:43:17][INFO][dobot_foe.cpp@updateSlaveFW()#324]switch state to init successfully.
+[2026-09-23 15:43:17][INFO][dobot_foe.cpp@updateSlaveFW()#326]change slave[8] state to boot=3.
+[2026-09-23 15:43:18][INFO][ethercatmain.c@ecx_statecheck_new()#969]state=3,reqstate=3,isTimeout=0,rval=0x3.
+[2026-09-23 15:43:18][INFO][dobot_foe.cpp@updateSlaveFW()#334]switch state to boot successfully.
+[2026-09-23 15:43:18][INFO][general_tools.cpp@readSpecifyFile()#33]readSpecifyFile:/tmp/tUpdate/slave/CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin.
+[2026-09-23 15:43:18][INFO][dobot_foe.cpp@updateSlaveFW()#339]File read OK,name:CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin, 328892 bytes.
+[2026-09-23 15:43:18][INFO][dobot_foe.cpp@updateSlaveFW()#341]start FoE write....,updateFileName=CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin,filesize=328892.
+[2026-09-23 15:43:24][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+[2026-09-23 15:43:24][INFO][dobot_foe.cpp@updateSlaveFW()#369]after write file, changing slave 8 state to init.
+[2026-09-23 15:43:25][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-23 15:43:26][INFO][ethercatmain.c@ecx_statecheck_new()#969]state=3,reqstate=1,isTimeout=1,rval=0x3.
+[2026-09-23 15:43:26][WARNING][dobot_foe.cpp@updateSlaveFW()#372]failed to switch state to init, actual state=3.
+[2026-09-23 15:43:27][INFO][ethercatmain.c@ecx_statecheck_new()#969]state=1,reqstate=1,isTimeout=0,rval=0x1.
+[2026-09-23 15:43:27][INFO][dobot_foe.cpp@updateSlaveFW()#387]switch state to init successfully.
+[2026-09-23 15:43:27][INFO][dobot_foe.cpp@singleUpdateThdFunc()#1072]<--- exit this function. ret=1,ret2=1.
+[2026-09-23 15:43:27][INFO][dobot_info.cpp@exitUpdateThd()#140]end update pthread.
+[2026-09-23 15:43:35][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-23 15:43:46][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-23 15:43:56][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-23 15:45:29][INFO][main.cpp@main()#20]This is mTool server, version is 2.0.0sv2023d1128h2149.
+[2026-09-23 15:45:29][INFO][main.cpp@main()#26]get arm type is : CR
+[2026-09-23 15:45:29][INFO][main.cpp@main()#27]get arm name is : CR5
+[2026-09-23 15:45:29][INFO][http_server.cpp@start()#109]<--- enter this function.
+[2026-09-23 15:45:31][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-23 15:45:31][INFO][http_server.cpp@protocolFunc_getVersion()#1216]get version is {"toolVersion":"2.0.0sv2023d1128h2149","pathInfo":{"slave":"/tmp/tUpdate/slave/","control":"/tmp/tUpdate/control/","kernel":"/tmp/tUpdate/kernel/"}}.
+[2026-09-23 16:18:08][INFO][main.cpp@main()#20]This is mTool server, version is 2.0.0sv2023d1128h2149.
+[2026-09-23 16:18:08][INFO][main.cpp@main()#26]get arm type is : CR
+[2026-09-23 16:18:08][INFO][main.cpp@main()#27]get arm name is : CR5
+[2026-09-23 16:18:08][INFO][http_server.cpp@start()#109]<--- enter this function.
+[2026-09-23 16:18:10][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-23 16:18:10][INFO][http_server.cpp@protocolFunc_getVersion()#1216]get version is {"toolVersion":"2.0.0sv2023d1128h2149","pathInfo":{"slave":"/tmp/tUpdate/slave/","control":"/tmp/tUpdate/control/","kernel":"/tmp/tUpdate/kernel/"}}.
+
+=== D. updateRunResult.log ===
+
+
+=== E. controlRunProcess.log ===
+userdata/Nova2_sys_files/project/settings/function/tcp30006Feedback.json
+userdata/Nova2_sys_files/project/settings/function/tcp30005Feedback.json
+userdata/Nova2_sys_files/project/settings/function/tcpipSecurity.json
+userdata/Nova2_sys_files/project/settings/api.lua
+userdata/Nova2_sys_files/project/settings/hot_key.json
+userdata/Nova2_sys_files/project/settings/Plugin.lua
+userdata/Nova2_sys_files/port
+userdata/Nova2_sys_files/tty2ssh
+userdata/Nova2_sys_files/slaveinfo
+userdata/Nova5_sys_files/
+userdata/Nova5_sys_files/project/
+userdata/Nova5_sys_files/project/properties/
+userdata/Nova5_sys_files/project/properties/AdvancedFunction.json
+userdata/Nova5_sys_files/project/properties/alarm_controller.json
+userdata/Nova5_sys_files/project/properties/alarm_servo.json
+userdata/Nova5_sys_files/project/properties/axis.json
+userdata/Nova5_sys_files/project/properties/controllerType.json
+userdata/Nova5_sys_files/project/properties/default.json
+userdata/Nova5_sys_files/project/properties/businessType.json
+userdata/Nova5_sys_files/project/properties/suppressionConfig.json
+userdata/Nova5_sys_files/project/properties/vibrationDetection.json
+userdata/Nova5_sys_files/project/settings/
+userdata/Nova5_sys_files/project/settings/function/
+userdata/Nova5_sys_files/project/settings/function/collisionDect.json
+userdata/Nova5_sys_files/project/settings/function/PackPoint.json
+userdata/Nova5_sys_files/project/settings/function/accFactor.json
+userdata/Nova5_sys_files/project/settings/function/torquelimit.json
+userdata/Nova5_sys_files/project/settings/function/logServerConfig.json
+userdata/Nova5_sys_files/project/settings/function/tcp30006Feedback.json
+userdata/Nova5_sys_files/project/settings/function/tcp30005Feedback.json
+userdata/Nova5_sys_files/project/settings/function/tcpipSecurity.json
+userdata/Nova5_sys_files/project/settings/api.lua
+userdata/Nova5_sys_files/project/settings/hot_key.json
+userdata/Nova5_sys_files/project/settings/Plugin.lua
+userdata/Nova5_sys_files/port
+userdata/Nova5_sys_files/tty2ssh
+userdata/Nova5_sys_files/slaveinfo
+/dobot/userdata/project is Link ..... ,do not need to transform
+run afterUpdate.sh successfully
+run the cmd:sync success
+
+=== F. version.json ===
+{"version":"2.0.0sv2023d1128h2149"}
+
+=== G. supportRules.json (head) ===
+{
+	"rules": [
+		{
+			"version": "3.5.2.",
+			"shell": "352run.sh"
+		},
+		{
+			"version": "3.5.3.",
+			"shell": "353run.sh"
+		},
+		{
+			"version": "3.5.4.",
+			"shell": "353run.sh"
+		},
+		{
+			"version": "3.5.5.",
+			"shell": "353run.sh"
+		},
+		{
+			"version": "3.5.6.",
+			"shell": "353run.sh"
+		},
+		{
+			"version": "3.5.7.",
+			"shell": "353run.sh"
+		},
+		{
+			"version": "4.3.1.",
+			"shell": "431run.sh"
+		},
+		{
+			"version": "4.4.0.",
+			"shell": "440run.sh"
+		},
+		{
+			"version": "4.4.1.",
+			"shell": "440run.sh"
+		},
+		{
+			"version": "4.5.0.",
+			"shell": "450run.sh"
+		}
+	]
+}
+=== DONE ===

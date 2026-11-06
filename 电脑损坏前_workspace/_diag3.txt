@@ -1,0 +1,51 @@
+=== gcontrol log 里的错误/报警关键词 ===
+=== codesys log 里的 Error!=0 ===
+=== codesys 启动时的 SDO write 记录（看有没有写 607C）===
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 0 Data: 16#00
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 0 Data: 16#0F
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 1 Data: 16#60400010
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 10 Data: 16#50030310
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 11 Data: 16#50030510
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 12 Data: 16#50030610
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 13 Data: 16#50030910
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 14 Data: 16#50030A10
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 15 Data: 16#60C60020
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 2 Data: 16#60600008
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 3 Data: 16#607A0020
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 4 Data: 16#60FF0020
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 5 Data: 16#60B20010
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 6 Data: 16#60710010
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 7 Data: 16#60800020
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 8 Data: 16#60850020
+SDO write ok: Address: 1003 Index: 16#1600 SubIndex: 9 Data: 16#50030210
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 0 Data: 16#00
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 0 Data: 16#13
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 1 Data: 16#60410010
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 10 Data: 16#60780010
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 11 Data: 16#50000210
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 12 Data: 16#50000310
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 13 Data: 16#50000610
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 14 Data: 16#50000710
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 15 Data: 16#50000810
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 16 Data: 16#50020420
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 17 Data: 16#50020610
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 18 Data: 16#606B0020
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 19 Data: 16#60620020
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 2 Data: 16#60610008
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 3 Data: 16#60640020
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 4 Data: 16#606C0020
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 5 Data: 16#60770010
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 6 Data: 16#60750020
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 7 Data: 16#60760020
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 8 Data: 16#603F0010
+SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 9 Data: 16#60790020
+SDO write ok: Address: 1003 Index: 16#1C12 SubIndex: 0 Data: 16#00
+SDO write ok: Address: 1003 Index: 16#1C12 SubIndex: 0 Data: 16#01
+=== SavePos / recipe ===
+total 24
+drwxrwxr-x    2 1025     1025          4096 Sep 18 09:30 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+-rwxrwxr-x    1 1025     1025           439 Feb 18  1976 SaveAxesValue.AxesValues.txtrecipe
+-rw-r--r--    1 root     root           100 Sep 18 17:57 SavePos.txt
+-rw-r--r--    1 root     root           780 Sep 18 18:43 SlaveInfos.SlaveInfos.txtrecipe
+-rw-r--r--    1 root     root             4 Sep 18 17:48 Update.txt

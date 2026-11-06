@@ -1,0 +1,11 @@
+total 0
+drwxr-xr-x    5 root     root           100 Sep 24 14:55 .
+drwxrwxrwt    3 root     root           140 Sep 24 14:55 ..
+drwxr-xr-x    2 root     root            40 Sep 24 14:55 control
+drwxr-xr-x    2 root     root            40 Sep 24 14:55 kernel
+drwxr-xr-x    2 root     root            40 Sep 24 14:55 slave
+=== existing files in slave/ ===
+total 0
+drwxr-xr-x    2 root     root            40 Sep 24 14:55 .
+drwxr-xr-x    5 root     root           100 Sep 24 14:55 ..
+=== DONE ===

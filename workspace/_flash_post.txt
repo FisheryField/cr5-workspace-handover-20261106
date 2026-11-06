@@ -1,0 +1,101 @@
+=== A. any servo error AFTER the flash (14:55 today)? ===
+[2026-09-23 18:27:41.965] [15] [error] [logServoError#584] servo1 error ID update : 0 -> 60945 
+[2026-09-23 18:27:41.981] [15] [error] [logServoError#584] servo2 error ID update : 0 -> 60945 
+[2026-09-23 18:31:33.490] [15] [error] [logServoError#584] servo1 error ID update : 0 -> 60945 
+[2026-09-23 18:31:33.504] [15] [error] [logServoError#584] servo2 error ID update : 0 -> 60945 
+[2026-09-23 18:31:33.522] [15] [error] [logServoError#584] servo3 error ID update : 0 -> 60945 
+[2026-09-23 18:31:33.536] [15] [error] [logServoError#584] servo4 error ID update : 0 -> 60945 
+[2026-09-23 18:31:33.560] [15] [error] [logServoError#584] servo5 error ID update : 0 -> 60945 
+[2026-09-23 18:31:33.568] [15] [error] [logServoError#584] servo6 error ID update : 0 -> 60945 
+[2026-09-23 18:41:39.975] [15] [error] [logServoError#584] servo1 error ID update : 0 -> 60945 
+[2026-09-23 18:41:39.989] [15] [error] [logServoError#584] servo2 error ID update : 0 -> 60945 
+[2026-09-23 18:41:40.005] [15] [error] [logServoError#584] servo3 error ID update : 0 -> 60945 
+[2026-09-23 18:41:40.026] [15] [error] [logServoError#584] servo4 error ID update : 0 -> 60945 
+[2026-09-23 18:41:40.042] [15] [error] [logServoError#584] servo5 error ID update : 0 -> 60945 
+[2026-09-23 18:41:40.058] [15] [error] [logServoError#584] servo6 error ID update : 0 -> 60945 
+[2026-09-23 18:50:51.083] [15] [error] [logServoError#584] servo1 error ID update : 0 -> 60945 
+[2026-09-23 18:50:51.097] [15] [error] [logServoError#584] servo2 error ID update : 0 -> 60945 
+[2026-09-23 18:50:51.111] [15] [error] [logServoError#584] servo3 error ID update : 0 -> 60945 
+[2026-09-23 18:50:51.131] [15] [error] [logServoError#584] servo4 error ID update : 0 -> 60945 
+[2026-09-23 18:50:51.147] [15] [error] [logServoError#584] servo5 error ID update : 0 -> 60945 
+[2026-09-23 18:50:51.164] [15] [error] [logServoError#584] servo6 error ID update : 0 -> 60945 
+
+--- count of servo error lines dated 2026-09-24 ---
+0
+
+--- all 2026-09-24 lines mentioning error/warn/fail ---
+[2026-09-24 14:45:23.262] [15] [error] [TryLockForRead#41] lock_num: -1, writting
+[2026-09-24 14:45:23.263] [15] [error] [AcquireBlockToRead#435] index:[9], failed >>>>>>>>>>>>>>>>>>>>>>>
+[2026-09-24 14:46:50.370] [15] [error] [TryLockForWrite#31]  end fail m_lock_num:1, rw_lock_free:1 ...
+[2026-09-24 14:47:57.057] [15] [error] [TryLockForRead#41] lock_num: -1, writting
+[2026-09-24 14:47:57.057] [15] [error] [AcquireBlockToRead#435] index:[9], failed >>>>>>>>>>>>>>>>>>>>>>>
+[2026-09-24 14:49:40.108] [15] [error] [TryLockForRead#56] writting ...
+[2026-09-24 14:49:40.108] [15] [error] [AcquireBlockToRead#435] index:[9], failed >>>>>>>>>>>>>>>>>>>>>>>
+[2026-09-24 14:51:21.039] [15] [error] [TryLockForRead#41] lock_num: -1, writting
+[2026-09-24 14:51:21.039] [15] [error] [AcquireBlockToRead#435] index:[9], failed >>>>>>>>>>>>>>>>>>>>>>>
+[2026-09-24 14:54:07.042] [15] [error] [TryLockForWrite#31]  end fail m_lock_num:1, rw_lock_free:1 ...
+[2026-09-24 14:54:26.370] [15] [error] [TryLockForRead#41] lock_num: -1, writting
+[2026-09-24 14:54:26.370] [15] [error] [AcquireBlockToRead#435] index:[9], failed >>>>>>>>>>>>>>>>>>>>>>>
+[2026-09-24 14:54:35.682] [15] [error] [TryLockForRead#41] lock_num: -1, writting
+[2026-09-24 14:54:35.682] [15] [error] [AcquireBlockToRead#435] index:[9], failed >>>>>>>>>>>>>>>>>>>>>>>
+[2026-09-24 14:54:48.597] [15] [error] [TryLockForRead#41] lock_num: -1, writting
+[2026-09-24 14:54:48.598] [15] [error] [AcquireBlockToRead#435] index:[9], failed >>>>>>>>>>>>>>>>>>>>>>>
+[2026-09-24 14:55:16.433] [15] [error] [TryLockForRead#41] lock_num: -1, writting
+[2026-09-24 14:55:16.433] [15] [error] [AcquireBlockToRead#435] index:[9], failed >>>>>>>>>>>>>>>>>>>>>>>
+[2026-09-24 14:55:35.657] [15] [error] [TryLockForRead#41] lock_num: -1, writting
+[2026-09-24 14:55:35.657] [15] [error] [AcquireBlockToRead#435] index:[9], failed >>>>>>>>>>>>>>>>>>>>>>>
+
+=== B. last 25 lines of the main log ===
+
+[2026-09-24 14:55:06.659] [15] [info] [writeJsonFile#3114] enter this function, write file:/dobot/userdata/project/settings/workTime/WorkTimeRec.json.
+
+[2026-09-24 14:55:06.659] [15] [info] [conn_terminaltrans#12134] Record Run time to file .... controller 1596128186 ,servo 367876
+
+[2026-09-24 14:55:16.433] [15] [error] [TryLockForRead#41] lock_num: -1, writting
+
+[2026-09-24 14:55:16.433] [15] [error] [AcquireBlockToRead#435] index:[9], failed >>>>>>>>>>>>>>>>>>>>>>>
+
+[INFO][algs_framework.cpp@algs_framework_run()#132] RealtimeHeartbeat: 4675000 
+
+[INFO][algs_framework.cpp@algs_framework_run()#132] RealtimeHeartbeat: 4700000 
+
+[2026-09-24 14:55:35.657] [15] [error] [TryLockForRead#41] lock_num: -1, writting
+
+[2026-09-24 14:55:35.657] [15] [error] [AcquireBlockToRead#435] index:[9], failed >>>>>>>>>>>>>>>>>>>>>>>
+
+[INFO][algs_framework.cpp@algs_framework_run()#132] RealtimeHeartbeat: 4725000 
+
+[2026-09-24 14:55:46.535] [15] [info] [TransProcss#169] (recv)local port:60000 client disconnected.
+
+after accept...
+client:1,local port:30005, accepted an new connection ip:192.168.5.1,port:60546
+befor accept...
+[tcpDispenser::_send] client 0 socket:13 send return = -1!
+
+=== C. processes now ===
+  186 root       0:00 udhcpd /etc/udhcpd.conf
+  199 root       0:00 /usr/local/bin/sshd -f /usr/local/etc/sshd_config
+  202 root       0:00 /usr/sbin/inetd
+  216 root       0:00 /dobot/bin/logServer
+  264 root       0:06 /dobot/bin/bin/redis-server 127.0.0.1:6379
+  274 root       0:00 /dobot/bin/bin/nmbd -s /dobot/bin/etc/smb.conf -D
+  276 root       0:00 /dobot/bin/bin/smbd -s /dobot/bin/etc/smb.conf -D
+  296 root       0:00 /dobot/bin/bin/smbd -s /dobot/bin/etc/smb.conf -D
+  303 root       1:12 /dobot/bin/gcontrol
+  341 root       0:00 {autoCacheFree.s} /bin/sh /dobot/bin/autoCacheFree.sh
+  343 root       0:01 {autoSync.sh} /bin/sh /dobot/bin/autoSync.sh
+  441 root       0:00 {linuxrc} init
+ 3471 root       0:00 sh -c sh -s
+ 3472 root       0:00 sh -s
+ 3482 root       0:00 head -20
+ 3767 root       0:00 sh -c sh -s
+ 3768 root       0:00 sh -s
+ 3773 root       0:00 head -20
+ 4122 root       0:00 sleep 600
+ 4698 root       0:00 sshd: root@notty
+ 4700 root       0:00 sh -c sh -s
+ 4701 root       0:00 sh -s
+ 4724 root       0:00 sleep 1
+ 4726 root       0:00 ps
+ 4728 root       0:00 tail -25
+=== DONE ===

@@ -1,0 +1,37 @@
+=== controller alarm id 114 ===
+1011:    "id": 114,
+1012-    "level": 5,
+1013-    "en": {
+1014-      "description": "Homing error",
+1015-      "cause": "",
+1016-      "solution": "Please operate homing procedure  again"
+1017-    },
+1018-    "zh_CN": {
+1019-      "description": "机器人回零失败",
+=== any alarm with 114 ===
+1008-    }
+1009-  },
+1010-  {
+1011:    "id": 114,
+1012-    "level": 5,
+1013-    "en": {
+1014-      "description": "Homing error",
+1015-      "cause": "",
+1016-      "solution": "Please operate homing procedure  again"
+1017-    },
+1018-    "zh_CN": {
+1019-      "description": "机器人回零失败",
+--
+3602-    }
+3603-  },
+3604-  {
+3605:    "id": 36114,
+3606-    "level": 5,
+3607-    "en": {
+3608-      "description": "MoveIO command has no input parameters",
+3609-      "cause": "",
+3610-      "solution": "Enter the correct parameters"
+3611-    },
+3612-    "zh_CN": {
+3613-      "description": "MoveIO指令无输入参数",
+=== servo alarm 114 ===

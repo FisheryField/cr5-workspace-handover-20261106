@@ -1,0 +1,35 @@
+{
+	"driverSimpleConfig":
+	{
+		"targetTorque":1, 
+		"round":2, 
+		"rpm":3
+	},
+	"driverDetailConfig":
+	{
+		"targetTorque":129, 
+		"torqueHoldTime": 134, 
+		"plusRound": 136,
+		"minusRound": 135, 
+		"positiveRotationInit":
+		{
+			"speed": 143,
+			"round": 142 
+		}, 
+		"positiveRotation":
+		{ 
+			"speed": 145, 
+			"round": 144
+		},
+		"screwFit":
+		{
+			"speed": 147,
+			"round": 146
+		},
+		"tightenPhase":
+		{
+			"speed": 149, 
+			"round": 148
+		}
+	}
+}

@@ -1,0 +1,43 @@
+﻿def _single_move_settle(method, target):
+    """发一条运动指令并确认到位（v10：反馈字段已校正）。
+
+    历史结论：驱动一直正确执行绝对关节目标；此前"半路停止"源于旧反馈误读偏移432
+    （那字段是"连接基准+指令累加"的假关节角，v7/v8/v9三轮全被它误导，连"目标关节
+    回原点走到一半停"也是它：v9按假起点68.4°分2瓣，臂物理走到第1瓣~34°即被假校验
+    中止）。真实关节角在偏移192（2026-10-09双帧扫描定位+示教器交叉证实）。
+    本函数：发指令→等物理收尾→用192字段核验到位；驱动假报断连时同样等收尾后
+    核验（不重发）。"""
+    try:
+        getattr(robot, method)(target)
+    except StoppedError as exc:
+        if str(exc).strip() != 'Robot not connected':
+            raise
+        # v14o 静默重连：假断连是本环境常态（每条 MoveJ 指令结束后都可能误报）；30004
+        # 反馈通道独立于驱动连接，静止确认与重连并行进行，压缩跳间停顿税。
+        # 护栏不变：未自然收尾（20s 上限）仍停、落点仍 0.5° 校验、重连失败仍停。
+        log('驱动报断连——等待收尾与后台重连并行进行（不重发指令）…')
+        import threading as _st
+        reconnected = []
+        def _bg_reconnect():
+            for _retry in range(3):
+                if ensure_connected():
+                    reconnected.append(True)
+                    return
+                time.sleep(1.0)
+        _rt = _st.Thread(target=_bg_reconnect, daemon=True, name='silent_reconnect')
+        _rt.start()
+        actual, is_static = _wait_controller_static(samples=3, interval=0.2)
+        if not is_static:
+            raise RuntimeError('驱动报断连后等待%.0fs仍未静止，停止。' % 20.0) from exc
+        err = max(abs(a - b) for a, b in zip(actual, target))
+        if err > MOVE_OFFSET_TOL:
+            raise RuntimeError('断连收尾后未到位：目标%s，实测%s（误差%.2f°），停止待判读。'
+                               % (['%.2f' % v for v in target], ['%.2f' % v for v in actual], err)) from exc
+        _rt.join(timeout=4.0)
+        if not reconnected:
+            raise RuntimeError('已到位但驱动重连失败，停止后续指令。') from exc
+        log('驱动断连但运动已自然完成到位；已重连驱动，继续。')
+        return
+    actual, is_static = _wait_controller_static()
+    if not is_static:
+        raise RuntimeError('指令返回后等待静止超时（20s），停止。')

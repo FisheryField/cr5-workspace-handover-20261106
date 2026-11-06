@@ -1,0 +1,23 @@
+19:24:54 | [full] ===== struct repro start pid=7396 argv=['D:\\mydata\\glm-workplace\\sim_scripts\\repro_struct_kill.py', 'full']
+19:24:54 | [full] import robodk + tkinter
+19:24:54 | [full] Robolink()
+19:24:54 | [full] robot=Dobot CR5 valid=True
+19:24:56 | [full] 保活线程已启动
+19:24:56 | [full] 30004 读一帧=None
+19:24:56 | [full] 进入 run_precheck（主线程）
+19:24:56 | [full] 障碍配置完成
+19:24:56 | [full] MoveJ_Test(start,start)=0
+19:24:56 | [full] MoveL_Test 10mm=-1
+19:24:56 | [full] 线性不可行，进入MoveJ兜底（宏同款）
+19:24:56 | [full] 候选 17 个
+19:24:56 | [full]   cand0 MoveJ_Test(0.25)=1
+19:24:56 | [full]   cand1 MoveJ_Test(0.25)=1
+19:24:56 | [full]   cand2 MoveJ_Test(0.25)=1
+19:24:56 | [full]   cand3 MoveJ_Test(0.25)=1
+19:24:57 | [full]   cand4 MoveJ_Test(0.25)=0
+19:24:57 | [full] found=[49.59, -49.59, 65.45, 49.59, -49.59, -65.45]
+19:24:58 | [full] keepalive#1(work) ConnectedState=0
+19:25:00 | [full] 整段复核 status=4 msg='Success'
+19:25:00 | [full] keepalive#2(work) ConnectedState=0
+19:25:00 | [full] run_precheck 完成（进程存活）
+19:25:00 | [full] ===== struct repro 正常结束，进程存活 =====

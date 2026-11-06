@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>v14 版本谱系与死点定位 · P2P 规划器</title>
+<style>
+  :root{
+    --bg:#fafafa; --ink:#111; --ink-2:#3d3d3d; --ink-3:#6b6b6b;
+    --hair:#d9d9d9; --hair-2:#e8e8e8;
+    --accent:#b45309; --accent-dim:#9a4a08;
+    --ok:#15803d; --bad:#b91c1c;
+    --mono:"Cascadia Code","Consolas","SF Mono",monospace;
+    --sans:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6}
+  .wrap{max-width:1180px;margin:0 auto;padding:56px 40px 80px}
+  .measure{max-width:68ch}
+
+  /* header */
+  .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:14px}
+  h1{font-size:34px;font-weight:600;letter-spacing:-.01em;line-height:1.15;margin-bottom:10px}
+  .lede{font-size:16.5px;color:var(--ink-2);max-width:62ch;margin-bottom:18px}
+  .lede strong{color:var(--ink);font-weight:570}
+  .meta-row{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:9px 0;display:flex;gap:28px;flex-wrap:wrap;margin-bottom:44px}
+  .meta-row b{color:var(--ink-2);font-weight:600}
+
+  /* sections */
+  section{margin-bottom:52px}
+  .sec-head{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--ink);padding-bottom:8px;margin-bottom:20px}
+  .sec-no{font-family:var(--mono);font-size:12px;color:var(--accent);font-weight:600}
+  h2{font-size:19px;font-weight:600;letter-spacing:.01em}
+  .sec-note{font-size:12.5px;color:var(--ink-3);margin-left:auto;font-family:var(--mono)}
+  p{margin-bottom:12px}
+  .small{font-size:12.5px;color:var(--ink-3)}
+  .src{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+  code{font-family:var(--mono);font-size:.92em;background:#f0f0f0;padding:1px 5px}
+
+  /* version table */
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-weight:600;text-align:left;padding:8px 12px;border-bottom:1px solid var(--ink)}
+  td{padding:11px 12px;border-bottom:1px solid var(--hair-2);vertical-align:top;line-height:1.5}
+  td.ver{font-family:var(--mono);font-weight:700;font-size:14px;white-space:nowrap}
+  td.ver .t{display:block;font-weight:400;font-size:10.5px;color:var(--ink-3);margin-top:2px}
+  td.live{font-family:var(--mono);font-size:11.5px;white-space:nowrap}
+  .live-on{color:var(--accent);font-weight:600}
+  .live-off{color:var(--ink-3)}
+  td.result{color:var(--ink-2)}
+  td.result .log{font-family:var(--mono);font-size:11px;color:var(--bad)}
+  tr.cur td{background:#fff8f0}
+  tr.cur td.ver{color:var(--accent)}
+  td .fix{display:block;font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-top:3px}
+
+  /* svg map */
+  .map-box{border:1px solid var(--hair);padding:26px 22px 14px;background:#fff}
+  .map-cap{font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-top:8px;line-height:1.7}
+  .legend{display:inline-flex;gap:18px;align-items:center;font-family:var(--mono);font-size:11px;color:var(--ink-2)}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:-.5px}
+
+  /* lineage */
+  .lineage{display:flex;flex-direction:column}
+  .lg-row{display:grid;grid-template-columns:210px 1fr;gap:24px;padding:14px 0;border-bottom:1px solid var(--hair-2)}
+  .lg-row:last-child{border-bottom:none}
+  .lg-name{font-family:var(--mono);font-size:12.5px;font-weight:600;line-height:1.5}
+  .lg-name .sub{display:block;font-weight:400;font-size:10.5px;color:var(--ink-3);margin-top:2px}
+  .lg-desc{font-size:13.5px;color:var(--ink-2);line-height:1.55}
+
+  /* conclusions */
+  .conc{border-top:1px solid var(--ink);padding:18px 0 6px;display:grid;grid-template-columns:44px 1fr;gap:16px}
+  .conc:last-of-type{border-bottom:1px solid var(--hair)}
+  .conc-no{font-family:var(--mono);font-size:20px;font-weight:700;color:var(--accent)}
+  .conc h3{font-size:15.5px;font-weight:600;margin-bottom:6px}
+  .conc p{font-size:13.8px;color:var(--ink-2);margin-bottom:8px}
+
+  /* e-points */
+  .ep-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:0;border:1px solid var(--hair)}
+  .ep{padding:16px 18px;border-right:1px solid var(--hair-2);border-bottom:1px solid var(--hair-2)}
+  .ep-tag{font-family:var(--mono);font-size:12px;font-weight:700;margin-bottom:5px}
+  .ep-tag .role{font-weight:400;color:var(--ink-3);margin-left:8px}
+  .ep p{font-size:13px;color:var(--ink-2);margin:0}
+  .ep .cfg{font-family:var(--mono);font-size:11px;color:var(--ink);background:#f0f0f0;padding:4px 7px;display:inline-block;margin-top:7px}
+
+  /* next steps */
+  ol.steps{counter-reset:s;list-style:none}
+  ol.steps li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--hair-2);font-size:14px;color:var(--ink-2)}
+  ol.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:12px;color:var(--accent);font-weight:700;padding-top:2px}
+  ol.steps li b{color:var(--ink)}
+
+  .colophon{border-top:1px solid var(--ink);margin-top:56px;padding-top:16px;font-family:var(--mono);font-size:11px;color:var(--ink-3);line-height:2}
+  .colophon b{color:var(--ink-2);font-weight:600}
+
+  @media (max-width:900px){
+    .wrap{padding:36px 18px 60px}
+    .sec-note{display:none}
+    .lg-row{grid-template-columns:1fr;gap:6px}
+    table{font-size:12.5px}
+    td,th{padding:8px 6px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">P2P Planner · Version Genealogy · 调试现场参考</div>
+  <h1>v14 → v14i：七个版本，一个病根</h1>
+  <p class="lede">v14 系列的全部改动都记录在宿主文件 <code>TCP真实运动_P2P版.py</code> 的源码注释里；真正<b>上过机</b>的只有 v14 / v14a / v14b 三版——GUI 站内宏自 17:29 起一直停在 v14b，v14c 之后的所有版本从未进站。离线仿真已证明：症状在 E15，病根在 E11 的选族。</p>
+  <div class="meta-row">
+    <span>宿主 <b>sim_scripts\TCP真实运动_P2P版.py</b></span>
+    <span>最新 <b>v14i-20261010-2000</b></span>
+    <span>站内宏 <b>v14b-20261010-1745</b></span>
+    <span>轨迹 <b>连续轨迹7.json · 11 点录入 / 17 执行点</b></span>
+    <span>整理日期 <b>2026-10-10 晚</b></span>
+  </div>
+
+  <!-- 01 version table -->
+  <section>
+    <div class="sec-head">
+      <span class="sec-no">01</span>
+      <h2>版本对照表</h2>
+      <span class="sec-note">来源：源码注释 L1220–L1589 ＋ real_gui_log_p2p.txt</span>
+    </div>
+    <table>
+      <thead><tr>
+        <th style="width:90px">版本</th>
+        <th style="width:300px">核心改动</th>
+        <th>针对的症状</th>
+        <th style="width:120px">上机</th>
+        <th style="width:26%">实际结果</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td class="ver">v14<span class="t">1635</span></td>
+          <td>P2P 模式初版：全部点 MoveJ 关节直达（离当前构型最近解），逐段限位＋整弧碰撞预检，分瓣执行＋到位闭环。<span class="fix">L1220：弃用 seed 候选/肘高排序</span></td>
+          <td>把 v13 的 MoveL 细分执行改成 MoveJ 直达，避开细分耗时</td>
+          <td class="live live-on">1 次 · 17:11</td>
+          <td class="result">P7 规划层直接拒绝：<span class="log">不支持奇异点/自转步</span></td>
+        </tr>
+        <tr>
+          <td class="ver">v14a<span class="t">1720</span></td>
+          <td>恢复 v13 同款奇异点规则校验：±180 换向 / ±360 自转步只转 J6。<span class="fix">L1390 / L1440</span></td>
+          <td>v14 拒绝 P7 奇异点步</td>
+          <td class="live live-on">1 次 · 17:17</td>
+          <td class="result">P7 过，P5 死：<span class="log">MoveJ 路径检查失败（门把手×磨砂圆柱）</span></td>
+        </tr>
+        <tr>
+          <td class="ver">v14b<span class="t">1745</span></td>
+          <td>MoveJ 直达弧碰撞时，退回 v13 验证过的 MoveL 直线细分执行。<span class="fix">L1562</span></td>
+          <td>v14a 的 P5 MoveJ 弧碰</td>
+          <td class="live live-on">2 次 · 17:26 / 17:29</td>
+          <td class="result">P5 过，P11 死：<span class="log">MoveJ 弧碰 且 MoveL 直线也未通过</span></td>
+        </tr>
+        <tr>
+          <td class="ver">v14c<span class="t">未上机</span></td>
+          <td>首点全分支种子枚举（肘高优先），某种子整段死路时换构型整段重试；直线也碰时枚举目标全部 IK 分支找可通行 MoveJ（换构型救援）。<span class="fix">L1284 / L1376 / L1416 / L1567</span></td>
+          <td>P11 两路皆碰——首点选错分支导致整段连锁死路</td>
+          <td class="live live-off">—</td>
+          <td class="result">离线：首点族可选对，但中途换向点仍死</td>
+        </tr>
+        <tr>
+          <td class="ver">v14d<span class="t">未上机</span></td>
+          <td>换向步碰撞时先试反方向（终点位姿不变），再试整圈回绕。<span class="fix">L1469</span></td>
+          <td>换向步（±180 只转 J6）的弧碰</td>
+          <td class="live live-off">—</td>
+          <td class="result">离线：E15 两方向均碰，无效</td>
+        </tr>
+        <tr>
+          <td class="ver">v14e<span class="t">未上机</span></td>
+          <td>普通 TCP 点最后一级救援——v13 遗产 <code>_obstacle_joint_target</code> 避障选解。<span class="fix">L1589</span></td>
+          <td>普通点 MoveJ/MoveL 双碰</td>
+          <td class="live live-off">—</td>
+          <td class="result">离线：救不了换向点的死</td>
+        </tr>
+        <tr>
+          <td class="ver">v14f<span class="t">未上机</span></td>
+          <td>换向两方向都碰——切到同位姿的其他 IK 分支（碰撞预检过）再换向。<span class="fix">L1488</span></td>
+          <td>v14d 反方向/回绕失败后的同点换族</td>
+          <td class="live live-off">—</td>
+          <td class="result">离线：切族 MoveJ 弧碰，无效</td>
+        </tr>
+        <tr>
+          <td class="ver">v14g<span class="t">未上机</span></td>
+          <td>同位姿先 MoveL 到场（借连续选解换构型）再换向。<span class="fix">L1505</span></td>
+          <td>v14f 切族也碰</td>
+          <td class="live live-off">—</td>
+          <td class="result">离线：MoveL 到场后仍落回旧族，无效</td>
+        </tr>
+        <tr>
+          <td class="ver">v14h<span class="t">未上机</span></td>
+          <td>与前一点同位姿的停顿点（如轨迹 7 P7）不重新选解，直接沿用。<span class="fix">L1528</span></td>
+          <td>停顿点重选解导致构型跳变</td>
+          <td class="live live-off">—</td>
+          <td class="result">离线：修正性问题，非死点主因</td>
+        </tr>
+        <tr class="cur">
+          <td class="ver">v14i<span class="t">2000 · 当前</span></td>
+          <td>前视选解：下一个执行点是 ±180 换向时，本点选解必须能完成那次换向（<code>_nearest_ik_with_lookahead</code>）。<span class="fix">L24 / L1310 / L1539</span></td>
+          <td>第一次尝试把修复从 E15 本地移到上游选解</td>
+          <td class="live live-off">—</td>
+          <td class="result">离线（种子 13）：E14 前视<b>选出了</b>可换向构型 → 切族 MoveJ 弧碰 → 退回 MoveL → 连续选解覆盖回旧族 → 前视成果被静默丢弃，仍死 E15</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="small" style="margin-top:12px">上机时间戳来自 <code>real_gui_log_p2p.txt</code> 的「程序就绪」行；「离线」结果来自种子 13 复算日志与对质实验。<b>v14c–v14i 六版的"结果"列均为离线仿真结论，未经实机验证。</b></p>
+  </section>
+
+  <!-- 02 repair locus map -->
+  <section>
+    <div class="sec-head">
+      <span class="sec-no">02</span>
+      <h2>修补落点：全部挤在下游</h2>
+      <span class="sec-note">为什么 v14c–v14g 全灭</span>
+    </div>
+    <div class="map-box">
+      <svg viewBox="0 0 1080 240" width="100%" role="img" aria-label="修补落点图">
+        <!-- axis -->
+        <line x1="60" y1="150" x2="1020" y2="150" stroke="#111" stroke-width="1"/>
+        <!-- zones -->
+        <text x="60" y="178" font-family="monospace" font-size="10" fill="#6b6b6b">上游 · 选族（决定成败）</text>
+        <text x="880" y="178" font-family="monospace" font-size="10" fill="#6b6b6b">下游 · 换向执行</text>
+        <line x1="470" y1="132" x2="470" y2="168" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="3 3"/>
+        <!-- upstream band -->
+        <rect x="60" y="138" width="410" height="24" fill="#f5ede3" opacity=".55"/>
+        <!-- stations -->
+        <g font-family="monospace" font-size="11" fill="#111">
+          <line x1="180" y1="143" x2="180" y2="157" stroke="#111" stroke-width="1.5"/>
+          <text x="180" y="132" text-anchor="middle" font-weight="700">E11</text>
+          <text x="180" y="120" text-anchor="middle" font-size="9.5" fill="#6b6b6b">P6 退让位换向 · 选族路口</text>
+
+          <line x1="620" y1="143" x2="620" y2="157" stroke="#111" stroke-width="1.5"/>
+          <text x="620" y="132" text-anchor="middle" font-weight="700">E14</text>
+          <text x="620" y="120" text-anchor="middle" font-size="9.5" fill="#6b6b6b">前视选解点 · J6 两族分岔</text>
+
+          <line x1="900" y1="143" x2="900" y2="157" stroke="#111" stroke-width="1.5"/>
+          <text x="900" y="132" text-anchor="middle" font-weight="700">E15</text>
+          <text x="900" y="120" text-anchor="middle" font-size="9.5" fill="#6b6b6b">P9 奇异换向 · 症状爆发点</text>
+        </g>
+        <!-- version dots, downstream cluster -->
+        <g font-family="monospace" font-size="10.5">
+          <circle cx="850" cy="196" r="5" fill="none" stroke="#b45309" stroke-width="1.4"/><text x="850" y="222" text-anchor="middle" fill="#9a4a08">v14d 反向/回绕</text>
+          <circle cx="905" cy="196" r="5" fill="none" stroke="#b45309" stroke-width="1.4"/><text x="921" y="222" text-anchor="middle" fill="#9a4a08">v14f 切分支</text>
+          <circle cx="960" cy="196" r="5" fill="none" stroke="#b45309" stroke-width="1.4"/><text x="975" y="222" text-anchor="middle" fill="#9a4a08">v14g MoveL 到场</text>
+          <circle cx="620" cy="196" r="5" fill="none" stroke="#b45309" stroke-width="1.4"/><text x="620" y="222" text-anchor="middle" fill="#9a4a08">v14i 前视（成果被覆盖）</text>
+          <circle cx="300" cy="196" r="5" fill="none" stroke="#b45309" stroke-width="1.4"/><text x="300" y="222" text-anchor="middle" fill="#9a4a08">v14c 首点种子枚举</text>
+          <!-- v14i arrow showing where it SHOULD look -->
+          <path d="M 620 191 C 620 168, 400 170, 190 160" fill="none" stroke="#b45309" stroke-width="1" stroke-dasharray="4 3"/>
+          <path d="M 190 160 l 7 -6 m -7 6 l 9 2" fill="none" stroke="#b45309" stroke-width="1"/>
+          <text x="400" y="162" text-anchor="middle" font-size="9.5" fill="#9a4a08">v14j：视界应到此（下一奇异点）</text>
+        </g>
+        <!-- legend -->
+        <g transform="translate(60,14)">
+          <circle cx="5" cy="5" r="4.5" fill="none" stroke="#b45309" stroke-width="1.4"/><text x="16" y="9" font-family="monospace" font-size="10" fill="#3d3d3d">未上机 · 离线结论</text>
+          <circle cx="150" cy="5" r="4.5" fill="#b45309"/><text x="161" y="9" font-family="monospace" font-size="10" fill="#3d3d3d">已上机（v14/a/b，不在本轴：执行层修补）</text>
+        </g>
+      </svg>
+      <div class="map-cap">图解：失败信息不在 E15 那一段的几何里，而在选族与换向坐标——v14d「反方向」误算 q−2δ，把探针证明存在的 -180° 活路（J6 176.9°→-3.1°，碰 0）算成不存在的 q−360°，15/15 种子全灭。v14j 修复后种子 1 直接过链：E11 救援选 +169.2° 族，E15 换向 -180° 落 J6=-3.1°。</div>
+    </div>
+  </section>
+
+  <!-- 03 lineage -->
+  <section>
+    <div class="sec-head">
+      <span class="sec-no">03</span>
+      <h2>宿主文件谱系：版本号长在哪棵树上</h2>
+      <span class="sec-note">sim_scripts\ 下四个 .py</span>
+    </div>
+    <div class="lineage">
+      <div class="lg-row">
+        <div class="lg-name">TCP真实运动_当前.py<span class="sub">9/28 · 53 KB</span></div>
+        <div class="lg-desc">最早一代真机控制脚本（v13 之前）。与版本谱系无直接关系，勿与后两者混淆。</div>
+      </div>
+      <div class="lg-row">
+        <div class="lg-name">TCP真实运动_升级版.py<span class="sub">10/10 09:50 · 79 KB · LOG v13-20261010-1003</span></div>
+        <div class="lg-desc"><b>v13 宿主</b>。方案 B：MoveL 全部细分＋MoveJ 执行，驱动 MOVL 永不发；<code>MoveL_Test@1mm</code> 保留为「这段能不能走直线」的权威筛选器；含 <code>_obstacle_joint_target</code> 避障选解。v14b 的 MoveL 退路、"v13 验证过"、v14e 的遗产救援都来自这里。</div>
+      </div>
+      <div class="lg-row">
+        <div class="lg-name">TCP真实运动_P2P版.py<span class="sub">10/10 18:14 · 90 KB · LOG v14i-20261010-2000</span></div>
+        <div class="lg-desc"><b>v14 系列唯一宿主</b>。v14→v14i 十个版本全部是这同一个文件里的增量修改，<b>不是十个文件</b>。窗口标题当前为「P2P v14i」。旧版本只存在于 rdk_station_dump 的 tmp 快照（verify_v14a.py，17:16 / 17:25 两份）。</div>
+      </div>
+      <div class="lg-row">
+        <div class="lg-name">机械臂TCP仿真_副本.py<span class="sub">10/8 17:54 · 64 KB</span></div>
+        <div class="lg-desc"><b>对照基准，不在版本链上</b>。RoboDK 仿真链：肘高优先选族 → 整链通过 E15。对质实验（confront_e14_configs.py）用它证明「E14→E15 这段本身能走」，从而把病根定位到选族差异。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 numbering -->
+  <section>
+    <div class="sec-head">
+      <span class="sec-no">04</span>
+      <h2>两套编号：P 点 ≠ E 点</h2>
+      <span class="sec-note">读日志先对齐坐标系</span>
+    </div>
+    <p class="measure" style="margin-bottom:16px">上机日志里的 <b>P5 / P7 / P11</b> 是<b>录入点表</b>（连续轨迹7.json，11 点）的编号；离线分析里的 <b>E11 / E14 / E15</b> 是<b>展开后执行点</b>（退让位、换向步展开后共 17 点）的编号。同一台死机，两套编号指的位置不同——这是版本复盘时最容易绕晕的地方。关键锚点如下（P/E 对应可重跑 <code>dump_expanded_records.py</code> 核验）：</p>
+    <div class="ep-grid">
+      <div class="ep">
+        <div class="ep-tag">E11<span class="role">= P6 退让位换向</span></div>
+        <p>选族路口。分支救援按「关节距离最近」排序，把 wrist 锁进 J6≈-10° 族；TCP仿真 链按肘高优先选了 J6=+169° 族。<b>成败在此分岔。</b></p>
+      </div>
+      <div class="ep">
+        <div class="ep-tag">E14<span class="role">前视选解点</span></div>
+        <p>到达时停在 -10° 族（MoveL 连续选解保持）。对质实验证明该位姿存在可换向构型：</p>
+        <span class="cfg">[86.9, 44.5, 27.7, 17.7, -90.0, 176.9]</span>
+      </div>
+      <div class="ep">
+        <div class="ep-tag">E15<span class="role">= P9 奇异换向</span></div>
+        <p>(100, -762, 300) 原地转 J6 ±180°。-10° 族到此翻转即碰圆柱（两方向皆碰）；+169~177° 族翻转干净。满足换向条件的组合共 8 组。</p>
+      </div>
+      <div class="ep">
+        <div class="ep-tag">P5 / P7 / P11<span class="role">上机日志编号</span></div>
+        <p>v14 死 P7（不支持奇异步）→ v14a 死 P5（弧碰）→ v14b 死 P11（弧碰＋直线双碰）。<b>17:29 之后 GUI 里跑的一直是 v14b</b>，其 P11 拒绝不是 v14c+ 的新失败。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 conclusions -->
+  <section>
+    <div class="sec-head">
+      <span class="sec-no">05</span>
+      <h2>当前定论（截至 10-10 晚）</h2>
+      <span class="sec-note">按证据强度排序</span>
+    </div>
+    <div class="conc">
+      <div class="conc-no">1</div>
+      <div>
+        <h3>病根在 E11 选族，不在 E15 几何 —— 已实证</h3>
+        <p>对质实验（confront_e14_configs.py）：E14 位姿的全部候选中，TCP仿真 的通过构型就在我们的候选集里（10 选 1，8 组组合满足换向）；同一段用我们 P2P 自己的限位/FK/碰撞三件套复核，-180 方向全过（MoveJ_Test=0）。失败的是「到 E14 为止站在哪个族」，这个选择在 E11 由「关节距离最近」排序锁定。</p>
+      </div>
+    </div>
+    <div class="conc">
+      <div class="conc-no">2</div>
+      <div>
+        <h3>v14i 前视成果被覆盖 —— 种子 13 日志所见，待探针坐实</h3>
+        <p>E14 前视选出了可换向构型 → 当前构型→新构型的 MoveJ 弧碰圆柱 → 掉进 v14b 的「弧碰退回 MoveL」→ MoveL 连续选解又落回旧族。前视成果被静默丢弃。<code>probe_p14_lookahead.py</code>（v2，已修 FK 顺序崩溃 bug）可打印候选逐项判定与实际返回值，坐实「找不到」还是「找到了被覆盖」。</p>
+      </div>
+    </div>
+    <div class="conc">
+      <div class="conc-no">3</div>
+      <div>
+        <h3>站内宏停在 v14b —— 17:26 / 17:29 两次 P11 拒绝是旧版本</h3>
+        <p>real_gui_log_p2p.txt 两行「程序就绪：v14b-20261010-1745」。磁盘上 v14c 以后的版本从未刷新进站（refresh_station_p2p_macro.py 最后一次运行在 17:16）。任何上机结论以日志第二行的版本号为准。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 next -->
+  <section>
+    <div class="sec-head">
+      <span class="sec-no">06</span>
+      <h2>v14j 已落地（v14j-20261010-2030）</h2>
+      <span class="sec-note">探针坐实 → 三处修复 → 离线全绿 → 已刷站内宏</span>
+    </div>
+    <ol class="steps">
+      <li><b>probe_p14_lookahead.py 已跑（15/15 种子）</b>——决定性证据：多数种子在前视处拿到「-180:限位OK、FKTrue、碰0」的构型，P15 仍报两方向均碰且无任何救援日志；真凶是 v14d「反方向」坐标算错：<code>alt[5] -= 2*delta</code> 算出 q−360°（朝向未翻转，FK 必拒）而不是 q−180°。原設的肘高排序、扩视界两顶均不再需要——前视已 15/15 选到可翻转族。</li>
+      <li><b>主修复：反方向坐标</b>——L1453/L1473 两行 <code>-= 2*delta</code> → <code>-= delta</code>，补 v14d 原意（终点位姿不变）。</li>
+      <li><b>附带修复：v14f 位姿基准</b>——切分支救援的枚举基准从翻转后 target 改为当前位姿（旧代码候选再 ±180 回未翻转位姿，对 target 的 FK 永不匹配，结构性必死）。v14g 同款奇偶问题留档不动（主修复后不会触发）。</li>
+      <li><b>加固：前视绑定执行</b>——前视构型弧碰时不得退 MoveL（连续选解锁族会丢前视资格——种子 13 实证路径），只允许换用其他前视合格分支直达，全部失败则本构型判死、整段换种子重试。</li>
+      <li><b>验证结果</b>——ast.parse 过；verify_v14c_plan.py 离线全绿：种子 1 直接过整链 17 段，E7 换向+180° 落 J6=+0.0°，E15 换向-180° 落 J6=-3.1°（探针预言的活路），E11 救援选到 +169.2° 族（与 TCP仿真 同族）；refresh_station_p2p_macro.py 已刷站内宏，回读 v14j-20261010-2030。待用户从零位上机重跑（前几段大展开，手放急停）。</li>
+    </ol>
+  </section>
+
+  <!-- 07 movl final verdict -->
+  <section>
+    <div class="sec-head">
+      <span class="sec-no">07</span>
+      <h2>v14l 试航判负 → 回退 v14k → MoveL 终审规律（2026-10-12）</h2>
+      <span class="sec-note">驱动 MOVL 死刑终审 · 细分+MoveJ 定为永久方案 · v14l 永久拉黑</span>
+    </div>
+    <ol class="steps">
+      <li><b>v14k 先全通过（10:24，2:58）</b>——17/17 点零分瓣日志行；P5/P9 两段 MoveL 细分（6/4 途经点）照常执行，总时长 3:37→2:58。</li>
+      <li><b>v14l 试航（11:17 落地，11:30 上机）当埼判决失败</b>——仅一处行为变更：短直线段（≤150mm）跳过细分途经点、直发驱动直线。P5 直发后停在 4/17：法兰位姿=命令的 TCP 目标位姿（差仅 5.5mm），真实尖端多探出一个工具长（159.63mm）、偏离认证直线 154.8mm 进入圆柱包络（距轴 106.7&lt;R180）。探针：probe_movl_stop_geometry / branch_flip / tool_offset；翻转分支假说已拒（最小失配 6.94°）。</li>
+      <li><b>死因升级：驱动 MOVL 无工具补偿</b>——驱动把 TCP 坐标当法兰目标执行，落到完全不同构型，「到位」永不到来。v13 时代的断连指纹本源即此。碰撞预检背书的是意图（命令 TCP 直线安全），验证不了执行语义（驱动按法兰目标走）。</li>
+      <li><b>回退 v14k（15:00）+ 复跑全绿（16:15–16:18）</b>——磁盘+站内回 v14k-20261012-1040（92562 字节）；v14l 全量备份 .bak 留档；用户复跑 17/17 成功，P5/P9 细分照常走完，GUI 未再闪退（闪退与代码版本无关，降级观察项）。</li>
+      <li><b>MoveL 使用史终审规律（日志逐条钉死）</b>——驱动 MOVL 4/4 全败：10-09 16:53 v10（P2）、10-10 08:55 v12b、10-10 15:48 v12b（旧窗口）——此三次停点均=P1 上一构型（臂未动）；+ 10-12 11:30 v14l（P5，停点=法兰目标构型，臂真的动了）。细分+MoveJ 4 战 4 胜：v13 / v14j / v14k / v14k 复跑。规划层 MoveL 拒绝（v14a P5 / v14b P11）均为真碰撞正确检出。<b>定案：MoveL 可作路线图（细分+MoveJ 执行），永不可作执行指令；任何形式的「直发驱动 MOVL」开关/路径永久拉黑。</b></li>
+    </ol>
+    <div class="map-cap">v14k 现行代码层拉黑已成立：MoveL 步缺少细分途经点时拒绝发送驱动 MOVL（L960-961 防呆）；效率优化只许动非几何参数，细分步长铁律 ≤20mm（见第 08 节）。</div>
+  </section>
+
+  <!-- 08 v14m crash -->
+  <section>
+    <div class="sec-head">
+      <span class="sec-no">08</span>
+      <h2>v14m(40mm) 实机碰撞判负 → 回滚 v14n（2026-10-12 17:00→17:12）</h2>
+      <span class="sec-note">弦误差吃掉真裕度 · 步长铁律 ≤20mm · 效率优化改道非几何参数</span>
+    </div>
+    <ol class="steps">
+      <li><b>事故</b>——16:58:43 v14m 就绪，17:00:06 P5 细分启动，17:00:09 后心跳与日志同秒停更；RoboDK 界面内机械臂与圆柱碰撞显示、运动停止。17:12:40 取证修正：API 回读关节=P5 终点关节逐位一致——实机已走完 P5 全段停在终点，旧 GUI 死在完成后；新窗口回原点被预检拒（同上午 v14l 受困机制）。</li>
+      <li><b>机理</b>——40mm 跳的 MoveJ 弦路径偏离认证直线；真实表面裕度仅 ~19.9mm（轴线距 199.9mm − 半径 R180）。v14m 落地时误把轴线距当裕度（算术错误，已认领），弦偏差叠加后扫入圆柱包络。</li>
+      <li><b>盲区归档</b>——离线 verify 只验「途经点在认证直线上」，验不到「MoveJ 弦扫掠包络」；碰撞预检 MoveL_Test@1mm 背书的是直线意图，不覆盖执行弦。20mm 步长两度实机全过是唯一实证安全基准。</li>
+      <li><b>处置</b>——17:12 回滚 v14n-20261012-1712（=v14k 行为：步长回 20mm + 事故注释），三连验证全绿、指纹回 v14k 基准（段 5/9=6/4 途经点），站内宏回读 v14n；v14m 全量备份 .bak 留证。</li>
+      <li><b>新铁律</b>——细分步长永不得大于 20mm（实机双证：20mm 两度全过、40mm 一触即碰）；效率优化只许在非几何参数上做文章（断连恢复税、指令流水化），不动步长。</li>
+      <li><b>后续与对策</b>——17:20 v14n（=v14k 行为）实机全 17 段通过+回零，零事故；但取证坐实每跳尾部假断连恢复税 ~2s（每条 MoveJ 一轮断连→等待→重连）。17:47 落地 v14o 静默重连（几何零不改）：等待静止与后台重连并行、静止确认 3×0.2s、恢复就绪探测；护栏全保留。17:51–17:53 v14o 实机全绿零事故，但观感无改善：恢复税确实被压掉（~2s→0–1s，全程 5:03→2:14），不过非大头。</li>
+      <li><b>驱动层定性（17:55–18:10 反汇编 DobotCRDriver.pyc v310）</b>——顿挫剩余成本的结构性根源在 RoboDK DobotCR 驱动：每条 MOVJ 前重发 EnableRobot（“Enabling Robot..”）；JointMovJ 发完即报 READY 不候完成；17:20 RoboDK 重启后每条指令结束即断（22000 端口每命令一次短连接，16 个 TIME_WAIT 实证）。每跳 ~2.3s = 物理减速到零 0.8–1.2s + 指令链路开销 ~1s + 静止确认 0.6s，宏侧已无空间，v14o 就是这条架构的结构下限。</li>
+      <li><b>v14p-20261012-1832 落地（法兰补偿MOVL，默认关）</b>——用户拍板“不得不解锁 movel”后，把 v14l 死因翻案为引擎：v14l 实证驱动 MOVL 无工具补偿、按法兰执行（停点法兰=命令TCP目标，差仅 5.5mm），且运动完整走完、速度归零、模式正常——输在语义不在可靠性。将错就错：发送瞬间站内工具置单位变换，MoveL(joints) 的笛卡尔目标即 FK(joints) 法兰位姿，控制器把法兰精确送到本步构型法兰位姿，物理工具（159.63mm）随之落在认证直线上；姿态恒定段（≤0.5°）法兰线=TCP线平移常向量，扫掠包络与细分路径一致。门禁：仅 MoveL 细分段、≤150mm、姿态≤0.5°（当前谱系 P5≈120mm/P9≈80mm 全在界内）；GUI 开关默认关，去勾即回同一条细分路径；规划/预检/几何零改动；护栏全保留（0.5°到位/20s静止/重连失败停/v14l 无补偿直发仍拉黑）；工具恢复放 finally。三连验证：check_v14p_landing.py PASS、离线指纹=基准（17 段、段 5/9=6/4）、站内宏回读 v14p（98582 字节=磁盘）。**首航实绩（18:50:42）**：P5 一指令直发，语义链路全对——同构型族无翻转、停点在 P4→P5 关节路径尾端、残差 0.95°≈1.4mm 级（若补偿错位应≥工具长 159.63mm→几十度）；护栏拦停原因=断连后关节级校验 0.95°>0.5° 容差。意外收获：MovL 有效速度 ≈100mm/s+（setSpeed(20) 对 MovL 映射不同），P5 全段 ≲1s 走完。判读：阈值/判据口径问题，非语义失败；候选下一步=对 MovL 直发段改用法兰位姿级验收待批。</li>
+      <li><b>v14q-20261013-0942 落地（法兰补偿MOVL+到位纠偏，默认关）</b>——2026-10-13 上午把 v14p 停点残差用站内 FK 精算：法兰级 4.613mm/0.616°（非前晚拍脑袋的 1.4mm 级），与 v14l 5.5mm 双样本跨版本一致 → 控制器 MovL 固有落点误差 ~5mm 级坐实。据此 v14q 不放宽 0.5° 关节安全阈，改双判据：①直发落点法兰位姿级粗验收（新函数 _movl_flange_accept，FK(实测) vs FK(目标)，≤8mm/≤1°，超即停）②通过且关节残差>0.5° 时发一条 MoveJ 微纠偏收口到认证构型（_single_move_settle 全套护栏罩终点）。预期 P5：直发~1s→验收~1s→纠偏~2s，仍远快于细分 13s/6 顿。另：RoboDK 今晨重启后站完整性探针全绿（圆柱/地面/安装台/宏在，门把手_bs1 挂机器人且激活 159.629mm）。三连验证：check_v14q_landing PASS（含验收在工具恢复之后的顺序断言）、离线指纹=基准、站内宏回读 v14q（101506B=磁盘）。待上机：勾选开关跑轨迹 7，看 P5/P9 直发+验收+收口全链路。</li>
+      <li><b>v14r-20261013-1002 落地（法兰补偿MOVL+到位纠偏，默认关）</b>——v14q 09:57 首跑复停在 P5：控制流漏判——MovL 直发必触发假断连（环境常态），0.95° 固有残差在 _single_move_settle 断连分支内部就被关节级 0.5° 拦停，v14q 加在外层的法兰级粗验收+MoveJ 收口根本没执行到（停点与 v14p 首航逐位一致，确定性复现）。v14r 修法：_single_move_settle 加 require_joints=True 默认参，两处关节级校验门（断连分支+正常分支）均受控；仅 MovL 直发调用点传 False，终点安全由外层法兰级粗验收（≤8mm/≤1°）+MoveJ 微纠偏收口接管（收口走默认 True，0.5° 罩终点）；其余全部调用点零改动。附带发现：上电已恢复（昨日起不上电事故自愈，待观察）。三连验证：check_v14r_landing PASS、离线指纹=基准、站内回读 v14r（102381B=磁盘）。待上机：勾选开关复跑轨迹 7，预期 P5 直发→法兰验收通过→微纠偏→继续 P6+。</li>
+      <li><b>v14s-20261013-1018 落地（法兰补偿MOVL+到位纠偏+起步让位，默认关）</b>——v14r 10:09 复跑：P5 全链路首次跑通（直发→法兰验收 4.61mm/0.62°→MoveJ 收口→P6/P7/P8 连走），但新停点 P9=另一种病——控制器起步延迟 >1s，假断连短采样窗（3×0.2s）把「还没开始动」误判成「已完成」（残差恰=段长 100.00mm/0.00°、实测关节=起点构型、停时 J4/J6 速度非零），指令实际迟后执行完毕（善后读到精确 P9 构型）；护栏未放走错构型，只是等得不够聪明。v14s：起步让位——_single_move_settle 加 expect_motion_from（发送前实测关节），静止且仍在起点则继续等（上限 MOVL_START_GRACE_S=6s），起步后交回常规 20s 静止判定，超时未起步按未执行停待判读。三连验证：check_v14s_landing PASS、离线指纹=基准、站内回读 v14s（104751B=磁盘）。待上机：复跑轨迹 7，预期 P5/P9 直发→起步让位→验收→收口→P10+。</li>
+      <li><b>v14t-20261013-1034 落地（起步让位·修正版，默认关）</b>——v14s 10:23 复跑：P9 二场同指纹复停（直发→断连→「已完成」全在同一秒、停时 J4/J6 速度 0.04/0.23°/s 蠕行低于阈值）→让位代码放错分支：加在断连分支 return 之后的正常分支，而 MovL 直发永远走假断连分支，从未执行；P5 两场全过是因为其断连在运动结束后才报；check 只查「存在」未查「可达」，漏检。v14t：让位下沉为 _wait_departure_then_static(start_joints)，断连分支静止确认改调它（静止仍在起点→续等≤6s，起步后交回常规 5×0.3s 静止确认；None→与 v14o 行为完全一致）；超时未起步仍报「疑似未执行」停；check_v14t 补可达性顺序断言（线程→让位→静止护栏→完成日志）。三连验证：check_v14t PASS、离线指纹=基准、站内回读 v14t（105421B=磁盘）。10:38 复跑：P5 三场连通；P9 让位首次真正执行——等满 6s 报「6s内未观测到起步」停（停时关节仍=P9 起点、仅 J4 0.42°/s 低于阈值的保持抖动），但 10:41:23 善后实测已到 P9 目标构型（J2 +10°/J3 +20°，J1/J4/J5/J6 不变）——指令在宏停止后自行执行完（未重发）。定论：P9 起步延迟 >6s（P5 三场秒级成对照，P9 特异、机制未明，疑与 P7 J6 180° 翻转后队列状态有关未证）。v14u 方向：断连分支内改「目标锚定到位等待」——距目标关节 ≤2° 且静止即完成，上限 60s，每 5s 进度日志实测延迟；超时停。</li>
+      <li><b>v14u-20261013-1059 落地（目标锚定到位等待，默认关）</b>——起步让位整函数替换为 _wait_arrival_then_static(target_joints)：距目标关节≤2°（MOVL_ARRIVE_TOL_DEG）且速度<0.5°/s 即完成，上限 MOVL_ARRIVE_WAIT_S=60s（10 倍裕量），每 5s 进度日志实测真实延迟；超时报「疑似未执行」停；参数 expect_motion_from→expect_target（直发调用点传 step['joints']，删发送前采样）；None 退化行为不变；不重发铁律不变。三连验证：check_v14u PASS（含可达性顺序断言+旧机制名零残留）、指纹=基准、站内回读 v14u（106701B=磁盘）。待上机：复跑轨迹 7，预期 P9 进度日志量出真实延迟→到位确认→验收→收口→P10+；60s 仍不到=真未执行另案。</li>
+    </ol>
+    <div class="map-cap">版本谱系更新：v14k（两度过）→v14l（拉黑）→v14m（判负）→v14n（通过）→v14o（通过，静默重连，观感无改善）→v14p（现行，法兰补偿MOVL 默认关，待上机）。若 v14p 实机验证 P5/P9 连续性达标，顿挫主战场即收官；否则剩余选项：提速（ROBOT_SPEED，非几何）/ v15 ServoJ 连续流 / 重启 RoboDK 试。</div>
+
+  <div class="colophon">
+    <b>数据来源</b>　TCP真实运动_P2P版.py（v14p-20261012-1832 现行，几何=v14k/n + 静默重连 + 法兰补偿MOVL 默认关）· real_gui_log_p2p.txt + real_gui_heartbeat.txt（17:00 同秒停更；17:12:40 回读取证；17:20–17:26 v14n 全绿时间线）· verify_v14c_plan.py v14p 全绿（指纹回基准）<br>
+    <b>未证事实</b>　v14m 碰撞时实物是否接触（已回零，无损伤报告）· GUI 窗口冻结 vs 闪退（旧窗口已弃）· v14p 待上机（预期：勾选后 P5/P9 一指令连续走完，终点构型 0.5° 校验罩住）<br>
+    <b>上一轮上下文</b>　CHECKPOINT_v44.md（工作区根，含 v14m 判负、v14n 通过、v14o 通过、v14p 落地）· 本文档已随 v14n/v14o/v14p 更新（第 08 节补后续，colophon）
+  </div>
+
+</div>
+</body>
+</html>

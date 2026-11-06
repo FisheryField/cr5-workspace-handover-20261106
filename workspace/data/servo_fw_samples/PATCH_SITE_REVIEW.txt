@@ -1,0 +1,102 @@
+==============================================================================
+1. UNIQUENESS of the patch byte pattern
+==============================================================================
+  3150(3.1.5.0) : 1 occurrence(s) of 2c 49 89 69 01 44
+      payload offset 0x14afe   flash 0x08024afe
+  D8(3.2.D.8) : 0 occurrence(s) of 2c 49 89 69 01 44
+
+==============================================================================
+2. 3150 disassembly around the site (real load base 0x08010000)
+==============================================================================
+  0x08024a9e  (off 0x14a9e)  smull    r2, r3, r0, r1
+  0x08024aa2  (off 0x14aa2)  ldr      r0, [sp, #0x10]
+  0x08024aa4  (off 0x14aa4)  ldr.w    r0, [r0, #0x22c]
+  0x08024aa8  (off 0x14aa8)  asr.w    ip, r0, #0x1f
+  0x08024aac  (off 0x14aac)  umull    r1, lr, r2, r0
+  0x08024ab0  (off 0x14ab0)  mla      r0, r3, r0, lr
+  0x08024ab4  (off 0x14ab4)  mla      r0, r2, ip, r0
+  0x08024ab8  (off 0x14ab8)  strd     r1, r0, [sp]
+  0x08024abc  (off 0x14abc)  ldr      r0, [r4]
+  0x08024abe  (off 0x14abe)  asrs     r1, r0, #0x1f
+  0x08024ac0  (off 0x14ac0)  mov      r2, r0
+  0x08024ac2  (off 0x14ac2)  mov      r3, r1
+  0x08024ac4  (off 0x14ac4)  strd     r0, r1, [sp, #8]
+  0x08024ac8  (off 0x14ac8)  ldrd     r0, r1, [sp]
+  0x08024acc  (off 0x14acc)  bl       #0x8010222
+  0x08024ad0  (off 0x14ad0)  mov      r6, r0
+  0x08024ad2  (off 0x14ad2)  str.w    r6, [r5, #0xa8]
+  0x08024ad6  (off 0x14ad6)  b        #0x8024ae0
+  0x08024ad8  (off 0x14ad8)  ldr.w    r0, [r5, #0xa0]
+  0x08024adc  (off 0x14adc)  str.w    r0, [r5, #0xa8]
+  0x08024ae0  (off 0x14ae0)  movs     r0, #1
+  0x08024ae2  (off 0x14ae2)  ldr      r1, [pc, #0xb4]
+  0x08024ae4  (off 0x14ae4)  strb     r0, [r1]
+  0x08024ae6  (off 0x14ae6)  ldr      r0, [pc, #0xc4]
+  0x08024ae8  (off 0x14ae8)  ldrh     r0, [r0]
+  0x08024aea  (off 0x14aea)  cmp      r0, #1
+  0x08024aec  (off 0x14aec)  bne      #0x8024af4
+  0x08024aee  (off 0x14aee)  movs     r0, #0
+  0x08024af0  (off 0x14af0)  ldr      r1, [pc, #0xbc]
+  0x08024af2  (off 0x14af2)  str      r0, [r1, #0x18]
+  0x08024af4  (off 0x14af4)  ldr      r0, [sp, #0x14]
+  0x08024af6  (off 0x14af6)  ldr      r0, [r0, #0x10]
+  0x08024af8  (off 0x14af8)  ldr.w    r1, [r5, #0xa8]
+  0x08024afc  (off 0x14afc)  add      r0, r1
+  0x08024afe  (off 0x14afe)  ldr      r1, [pc, #0xb0]  <<< PATCHED
+  0x08024b00  (off 0x14b00)  ldr      r1, [r1, #0x18]  <<< PATCHED
+  0x08024b02  (off 0x14b02)  add      r1, r0  <<< PATCHED
+  0x08024b04  (off 0x14b04)  str.w    r1, [sb, #0x234]
+  0x08024b08  (off 0x14b08)  ldr.w    r0, [sb, #0x234]
+  0x08024b0c  (off 0x14b0c)  cmp      r0, #0
+  0x08024b0e  (off 0x14b0e)  blt      #0x8024b32
+  0x08024b10  (off 0x14b10)  ldr.w    r0, [sb, #0x234]
+  0x08024b14  (off 0x14b14)  ldr      r1, [r4, #0xc]
+  0x08024b16  (off 0x14b16)  sdiv     r0, r0, r1
+  0x08024b1a  (off 0x14b1a)  ldr      r1, [pc, #0x94]
+  0x08024b1c  (off 0x14b1c)  str      r0, [r1, #4]
+  0x08024b1e  (off 0x14b1e)  ldr.w    r0, [sb, #0x234]
+  0x08024b22  (off 0x14b22)  ldr      r1, [r4, #0xc]
+  0x08024b24  (off 0x14b24)  sdiv     r2, r0, r1
+  0x08024b28  (off 0x14b28)  mls      r0, r1, r2, r0
+  0x08024b2c  (off 0x14b2c)  ldr      r1, [pc, #0x80]
+  0x08024b2e  (off 0x14b2e)  str      r0, [r1]
+  0x08024b30  (off 0x14b30)  b        #0x8024b56
+  0x08024b32  (off 0x14b32)  ldr.w    r0, [sb, #0x234]
+  0x08024b36  (off 0x14b36)  ldr      r1, [r4, #0xc]
+  0x08024b38  (off 0x14b38)  sdiv     r0, r0, r1
+  0x08024b3c  (off 0x14b3c)  subs     r0, r0, #1
+  0x08024b3e  (off 0x14b3e)  ldr      r1, [pc, #0x70]
+  0x08024b40  (off 0x14b40)  str      r0, [r1, #4]
+  0x08024b42  (off 0x14b42)  ldr.w    r0, [sb, #0x234]
+  0x08024b46  (off 0x14b46)  ldr      r1, [r4, #0xc]
+  0x08024b48  (off 0x14b48)  sdiv     r2, r0, r1
+  0x08024b4c  (off 0x14b4c)  mls      r0, r1, r2, r0
+  0x08024b50  (off 0x14b50)  add      r0, r1
+  0x08024b52  (off 0x14b52)  ldr      r1, [pc, #0x5c]
+  0x08024b54  (off 0x14b54)  str      r0, [r1]
+  0x08024b56  (off 0x14b56)  ldr.w    r1, [sb, #0x234]
+  0x08024b5a  (off 0x14b5a)  ldr      r0, [pc, #0x58]
+  0x08024b5c  (off 0x14b5c)  ldr      r2, [r0, #8]
+
+==============================================================================
+3. the two candidate patches, decoded
+==============================================================================
+  mov r1, r0  (01 46)      -> 0x08024afe  mov      r1, r0
+  mov r1, r0  (01 46)      -> 0x08024b00  nop      
+  mov r1, r0  (01 46)      -> 0x08024b02  nop      
+
+  mov r0, r1  (08 46)      -> 0x08024afe  mov      r0, r1
+  mov r0, r1  (08 46)      -> 0x08024b00  nop      
+  mov r0, r1  (08 46)      -> 0x08024b02  nop      
+
+  bf 00 x2 WRONG-ENDIAN    -> 0x08024afe  lsls     r7, r7, #2
+  bf 00 x2 WRONG-ENDIAN    -> 0x08024b00  lsls     r7, r7, #2
+
+==============================================================================
+4. D8 counterpart: where does D8 write +0x234 ?
+==============================================================================
+  --- D8(3.2.D.8) ---
+      str.w with imm12 == 0x234 : 0 site(s)
+  --- 3150(3.1.5.0) ---
+      str.w with imm12 == 0x234 : 0 site(s)
+

@@ -1,0 +1,212 @@
+=== /dobot/bin/etc ===
+total 72
+drwxrwxrwx    2 1022     1024          1024 Sep 18 09:28 .
+drwxrwxrwx    8 1022     1024          1024 Sep 18 14:12 ..
+-rwxrwxrwx    1 1022     1024          2689 Dec 30  2022 api.ini
+-rwxrwxrwx    1 1022     1024           240 Dec 30  2022 ioctrl.json
+-rwxrwxrwx    1 1022     1024           584 Dec 30  2022 iscara.conf
+-rwxrwxrwx    1 1022     1024           236 Dec 30  2022 modbusctrl.json
+-rwxrwxrwx    1 1022     1024         62311 Dec 30  2022 redis.conf
+-rwxrwxrwx    1 1022     1024           395 Dec 30  2022 smb.conf
+-rwxrwxrwx    1 root     root             7 Aug 21  1975 version.conf
+=== /dobot/bin/bin ===
+total 35867
+drwxrwxrwx    2 1022     1024          1024 Sep 18 09:28 .
+drwxrwxrwx    8 1022     1024          1024 Sep 18 14:12 ..
+-rwxrwxrwx    1 1022     1024         55635 Dec 30  2022 event_rpcgen.py
+-rwxrwxrwx    1 1022     1024        168325 Dec 30  2022 lua
+-rwxrwxrwx    1 1022     1024        155289 Dec 30  2022 luac
+-rwxrwxrwx    1 1022     1024       2880354 Dec 30  2022 nmbd
+-rwxrwxrwx    1 1022     1024        276908 Dec 30  2022 redis-benchmark
+-rwxrwxrwx    1 1022     1024       3094034 Dec 30  2022 redis-check-aof
+-rwxrwxrwx    1 1022     1024       3094034 Dec 30  2022 redis-check-rdb
+-rwxrwxrwx    1 1022     1024        620471 Dec 30  2022 redis-cli
+-rwxrwxrwx    1 1022     1024       3094034 Dec 30  2022 redis-sentinel
+-rwxrwxrwx    1 1022     1024       3094034 Dec 30  2022 redis-server
+-rwxrwxrwx    1 1022     1024       4761206 Dec 30  2022 smbclient
+-rwxrwxrwx    1 1022     1024       7635521 Dec 30  2022 smbd
+-rwxrwxrwx    1 1022     1024       4749710 Dec 30  2022 smbpasswd
+-rwxrwxrwx    1 1022     1024       2878500 Dec 30  2022 sqlite3
+=== /dobot/bin/lib (count+first 40) ===
+66
+total 20599
+drwxrwxrwx    4 1022     1024          3072 Sep 18 09:28 .
+drwxrwxrwx    8 1022     1024          1024 Sep 18 14:12 ..
+lrwxrwxrwx    1 root     root            26 Sep 18 09:28 libalgs_framework.so -> libalgs_framework.so.1.0.0
+lrwxrwxrwx    1 root     root            26 Sep 18 09:28 libalgs_framework.so.1 -> libalgs_framework.so.1.0.0
+lrwxrwxrwx    1 root     root            26 Sep 18 09:28 libalgs_framework.so.1.0 -> libalgs_framework.so.1.0.0
+-rwxrwxrwx    1 1022     1024       2039430 Dec 30  2022 libalgs_framework.so.1.0.0
+lrwxrwxrwx    1 root     root            19 Sep 18 09:28 libdataSvr.so -> libdataSvr.so.1.0.0
+lrwxrwxrwx    1 root     root            19 Sep 18 09:28 libdataSvr.so.1 -> libdataSvr.so.1.0.0
+lrwxrwxrwx    1 root     root            19 Sep 18 09:28 libdataSvr.so.1.0 -> libdataSvr.so.1.0.0
+-rwxrwxrwx    1 1022     1024       3228060 Dec 30  2022 libdataSvr.so.1.0.0
+lrwxrwxrwx    1 root     root            25 Sep 18 09:28 libdataSvrPlugin.so -> libdataSvrPlugin.so.1.0.0
+lrwxrwxrwx    1 root     root            25 Sep 18 09:28 libdataSvrPlugin.so.1 -> libdataSvrPlugin.so.1.0.0
+lrwxrwxrwx    1 root     root            25 Sep 18 09:28 libdataSvrPlugin.so.1.0 -> libdataSvrPlugin.so.1.0.0
+-rwxrwxrwx    1 1022     1024       2239902 Dec 30  2022 libdataSvrPlugin.so.1.0.0
+lrwxrwxrwx    1 root     root            21 Sep 18 09:28 libevent-2.1.so.6 -> libevent-2.1.so.6.0.2
+-rwxrwxrwx    1 1022     1024        927998 Dec 30  2022 libevent-2.1.so.6.0.2
+lrwxrwxrwx    1 root     root            21 Sep 18 09:28 libevent.so -> libevent-2.1.so.6.0.2
+lrwxrwxrwx    1 root     root            26 Sep 18 09:28 libevent_core-2.1.so.6 -> libevent_core-2.1.so.6.0.2
+-rwxrwxrwx    1 1022     1024        592617 Dec 30  2022 libevent_core-2.1.so.6.0.2
+lrwxrwxrwx    1 root     root            26 Sep 18 09:28 libevent_core.so -> libevent_core-2.1.so.6.0.2
+lrwxrwxrwx    1 root     root            27 Sep 18 09:28 libevent_extra-2.1.so.6 -> libevent_extra-2.1.so.6.0.2
+-rwxrwxrwx    1 1022     1024        357398 Dec 30  2022 libevent_extra-2.1.so.6.0.2
+lrwxrwxrwx    1 root     root            27 Sep 18 09:28 libevent_extra.so -> libevent_extra-2.1.so.6.0.2
+-rwxrwxrwx    1 1022     1024        198771 Dec 30  2022 libhiredis.so
+-rwxrwxrwx    1 1022     1024        198771 Dec 30  2022 libhiredis.so.0.13
+lrwxrwxrwx    1 root     root            15 Sep 18 09:28 libhistory.so -> libhistory.so.7
+lrwxrwxrwx    1 root     root            17 Sep 18 09:28 libhistory.so.7 -> libhistory.so.7.0
+-rwxrwxrwx    1 1022     1024        103194 Dec 30  2022 libhistory.so.7.0
+-rwxrwxrwx    1 1022     1024       1978136 Dec 30  2022 libjemalloc.so
+-rwxrwxrwx    1 1022     1024       1978136 Dec 30  2022 libjemalloc.so.2
+-rwxrwxrwx    1 1022     1024         58757 Dec 30  2022 libmodbus.so
+lrwxrwxrwx    1 root     root            25 Sep 18 09:28 libprocessPlugin.so -> libprocessPlugin.so.1.0.0
+lrwxrwxrwx    1 root     root            25 Sep 18 09:28 libprocessPlugin.so.1 -> libprocessPlugin.so.1.0.0
+lrwxrwxrwx    1 root     root            25 Sep 18 09:28 libprocessPlugin.so.1.0 -> libprocessPlugin.so.1.0.0
+-rwxrwxrwx    1 1022     1024        625572 Dec 30  2022 libprocessPlugin.so.1.0.0
+lrwxrwxrwx    1 root     root            16 Sep 18 09:28 libreadline.so -> libreadline.so.7
+lrwxrwxrwx    1 root     root            18 Sep 18 09:28 libreadline.so.7 -> libreadline.so.7.0
+-rwxrwxrwx    1 1022     1024        662700 Dec 30  2022 libreadline.so.7.0
+lrwxrwxrwx    1 root     root            19 Sep 18 09:28 libsqlite3.so -> libsqlite3.so.0.8.6
+=== /dobot/bin/lua ===
+/dobot/bin/lua:
+total 198
+drwxrwxrwx    2 1022     1024          1024 Sep 18 09:28 .
+drwxrwxrwx    8 1022     1024          1024 Sep 18 14:12 ..
+-rwxrwxrwx    1 1022     1024            81 Dec 30  2022 base.lua
+-rwxrwxrwx    1 1022     1024          3118 Dec 30  2022 dobot.lua
+-rwxrwxrwx    1 1022     1024          8546 Dec 30  2022 dobot_api.lua
+-rwxrwxrwx    1 1022     1024          9243 Dec 30  2022 ftp.lua
+-rwxrwxrwx    1 1022     1024          3698 Dec 30  2022 headers.lua
+-rwxrwxrwx    1 1022     1024         12330 Dec 30  2022 http.lua
+-rwxrwxrwx    1 1022     1024         24302 Dec 30  2022 lanes.lua
+-rwxrwxrwx    1 1022     1024          8331 Dec 30  2022 ltn12.lua
+-rwxrwxrwx    1 1022     1024         10024 Dec 30  2022 luaJson.lua
+-rwxrwxrwx    1 1022     1024          2648 Dec 30  2022 mbox.lua
+-rwxrwxrwx    1 1022     1024          2487 Dec 30  2022 mime.lua
+-rwxrwxrwx    1 1022     1024         70448 Dec 30  2022 mobdebug.lua
+-rwxrwxrwx    1 1022     1024           372 Dec 30  2022 pallet_api.lua
+-rwxrwxrwx    1 1022     1024          3837 Dec 30  2022 persistence.lua
+-rwxrwxrwx    1 1022     1024          8074 Dec 30  2022 smtp.lua
+-rwxrwxrwx    1 1022     1024          4451 Dec 30  2022 socket.lua
+-rwxrwxrwx    1 1022     1024          3612 Dec 30  2022 tp.lua
+-rwxrwxrwx    1 1022     1024         11036 Dec 30  2022 url.lua
+-rwxrwxrwx    1 1022     1024           532 Dec 30  2022 utils_api.lua
+=== /dobot/bin/log ===
+total 4
+drwxrwxrwx    2 1022     1024          1024 Sep 18 09:28 .
+drwxrwxrwx    8 1022     1024          1024 Sep 18 14:12 ..
+-rwxrwxrwx    1 1022     1024             3 Dec 30  2022 cnt.conf
+-rwxrwxrwx    1 1022     1024             7 Dec 30  2022 type.conf
+=== /dobot/userdata ===
+total 267
+drwxr-xr-x   24 root     1024          1024 Dec 30  2022 .
+drwxr-xr-x    6 root     root          1024 Feb 19  1976 ..
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 CR10V2YD_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 CR10V2_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 CR10_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 CR12V2_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 CR12_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 CR16V2_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 CR16_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 CR3L_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 CR3V2_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 CR3_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 CR5S_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 CR5V2_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 CR5_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 CR7V2_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 CR7_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 MG6_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 NC02L_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 Nova2_sys_files
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 Nova5_sys_files
+-rwxr-xr-x    1 root     root          1640 Sep 18 14:12 SlaveLog
+drwxr-xr-x   10 1022     1024          1024 Sep 18 09:28 codesys
+drwxr-xr-x    2 root     root         12288 Jan  1  1970 lost+found
+-rwxr-xr-x    1 1012     1012         14280 Jul 14  2022 port
+lrwxrwxrwx    1 root     root            37 Feb 19  1976 project -> /dobot/userdata/CR5_sys_files/project
+drwxr-xr-x    8 1022     1024          1024 Dec 30  2022 projectOld
+-rwxr-xr-x    1 root     root             4 Feb 19  1976 robotType
+-rwxr-xr-x    1 root     root        210427 Sep 11 17:05 slaveinfo
+-rwxr-xr-x    1 1012     1012          6720 Jul 14  2022 tty2ssh
+=== robotType ===
+CR5
+=== version.conf ===
+010000
+=== iscara.conf ===
+[DataSvr]
+#data svr
+datasvr_data_port = 22000
+datasvr_lua_port = 12346
+datasvr_debug_port = 11000
+
+#broadcast
+broadcast_port=6000
+broadcast_msg=dobotM1_
+broadcast_chkmsg=WhoisDobotM1
+
+# M4 serial tiemout
+timeout=3
+
+# buffer
+buffer_size=8
+packet_size=20
+debug_size = 1200
+
+eth0_ip=192.168.0.1
+eth0_mask=255.255.255.0
+eth0_gw=192.168.0.1
+eth0_dns=202.96.134.133
+
+[Scara_Framewrok]
+posZero1=1
+posZero1=2
+posZero1=3
+posZero1=4
+
+[SerialSvr]
+ttylist=/dev/ttymxc4
+buffer_size=8
+packet_size=20
+speed=115200
+bits=8
+event=N
+stop=1
+
+[UdpSvr]
+port=12345
+maxclient=10
+buffer_size=8
+packet_size=20
+=== /dobot/userdata/project ===
+lrwxrwxrwx    1 root     root            37 Feb 19  1976 /dobot/userdata/project -> /dobot/userdata/CR5_sys_files/project
+=== project/settings ===
+total 19
+drwxr-xr-x    9 1022     1024          1024 Sep 18 09:28 .
+drwxr-xr-x    8 1022     1024          1024 Dec 30  2022 ..
+-rwxr-xr-x    1 root     root            21 Feb 19  1976 Dobot+.json
+-rwxr-xr-x    1 root     root           103 Feb 19  1976 My.lua
+-rwxr-xr-x    1 root     root            98 Feb 19  1976 My_api.lua
+-rwxr-xr-x    1 1022     1024          1584 Dec 30  2022 Plugin.lua
+-rwxr-xr-x    1 1022     1024           240 Dec 30  2022 api.lua
+-rwxr-xr-x    1 root     root            20 Feb 19  1976 common.json
+drwxr-xr-x    2 root     root          1024 Sep 16 16:27 coordinate
+drwxr-xr-x    2 root     root          1024 Sep 16 16:27 datasvr
+-rwxr-xr-x    1 root     root           975 Feb 19  1976 default.json
+drwxr-xr-x    2 1022     1024          1024 Sep 18 09:28 function
+-rwxr-xr-x    1 1022     1024           135 Dec 30  2022 hot_key.json
+-rwxr-xr-x    1 root     root           584 Feb 19  1976 iscara.conf
+drwxr-xr-x    2 root     root          1024 Sep 16 16:27 playback
+drwxr-xr-x    2 root     root          1024 Sep 16 16:27 teach
+drwxr-xr-x    2 1022     1024          1024 Dec 30  2022 tech
+drwxr-xr-x    2 root     root          1024 Sep 16 16:27 workTime
+=== /home/ftp ===
+total 24
+drwxrwxr-x    6 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    5 1025     1025          4096 Jan  1  1970 ..
+drwxrwxr-x    2 1025     1025          4096 Aug 21  1975 .dobotConfig
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .lib
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 PlcLogic
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 affinity

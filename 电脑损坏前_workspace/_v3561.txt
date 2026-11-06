@@ -1,0 +1,61 @@
+=== date/uptime ===
+Fri Sep 18 19:23:48 CST 2026
+141.29 514.32
+=== 6轴组件 libCmpDobot6Axes.so ===
+-rwxrwxr-x    1 1025     1025         72688 Jun  4  2020 /home/ftp/.lib/libCmpDobot6Axes.so
+-rwxr-xr-x    1 root     root         72688 Sep 18 19:21 /usr/lib/libCmpDobot6Axes.so
+40c1c9f0fb8384eeee56baf37d701c71  /usr/lib/libCmpDobot6Axes.so
+40c1c9f0fb8384eeee56baf37d701c71  /home/ftp/.lib/libCmpDobot6Axes.so
+=== retain 相关 (关键) ===
+pp, Class=1, Error=0, Info=22, pszInfo= No retain area in bootproject of application [<app>Application</app>]
+=== 开机 SDO 写入索引集合 ===
+SDO write ok: Index: 16#1600
+SDO write ok: Index: 16#1A00
+SDO write ok: Index: 16#1C12
+SDO write ok: Index: 16#1C13
+=== ac_persistence ===
+total 8
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+=== Recipe ===
+total 24
+drwxrwxr-x    2 1025     1025          4096 Sep 18 19:11 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+-rwxrwxr-x    1 1025     1025           439 Feb 18  1976 SaveAxesValue.AxesValues.txtrecipe
+-rw-r--r--    1 root     root           100 Sep 18 19:11 SavePos.txt
+-rw-r--r--    1 root     root           780 Sep 18 19:21 SlaveInfos.SlaveInfos.txtrecipe
+-rw-r--r--    1 root     root             4 Sep 18 19:20 Update.txt
+=== Application.app ===
+8416cf0eee070a640702c077eb904b4e  /home/ftp/PlcLogic/Application/Application.app
+total 1068
+drwxrwxr-x    2 1025     1025          4096 Sep 18 19:21 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+-rwxr-xr-x    1 root     root       1076068 Sep 18 19:21 Application.app
+-rwxr-xr-x    1 root     root            20 Sep 18 19:22 Application.crc
+=== 零点相关文件 ===
+/opt/.zero
+=== version.conf ===
+2.1.0
+010000
+
+=== /dobot/bin 里新增的文件 ===
+total 2548
+drwxrwxrwx    8 1026     1028          1024 Sep 18 19:21 .
+drwxr-xr-x    6 root     root          1024 Feb 19  1976 ..
+-rwxrwxrwx    1 1026     1028           165 Jul 18  2023 autoCacheFree.sh
+-rwxrwxrwx    1 1026     1028            51 Jul 18  2023 autoSync.sh
+drwxrwxrwx    2 1026     1028          1024 Sep 18 19:20 bin
+-rwxrwxrwx    1 1026     1028          4096 Jul 18  2023 dobot.db
+-rwxrwxrwx    1 1026     1028         12605 Jul 18  2023 dobot.sh
+-rwxrwxrwx    1 root     root             0 Aug 21  1975 dobotM1Semphore
+drwxrwxrwx    2 1026     1028          1024 Sep 18 19:20 etc
+prwxrwxrwx    1 root     root             0 Sep 18 19:23 fifoCodesys
+prwxrwxrwx    1 root     root             0 Sep 18 19:23 fifoGcontrol
+-rwxrwxrwx    1 1026     1028       2007768 Jul 18  2023 gcontrol
+-rwxrwxrwx    1 1026     1028        157945 Jul 18  2023 getVersion
+drwxrwxrwx    4 1026     1028          3072 Sep 18 19:20 lib
+drwxrwxrwx    2 1026     1028          1024 Sep 18 19:20 log
+-rwxrwxrwx    1 1026     1028        397524 Jul 18  2023 logServer
+drwxrwxrwx    2 1026     1028          1024 Sep 18 19:20 lua
+-rwxrwxrwx    1 root     root             0 Aug 21  1975 stdout
+drwxrwxrwx    3 root     root          1024 Sep 18 19:21 tmp

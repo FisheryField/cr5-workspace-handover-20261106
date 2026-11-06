@@ -1,0 +1,42 @@
+{
+	"Operators": { 
+		"+": "+",
+		"-": "-",
+		"*": "*",
+		"/": "/",
+		"//": "//",
+		"%": "%",
+		"^": "^",
+		"&&": "&",
+		"|": "|",
+		"~": "~",
+		">>": ">>",
+		"<<": "<<",
+		"==": "==",
+		"~=": "~=",
+		"<": "<",
+		"<=": "<=",
+		">": ">",
+		">=": ">=",
+		"enter": "\n",
+		"tab": "\t",
+		"and": "and",
+		"or": "or",
+		"not": "not",
+		"#": "#",
+		"break": "break",
+		"local": "local",
+		"nil": "nil",
+		"return": "return",
+		"print": "print"
+	},
+	"Function": {
+		"while": "while (<cur>)\ndo\n\nend\n",
+		"for": "for <cur>\ndo\n\nend\n",
+		"repeat": "repeat\n\t\nuntil (<cur>)\n",
+		"if": "if <cur>\nthen\n\t\nend\n",
+		"if.else": "if <cur>\nthen\n\t\nelse\t\n\t\nend\n",
+		"if.elseif.else": "if <cur>\nthen\n\t\nelseif\nthen\n\t\nelse\n\t\nend\n"
+	}
+	
+}

@@ -1,0 +1,67 @@
+# -*- coding: utf-8 -*-
+"""生成"把 f1 写回共享内存"的实验脚本（纯 BusyBox sh + dd）。"""
+import struct, pathlib
+
+F1 = [-17.5, 875.0, 70.0, 98.0, 47.6, 30.8]      # 断电前的 6 轴 f1
+
+def oct_esc(b):
+    return "".join("\\%03o" % x for x in b)
+
+L = []
+A = L.append
+A("#!/bin/sh")
+A("# 把断电前的 f1 写回控制器共享内存：page132 偏移 0xE2C + 40*i")
+A("PID=$(pidof codesyscontrol | awk '{print $1}')")
+A('echo "pid=$PID"')
+A('[ -n "$PID" ] || { echo NO_PID; exit 2; }')
+A('SEL=$(grep "SYSVe901001b" /proc/$PID/maps | head -1)')
+A('BASEHEX=$(echo "$SEL" | cut -d- -f1)')
+A('B=$((0x$BASEHEX))')
+A('echo "base=0x$BASEHEX"')
+A("P132=$((B+132*4096))")
+A("P133=$((B+133*4096))")
+A("")
+A('echo "=== [1] 写之前 ==="')
+A('echo "-- 位姿 page133+0x04 --"')
+A('dd if=/proc/$PID/mem bs=1 skip=$((P133+4)) count=24 2>/dev/null | od -A n -t f4')
+A('echo "-- page132 f0/f1 --"')
+A("for i in 0 1 2 3 4 5; do")
+A('  printf "  轴%d  f0=" $((i+1))')
+A('  dd if=/proc/$PID/mem bs=1 skip=$((P132+0xE24+40*i)) count=4 2>/dev/null | od -A n -t f4 | tr -d " \n"')
+A('  printf "   f1="')
+A('  dd if=/proc/$PID/mem bs=1 skip=$((P132+0xE2C+40*i)) count=4 2>/dev/null | od -A n -t f4 | tr -d " \n"')
+A('  echo')
+A("done")
+A("")
+A('echo "=== [2] 备份原 256 字节 ==="')
+A('dd if=/proc/$PID/mem of=/tmp/f1_backup.bin bs=1 skip=$((P132+0xE20)) count=256 2>/dev/null')
+A('ls -la /tmp/f1_backup.bin')
+A("")
+A('echo "=== [3] 写回断电前的 f1 ==="')
+for i, v in enumerate(F1):
+    A("printf '%s' | dd of=/proc/$PID/mem bs=1 seek=$((P132+0xE2C+%d)) conv=notrunc 2>/dev/null" % (oct_esc(struct.pack("<f", v)), 40*i))
+    A('echo "  轴%d <- %s"' % (i+1, v))
+A("")
+A('echo "=== [4] 立刻回读 f1（判断是否写住）==="')
+A("for i in 0 1 2 3 4 5; do")
+A('  printf "  轴%d  f1=" $((i+1))')
+A('  dd if=/proc/$PID/mem bs=1 skip=$((P132+0xE2C+40*i)) count=4 2>/dev/null | od -A n -t f4 | tr -d " \n"')
+A('  echo')
+A("done")
+A("")
+A('sleep 3')
+A('echo "=== [5] 3 秒后 ==="')
+A('echo "-- 位姿 --"')
+A('dd if=/proc/$PID/mem bs=1 skip=$((P133+4)) count=24 2>/dev/null | od -A n -t f4')
+A('echo "-- f1 --"')
+A("for i in 0 1 2 3 4 5; do")
+A('  printf "  轴%d  f1=" $((i+1))')
+A('  dd if=/proc/$PID/mem bs=1 skip=$((P132+0xE2C+40*i)) count=4 2>/dev/null | od -A n -t f4 | tr -d " \n"')
+A('  echo')
+A("done")
+A("")
+A('echo "=== [6] 进程状态 ==="')
+A('ps | grep codesyscontrol | grep -v grep || echo "!! codesyscontrol 已退出"')
+
+pathlib.Path(r"D:\mydata\workspace\_f1_test.sh").write_text("\n".join(L) + "\n", encoding="utf-8", newline="\n")
+print("已生成，行数", len(L))

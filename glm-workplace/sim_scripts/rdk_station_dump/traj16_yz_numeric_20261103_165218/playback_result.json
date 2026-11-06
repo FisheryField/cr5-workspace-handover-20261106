@@ -1,0 +1,18 @@
+{
+  "completed": 23,
+  "total": 23,
+  "seconds": 50.40599999999904,
+  "runmode": 1,
+  "station": "轨迹16_控制器本体130验证",
+  "final_joints": [
+    -13.360355063648889,
+    19.28088095790458,
+    46.972852319764854,
+    23.918217809152903,
+    -90.10457915607866,
+    -193.7429604579081
+  ],
+  "trajectory_sha256": "660b303af02f6a207fcb30a59401eabcc9eab594d95c738e5cc6ea1b9a84c01a",
+  "trace_style": "native line",
+  "trace_retained": true
+}

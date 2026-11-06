@@ -1,0 +1,69 @@
+=== date ===
+Fri Sep 18 19:27:51 CST 2026
+=== 最近 20 分钟内被修改的文件（排除 logs）===
+/dobot/userdata/SlaveLog
+/dobot/userdata/CR5_sys_files/project/properties/controlCabType.json
+/dobot/userdata/CR5_sys_files/project/redis/stdout
+/dobot/userdata/CR5_sys_files/project/redis/dump.rdb
+/dobot/userdata/CR5_sys_files/project/settings/function/homeEncoder.json
+/dobot/userdata/CR5_sys_files/project/settings/function/loadParams.json
+/dobot/userdata/CR5_sys_files/project/settings/workTime/WorkTimeRec.json
+/home/ftp/PlcLogic/Recipe/SlaveInfos.SlaveInfos.txtrecipe
+/home/ftp/PlcLogic/Recipe/SavePos.txt
+/home/ftp/PlcLogic/Recipe/Update.txt
+/home/ftp/PlcLogic/Application/Application.app
+/home/ftp/PlcLogic/Application/Application.crc
+/home/ftp/.dobotConfig/StartCnt
+/etc/resolv.conf
+/tmp/codesysBoot
+/tmp/slave.json
+/tmp/dobot_lua_lock
+/var/run/utmp
+/var/run/udhcpd.pid
+/var/run/sshd.pid
+/var/run/redis_6379.pid
+/var/run/inetd.pid
+=== Recipe 目录 ===
+total 24
+drwxrwxr-x    2 1025     1025          4096 Sep 18 19:11 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+-rwxrwxr-x    1 1025     1025           439 Feb 18  1976 SaveAxesValue.AxesValues.txtrecipe
+-rw-r--r--    1 root     root           100 Sep 18 19:11 SavePos.txt
+-rw-r--r--    1 root     root           780 Sep 18 19:21 SlaveInfos.SlaveInfos.txtrecipe
+-rw-r--r--    1 root     root             4 Sep 18 19:20 Update.txt
+=== SavePos.txt 内容 ===
+0000000 e0 c7 f6 11 bc 29 e0 bf 0e 61 92 91 17 62 ad 3f
+0000016 93 98 ca 4d 20 61 ec bf 92 0e b6 cb 20 76 e2 bf
+0000032 91 05 32 7f 1d ad d3 3f 78 5b 6c 24 ec 7d 01 40
+0000048 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=== SaveAxesValue recipe ===
+A1:=LREAL:=GVL.rt_AxisPos[0]:=2.67340099678251e-3F16#AF3439D9AB9A30H-10
+A2:=LREAL:=GVL.rt_AxisPos[1]:=4.30239333748866e-1F16#6E242A3BE77A20H-E
+A3:=LREAL:=GVL.rt_AxisPos[2]:=5.23986595369372e-2F16#D69FFA110BD010H-F
+A4:=LREAL:=GVL.rt_AxisPos[3]:=-1.12282841864866e-2F16#-2DFDB595F03EDEH-F
+A5:=LREAL:=GVL.rt_AxisPos[4]:=-6.2379356591592e-3F16#-198CF31A69067CH-F
+A6:=LREAL:=GVL.rt_AxisPos[5]:=-2.85162772990135e-3F16#-BAE25FD71D7140H-10
+=== /opt/.zero ===
+0
+0
+0
+0
+0
+0
+0
+0
+0
+=== ac_persistence ===
+total 8
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+=== /dobot/userdata/project/redis ===
+total 6
+drwxr-xr-x    2 root     root          1024 Sep 18 19:21 .
+drwxr-xr-x    8 1026     1028          1024 Jul 18  2023 ..
+-rwxr-xr-x    1 root     root             0 Feb 19  1976 appendonly.aof
+-rwxr-xr-x    1 root     root            92 Sep 18 19:20 dump.rdb
+-rw-r--r--    1 root     root          2141 Sep 18 19:21 stdout
+=== 进程 ===
+  302 root       0:13 /dobot/bin/gcontrol
+  373 root       2:21 ./codesyscontrol

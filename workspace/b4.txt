@@ -1,0 +1,20 @@
+﻿=== interpreters on controller ===
+python -> none
+python3 -> none
+python2 -> none
+perl -> none
+awk -> /usr/bin/awk
+busybox -> /bin/busybox
+sh: python: not found
+sh: python3: not found
+=== python modules ===
+sh: python: not found
+=== getconf / page ===
+=== tmpfs free ===
+Filesystem                Size      Used Available Use% Mounted on
+tmpfs                   471.0M      3.0M    468.0M   1% /tmp
+=== total RAM ===
+MemTotal:         964656 kB
+MemFree:          650944 kB
+MemAvailable:     686152 kB
+=== END ===

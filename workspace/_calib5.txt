@@ -1,0 +1,280 @@
+=== PlcLogic dirs ===
+/home/ftp/PlcLogic/Recipe:
+total 24
+drwxrwxr-x    2 1025     1025          4096 Sep 18 09:30 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+-rwxrwxr-x    1 1025     1025           439 Feb 18  1976 SaveAxesValue.AxesValues.txtrecipe
+-rw-r--r--    1 root     root           100 Sep 18 12:12 SavePos.txt
+-rw-r--r--    1 root     root           780 Sep 18 14:12 SlaveInfos.SlaveInfos.txtrecipe
+-rw-r--r--    1 root     root             4 Sep 17 09:47 Update.txt
+
+/home/ftp/PlcLogic/ac_persistence:
+total 8
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+
+/home/ftp/PlcLogic/visu:
+total 8
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+=== process dir ===
+total 15
+drwxr-xr-x    8 1022     1024          1024 Dec 30  2022 .
+drwxr-xr-x    8 1022     1024          1024 Dec 30  2022 ..
+drwxr-xr-x    2 root     root          1024 Sep 16 16:27 elecSkin
+drwxr-xr-x    2 1022     1024          1024 Dec 30  2022 identify
+drwxr-xr-x    2 root     root          1024 Feb 19  1976 pallet
+-rwxr-xr-x    1 root     root          2141 Feb 19  1976 pallet.json
+drwxr-xr-x    2 1022     1024          1024 Sep 18 09:28 screw
+drwxr-xr-x    2 root     root          1024 Sep 16 16:27 sixForce
+drwxr-xr-x    2 1022     1024          1024 Dec 30  2022 trajectory
+-rwxr-xr-x    1 root     root          3091 Feb 19  1976 vision_calibrate.json
+=== sixForce ===
+total 5
+drwxr-xr-x    2 root     root          1024 Sep 16 16:27 .
+drwxr-xr-x    8 1022     1024          1024 Dec 30  2022 ..
+-rwxr-xr-x    1 root     root           353 Feb 19  1976 caliParams.json
+-rwxr-xr-x    1 root     root            44 Feb 19  1976 config.json
+-rwxr-xr-x    1 root     root            22 Feb 19  1976 switch.json
+--- calibProcess.json ---
+=== properties identifiers ===
+axis.json = {
+  "axis":6
+}
+controllerType.json = {
+  "version":1,
+  "name":"CR5"
+}
+
+controlCabType.json = {"controlCab":"NormalCab"}
+businessType.json = {
+    "type":"Industry"
+}
+
+=== structure.json ===
+{
+    "motors": [
+        {
+            "composite": false,
+            "encoder": {
+                "bitNum": 14.287712097167969,
+                "type": ""
+            },
+            "gearBox": {
+                "den": 101,
+                "num": 1
+            },
+            "motor": {
+                "inverted": true,
+                "limit": 3500,
+                "rated": 3000,
+                "type": ""
+            },
+            "positionScaling": {
+                "den": 1,
+                "num": 360
+            },
+            "simulated": false
+        },
+        {
+            "composite": false,
+            "encoder": {
+                "bitNum": 14.287712097167969,
+                "type": ""
+            },
+            "gearBox": {
+                "den": 101,
+                "num": 1
+            },
+            "motor": {
+                "inverted": true,
+                "limit": 3500,
+                "rated": 3000,
+                "type": ""
+            },
+            "positionScaling": {
+                "den": 1,
+                "num": 360
+            },
+            "simulated": false
+        },
+        {
+            "composite": false,
+            "encoder": {
+                "bitNum": 14.287712097167969,
+                "type": ""
+            },
+            "gearBox": {
+                "den": 101,
+                "num": 1
+            },
+            "motor": {
+                "inverted": false,
+                "limit": 3500,
+                "rated": 3000,
+                "type": ""
+            },
+            "positionScaling": {
+                "den": 1,
+                "num": 360
+            },
+            "simulated": false
+        },
+        {
+            "composite": false,
+            "encoder": {
+                "bitNum": 14.287712097167969,
+                "type": ""
+            },
+            "gearBox": {
+                "den": 101,
+                "num": 1
+            },
+            "motor": {
+                "inverted": true,
+                "limit": 3500,
+                "rated": 3000,
+                "type": ""
+            },
+            "positionScaling": {
+                "den": 1,
+                "num": 360
+            },
+            "simulated": false
+        },
+        {
+            "composite": false,
+            "encoder": {
+                "bitNum": 14.287712097167969,
+                "type": ""
+            },
+            "gearBox": {
+                "den": 101,
+                "num": 1
+            },
+            "motor": {
+                "inverted": true,
+                "limit": 3500,
+                "rated": 3000,
+                "type": ""
+            },
+            "positionScaling": {
+                "den": 1,
+                "num": 360
+            },
+            "simulated": false
+        },
+        {
+            "composite": false,
+            "encoder": {
+                "bitNum": 14.287712097167969,
+                "type": ""
+            },
+            "gearBox": {
+                "den": 101,
+                "num": 1
+            },
+            "motor": {
+                "inverted": true,
+                "limit": 3500,
+                "rated": 3000,
+                "type": ""
+            },
+            "positionScaling": {
+                "den": 1,
+                "num": 360
+            },
+            "simulated": false
+        }
+    ],
+    "structure": {
+        "L1": 147,
+        "L2": 0,
+        "L3": 0,
+        "L4": 140.42088317871094,
+        "L5": 115.88533020019531,
+        "L6": 104.5,
+        "L7": 0,
+        "a1": 0.8393999934196472,
+        "a2": -427.6878356933594,
+        "a3": -357.0046691894531,
+        "a4": -0.1258630007505417,
+        "a5": -0.736253023147583,
+        "a6": 0,
+        "alpha1": 90.02828979492188,
+        "alpha2": 0.4404959976673126,
+        "alpha3": -0.3043549954891205,
+        "alpha4": 90.08969116210938,
+        "alpha5": -89.82854461669922,
+        "alpha6": 0,
+        "armSingularity12": 10,
+        "elbowSingularity12": 2,
+        "inclinationAngle": 0.66,
+        "limits": [
+            [
+                -178,
+                178
+            ],
+            [
+                -178,
+                178
+            ],
+            [
+                -160,
+                160
+            ],
+            [
+                -178,
+                178
+            ],
+            [
+                -178,
+                178
+            ],
+            [
+                -357,
+                357
+            ]
+        ],
+        "rotationAngle": 0.55,
+        "wristSingularity12": 2
+    }
+}
+=== gcontrol dual/LRHand strings ===
+### isDual = %d
+##### dualTrans->T0Trans[%f,%f,%f,%f,%f,%f]
+##### dualTrans->U0Trans[%d] = [%f]
+/dobot/userdata/project/process/sixForce/calibProcess.json
+/dobot/userdata/project/process/sixForce/calibProcess.json parse faild!
+IsRobotCalib
+[%s] #%d: calibResult[%d] is not a number !!!
+[PackDualCalibrationResult] : %s
+[ParseDualCalibration] parse error!
+_ZN10PluginBase19alloc_SetFCCalibCmdEP9tagFCLoadi
+_ZN10PluginBase29alloc_GetLRHandCalibrateValueEv
+_ZN10PluginBase29alloc_SetLRHandCalibrateValueEf
+_ZN5dobot6common4util8JsonUtil20ParseDualCalibrationEPKcRbP15DualInputParamsS7_P9DualTrans
+_ZN5dobot6common4util8JsonUtil25PackDualCalibrationResultEP16DualOutputParamsS4_
+calib
+calibResult
+calibType
+isDual
+=== UTF8===
+### /home/ftp/PlcLogic/Application/Application.app
+### /dobot/bin/gcontrol
+### /home/ftp/.lib/libCmpDobot6Axes.so
+### /dobot/userdata/CR5_sys_files/project/properties/alarm_controller.json
+### /dobot/userdata/CR5_sys_files/project/properties/alarm_servo.json
+      9 编码器
+      2 零点
+### alarm context
+### servo alarm context
+697:            "description" : "零点电流偏置过大保护",
+699:            "solution" : "重新设置零点电流偏置"
+767:            "description" : "编码器通信断线异常保护",
+769:            "solution" : "检查编码器通信线路是否正常，或联系技术支持工程师"
+781:            "description" : "编码器异常故障",
+795:            "description" : "编码器电池异常保护",
+809:            "description" : "主编码器内部错误",
+823:            "description" : "主编码器CRC校验错误",
+=== ENDUTF8 ===

@@ -1,0 +1,19 @@
+=== now/uptime ===
+Fri Sep 18 15:58:38 CST 2026
+1880.78 6775.37
+=== SavePos.txt ===
+-rw-r--r--    1 root     root           100 Sep 18 15:26 /home/ftp/PlcLogic/Recipe/SavePos.txt
+0000000 00 00 00 00 00 00 00 80 6f 1f f8 ca da fe 86 bf
+0000016 63 38 87 7b c2 70 54 bf 46 73 35 3b 87 e6 65 bf
+0000032 00 00 00 00 00 00 00 80 9e c2 2a fc 38 85 51 bf
+0000048 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=== SaveAxesValue recipe ===
+A1:=LREAL:=GVL.rt_AxisPos[0]:=2.67340099678251e-3F16#AF3439D9AB9A30H-10
+A2:=LREAL:=GVL.rt_AxisPos[1]:=4.30239333748866e-1F16#6E242A3BE77A20H-E
+A3:=LREAL:=GVL.rt_AxisPos[2]:=5.23986595369372e-2F16#D69FFA110BD010H-F
+A4:=LREAL:=GVL.rt_AxisPos[3]:=-1.12282841864866e-2F16#-2DFDB595F03EDEH-F
+A5:=LREAL:=GVL.rt_AxisPos[4]:=-6.2379356591592e-3F16#-198CF31A69067CH-F
+A6:=LREAL:=GVL.rt_AxisPos[5]:=-2.85162772990135e-3F16#-BAE25FD71D7140H-10
+=== recently modified files (last 10 min) ===
+/dobot/userdata/CR5_sys_files/project/settings/function/loadParams.json
+/dobot/userdata/CR5_sys_files/project/settings/workTime/WorkTimeRec.json

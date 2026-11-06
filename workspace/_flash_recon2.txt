@@ -1,0 +1,32 @@
+=== A. /dobot/bin/bin ===
+total 35867
+drwxrwxrwx    2 1026     1028          1024 Sep 22 10:53 .
+drwxrwxrwx    8 1026     1028          1024 Sep 24 14:23 ..
+-rwxrwxrwx    1 1026     1028         55635 Jul 18  2023 event_rpcgen.py
+-rwxrwxrwx    1 1026     1028        168325 Jul 18  2023 lua
+-rwxrwxrwx    1 1026     1028        155289 Jul 18  2023 luac
+-rwxrwxrwx    1 1026     1028       2880354 Jul 18  2023 nmbd
+-rwxrwxrwx    1 1026     1028        276908 Jul 18  2023 redis-benchmark
+-rwxrwxrwx    1 1026     1028       3094034 Jul 18  2023 redis-check-aof
+-rwxrwxrwx    1 1026     1028       3094034 Jul 18  2023 redis-check-rdb
+-rwxrwxrwx    1 1026     1028        620471 Jul 18  2023 redis-cli
+-rwxrwxrwx    1 1026     1028       3094034 Jul 18  2023 redis-sentinel
+-rwxrwxrwx    1 1026     1028       3094034 Jul 18  2023 redis-server
+-rwxrwxrwx    1 1026     1028       4761206 Jul 18  2023 smbclient
+-rwxrwxrwx    1 1026     1028       7635521 Jul 18  2023 smbd
+-rwxrwxrwx    1 1026     1028       4749710 Jul 18  2023 smbpasswd
+-rwxrwxrwx    1 1026     1028       2878500 Jul 18  2023 sqlite3
+
+=== B. /dobot/bin/tmp ===
+/dobot/bin/tmp/:
+total 3
+drwxrwxrwx    3 root     root          1024 Sep 24 14:23 .
+drwxrwxrwx    8 1026     1028          1024 Sep 24 14:23 ..
+drwxrwxrwx    2 root     root          1024 Sep 24 14:23 smb
+
+/dobot/bin/tmp/smb:
+total 2
+drwxrwxrwx    2 root     root          1024 Sep 24 14:23 .
+drwxrwxrwx    3 root     root          1024 Sep 24 14:23 ..
+
+=== C. grep singleFwAndXml under /dobot (bounded) ===

@@ -1,0 +1,201 @@
+=== mToolServer HTTP routes ===
+/0////
+/0/;
+/0/>
+/0@%
+/0FJF
+/0yh	l
+/0yh	l	z
+/1!##
+/1wZ>=
+/3 !
+/H1F
+/K/-
+/KhL
+/L"g==K
+/W=u
+/W=v=u
+/Y/!*&
+/Yug
+/_kA=
+/bev
+/cfg
+/class/i2c-dev
+/dev/i2c-%d
+/dev/i2c/%d
+/dev/random
+/dev/srandom
+/dev/urandom
+/dobot/bin/bin/redis-cli BGSAVE
+/dobot/bin/bin/redis/redis-cli BGSAVE
+/dobot/userdata/project/properties/controllerType.json
+/dot
+/eof
+/eow
+/err
+/etc/eth2.conf
+/etc/localtime
+/etc/resolv.conf
+/etc/resolv.conf is error.
+/g/=
+/g0/-
+/g="
+/g=/
+/gK=
+/gZYzLY>
+/gggughY#
+/home/ftp/PlcLogic/Recipe/SaveAxesValue.AxesValues.txtrecipe
+/home/ftp/PlcLogic/Recipe/SavePos.txt
+/home/guoyanzhang/mToolServer/cr_factory_tool
+/home/guoyanzhang/mToolServer/cr_factory_tool/build
+/home/guoyanzhang/mToolServer/cr_factory_tool/build/third_part/jungleLog
+/home/guoyanzhang/mToolServer/cr_factory_tool/dobot_foe.cpp
+/home/guoyanzhang/mToolServer/cr_factory_tool/dobot_info.cpp
+/home/guoyanzhang/mToolServer/cr_factory_tool/general_tools.cpp
+/home/guoyanzhang/mToolServer/cr_factory_tool/http_server.cpp
+/home/guoyanzhang/mToolServer/cr_factory_tool/i2cset.cpp
+/home/guoyanzhang/mToolServer/cr_factory_tool/main.cpp
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal/linux
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/osal/linux/osal.c
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux/nicdrv.c
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/oshw/linux/oshw.c
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatbase.c
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatcoe.c
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatconfig.c
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatdc.c
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatfoe.c
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatmain.c
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatprint.c
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/SOEM/soem/ethercatsoe.c
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/jungleLog
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/jungleLog/jungle_log.cpp
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/libevent-2.1.8/include/event2
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/document.h
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/encodings.h
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/error
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/internal
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/internal/dtoa.h
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/internal/pow10.h
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/internal/stack.h
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/reader.h
+/home/guoyanzhang/mToolServer/cr_factory_tool/third_part/rapidjson/include/rapidjson/writer.h
+/home/ovalgee/Projects/DobotLinux/toolchain/arm-linux-gcc-4.7.3/bin/../arm-linux-gnueabihf/libc/usr/include/.
+/home/ovalgee/Projects/DobotLinux/toolchain/arm-linux-gcc-4.7.3/bin/../arm-linux-gnueabihf/libc/usr/include/./linux
+/home/ovalgee/Projects/DobotLinux/toolchain/arm-linux-gcc-4.7.3/bin/../arm-linux-gnueabihf/libc/usr/include/./netinet
+/home/ovalgee/Projects/DobotLinux/toolchain/arm-linux-gcc-4.7.3/bin/../arm-linux-gnueabihf/libc/usr/include/arm-linux-gnueabihf/bits
+/home/ovalgee/Projects/DobotLinux/toolchain/arm-linux-gcc-4.7.3/bin/../arm-linux-gnueabihf/libc/usr/include/arm-linux-gnueabihf/sys
+/home/ovalgee/Projects/DobotLinux/toolchain/arm-linux-gcc-4.7.3/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include
+/home/ovalgee/Projects/iSCARA/Linux/third_party/libevent-2.1.8-stable
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/destdir/i686-pc-linux-gnu/lib/gcc/arm-linux-gnueabihf/4.9.4/include
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/i686-pc-linux-gnu/arm-linux-gnueabihf/eglibc.git~linaro_eglibc-2_19/csu/abi-note.o
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/i686-pc-linux-gnu/arm-linux-gnueabihf/eglibc.git~linaro_eglibc-2_19/csu/start.o
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/csu
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/io
+/i=/
+/l0=2
+/len
+/lib/ld-linux-armhf.so.3
+=== mToolServer zero/calib/param strings ===
+%d slaves found
+%d slaves found and configured
+%d slaves found and configured, actual slave count and choose slave count is not match.
+%d slaves found and configured, start to update firmware and xml.
+%s EMERGENCY slave:%d error:%4.4x
+%s MBX slave:%d error:%4.4x %s
+%s PACKET slave:%d index:%4.4x.%2.2x error:%d
+%s SDO slave:%d index:%4.4x.%2.2x error:%8.8x %s
+%s SoE slave:%d IDN:%4.4x error:%4.4x %s
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/destdir/i686-pc-linux-gnu/lib/gcc/arm-linux-gnueabihf/4.9.4/include
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/i686-pc-linux-gnu/arm-linux-gnueabihf/eglibc.git~linaro_eglibc-2_19/csu/abi-note.o
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/i686-pc-linux-gnu/arm-linux-gnueabihf/eglibc.git~linaro_eglibc-2_19/csu/start.o
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/csu
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/io
+/tmp/tUpdate/slave/
+/tmp/tUpdate/slave/readXml
+Data type does not match, length of service parameter does not match
+Data type does not match, length of service parameter too high
+Data type does not match, length of service parameter too low
+ECT_REG_DCSYSOFFSET
+General parameter incompatibility reason
+GetErrorOffset
+IFF_SLAVE
+Ioffset
+IsZero
+KERN_PPC_ZEROPAGED
+No more memory in slave
+No slaves found!
+No slaves found!.
+Query Param: %s -> %s
+Slave id must be between 0 and 9.
+Slave needs INIT
+Slave needs PREOP
+Slave needs SAFEOP
+Slave needs cold start
+Slave restarted locally
+The firmware version is the same, slave%d no need to update %s.
+The number of slave stations does not match.g_FoeWriteErrCode=0x%x
+This slave has been updated successfully
+Value of parameter written too high
+Value of parameter written too low
+Value range of parameter exceeded (only for write access)
+ZEROES
+ZERO_CHAIN
+_GLOBAL_OFFSET_TABLE_
+_SC_NZERO
+_Z14set_slave_addriii
+_ZN12GeneralTools20getSlaveNameFromFileEPKc
+_ZN8DobotFoe13updateSlaveFWEtPc
+_ZN8DobotFoe14updateSlaveXmlEiPc
+_ZN8DobotFoe20findAndUpdateSlaveFWEPKcS1_t
+_ZNK9rapidjson11ParseResult6OffsetEv
+_ZNK9rapidjson13GenericReaderINS_4UTF8IcEES2_NS_12CrtAllocatorEE14GetErrorOffsetEv
+_ZNK9rapidjson15GenericDocumentINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAllocatorEEES4_E14GetErrorOffsetEv
+_ZNK9rapidjson8internal6Double6IsZeroEv
+_ZZ14set_slave_addriiiE12__FUNCTION__
+_ZZN12GeneralTools20getSlaveNameFromFileEPKcE12__FUNCTION__
+_ZZN8DobotFoe13updateSlaveFWEtPcE12__FUNCTION__
+_ZZN8DobotFoe14updateSlaveXmlEiPcE12__FUNCTION__
+_ZZN8DobotFoe20findAndUpdateSlaveFWEPKcS1_tE12__FUNCTION__
+=== protocolFunc names ===
+_ZN10HttpServer10updateFuncEP14evhttp_requestPvSt6vectorISsSaISsEE
+_ZN10HttpServer12httpCallbackEP14evhttp_requestPv
+_ZN10HttpServer12protocolFuncEP14evhttp_requestPvSt6vectorISsSaISsEE
+_ZN10HttpServer20updateFunc_diskCheckEP14evhttp_requestPv
+_ZN10HttpServer22updateFunc_CRAllStatusEP14evhttp_requestPv
+_ZN10HttpServer23protocolFunc_getVersionEP14evhttp_requestPv
+_ZN10HttpServer23updateFunc_singleStatusEP14evhttp_requestPv
+_ZN10HttpServer23updateFunc_updateKernelEP14evhttp_requestPv
+_ZN10HttpServer24updateFunc_CRAllFwAndXmlEP14evhttp_requestPv
+_ZN10HttpServer27updateFunc_CRSingleFwAndXmlEP14evhttp_requestPv
+_ZN10HttpServer29updateFunc_checkKernelVersionEP14evhttp_requestPv
+_ZN10HttpServer30updateFunc_getActualXmlVersionEP14evhttp_requestPv
+_ZN10HttpServer34updateFunc_checkPartitionOccupancyEP14evhttp_requestPv
+_ZZN10HttpServer10updateFuncEP14evhttp_requestPvSt6vectorISsSaISsEEE12__FUNCTION__
+_ZZN10HttpServer12httpCallbackEP14evhttp_requestPvE12__FUNCTION__
+_ZZN10HttpServer12httpCallbackEP14evhttp_requestPvE5count
+_ZZN10HttpServer20updateFunc_diskCheckEP14evhttp_requestPvE12__FUNCTION__
+_ZZN10HttpServer23protocolFunc_getVersionEP14evhttp_requestPvE12__FUNCTION__
+_ZZN10HttpServer23protocolFunc_getVersionEP14evhttp_requestPvE1i
+_ZZN10HttpServer23updateFunc_updateKernelEP14evhttp_requestPvE12__FUNCTION__
+_ZZN10HttpServer24updateFunc_CRAllFwAndXmlEP14evhttp_requestPvE12__FUNCTION__
+_ZZN10HttpServer27updateFunc_CRSingleFwAndXmlEP14evhttp_requestPvE12__FUNCTION__
+_ZZN10HttpServer29updateFunc_checkKernelVersionEP14evhttp_requestPvE12__FUNCTION__
+_ZZN10HttpServer30updateFunc_getActualXmlVersionEP14evhttp_requestPvE12__FUNCTION__
+_ZZN10HttpServer34updateFunc_checkPartitionOccupancyEP14evhttp_requestPvE12__FUNCTION__
+httpCallback
+protocolFunc
+protocolFunc_getVersion
+updateFunc
+updateFunc_CRAllFwAndXml
+updateFunc_CRAllStatus
+updateFunc_CRSingleFwAndXml
+updateFunc_checkKernelVersion
+updateFunc_checkPartitionOccupancy
+updateFunc_diskCheck
+updateFunc_getActualXmlVersion
+updateFunc_singleStatus
+updateFunc_updateKernel

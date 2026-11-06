@@ -1,0 +1,25 @@
+connected to RoboDK, version: 5.9.0.25042
+python macro count: 13
+  macro: TCP真实运动_升级前备份_20260910_170410
+  macro: 方向角计算
+  macro: TCP仿真_升级前备份_20260909_173616
+  macro: TCP仿真_升级前备份_20260910_161757
+  macro: TCP仿真_升级前备份_20260910_164419
+  macro: test
+  macro: 机械臂法兰真实运动
+  macro: TCP真实运动_到位复核前备份_20260910_172919
+  macro: TCP真实运动_旧版_20261009_113434
+  macro: TCP仿真_退让换向升级前
+  macro: TCP仿真
+  macro: TCP真实运动_升级前备份_20261009_113242
+  macro: TCP真实运动
+item "TCP真实运动" type: 10 (10 = Python 宏)
+station code: 55592 chars / 1509 lines
+disk source: 55592 chars / 1509 lines
+EXACT_MATCH: True
+anchor [规划缓存初始化] _plan_cache = {}: True
+anchor [退让展开函数] def _retreat_orientation_records: True
+anchor [连续规划器] def _plan_continuous_trajectory: True
+anchor [TCP→法兰换算] def _tcp_target_to_flange: True
+anchor [自转360标记] spin360: True
+anchor [障碍物含轮] 磨砂圆柱_R180_H40: True

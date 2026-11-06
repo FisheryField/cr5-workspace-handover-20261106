@@ -1,0 +1,212 @@
+﻿=== read 0x10000 from 0x75a9a000 ===
+131072 /tmp/mem_75a9a000.hex
+=== first 512 bytes of that region ===
+ fc 68 00 2c 02 d0 02 24 fd 68 2c 60 00 24 3c 61
+ 30 bc 0d f2 08 0d 80 bd 4e f0 01 0e 80 b5 6f 46
+ ad f2 08 0d b2 b4 00 24 3c 82 00 24 07 f8 08 4c
+ 00 24 47 f8 04 4c bc 68 00 2c 08 d1 fc 68 00 2c
+ 02 d0 02 24 fd 68 2c 60 00 24 3c 82 67 e0 bc 68
+ 65 89 10 24 a5 42 12 d1 ad f2 10 0d bc 68 cd f8
+ 00 40 fc 68 cd f8 04 40 2f 4e 34 68 44 f0 01 04
+ a0 47 bd f8 08 40 0d f2 10 0d 3c 82 4f e0 bc 68
+ 65 89 01 2d 0c bf 01 25 00 25 bc 68 61 89 08 24
+ a1 42 0c bf 01 21 00 21 45 ea 01 05 00 2d 18 d0
+ ad f2 10 0d bc 68 cd f8 00 40 fc 68 cd f8 04 40
+ 1d 4e 56 f8 08 4c 44 f0 01 04 a0 47 9d f8 08 40
+ 0d f2 10 0d 07 f8 08 4c 17 f8 08 4c e4 b2 3c 82
+ 25 e0 bc 68 65 89 20 24 a5 42 18 d1 ad f2 10 0d
+ bc 68 cd f8 00 40 fc 68 cd f8 04 40 0e 4e 56 f8
+ 04 4c 44 f0 01 04 a0 47 dd f8 08 40 0d f2 10 0d
+ 47 f8 04 4c 57 f8 04 4c a4 b2 3c 82 07 e0 fc 68
+ 00 2c 02 d0 02 24 fd 68 2c 60 00 24 3c 82 b2 bc
+ 0d f2 08 0d 80 bd 00 00 80 3e c0 75 00 bf 00 bf
+ 4e f0 01 0e 80 b5 6f 46 ad f2 08 0d 30 b4 00 24
+ 3c 74 00 24 47 f8 08 4c 00 24 07 f8 04 4c bc 68
+ e5 68 04 24 25 40 00 2d 14 bf 01 25 00 25 00 2d
+ 22 d0 fc 68 00 2c 02 d0 00 24 fd 68 2c 60 ad f2
+ 10 0d bc 68 25 1d cd f8 00 50 4f f6 fc 75 cf f6
+ ff 75 7c 19 cd f8 04 40 01 24 ad f8 08 40 19 4e
+ 34 68 44 f0 01 04 a0 47 bd f9 0a 40 0d f2 10 0d
+ 17 f8 04 4c 3c 74 20 e0 bc 68 e5 68 02 24 25 40
+ 00 2d 14 bf 01 25 00 25 00 2d 0e d0 fc 68 00 2c
+ 02 d0 00 24 fd 68 2c 60 bc 68 65 68 47 f8 08 5c
+ 57 f8 08 4c 25 78 3d 74 07 e0 fc 68 00 2c 02 d0
+ 02 24 fd 68 2c 60 00 24 3c 74 30 bc 0d f2 08 0d
+ 80 bd 00 00 84 3e c0 75 4e f0 01 0e 80 b5 6f 46
+=== read stack:383 region header ===
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=== search ASCII 'CODESYS' / 'Application' / 'IoConfig' ASCII (not utf16) in the region 0x75a76000-0x75cb8000 ===
+-rw-r--r--    1 root     root       2359296 Sep 23 19:33 /tmp/stack383.bin
+--- grep -abo flags ---
+.\rrun.cmd : grep: invalid option -- 'b'
+所在位置 行:1 字符: 153
++ ... ]::new($false); cd D:\mydata\workspace; .\rrun.cmd b3.sh 2>&1 | Out-F ...
++                                             ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (grep: invalid option -- 'b':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+BusyBox v1.25.1 (2020-04-10 09:28:16 CST) multi-call binary.
+
+Usage: grep [-HhnlLoqvsriwFE] [-m N] [-A/B/C N] PATTERN/-e PATTERN.../-f FILE [FILE]...
+
+Search for PATTERN in FILEs (or stdin)
+
+	-H	Add 'filename:' prefix
+	-h	Do not add 'filename:' prefix
+	-n	Add 'line_no:' prefix
+	-l	Show only names of files that match
+	-L	Show only names of files that don't match
+	-c	Show only count of matching lines
+	-o	Show only the matching part of line
+	-q	Quiet. Return 0 if PATTERN is found, 1 otherwise
+	-v	Select non-matching lines
+	-s	Suppress open and read errors
+	-r	Recurse
+	-i	Ignore case
+	-w	Match whole words only
+	-x	Match whole lines only
+	-F	PATTERN is a literal (not regexp)
+	-E	PATTERN is an extended regexp
+	-m N	Match up to N times per file
+	-A N	Print N lines of trailing context
+	-B N	Print N lines of leading context
+	-C N	Same as '-A N -B N'
+	-e PTRN	Pattern to match
+	-f FILE	Read pattern from file
+--- IoConfig ---
+grep: invalid option -- 'b'
+BusyBox v1.25.1 (2020-04-10 09:28:16 CST) multi-call binary.
+
+Usage: grep [-HhnlLoqvsriwFE] [-m N] [-A/B/C N] PATTERN/-e PATTERN.../-f FILE [FILE]...
+
+Search for PATTERN in FILEs (or stdin)
+
+	-H	Add 'filename:' prefix
+	-h	Do not add 'filename:' prefix
+	-n	Add 'line_no:' prefix
+	-l	Show only names of files that match
+	-L	Show only names of files that don't match
+	-c	Show only count of matching lines
+	-o	Show only the matching part of line
+	-q	Quiet. Return 0 if PATTERN is found, 1 otherwise
+	-v	Select non-matching lines
+	-s	Suppress open and read errors
+	-r	Recurse
+	-i	Ignore case
+	-w	Match whole words only
+	-x	Match whole lines only
+	-F	PATTERN is a literal (not regexp)
+	-E	PATTERN is an extended regexp
+	-m N	Match up to N times per file
+	-A N	Print N lines of trailing context
+	-B N	Print N lines of leading context
+	-C N	Same as '-A N -B N'
+	-e PTRN	Pattern to match
+	-f FILE	Read pattern from file
+--- a1.config ---
+grep: invalid option -- 'b'
+BusyBox v1.25.1 (2020-04-10 09:28:16 CST) multi-call binary.
+
+Usage: grep [-HhnlLoqvsriwFE] [-m N] [-A/B/C N] PATTERN/-e PATTERN.../-f FILE [FILE]...
+
+Search for PATTERN in FILEs (or stdin)
+
+	-H	Add 'filename:' prefix
+	-h	Do not add 'filename:' prefix
+	-n	Add 'line_no:' prefix
+	-l	Show only names of files that match
+	-L	Show only names of files that don't match
+	-c	Show only count of matching lines
+	-o	Show only the matching part of line
+	-q	Quiet. Return 0 if PATTERN is found, 1 otherwise
+	-v	Select non-matching lines
+	-s	Suppress open and read errors
+	-r	Recurse
+	-i	Ignore case
+	-w	Match whole words only
+	-x	Match whole lines only
+	-F	PATTERN is a literal (not regexp)
+	-E	PATTERN is an extended regexp
+	-m N	Match up to N times per file
+	-A N	Print N lines of trailing context
+	-B N	Print N lines of leading context
+	-C N	Same as '-A N -B N'
+	-e PTRN	Pattern to match
+	-f FILE	Read pattern from file
+--- CODESYS ---
+grep: invalid option -- 'b'
+BusyBox v1.25.1 (2020-04-10 09:28:16 CST) multi-call binary.
+
+Usage: grep [-HhnlLoqvsriwFE] [-m N] [-A/B/C N] PATTERN/-e PATTERN.../-f FILE [FILE]...
+
+Search for PATTERN in FILEs (or stdin)
+
+	-H	Add 'filename:' prefix
+	-h	Do not add 'filename:' prefix
+	-n	Add 'line_no:' prefix
+	-l	Show only names of files that match
+	-L	Show only names of files that don't match
+	-c	Show only count of matching lines
+	-o	Show only the matching part of line
+	-q	Quiet. Return 0 if PATTERN is found, 1 otherwise
+	-v	Select non-matching lines
+	-s	Suppress open and read errors
+	-r	Recurse
+	-i	Ignore case
+	-w	Match whole words only
+	-x	Match whole lines only
+	-F	PATTERN is a literal (not regexp)
+	-E	PATTERN is an extended regexp
+	-m N	Match up to N times per file
+	-A N	Print N lines of trailing context
+	-B N	Print N lines of leading context
+	-C N	Same as '-A N -B N'
+	-e PTRN	Pattern to match
+	-f FILE	Read pattern from file
+--- readable strings sample (first 30 lines of length>=8) ---
+u14.287712097167969
+u14.287712097167969
+0.000000
+0.000000
+OnlineLicenseManager
+License file missing.
+License file invalid.
+License file too big.
+License file cannot be read.
+License file invalid.
+License file doesn't fit to device.
+License file doesn't fit to device.
+License for 
+ not installed.
+Demo mode for 
+ expired. Feature stopped!
+Demo mode expired.
+Demo mode for 
+ started. Will expire and stop!
+d}ie@}aW
+L%hli%hE
+L%hli%hE
+$|aeN4hG
+LKN4h<aW
+Configuration successfully loaded
+Open interface
+Preparation successfull
+Error: Preparation was not successfull
+No Child Connectors found
+ScanModules:No memory to allocate
+=== END ===

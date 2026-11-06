@@ -1,0 +1,106 @@
+{
+  "backup": "D:\\mydata\\working things\\dobot_arm\\RoboDK files 2\\连续轨迹16_before_flowopt_20261027_152324.json.bak",
+  "file": "D:\\mydata\\working things\\dobot_arm\\RoboDK files 2\\连续轨迹16.json",
+  "removed_original_points": [
+    12,
+    13
+  ],
+  "old_points": 25,
+  "new_points": 23,
+  "original_sha256": "7b5b34322fe97890f240f8fcbbc827060346838bc5f5941e6037e66b8a373e34",
+  "new_sha256": "90d9a247ca1c915572de87a5bcb5ae5e6c1f33eb2c2f8daf2c12c2cd16238a86",
+  "mapping": [
+    {
+      "new_point": 1,
+      "original_point": 1
+    },
+    {
+      "new_point": 2,
+      "original_point": 2
+    },
+    {
+      "new_point": 3,
+      "original_point": 3
+    },
+    {
+      "new_point": 4,
+      "original_point": 4
+    },
+    {
+      "new_point": 5,
+      "original_point": 5
+    },
+    {
+      "new_point": 6,
+      "original_point": 6
+    },
+    {
+      "new_point": 7,
+      "original_point": 7
+    },
+    {
+      "new_point": 8,
+      "original_point": 8
+    },
+    {
+      "new_point": 9,
+      "original_point": 9
+    },
+    {
+      "new_point": 10,
+      "original_point": 10
+    },
+    {
+      "new_point": 11,
+      "original_point": 11
+    },
+    {
+      "new_point": 12,
+      "original_point": 14
+    },
+    {
+      "new_point": 13,
+      "original_point": 15
+    },
+    {
+      "new_point": 14,
+      "original_point": 16
+    },
+    {
+      "new_point": 15,
+      "original_point": 17
+    },
+    {
+      "new_point": 16,
+      "original_point": 18
+    },
+    {
+      "new_point": 17,
+      "original_point": 19
+    },
+    {
+      "new_point": 18,
+      "original_point": 20
+    },
+    {
+      "new_point": 19,
+      "original_point": 21
+    },
+    {
+      "new_point": 20,
+      "original_point": 22
+    },
+    {
+      "new_point": 21,
+      "original_point": 23
+    },
+    {
+      "new_point": 22,
+      "original_point": 24
+    },
+    {
+      "new_point": 23,
+      "original_point": 25
+    }
+  ]
+}

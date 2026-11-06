@@ -1,0 +1,423 @@
+===== PROCESSES =====
+PID   USER     TIME   COMMAND
+    1 root       0:01 {linuxrc} init
+    2 root       0:00 [kthreadd]
+    3 root       0:00 [ksoftirqd/0]
+    4 root       0:07 [ktimersoftd/0]
+    6 root       0:00 [kworker/0:0H]
+    7 root       0:00 [kworker/u8:0]
+    8 root       0:00 [rcu_preempt]
+    9 root       0:00 [rcu_sched]
+   10 root       0:00 [rcu_bh]
+   11 root       0:00 [rcub/0]
+   12 root       0:00 [rcuc/0]
+   13 root       0:00 [kclksetdelayd]
+   14 root       0:00 [posixcputmr/0]
+   15 root       0:00 [kcmosdelayd]
+   16 root       0:00 [migration/0]
+   17 root       0:00 [migration/1]
+   18 root       0:00 [rcuc/1]
+   19 root       0:07 [ktimersoftd/1]
+   20 root       0:01 [ksoftirqd/1]
+   21 root       0:00 [posixcputmr/1]
+   23 root       0:00 [kworker/1:0H]
+   24 root       0:00 [migration/2]
+   25 root       0:00 [rcuc/2]
+   26 root       0:07 [ktimersoftd/2]
+   27 root       0:02 [ksoftirqd/2]
+   28 root       0:00 [posixcputmr/2]
+   29 root       0:00 [kworker/2:0]
+   30 root       0:00 [kworker/2:0H]
+   31 root       0:00 [migration/3]
+   32 root       0:00 [rcuc/3]
+   33 root       0:07 [ktimersoftd/3]
+   34 root       0:00 [ksoftirqd/3]
+   35 root       0:00 [posixcputmr/3]
+   37 root       0:00 [kworker/3:0H]
+   38 root       0:00 [khelper]
+   39 root       0:00 [kdevtmpfs]
+   40 root       0:00 [kswork]
+   41 root       0:00 [perf]
+   42 root       0:00 [writeback]
+   43 root       0:00 [crypto]
+   44 root       0:00 [bioset]
+   45 root       0:00 [kblockd]
+   46 root       0:00 [ata_sff]
+   47 root       0:00 [irq/291-21a0000]
+   48 root       0:00 [irq/292-21a4000]
+   49 root       0:00 [irq/293-21a8000]
+   50 root       0:00 [md]
+   51 root       0:00 [irq/299-2400000]
+   52 root       0:00 [irq/300-2400000]
+   53 root       0:00 [ipu1_task]
+   54 root       0:00 [ipu1_task]
+   55 root       0:00 [kworker/0:1]
+   56 root       0:00 [cfg80211]
+   57 root       0:00 [rpciod]
+   58 root       0:00 [kswapd0]
+   59 root       0:00 [fsnotify_mark]
+   60 root       0:00 [nfsiod]
+   76 root       0:00 [irq/286-sdma]
+   77 root       0:00 [irq/25-2020000.]
+   78 root       0:00 [kworker/2:1]
+   79 root       0:00 [irq/295-21e8000]
+   80 root       0:00 [irq/296-21ec000]
+   81 root       0:00 [irq/297-21f0000]
+   82 root       0:00 [irq/298-21f4000]
+   83 root       0:00 [irq/24-200c000.]
+   84 root       0:00 [spi1]
+   85 root       0:08 [irq/288-2188000]
+   86 root       0:00 [irq/289-2188000]
+   87 root       0:00 [kworker/u8:1]
+   90 root       0:00 [libertastf]
+   91 root       0:00 [kworker/3:1]
+   92 root       0:00 [kworker/1:1]
+   93 root       0:01 [irq/287-2184200]
+   94 root       0:00 [irq/271-20c0000]
+   95 root       0:00 [dm_bufio_cache]
+   96 root       0:00 [kmpathd]
+   97 root       0:00 [kmpath_handlerd]
+   98 root       0:00 [irq/290-mmc3]
+   99 root       0:00 [irq/290-s-mmc3]
+  100 root       0:00 [irq/29-VPU_CODE]
+  101 root       0:00 [irq/28-VPU_JPG_]
+  102 root       0:00 [vpu_wq]
+  103 root       0:00 [kworker/1:2]
+  104 root       0:00 [irq/294-vdoa]
+  105 root       0:00 [irq/27-2034000.]
+  106 root       0:00 [irq/26-202c000.]
+  107 root       0:00 [ipv6_addrconf]
+  108 root       0:00 [deferwq]
+  110 root       0:00 [irq/274-imx_the]
+  111 root       0:00 [irq/274-s-imx_t]
+  112 root       0:01 [mmcqd/3]
+  113 root       0:00 [mmcqd/3boot0]
+  114 root       0:00 [mmcqd/3boot1]
+  115 root       0:00 [mmcqd/3rpmb]
+  116 root       0:00 [kworker/3:1H]
+  117 root       0:00 [kjournald]
+  118 root       0:00 [kworker/0:1H]
+  119 root       0:00 [kworker/1:1H]
+  120 root       0:00 [kworker/2:1H]
+  123 root       0:00 [kjournald]
+  124 root       0:00 [kjournald]
+  181 root       0:00 [kworker/0:2]
+  182 root       0:00 [RTW_CMD_THREAD]
+  184 root       0:00 hostapd -B -d /etc/hostapd.conf
+  187 root       0:00 udhcpd /etc/udhcpd.conf
+  200 root       0:00 /usr/local/bin/sshd -f /usr/local/etc/sshd_config
+  203 root       0:00 /usr/sbin/inetd
+  222 root       0:00 [kjournald]
+  223 root       0:00 /dobot/bin/logServer
+  271 root       0:01 /dobot/bin/bin/redis-server 127.0.0.1:6379
+  281 root       0:00 /dobot/bin/bin/nmbd -s /dobot/bin/etc/smb.conf -D
+  283 root       0:00 /dobot/bin/bin/smbd -s /dobot/bin/etc/smb.conf -D
+  302 root       0:00 /dobot/bin/bin/smbd -s /dobot/bin/etc/smb.conf -D
+  304 root       0:22 /dobot/bin/gcontrol
+  341 root       0:00 {autoCacheFree.s} /bin/sh /dobot/bin/autoCacheFree.sh
+  343 root       0:00 {autoSync.sh} /bin/sh /dobot/bin/autoSync.sh
+  374 root       4:07 ./codesyscontrol
+  436 root       0:00 {linuxrc} init
+  610 root       0:00 [kworker/3:2]
+  923 root       0:00 /dobot/bin/bin/smbd -s /dobot/bin/etc/smb.conf -D
+ 1217 root       0:00 [kworker/u8:2]
+ 1303 root       0:00 [kworker/0:0]
+ 1310 root       0:00 [kworker/1:0]
+ 1655 root       0:00 sleep 600
+ 1741 root       0:00 sleep 1
+ 1742 root       0:00 sshd: root@notty
+ 1744 root       0:00 sh -c sh -s
+ 1745 root       0:00 sh -s
+ 1746 root       0:00 ps w
+===== LISTENING PORTS =====
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:60000           0.0.0.0:*               LISTEN      304/gcontrol
+tcp        0      0 0.0.0.0:65504           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 0.0.0.0:65505           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 0.0.0.0:65506           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 0.0.0.0:65507           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 0.0.0.0:65508           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 0.0.0.0:65509           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 0.0.0.0:37              0.0.0.0:*               LISTEN      203/inetd
+tcp        0      0 0.0.0.0:65510           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 0.0.0.0:65511           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 0.0.0.0:7               0.0.0.0:*               LISTEN      203/inetd
+tcp        0      0 127.0.0.1:4840          0.0.0.0:*               LISTEN      374/codesyscontrol
+tcp        0      0 192.168.1.6:4840        0.0.0.0:*               LISTEN      374/codesyscontrol
+tcp        0      0 192.168.5.1:4840        0.0.0.0:*               LISTEN      374/codesyscontrol
+tcp        0      0 192.168.100.6:4840      0.0.0.0:*               LISTEN      374/codesyscontrol
+tcp        0      0 0.0.0.0:65512           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 0.0.0.0:65513           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 0.0.0.0:65514           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 0.0.0.0:139             0.0.0.0:*               LISTEN      283/smbd
+tcp        0      0 127.0.0.1:6379          0.0.0.0:*               LISTEN      271/redis-server 12
+tcp        0      0 0.0.0.0:65515           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 0.0.0.0:13              0.0.0.0:*               LISTEN      203/inetd
+tcp        0      0 0.0.0.0:29999           0.0.0.0:*               LISTEN      304/gcontrol
+tcp        0      0 0.0.0.0:22000           0.0.0.0:*               LISTEN      374/codesyscontrol
+tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      374/codesyscontrol
+tcp        0      0 0.0.0.0:6000            0.0.0.0:*               LISTEN      304/gcontrol
+tcp        0      0 0.0.0.0:22001           0.0.0.0:*               LISTEN      304/gcontrol
+tcp        0      0 0.0.0.0:30003           0.0.0.0:*               LISTEN      304/gcontrol
+tcp        0      0 0.0.0.0:30004           0.0.0.0:*               LISTEN      304/gcontrol
+tcp        0      0 0.0.0.0:30005           0.0.0.0:*               LISTEN      304/gcontrol
+tcp        0      0 0.0.0.0:21              0.0.0.0:*               LISTEN      203/inetd
+tcp        0      0 0.0.0.0:502             0.0.0.0:*               LISTEN      374/codesyscontrol
+tcp        0      0 0.0.0.0:30006           0.0.0.0:*               LISTEN      304/gcontrol
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      200/sshd
+tcp        0      0 0.0.0.0:23              0.0.0.0:*               LISTEN      203/inetd
+tcp        0      0 0.0.0.0:11000           0.0.0.0:*               LISTEN      374/codesyscontrol
+tcp        0      0 0.0.0.0:11740           0.0.0.0:*               LISTEN      374/codesyscontrol
+tcp        0      0 0.0.0.0:65500           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 0.0.0.0:445             0.0.0.0:*               LISTEN      283/smbd
+tcp        0      0 0.0.0.0:65501           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 0.0.0.0:65502           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 0.0.0.0:65503           0.0.0.0:*               LISTEN      223/logServer
+tcp        0      0 :::22                   :::*                    LISTEN      200/sshd
+===== INITTAB =====
+# /etc/inittab
+::sysinit:/etc/init.d/rcS
+console::askfirst:-/bin/sh
+::once:/usr/sbin/telnetd -l /bin/login
+::ctrlaltdel:/sbin/reboot
+::shutdown:/bin/umount -a -r
+
+===== /etc/init.d =====
+total 28
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x   10 1025     1025          4096 Sep 18 09:28 ..
+-rwxrwxrwx    1 root     root           725 Jul 11  2022 RebootCheck.sh
+-rwxrwxr-x    1 1025     1025           635 Mar  3  2020 dbStart.sh
+-rwxrwxrwx    1 root     root          4322 Jan  1  1970 rcS
+-rwxrwxrwx    1 root     root           303 Jul 14  2022 rtc_set.sh
+===== /etc/rc.d =====
+total 12
+drwxrwxr-x    3 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x   10 1025     1025          4096 Sep 18 09:28 ..
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 init.d
+===== rc.local =====
+===== PASSWD =====
+root:SfkvL3/Urg2aY:0:0:root:/:/bin/sh
+ftp::14:50:FTP User:/var/ftp:
+bin:*:1:1:bin:/bin:
+daemon:*:2:2:daemon:/sbin:
+nobody:*:99:99:Nobody:/:
+
+sky:$1$7jLS.2f3$/2NHPwI3W7R8rkGU3EDe5.:1000:1000:Linux User,,,:/home/sky:/bin/sh
+TQ210:qNxIgwDVm1NIk:1001:1001:Linux User,,,:/home/TQ210:/bin/sh
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+user:zCTPo/zrK6zrs:1002:1003::/home/user:/bin/false
+===== /dobot =====
+total 20
+drwxr-xr-x    6 root     root          1024 Feb 19  1976 .
+drwxr-xr-x   22 root     root          4096 Sep 18 14:12 ..
+drwxrwxrwx    8 1022     1024          1024 Sep 18 14:12 bin
+drwx------    2 root     root         12288 Jan  1  1970 lost+found
+drwxr-xr-x    2 root     root          1024 Feb 19  1976 mToolServer
+drwxr-xr-x   24 root     1024          1024 Dec 30  2022 userdata
+===== /dobot/bin =====
+total 2473
+drwxrwxrwx    8 1022     1024          1024 Sep 18 14:12 .
+drwxr-xr-x    6 root     root          1024 Feb 19  1976 ..
+-rwxrwxrwx    1 1022     1024           165 Dec 30  2022 autoCacheFree.sh
+-rwxrwxrwx    1 1022     1024            51 Dec 30  2022 autoSync.sh
+drwxrwxrwx    2 1022     1024          1024 Sep 18 09:28 bin
+-rwxrwxrwx    1 1022     1024          4096 Dec 30  2022 dobot.db
+-rwxrwxrwx    1 1022     1024         12399 Dec 30  2022 dobot.sh
+-rwxrwxrwx    1 root     root             0 Aug 21  1975 dobotM1Semphore
+drwxrwxrwx    2 1022     1024          1024 Sep 18 09:28 etc
+prwxrwxrwx    1 root     root             0 Sep 18 14:13 fifoCodesys
+prwxrwxrwx    1 root     root             0 Sep 18 14:22 fifoGcontrol
+-rwxrwxrwx    1 1022     1024       1930541 Dec 30  2022 gcontrol
+-rwxrwxrwx    1 1022     1024        157945 Dec 30  2022 getVersion
+drwxrwxrwx    4 1022     1024          3072 Sep 18 09:28 lib
+drwxrwxrwx    2 1022     1024          1024 Sep 18 09:28 log
+-rwxrwxrwx    1 1022     1024        397556 Dec 30  2022 logServer
+drwxrwxrwx    2 1022     1024          1024 Sep 18 09:28 lua
+-rwxrwxrwx    1 root     root             0 Aug 21  1975 stdout
+drwxrwxrwx    3 root     root          1024 Sep 18 14:12 tmp
+===== /project (target) =====
+===== /mToolServer =====
+/mToolServer:
+total 7332
+drwxr-xr-x    4 root     root          4096 Feb 19  1976 .
+drwxr-xr-x   22 root     root          4096 Sep 18 14:12 ..
+drwxr-xr-x    2 root     root          4096 Sep 17 09:43 control
+-rw-r--r--    1 root     root         34869 Feb 19  1976 controlRunProcess.log
+-rwxr-xr-x    1 root     root       2302802 Sep 17 09:43 mToolServer
+-rwxr-xr-x    1 root     root        520434 Sep 17 09:47 mToolServer.log
+drwxr-xr-x    2 root     root          4096 Aug 21  1975 overTurn
+-rwxr-xr-x    1 root     root       4597495 Feb 11  1976 tcpdump
+-rw-r--r--    1 root     root             1 Feb 19  1976 updateRunResult.log
+
+/mToolServer/control:
+total 96
+drwxr-xr-x    2 root     root          4096 Sep 17 09:43 .
+drwxr-xr-x    4 root     root          4096 Feb 19  1976 ..
+-rwxr-xr-x    1 root     root           968 Sep 17 09:43 352run.sh
+-rwxr-xr-x    1 root     root          1411 Sep 17 09:43 353run.sh
+-rwxr-xr-x    1 root     root           848 Sep 17 09:43 431run.sh
+-rwxr-xr-x    1 root     root           848 Sep 17 09:43 440run.sh
+-rwxr-xr-x    1 root     root          1517 Sep 17 09:43 450run.sh
+-rwxr-xr-x    1 root     root          2118 Feb 11  1976 464run.sh
+-rwxr-xr-x    1 root     root          2030 Feb 11  1976 470run.sh
+-rwxr-xr-x    1 root     root          1964 Feb 11  1976 480run.sh
+-rwxr-xr-x    1 root     root         35541 Sep 17 09:43 checkFiles.sh
+-rwxr-xr-x    1 root     root           315 Sep 17 09:43 checkPO.sh
+-rwxr-xr-x    1 root     root           701 Feb 11  1976 operatePO.sh
+-rwxr-xr-x    1 root     root           587 Sep 17 09:43 supportRules.json
+-rwxr-xr-x    1 root     root           531 Sep 17 09:43 toolUtils.sh
+-rwxr-xr-x    1 root     root            36 Sep 17 09:43 version.json
+
+/mToolServer/overTurn:
+total 16
+drwxr-xr-x    2 root     root          4096 Aug 21  1975 .
+drwxr-xr-x    4 root     root          4096 Feb 19  1976 ..
+-rw-r--r--    1 root     root           204 Sep 17 09:43 SaveAxesValue.AxesValues.txtrecipe
+-rw-r--r--    1 root     root           100 Sep 17 09:43 SavePos.txt
+===== /web =====
+/web:
+total 28
+drwxrwxr-x    3 1025     1025          4096 Jan  1  1970 .
+drwxr-xr-x   22 root     root          4096 Sep 18 14:12 ..
+-rwxr--r--    1 1025     1025            76 Apr 10  2020 debug.log
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 images
+-rwxrwxr-x    1 1025     1025          9485 Mar 20  2017 index.html
+
+/web/images:
+total 480
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    3 1025     1025          4096 Jan  1  1970 ..
+-rwxrwxr-x    1 1025     1025        288535 Mar 20  2017 TQ6410.jpg
+-rwxrwxr-x    1 1025     1025         11753 Mar 20  2017 bar.jpg
+-rwxrwxr-x    1 1025     1025         29914 Mar 20  2017 bar_left_soft.jpg
+-rwxrwxr-x    1 1025     1025         32569 Mar 20  2017 bar_left_thick.jpg
+-rwxrwxr-x    1 1025     1025         14339 Mar 20  2017 bar_mid_soft.jpg
+-rwxrwxr-x    1 1025     1025         16472 Mar 20  2017 bar_mid_thick.jpg
+-rwxrwxr-x    1 1025     1025         29675 Mar 20  2017 bar_right_soft.jpg
+-rwxrwxr-x    1 1025     1025         32647 Mar 20  2017 bar_right_thick.jpg
+-rwxrwxr-x    1 1025     1025          4736 Mar 20  2017 bottom.jpg
+===== /opt/save.sh =====
+#!/bin/sh
+
+FILEPATH=/opt/.zero
+
+echo -e "$1\n$2\n$3\n$4\n$5\n$6\n$7\n$8\n$9" > ${FILEPATH}
+===== /opt/.zero =====
+0
+0
+0
+0
+0
+0
+0
+0
+0
+===== /opt/codesys =====
+total 7684
+drwxrwxr-x    3 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    3 1025     1025          4096 Jan  1  1970 ..
+drwxrwxr-x    3 1025     1025          4096 Jan  1  1970 Platforms
+-rwxrwxr-x    1 1025     1025         48549 Jul 11  2018 imx6q-sabresd.dtb
+-rwxrwxr-x    1 1025     1025       7792512 Jul 30  2018 uImage
+===== /usr/local/{bin,sbin,etc} =====
+/usr/local/bin:
+total 18300
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    9 1025     1025          4096 Sep 18 14:12 ..
+-rwxrwxr-x    1 1025     1025        333840 Apr  9  2020 scp
+-rwxrwxr-x    1 1025     1025        507080 Apr  9  2020 sftp
+-rwxrwxr-x    1 1025     1025       3650504 Apr  9  2020 ssh
+-rwxrwxr-x    1 1025     1025       2332664 Apr  9  2020 ssh-add
+-rwxrwxr-x    1 1025     1025       2410676 Apr  9  2020 ssh-agent
+-rwxrwxr-x    1 1025     1025       2549468 Apr  9  2020 ssh-keygen
+-rwxrwxr-x    1 1025     1025       2686016 Apr  9  2020 ssh-keyscan
+-rwxrwxr-x    1 1025     1025       3930828 Apr  9  2020 sshd
+-rwxrwxr-x    1 1025     1025        109450 Jul 31  2017 unzip
+-rwxrwxr-x    1 1025     1025        162553 Jul 31  2017 zip
+
+/usr/local/etc:
+total 348
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    9 1025     1025          4096 Sep 18 14:12 ..
+-rwxrwxr-x    1 1025     1025        300324 Apr  9  2020 moduli
+-rwxrwxr-x    1 1025     1025          1574 Apr  9  2020 ssh_config
+-rw-------    1 1025     1025           672 Mar 20  2017 ssh_host_dsa_key
+-rw-------    1 1025     1025           601 Mar 20  2017 ssh_host_dsa_key.pub
+-rw-------    1 1025     1025           227 Mar 20  2017 ssh_host_ecdsa_key
+-rw-------    1 1025     1025           173 Mar 20  2017 ssh_host_ecdsa_key.pub
+-rw-------    1 1025     1025           668 Mar 20  2017 ssh_host_ed25519_key
+-rw-------    1 1025     1025           601 Mar 20  2017 ssh_host_ed25519_key.pub
+-rw-------    1 1025     1025          1679 Mar 20  2017 ssh_host_rsa_key
+-rw-------    1 1025     1025           393 Mar 20  2017 ssh_host_rsa_key.pub
+-rwxrwxr-x    1 1025     1025          3845 Jun  4  2021 sshd_config
+
+/usr/local/sbin:
+total 3852
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    9 1025     1025          4096 Sep 18 14:12 ..
+-rwxrwxr-x    1 1025     1025       3930828 Apr  9  2020 sshd
+===== /root subdirs =====
+/root/Documents:
+total 7944
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    6 1025     1025          4096 Aug 29  1975 ..
+-rwxrwxr-x    1 1025     1025        180441 Mar 20  2017 PPMM01.jpg
+-rwxrwxr-x    1 1025     1025         78926 Mar 20  2017 PPMM02.jpg
+-rwxrwxr-x    1 1025     1025         32725 Mar 20  2017 PPMM03.jpg
+-rwxrwxr-x    1 1025     1025       1972031 Mar 20  2017 Test.mp3
+-rwxrwxr-x    1 1025     1025       1636356 Mar 20  2017 pageant.mpg
+-rwxrwxr-x    1 1025     1025       4194304 Mar 20  2017 record0.wav
+
+/root/Settings:
+total 12
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    6 1025     1025          4096 Aug 29  1975 ..
+-rwxrwxr-x    1 1025     1025          3761 Mar 20  2017 Trolltech.conf
+
+/root/download:
+total 8
+drwxrwxr-x    2 1025     1025          4096 Mar 20  2017 .
+drwxrwxr-x    6 1025     1025          4096 Aug 29  1975 ..
+===== .ash_history (tail) =====
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+cd /dobot/userdata/project 
+tar -zcvf CR5_CC162_V3.5.4.1-stable-a014bd6f-2212301029_20260916_Backup.tar.gz --exclude=logs * 
+exit 
+cd /dobot/userdata/project 
+rm -rf CR5_CC162_V3.5.4.1-stable-a014bd6f-2212301029_20260916_Backup.tar.gz 
+exit 
+cd /dobot/userdata/project 
+tar -xvf CR5_CC162_V3.5.4.1-stable-a014bd6f-2212301029_20260916_Backup.tar.gz 
+rm -rf CR5_CC162_V3.5.4.1-stable-a014bd6f-2212301029_20260916_Backup.tar.gz 
+exit 
+ls
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 

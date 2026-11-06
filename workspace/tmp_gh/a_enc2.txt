@@ -1,0 +1,7 @@
+# program=v328d8.elf  mode=decomp
+
+================================================================================
+## 0802ce24 -> FUN_0802ce24 @0802ce24
+================================================================================
+   decompile failed: 
+Low-level Error: Trying to construct memory range beyond end of address space: ram

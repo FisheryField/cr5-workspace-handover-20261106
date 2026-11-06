@@ -1,0 +1,3 @@
+=== 试运行(不带参数只打印用法) ===
+/tmp/slaveinfo: /lib/libc.so.6: version `GLIBC_2.34' not found (required by /tmp/slaveinfo)
+rc=0

@@ -1,0 +1,19 @@
+﻿=== dump big kernel 0x0027d000 + 0x600000 ===
+.\rrun.cmd : [amrd] hole at 0x36b000: I/O error
+所在位置 行:1 字符: 153
++ ... ]::new($false); cd D:\mydata\workspace; .\rrun.cmd b8.sh 2>&1 | Out-F ...
++                                             ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([amrd] hole at 0x36b000: I/O error:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[amrd] copied 974848 / 6291456 bytes
+-rw-r--r--    1 root     root        974848 Sep 23 19:34 /tmp/kern.bin
+3438eaa0fa053e106ab72755184f922a  /tmp/kern.bin
+=== dump high range 0x73000000 + 0x3000000 ===
+[amrd] hole at 0x73100000: I/O error
+[amrd] copied 1048576 / 50331648 bytes
+-rw-r--r--    1 root     root       1048576 Sep 23 19:34 /tmp/high.bin
+4e4f712f68a76b5ede05c3985a6cc676  /tmp/high.bin
+=== free space ===
+tmpfs                   471.0M      8.2M    462.8M   2% /tmp
+=== END ===

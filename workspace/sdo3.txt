@@ -1,0 +1,725 @@
+slaves=9 mode=sdoinfo
+=== slave 3 : OD entries = 138 ===
+0x1000:00  type=0x0007 bits=32  acc=0x07  Device type | Device type
+0x1001:00  type=0x0005 bits=8   acc=0x07  Error register | Error register
+0x1008:00  type=0x0009 bits=216 acc=0x07  Device name | Device name
+0x1009:00  type=0x0009 bits=24  acc=0x07  Hardware version | Hardware version
+0x100A:00  type=0x0009 bits=24  acc=0x07  Software version | Software version
+0x1018:00  type=0x0005 bits=8   acc=0x07  Identity | SubIndex 000
+0x1018:01  type=0x0007 bits=32  acc=0x07  Identity | Vendor ID
+0x1018:02  type=0x0007 bits=32  acc=0x07  Identity | Product code
+0x1018:03  type=0x0007 bits=32  acc=0x07  Identity | Revision
+0x1018:04  type=0x0007 bits=32  acc=0x07  Identity | Serial number
+0x10F1:00  type=0x0005 bits=8   acc=0x07  Error Settings | SubIndex 000
+0x10F1:01  type=0x0007 bits=32  acc=0x3F  Error Settings | Local Error Reaction
+0x10F1:02  type=0x0006 bits=16  acc=0x3F  Error Settings | Sync Error Counter Limit
+0x1600:00  type=0x0005 bits=8   acc=0x0F  RxPDO | SubIndex 000
+0x1600:01  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 001
+0x1600:02  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 002
+0x1600:03  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 003
+0x1600:04  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 004
+0x1600:05  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 005
+0x1600:06  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 006
+0x1600:07  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 007
+0x1600:08  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 008
+0x1600:09  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 009
+0x1600:10  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 010
+0x1600:11  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 011
+0x1600:12  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 012
+0x1600:13  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 013
+0x1600:14  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 014
+0x1600:15  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 015
+0x1600:16  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 016
+0x1600:17  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 017
+0x1600:18  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 018
+0x1600:19  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 019
+0x1600:20  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 020
+0x1600:21  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 021
+0x1600:22  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 022
+0x1600:23  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 023
+0x1600:24  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 024
+0x1600:25  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 025
+0x1600:26  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 026
+0x1600:27  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 027
+0x1600:28  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 028
+0x1600:29  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 029
+0x1600:30  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 030
+0x1600:31  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 031
+0x1600:32  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 032
+0x1601:00  type=0x0005 bits=8   acc=0x0F  RxPD1 | SubIndex 000
+0x1601:01  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 001
+0x1601:02  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 002
+0x1601:03  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 003
+0x1601:04  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 004
+0x1601:05  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 005
+0x1601:06  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 006
+0x1601:07  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 007
+0x1601:08  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 008
+0x1601:09  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 009
+0x1601:10  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 010
+0x1601:11  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 011
+0x1601:12  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 012
+0x1601:13  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 013
+0x1601:14  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 014
+0x1601:15  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 015
+0x1601:16  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 016
+0x1601:17  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 017
+0x1601:18  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 018
+0x1601:19  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 019
+0x1601:20  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 020
+0x1601:21  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 021
+0x1601:22  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 022
+0x1601:23  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 023
+0x1601:24  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 024
+0x1601:25  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 025
+0x1601:26  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 026
+0x1601:27  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 027
+0x1601:28  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 028
+0x1601:29  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 029
+0x1601:30  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 030
+0x1601:31  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 031
+0x1601:32  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 032
+0x1602:00  type=0x0005 bits=8   acc=0x0F  RxPD2 | SubIndex 000
+0x1602:01  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 001
+0x1602:02  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 002
+0x1602:03  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 003
+0x1602:04  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 004
+0x1602:05  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 005
+0x1602:06  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 006
+0x1602:07  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 007
+0x1602:08  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 008
+0x1602:09  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 009
+0x1602:10  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 010
+0x1602:11  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 011
+0x1602:12  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 012
+0x1602:13  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 013
+0x1602:14  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 014
+0x1602:15  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 015
+0x1602:16  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 016
+0x1602:17  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 017
+0x1602:18  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 018
+0x1602:19  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 019
+0x1602:20  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 020
+0x1602:21  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 021
+0x1602:22  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 022
+0x1602:23  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 023
+0x1602:24  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 024
+0x1602:25  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 025
+0x1602:26  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 026
+0x1602:27  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 027
+0x1602:28  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 028
+0x1602:29  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 029
+0x1602:30  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 030
+0x1602:31  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 031
+0x1602:32  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 032
+0x1603:00  type=0x0005 bits=8   acc=0x0F  RxPD3 | SubIndex 000
+0x1603:01  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 001
+0x1603:02  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 002
+0x1603:03  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 003
+0x1603:04  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 004
+0x1603:05  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 005
+0x1603:06  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 006
+0x1603:07  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 007
+0x1603:08  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 008
+0x1603:09  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 009
+0x1603:10  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 010
+0x1603:11  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 011
+0x1603:12  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 012
+0x1603:13  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 013
+0x1603:14  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 014
+0x1603:15  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 015
+0x1603:16  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 016
+0x1603:17  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 017
+0x1603:18  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 018
+0x1603:19  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 019
+0x1603:20  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 020
+0x1603:21  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 021
+0x1603:22  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 022
+0x1603:23  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 023
+0x1603:24  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 024
+0x1603:25  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 025
+0x1603:26  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 026
+0x1603:27  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 027
+0x1603:28  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 028
+0x1603:29  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 029
+0x1603:30  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 030
+0x1603:31  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 031
+0x1603:32  type=0x0007 bits=32  acc=0x0F  RxPD3 | SubIndex 032
+0x1A00:00  type=0x0005 bits=8   acc=0x0F  TxPDO | SubIndex 000
+0x1A00:01  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 001
+0x1A00:02  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 002
+0x1A00:03  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 003
+0x1A00:04  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 004
+0x1A00:05  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 005
+0x1A00:06  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 006
+0x1A00:07  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 007
+0x1A00:08  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 008
+0x1A00:09  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 009
+0x1A00:10  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 010
+0x1A00:11  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 011
+0x1A00:12  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 012
+0x1A00:13  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 013
+0x1A00:14  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 014
+0x1A00:15  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 015
+0x1A00:16  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 016
+0x1A00:17  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 017
+0x1A00:18  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 018
+0x1A00:19  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 019
+0x1A00:20  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 020
+0x1A00:21  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 021
+0x1A00:22  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 022
+0x1A00:23  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 023
+0x1A00:24  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 024
+0x1A00:25  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 025
+0x1A00:26  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 026
+0x1A00:27  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 027
+0x1A00:28  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 028
+0x1A00:29  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 029
+0x1A00:30  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 030
+0x1A00:31  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 031
+0x1A00:32  type=0x0007 bits=32  acc=0x0F  TxPDO | SubIndex 032
+0x1A01:00  type=0x0005 bits=8   acc=0x0F  TxPD1 | SubIndex 000
+0x1A01:01  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 001
+0x1A01:02  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 002
+0x1A01:03  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 003
+0x1A01:04  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 004
+0x1A01:05  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 005
+0x1A01:06  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 006
+0x1A01:07  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 007
+0x1A01:08  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 008
+0x1A01:09  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 009
+0x1A01:10  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 010
+0x1A01:11  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 011
+0x1A01:12  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 012
+0x1A01:13  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 013
+0x1A01:14  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 014
+0x1A01:15  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 015
+0x1A01:16  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 016
+0x1A01:17  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 017
+0x1A01:18  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 018
+0x1A01:19  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 019
+0x1A01:20  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 020
+0x1A01:21  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 021
+0x1A01:22  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 022
+0x1A01:23  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 023
+0x1A01:24  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 024
+0x1A01:25  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 025
+0x1A01:26  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 026
+0x1A01:27  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 027
+0x1A01:28  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 028
+0x1A01:29  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 029
+0x1A01:30  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 030
+0x1A01:31  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 031
+0x1A01:32  type=0x0007 bits=32  acc=0x0F  TxPD1 | SubIndex 032
+0x1A02:00  type=0x0005 bits=8   acc=0x0F  TxPD2 | SubIndex 000
+0x1A02:01  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 001
+0x1A02:02  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 002
+0x1A02:03  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 003
+0x1A02:04  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 004
+0x1A02:05  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 005
+0x1A02:06  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 006
+0x1A02:07  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 007
+0x1A02:08  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 008
+0x1A02:09  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 009
+0x1A02:10  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 010
+0x1A02:11  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 011
+0x1A02:12  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 012
+0x1A02:13  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 013
+0x1A02:14  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 014
+0x1A02:15  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 015
+0x1A02:16  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 016
+0x1A02:17  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 017
+0x1A02:18  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 018
+0x1A02:19  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 019
+0x1A02:20  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 020
+0x1A02:21  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 021
+0x1A02:22  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 022
+0x1A02:23  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 023
+0x1A02:24  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 024
+0x1A02:25  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 025
+0x1A02:26  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 026
+0x1A02:27  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 027
+0x1A02:28  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 028
+0x1A02:29  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 029
+0x1A02:30  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 030
+0x1A02:31  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 031
+0x1A02:32  type=0x0007 bits=32  acc=0x0F  TxPD2 | SubIndex 032
+0x1A03:00  type=0x0005 bits=8   acc=0x0F  TxPD3 | SubIndex 000
+0x1A03:01  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 001
+0x1A03:02  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 002
+0x1A03:03  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 003
+0x1A03:04  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 004
+0x1A03:05  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 005
+0x1A03:06  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 006
+0x1A03:07  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 007
+0x1A03:08  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 008
+0x1A03:09  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 009
+0x1A03:10  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 010
+0x1A03:11  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 011
+0x1A03:12  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 012
+0x1A03:13  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 013
+0x1A03:14  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 014
+0x1A03:15  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 015
+0x1A03:16  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 016
+0x1A03:17  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 017
+0x1A03:18  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 018
+0x1A03:19  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 019
+0x1A03:20  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 020
+0x1A03:21  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 021
+0x1A03:22  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 022
+0x1A03:23  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 023
+0x1A03:24  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 024
+0x1A03:25  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 025
+0x1A03:26  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 026
+0x1A03:27  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 027
+0x1A03:28  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 028
+0x1A03:29  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 029
+0x1A03:30  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 030
+0x1A03:31  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 031
+0x1A03:32  type=0x0007 bits=32  acc=0x0F  TxPD3 | SubIndex 032
+0x1C00:00  type=0x0005 bits=8   acc=0x07  Sync manager type | SubIndex 000
+0x1C00:01  type=0x0005 bits=8   acc=0x07  Sync manager type | SubIndex 001
+0x1C00:02  type=0x0005 bits=8   acc=0x07  Sync manager type | SubIndex 002
+0x1C00:03  type=0x0005 bits=8   acc=0x07  Sync manager type | SubIndex 003
+0x1C00:04  type=0x0005 bits=8   acc=0x07  Sync manager type | SubIndex 004
+0x1C12:00  type=0x0005 bits=8   acc=0x0F  RxPDO assign | SubIndex 000
+0x1C12:01  type=0x0006 bits=16  acc=0x0F  RxPDO assign | SubIndex 001
+0x1C12:02  type=0x0006 bits=16  acc=0x0F  RxPDO assign | SubIndex 002
+0x1C13:00  type=0x0005 bits=8   acc=0x0F  TxPDO assign | SubIndex 000
+0x1C13:01  type=0x0006 bits=16  acc=0x0F  TxPDO assign | SubIndex 001
+0x1C13:02  type=0x0006 bits=16  acc=0x0F  TxPDO assign | SubIndex 002
+0x1C32:00  type=0x0005 bits=8   acc=0x07  SM output parameter | SubIndex 000
+0x1C32:01  type=0x0006 bits=16  acc=0x0F  SM output parameter | Synchronization Type
+0x1C32:02  type=0x0007 bits=32  acc=0x07  SM output parameter | Cycle Time
+0x1C32:04  type=0x0006 bits=16  acc=0x07  SM output parameter | Synchronization Types supported
+0x1C32:05  type=0x0007 bits=32  acc=0x07  SM output parameter | Minimum Cycle Time
+0x1C32:06  type=0x0007 bits=32  acc=0x07  SM output parameter | Calc and Copy Time
+0x1C32:08  type=0x0006 bits=16  acc=0x3F  SM output parameter | Get Cycle Time
+0x1C32:09  type=0x0007 bits=32  acc=0x07  SM output parameter | Delay Time
+0x1C32:10  type=0x0007 bits=32  acc=0x3F  SM output parameter | Sync0 Cycle Time
+0x1C32:11  type=0x0006 bits=16  acc=0x07  SM output parameter | SM-Event Missed
+0x1C32:12  type=0x0006 bits=16  acc=0x07  SM output parameter | Cycle Time Too Small
+0x1C32:32  type=0x0001 bits=1   acc=0x07  SM output parameter | Sync Error
+0x1C33:00  type=0x0005 bits=8   acc=0x07  SM input parameter | SubIndex 000
+0x1C33:01  type=0x0006 bits=16  acc=0x0F  SM input parameter | Synchronization Type
+0x1C33:02  type=0x0007 bits=32  acc=0x07  SM input parameter | Cycle Time
+0x1C33:04  type=0x0006 bits=16  acc=0x07  SM input parameter | Synchronization Types supported
+0x1C33:05  type=0x0007 bits=32  acc=0x07  SM input parameter | Minimum Cycle Time
+0x1C33:06  type=0x0007 bits=32  acc=0x07  SM input parameter | Calc and Copy Time
+0x1C33:08  type=0x0006 bits=16  acc=0x3F  SM input parameter | Get Cycle Time
+0x1C33:09  type=0x0007 bits=32  acc=0x07  SM input parameter | Delay Time
+0x1C33:10  type=0x0007 bits=32  acc=0x3F  SM input parameter | Sync0 Cycle Time
+0x1C33:11  type=0x0006 bits=16  acc=0x07  SM input parameter | SM-Event Missed
+0x1C33:12  type=0x0006 bits=16  acc=0x07  SM input parameter | Cycle Time Too Small
+0x1C33:32  type=0x0001 bits=1   acc=0x07  SM input parameter | Sync Error
+0x5000:00  type=0x0005 bits=8   acc=0x07  Analogue Input | SubIndex 000
+0x5000:01  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 001
+0x5000:02  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 002
+0x5000:03  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 003
+0x5000:04  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 004
+0x5000:05  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 005
+0x5000:06  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 006
+0x5000:07  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 007
+0x5000:08  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 008
+0x5000:09  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 009
+0x5000:10  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 010
+0x5000:11  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 011
+0x5000:12  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 012
+0x5000:13  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 013
+0x5000:14  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 014
+0x5000:15  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 015
+0x5000:16  type=0x0003 bits=16  acc=0x07  Analogue Input | SubIndex 016
+0x5001:00  type=0x0005 bits=8   acc=0x07  Analogue Input Offset Integer | SubIndex 000
+0x5001:01  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 001
+0x5001:02  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 002
+0x5001:03  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 003
+0x5001:04  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 004
+0x5001:05  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 005
+0x5001:06  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 006
+0x5001:07  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 007
+0x5001:08  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 008
+0x5001:09  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 009
+0x5001:10  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 010
+0x5001:11  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 011
+0x5001:12  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 012
+0x5001:13  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 013
+0x5001:14  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 014
+0x5001:15  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 015
+0x5001:16  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 016
+0x5002:00  type=0x0005 bits=8   acc=0x3F  Analogue Input Scaling Integer | SubIndex 000
+0x5002:01  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 001
+0x5002:02  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 002
+0x5002:03  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 003
+0x5002:04  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 004
+0x5002:05  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 005
+0x5002:06  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 006
+0x5002:07  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 007
+0x5002:08  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 008
+0x5002:09  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 009
+0x5002:10  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 010
+0x5002:11  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 011
+0x5002:12  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 012
+0x5002:13  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 013
+0x5002:14  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 014
+0x5002:15  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 015
+0x5002:16  type=0x0004 bits=32  acc=0x3F  Analogue Input Scaling Integer | SubIndex 016
+0x5003:00  type=0x0005 bits=8   acc=0x07  Write Analogue Output | SubIndex 000
+0x5003:01  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 001
+0x5003:02  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 002
+0x5003:03  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 003
+0x5003:04  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 004
+0x5003:05  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 005
+0x5003:06  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 006
+0x5003:07  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 007
+0x5003:08  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 008
+0x5003:09  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 009
+0x5003:10  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 010
+0x5003:11  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 011
+0x5003:12  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 012
+0x5003:13  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 013
+0x5003:14  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 014
+0x5003:15  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 015
+0x5003:16  type=0x0003 bits=16  acc=0x3F  Write Analogue Output | SubIndex 016
+0x5004:00  type=0x0005 bits=8   acc=0x07  Analogue Input Offset Integer | SubIndex 000
+0x5004:01  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 001
+0x5004:02  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 002
+0x5004:03  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 003
+0x5004:04  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 004
+0x5004:05  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 005
+0x5004:06  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 006
+0x5004:07  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 007
+0x5004:08  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 008
+0x5004:09  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 009
+0x5004:10  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 010
+0x5004:11  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 011
+0x5004:12  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 012
+0x5004:13  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 013
+0x5004:14  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 014
+0x5004:15  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 015
+0x5004:16  type=0x0004 bits=32  acc=0x3F  Analogue Input Offset Integer | SubIndex 016
+0x5005:00  type=0x0005 bits=8   acc=0x3F  Analogue Output Scaling Integer  | SubIndex 000
+0x5005:01  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 001
+0x5005:02  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 002
+0x5005:03  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 003
+0x5005:04  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 004
+0x5005:05  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 005
+0x5005:06  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 006
+0x5005:07  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 007
+0x5005:08  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 008
+0x5005:09  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 009
+0x5005:10  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 010
+0x5005:11  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 011
+0x5005:12  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 012
+0x5005:13  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 013
+0x5005:14  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 014
+0x5005:15  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 015
+0x5005:16  type=0x0004 bits=32  acc=0x3F  Analogue Output Scaling Integer  | SubIndex 016
+0x5006:00  type=0x0005 bits=8   acc=0x3F  Facturer_specified1 | SubIndex 000
+0x5006:01  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 001
+0x5006:02  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 002
+0x5006:03  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 003
+0x5006:04  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 004
+0x5006:05  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 005
+0x5006:06  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 006
+0x5006:07  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 007
+0x5006:08  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 008
+0x5006:09  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 009
+0x5006:10  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 010
+0x5006:11  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 011
+0x5006:12  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 012
+0x5006:13  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 013
+0x5006:14  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 014
+0x5006:15  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 015
+0x5006:16  type=0x0004 bits=32  acc=0x3F  Facturer_specified1 | SubIndex 016
+0x5007:00  type=0x0005 bits=8   acc=0x3F  Facturer_specified2 | SubIndex 000
+0x5007:01  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 001
+0x5007:02  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 002
+0x5007:03  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 003
+0x5007:04  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 004
+0x5007:05  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 005
+0x5007:06  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 006
+0x5007:07  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 007
+0x5007:08  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 008
+0x5007:09  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 009
+0x5007:10  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 010
+0x5007:11  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 011
+0x5007:12  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 012
+0x5007:13  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 013
+0x5007:14  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 014
+0x5007:15  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 015
+0x5007:16  type=0x0007 bits=32  acc=0x3F  Facturer_specified2 | SubIndex 016
+0x6007:00  type=0x0003 bits=16  acc=0x3F  Abort connection option code | Abort connection option code
+0x603F:00  type=0x0006 bits=16  acc=0x07  Error Code | Error Code
+0x6040:00  type=0x0006 bits=16  acc=0x7F  Control Word | Control Word
+0x6041:00  type=0x0006 bits=16  acc=0x87  Status Word | Status Word
+0x605A:00  type=0x0003 bits=16  acc=0x3F  Quickstop Option Code | Quickstop Option Code
+0x605B:00  type=0x0003 bits=16  acc=0x3F  Shutdown Option Code | Shutdown Option Code
+0x605C:00  type=0x0003 bits=16  acc=0x3F  Disable Operation Option Code | Disable Operation Option Code
+0x605D:00  type=0x0003 bits=16  acc=0x3F  Halt option code | Halt option code
+0x605E:00  type=0x0003 bits=16  acc=0x3F  Fault Reaction Code | Fault Reaction Code
+0x6060:00  type=0x0002 bits=8   acc=0x7F  Modes of Operation | Modes of Operation
+0x6061:00  type=0x0002 bits=8   acc=0x87  Modes of Operation Display | Modes of Operation Display
+0x6062:00  type=0x0004 bits=32  acc=0x07  Position demand value | Position demand value
+0x6063:00  type=0x0004 bits=32  acc=0x07  Position actual internal value  | Position actual internal value 
+0x6064:00  type=0x0004 bits=32  acc=0x87  Position Actual Value | Position Actual Value
+0x6065:00  type=0x0007 bits=32  acc=0x3F  Following error window | Following error window
+0x6066:00  type=0x0006 bits=16  acc=0x3F  Following error time out | Following error time out
+0x6067:00  type=0x0007 bits=32  acc=0x3F  Position window | Position window
+0x6068:00  type=0x0006 bits=16  acc=0x3F  Following error time out | Following error time out
+0x6069:00  type=0x0004 bits=32  acc=0x07  Velocity sensor actual value | Velocity sensor actual value
+0x606A:00  type=0x0003 bits=16  acc=0x3F  Sensor selection code | Sensor selection code
+0x606B:00  type=0x0004 bits=32  acc=0x07  Velocity demand value | Velocity demand value
+0x606C:00  type=0x0004 bits=32  acc=0x87  Velocity Actual Value | Velocity Actual Value
+0x606D:00  type=0x0006 bits=16  acc=0x3F  Velocity window | Velocity window
+0x606E:00  type=0x0006 bits=16  acc=0x3F  Velocity window time | Velocity window time
+0x606F:00  type=0x0006 bits=16  acc=0x3F  Velocity threshold | Velocity threshold
+0x6070:00  type=0x0006 bits=16  acc=0x3F  Velocity threshold time | Velocity threshold time
+0x6071:00  type=0x0003 bits=16  acc=0x3F  Target torque | Target torque
+0x6072:00  type=0x0006 bits=16  acc=0x3F  Max torque | Max torque
+0x6073:00  type=0x0006 bits=16  acc=0x3F  Max current | Max current
+0x6074:00  type=0x0003 bits=16  acc=0x07  Torque demand value | Torque demand value
+0x6075:00  type=0x0007 bits=32  acc=0x3F  Motor rated current | Motor rated current
+0x6076:00  type=0x0007 bits=32  acc=0x3F  Motor rated torque | Motor rated torque
+0x6077:00  type=0x0003 bits=16  acc=0x07  Torque Actual Value | Torque Actual Value
+0x6078:00  type=0x0003 bits=16  acc=0x07  Current actual value | Current actual value
+0x6079:00  type=0x0007 bits=32  acc=0x07  DC link circuit voltage | DC link circuit voltage
+0x607A:00  type=0x0004 bits=32  acc=0x7F  Target Position | Target Position
+0x607B:00  type=0x0005 bits=8   acc=0x07  Position range limit | SubIndex 000
+0x607B:01  type=0x0004 bits=32  acc=0x3F  Position range limit | SubIndex 001
+0x607B:02  type=0x0004 bits=32  acc=0x3F  Position range limit | SubIndex 002
+0x607C:00  type=0x0004 bits=32  acc=0x3F  Home offset | Home offset
+0x607D:00  type=0x0005 bits=8   acc=0x07  Software Position Limit | SubIndex 000
+0x607D:01  type=0x0004 bits=32  acc=0x3F  Software Position Limit | SubIndex 001
+0x607D:02  type=0x0004 bits=32  acc=0x3F  Software Position Limit | SubIndex 002
+0x607E:00  type=0x0005 bits=8   acc=0x3F  Polarity | Polarity
+0x607F:00  type=0x0007 bits=32  acc=0x3F  Max profile velocity | Max profile velocity
+0x6080:00  type=0x0007 bits=32  acc=0x3F  Max motor speed | Max motor speed
+0x6081:00  type=0x0007 bits=32  acc=0x3F  Profile velocity | Profile velocity
+0x6082:00  type=0x0007 bits=32  acc=0x3F  End velocity | End velocity
+0x6083:00  type=0x0007 bits=32  acc=0x3F  Profile acceleration | Profile acceleration
+0x6084:00  type=0x0007 bits=32  acc=0x3F  Profile deceleration | Profile deceleration
+0x6085:00  type=0x0004 bits=32  acc=0x3F  Quickstop Declaration | Quickstop Declaration
+0x6086:00  type=0x0003 bits=16  acc=0x3F  Motion profile type | Motion profile type
+0x6087:00  type=0x0004 bits=32  acc=0x3F  Torque slope | Torque slope
+0x6088:00  type=0x0003 bits=16  acc=0x3F  Torque profile type | Torque profile type
+0x6089:00  type=0x0005 bits=8   acc=0x3F  Position notation index | Position notation index
+0x608A:00  type=0x0005 bits=8   acc=0x3F  Position dimension index | Position dimension index
+0x608B:00  type=0x0005 bits=8   acc=0x3F  Velocity notation index | Velocity notation index
+0x608C:00  type=0x0005 bits=8   acc=0x3F  Velocity dimension index | Velocity dimension index
+0x608D:00  type=0x0005 bits=8   acc=0x3F  Acceleration notation index | Acceleration notation index
+0x608E:00  type=0x0005 bits=8   acc=0x3F  Acceleration dimension index | Acceleration dimension index
+0x608F:00  type=0x0005 bits=8   acc=0x07  Position encoder resolution | SubIndex 000
+0x608F:01  type=0x0007 bits=32  acc=0x3F  Position encoder resolution | SubIndex 001
+0x608F:02  type=0x0007 bits=32  acc=0x3F  Position encoder resolution | SubIndex 002
+0x6090:00  type=0x0005 bits=8   acc=0x07  Position encoder resolution | SubIndex 000
+0x6090:01  type=0x0007 bits=32  acc=0x3F  Position encoder resolution | SubIndex 001
+0x6090:02  type=0x0007 bits=32  acc=0x3F  Position encoder resolution | SubIndex 002
+0x6091:00  type=0x0005 bits=8   acc=0x07  Gear ratio | SubIndex 000
+0x6091:01  type=0x0007 bits=32  acc=0x3F  Gear ratio | SubIndex 001
+0x6091:02  type=0x0007 bits=32  acc=0x3F  Gear ratio | SubIndex 002
+0x6092:00  type=0x0005 bits=8   acc=0x07  Feed constant | SubIndex 000
+0x6092:01  type=0x0007 bits=32  acc=0x3F  Feed constant | SubIndex 001
+0x6092:02  type=0x0007 bits=32  acc=0x3F  Feed constant | SubIndex 002
+0x6093:00  type=0x0005 bits=8   acc=0x07  Position factor | SubIndex 000
+0x6093:01  type=0x0007 bits=32  acc=0x3F  Position factor | SubIndex 001
+0x6093:02  type=0x0007 bits=32  acc=0x3F  Position factor | SubIndex 002
+0x6094:00  type=0x0005 bits=8   acc=0x07  Velocity encoder factor | SubIndex 000
+0x6094:01  type=0x0007 bits=32  acc=0x3F  Velocity encoder factor | SubIndex 001
+0x6094:02  type=0x0007 bits=32  acc=0x3F  Velocity encoder factor | SubIndex 002
+0x6095:00  type=0x0005 bits=8   acc=0x07  Velocity factor 1 | SubIndex 000
+0x6095:01  type=0x0007 bits=32  acc=0x3F  Velocity factor 1 | SubIndex 001
+0x6095:02  type=0x0007 bits=32  acc=0x3F  Velocity factor 1 | SubIndex 002
+0x6096:00  type=0x0005 bits=8   acc=0x07  Velocity factor 2 | SubIndex 000
+0x6096:01  type=0x0007 bits=32  acc=0x3F  Velocity factor 2 | SubIndex 001
+0x6096:02  type=0x0007 bits=32  acc=0x3F  Velocity factor 2 | SubIndex 002
+0x6097:00  type=0x0005 bits=8   acc=0x07  Acceleration factor | SubIndex 000
+0x6097:01  type=0x0007 bits=32  acc=0x3F  Acceleration factor | SubIndex 001
+0x6097:02  type=0x0007 bits=32  acc=0x3F  Acceleration factor | SubIndex 002
+0x6098:00  type=0x0002 bits=8   acc=0x3F  Homing method | Homing method
+0x6099:00  type=0x0005 bits=8   acc=0x07  Homing speeds | SubIndex 000
+0x6099:01  type=0x0007 bits=32  acc=0x3F  Homing speeds | SubIndex 001
+0x6099:02  type=0x0007 bits=32  acc=0x3F  Homing speeds | SubIndex 002
+0x609A:00  type=0x0004 bits=32  acc=0x3F  Homing acceleration | Homing acceleration
+0x60A3:00  type=0x0005 bits=8   acc=0x3F  Profile jerk_use | Profile jerk_use
+0x60A4:00  type=0x0005 bits=8   acc=0x07  Profile jerk | SubIndex 000
+0x60A4:01  type=0x0007 bits=32  acc=0x3F  Profile jerk | SubIndex 001
+0x60A4:02  type=0x0007 bits=32  acc=0x3F  Profile jerk | SubIndex 002
+0x60A4:03  type=0x0007 bits=32  acc=0x3F  Profile jerk | SubIndex 003
+0x60A4:04  type=0x0007 bits=32  acc=0x3F  Profile jerk | SubIndex 004
+0x60A4:05  type=0x0007 bits=32  acc=0x3F  Profile jerk | SubIndex 005
+0x60A4:06  type=0x0007 bits=32  acc=0x3F  Profile jerk | SubIndex 006
+0x60B0:00  type=0x0004 bits=32  acc=0x3F  Position Offset | Position Offset
+0x60B1:00  type=0x0004 bits=32  acc=0x3F  Velocity Offset | Velocity Offset
+0x60B2:00  type=0x0003 bits=16  acc=0x3F  Torque Offset | Torque Offset
+0x60B8:00  type=0x0006 bits=16  acc=0x3F  Touch probe function  | Touch probe function 
+0x60B9:00  type=0x0006 bits=16  acc=0x07  Touch probe status  | Touch probe status 
+0x60BA:00  type=0x0004 bits=32  acc=0x07  Touch probe pos1 pos value  | Touch probe pos1 pos value 
+0x60BB:00  type=0x0004 bits=32  acc=0x07  Touch probe pos1 neg value | Touch probe pos1 neg value
+0x60BC:00  type=0x0004 bits=32  acc=0x07  Touch probe pos2 pos value  | Touch probe pos2 pos value 
+0x60BD:00  type=0x0004 bits=32  acc=0x07  Touch probe pos2 neg value | Touch probe pos2 neg value
+0x60C0:00  type=0x0003 bits=16  acc=0x3F   Interpolation sub mode select |  Interpolation sub mode select
+0x60C1:00  type=0x0005 bits=8   acc=0x07  Interpolation data record | SubIndex 000
+0x60C1:01  type=0x0004 bits=32  acc=0x3F  Interpolation data record | SubIndex 001
+0x60C1:02  type=0x0004 bits=32  acc=0x3F  Interpolation data record | SubIndex 002
+0x60C1:03  type=0x0004 bits=32  acc=0x3F  Interpolation data record | SubIndex 003
+0x60C1:04  type=0x0004 bits=32  acc=0x3F  Interpolation data record | SubIndex 004
+0x60C1:05  type=0x0004 bits=32  acc=0x3F  Interpolation data record | SubIndex 005
+0x60C1:06  type=0x0004 bits=32  acc=0x3F  Interpolation data record | SubIndex 006
+0x60C1:07  type=0x0004 bits=32  acc=0x3F  Interpolation data record | SubIndex 007
+0x60C1:08  type=0x0004 bits=32  acc=0x3F  Interpolation data record | SubIndex 008
+0x60C1:09  type=0x0004 bits=32  acc=0x3F  Interpolation data record | SubIndex 009
+0x60C1:10  type=0x0004 bits=32  acc=0x3F  Interpolation data record | SubIndex 010
+0x60C2:00  type=0x0005 bits=8   acc=0x07  Interpolation Time Period | SubIndex 000
+0x60C2:01  type=0x0005 bits=8   acc=0x3F  Interpolation Time Period | Interpolation period 
+0x60C2:02  type=0x0002 bits=8   acc=0x3F  Interpolation Time Period | Interpolation Index
+0x60C3:00  type=0x0005 bits=8   acc=0x07  Interpolation sync definition | SubIndex 000
+0x60C3:01  type=0x0005 bits=8   acc=0x3F  Interpolation sync definition | SubIndex 001
+0x60C3:02  type=0x0005 bits=8   acc=0x3F  Interpolation sync definition | SubIndex 002
+0x60C4:00  type=0x0005 bits=8   acc=0x07  Interpolation data configuration | SubIndex 000
+0x60C4:01  type=0x0007 bits=32  acc=0x07  Interpolation data configuration | Maximum buffer size
+0x60C4:02  type=0x0007 bits=32  acc=0x3F  Interpolation data configuration | Actual buffer size
+0x60C4:03  type=0x0005 bits=8   acc=0x3F  Interpolation data configuration | Buffer organization
+0x60C4:04  type=0x0006 bits=16  acc=0x3F  Interpolation data configuration | Buffer position
+0x60C4:05  type=0x0005 bits=8   acc=0x38  Interpolation data configuration | Size of data record
+0x60C4:06  type=0x0005 bits=8   acc=0x38  Interpolation data configuration | Buffer clear
+0x60C5:00  type=0x0007 bits=32  acc=0x3F  Max acceleration | Max acceleration
+0x60C6:00  type=0x0007 bits=32  acc=0x3F  Max deceleration | Max deceleration
+0x60F2:00  type=0x0006 bits=16  acc=0x3F  Positioning option code | Positioning option code
+0x60F4:00  type=0x0004 bits=32  acc=0x07  Following error actual value | Following error actual value
+0x60F6:00  type=0x0005 bits=8   acc=0x07  Torque control parameters | SubIndex 000
+0x60F6:01  type=0x0004 bits=32  acc=0x3F  Torque control parameters | Parameter_1
+0x60F6:02  type=0x0004 bits=32  acc=0x3F  Torque control parameters | Parameter_2
+0x60F6:03  type=0x0004 bits=32  acc=0x3F  Torque control parameters | Parameter_3
+0x60F6:04  type=0x0004 bits=32  acc=0x3F  Torque control parameters | Parameter_4
+0x60F7:00  type=0x0005 bits=8   acc=0x07  Power stage parameters | SubIndex 000
+0x60F7:01  type=0x0004 bits=32  acc=0x3F  Power stage parameters | Parameter_1
+0x60F7:02  type=0x0004 bits=32  acc=0x3F  Power stage parameters | Parameter_2
+0x60F7:03  type=0x0004 bits=32  acc=0x3F  Power stage parameters | Parameter_3
+0x60F7:04  type=0x0004 bits=32  acc=0x3F  Power stage parameters | Parameter_4
+0x60F8:00  type=0x0004 bits=32  acc=0x07  Max slippage | Max slippage
+0x60F9:00  type=0x0005 bits=8   acc=0x07  Power stage parameters | SubIndex 000
+0x60F9:01  type=0x0006 bits=16  acc=0x3F  Power stage parameters | SubIndex 001
+0x60F9:02  type=0x0006 bits=16  acc=0x3F  Power stage parameters | SubIndex 002
+0x60F9:03  type=0x0006 bits=16  acc=0x3F  Power stage parameters | SubIndex 003
+0x60F9:04  type=0x0006 bits=16  acc=0x3F  Power stage parameters | SubIndex 004
+0x60F9:05  type=0x0006 bits=16  acc=0x3F  Power stage parameters | SubIndex 005
+0x60FA:00  type=0x0004 bits=32  acc=0x07  Control effort | Control effort
+0x011C      
+0x0000      
+0x1300      
+0x8000      
+0x0002      
+0x0000      
+0x0001      
+0x1000:00  type=0x0007 bits=32  acc=0x07  Device type | Device type
+0x1001:00  type=0x0005 bits=8   acc=0x07  Error register | Error register
+0x1008:00  type=0x0009 bits=216 acc=0x07  Device name | Device name
+0x1009:00  type=0x0009 bits=24  acc=0x07  Hardware version | Hardware version
+0x100A:00  type=0x0009 bits=24  acc=0x07  Software version | Software version
+0x1018:00  type=0x0005 bits=8   acc=0x07  Identity | SubIndex 000
+0x1018:01  type=0x0007 bits=32  acc=0x07  Identity | Vendor ID
+0x1018:02  type=0x0007 bits=32  acc=0x07  Identity | Product code
+0x1018:03  type=0x0007 bits=32  acc=0x07  Identity | Revision
+0x1018:04  type=0x0007 bits=32  acc=0x07  Identity | Serial number
+0x10F1:00  type=0x0005 bits=8   acc=0x07  Error Settings | SubIndex 000
+0x10F1:01  type=0x0007 bits=32  acc=0x3F  Error Settings | Local Error Reaction
+0x10F1:02  type=0x0006 bits=16  acc=0x3F  Error Settings | Sync Error Counter Limit
+0x1600:00  type=0x0005 bits=8   acc=0x0F  RxPDO | SubIndex 000
+0x1600:01  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 001
+0x1600:02  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 002
+0x1600:03  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 003
+0x1600:04  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 004
+0x1600:05  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 005
+0x1600:06  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 006
+0x1600:07  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 007
+0x1600:08  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 008
+0x1600:09  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 009
+0x1600:10  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 010
+0x1600:11  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 011
+0x1600:12  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 012
+0x1600:13  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 013
+0x1600:14  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 014
+0x1600:15  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 015
+0x1600:16  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 016
+0x1600:17  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 017
+0x1600:18  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 018
+0x1600:19  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 019
+0x1600:20  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 020
+0x1600:21  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 021
+0x1600:22  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 022
+0x1600:23  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 023
+0x1600:24  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 024
+0x1600:25  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 025
+0x1600:26  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 026
+0x1600:27  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 027
+0x1600:28  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 028
+0x1600:29  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 029
+0x1600:30  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 030
+0x1600:31  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 031
+0x1600:32  type=0x0007 bits=32  acc=0x0F  RxPDO | SubIndex 032
+0x1601:00  type=0x0005 bits=8   acc=0x0F  RxPD1 | SubIndex 000
+0x1601:01  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 001
+0x1601:02  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 002
+0x1601:03  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 003
+0x1601:04  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 004
+0x1601:05  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 005
+0x1601:06  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 006
+0x1601:07  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 007
+0x1601:08  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 008
+0x1601:09  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 009
+0x1601:10  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 010
+0x1601:11  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 011
+0x1601:12  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 012
+0x1601:13  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 013
+0x1601:14  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 014
+0x1601:15  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 015
+0x1601:16  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 016
+0x1601:17  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 017
+0x1601:18  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 018
+0x1601:19  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 019
+0x1601:20  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 020
+0x1601:21  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 021
+0x1601:22  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 022
+0x1601:23  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 023
+0x1601:24  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 024
+0x1601:25  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 025
+0x1601:26  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 026
+0x1601:27  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 027
+0x1601:28  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 028
+0x1601:29  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 029
+0x1601:30  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 030
+0x1601:31  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 031
+0x1601:32  type=0x0007 bits=32  acc=0x0F  RxPD1 | SubIndex 032
+0x1602:00  type=0x0005 bits=8   acc=0x0F  RxPD2 | SubIndex 000
+0x1602:01  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 001
+0x1602:02  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 002
+0x1602:03  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 003
+0x1602:04  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 004
+0x1602:05  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 005
+0x1602:06  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 006
+0x1602:07  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 007
+0x1602:08  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 008
+0x1602:09  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 009
+0x1602:10  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 010
+0x1602:11  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 011
+0x1602:12  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 012
+0x1602:13  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 013
+0x1602:14  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 014
+0x1602:15  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 015
+0x1602:16  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 016
+0x1602:17  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 017
+0x1602:18  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 018
+0x1602:19  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 019
+0x1602:20  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 020
+0x1602:21  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 021
+0x1602:22  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 022
+0x1602:23  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 023
+0x1602:24  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 024
+0x1602:25  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 025
+0x1602:26  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 026
+0x1602:27  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 027
+0x1602:28  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 028
+0x1602:29  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 029
+0x1602:30  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 030
+0x1602:31  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 031
+0x1602:32  type=0x0007 bits=32  acc=0x0F  RxPD2 | SubIndex 032

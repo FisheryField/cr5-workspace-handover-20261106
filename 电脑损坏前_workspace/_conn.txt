@@ -1,0 +1,54 @@
+=== established connections ===
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       
+tcp        0      0 127.0.0.1:6379          127.0.0.1:54280         ESTABLISHED 
+tcp        0      0 127.0.0.1:6379          127.0.0.1:54278         ESTABLISHED 
+tcp        0     68 192.168.5.1:22          192.168.5.100:60746     ESTABLISHED 
+tcp        0      0 192.168.5.1:22000       192.168.5.100:63431     ESTABLISHED 
+tcp        0      0 192.168.5.1:445         192.168.5.100:51637     ESTABLISHED 
+tcp        0      0 127.0.0.1:6379          127.0.0.1:54282         ESTABLISHED 
+tcp        0      0 127.0.0.1:54280         127.0.0.1:6379          ESTABLISHED 
+tcp        0      0 192.168.5.1:6000        192.168.5.100:51297     ESTABLISHED 
+tcp        0      0 127.0.0.1:60000         127.0.0.1:51707         ESTABLISHED 
+tcp        0      0 127.0.0.1:6379          127.0.0.1:54281         ESTABLISHED 
+tcp        0      0 127.0.0.1:51707         127.0.0.1:60000         ESTABLISHED 
+tcp        0      0 192.168.5.1:22000       192.168.5.100:51640     ESTABLISHED 
+tcp        0      0 192.168.5.1:22000       192.168.5.100:51638     ESTABLISHED 
+tcp        0      0 127.0.0.1:54281         127.0.0.1:6379          ESTABLISHED 
+tcp        0      0 192.168.5.1:22000       192.168.5.100:51641     ESTABLISHED 
+tcp        0      0 127.0.0.1:6379          127.0.0.1:54279         ESTABLISHED 
+tcp        0      0 127.0.0.1:54282         127.0.0.1:6379          ESTABLISHED 
+tcp        0      0 127.0.0.1:54278         127.0.0.1:6379          ESTABLISHED 
+tcp        0      0 127.0.0.1:54279         127.0.0.1:6379          ESTABLISHED 
+tcp        0      0 192.168.5.1:22000       192.168.5.100:63430     ESTABLISHED 
+=== listeners ===
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       
+tcp        0      0 0.0.0.0:60000           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:65504           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:65505           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:65506           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:65507           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:65508           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:65509           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:37              0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:65510           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:65511           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:7               0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:4840          0.0.0.0:*               LISTEN      
+tcp        0      0 192.168.1.6:4840        0.0.0.0:*               LISTEN      
+tcp        0      0 192.168.5.1:4840        0.0.0.0:*               LISTEN      
+tcp        0      0 192.168.100.6:4840      0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:65512           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:65513           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:65514           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:139             0.0.0.0:*               LISTEN      
+tcp        0      0 127.0.0.1:6379          0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:65515           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:13              0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:29999           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:22000           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:6000            0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:22001           0.0.0.0:*               LISTEN      
+tcp        0      0 0.0.0.0:30003           0.0.0.0:*               LISTEN      

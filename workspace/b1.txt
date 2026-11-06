@@ -1,0 +1,222 @@
+﻿=== date/uptime ===
+Wed Sep 23 19:30:26 CST 2026
+ 19:30:26 up 36 min,  1 users,  load average: 1.15, 1.47, 1.13
+=== codesyscontrol pid ===
+PID=376 comm=codesyscontrol
+=== Application.app on disk ===
+/home/ftp/PlcLogic/Application/Application.app  size=1076068
+-rwxr-xr-x    1 root     root       1076068 Sep 23 18:53 /home/ftp/PlcLogic/Application/Application.app
+8416cf0eee070a640702c077eb904b4e  /home/ftp/PlcLogic/Application/Application.app
+/dobot/userdata/codesys/allST/Application.app  size=1076068
+-rwxr-xr-x    1 1026     1028       1076068 Jul 18  2023 /dobot/userdata/codesys/allST/Application.app
+8416cf0eee070a640702c077eb904b4e  /dobot/userdata/codesys/allST/Application.app
+/dobot/userdata/codesys/RxSt/Application.app  size=1065616
+-rwxr-xr-x    1 1026     1028       1065616 Jul 18  2023 /dobot/userdata/codesys/RxSt/Application.app
+1c24cf56ac0d0370378ca75705cc014f  /dobot/userdata/codesys/RxSt/Application.app
+/dobot/userdata/codesys/Nova/Application.app  size=1079992
+-rwxr-xr-x    1 1026     1028       1079992 Jul 18  2023 /dobot/userdata/codesys/Nova/Application.app
+4dba426463440c0fd56383e3fb981294  /dobot/userdata/codesys/Nova/Application.app
+/dobot/userdata/codesys/allRX/Application.app  size=1263096
+-rwxr-xr-x    1 1026     1028       1263096 Jul 18  2023 /dobot/userdata/codesys/allRX/Application.app
+2638cbac31189a4d617dac41b7694196  /dobot/userdata/codesys/allRX/Application.app
+/dobot/userdata/codesys/StRx/Application.app  size=1262560
+-rwxr-xr-x    1 1026     1028       1262560 Jul 18  2023 /dobot/userdata/codesys/StRx/Application.app
+6063f2899854a3b395422849221e9500  /dobot/userdata/codesys/StRx/Application.app
+/dobot/userdata/codesys/miniST/Application.app  size=1071768
+-rwxr-xr-x    1 1026     1028       1071768 Jul 18  2023 /dobot/userdata/codesys/miniST/Application.app
+83137b4bd892c546bafbdb510da1ba60  /dobot/userdata/codesys/miniST/Application.app
+/dobot/userdata/codesys/MG/Application.app  size=1251252
+-rwxr-xr-x    1 1026     1028       1251252 Jul 18  2023 /dobot/userdata/codesys/MG/Application.app
+94fa5de511337a789bb0284a6ddfab88  /dobot/userdata/codesys/MG/Application.app
+/dobot/userdata/codesys/miniRX/Application.app  size=1261028
+-rwxr-xr-x    1 1026     1028       1261028 Jul 18  2023 /dobot/userdata/codesys/miniRX/Application.app
+cd074c99c64c23159c1af57d4040c27d  /dobot/userdata/codesys/miniRX/Application.app
+=== maps (codesyscontrol) ===
+PID=376
+--- maps count: 185
+00008000-0026b000 r-xp 00000000 01:07 15         /udisk/codesyscontrol (deleted)
+00273000-0027d000 rwxp 00263000 01:07 15         /udisk/codesyscontrol (deleted)
+0027d000-0036b000 rwxp 00000000 00:00 0 
+004f2000-005a1000 rwxp 00000000 00:00 0          [heap]
+692cb000-6935d000 rwxs 00000000 00:05 720918     /SYSV16039711 (deleted)
+6935d000-693ef000 rwxs 00000000 00:05 0          /SYSV13039711 (deleted)
+693ef000-693f0000 ---p 00000000 00:00 0 
+693f0000-69bf0000 rwxp 00000000 00:00 0          [stack:479]
+69bf0000-69bf1000 ---p 00000000 00:00 0 
+69bf1000-6a3f1000 rwxp 00000000 00:00 0          [stack:471]
+6a3f1000-6a3f2000 ---p 00000000 00:00 0 
+6a3f2000-6abf2000 rwxp 00000000 00:00 0          [stack:470]
+6abf2000-6abf3000 ---p 00000000 00:00 0 
+6abf3000-6b3f3000 rwxp 00000000 00:00 0          [stack:469]
+6b3f3000-6b3f4000 ---p 00000000 00:00 0 
+6b3f4000-6bbf4000 rwxp 00000000 00:00 0          [stack:468]
+6bbf4000-6bbf5000 ---p 00000000 00:00 0 
+6bbf5000-6c3f5000 rwxp 00000000 00:00 0          [stack:467]
+6c3f5000-6c3f6000 ---p 00000000 00:00 0 
+6c3f6000-6cbf6000 rwxp 00000000 00:00 0          [stack:466]
+6cbf6000-6cbf7000 ---p 00000000 00:00 0 
+6cbf7000-6d3f7000 rwxp 00000000 00:00 0          [stack:465]
+6d3f7000-6d3f8000 ---p 00000000 00:00 0 
+6d3f8000-6dbf8000 rwxp 00000000 00:00 0          [stack:464]
+6dbf8000-6dbf9000 ---p 00000000 00:00 0 
+6dbf9000-6e3f9000 rwxp 00000000 00:00 0          [stack:463]
+6e3f9000-6e3fa000 ---p 00000000 00:00 0 
+6e3fa000-6ebfa000 rwxp 00000000 00:00 0          [stack:462]
+6ebfa000-6ebfb000 ---p 00000000 00:00 0 
+6ebfb000-6f3fb000 rwxp 00000000 00:00 0          [stack:461]
+6f3fb000-6f3fc000 ---p 00000000 00:00 0 
+6f3fc000-6fbfc000 rwxp 00000000 00:00 0          [stack:413]
+6fbfc000-6fbfd000 ---p 00000000 00:00 0 
+6fbfd000-703fd000 rwxp 00000000 00:00 0          [stack:412]
+703fd000-703fe000 ---p 00000000 00:00 0 
+703fe000-70bfe000 rwxp 00000000 00:00 0          [stack:510]
+70bfe000-70bff000 ---p 00000000 00:00 0 
+70bff000-713ff000 rwxp 00000000 00:00 0          [stack:408]
+713ff000-71400000 ---p 00000000 00:00 0 
+71400000-71c00000 rwxp 00000000 00:00 0          [stack:407]
+71c00000-71c21000 rwxp 00000000 00:00 0 
+71c21000-71d00000 ---p 00000000 00:00 0 
+71d6d000-71dff000 rwxs 00000000 00:05 32769      /SYSV18039711 (deleted)
+71dff000-71e00000 ---p 00000000 00:00 0 
+71e00000-72600000 rwxp 00000000 00:00 0          [stack:406]
+72600000-72621000 rwxp 00000000 00:00 0 
+72621000-72700000 ---p 00000000 00:00 0 
+7276d000-727ff000 rwxs 00000000 00:05 393228     /SYSV0b039711 (deleted)
+727ff000-72800000 ---p 00000000 00:00 0 
+72800000-73000000 rwxp 00000000 00:00 0          [stack:405]
+73000000-73021000 rwxp 00000000 00:00 0 
+73021000-73100000 ---p 00000000 00:00 0 
+7314c000-7314d000 ---p 00000000 00:00 0 
+7314d000-7316d000 rwxp 00000000 00:00 0          [stack:472]
+7316d000-731ff000 rwxs 00000000 00:05 32769      /SYSV18039711 (deleted)
+731ff000-73200000 ---p 00000000 00:00 0 
+73200000-73a00000 rwxp 00000000 00:00 0          [stack:404]
+73a00000-74400000 rwxs 00000000 00:05 851994     /SYSVe901001b (deleted)
+74400000-74421000 rwxp 00000000 00:00 0 
+74421000-74500000 ---p 00000000 00:00 0 
+74503000-745fe000 rwxp 00000000 00:00 0 
+745fe000-745ff000 ---p 00000000 00:00 0 
+745ff000-74dff000 rwxp 00000000 00:00 0          [stack:394]
+74dff000-74e00000 ---p 00000000 00:00 0 
+74e00000-75600000 rwxp 00000000 00:00 0          [stack:393]
+75600000-7564f000 rwxp 00000000 00:00 0 
+7564f000-75700000 ---p 00000000 00:00 0 
+75700000-75728000 rwxp 00000000 00:00 0 
+75728000-75800000 ---p 00000000 00:00 0 
+75800000-75821000 rwxp 00000000 00:00 0 
+75821000-75900000 ---p 00000000 00:00 0 
+7591d000-759af000 rwxs 00000000 00:05 393228     /SYSV0b039711 (deleted)
+759af000-759b0000 ---p 00000000 00:00 0 
+759b0000-759d0000 rwxp 00000000 00:00 0          [stack:389]
+759d0000-759d1000 ---p 00000000 00:00 0 
+759d1000-759f1000 rwxp 00000000 00:00 0          [stack:388]
+759f1000-759f2000 ---p 00000000 00:00 0 
+759f2000-75a12000 rwxp 00000000 00:00 0          [stack:387]
+75a12000-75a13000 ---p 00000000 00:00 0 
+75a13000-75a33000 rwxp 00000000 00:00 0          [stack:386]
+75a33000-75a34000 ---p 00000000 00:00 0 
+75a34000-75a54000 rwxp 00000000 00:00 0          [stack:385]
+75a54000-75a55000 ---p 00000000 00:00 0 
+75a55000-75a75000 rwxp 00000000 00:00 0          [stack:384]
+75a75000-75a76000 ---p 00000000 00:00 0 
+75a76000-75cb8000 rwxp 00000000 00:00 0          [stack:383]
+75cb8000-75cb9000 ---p 00000000 00:00 0 
+75cb9000-75cd9000 rwxp 00000000 00:00 0          [stack:382]
+75cd9000-75cda000 ---p 00000000 00:00 0 
+75cda000-75cfa000 rwxp 00000000 00:00 0          [stack:381]
+75cfa000-75cfb000 ---p 00000000 00:00 0 
+75cfb000-75d1b000 rwxp 00000000 00:00 0          [stack:380]
+75d1b000-75d1c000 ---p 00000000 00:00 0 
+75d1c000-75e00000 rwxp 00000000 00:00 0          [stack:379]
+75e00000-76000000 rwxp 00000000 00:00 0 
+7600a000-7600e000 r-xp 00000000 b3:01 41137      /usr/lib/libIoDrvDobIO.so
+7600e000-7601d000 ---p 00004000 b3:01 41137      /usr/lib/libIoDrvDobIO.so
+7601d000-7601e000 r-xp 00003000 b3:01 41137      /usr/lib/libIoDrvDobIO.so
+7601e000-7601f000 rwxp 00004000 b3:01 41137      /usr/lib/libIoDrvDobIO.so
+7601f000-76052000 r-xp 00000000 b3:03 38633      /dobot/bin/lib/libjemalloc.so.2
+76052000-7605a000 ---p 00033000 b3:03 38633      /dobot/bin/lib/libjemalloc.so.2
+7605a000-7605c000 rwxp 00033000 b3:03 38633      /dobot/bin/lib/libjemalloc.so.2
+7605c000-7606c000 r-xp 00000000 b3:03 38638      /dobot/bin/lib/libusb-1.0.so.0
+7606c000-76073000 ---p 00010000 b3:03 38638      /dobot/bin/lib/libusb-1.0.so.0
+76073000-76074000 rwxp 0000f000 b3:03 38638      /dobot/bin/lib/libusb-1.0.so.0
+76074000-76086000 r-xp 00000000 b3:03 38641      /dobot/bin/lib/libz.so.1
+76086000-76095000 ---p 00012000 b3:03 38641      /dobot/bin/lib/libz.so.1
+76095000-76096000 rwxp 00011000 b3:03 38641      /dobot/bin/lib/libz.so.1
+76096000-760a1000 r-xp 00000000 b3:03 38634      /dobot/bin/lib/libmodbus.so
+760a1000-760b0000 ---p 0000b000 b3:03 38634      /dobot/bin/lib/libmodbus.so
+760b0000-760b1000 rwxp 0000a000 b3:03 38634      /dobot/bin/lib/libmodbus.so
+760b1000-760bb000 r-xp 00000000 b3:03 38636      /dobot/bin/lib/libhiredis.so.0.13
+760bb000-760c2000 ---p 0000a000 b3:03 38636      /dobot/bin/lib/libhiredis.so.0.13
+760c2000-760c3000 rwxp 00009000 b3:03 38636      /dobot/bin/lib/libhiredis.so.0.13
+760c3000-7612b000 r-xp 00000000 b3:03 38615      /dobot/bin/lib/libutils.so.1.0.0
+7612b000-7613a000 ---p 00068000 b3:03 38615      /dobot/bin/lib/libutils.so.1.0.0
+7613a000-7613d000 rwxp 00067000 b3:03 38615      /dobot/bin/lib/libutils.so.1.0.0
+7613d000-76169000 r-xp 00000000 b3:03 38647      /dobot/bin/lib/libevent-2.1.so.6.0.2
+76169000-76170000 ---p 0002c000 b3:03 38647      /dobot/bin/lib/libevent-2.1.so.6.0.2
+76170000-76172000 rwxp 0002b000 b3:03 38647      /dobot/bin/lib/libevent-2.1.so.6.0.2
+76172000-76265000 r-xp 00000000 b3:01 16114      /lib/libstdc++.so.6
+76265000-76274000 ---p 000f3000 b3:01 16114      /lib/libstdc++.so.6
+76274000-76279000 r-xp 000f2000 b3:01 16114      /lib/libstdc++.so.6
+76279000-7627b000 rwxp 000f7000 b3:01 16114      /lib/libstdc++.so.6
+7627b000-7627d000 rwxp 00000000 00:00 0 
+7627d000-7634c000 r-xp 00000000 b3:01 40392      /usr/local/qt-4.8.6/lib/libQtNetwork.so.4
+7634c000-76353000 ---p 000cf000 b3:01 40392      /usr/local/qt-4.8.6/lib/libQtNetwork.so.4
+76353000-76358000 rwxp 000ce000 b3:01 40392      /usr/local/qt-4.8.6/lib/libQtNetwork.so.4
+76358000-765c9000 r-xp 00000000 b3:01 40364      /usr/local/qt-4.8.6/lib/libQtCore.so.4
+765c9000-765d0000 ---p 00271000 b3:01 40364      /usr/local/qt-4.8.6/lib/libQtCore.so.4
+765d0000-765da000 rwxp 00270000 b3:01 40364      /usr/local/qt-4.8.6/lib/libQtCore.so.4
+765da000-7664f000 r-xp 00000000 b3:03 38645      /dobot/bin/lib/libsqlite3.so.0.8.6
+7664f000-76656000 ---p 00075000 b3:03 38645      /dobot/bin/lib/libsqlite3.so.0.8.6
+76656000-76659000 rwxp 00074000 b3:03 38645      /dobot/bin/lib/libsqlite3.so.0.8.6
+76659000-76823000 r-xp 00000000 b3:03 38619      /dobot/bin/lib/libalgs_framework.so.1.0.0
+76823000-76833000 ---p 001ca000 b3:03 38619      /dobot/bin/lib/libalgs_framework.so.1.0.0
+76833000-76838000 rwxp 001ca000 b3:03 38619      /dobot/bin/lib/libalgs_framework.so.1.0.0
+76838000-76970000 rwxp 00000000 00:00 0 
+76970000-76bc7000 r-xp 00000000 b3:03 38623      /dobot/bin/lib/libdataSvr.so.1.0.0
+76bc7000-76bd6000 ---p 00257000 b3:03 38623      /dobot/bin/lib/libdataSvr.so.1.0.0
+76bd6000-76bde000 rwxp 00256000 b3:03 38623      /dobot/bin/lib/libdataSvr.so.1.0.0
+76bde000-76d7a000 rwxp 00000000 00:00 0 
+76d7a000-76d80000 r-xp 00000000 b3:01 40220      /usr/lib/libCmpDobot6Axes.so
+76d80000-76d8f000 ---p 00006000 b3:01 40220      /usr/lib/libCmpDobot6Axes.so
+76d8f000-76d90000 r-xp 00005000 b3:01 40220      /usr/lib/libCmpDobot6Axes.so
+76d90000-76d91000 rwxp 00006000 b3:01 40220      /usr/lib/libCmpDobot6Axes.so
+76d91000-76d94000 rwxp 00000000 00:00 0 
+76d94000-76e6c000 r-xp 00000000 b3:01 16032      /lib/libc.so.6
+76e6c000-76e7b000 ---p 000d8000 b3:01 16032      /lib/libc.so.6
+76e7b000-76e7d000 r-xp 000d7000 b3:01 16032      /lib/libc.so.6
+76e7d000-76e7e000 rwxp 000d9000 b3:01 16032      /lib/libc.so.6
+76e7e000-76e81000 rwxp 00000000 00:00 0 
+76e81000-76e99000 r-xp 00000000 b3:01 16045      /lib/libgcc_s.so.1
+76e99000-76ea8000 ---p 00018000 b3:01 16045      /lib/libgcc_s.so.1
+76ea8000-76ea9000 r-xp 00017000 b3:01 16045      /lib/libgcc_s.so.1
+76ea9000-76eaa000 rwxp 00018000 b3:01 16045      /lib/libgcc_s.so.1
+76eaa000-76eaf000 r-xp 00000000 b3:01 16100      /lib/librt.so.1
+76eaf000-76ebe000 ---p 00005000 b3:01 16100      /lib/librt.so.1
+76ebe000-76ebf000 r-xp 00004000 b3:01 16100      /lib/librt.so.1
+76ebf000-76ec0000 rwxp 00005000 b3:01 16100      /lib/librt.so.1
+76ec0000-76ec2000 r-xp 00000000 b3:01 16043      /lib/libdl.so.2
+76ec2000-76ed1000 ---p 00002000 b3:01 16043      /lib/libdl.so.2
+76ed1000-76ed2000 r-xp 00001000 b3:01 16043      /lib/libdl.so.2
+76ed2000-76ed3000 rwxp 00002000 b3:01 16043      /lib/libdl.so.2
+76ed3000-76ee4000 r-xp 00000000 b3:01 16093      /lib/libpthread.so.0
+76ee4000-76ef3000 ---p 00011000 b3:01 16093      /lib/libpthread.so.0
+76ef3000-76ef4000 r-xp 00010000 b3:01 16093      /lib/libpthread.so.0
+76ef4000-76ef5000 rwxp 00011000 b3:01 16093      /lib/libpthread.so.0
+76ef5000-76ef7000 rwxp 00000000 00:00 0 
+76ef7000-76f62000 r-xp 00000000 b3:01 16062      /lib/libm.so.6
+76f62000-76f71000 ---p 0006b000 b3:01 16062      /lib/libm.so.6
+76f71000-76f72000 r-xp 0006a000 b3:01 16062      /lib/libm.so.6
+76f72000-76f73000 rwxp 0006b000 b3:01 16062      /lib/libm.so.6
+76f73000-76f8b000 r-xp 00000000 b3:01 16009      /lib/ld-linux-armhf.so.3
+76f8c000-76f8e000 r-xp 00000000 b3:01 40423      /usr/local/qt-4.8.6/lib/libts-0.0.so.0
+76f8e000-76f95000 ---p 00002000 b3:01 40423      /usr/local/qt-4.8.6/lib/libts-0.0.so.0
+76f95000-76f96000 rwxp 00001000 b3:01 40423      /usr/local/qt-4.8.6/lib/libts-0.0.so.0
+76f96000-76f9a000 rwxp 00000000 00:00 0 
+76f9a000-76f9b000 r-xp 00017000 b3:01 16009      /lib/ld-linux-armhf.so.3
+76f9b000-76f9c000 rwxp 00018000 b3:01 16009      /lib/ld-linux-armhf.so.3
+7edc4000-7ede5000 rwxp 00000000 00:00 0          [stack]
+7eef6000-7eef7000 r-xp 00000000 00:00 0          [sigpage]
+7eef7000-7eef8000 r--p 00000000 00:00 0          [vvar]
+7eef8000-7eef9000 r-xp 00000000 00:00 0          [vdso]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+=== END ===

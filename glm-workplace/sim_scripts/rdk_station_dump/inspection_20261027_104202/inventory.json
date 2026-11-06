@@ -1,0 +1,360 @@
+{
+  "station": "新建工作站 (1)",
+  "run_mode": 1,
+  "items": [
+    {
+      "name": "新建工作站 (1)",
+      "type": 1,
+      "parent": "Invalid item provided: The item identifier provided is not valid or it does not exist.",
+      "visible": 1
+    },
+    {
+      "name": "TCP真实运动_升级前备份_20260910_170410",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\01_TCP真实运动_升级前备份_20260910_170410.py",
+      "bytes": 43710,
+      "sha256": "7634d4c6519521e7175e635d0f4eb46f2e3bc2aa625f551c4a70144986f2d49c"
+    },
+    {
+      "name": "方向角计算",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\02_方向角计算.py",
+      "bytes": 19141,
+      "sha256": "dc5d7f5244aae3bd10805b609dcba814b6793c10503b3b0350ab6a7300d785e1"
+    },
+    {
+      "name": "Dobot CR5 Base",
+      "type": 3,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "pose_local": [
+        346.03351,
+        1005.01343,
+        515.52258,
+        78.13753,
+        48.36379,
+        -172.53487
+      ],
+      "pose_world": [
+        346.03351,
+        1005.01343,
+        515.52258,
+        78.13753,
+        48.36379,
+        -172.53487
+      ]
+    },
+    {
+      "name": "Dobot CR5",
+      "type": 2,
+      "parent": "Dobot CR5 Base",
+      "visible": 1,
+      "pose_local": [
+        0.0,
+        -241.5,
+        1047.0,
+        -90.0,
+        -0.0,
+        180.0
+      ],
+      "pose_world": [
+        346.03351,
+        1005.01343,
+        515.52258,
+        78.13753,
+        48.36379,
+        -172.53487
+      ],
+      "model_joints": "[[ -0.000 ],\n [ -0.000 ],\n [ 0.000 ],\n [ -0.000 ],\n [ -0.000 ],\n [ 0.000 ]]\n",
+      "tool": "Pose(0.000, 0.000, 0.000,  -0.000, 0.000, -0.000):\n[[ 1.000, 0.000, 0.000, 0.000 ],\n [ 0.000, 1.000, 0.000, 0.000 ],\n [ 0.000, 0.000, 1.000, 0.000 ],\n [ 0.000, 0.000, 0.000, 1.000 ]]\n",
+      "frame": "Pose(0.000, 0.000, 0.000,  -0.000, 0.000, -0.000):\n[[ 1.000, 0.000, 0.000, 0.000 ],\n [ 0.000, 1.000, 0.000, 0.000 ],\n [ 0.000, 0.000, 1.000, 0.000 ],\n [ 0.000, 0.000, 0.000, 1.000 ]]\n",
+      "limits": "(Matrix: (6, 1)\n[[ -360.000 ],\n [ -360.000 ],\n [ -160.000 ],\n [ -360.000 ],\n [ -360.000 ],\n [ -360.000 ]]\n, Matrix: (6, 1)\n[[ 360.000 ],\n [ 360.000 ],\n [ 160.000 ],\n [ 360.000 ],\n [ 360.000 ],\n [ 360.000 ]]\n, 7.0)"
+    },
+    {
+      "name": "门把手_bs1",
+      "type": 5,
+      "parent": "Dobot CR5",
+      "visible": 1,
+      "pose_local": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "pose_world": [
+        222.1086,
+        2072.24188,
+        501.49197,
+        -168.13753,
+        -48.36379,
+        7.46513
+      ]
+    },
+    {
+      "name": "P1",
+      "type": 6,
+      "parent": "Dobot CR5 Base",
+      "visible": 0,
+      "pose_local": [
+        -20.0988,
+        -241.47667,
+        846.75109,
+        -90.00022,
+        1.34642,
+        179.95557
+      ],
+      "pose_world": [
+        291.29825,
+        1883.65564,
+        489.17938,
+        -166.65358,
+        -48.11332,
+        5.47768
+      ]
+    },
+    {
+      "name": "安装台_650x650x80mm",
+      "type": 5,
+      "parent": "Dobot CR5 Base",
+      "visible": 1,
+      "pose_local": [
+        0.0,
+        0.0,
+        0.0,
+        7e-05,
+        -1.34645,
+        -0.04509
+      ],
+      "pose_world": [
+        346.03351,
+        1005.01343,
+        515.52258,
+        76.65394,
+        48.11395,
+        -174.52259
+      ]
+    },
+    {
+      "name": "地面_禁止穿越",
+      "type": 5,
+      "parent": "Dobot CR5 Base",
+      "visible": 1,
+      "pose_local": [
+        0.0,
+        0.0,
+        0.0,
+        7e-05,
+        -1.34645,
+        -0.04508
+      ],
+      "pose_world": [
+        346.03351,
+        1005.01343,
+        515.52258,
+        76.65394,
+        48.11394,
+        -174.5226
+      ]
+    },
+    {
+      "name": "挡板_半封闭3面",
+      "type": 5,
+      "parent": "Dobot CR5 Base",
+      "visible": 1,
+      "pose_local": [
+        0.0,
+        78.0,
+        160.0,
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "pose_world": [
+        246.83291,
+        1133.76535,
+        588.09105,
+        78.13753,
+        48.36379,
+        -172.53487
+      ]
+    },
+    {
+      "name": "磨砂圆柱_R150_H50",
+      "type": 5,
+      "parent": "Dobot CR5 Base",
+      "visible": 1,
+      "pose_local": [
+        0.0,
+        -838.0,
+        460.0,
+        90.0,
+        -0.0,
+        90.0
+      ],
+      "pose_world": [
+        802.82486,
+        1692.6272,
+        33.47205,
+        169.64404,
+        -40.55739,
+        -156.83698
+      ]
+    },
+    {
+      "name": "test",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\11_test.py",
+      "bytes": 39226,
+      "sha256": "6063b0eefe64a4abe66b34faac768d4d1afa6509ed1574abce39c37c72edc749"
+    },
+    {
+      "name": "机械臂法兰真实运动_改名修复前_20261014_114144_改名修复前_20261014_114144",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\12_机械臂法兰真实运动_改名修复前_20261014_114144_改名修复前_20261014_114144.py",
+      "bytes": 75773,
+      "sha256": "f3e34f9944b7923841ebbdfd40f4a23b13e38c990931fa964117d23b5f7d45f0"
+    },
+    {
+      "name": "TCP真实运动_到位复核前备份_20260910_172919",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\13_TCP真实运动_到位复核前备份_20260910_172919.py",
+      "bytes": 53525,
+      "sha256": "3e261d889874a6aaf1bd89516dd3700403c8ad51491476657b792146a71fd305"
+    },
+    {
+      "name": "TCP真实运动_旧版_20261009_113434",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\14_TCP真实运动_旧版_20261009_113434.py",
+      "bytes": 54493,
+      "sha256": "01bba6da3663f41cd7ef3834fefb820d78ff4dbe20620eba57c1863f0cd57f6c"
+    },
+    {
+      "name": "TCP仿真_退让换向升级前",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\15_TCP仿真_退让换向升级前.py",
+      "bytes": 56784,
+      "sha256": "40158aaf5b0e5afc8c22e802f26b5c6af139c827667e36bdd439169b3cc904a0"
+    },
+    {
+      "name": "TCP仿真_改名修复前_20261014_114144",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\16_TCP仿真_改名修复前_20261014_114144.py",
+      "bytes": 65106,
+      "sha256": "4eb0d7c8fdb748e72fec0fcc3131612b5246ce70540cfa0e566d2d3256323442"
+    },
+    {
+      "name": "TCP真实运动_升级前备份_20261009_113242",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\17_TCP真实运动_升级前备份_20261009_113242.py",
+      "bytes": 54493,
+      "sha256": "01bba6da3663f41cd7ef3834fefb820d78ff4dbe20620eba57c1863f0cd57f6c"
+    },
+    {
+      "name": "TCP真实运动_偏离50版_20261009_142831_改名修复前_20261014_114144",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\18_TCP真实运动_偏离50版_20261009_142831_改名修复前_20261014_114144.py",
+      "bytes": 62862,
+      "sha256": "993b282e16c61c77161c668cc008fa5d2872fdf438f0c1fcfc00957bbc25f57e"
+    },
+    {
+      "name": "TCP真实运动_偏离50版_20261009_144043_改名修复前_20261014_114144",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\19_TCP真实运动_偏离50版_20261009_144043_改名修复前_20261014_114144.py",
+      "bytes": 63330,
+      "sha256": "958c463a009ffef8bf4b8c760b24d19a61f8f4d85a6769ed933a32a8aa0596ec"
+    },
+    {
+      "name": "TCP真实运动_改名修复前_20261014_114144",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\20_TCP真实运动_改名修复前_20261014_114144.py",
+      "bytes": 73289,
+      "sha256": "867afc076cb3c05f00b73d4f1730ba458ee12f8bbb363823928df71ef4e4da4b"
+    },
+    {
+      "name": "_probe_P11",
+      "type": 8,
+      "parent": "新建工作站 (1)",
+      "visible": 0
+    },
+    {
+      "name": "机械臂法兰真实运动",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\22_机械臂法兰真实运动.py",
+      "bytes": 77328,
+      "sha256": "b72a72443401257e0318163de5db446661d8234ed12b693215dedd0ce05f06d3"
+    },
+    {
+      "name": "TCP仿真",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\23_TCP仿真.py",
+      "bytes": 65106,
+      "sha256": "fd5aae9c10661dc229816e97ba437c86f5a3695230515b4cc03d4e73da81f20f"
+    },
+    {
+      "name": "TCP真实运动_偏离50版_20261009_142831",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\24_TCP真实运动_偏离50版_20261009_142831.py",
+      "bytes": 62862,
+      "sha256": "c17cb659965192bb1a308c136eb59c6413a25a021a7da7e962b57adbb3491538"
+    },
+    {
+      "name": "TCP真实运动_偏离50版_20261009_144043",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\25_TCP真实运动_偏离50版_20261009_144043.py",
+      "bytes": 63330,
+      "sha256": "3bd550b8ed0e3b09143a34a98a1fe1735c7e655915defae623f64c29d51e9dc7"
+    },
+    {
+      "name": "TCP真实运动",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\26_TCP真实运动.py",
+      "bytes": 73289,
+      "sha256": "de7a30658bb4554de681a428c207f4d0794e34cb6de2c571a966d2ea3a51b532"
+    },
+    {
+      "name": "TCP真实运动_P2P版",
+      "type": 10,
+      "parent": "新建工作站 (1)",
+      "visible": 1,
+      "source": "D:\\mydata\\glm-workplace\\sim_scripts\\rdk_station_dump\\inspection_20261027_104202\\27_TCP真实运动_P2P版.py",
+      "bytes": 144857,
+      "sha256": "acdf7de3a3bc381782624746b0a55a140f5013dc12cacf52d91a26e5840bbe08"
+    }
+  ]
+}

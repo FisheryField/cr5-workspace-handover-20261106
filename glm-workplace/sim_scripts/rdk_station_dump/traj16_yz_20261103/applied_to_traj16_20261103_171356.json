@@ -1,0 +1,139 @@
+{
+  "updated_file": "D:\\mydata\\working things\\dobot_arm\\RoboDK files 2\\连续轨迹16.json",
+  "backup": "D:\\mydata\\working things\\dobot_arm\\RoboDK files 2\\备份\\连续轨迹16_更新前_20261103_171356.json",
+  "sha256": "660b303af02f6a207fcb30a59401eabcc9eab594d95c738e5cc6ea1b9a84c01a",
+  "points": 23,
+  "changed_points": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "changes": [
+    {
+      "point": 8,
+      "before": {
+        "type": "TCP",
+        "values": [
+          0.0,
+          -684.0,
+          460.0,
+          180.0,
+          0.0,
+          0.0
+        ],
+        "singular": false,
+        "spin360": false,
+        "j6_delta": 0
+      },
+      "after": {
+        "type": "TCP",
+        "values": [
+          0.0,
+          -681.5,
+          457.5,
+          180.0,
+          0.0,
+          0.0
+        ],
+        "singular": false,
+        "spin360": false,
+        "j6_delta": 0
+      }
+    },
+    {
+      "point": 9,
+      "before": {
+        "type": "TCP",
+        "values": [
+          -120.0,
+          -684.0,
+          460.0,
+          180.0,
+          0.0,
+          0.0
+        ],
+        "singular": false,
+        "spin360": false,
+        "j6_delta": 0
+      },
+      "after": {
+        "type": "TCP",
+        "values": [
+          -120.0,
+          -681.5,
+          457.5,
+          180.0,
+          0.0,
+          0.0
+        ],
+        "singular": false,
+        "spin360": false,
+        "j6_delta": 0
+      }
+    },
+    {
+      "point": 10,
+      "before": {
+        "type": "TCP",
+        "values": [
+          -120.0,
+          -684.0,
+          460.0,
+          180.0,
+          0.0,
+          180.0
+        ],
+        "singular": true,
+        "spin360": false,
+        "j6_delta": 180
+      },
+      "after": {
+        "type": "TCP",
+        "values": [
+          -120.0,
+          -681.5,
+          457.5,
+          180.0,
+          0.0,
+          180.0
+        ],
+        "singular": true,
+        "spin360": false,
+        "j6_delta": 180
+      }
+    },
+    {
+      "point": 11,
+      "before": {
+        "type": "TCP",
+        "values": [
+          120.0,
+          -684.0,
+          460.0,
+          180.0,
+          0.0,
+          180.0
+        ],
+        "singular": false,
+        "spin360": false,
+        "j6_delta": 0
+      },
+      "after": {
+        "type": "TCP",
+        "values": [
+          120.0,
+          -681.5,
+          457.5,
+          180.0,
+          0.0,
+          180.0
+        ],
+        "singular": false,
+        "spin360": false,
+        "j6_delta": 0
+      }
+    }
+  ],
+  "hardware_started": false
+}

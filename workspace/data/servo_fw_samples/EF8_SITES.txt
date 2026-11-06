@@ -1,0 +1,1634 @@
+==============================================================================
+D8 / 0x20003ef8 : 17 literal-load site(s)
+==============================================================================
+  --- site 0x0801e464 ---
+      0x0801e464  ldr       r3, [pc, #0x10]            <<<
+      0x0801e466  add.w     r2, r3, r2, lsl #2        
+      0x0801e46a  vldr      s2, [r2, #0x2c]           
+      0x0801e46e  vdiv.f32  s0, s1, s2                
+      0x0801e472  bx        lr                        
+      0x0801e474  movs      r0, r0                    
+      0x0801e476  rsbs      r0, r6, #0                
+      0x0801e478  subs      r6, #0xf8                 
+      0x0801e47a  movs      r0, #0                    
+      0x0801e47c  ldr       r2, [pc, #0x10]           
+      0x0801e47e  add       r2, r0                    
+      0x0801e480  ubfx      r1, r2, #0xe, #0xa        
+      0x0801e484  ldr       r2, [pc, #0xc]            
+      0x0801e486  add.w     r2, r2, r1, lsl #2        
+      0x0801e48a  .byte     0x92, 0xed                
+  --- site 0x0801e4c0 ---
+      0x0801e4c0  ldr       r3, [pc, #0x14]            <<<
+      0x0801e4c2  add.w     r2, r3, r2, lsl #2        
+      0x0801e4c6  vldr      s1, [r2, #0x28]           
+      0x0801e4ca  vmov      s0, r1                    
+      0x0801e4ce  vcvt.f32.s32 s0, s0                    
+      0x0801e4d2  vmul.f32  s0, s1, s0                
+      0x0801e4d6  bx        lr                        
+      0x0801e4d8  subs      r6, #0xf8                 
+      0x0801e4da  movs      r0, #0                    
+      0x0801e4dc  add.w     r2, r0, #0x2000           
+      0x0801e4e0  ubfx      r1, r2, #0xe, #0xa        
+      0x0801e4e4  ldr       r2, [pc, #8]              
+      0x0801e4e6  .byte     0x02, 0xeb                
+  --- site 0x0801e510 ---
+      0x0801e510  ldr       r1, [pc, #0xc]             <<<
+      0x0801e512  add.w     r0, r1, r0, lsl #2        
+      0x0801e516  vldr      s1, [r0, #0x30]           
+      0x0801e51a  vmul.f32  s0, s0, s1                
+      0x0801e51e  pop       {r4, r5, r6, pc}          
+      0x0801e520  subs      r6, #0xf8                 
+      0x0801e522  movs      r0, #0                    
+      0x0801e524  add.w     r2, r0, r0, lsl #2        
+      0x0801e528  ldr       r3, [pc, #0x4c]           
+      0x0801e52a  ldr.w     r2, [r3, r2, lsl #2]      
+      0x0801e52e  vmov      s0, r2                    
+      0x0801e532  vcvt.f32.s32 s1, s0                    
+      0x0801e536  .byte     0x00, 0xeb                
+  --- site 0x0801e552 ---
+      0x0801e552  ldr       r3, [pc, #0x28]            <<<
+      0x0801e554  add.w     r2, r3, r2, lsl #2        
+      0x0801e558  vldr      s2, [r2, #0x14]           
+      0x0801e55c  vmov      s0, r1                    
+      0x0801e560  vcvt.f32.s32 s0, s0                    
+      0x0801e564  vmul.f32  s0, s2, s0                
+      0x0801e568  vldr      s2, [pc, #0x14]           
+      0x0801e56c  vmul.f32  s2, s0, s2                
+      0x0801e570  vdiv.f32  s0, s2, s1                
+      0x0801e574  bx        lr                        
+      0x0801e576  movs      r0, r0                    
+      0x0801e578  lsls      r4, r4, #1                
+  --- site 0x0801ea5a ---
+      0x0801ea5a  ldr       r3, [pc, #0xc]             <<<
+      0x0801ea5c  add.w     r0, r3, r0, lsl #2        
+      0x0801ea60  ldr       r0, [r0, #0x24]           
+      0x0801ea62  muls      r0, r1, r0                
+      0x0801ea64  bx        lr                        
+      0x0801ea66  movs      r0, r0                    
+      0x0801ea68  subs      r6, #0xf8                 
+      0x0801ea6a  movs      r0, #0                    
+      0x0801ea6c  mov       r1, r0                    
+      0x0801ea6e  movw      r0, #0x4189               
+      0x0801ea72  muls      r0, r1, r0                
+      0x0801ea74  mov.w     r2, #0x3e8                
+      0x0801ea78  udiv      r0, r0, r2                
+      0x0801ea7c  bx        lr                        
+      0x0801ea7e  movs      r0, r0                    
+      0x0801ea80  mov       r2, r0                    
+  --- site 0x0801eab0 ---
+      0x0801eab0  ldr       r3, [pc, #0x2c]            <<<
+      0x0801eab2  add.w     r0, r3, r0, lsl #2        
+      0x0801eab6  vldr      s2, [r0, #0x14]           
+      0x0801eaba  vmov      s0, r1                    
+      0x0801eabe  vcvt.f32.s32 s0, s0                    
+      0x0801eac2  vmul.f32  s0, s2, s0                
+      0x0801eac6  vldr      s2, [pc, #0x1c]           
+      0x0801eaca  vmul.f32  s0, s0, s2                
+      0x0801eace  vdiv.f32  s2, s0, s1                
+      0x0801ead2  vcvt.s32.f32 s0, s2                    
+      0x0801ead6  .byte     0x10, 0xee                
+  --- site 0x0801eb18 ---
+      0x0801eb18  ldr       r3, [pc, #0x2c]            <<<
+      0x0801eb1a  add.w     r0, r3, r0, lsl #2        
+      0x0801eb1e  vldr      s2, [r0, #0x14]           
+      0x0801eb22  vmov      s0, r1                    
+      0x0801eb26  vcvt.f32.u32 s0, s0                    
+      0x0801eb2a  vmul.f32  s0, s2, s0                
+      0x0801eb2e  vldr      s2, [pc, #0x1c]           
+      0x0801eb32  vmul.f32  s0, s0, s2                
+      0x0801eb36  vdiv.f32  s2, s0, s1                
+      0x0801eb3a  vcvt.s32.f32 s0, s2                    
+      0x0801eb3e  .byte     0x10, 0xee                
+  --- site 0x0801f7ac ---
+      0x0801f7ac  ldr       r2, [pc, #0x20]            <<<
+      0x0801f7ae  add.w     r0, r2, r0, lsl #2        
+      0x0801f7b2  vldr      s2, [r0, #0x14]           
+      0x0801f7b6  vldr      s3, [pc, #0x1c]           
+      0x0801f7ba  vmul.f32  s2, s2, s3                
+      0x0801f7be  vdiv.f32  s3, s1, s2                
+      0x0801f7c2  vcvt.s32.f32 s1, s3                    
+      0x0801f7c6  vmov      r0, s1                    
+      0x0801f7ca  bx        lr                        
+      0x0801f7cc  lsls      r4, r4, #1                
+      0x0801f7ce  movs      r0, #0                    
+      0x0801f7d0  subs      r6, #0xf8                 
+      0x0801f7d2  movs      r0, #0                    
+  --- site 0x0801f8cc ---
+      0x0801f8cc  ldr       r3, [pc, #0x20]            <<<
+      0x0801f8ce  add.w     r0, r3, r0, lsl #2        
+      0x0801f8d2  vldr      s1, [r0, #0x14]           
+      0x0801f8d6  vldr      s2, [pc, #0x1c]           
+      0x0801f8da  vmul.f32  s1, s1, s2                
+      0x0801f8de  vdiv.f32  s2, s0, s1                
+      0x0801f8e2  vcvt.s32.f32 s0, s2                    
+      0x0801f8e6  vmov      r0, s0                    
+      0x0801f8ea  bx        lr                        
+      0x0801f8ec  lsls      r4, r4, #1                
+      0x0801f8ee  movs      r0, #0                    
+      0x0801f8f0  subs      r6, #0xf8                 
+      0x0801f8f2  movs      r0, #0                    
+  --- site 0x0801f902 ---
+      0x0801f902  ldr       r3, [pc, #0x40]            <<<
+      0x0801f904  add.w     r0, r3, r0, lsl #2        
+      0x0801f908  vldr      s0, [r0, #0x10]           
+      0x0801f90c  vcmpe.f32 s0, #0                    
+      0x0801f910  vmrs      apsr_nzcv, fpscr          
+      0x0801f914  bne       #0x801f91a                
+      0x0801f916  mov       r0, r1                    
+      0x0801f918  bx        lr                        
+      0x0801f91a  add.w     r0, r2, r2, lsl #2        
+      0x0801f91e  add.w     r0, r0, r2, lsl #3        
+      0x0801f922  ldr       r3, [pc, #0x20]           
+      0x0801f924  add.w     r0, r3, r0, lsl #2        
+      0x0801f928  .byte     0xd0, 0xed                
+  --- site 0x0801f922 ---
+      0x0801f922  ldr       r3, [pc, #0x20]            <<<
+      0x0801f924  add.w     r0, r3, r0, lsl #2        
+      0x0801f928  vldr      s1, [r0, #0x10]           
+      0x0801f92c  vmov      s0, r1                    
+      0x0801f930  vcvt.f32.s32 s0, s0                    
+      0x0801f934  vdiv.f32  s2, s0, s1                
+      0x0801f938  vcvt.s32.f32 s0, s2                    
+      0x0801f93c  vmov      r0, s0                    
+      0x0801f940  b         #0x801f918                
+      0x0801f942  movs      r0, r0                    
+      0x0801f944  subs      r6, #0xf8                 
+      0x0801f946  movs      r0, #0                    
+      0x0801f948  mov       r2, r0                    
+  --- site 0x0801f952 ---
+      0x0801f952  ldr       r3, [pc, #0x20]            <<<
+      0x0801f954  add.w     r0, r3, r0, lsl #2        
+      0x0801f958  vldr      s1, [r0, #0x10]           
+      0x0801f95c  vmov      s0, r1                    
+      0x0801f960  vcvt.f32.s32 s0, s0                    
+      0x0801f964  vdiv.f32  s2, s0, s1                
+      0x0801f968  vcvt.s32.f32 s0, s2                    
+      0x0801f96c  vmov      r0, s0                    
+      0x0801f970  bx        lr                        
+      0x0801f972  movs      r0, r0                    
+      0x0801f974  subs      r6, #0xf8                 
+      0x0801f976  movs      r0, #0                    
+      0x0801f978  push      {r4, r5, r6, lr}          
+  --- site 0x0801f9ca ---
+      0x0801f9ca  ldr       r3, [pc, #0x20]            <<<
+      0x0801f9cc  add.w     r0, r3, r0, lsl #2        
+      0x0801f9d0  vldr      s1, [r0, #0x1c]           
+      0x0801f9d4  vmov      s0, r1                    
+      0x0801f9d8  vcvt.f32.s32 s0, s0                    
+      0x0801f9dc  vmul.f32  s0, s1, s0                
+      0x0801f9e0  vcvt.s32.f32 s0, s0                    
+      0x0801f9e4  vmov      r0, s0                    
+      0x0801f9e8  bx        lr                        
+      0x0801f9ea  movs      r0, r0                    
+      0x0801f9ec  subs      r6, #0xf8                 
+      0x0801f9ee  movs      r0, #0                    
+      0x0801f9f0  mov       r2, r0                    
+  --- site 0x0801f9fa ---
+      0x0801f9fa  ldr       r3, [pc, #0x20]            <<<
+      0x0801f9fc  add.w     r0, r3, r0, lsl #2        
+      0x0801fa00  vldr      s1, [r0, #0x10]           
+      0x0801fa04  vmov      s0, r1                    
+      0x0801fa08  vcvt.f32.s32 s0, s0                    
+      0x0801fa0c  vmul.f32  s0, s1, s0                
+      0x0801fa10  vcvt.s32.f32 s0, s0                    
+      0x0801fa14  vmov      r0, s0                    
+      0x0801fa18  bx        lr                        
+      0x0801fa1a  movs      r0, r0                    
+      0x0801fa1c  subs      r6, #0xf8                 
+      0x0801fa1e  movs      r0, #0                    
+      0x0801fa20  mov       r2, r0                    
+  --- site 0x0801fa2a ---
+      0x0801fa2a  ldr       r3, [pc, #0x20]            <<<
+      0x0801fa2c  add.w     r0, r3, r0, lsl #2        
+      0x0801fa30  vldr      s1, [r0, #0x10]           
+      0x0801fa34  vmov      s0, r1                    
+      0x0801fa38  vcvt.f32.s32 s0, s0                    
+      0x0801fa3c  vmul.f32  s0, s1, s0                
+      0x0801fa40  vcvt.s32.f32 s0, s0                    
+      0x0801fa44  vmov      r0, s0                    
+      0x0801fa48  bx        lr                        
+      0x0801fa4a  movs      r0, r0                    
+      0x0801fa4c  subs      r6, #0xf8                 
+      0x0801fa4e  movs      r0, #0                    
+      0x0801fa50  mov       r2, r0                    
+  --- site 0x0801fa5a ---
+      0x0801fa5a  ldr       r3, [pc, #0x20]            <<<
+      0x0801fa5c  add.w     r0, r3, r0, lsl #2        
+      0x0801fa60  vldr      s1, [r0, #0x1c]           
+      0x0801fa64  vmov      s0, r1                    
+      0x0801fa68  vcvt.f32.s32 s0, s0                    
+      0x0801fa6c  vdiv.f32  s2, s0, s1                
+      0x0801fa70  vcvt.s32.f32 s0, s2                    
+      0x0801fa74  vmov      r0, s0                    
+      0x0801fa78  bx        lr                        
+      0x0801fa7a  movs      r0, r0                    
+      0x0801fa7c  subs      r6, #0xf8                 
+      0x0801fa7e  movs      r0, #0                    
+      0x0801fa80  .byte     0x2d, 0xe9                
+  --- site 0x08022078 ---
+      0x08022078  ldr       r5, [pc, #0x160]           <<<
+      0x0802207a  add.w     r0, r5, r4, lsl #2        
+      0x0802207e  movw      r4, #0x329                
+      0x08022082  muls      r4, r3, r4                
+      0x08022084  ldr       r5, [pc, #0x158]          
+      0x08022086  add       r4, r5                    
+      0x08022088  add.w     r2, r4, #0x14e            
+      0x0802208c  add.w     r4, r3, r3, lsl #2        
+      0x08022090  ldr       r5, [pc, #0x150]          
+      0x08022092  add.w     r1, r5, r4, lsl #2        
+      0x08022096  ldr       r5, [r2, #8]              
+      0x08022098  ldr       r4, [r2, #0xc]            
+      0x0802209a  udiv      r4, r5, r4                
+      0x0802209e  .byte     0x00, 0xee                
+
+==============================================================================
+3150 / 0x20003db0 : 79 literal-load site(s)
+==============================================================================
+  --- site 0x08024af0 ---
+      0x08024af0  ldr       r1, [pc, #0xbc]            <<<
+      0x08024af2  str       r0, [r1, #0x18]           
+      0x08024af4  ldr       r0, [sp, #0x14]           
+      0x08024af6  ldr       r0, [r0, #0x10]           
+      0x08024af8  ldr.w     r1, [r5, #0xa8]           
+      0x08024afc  add       r0, r1                    
+      0x08024afe  ldr       r1, [pc, #0xb0]           
+      0x08024b00  ldr       r1, [r1, #0x18]           
+      0x08024b02  add       r1, r0                    
+      0x08024b04  str.w     r1, [sb, #0x234]          
+      0x08024b08  ldr.w     r0, [sb, #0x234]          
+      0x08024b0c  cmp       r0, #0                    
+      0x08024b0e  blt       #0x8024b32                
+      0x08024b10  ldr.w     r0, [sb, #0x234]          
+      0x08024b14  ldr       r1, [r4, #0xc]            
+      0x08024b16  .byte     0x90, 0xfb                
+  --- site 0x08024afe ---
+      0x08024afe  ldr       r1, [pc, #0xb0]            <<<
+      0x08024b00  ldr       r1, [r1, #0x18]           
+      0x08024b02  add       r1, r0                    
+      0x08024b04  str.w     r1, [sb, #0x234]          
+      0x08024b08  ldr.w     r0, [sb, #0x234]          
+      0x08024b0c  cmp       r0, #0                    
+      0x08024b0e  blt       #0x8024b32                
+      0x08024b10  ldr.w     r0, [sb, #0x234]          
+      0x08024b14  ldr       r1, [r4, #0xc]            
+      0x08024b16  sdiv      r0, r0, r1                
+      0x08024b1a  ldr       r1, [pc, #0x94]           
+      0x08024b1c  str       r0, [r1, #4]              
+      0x08024b1e  ldr.w     r0, [sb, #0x234]          
+      0x08024b22  ldr       r1, [r4, #0xc]            
+      0x08024b24  .byte     0x90, 0xfb                
+  --- site 0x08024b1a ---
+      0x08024b1a  ldr       r1, [pc, #0x94]            <<<
+      0x08024b1c  str       r0, [r1, #4]              
+      0x08024b1e  ldr.w     r0, [sb, #0x234]          
+      0x08024b22  ldr       r1, [r4, #0xc]            
+      0x08024b24  sdiv      r2, r0, r1                
+      0x08024b28  mls       r0, r1, r2, r0            
+      0x08024b2c  ldr       r1, [pc, #0x80]           
+      0x08024b2e  str       r0, [r1]                  
+      0x08024b30  b         #0x8024b56                
+      0x08024b32  ldr.w     r0, [sb, #0x234]          
+      0x08024b36  ldr       r1, [r4, #0xc]            
+      0x08024b38  sdiv      r0, r0, r1                
+      0x08024b3c  subs      r0, r0, #1                
+      0x08024b3e  ldr       r1, [pc, #0x70]           
+      0x08024b40  str       r0, [r1, #4]              
+  --- site 0x08024b2c ---
+      0x08024b2c  ldr       r1, [pc, #0x80]            <<<
+      0x08024b2e  str       r0, [r1]                  
+      0x08024b30  b         #0x8024b56                
+      0x08024b32  ldr.w     r0, [sb, #0x234]          
+      0x08024b36  ldr       r1, [r4, #0xc]            
+      0x08024b38  sdiv      r0, r0, r1                
+      0x08024b3c  subs      r0, r0, #1                
+      0x08024b3e  ldr       r1, [pc, #0x70]           
+      0x08024b40  str       r0, [r1, #4]              
+      0x08024b42  ldr.w     r0, [sb, #0x234]          
+      0x08024b46  ldr       r1, [r4, #0xc]            
+      0x08024b48  sdiv      r2, r0, r1                
+      0x08024b4c  mls       r0, r1, r2, r0            
+      0x08024b50  add       r0, r1                    
+      0x08024b52  ldr       r1, [pc, #0x5c]           
+  --- site 0x08024b3e ---
+      0x08024b3e  ldr       r1, [pc, #0x70]            <<<
+      0x08024b40  str       r0, [r1, #4]              
+      0x08024b42  ldr.w     r0, [sb, #0x234]          
+      0x08024b46  ldr       r1, [r4, #0xc]            
+      0x08024b48  sdiv      r2, r0, r1                
+      0x08024b4c  mls       r0, r1, r2, r0            
+      0x08024b50  add       r0, r1                    
+      0x08024b52  ldr       r1, [pc, #0x5c]           
+      0x08024b54  str       r0, [r1]                  
+      0x08024b56  ldr.w     r1, [sb, #0x234]          
+      0x08024b5a  ldr       r0, [pc, #0x58]           
+      0x08024b5c  ldr       r2, [r0, #8]              
+      0x08024b5e  mov       r0, r8                    
+      0x08024b60  blx       r2                        
+      0x08024b62  str.w     r0, [sb, #0x238]          
+  --- site 0x08024b52 ---
+      0x08024b52  ldr       r1, [pc, #0x5c]            <<<
+      0x08024b54  str       r0, [r1]                  
+      0x08024b56  ldr.w     r1, [sb, #0x234]          
+      0x08024b5a  ldr       r0, [pc, #0x58]           
+      0x08024b5c  ldr       r2, [r0, #8]              
+      0x08024b5e  mov       r0, r8                    
+      0x08024b60  blx       r2                        
+      0x08024b62  str.w     r0, [sb, #0x238]          
+      0x08024b66  ldr       r0, [pc, #0x30]           
+      0x08024b68  ldrb      r0, [r0]                  
+      0x08024b6a  cmp       r0, #1                    
+      0x08024b6c  bne       #0x8024b7a                
+      0x08024b6e  movs      r0, #0xb4                 
+      0x08024b70  ldr       r0, [r0, r4]              
+      0x08024b72  cbnz      r0, #0x8024b7a            
+      0x08024b74  movs      r0, #0                    
+      0x08024b76  bl        #0x8025778                
+  --- site 0x080257d4 ---
+      0x080257d4  ldr       r5, [pc, #0x3b0]           <<<
+      0x080257d6  ldr       r5, [r5]                  
+      0x080257d8  sdiv      r6, r5, r3                
+      0x080257dc  mls       r3, r3, r6, r5            
+      0x080257e0  ldr       r5, [pc, #0x3a4]          
+      0x080257e2  str       r3, [r5, #8]              
+      0x080257e4  movs      r3, #0                    
+      0x080257e6  str       r3, [r5, #0x10]           
+      0x080257e8  b         #0x802580e                
+      0x080257ea  ldrh      r3, [r1, #0x22]           
+      0x080257ec  cmp       r3, #3                    
+      0x080257ee  bne       #0x802580e                
+      0x080257f0  movs      r3, #0xcc                 
+      0x080257f2  ldr       r3, [r3, r0]              
+      0x080257f4  ldr       r5, [r0, #0xc]            
+      0x080257f6  sdiv      r3, r5, r3                
+      0x080257fa  ldr       r5, [pc, #0x38c]          
+  --- site 0x080257e0 ---
+      0x080257e0  ldr       r5, [pc, #0x3a4]           <<<
+      0x080257e2  str       r3, [r5, #8]              
+      0x080257e4  movs      r3, #0                    
+      0x080257e6  str       r3, [r5, #0x10]           
+      0x080257e8  b         #0x802580e                
+      0x080257ea  ldrh      r3, [r1, #0x22]           
+      0x080257ec  cmp       r3, #3                    
+      0x080257ee  bne       #0x802580e                
+      0x080257f0  movs      r3, #0xcc                 
+      0x080257f2  ldr       r3, [r3, r0]              
+      0x080257f4  ldr       r5, [r0, #0xc]            
+      0x080257f6  sdiv      r3, r5, r3                
+      0x080257fa  ldr       r5, [pc, #0x38c]          
+      0x080257fc  ldr       r5, [r5]                  
+      0x080257fe  sdiv      r6, r5, r3                
+      0x08025802  mls       r3, r3, r6, r5            
+      0x08025806  ldr       r5, [pc, #0x380]          
+  --- site 0x080257fa ---
+      0x080257fa  ldr       r5, [pc, #0x38c]           <<<
+      0x080257fc  ldr       r5, [r5]                  
+      0x080257fe  sdiv      r6, r5, r3                
+      0x08025802  mls       r3, r3, r6, r5            
+      0x08025806  ldr       r5, [pc, #0x380]          
+      0x08025808  str       r3, [r5, #0xc]            
+      0x0802580a  movs      r3, #1                    
+      0x0802580c  str       r3, [r5, #0x10]           
+      0x0802580e  b         #0x8025bf8                
+      0x08025810  ldrh      r3, [r1, #0x22]           
+      0x08025812  cmp       r3, #1                    
+      0x08025814  bne       #0x802586e                
+      0x08025816  movs      r3, #0xcc                 
+      0x08025818  ldr       r3, [r3, r0]              
+      0x0802581a  ldr       r5, [r0, #0xc]            
+      0x0802581c  sdiv      r3, r5, r3                
+      0x08025820  ldr       r5, [pc, #0x364]          
+  --- site 0x08025806 ---
+      0x08025806  ldr       r5, [pc, #0x380]           <<<
+      0x08025808  str       r3, [r5, #0xc]            
+      0x0802580a  movs      r3, #1                    
+      0x0802580c  str       r3, [r5, #0x10]           
+      0x0802580e  b         #0x8025bf8                
+      0x08025810  ldrh      r3, [r1, #0x22]           
+      0x08025812  cmp       r3, #1                    
+      0x08025814  bne       #0x802586e                
+      0x08025816  movs      r3, #0xcc                 
+      0x08025818  ldr       r3, [r3, r0]              
+      0x0802581a  ldr       r5, [r0, #0xc]            
+      0x0802581c  sdiv      r3, r5, r3                
+      0x08025820  ldr       r5, [pc, #0x364]          
+      0x08025822  ldr       r5, [r5]                  
+      0x08025824  sdiv      r6, r5, r3                
+      0x08025828  mls       r3, r3, r6, r5            
+      0x0802582c  ldr       r5, [pc, #0x358]          
+  --- site 0x08025820 ---
+      0x08025820  ldr       r5, [pc, #0x364]           <<<
+      0x08025822  ldr       r5, [r5]                  
+      0x08025824  sdiv      r6, r5, r3                
+      0x08025828  mls       r3, r3, r6, r5            
+      0x0802582c  ldr       r5, [pc, #0x358]          
+      0x0802582e  str       r3, [r5, #8]              
+      0x08025830  movs      r3, #0xcc                 
+      0x08025832  ldr       r3, [r3, r0]              
+      0x08025834  ldr       r5, [r0, #0xc]            
+      0x08025836  sdiv      r3, r5, r3                
+      0x0802583a  ldr       r5, [pc, #0x34c]          
+      0x0802583c  ldr       r5, [r5, #8]              
+      0x0802583e  add       r5, r3                    
+      0x08025840  movs      r3, #0xcc                 
+      0x08025842  ldr       r3, [r3, r0]              
+      0x08025844  ldr       r6, [r0, #0xc]            
+      0x08025846  .byte     0x96, 0xfb                
+  --- site 0x0802582c ---
+      0x0802582c  ldr       r5, [pc, #0x358]           <<<
+      0x0802582e  str       r3, [r5, #8]              
+      0x08025830  movs      r3, #0xcc                 
+      0x08025832  ldr       r3, [r3, r0]              
+      0x08025834  ldr       r5, [r0, #0xc]            
+      0x08025836  sdiv      r3, r5, r3                
+      0x0802583a  ldr       r5, [pc, #0x34c]          
+      0x0802583c  ldr       r5, [r5, #8]              
+      0x0802583e  add       r5, r3                    
+      0x08025840  movs      r3, #0xcc                 
+      0x08025842  ldr       r3, [r3, r0]              
+      0x08025844  ldr       r6, [r0, #0xc]            
+      0x08025846  sdiv      r3, r6, r3                
+      0x0802584a  movs      r6, #6                    
+      0x0802584c  sdiv      r3, r3, r6                
+      0x08025850  subs      r5, r5, r3                
+      0x08025852  movs      r3, #0xcc                 
+  --- site 0x0802583a ---
+      0x0802583a  ldr       r5, [pc, #0x34c]           <<<
+      0x0802583c  ldr       r5, [r5, #8]              
+      0x0802583e  add       r5, r3                    
+      0x08025840  movs      r3, #0xcc                 
+      0x08025842  ldr       r3, [r3, r0]              
+      0x08025844  ldr       r6, [r0, #0xc]            
+      0x08025846  sdiv      r3, r6, r3                
+      0x0802584a  movs      r6, #6                    
+      0x0802584c  sdiv      r3, r3, r6                
+      0x08025850  subs      r5, r5, r3                
+      0x08025852  movs      r3, #0xcc                 
+      0x08025854  ldr       r3, [r3, r0]              
+      0x08025856  ldr       r6, [r0, #0xc]            
+      0x08025858  sdiv      r3, r6, r3                
+      0x0802585c  sdiv      r6, r5, r3                
+      0x08025860  .byte     0x03, 0xfb                
+  --- site 0x08025864 ---
+      0x08025864  ldr       r5, [pc, #0x320]           <<<
+      0x08025866  str       r3, [r5, #8]              
+      0x08025868  movs      r3, #0                    
+      0x0802586a  str       r3, [r5, #0x10]           
+      0x0802586c  b         #0x80258ce                
+      0x0802586e  ldrh      r3, [r1, #0x22]           
+      0x08025870  cmp       r3, #2                    
+      0x08025872  bne       #0x80258ce                
+      0x08025874  movs      r3, #0xcc                 
+      0x08025876  ldr       r3, [r3, r0]              
+      0x08025878  ldr       r5, [r0, #0xc]            
+      0x0802587a  sdiv      r3, r5, r3                
+      0x0802587e  ldr       r5, [pc, #0x308]          
+      0x08025880  ldr       r5, [r5]                  
+      0x08025882  sdiv      r6, r5, r3                
+      0x08025886  mls       r3, r3, r6, r5            
+      0x0802588a  ldr       r5, [pc, #0x2fc]          
+  --- site 0x0802587e ---
+      0x0802587e  ldr       r5, [pc, #0x308]           <<<
+      0x08025880  ldr       r5, [r5]                  
+      0x08025882  sdiv      r6, r5, r3                
+      0x08025886  mls       r3, r3, r6, r5            
+      0x0802588a  ldr       r5, [pc, #0x2fc]          
+      0x0802588c  str       r3, [r5, #0xc]            
+      0x0802588e  movs      r3, #0xcc                 
+      0x08025890  ldr       r3, [r3, r0]              
+      0x08025892  ldr       r5, [r0, #0xc]            
+      0x08025894  sdiv      r3, r5, r3                
+      0x08025898  ldr       r5, [pc, #0x2ec]          
+      0x0802589a  ldr       r5, [r5, #0xc]            
+      0x0802589c  add       r5, r3                    
+      0x0802589e  movs      r3, #0xcc                 
+      0x080258a0  ldr       r3, [r3, r0]              
+      0x080258a2  ldr       r6, [r0, #0xc]            
+      0x080258a4  .byte     0x96, 0xfb                
+  --- site 0x0802588a ---
+      0x0802588a  ldr       r5, [pc, #0x2fc]           <<<
+      0x0802588c  str       r3, [r5, #0xc]            
+      0x0802588e  movs      r3, #0xcc                 
+      0x08025890  ldr       r3, [r3, r0]              
+      0x08025892  ldr       r5, [r0, #0xc]            
+      0x08025894  sdiv      r3, r5, r3                
+      0x08025898  ldr       r5, [pc, #0x2ec]          
+      0x0802589a  ldr       r5, [r5, #0xc]            
+      0x0802589c  add       r5, r3                    
+      0x0802589e  movs      r3, #0xcc                 
+      0x080258a0  ldr       r3, [r3, r0]              
+      0x080258a2  ldr       r6, [r0, #0xc]            
+      0x080258a4  sdiv      r3, r6, r3                
+      0x080258a8  movs      r6, #6                    
+      0x080258aa  sdiv      r3, r3, r6                
+      0x080258ae  b         #0x80258b2                
+      0x080258b0  b         #0x8025cb2                
+  --- site 0x08025898 ---
+      0x08025898  ldr       r5, [pc, #0x2ec]           <<<
+      0x0802589a  ldr       r5, [r5, #0xc]            
+      0x0802589c  add       r5, r3                    
+      0x0802589e  movs      r3, #0xcc                 
+      0x080258a0  ldr       r3, [r3, r0]              
+      0x080258a2  ldr       r6, [r0, #0xc]            
+      0x080258a4  sdiv      r3, r6, r3                
+      0x080258a8  movs      r6, #6                    
+      0x080258aa  sdiv      r3, r3, r6                
+      0x080258ae  b         #0x80258b2                
+      0x080258b0  b         #0x8025cb2                
+      0x080258b2  subs      r5, r5, r3                
+      0x080258b4  movs      r3, #0xcc                 
+      0x080258b6  ldr       r3, [r3, r0]              
+      0x080258b8  ldr       r6, [r0, #0xc]            
+      0x080258ba  sdiv      r3, r6, r3                
+      0x080258be  .byte     0x95, 0xfb                
+  --- site 0x080258c6 ---
+      0x080258c6  ldr       r5, [pc, #0x2c0]           <<<
+      0x080258c8  str       r3, [r5, #0xc]            
+      0x080258ca  movs      r3, #1                    
+      0x080258cc  str       r3, [r5, #0x10]           
+      0x080258ce  b         #0x8025bf8                
+      0x080258d0  ldrh      r3, [r1, #0x22]           
+      0x080258d2  cmp       r3, #3                    
+      0x080258d4  bne       #0x8025932                
+      0x080258d6  movs      r3, #0xcc                 
+      0x080258d8  ldr       r3, [r3, r0]              
+      0x080258da  ldr       r5, [r0, #0xc]            
+      0x080258dc  sdiv      r3, r5, r3                
+      0x080258e0  ldr       r5, [pc, #0x2a4]          
+      0x080258e2  ldr       r5, [r5]                  
+      0x080258e4  sdiv      r6, r5, r3                
+      0x080258e8  mls       r3, r3, r6, r5            
+      0x080258ec  ldr       r5, [pc, #0x298]          
+  --- site 0x080258e0 ---
+      0x080258e0  ldr       r5, [pc, #0x2a4]           <<<
+      0x080258e2  ldr       r5, [r5]                  
+      0x080258e4  sdiv      r6, r5, r3                
+      0x080258e8  mls       r3, r3, r6, r5            
+      0x080258ec  ldr       r5, [pc, #0x298]          
+      0x080258ee  str       r3, [r5, #8]              
+      0x080258f0  movs      r3, #0xcc                 
+      0x080258f2  ldr       r3, [r3, r0]              
+      0x080258f4  ldr       r5, [r0, #0xc]            
+      0x080258f6  sdiv      r3, r5, r3                
+      0x080258fa  ldr       r5, [pc, #0x28c]          
+      0x080258fc  ldr       r5, [r5, #8]              
+      0x080258fe  add       r5, r3                    
+      0x08025900  movs      r3, #0xcc                 
+      0x08025902  ldr       r3, [r3, r0]              
+      0x08025904  ldr       r6, [r0, #0xc]            
+      0x08025906  .byte     0x96, 0xfb                
+  --- site 0x080258ec ---
+      0x080258ec  ldr       r5, [pc, #0x298]           <<<
+      0x080258ee  str       r3, [r5, #8]              
+      0x080258f0  movs      r3, #0xcc                 
+      0x080258f2  ldr       r3, [r3, r0]              
+      0x080258f4  ldr       r5, [r0, #0xc]            
+      0x080258f6  sdiv      r3, r5, r3                
+      0x080258fa  ldr       r5, [pc, #0x28c]          
+      0x080258fc  ldr       r5, [r5, #8]              
+      0x080258fe  add       r5, r3                    
+      0x08025900  movs      r3, #0xcc                 
+      0x08025902  ldr       r3, [r3, r0]              
+      0x08025904  ldr       r6, [r0, #0xc]            
+      0x08025906  sdiv      r3, r6, r3                
+      0x0802590a  movs      r6, #6                    
+      0x0802590c  sdiv      r3, r3, r6                
+      0x08025910  movs      r6, #2                    
+      0x08025912  .byte     0x06, 0xfb                
+  --- site 0x080258fa ---
+      0x080258fa  ldr       r5, [pc, #0x28c]           <<<
+      0x080258fc  ldr       r5, [r5, #8]              
+      0x080258fe  add       r5, r3                    
+      0x08025900  movs      r3, #0xcc                 
+      0x08025902  ldr       r3, [r3, r0]              
+      0x08025904  ldr       r6, [r0, #0xc]            
+      0x08025906  sdiv      r3, r6, r3                
+      0x0802590a  movs      r6, #6                    
+      0x0802590c  sdiv      r3, r3, r6                
+      0x08025910  movs      r6, #2                    
+      0x08025912  mls       r5, r6, r3, r5            
+      0x08025916  movs      r3, #0xcc                 
+      0x08025918  ldr       r3, [r3, r0]              
+      0x0802591a  ldr       r6, [r0, #0xc]            
+      0x0802591c  sdiv      r3, r6, r3                
+      0x08025920  .byte     0x95, 0xfb                
+  --- site 0x08025928 ---
+      0x08025928  ldr       r5, [pc, #0x25c]           <<<
+      0x0802592a  str       r3, [r5, #8]              
+      0x0802592c  movs      r3, #0                    
+      0x0802592e  str       r3, [r5, #0x10]           
+      0x08025930  b         #0x8025992                
+      0x08025932  ldrh      r3, [r1, #0x22]           
+      0x08025934  cmp       r3, #6                    
+      0x08025936  bne       #0x8025992                
+      0x08025938  movs      r3, #0xcc                 
+      0x0802593a  ldr       r3, [r3, r0]              
+      0x0802593c  ldr       r5, [r0, #0xc]            
+      0x0802593e  sdiv      r3, r5, r3                
+      0x08025942  ldr       r5, [pc, #0x244]          
+      0x08025944  ldr       r5, [r5]                  
+      0x08025946  sdiv      r6, r5, r3                
+      0x0802594a  mls       r3, r3, r6, r5            
+      0x0802594e  ldr       r5, [pc, #0x238]          
+  --- site 0x08025942 ---
+      0x08025942  ldr       r5, [pc, #0x244]           <<<
+      0x08025944  ldr       r5, [r5]                  
+      0x08025946  sdiv      r6, r5, r3                
+      0x0802594a  mls       r3, r3, r6, r5            
+      0x0802594e  ldr       r5, [pc, #0x238]          
+      0x08025950  str       r3, [r5, #0xc]            
+      0x08025952  movs      r3, #0xcc                 
+      0x08025954  ldr       r3, [r3, r0]              
+      0x08025956  ldr       r5, [r0, #0xc]            
+      0x08025958  sdiv      r3, r5, r3                
+      0x0802595c  ldr       r5, [pc, #0x228]          
+      0x0802595e  ldr       r5, [r5, #0xc]            
+      0x08025960  add       r5, r3                    
+      0x08025962  movs      r3, #0xcc                 
+      0x08025964  ldr       r3, [r3, r0]              
+      0x08025966  ldr       r6, [r0, #0xc]            
+      0x08025968  .byte     0x96, 0xfb                
+  --- site 0x0802594e ---
+      0x0802594e  ldr       r5, [pc, #0x238]           <<<
+      0x08025950  str       r3, [r5, #0xc]            
+      0x08025952  movs      r3, #0xcc                 
+      0x08025954  ldr       r3, [r3, r0]              
+      0x08025956  ldr       r5, [r0, #0xc]            
+      0x08025958  sdiv      r3, r5, r3                
+      0x0802595c  ldr       r5, [pc, #0x228]          
+      0x0802595e  ldr       r5, [r5, #0xc]            
+      0x08025960  add       r5, r3                    
+      0x08025962  movs      r3, #0xcc                 
+      0x08025964  ldr       r3, [r3, r0]              
+      0x08025966  ldr       r6, [r0, #0xc]            
+      0x08025968  sdiv      r3, r6, r3                
+      0x0802596c  movs      r6, #6                    
+      0x0802596e  sdiv      r3, r3, r6                
+      0x08025972  movs      r6, #2                    
+      0x08025974  .byte     0x06, 0xfb                
+  --- site 0x0802595c ---
+      0x0802595c  ldr       r5, [pc, #0x228]           <<<
+      0x0802595e  ldr       r5, [r5, #0xc]            
+      0x08025960  add       r5, r3                    
+      0x08025962  movs      r3, #0xcc                 
+      0x08025964  ldr       r3, [r3, r0]              
+      0x08025966  ldr       r6, [r0, #0xc]            
+      0x08025968  sdiv      r3, r6, r3                
+      0x0802596c  movs      r6, #6                    
+      0x0802596e  sdiv      r3, r3, r6                
+      0x08025972  movs      r6, #2                    
+      0x08025974  mls       r5, r6, r3, r5            
+      0x08025978  movs      r3, #0xcc                 
+      0x0802597a  ldr       r3, [r3, r0]              
+      0x0802597c  ldr       r6, [r0, #0xc]            
+      0x0802597e  sdiv      r3, r6, r3                
+      0x08025982  .byte     0x95, 0xfb                
+  --- site 0x0802598a ---
+      0x0802598a  ldr       r5, [pc, #0x1fc]           <<<
+      0x0802598c  str       r3, [r5, #0xc]            
+      0x0802598e  movs      r3, #1                    
+      0x08025990  str       r3, [r5, #0x10]           
+      0x08025992  b         #0x8025bf8                
+      0x08025994  ldrh      r3, [r1, #0x22]           
+      0x08025996  cmp       r3, #2                    
+      0x08025998  bne       #0x80259fc                
+      0x0802599a  movs      r3, #0xcc                 
+      0x0802599c  ldr       r3, [r3, r0]              
+      0x0802599e  ldr       r5, [r0, #0xc]            
+      0x080259a0  sdiv      r3, r5, r3                
+      0x080259a4  ldr       r5, [pc, #0x1e0]          
+      0x080259a6  ldr       r5, [r5]                  
+      0x080259a8  sdiv      r6, r5, r3                
+      0x080259ac  mls       r3, r3, r6, r5            
+      0x080259b0  ldr       r5, [pc, #0x1d4]          
+  --- site 0x080259a4 ---
+      0x080259a4  ldr       r5, [pc, #0x1e0]           <<<
+      0x080259a6  ldr       r5, [r5]                  
+      0x080259a8  sdiv      r6, r5, r3                
+      0x080259ac  mls       r3, r3, r6, r5            
+      0x080259b0  ldr       r5, [pc, #0x1d4]          
+      0x080259b2  b         #0x80259b8                
+      0x080259b4  b         #0x8025b22                
+      0x080259b6  b         #0x8025a5e                
+      0x080259b8  str       r3, [r5, #8]              
+      0x080259ba  movs      r3, #0xcc                 
+      0x080259bc  ldr       r3, [r3, r0]              
+      0x080259be  ldr       r5, [r0, #0xc]            
+      0x080259c0  sdiv      r3, r5, r3                
+      0x080259c4  ldr       r5, [pc, #0x1c0]          
+      0x080259c6  ldr       r5, [r5, #8]              
+      0x080259c8  add       r5, r3                    
+      0x080259ca  movs      r3, #0xcc                 
+  --- site 0x080259b0 ---
+      0x080259b0  ldr       r5, [pc, #0x1d4]           <<<
+      0x080259b2  b         #0x80259b8                
+      0x080259b4  b         #0x8025b22                
+      0x080259b6  b         #0x8025a5e                
+      0x080259b8  str       r3, [r5, #8]              
+      0x080259ba  movs      r3, #0xcc                 
+      0x080259bc  ldr       r3, [r3, r0]              
+      0x080259be  ldr       r5, [r0, #0xc]            
+      0x080259c0  sdiv      r3, r5, r3                
+      0x080259c4  ldr       r5, [pc, #0x1c0]          
+      0x080259c6  ldr       r5, [r5, #8]              
+      0x080259c8  add       r5, r3                    
+      0x080259ca  movs      r3, #0xcc                 
+      0x080259cc  ldr       r3, [r3, r0]              
+      0x080259ce  ldr       r6, [r0, #0xc]            
+      0x080259d0  sdiv      r3, r6, r3                
+      0x080259d4  movs      r6, #6                    
+      0x080259d6  .byte     0x93, 0xfb                
+  --- site 0x080259c4 ---
+      0x080259c4  ldr       r5, [pc, #0x1c0]           <<<
+      0x080259c6  ldr       r5, [r5, #8]              
+      0x080259c8  add       r5, r3                    
+      0x080259ca  movs      r3, #0xcc                 
+      0x080259cc  ldr       r3, [r3, r0]              
+      0x080259ce  ldr       r6, [r0, #0xc]            
+      0x080259d0  sdiv      r3, r6, r3                
+      0x080259d4  movs      r6, #6                    
+      0x080259d6  sdiv      r3, r3, r6                
+      0x080259da  movs      r6, #3                    
+      0x080259dc  mls       r5, r6, r3, r5            
+      0x080259e0  movs      r3, #0xcc                 
+      0x080259e2  ldr       r3, [r3, r0]              
+      0x080259e4  ldr       r6, [r0, #0xc]            
+      0x080259e6  sdiv      r3, r6, r3                
+      0x080259ea  .byte     0x95, 0xfb                
+  --- site 0x080259f2 ---
+      0x080259f2  ldr       r5, [pc, #0x194]           <<<
+      0x080259f4  str       r3, [r5, #8]              
+      0x080259f6  movs      r3, #0                    
+      0x080259f8  str       r3, [r5, #0x10]           
+      0x080259fa  b         #0x8025a5c                
+      0x080259fc  ldrh      r3, [r1, #0x22]           
+      0x080259fe  cmp       r3, #4                    
+      0x08025a00  bne       #0x8025a5c                
+      0x08025a02  movs      r3, #0xcc                 
+      0x08025a04  ldr       r3, [r3, r0]              
+      0x08025a06  ldr       r5, [r0, #0xc]            
+      0x08025a08  sdiv      r3, r5, r3                
+      0x08025a0c  ldr       r5, [pc, #0x178]          
+      0x08025a0e  ldr       r5, [r5]                  
+      0x08025a10  sdiv      r6, r5, r3                
+      0x08025a14  mls       r3, r3, r6, r5            
+      0x08025a18  ldr       r5, [pc, #0x16c]          
+  --- site 0x08025a0c ---
+      0x08025a0c  ldr       r5, [pc, #0x178]           <<<
+      0x08025a0e  ldr       r5, [r5]                  
+      0x08025a10  sdiv      r6, r5, r3                
+      0x08025a14  mls       r3, r3, r6, r5            
+      0x08025a18  ldr       r5, [pc, #0x16c]          
+      0x08025a1a  str       r3, [r5, #0xc]            
+      0x08025a1c  movs      r3, #0xcc                 
+      0x08025a1e  ldr       r3, [r3, r0]              
+      0x08025a20  ldr       r5, [r0, #0xc]            
+      0x08025a22  sdiv      r3, r5, r3                
+      0x08025a26  ldr       r5, [pc, #0x160]          
+      0x08025a28  ldr       r5, [r5, #0xc]            
+      0x08025a2a  add       r5, r3                    
+      0x08025a2c  movs      r3, #0xcc                 
+      0x08025a2e  ldr       r3, [r3, r0]              
+      0x08025a30  ldr       r6, [r0, #0xc]            
+      0x08025a32  .byte     0x96, 0xfb                
+  --- site 0x08025a18 ---
+      0x08025a18  ldr       r5, [pc, #0x16c]           <<<
+      0x08025a1a  str       r3, [r5, #0xc]            
+      0x08025a1c  movs      r3, #0xcc                 
+      0x08025a1e  ldr       r3, [r3, r0]              
+      0x08025a20  ldr       r5, [r0, #0xc]            
+      0x08025a22  sdiv      r3, r5, r3                
+      0x08025a26  ldr       r5, [pc, #0x160]          
+      0x08025a28  ldr       r5, [r5, #0xc]            
+      0x08025a2a  add       r5, r3                    
+      0x08025a2c  movs      r3, #0xcc                 
+      0x08025a2e  ldr       r3, [r3, r0]              
+      0x08025a30  ldr       r6, [r0, #0xc]            
+      0x08025a32  sdiv      r3, r6, r3                
+      0x08025a36  movs      r6, #6                    
+      0x08025a38  sdiv      r3, r3, r6                
+      0x08025a3c  movs      r6, #3                    
+      0x08025a3e  .byte     0x06, 0xfb                
+  --- site 0x08025a26 ---
+      0x08025a26  ldr       r5, [pc, #0x160]           <<<
+      0x08025a28  ldr       r5, [r5, #0xc]            
+      0x08025a2a  add       r5, r3                    
+      0x08025a2c  movs      r3, #0xcc                 
+      0x08025a2e  ldr       r3, [r3, r0]              
+      0x08025a30  ldr       r6, [r0, #0xc]            
+      0x08025a32  sdiv      r3, r6, r3                
+      0x08025a36  movs      r6, #6                    
+      0x08025a38  sdiv      r3, r3, r6                
+      0x08025a3c  movs      r6, #3                    
+      0x08025a3e  mls       r5, r6, r3, r5            
+      0x08025a42  movs      r3, #0xcc                 
+      0x08025a44  ldr       r3, [r3, r0]              
+      0x08025a46  ldr       r6, [r0, #0xc]            
+      0x08025a48  sdiv      r3, r6, r3                
+      0x08025a4c  .byte     0x95, 0xfb                
+  --- site 0x08025a54 ---
+      0x08025a54  ldr       r5, [pc, #0x130]           <<<
+      0x08025a56  str       r3, [r5, #0xc]            
+      0x08025a58  movs      r3, #1                    
+      0x08025a5a  str       r3, [r5, #0x10]           
+      0x08025a5c  b         #0x8025bf8                
+      0x08025a5e  ldrh      r3, [r1, #0x22]           
+      0x08025a60  cmp       r3, #6                    
+      0x08025a62  bne       #0x8025ac0                
+      0x08025a64  movs      r3, #0xcc                 
+      0x08025a66  ldr       r3, [r3, r0]              
+      0x08025a68  ldr       r5, [r0, #0xc]            
+      0x08025a6a  sdiv      r3, r5, r3                
+      0x08025a6e  ldr       r5, [pc, #0x118]          
+      0x08025a70  ldr       r5, [r5]                  
+      0x08025a72  sdiv      r6, r5, r3                
+      0x08025a76  mls       r3, r3, r6, r5            
+      0x08025a7a  ldr       r5, [pc, #0x10c]          
+  --- site 0x08025a6e ---
+      0x08025a6e  ldr       r5, [pc, #0x118]           <<<
+      0x08025a70  ldr       r5, [r5]                  
+      0x08025a72  sdiv      r6, r5, r3                
+      0x08025a76  mls       r3, r3, r6, r5            
+      0x08025a7a  ldr       r5, [pc, #0x10c]          
+      0x08025a7c  str       r3, [r5, #8]              
+      0x08025a7e  movs      r3, #0xcc                 
+      0x08025a80  ldr       r3, [r3, r0]              
+      0x08025a82  ldr       r5, [r0, #0xc]            
+      0x08025a84  sdiv      r3, r5, r3                
+      0x08025a88  ldr       r5, [pc, #0xfc]           
+      0x08025a8a  ldr       r5, [r5, #8]              
+      0x08025a8c  add       r5, r3                    
+      0x08025a8e  movs      r3, #0xcc                 
+      0x08025a90  ldr       r3, [r3, r0]              
+      0x08025a92  ldr       r6, [r0, #0xc]            
+      0x08025a94  .byte     0x96, 0xfb                
+  --- site 0x08025a7a ---
+      0x08025a7a  ldr       r5, [pc, #0x10c]           <<<
+      0x08025a7c  str       r3, [r5, #8]              
+      0x08025a7e  movs      r3, #0xcc                 
+      0x08025a80  ldr       r3, [r3, r0]              
+      0x08025a82  ldr       r5, [r0, #0xc]            
+      0x08025a84  sdiv      r3, r5, r3                
+      0x08025a88  ldr       r5, [pc, #0xfc]           
+      0x08025a8a  ldr       r5, [r5, #8]              
+      0x08025a8c  add       r5, r3                    
+      0x08025a8e  movs      r3, #0xcc                 
+      0x08025a90  ldr       r3, [r3, r0]              
+      0x08025a92  ldr       r6, [r0, #0xc]            
+      0x08025a94  sdiv      r3, r6, r3                
+      0x08025a98  movs      r6, #6                    
+      0x08025a9a  sdiv      r3, r3, r6                
+      0x08025a9e  movs      r6, #4                    
+      0x08025aa0  .byte     0x06, 0xfb                
+  --- site 0x08025a88 ---
+      0x08025a88  ldr       r5, [pc, #0xfc]            <<<
+      0x08025a8a  ldr       r5, [r5, #8]              
+      0x08025a8c  add       r5, r3                    
+      0x08025a8e  movs      r3, #0xcc                 
+      0x08025a90  ldr       r3, [r3, r0]              
+      0x08025a92  ldr       r6, [r0, #0xc]            
+      0x08025a94  sdiv      r3, r6, r3                
+      0x08025a98  movs      r6, #6                    
+      0x08025a9a  sdiv      r3, r3, r6                
+      0x08025a9e  movs      r6, #4                    
+      0x08025aa0  mls       r5, r6, r3, r5            
+      0x08025aa4  movs      r3, #0xcc                 
+      0x08025aa6  ldr       r3, [r3, r0]              
+      0x08025aa8  ldr       r6, [r0, #0xc]            
+      0x08025aaa  sdiv      r3, r6, r3                
+      0x08025aae  .byte     0x95, 0xfb                
+  --- site 0x08025ab6 ---
+      0x08025ab6  ldr       r5, [pc, #0xd0]            <<<
+      0x08025ab8  str       r3, [r5, #8]              
+      0x08025aba  movs      r3, #0                    
+      0x08025abc  str       r3, [r5, #0x10]           
+      0x08025abe  b         #0x8025b20                
+      0x08025ac0  ldrh      r3, [r1, #0x22]           
+      0x08025ac2  cmp       r3, #5                    
+      0x08025ac4  bne       #0x8025b20                
+      0x08025ac6  movs      r3, #0xcc                 
+      0x08025ac8  ldr       r3, [r3, r0]              
+      0x08025aca  ldr       r5, [r0, #0xc]            
+      0x08025acc  sdiv      r3, r5, r3                
+      0x08025ad0  ldr       r5, [pc, #0xb4]           
+      0x08025ad2  ldr       r5, [r5]                  
+      0x08025ad4  sdiv      r6, r5, r3                
+      0x08025ad8  mls       r3, r3, r6, r5            
+      0x08025adc  ldr       r5, [pc, #0xa8]           
+  --- site 0x08025ad0 ---
+      0x08025ad0  ldr       r5, [pc, #0xb4]            <<<
+      0x08025ad2  ldr       r5, [r5]                  
+      0x08025ad4  sdiv      r6, r5, r3                
+      0x08025ad8  mls       r3, r3, r6, r5            
+      0x08025adc  ldr       r5, [pc, #0xa8]           
+      0x08025ade  str       r3, [r5, #0xc]            
+      0x08025ae0  movs      r3, #0xcc                 
+      0x08025ae2  ldr       r3, [r3, r0]              
+      0x08025ae4  ldr       r5, [r0, #0xc]            
+      0x08025ae6  sdiv      r3, r5, r3                
+      0x08025aea  ldr       r5, [pc, #0x9c]           
+      0x08025aec  ldr       r5, [r5, #0xc]            
+      0x08025aee  add       r5, r3                    
+      0x08025af0  movs      r3, #0xcc                 
+      0x08025af2  ldr       r3, [r3, r0]              
+      0x08025af4  ldr       r6, [r0, #0xc]            
+      0x08025af6  .byte     0x96, 0xfb                
+  --- site 0x08025adc ---
+      0x08025adc  ldr       r5, [pc, #0xa8]            <<<
+      0x08025ade  str       r3, [r5, #0xc]            
+      0x08025ae0  movs      r3, #0xcc                 
+      0x08025ae2  ldr       r3, [r3, r0]              
+      0x08025ae4  ldr       r5, [r0, #0xc]            
+      0x08025ae6  sdiv      r3, r5, r3                
+      0x08025aea  ldr       r5, [pc, #0x9c]           
+      0x08025aec  ldr       r5, [r5, #0xc]            
+      0x08025aee  add       r5, r3                    
+      0x08025af0  movs      r3, #0xcc                 
+      0x08025af2  ldr       r3, [r3, r0]              
+      0x08025af4  ldr       r6, [r0, #0xc]            
+      0x08025af6  sdiv      r3, r6, r3                
+      0x08025afa  movs      r6, #6                    
+      0x08025afc  sdiv      r3, r3, r6                
+      0x08025b00  movs      r6, #4                    
+      0x08025b02  .byte     0x06, 0xfb                
+  --- site 0x08025aea ---
+      0x08025aea  ldr       r5, [pc, #0x9c]            <<<
+      0x08025aec  ldr       r5, [r5, #0xc]            
+      0x08025aee  add       r5, r3                    
+      0x08025af0  movs      r3, #0xcc                 
+      0x08025af2  ldr       r3, [r3, r0]              
+      0x08025af4  ldr       r6, [r0, #0xc]            
+      0x08025af6  sdiv      r3, r6, r3                
+      0x08025afa  movs      r6, #6                    
+      0x08025afc  sdiv      r3, r3, r6                
+      0x08025b00  movs      r6, #4                    
+      0x08025b02  mls       r5, r6, r3, r5            
+      0x08025b06  movs      r3, #0xcc                 
+      0x08025b08  ldr       r3, [r3, r0]              
+      0x08025b0a  ldr       r6, [r0, #0xc]            
+      0x08025b0c  sdiv      r3, r6, r3                
+      0x08025b10  .byte     0x95, 0xfb                
+  --- site 0x08025b18 ---
+      0x08025b18  ldr       r5, [pc, #0x6c]            <<<
+      0x08025b1a  str       r3, [r5, #0xc]            
+      0x08025b1c  movs      r3, #1                    
+      0x08025b1e  str       r3, [r5, #0x10]           
+      0x08025b20  b         #0x8025bf8                
+      0x08025b22  ldrh      r3, [r1, #0x22]           
+      0x08025b24  cmp       r3, #4                    
+      0x08025b26  bne       #0x8025b96                
+      0x08025b28  movs      r3, #0xcc                 
+      0x08025b2a  ldr       r3, [r3, r0]              
+      0x08025b2c  ldr       r5, [r0, #0xc]            
+      0x08025b2e  sdiv      r3, r5, r3                
+      0x08025b32  ldr       r5, [pc, #0x54]           
+      0x08025b34  ldr       r5, [r5]                  
+      0x08025b36  sdiv      r6, r5, r3                
+      0x08025b3a  mls       r3, r3, r6, r5            
+      0x08025b3e  ldr       r5, [pc, #0x48]           
+  --- site 0x08025b32 ---
+      0x08025b32  ldr       r5, [pc, #0x54]            <<<
+      0x08025b34  ldr       r5, [r5]                  
+      0x08025b36  sdiv      r6, r5, r3                
+      0x08025b3a  mls       r3, r3, r6, r5            
+      0x08025b3e  ldr       r5, [pc, #0x48]           
+      0x08025b40  str       r3, [r5, #8]              
+      0x08025b42  movs      r3, #0xcc                 
+      0x08025b44  ldr       r3, [r3, r0]              
+      0x08025b46  ldr       r5, [r0, #0xc]            
+      0x08025b48  sdiv      r3, r5, r3                
+      0x08025b4c  ldr       r5, [pc, #0x38]           
+      0x08025b4e  ldr       r5, [r5, #8]              
+      0x08025b50  add       r5, r3                    
+      0x08025b52  movs      r3, #0xcc                 
+      0x08025b54  ldr       r3, [r3, r0]              
+      0x08025b56  ldr       r6, [r0, #0xc]            
+      0x08025b58  .byte     0x96, 0xfb                
+  --- site 0x08025b3e ---
+      0x08025b3e  ldr       r5, [pc, #0x48]            <<<
+      0x08025b40  str       r3, [r5, #8]              
+      0x08025b42  movs      r3, #0xcc                 
+      0x08025b44  ldr       r3, [r3, r0]              
+      0x08025b46  ldr       r5, [r0, #0xc]            
+      0x08025b48  sdiv      r3, r5, r3                
+      0x08025b4c  ldr       r5, [pc, #0x38]           
+      0x08025b4e  ldr       r5, [r5, #8]              
+      0x08025b50  add       r5, r3                    
+      0x08025b52  movs      r3, #0xcc                 
+      0x08025b54  ldr       r3, [r3, r0]              
+      0x08025b56  ldr       r6, [r0, #0xc]            
+      0x08025b58  sdiv      r3, r6, r3                
+      0x08025b5c  movs      r6, #6                    
+      0x08025b5e  sdiv      r3, r3, r6                
+      0x08025b62  movs      r6, #5                    
+      0x08025b64  .byte     0x06, 0xfb                
+  --- site 0x08025b4c ---
+      0x08025b4c  ldr       r5, [pc, #0x38]            <<<
+      0x08025b4e  ldr       r5, [r5, #8]              
+      0x08025b50  add       r5, r3                    
+      0x08025b52  movs      r3, #0xcc                 
+      0x08025b54  ldr       r3, [r3, r0]              
+      0x08025b56  ldr       r6, [r0, #0xc]            
+      0x08025b58  sdiv      r3, r6, r3                
+      0x08025b5c  movs      r6, #6                    
+      0x08025b5e  sdiv      r3, r3, r6                
+      0x08025b62  movs      r6, #5                    
+      0x08025b64  mls       r5, r6, r3, r5            
+      0x08025b68  movs      r3, #0xcc                 
+      0x08025b6a  ldr       r3, [r3, r0]              
+      0x08025b6c  ldr       r6, [r0, #0xc]            
+      0x08025b6e  sdiv      r3, r6, r3                
+      0x08025b72  .byte     0x95, 0xfb                
+  --- site 0x08025b8c ---
+      0x08025b8c  ldr       r5, [pc, #0x26c]           <<<
+      0x08025b8e  str       r3, [r5, #8]              
+      0x08025b90  movs      r3, #0                    
+      0x08025b92  str       r3, [r5, #0x10]           
+      0x08025b94  b         #0x8025bf6                
+      0x08025b96  ldrh      r3, [r1, #0x22]           
+      0x08025b98  cmp       r3, #1                    
+      0x08025b9a  bne       #0x8025bf6                
+      0x08025b9c  movs      r3, #0xcc                 
+      0x08025b9e  ldr       r3, [r3, r0]              
+      0x08025ba0  ldr       r5, [r0, #0xc]            
+      0x08025ba2  sdiv      r3, r5, r3                
+      0x08025ba6  ldr       r5, [pc, #0x254]          
+      0x08025ba8  ldr       r5, [r5]                  
+      0x08025baa  sdiv      r6, r5, r3                
+      0x08025bae  mls       r3, r3, r6, r5            
+      0x08025bb2  ldr       r5, [pc, #0x248]          
+  --- site 0x08025ba6 ---
+      0x08025ba6  ldr       r5, [pc, #0x254]           <<<
+      0x08025ba8  ldr       r5, [r5]                  
+      0x08025baa  sdiv      r6, r5, r3                
+      0x08025bae  mls       r3, r3, r6, r5            
+      0x08025bb2  ldr       r5, [pc, #0x248]          
+      0x08025bb4  str       r3, [r5, #0xc]            
+      0x08025bb6  movs      r3, #0xcc                 
+      0x08025bb8  ldr       r3, [r3, r0]              
+      0x08025bba  ldr       r5, [r0, #0xc]            
+      0x08025bbc  sdiv      r3, r5, r3                
+      0x08025bc0  ldr       r5, [pc, #0x238]          
+      0x08025bc2  ldr       r5, [r5, #0xc]            
+      0x08025bc4  add       r5, r3                    
+      0x08025bc6  movs      r3, #0xcc                 
+      0x08025bc8  ldr       r3, [r3, r0]              
+      0x08025bca  ldr       r6, [r0, #0xc]            
+      0x08025bcc  .byte     0x96, 0xfb                
+  --- site 0x08025bb2 ---
+      0x08025bb2  ldr       r5, [pc, #0x248]           <<<
+      0x08025bb4  str       r3, [r5, #0xc]            
+      0x08025bb6  movs      r3, #0xcc                 
+      0x08025bb8  ldr       r3, [r3, r0]              
+      0x08025bba  ldr       r5, [r0, #0xc]            
+      0x08025bbc  sdiv      r3, r5, r3                
+      0x08025bc0  ldr       r5, [pc, #0x238]          
+      0x08025bc2  ldr       r5, [r5, #0xc]            
+      0x08025bc4  add       r5, r3                    
+      0x08025bc6  movs      r3, #0xcc                 
+      0x08025bc8  ldr       r3, [r3, r0]              
+      0x08025bca  ldr       r6, [r0, #0xc]            
+      0x08025bcc  sdiv      r3, r6, r3                
+      0x08025bd0  movs      r6, #6                    
+      0x08025bd2  sdiv      r3, r3, r6                
+      0x08025bd6  movs      r6, #5                    
+      0x08025bd8  .byte     0x06, 0xfb                
+  --- site 0x08025bc0 ---
+      0x08025bc0  ldr       r5, [pc, #0x238]           <<<
+      0x08025bc2  ldr       r5, [r5, #0xc]            
+      0x08025bc4  add       r5, r3                    
+      0x08025bc6  movs      r3, #0xcc                 
+      0x08025bc8  ldr       r3, [r3, r0]              
+      0x08025bca  ldr       r6, [r0, #0xc]            
+      0x08025bcc  sdiv      r3, r6, r3                
+      0x08025bd0  movs      r6, #6                    
+      0x08025bd2  sdiv      r3, r3, r6                
+      0x08025bd6  movs      r6, #5                    
+      0x08025bd8  mls       r5, r6, r3, r5            
+      0x08025bdc  movs      r3, #0xcc                 
+      0x08025bde  ldr       r3, [r3, r0]              
+      0x08025be0  ldr       r6, [r0, #0xc]            
+      0x08025be2  sdiv      r3, r6, r3                
+      0x08025be6  .byte     0x95, 0xfb                
+  --- site 0x08025bee ---
+      0x08025bee  ldr       r5, [pc, #0x20c]           <<<
+      0x08025bf0  str       r3, [r5, #0xc]            
+      0x08025bf2  movs      r3, #1                    
+      0x08025bf4  str       r3, [r5, #0x10]           
+      0x08025bf6  nop                                 
+      0x08025bf8  nop                                 
+      0x08025bfa  ldr       r3, [pc, #0x204]          
+      0x08025bfc  ldrh      r3, [r3]                  
+      0x08025bfe  cmp       r3, #1                    
+      0x08025c00  bne       #0x8025cb4                
+      0x08025c02  ldr       r5, [pc, #0x1f8]          
+      0x08025c04  str       r3, [r5, #0x14]           
+      0x08025c06  movs      r3, #0                    
+      0x08025c08  str       r3, [r5, #0x18]           
+      0x08025c0a  mov       r3, r5                    
+      0x08025c0c  ldr       r3, [r3, #0x10]           
+      0x08025c0e  cbnz      r3, #0x8025c50            
+      0x08025c10  movs      r3, #1                    
+      0x08025c12  str       r3, [r5, #0x1c]           
+      0x08025c14  movs      r3, #0x63                 
+  --- site 0x08025c02 ---
+      0x08025c02  ldr       r5, [pc, #0x1f8]           <<<
+      0x08025c04  str       r3, [r5, #0x14]           
+      0x08025c06  movs      r3, #0                    
+      0x08025c08  str       r3, [r5, #0x18]           
+      0x08025c0a  mov       r3, r5                    
+      0x08025c0c  ldr       r3, [r3, #0x10]           
+      0x08025c0e  cbnz      r3, #0x8025c50            
+      0x08025c10  movs      r3, #1                    
+      0x08025c12  str       r3, [r5, #0x1c]           
+      0x08025c14  movs      r3, #0x63                 
+      0x08025c16  rsb       r5, r2, r2, lsl #5        
+      0x08025c1a  add.w     r5, r5, r2, lsl #6        
+      0x08025c1e  ldr       r6, [pc, #0x1e4]          
+      0x08025c20  add.w     r5, r6, r5, lsl #2        
+      0x08025c24  str.w     r3, [r5, #0x16c]          
+      0x08025c28  ldr       r3, [pc, #0x1d0]          
+  --- site 0x08025c28 ---
+      0x08025c28  ldr       r3, [pc, #0x1d0]           <<<
+      0x08025c2a  ldr       r3, [r3, #8]              
+      0x08025c2c  rsb       r5, r2, r2, lsl #5        
+      0x08025c30  add.w     r5, r5, r2, lsl #6        
+      0x08025c34  add.w     r5, r6, r5, lsl #2        
+      0x08025c38  str.w     r3, [r5, #0x170]          
+      0x08025c3c  movs      r3, #1                    
+      0x08025c3e  rsb       r5, r2, r2, lsl #5        
+      0x08025c42  add.w     r5, r5, r2, lsl #6        
+      0x08025c46  add.w     r5, r6, r5, lsl #2        
+      0x08025c4a  str.w     r3, [r5, #0xc8]           
+      0x08025c4e  b         #0x8025c96                
+  --- site 0x08025c50 ---
+      0x08025c50  ldr       r3, [pc, #0x1a8]           <<<
+      0x08025c52  ldr       r3, [r3, #0x10]           
+      0x08025c54  cmp       r3, #1                    
+      0x08025c56  bne       #0x8025c96                
+      0x08025c58  ldr       r5, [pc, #0x1a0]          
+      0x08025c5a  str       r3, [r5, #0x20]           
+      0x08025c5c  movs      r3, #0x63                 
+      0x08025c5e  rsb       r5, r2, r2, lsl #5        
+      0x08025c62  add.w     r5, r5, r2, lsl #6        
+      0x08025c66  ldr       r6, [pc, #0x19c]          
+      0x08025c68  add.w     r5, r6, r5, lsl #2        
+      0x08025c6c  str.w     r3, [r5, #0x174]          
+      0x08025c70  ldr       r3, [pc, #0x188]          
+      0x08025c72  ldr       r3, [r3, #0xc]            
+      0x08025c74  rsb       r5, r2, r2, lsl #5        
+  --- site 0x08025c58 ---
+      0x08025c58  ldr       r5, [pc, #0x1a0]           <<<
+      0x08025c5a  str       r3, [r5, #0x20]           
+      0x08025c5c  movs      r3, #0x63                 
+      0x08025c5e  rsb       r5, r2, r2, lsl #5        
+      0x08025c62  add.w     r5, r5, r2, lsl #6        
+      0x08025c66  ldr       r6, [pc, #0x19c]          
+      0x08025c68  add.w     r5, r6, r5, lsl #2        
+      0x08025c6c  str.w     r3, [r5, #0x174]          
+      0x08025c70  ldr       r3, [pc, #0x188]          
+      0x08025c72  ldr       r3, [r3, #0xc]            
+      0x08025c74  rsb       r5, r2, r2, lsl #5        
+      0x08025c78  add.w     r5, r5, r2, lsl #6        
+      0x08025c7c  add.w     r5, r6, r5, lsl #2        
+  --- site 0x08025c70 ---
+      0x08025c70  ldr       r3, [pc, #0x188]           <<<
+      0x08025c72  ldr       r3, [r3, #0xc]            
+      0x08025c74  rsb       r5, r2, r2, lsl #5        
+      0x08025c78  add.w     r5, r5, r2, lsl #6        
+      0x08025c7c  add.w     r5, r6, r5, lsl #2        
+      0x08025c80  str.w     r3, [r5, #0x178]          
+      0x08025c84  movs      r3, #1                    
+      0x08025c86  rsb       r5, r2, r2, lsl #5        
+      0x08025c8a  add.w     r5, r5, r2, lsl #6        
+      0x08025c8e  add.w     r5, r6, r5, lsl #2        
+      0x08025c92  str.w     r3, [r5, #0xcc]           
+      0x08025c96  ldr       r3, [pc, #0x164]          
+  --- site 0x08025c96 ---
+      0x08025c96  ldr       r3, [pc, #0x164]           <<<
+      0x08025c98  ldr       r3, [r3, #0x1c]           
+      0x08025c9a  cmp       r3, #1                    
+      0x08025c9c  bne       #0x8025cb2                
+      0x08025c9e  ldr       r3, [pc, #0x15c]          
+      0x08025ca0  ldr       r3, [r3, #0x20]           
+      0x08025ca2  cmp       r3, #1                    
+      0x08025ca4  bne       #0x8025cb2                
+      0x08025ca6  movs      r3, #0                    
+      0x08025ca8  ldr       r5, [pc, #0x154]          
+      0x08025caa  strh      r3, [r5]                  
+      0x08025cac  ldr       r5, [pc, #0x14c]          
+      0x08025cae  str       r3, [r5, #0x1c]           
+      0x08025cb0  str       r3, [r5, #0x20]           
+      0x08025cb2  b         #0x8025df4                
+      0x08025cb4  ldr       r3, [pc, #0x144]          
+      0x08025cb6  ldr       r3, [r3, #0x14]           
+      0x08025cb8  cmp       r3, #0                    
+      0x08025cba  bne       #0x8025d58                
+      0x08025cbc  ldr       r3, [pc, #0x13c]          
+  --- site 0x08025c9e ---
+      0x08025c9e  ldr       r3, [pc, #0x15c]           <<<
+      0x08025ca0  ldr       r3, [r3, #0x20]           
+      0x08025ca2  cmp       r3, #1                    
+      0x08025ca4  bne       #0x8025cb2                
+      0x08025ca6  movs      r3, #0                    
+      0x08025ca8  ldr       r5, [pc, #0x154]          
+      0x08025caa  strh      r3, [r5]                  
+      0x08025cac  ldr       r5, [pc, #0x14c]          
+      0x08025cae  str       r3, [r5, #0x1c]           
+      0x08025cb0  str       r3, [r5, #0x20]           
+      0x08025cb2  b         #0x8025df4                
+      0x08025cb4  ldr       r3, [pc, #0x144]          
+      0x08025cb6  ldr       r3, [r3, #0x14]           
+      0x08025cb8  cmp       r3, #0                    
+      0x08025cba  bne       #0x8025d58                
+      0x08025cbc  ldr       r3, [pc, #0x13c]          
+      0x08025cbe  ldr       r3, [r3, #0x10]           
+      0x08025cc0  cbnz      r3, #0x8025d40            
+      0x08025cc2  rsb       r3, r2, r2, lsl #5        
+  --- site 0x08025cac ---
+      0x08025cac  ldr       r5, [pc, #0x14c]           <<<
+      0x08025cae  str       r3, [r5, #0x1c]           
+      0x08025cb0  str       r3, [r5, #0x20]           
+      0x08025cb2  b         #0x8025df4                
+      0x08025cb4  ldr       r3, [pc, #0x144]          
+      0x08025cb6  ldr       r3, [r3, #0x14]           
+      0x08025cb8  cmp       r3, #0                    
+      0x08025cba  bne       #0x8025d58                
+      0x08025cbc  ldr       r3, [pc, #0x13c]          
+      0x08025cbe  ldr       r3, [r3, #0x10]           
+      0x08025cc0  cbnz      r3, #0x8025d40            
+      0x08025cc2  rsb       r3, r2, r2, lsl #5        
+      0x08025cc6  add.w     r3, r3, r2, lsl #6        
+      0x08025cca  ldr       r5, [pc, #0x138]          
+      0x08025ccc  add.w     r3, r5, r3, lsl #2        
+      0x08025cd0  ldr.w     r3, [r3, #0x16c]          
+  --- site 0x08025cb4 ---
+      0x08025cb4  ldr       r3, [pc, #0x144]           <<<
+      0x08025cb6  ldr       r3, [r3, #0x14]           
+      0x08025cb8  cmp       r3, #0                    
+      0x08025cba  bne       #0x8025d58                
+      0x08025cbc  ldr       r3, [pc, #0x13c]          
+      0x08025cbe  ldr       r3, [r3, #0x10]           
+      0x08025cc0  cbnz      r3, #0x8025d40            
+      0x08025cc2  rsb       r3, r2, r2, lsl #5        
+      0x08025cc6  add.w     r3, r3, r2, lsl #6        
+      0x08025cca  ldr       r5, [pc, #0x138]          
+      0x08025ccc  add.w     r3, r5, r3, lsl #2        
+      0x08025cd0  ldr.w     r3, [r3, #0x16c]          
+      0x08025cd4  cmp       r3, #0x63                 
+      0x08025cd6  bne       #0x8025d58                
+      0x08025cd8  rsb       r3, r2, r2, lsl #5        
+  --- site 0x08025cbc ---
+      0x08025cbc  ldr       r3, [pc, #0x13c]           <<<
+      0x08025cbe  ldr       r3, [r3, #0x10]           
+      0x08025cc0  cbnz      r3, #0x8025d40            
+      0x08025cc2  rsb       r3, r2, r2, lsl #5        
+      0x08025cc6  add.w     r3, r3, r2, lsl #6        
+      0x08025cca  ldr       r5, [pc, #0x138]          
+      0x08025ccc  add.w     r3, r5, r3, lsl #2        
+      0x08025cd0  ldr.w     r3, [r3, #0x16c]          
+      0x08025cd4  cmp       r3, #0x63                 
+      0x08025cd6  bne       #0x8025d58                
+      0x08025cd8  rsb       r3, r2, r2, lsl #5        
+      0x08025cdc  add.w     r3, r3, r2, lsl #6        
+      0x08025ce0  add.w     r3, r5, r3, lsl #2        
+  --- site 0x08025ce8 ---
+      0x08025ce8  ldr       r5, [pc, #0x110]           <<<
+      0x08025cea  ldr       r5, [r5, #8]              
+      0x08025cec  subs      r3, r3, r5                
+      0x08025cee  ldr       r5, [pc, #0x10c]          
+      0x08025cf0  str       r3, [r5, #0x18]           
+      0x08025cf2  movs      r5, #0xcc                 
+      0x08025cf4  ldr       r5, [r5, r0]              
+      0x08025cf6  ldr       r6, [r0, #0xc]            
+      0x08025cf8  sdiv      r3, r6, r5                
+      0x08025cfc  ldr       r5, [pc, #0xfc]           
+      0x08025cfe  ldr       r5, [r5, #0x18]           
+      0x08025d00  add.w     r6, r3, r3, lsr #31       
+      0x08025d04  cmp.w     r5, r6, asr #1            
+      0x08025d08  ble       #0x8025d20                
+      0x08025d0a  movs      r3, #0xcc                 
+      0x08025d0c  ldr       r3, [r3, r0]              
+      0x08025d0e  ldr       r5, [r0, #0xc]            
+  --- site 0x08025cee ---
+      0x08025cee  ldr       r5, [pc, #0x10c]           <<<
+      0x08025cf0  str       r3, [r5, #0x18]           
+      0x08025cf2  movs      r5, #0xcc                 
+      0x08025cf4  ldr       r5, [r5, r0]              
+      0x08025cf6  ldr       r6, [r0, #0xc]            
+      0x08025cf8  sdiv      r3, r6, r5                
+      0x08025cfc  ldr       r5, [pc, #0xfc]           
+      0x08025cfe  ldr       r5, [r5, #0x18]           
+      0x08025d00  add.w     r6, r3, r3, lsr #31       
+      0x08025d04  cmp.w     r5, r6, asr #1            
+      0x08025d08  ble       #0x8025d20                
+      0x08025d0a  movs      r3, #0xcc                 
+      0x08025d0c  ldr       r3, [r3, r0]              
+      0x08025d0e  ldr       r5, [r0, #0xc]            
+      0x08025d10  sdiv      r3, r5, r3                
+      0x08025d14  ldr       r5, [pc, #0xe4]           
+  --- site 0x08025cfc ---
+      0x08025cfc  ldr       r5, [pc, #0xfc]            <<<
+      0x08025cfe  ldr       r5, [r5, #0x18]           
+      0x08025d00  add.w     r6, r3, r3, lsr #31       
+      0x08025d04  cmp.w     r5, r6, asr #1            
+      0x08025d08  ble       #0x8025d20                
+      0x08025d0a  movs      r3, #0xcc                 
+      0x08025d0c  ldr       r3, [r3, r0]              
+      0x08025d0e  ldr       r5, [r0, #0xc]            
+      0x08025d10  sdiv      r3, r5, r3                
+      0x08025d14  ldr       r5, [pc, #0xe4]           
+      0x08025d16  ldr       r5, [r5, #0x18]           
+      0x08025d18  subs      r3, r5, r3                
+      0x08025d1a  ldr       r5, [pc, #0xe0]           
+      0x08025d1c  str       r3, [r5, #0x18]           
+      0x08025d1e  b         #0x8025d52                
+      0x08025d20  movs      r5, #0xcc                 
+      0x08025d22  ldr       r5, [r5, r0]              
+  --- site 0x08025d14 ---
+      0x08025d14  ldr       r5, [pc, #0xe4]            <<<
+      0x08025d16  ldr       r5, [r5, #0x18]           
+      0x08025d18  subs      r3, r5, r3                
+      0x08025d1a  ldr       r5, [pc, #0xe0]           
+      0x08025d1c  str       r3, [r5, #0x18]           
+      0x08025d1e  b         #0x8025d52                
+      0x08025d20  movs      r5, #0xcc                 
+      0x08025d22  ldr       r5, [r5, r0]              
+      0x08025d24  ldr       r6, [r0, #0xc]            
+      0x08025d26  sdiv      r5, r6, r5                
+      0x08025d2a  rsbs      r3, r5, #0                
+      0x08025d2c  ldr       r5, [pc, #0xcc]           
+      0x08025d2e  ldr       r5, [r5, #0x18]           
+      0x08025d30  add.w     r6, r3, r3, lsr #31       
+      0x08025d34  cmp.w     r5, r6, asr #1            
+      0x08025d38  bge       #0x8025d52                
+      0x08025d3a  movs      r3, #0xcc                 
+  --- site 0x08025d1a ---
+      0x08025d1a  ldr       r5, [pc, #0xe0]            <<<
+      0x08025d1c  str       r3, [r5, #0x18]           
+      0x08025d1e  b         #0x8025d52                
+      0x08025d20  movs      r5, #0xcc                 
+      0x08025d22  ldr       r5, [r5, r0]              
+      0x08025d24  ldr       r6, [r0, #0xc]            
+      0x08025d26  sdiv      r5, r6, r5                
+      0x08025d2a  rsbs      r3, r5, #0                
+      0x08025d2c  ldr       r5, [pc, #0xcc]           
+      0x08025d2e  ldr       r5, [r5, #0x18]           
+      0x08025d30  add.w     r6, r3, r3, lsr #31       
+      0x08025d34  cmp.w     r5, r6, asr #1            
+      0x08025d38  bge       #0x8025d52                
+      0x08025d3a  movs      r3, #0xcc                 
+      0x08025d3c  ldr       r3, [r3, r0]              
+      0x08025d3e  b         #0x8025d42                
+      0x08025d40  b         #0x8025d5a                
+  --- site 0x08025d2c ---
+      0x08025d2c  ldr       r5, [pc, #0xcc]            <<<
+      0x08025d2e  ldr       r5, [r5, #0x18]           
+      0x08025d30  add.w     r6, r3, r3, lsr #31       
+      0x08025d34  cmp.w     r5, r6, asr #1            
+      0x08025d38  bge       #0x8025d52                
+      0x08025d3a  movs      r3, #0xcc                 
+      0x08025d3c  ldr       r3, [r3, r0]              
+      0x08025d3e  b         #0x8025d42                
+      0x08025d40  b         #0x8025d5a                
+      0x08025d42  ldr       r5, [r0, #0xc]            
+      0x08025d44  sdiv      r3, r5, r3                
+      0x08025d48  ldr       r5, [pc, #0xb0]           
+      0x08025d4a  ldr       r5, [r5, #0x18]           
+      0x08025d4c  add       r3, r5                    
+      0x08025d4e  ldr       r5, [pc, #0xac]           
+      0x08025d50  str       r3, [r5, #0x18]           
+      0x08025d52  movs      r3, #1                    
+  --- site 0x08025d48 ---
+      0x08025d48  ldr       r5, [pc, #0xb0]            <<<
+      0x08025d4a  ldr       r5, [r5, #0x18]           
+      0x08025d4c  add       r3, r5                    
+      0x08025d4e  ldr       r5, [pc, #0xac]           
+      0x08025d50  str       r3, [r5, #0x18]           
+      0x08025d52  movs      r3, #1                    
+      0x08025d54  ldr       r5, [pc, #0xa4]           
+      0x08025d56  str       r3, [r5, #0x14]           
+      0x08025d58  b         #0x8025df4                
+      0x08025d5a  ldr       r3, [pc, #0xa0]           
+      0x08025d5c  ldr       r3, [r3, #0x10]           
+      0x08025d5e  cmp       r3, #1                    
+      0x08025d60  bne       #0x8025df4                
+      0x08025d62  rsb       r3, r2, r2, lsl #5        
+      0x08025d66  add.w     r3, r3, r2, lsl #6        
+      0x08025d6a  ldr       r5, [pc, #0x98]           
+      0x08025d6c  add.w     r3, r5, r3, lsl #2        
+  --- site 0x08025d4e ---
+      0x08025d4e  ldr       r5, [pc, #0xac]            <<<
+      0x08025d50  str       r3, [r5, #0x18]           
+      0x08025d52  movs      r3, #1                    
+      0x08025d54  ldr       r5, [pc, #0xa4]           
+      0x08025d56  str       r3, [r5, #0x14]           
+      0x08025d58  b         #0x8025df4                
+      0x08025d5a  ldr       r3, [pc, #0xa0]           
+      0x08025d5c  ldr       r3, [r3, #0x10]           
+      0x08025d5e  cmp       r3, #1                    
+      0x08025d60  bne       #0x8025df4                
+      0x08025d62  rsb       r3, r2, r2, lsl #5        
+      0x08025d66  add.w     r3, r3, r2, lsl #6        
+      0x08025d6a  ldr       r5, [pc, #0x98]           
+      0x08025d6c  add.w     r3, r5, r3, lsl #2        
+      0x08025d70  ldr.w     r3, [r3, #0x174]          
+      0x08025d74  cmp       r3, #0x63                 
+  --- site 0x08025d54 ---
+      0x08025d54  ldr       r5, [pc, #0xa4]            <<<
+      0x08025d56  str       r3, [r5, #0x14]           
+      0x08025d58  b         #0x8025df4                
+      0x08025d5a  ldr       r3, [pc, #0xa0]           
+      0x08025d5c  ldr       r3, [r3, #0x10]           
+      0x08025d5e  cmp       r3, #1                    
+      0x08025d60  bne       #0x8025df4                
+      0x08025d62  rsb       r3, r2, r2, lsl #5        
+      0x08025d66  add.w     r3, r3, r2, lsl #6        
+      0x08025d6a  ldr       r5, [pc, #0x98]           
+      0x08025d6c  add.w     r3, r5, r3, lsl #2        
+      0x08025d70  ldr.w     r3, [r3, #0x174]          
+      0x08025d74  cmp       r3, #0x63                 
+      0x08025d76  bne       #0x8025df4                
+      0x08025d78  rsb       r3, r2, r2, lsl #5        
+  --- site 0x08025d5a ---
+      0x08025d5a  ldr       r3, [pc, #0xa0]            <<<
+      0x08025d5c  ldr       r3, [r3, #0x10]           
+      0x08025d5e  cmp       r3, #1                    
+      0x08025d60  bne       #0x8025df4                
+      0x08025d62  rsb       r3, r2, r2, lsl #5        
+      0x08025d66  add.w     r3, r3, r2, lsl #6        
+      0x08025d6a  ldr       r5, [pc, #0x98]           
+      0x08025d6c  add.w     r3, r5, r3, lsl #2        
+      0x08025d70  ldr.w     r3, [r3, #0x174]          
+      0x08025d74  cmp       r3, #0x63                 
+      0x08025d76  bne       #0x8025df4                
+      0x08025d78  rsb       r3, r2, r2, lsl #5        
+      0x08025d7c  add.w     r3, r3, r2, lsl #6        
+      0x08025d80  .byte     0x05, 0xeb                
+  --- site 0x08025d88 ---
+      0x08025d88  ldr       r5, [pc, #0x70]            <<<
+      0x08025d8a  ldr       r5, [r5, #0xc]            
+      0x08025d8c  subs      r3, r3, r5                
+      0x08025d8e  ldr       r5, [pc, #0x6c]           
+      0x08025d90  str       r3, [r5, #0x18]           
+      0x08025d92  movs      r5, #0xcc                 
+      0x08025d94  ldr       r5, [r5, r0]              
+      0x08025d96  ldr       r6, [r0, #0xc]            
+      0x08025d98  sdiv      r3, r6, r5                
+      0x08025d9c  ldr       r5, [pc, #0x5c]           
+      0x08025d9e  ldr       r5, [r5, #0x18]           
+      0x08025da0  add.w     r6, r3, r3, lsr #31       
+      0x08025da4  cmp.w     r5, r6, asr #1            
+      0x08025da8  ble       #0x8025dc0                
+      0x08025daa  movs      r3, #0xcc                 
+      0x08025dac  ldr       r3, [r3, r0]              
+      0x08025dae  ldr       r5, [r0, #0xc]            
+  --- site 0x08025d8e ---
+      0x08025d8e  ldr       r5, [pc, #0x6c]            <<<
+      0x08025d90  str       r3, [r5, #0x18]           
+      0x08025d92  movs      r5, #0xcc                 
+      0x08025d94  ldr       r5, [r5, r0]              
+      0x08025d96  ldr       r6, [r0, #0xc]            
+      0x08025d98  sdiv      r3, r6, r5                
+      0x08025d9c  ldr       r5, [pc, #0x5c]           
+      0x08025d9e  ldr       r5, [r5, #0x18]           
+      0x08025da0  add.w     r6, r3, r3, lsr #31       
+      0x08025da4  cmp.w     r5, r6, asr #1            
+      0x08025da8  ble       #0x8025dc0                
+      0x08025daa  movs      r3, #0xcc                 
+      0x08025dac  ldr       r3, [r3, r0]              
+      0x08025dae  ldr       r5, [r0, #0xc]            
+      0x08025db0  sdiv      r3, r5, r3                
+      0x08025db4  ldr       r5, [pc, #0x44]           
+  --- site 0x08025d9c ---
+      0x08025d9c  ldr       r5, [pc, #0x5c]            <<<
+      0x08025d9e  ldr       r5, [r5, #0x18]           
+      0x08025da0  add.w     r6, r3, r3, lsr #31       
+      0x08025da4  cmp.w     r5, r6, asr #1            
+      0x08025da8  ble       #0x8025dc0                
+      0x08025daa  movs      r3, #0xcc                 
+      0x08025dac  ldr       r3, [r3, r0]              
+      0x08025dae  ldr       r5, [r0, #0xc]            
+      0x08025db0  sdiv      r3, r5, r3                
+      0x08025db4  ldr       r5, [pc, #0x44]           
+      0x08025db6  ldr       r5, [r5, #0x18]           
+      0x08025db8  subs      r3, r5, r3                
+      0x08025dba  ldr       r5, [pc, #0x40]           
+      0x08025dbc  str       r3, [r5, #0x18]           
+      0x08025dbe  b         #0x8025dee                
+      0x08025dc0  movs      r5, #0xcc                 
+      0x08025dc2  ldr       r5, [r5, r0]              
+  --- site 0x08025db4 ---
+      0x08025db4  ldr       r5, [pc, #0x44]            <<<
+      0x08025db6  ldr       r5, [r5, #0x18]           
+      0x08025db8  subs      r3, r5, r3                
+      0x08025dba  ldr       r5, [pc, #0x40]           
+      0x08025dbc  str       r3, [r5, #0x18]           
+      0x08025dbe  b         #0x8025dee                
+      0x08025dc0  movs      r5, #0xcc                 
+      0x08025dc2  ldr       r5, [r5, r0]              
+      0x08025dc4  ldr       r6, [r0, #0xc]            
+      0x08025dc6  sdiv      r5, r6, r5                
+      0x08025dca  rsbs      r3, r5, #0                
+      0x08025dcc  ldr       r5, [pc, #0x2c]           
+      0x08025dce  ldr       r5, [r5, #0x18]           
+      0x08025dd0  add.w     r6, r3, r3, lsr #31       
+      0x08025dd4  cmp.w     r5, r6, asr #1            
+      0x08025dd8  bge       #0x8025dee                
+      0x08025dda  movs      r3, #0xcc                 
+  --- site 0x08025dba ---
+      0x08025dba  ldr       r5, [pc, #0x40]            <<<
+      0x08025dbc  str       r3, [r5, #0x18]           
+      0x08025dbe  b         #0x8025dee                
+      0x08025dc0  movs      r5, #0xcc                 
+      0x08025dc2  ldr       r5, [r5, r0]              
+      0x08025dc4  ldr       r6, [r0, #0xc]            
+      0x08025dc6  sdiv      r5, r6, r5                
+      0x08025dca  rsbs      r3, r5, #0                
+      0x08025dcc  ldr       r5, [pc, #0x2c]           
+      0x08025dce  ldr       r5, [r5, #0x18]           
+      0x08025dd0  add.w     r6, r3, r3, lsr #31       
+      0x08025dd4  cmp.w     r5, r6, asr #1            
+      0x08025dd8  bge       #0x8025dee                
+      0x08025dda  movs      r3, #0xcc                 
+      0x08025ddc  ldr       r3, [r3, r0]              
+      0x08025dde  ldr       r5, [r0, #0xc]            
+      0x08025de0  .byte     0x95, 0xfb                
+  --- site 0x08025dcc ---
+      0x08025dcc  ldr       r5, [pc, #0x2c]            <<<
+      0x08025dce  ldr       r5, [r5, #0x18]           
+      0x08025dd0  add.w     r6, r3, r3, lsr #31       
+      0x08025dd4  cmp.w     r5, r6, asr #1            
+      0x08025dd8  bge       #0x8025dee                
+      0x08025dda  movs      r3, #0xcc                 
+      0x08025ddc  ldr       r3, [r3, r0]              
+      0x08025dde  ldr       r5, [r0, #0xc]            
+      0x08025de0  sdiv      r3, r5, r3                
+      0x08025de4  ldr       r5, [pc, #0x14]           
+      0x08025de6  ldr       r5, [r5, #0x18]           
+      0x08025de8  add       r3, r5                    
+      0x08025dea  ldr       r5, [pc, #0x10]           
+      0x08025dec  str       r3, [r5, #0x18]           
+      0x08025dee  movs      r3, #1                    
+      0x08025df0  ldr       r5, [pc, #8]              
+      0x08025df2  str       r3, [r5, #0x14]           
+  --- site 0x08025de4 ---
+      0x08025de4  ldr       r5, [pc, #0x14]            <<<
+      0x08025de6  ldr       r5, [r5, #0x18]           
+      0x08025de8  add       r3, r5                    
+      0x08025dea  ldr       r5, [pc, #0x10]           
+      0x08025dec  str       r3, [r5, #0x18]           
+      0x08025dee  movs      r3, #1                    
+      0x08025df0  ldr       r5, [pc, #8]              
+      0x08025df2  str       r3, [r5, #0x14]           
+      0x08025df4  ldrh      r3, [r1, #0x20]           
+      0x08025df6  strh      r3, [r1, #0x22]           
+      0x08025df8  pop       {r4, r5, r6, pc}          
+      0x08025dfa  movs      r0, r0                    
+      0x08025dfc  subs      r5, #0xb0                 
+      0x08025dfe  movs      r0, #0                    
+      0x08025e00  movs      r0, r4                    
+      0x08025e02  movs      r0, #0                    
+      0x08025e04  strh      r0, [r4, #2]              
+      0x08025e06  movs      r0, #0                    
+      0x08025e08  push      {r4, lr}                  
+      0x08025e0a  mov       r2, r0                    
+  --- site 0x08025dea ---
+      0x08025dea  ldr       r5, [pc, #0x10]            <<<
+      0x08025dec  str       r3, [r5, #0x18]           
+      0x08025dee  movs      r3, #1                    
+      0x08025df0  ldr       r5, [pc, #8]              
+      0x08025df2  str       r3, [r5, #0x14]           
+      0x08025df4  ldrh      r3, [r1, #0x20]           
+      0x08025df6  strh      r3, [r1, #0x22]           
+      0x08025df8  pop       {r4, r5, r6, pc}          
+      0x08025dfa  movs      r0, r0                    
+      0x08025dfc  subs      r5, #0xb0                 
+      0x08025dfe  movs      r0, #0                    
+      0x08025e00  movs      r0, r4                    
+      0x08025e02  movs      r0, #0                    
+      0x08025e04  strh      r0, [r4, #2]              
+      0x08025e06  movs      r0, #0                    
+      0x08025e08  push      {r4, lr}                  
+      0x08025e0a  mov       r2, r0                    
+      0x08025e0c  rsb       r3, r2, r2, lsl #4        
+      0x08025e10  .byte     0x03, 0xeb                
+  --- site 0x08025df0 ---
+      0x08025df0  ldr       r5, [pc, #8]               <<<
+      0x08025df2  str       r3, [r5, #0x14]           
+      0x08025df4  ldrh      r3, [r1, #0x20]           
+      0x08025df6  strh      r3, [r1, #0x22]           
+      0x08025df8  pop       {r4, r5, r6, pc}          
+      0x08025dfa  movs      r0, r0                    
+      0x08025dfc  subs      r5, #0xb0                 
+      0x08025dfe  movs      r0, #0                    
+      0x08025e00  movs      r0, r4                    
+      0x08025e02  movs      r0, #0                    
+      0x08025e04  strh      r0, [r4, #2]              
+      0x08025e06  movs      r0, #0                    
+      0x08025e08  push      {r4, lr}                  
+      0x08025e0a  mov       r2, r0                    
+      0x08025e0c  rsb       r3, r2, r2, lsl #4        
+      0x08025e10  add.w     r3, r3, r3, lsl #2        
+      0x08025e14  ldr       r4, [pc, #0xf0]           
+      0x08025e16  .byte     0x04, 0xeb                
+

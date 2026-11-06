@@ -1,0 +1,9 @@
+-rw-r--r--    1 root     root           100 Sep 18 15:26 /home/ftp/PlcLogic/Recipe/SavePos.txt
+-rw-r--r--    1 root     root           780 Sep 18 15:27 /home/ftp/PlcLogic/Recipe/SlaveInfos.SlaveInfos.txtrecipe
+---HEX---
+0000000 00 00 00 00 00 00 00 80 6f 1f f8 ca da fe 86 bf
+0000016 63 38 87 7b c2 70 54 bf 46 73 35 3b 87 e6 65 bf
+0000032 00 00 00 00 00 00 00 80 9e c2 2a fc 38 85 51 bf
+0000048 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+---DATE---
+Fri Sep 18 15:29:15 CST 2026

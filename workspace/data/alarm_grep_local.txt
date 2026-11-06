@@ -1,0 +1,10 @@
+=== gcontrol_from_controller.bin  size=2007768
+  偏差       count=0
+  关节       count=0
+  使能       count=0
+  SavePos  count=0
+=== libdataSvr.so.bin  size=3458103
+  偏差       count=0
+  关节       count=0
+  使能       count=0
+  SavePos  count=0

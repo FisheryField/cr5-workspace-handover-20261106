@@ -1,0 +1,81 @@
+﻿
+D:\mygames\Hearts of Iron IV (2016)\Hearts of Iron IV\hoi4.exe:     file format pei-x86-64
+
+
+Disassembly of section .text:
+
+00000001401a7040 <.text+0x1a6040>:
+   1401a7040:	c7 44 24 20 6e 6f 6e 	mov    DWORD PTR [rsp+0x20],0x656e6f6e
+   1401a7047:	65 
+   1401a7048:	c6 44 24 24 00       	mov    BYTE PTR [rsp+0x24],0x0
+   1401a704d:	48 8d 05 dc f3 55 02 	lea    rax,[rip+0x255f3dc]        # 0x142706430
+   1401a7054:	48 89 44 24 40       	mov    QWORD PTR [rsp+0x40],rax
+   1401a7059:	48 c7 44 24 48 0b 00 	mov    QWORD PTR [rsp+0x48],0xb
+   1401a7060:	00 00 
+   1401a7062:	0f 28 44 24 40       	movaps xmm0,XMMWORD PTR [rsp+0x40]
+   1401a7067:	66 0f 7f 44 24 50    	movdqa XMMWORD PTR [rsp+0x50],xmm0
+   1401a706d:	4c 8d 44 24 20       	lea    r8,[rsp+0x20]
+   1401a7072:	48 8d 54 24 50       	lea    rdx,[rsp+0x50]
+   1401a7077:	48 8d 4d 90          	lea    rcx,[rbp-0x70]
+   1401a707b:	e8 a0 29 ec 01       	call   0x142069a20
+   1401a7080:	90                   	nop
+   1401a7081:	48 8b 54 24 38       	mov    rdx,QWORD PTR [rsp+0x38]
+   1401a7086:	48 83 fa 0f          	cmp    rdx,0xf
+   1401a708a:	76 32                	jbe    0x1401a70be
+   1401a708c:	48 ff c2             	inc    rdx
+   1401a708f:	48 8b 4c 24 20       	mov    rcx,QWORD PTR [rsp+0x20]
+   1401a7094:	48 8b c1             	mov    rax,rcx
+   1401a7097:	48 81 fa 00 10 00 00 	cmp    rdx,0x1000
+   1401a709e:	72 19                	jb     0x1401a70b9
+   1401a70a0:	48 83 c2 27          	add    rdx,0x27
+   1401a70a4:	48 8b 49 f8          	mov    rcx,QWORD PTR [rcx-0x8]
+   1401a70a8:	48 2b c1             	sub    rax,rcx
+   1401a70ab:	48 83 c0 f8          	add    rax,0xfffffffffffffff8
+   1401a70af:	48 83 f8 1f          	cmp    rax,0x1f
+   1401a70b3:	0f 87 ec 04 00 00    	ja     0x1401a75a5
+   1401a70b9:	e8 a2 da 00 02       	call   0x1421b4b60
+   1401a70be:	ff c6                	inc    esi
+   1401a70c0:	41 3b f4             	cmp    esi,r12d
+   1401a70c3:	7d 0c                	jge    0x1401a70d1
+   1401a70c5:	48 8b 9d b0 01 00 00 	mov    rbx,QWORD PTR [rbp+0x1b0]
+   1401a70cc:	e9 7f fa ff ff       	jmp    0x1401a6b50
+   1401a70d1:	48 8d 05 b0 9f 55 02 	lea    rax,[rip+0x2559fb0]        # 0x142701088
+   1401a70d8:	48 89 44 24 40       	mov    QWORD PTR [rsp+0x40],rax
+   1401a70dd:	48 c7 44 24 48 08 00 	mov    QWORD PTR [rsp+0x48],0x8
+   1401a70e4:	00 00 
+   1401a70e6:	0f 28 44 24 40       	movaps xmm0,XMMWORD PTR [rsp+0x40]
+   1401a70eb:	66 0f 7f 44 24 50    	movdqa XMMWORD PTR [rsp+0x50],xmm0
+   1401a70f1:	48 8d 54 24 50       	lea    rdx,[rsp+0x50]
+   1401a70f6:	48 8d 4d 90          	lea    rcx,[rbp-0x70]
+   1401a70fa:	e8 21 2c ec 01       	call   0x142069d20
+   1401a70ff:	e8 bc 30 05 00       	call   0x1401fa1c0
+   1401a7104:	48 8d 90 a0 00 00 00 	lea    rdx,[rax+0xa0]
+   1401a710b:	48 8d 4c 24 20       	lea    rcx,[rsp+0x20]
+   1401a7110:	e8 6b e4 06 02       	call   0x142215580
+   1401a7115:	83 cf 04             	or     edi,0x4
+   1401a7118:	48 8d 05 29 f3 55 02 	lea    rax,[rip+0x255f329]        # 0x142706448
+   1401a711f:	48 89 44 24 40       	mov    QWORD PTR [rsp+0x40],rax
+   1401a7124:	48 c7 44 24 48 0d 00 	mov    QWORD PTR [rsp+0x48],0xd
+   1401a712b:	00 00 
+   1401a712d:	0f 28 44 24 40       	movaps xmm0,XMMWORD PTR [rsp+0x40]
+   1401a7132:	66 0f 7f 44 24 50    	movdqa XMMWORD PTR [rsp+0x50],xmm0
+   1401a7138:	4c 8d 44 24 20       	lea    r8,[rsp+0x20]
+   1401a713d:	48 8d 54 24 50       	lea    rdx,[rsp+0x50]
+   1401a7142:	48 8d 4d 90          	lea    rcx,[rbp-0x70]
+   1401a7146:	e8 d5 28 ec 01       	call   0x142069a20
+   1401a714b:	90                   	nop
+   1401a714c:	48 8b 54 24 38       	mov    rdx,QWORD PTR [rsp+0x38]
+   1401a7151:	48 83 fa 0f          	cmp    rdx,0xf
+   1401a7155:	76 32                	jbe    0x1401a7189
+   1401a7157:	48 ff c2             	inc    rdx
+   1401a715a:	48 8b 4c 24 20       	mov    rcx,QWORD PTR [rsp+0x20]
+   1401a715f:	48 8b c1             	mov    rax,rcx
+   1401a7162:	48 81 fa 00 10 00 00 	cmp    rdx,0x1000
+   1401a7169:	72 19                	jb     0x1401a7184
+   1401a716b:	48 83 c2 27          	add    rdx,0x27
+   1401a716f:	48 8b 49 f8          	mov    rcx,QWORD PTR [rcx-0x8]
+   1401a7173:	48 2b c1             	sub    rax,rcx
+   1401a7176:	48 83 c0 f8          	add    rax,0xfffffffffffffff8
+   1401a717a:	48 83 f8 1f          	cmp    rax,0x1f
+   1401a717e:	0f                   	.byte 0xf
+   1401a717f:	87                   	.byte 0x87

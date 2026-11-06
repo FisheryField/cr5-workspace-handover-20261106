@@ -1,0 +1,100 @@
+﻿##############################################################################
+# v328d8 insns 151248
+  +0x24c : 0 real accesses (0 writes)
+  +0x238 : 4 real accesses (1 writes)
+    R true=08016f92 ghidra=08006f92  fn~08016b34 (+0x45e)  ldc2      p3, c4, [r8, #0x238]
+    R true=08025344 ghidra=08015344  fn~08025168 (+0x1dc)  ldr.w     r0, [r4, #0x238]
+    W true=08025602 ghidra=08015602  fn~08025398 (+0x26a)  str.w     r1, [r0, #0x238]
+    R true=08031590 ghidra=08021590  fn~0803142c (+0x164)  vldr      s0, [r5, #0x238]
+  +0x230 : 6 real accesses (2 writes)
+    R true=08020e7e ghidra=08010e7e  fn~08020514 (+0x96a)  ldr.w     r0, [r5, #0x230]
+    R true=0802daf8 ghidra=0801daf8  fn~0802daa0 (+0x58)  ldr.w     r0, [r0, #0x230]
+    W true=08030c38 ghidra=08020c38  fn~080307a0 (+0x498)  str.w     r0, [r6, #0x230]
+    W true=08030d58 ghidra=08020d58  fn~080307a0 (+0x5b8)  str.w     r0, [r6, #0x230]
+    R true=0803158a ghidra=0802158a  fn~0803142c (+0x15e)  ldr.w     r0, [r5, #0x230]
+    R true=08031a64 ghidra=08021a64  fn~0803190c (+0x158)  ldr.w     r0, [r5, #0x230]
+  +0x234 : 15 real accesses (2 writes)
+    R true=08024ce8 ghidra=08014ce8  fn~08024b00 (+0x1e8)  ldr.w     r3, [r2, #0x234]
+    W true=080255ec ghidra=080155ec  fn~08025398 (+0x254)  str.w     r1, [r0, #0x234]
+    R true=080255f2 ghidra=080155f2  fn~08025398 (+0x25a)  ldr.w     r1, [r0, #0x234]
+    R true=080274c8 ghidra=080174c8  fn~08026a2c (+0xa9c)  ldrb.w    sl, [ip, #0x234]
+    R true=080274de ghidra=080174de  fn~08026a2c (+0xab2)  ldrh.w    sl, [ip, #0x234]
+    R true=080274f8 ghidra=080174f8  fn~08026a2c (+0xacc)  ldr.w     sl, [ip, #0x234]
+    R true=08027512 ghidra=08017512  fn~08026a2c (+0xae6)  ldr.w     sl, [ip, #0x234]
+    R true=0802865e ghidra=0801865e  fn~08026a2c (+0x1c32)  ldrb.w    sl, [sl, #0x234]
+    R true=08028678 ghidra=08018678  fn~08026a2c (+0x1c4c)  ldrh.w    sl, [sl, #0x234]
+    R true=08028696 ghidra=08018696  fn~08026a2c (+0x1c6a)  ldr.w     sl, [sl, #0x234]
+    R true=080286b4 ghidra=080186b4  fn~08026a2c (+0x1c88)  ldr.w     sl, [sl, #0x234]
+    R true=08030d44 ghidra=08020d44  fn~080307a0 (+0x5a4)  ldr.w     r1, [r6, #0x234]
+    R true=0803159c ghidra=0802159c  fn~0803142c (+0x170)  vldr      s0, [r5, #0x234]
+    R true=0803b180 ghidra=0802b180  fn~08031dd8 (+0x93a8)  ldrd      r0, r0, [r0, #0x234]!
+    W true=08054bb2 ghidra=08044bb2  fn~080520fc (+0x2ab6)  strex     r2, r8, [r3, #0x234]
+  +0x31f : 3 real accesses (0 writes)
+    R true=08020e8c ghidra=08010e8c  fn~08020514 (+0x978)  ldr.w     r3, [r5, #0x31f]
+    R true=08020eba ghidra=08010eba  fn~08020514 (+0x9a6)  ldr.w     r3, [r5, #0x31f]
+    R true=0802533e ghidra=0801533e  fn~08025168 (+0x1d6)  ldr.w     r3, [r4, #0x31f]
+  +0x1ae : 2 real accesses (0 writes)
+    R true=08020f3c ghidra=08010f3c  fn~08020514 (+0xa28)  ldrb.w    r0, [r5, #0x1ae]
+    R true=080210ca ghidra=080110ca  fn~08020514 (+0xbb6)  ldrb.w    r0, [r5, #0x1ae]
+  +0x1af : 11 real accesses (0 writes)
+    R true=08020e88 ghidra=08010e88  fn~08020514 (+0x974)  ldr.w     r0, [r5, #0x1af]
+    R true=08020eb6 ghidra=08010eb6  fn~08020514 (+0x9a2)  ldr.w     r0, [r5, #0x1af]
+    R true=0802533a ghidra=0801533a  fn~08025168 (+0x1d2)  ldr.w     r0, [r4, #0x1af]
+    R true=08027466 ghidra=08017466  fn~08026a2c (+0xa3a)  ldrb.w    sl, [ip, #0x1af]
+    R true=0802747c ghidra=0801747c  fn~08026a2c (+0xa50)  ldrh.w    sl, [ip, #0x1af]
+    R true=08027496 ghidra=08017496  fn~08026a2c (+0xa6a)  ldr.w     sl, [ip, #0x1af]
+    R true=080274b0 ghidra=080174b0  fn~08026a2c (+0xa84)  ldr.w     sl, [ip, #0x1af]
+    R true=080285ec ghidra=080185ec  fn~08026a2c (+0x1bc0)  ldrb.w    sl, [sl, #0x1af]
+    R true=08028606 ghidra=08018606  fn~08026a2c (+0x1bda)  ldrh.w    sl, [sl, #0x1af]
+    R true=08028624 ghidra=08018624  fn~08026a2c (+0x1bf8)  ldr.w     sl, [sl, #0x1af]
+    R true=08028642 ghidra=08018642  fn~08026a2c (+0x1c16)  ldr.w     sl, [sl, #0x1af]
+##############################################################################
+# v3150 insns 148648
+  +0x24c : 0 real accesses (0 writes)
+  +0x238 : 4 real accesses (1 writes)
+    R true=08016b5a ghidra=08006b5a  fn~080166fc (+0x45e)  ldc2      p3, c4, [r8, #0x238]
+    R true=08024824 ghidra=08014824  fn~080246ec (+0x138)  ldr.w     r0, [r4, #0x238]
+    W true=08024b62 ghidra=08014b62  fn~08024864 (+0x2fe)  str.w     r0, [sb, #0x238]
+    R true=080300fc ghidra=080200fc  fn~0802ff94 (+0x168)  vldr      s0, [r5, #0x238]
+  +0x230 : 6 real accesses (3 writes)
+    R true=0802c5ec ghidra=0801c5ec  fn~0802c594 (+0x58)  ldr.w     r0, [r0, #0x230]
+    W true=0802f87c ghidra=0801f87c  fn~0802f4a4 (+0x3d8)  str.w     r0, [r6, #0x230]
+    W true=0802f98a ghidra=0801f98a  fn~0802f4a4 (+0x4e6)  str.w     r0, [r6, #0x230]
+    R true=080300f6 ghidra=080200f6  fn~0802ff94 (+0x162)  ldr.w     r0, [r5, #0x230]
+    R true=080305f8 ghidra=080205f8  fn~080304a0 (+0x158)  ldr.w     r0, [r5, #0x230]
+    W true=0803d656 ghidra=0802d656  fn~08037e30 (+0x5826)  strex     r2, r8, [r8, #0x230]
+  +0x234 : 17 real accesses (1 writes)
+    R true=08024270 ghidra=08014270  fn~0802408c (+0x1e4)  ldr.w     r3, [r2, #0x234]
+    W true=08024b04 ghidra=08014b04  fn~08024864 (+0x2a0)  str.w     r1, [sb, #0x234]
+    R true=08024b08 ghidra=08014b08  fn~08024864 (+0x2a4)  ldr.w     r0, [sb, #0x234]
+    R true=08024b10 ghidra=08014b10  fn~08024864 (+0x2ac)  ldr.w     r0, [sb, #0x234]
+    R true=08024b1e ghidra=08014b1e  fn~08024864 (+0x2ba)  ldr.w     r0, [sb, #0x234]
+    R true=08024b32 ghidra=08014b32  fn~08024864 (+0x2ce)  ldr.w     r0, [sb, #0x234]
+    R true=08024b42 ghidra=08014b42  fn~08024864 (+0x2de)  ldr.w     r0, [sb, #0x234]
+    R true=08024b56 ghidra=08014b56  fn~08024864 (+0x2f2)  ldr.w     r1, [sb, #0x234]
+    R true=08026b96 ghidra=08016b96  fn~08026488 (+0x70e)  ldrh.w    r0, [fp, #0x234]
+    R true=08026ba6 ghidra=08016ba6  fn~08026488 (+0x71e)  ldr.w     r0, [fp, #0x234]
+    R true=08026bb6 ghidra=08016bb6  fn~08026488 (+0x72e)  ldr.w     r0, [fp, #0x234]
+    R true=08027806 ghidra=08017806  fn~08026488 (+0x137e)  ldrb.w    r0, [r0, #0x234]
+    R true=08027816 ghidra=08017816  fn~08026488 (+0x138e)  ldrh.w    r0, [r0, #0x234]
+    R true=08027828 ghidra=08017828  fn~08026488 (+0x13a0)  ldr.w     r0, [r0, #0x234]
+    R true=0802783a ghidra=0801783a  fn~08026488 (+0x13b2)  ldr.w     r0, [r0, #0x234]
+    R true=0802f976 ghidra=0801f976  fn~0802f4a4 (+0x4d2)  ldr.w     r1, [r6, #0x234]
+    R true=08030108 ghidra=08020108  fn~0802ff94 (+0x174)  vldr      s0, [r5, #0x234]
+  +0x31f : 2 real accesses (0 writes)
+    R true=080207b0 ghidra=080107b0  fn~0801fe78 (+0x938)  ldr.w     r3, [r5, #0x31f]
+    R true=0802481e ghidra=0801481e  fn~080246ec (+0x132)  ldr.w     r3, [r4, #0x31f]
+  +0x1ae : 2 real accesses (0 writes)
+    R true=08020828 ghidra=08010828  fn~0801fe78 (+0x9b0)  ldrb.w    r0, [r5, #0x1ae]
+    R true=080209ae ghidra=080109ae  fn~0801fe78 (+0xb36)  ldrb.w    r0, [r5, #0x1ae]
+  +0x1af : 10 real accesses (0 writes)
+    R true=080207ac ghidra=080107ac  fn~0801fe78 (+0x934)  ldr.w     r0, [r5, #0x1af]
+    R true=0802481a ghidra=0801481a  fn~080246ec (+0x12e)  ldr.w     r0, [r4, #0x1af]
+    R true=08026b46 ghidra=08016b46  fn~08026488 (+0x6be)  ldrb.w    r0, [fp, #0x1af]
+    R true=08026b54 ghidra=08016b54  fn~08026488 (+0x6cc)  ldrh.w    r0, [fp, #0x1af]
+    R true=08026b64 ghidra=08016b64  fn~08026488 (+0x6dc)  ldr.w     r0, [fp, #0x1af]
+    R true=08026b74 ghidra=08016b74  fn~08026488 (+0x6ec)  ldr.w     r0, [fp, #0x1af]
+    R true=080277c0 ghidra=080177c0  fn~08026488 (+0x1338)  ldrb.w    r0, [r0, #0x1af]
+    R true=080277d0 ghidra=080177d0  fn~08026488 (+0x1348)  ldrh.w    r0, [r0, #0x1af]
+    R true=080277e2 ghidra=080177e2  fn~08026488 (+0x135a)  ldr.w     r0, [r0, #0x1af]
+    R true=080277f4 ghidra=080177f4  fn~08026488 (+0x136c)  ldr.w     r0, [r0, #0x1af]

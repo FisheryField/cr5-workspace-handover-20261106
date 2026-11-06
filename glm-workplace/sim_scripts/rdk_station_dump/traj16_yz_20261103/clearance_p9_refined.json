@@ -1,0 +1,22 @@
+{
+  "segment": "P8→P9 MoveJ",
+  "fraction": 0.5016885737038537,
+  "clearance_mm": 1.077544818682371,
+  "tcp": [
+    -59.909563343683566,
+    -684.6219187305289,
+    457.98631814959856,
+    179.9999881088013,
+    5.443429530304347e-05,
+    -0.00015618470704446445
+  ],
+  "joints": [
+    -83.18560085703766,
+    -39.49341581109965,
+    -13.297681397641087,
+    -37.38058165267364,
+    90.0091381012518,
+    186.7483397656234
+  ],
+  "definition": "tool/cylinder triangle surface distance; numerical minimum along planned joint interpolation, not real-robot measurement"
+}

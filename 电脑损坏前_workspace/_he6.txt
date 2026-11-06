@@ -1,0 +1,71 @@
+=== /mToolServer/overTurn ===
+total 16
+drwxr-xr-x    2 root     root          4096 Aug 21  1975 .
+drwxr-xr-x    4 root     root          4096 Feb 19  1976 ..
+-rw-r--r--    1 root     root           204 Sep 18 19:20 SaveAxesValue.AxesValues.txtrecipe
+-rw-r--r--    1 root     root           100 Sep 18 19:20 SavePos.txt
+=== /home/ftp/PlcLogic/Recipe ===
+total 24
+drwxrwxr-x    2 1025     1025          4096 Sep 18 19:11 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+-rwxrwxr-x    1 1025     1025           439 Feb 18  1976 SaveAxesValue.AxesValues.txtrecipe
+-rw-r--r--    1 root     root           100 Sep 18 19:28 SavePos.txt
+-rw-r--r--    1 root     root           780 Sep 18 19:29 SlaveInfos.SlaveInfos.txtrecipe
+-rw-r--r--    1 root     root             4 Sep 18 19:20 Update.txt
+=== /home/ftp/.dobotConfig ===
+total 20
+drwxrwxr-x    2 1025     1025          4096 Aug 21  1975 .
+drwxrwxr-x    6 1025     1025          4096 Jan  1  1970 ..
+-rwxrwxr-x    1 1025     1025          2596 Oct 28  2020 CODESYSControl.cfg
+-rwxrwxr-x    1 1025     1025          2622 Feb 26  2020 CODESYSControl_backup.cfg
+-rw-r--r--    1 root     root             1 Sep 18 19:29 StartCnt
+
+=== /mToolServer/overTurn/SavePos.txt (hex) ===
+od: invalid type string 'x1z'; 4294967295-byte integral type is not supported
+=== /mToolServer/overTurn/SaveAxesValue.AxesValues.txtrecipe ===
+A1:=LREAL:=GVL.rt_AxisPos[0]:=0.0
+A2:=LREAL:=GVL.rt_AxisPos[1]:=0.0
+A3:=LREAL:=GVL.rt_AxisPos[2]:=0.0
+A4:=LREAL:=GVL.rt_AxisPos[3]:=0.0
+A5:=LREAL:=GVL.rt_AxisPos[4]:=0.0
+A6:=LREAL:=GVL.rt_AxisPos[5]:=0.0
+=== /home/ftp/PlcLogic/Recipe/SavePos.txt (hex) ===
+=== /home/ftp/PlcLogic/Recipe/SaveAxesValue.AxesValues.txtrecipe ===
+A1:=LREAL:=GVL.rt_AxisPos[0]:=2.67340099678251e-3F16#AF3439D9AB9A30H-10
+A2:=LREAL:=GVL.rt_AxisPos[1]:=4.30239333748866e-1F16#6E242A3BE77A20H-E
+A3:=LREAL:=GVL.rt_AxisPos[2]:=5.23986595369372e-2F16#D69FFA110BD010H-F
+A4:=LREAL:=GVL.rt_AxisPos[3]:=-1.12282841864866e-2F16#-2DFDB595F03EDEH-F
+A5:=LREAL:=GVL.rt_AxisPos[4]:=-6.2379356591592e-3F16#-198CF31A69067CH-F
+A6:=LREAL:=GVL.rt_AxisPos[5]:=-2.85162772990135e-3F16#-BAE25FD71D7140H-10
+total 24
+drwxrwxr-x    2 1025     1025          4096 Sep 18 19:11 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+-rwxrwxr-x    1 1025     1025           439 Feb 18  1976 SaveAxesValue.AxesValues.txtrecipe
+-rw-r--r--    1 root     root           100 Sep 18 19:28 SavePos.txt
+-rw-r--r--    1 root     root           780 Sep 18 19:29 SlaveInfos.SlaveInfos.txtrecipe
+-rw-r--r--    1 root     root             4 Sep 18 19:20 Update.txt
+=== /home/ftp/PlcLogic/Recipe/Update.txt ===
+777
+=== StartCnt ===
+
+=== mToolServer.log 尾部 ===
+[2026-09-18 19:20:29][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#602]request update type is start.
+[2026-09-18 19:20:29][INFO][dobot_info.cpp@createUpdateThd()#92]<--- enter this function
+[2026-09-18 19:20:29][INFO][dobot_info.cpp@createUpdateThd()#97]ready to create update thread
+[2026-09-18 19:20:29][INFO][dobot_foe.cpp@singleUpdateControlThdFunc()#1096]<--- enter this function
+[2026-09-18 19:20:29][INFO][dobot_info.cpp@createUpdateThd()#126]setting thread affinity successfully.
+[2026-09-18 19:20:29][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#660]success create update thread.
+[2026-09-18 19:20:29][INFO][general_tools.cpp@getControlVersion()#509]the control version after parsing is (3.5.6.).
+[2026-09-18 19:20:29][DEBUG][http_server.cpp@updateFunc_CRSingleFwAndXml()#661]return url:/update/CR/singleFwAndXml.
+[2026-09-18 19:20:29][INFO][general_tools.cpp@getShellName()#519]the shell script of the version 3.5.6. is (353run.sh).
+[2026-09-18 19:20:29][INFO][dobot_foe.cpp@singleUpdateControlThdFunc()#1113]run the cmd:cp /mToolServer/control/353run.sh /tmp/tUpdate/control/run.sh successfully.
+[2026-09-18 19:20:30][INFO][http_server.cpp@httpCallback()#1290]request : get /update/singleStatus.
+[2026-09-18 19:20:32][INFO][general_tools.cpp@pkillCodesysControl()#417]run '/dobot/bin/bin/redis/redis-cli BGSAVE' successfully.
+[2026-09-18 19:20:34][INFO][general_tools.cpp@pkillCodesysControl()#435]pkill -9 codesyscontrol successfully.
+[2026-09-18 19:20:40][INFO][dobot_foe.cpp@singleUpdateControlThdFunc()#1120]run the cmd:cp /mToolServer/control/toolUtils.sh /tmp/tUpdate/control/toolUtils.sh && chmod +x /tmp/tUpdate/control/toolUtils.sh && dos2unix /tmp/tUpdate/control/toolUtils.sh.
+[2026-09-18 19:20:40][INFO][dobot_foe.cpp@singleUpdateControlThdFunc()#1129]run the cmd:chmod +x /tmp/tUpdate/control/run.sh && dos2unix /tmp/tUpdate/control/run.sh successfully.
+[2026-09-18 19:20:40][INFO][dobot_foe.cpp@singleUpdateControlThdFunc()#1131]run the cmd:/tmp/tUpdate/control/run.sh 2>&1 >/mToolServer/controlRunProcess.log.
+[2026-09-18 19:20:43][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-18 19:20:48][INFO][dobot_foe.cpp@singleUpdateControlThdFunc()#1145]run the cmd:rm /tmp/tUpdate/control/* successfully.
+[2026-09-18 19:20:48][INFO][dobot_info.cpp@exitUpdateThd()#140]end update pthread.
+[2026-09-18 19:20:53][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.

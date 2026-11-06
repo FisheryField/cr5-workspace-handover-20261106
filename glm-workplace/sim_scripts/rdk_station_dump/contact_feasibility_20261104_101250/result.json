@@ -1,0 +1,145 @@
+{
+  "result": "INFEASIBLE_IF_P5_CONTACT_REQUIRED",
+  "constraints": [
+    "all trajectory X fixed",
+    "orientations and tool/cylinder geometry fixed",
+    "cylinder and wall may translate together only along base Y/Z",
+    "P5 contact required"
+  ],
+  "cylinder_base": [
+    -2.6198734644822252e-05,
+    -772.1014397226452,
+    459.9985375285587,
+    90.00000887413748,
+    -5.7119480396851774e-05,
+    90.00000321165307
+  ],
+  "wall_base": [
+    -3.1079484472229524e-05,
+    143.90124235143026,
+    159.99988199685095,
+    5.7119748406275924e-05,
+    8.874144733320266e-06,
+    -3.2116707635747174e-06
+  ],
+  "cylinder_axial_extent_mm": [
+    -24.99999392215319,
+    24.99995271129991
+  ],
+  "checks": [
+    {
+      "point": 2,
+      "xyz": [
+        0.0,
+        -632.0,
+        460.0
+      ],
+      "tool_axial_extent_mm": [
+        -107.78179931640625,
+        12.300000190734867
+      ],
+      "axial_gap_lower_bound_mm": 0.0,
+      "contact_possible_by_yz_only": true
+    },
+    {
+      "point": 3,
+      "xyz": [
+        120.0,
+        -632.0,
+        460.0
+      ],
+      "tool_axial_extent_mm": [
+        12.21820068359375,
+        132.30000019073486
+      ],
+      "axial_gap_lower_bound_mm": 0.0,
+      "contact_possible_by_yz_only": true
+    },
+    {
+      "point": 4,
+      "xyz": [
+        120.0,
+        -632.0,
+        460.0
+      ],
+      "tool_axial_extent_mm": [
+        107.69999980926514,
+        227.78179931640625
+      ],
+      "axial_gap_lower_bound_mm": 82.70004709796522,
+      "contact_possible_by_yz_only": false
+    },
+    {
+      "point": 5,
+      "xyz": [
+        -140.0,
+        -632.0,
+        460.0
+      ],
+      "tool_axial_extent_mm": [
+        -152.30000019073486,
+        -32.21820068359375
+      ],
+      "axial_gap_lower_bound_mm": 7.218206761440559,
+      "contact_possible_by_yz_only": false
+    },
+    {
+      "point": 8,
+      "xyz": [
+        0.0,
+        -665.5,
+        460.0
+      ],
+      "tool_axial_extent_mm": [
+        -12.300000190734863,
+        107.78179931640625
+      ],
+      "axial_gap_lower_bound_mm": 0.0,
+      "contact_possible_by_yz_only": true
+    },
+    {
+      "point": 9,
+      "xyz": [
+        -120.0,
+        -665.5,
+        460.0
+      ],
+      "tool_axial_extent_mm": [
+        -132.30000019073486,
+        -12.21820068359375
+      ],
+      "axial_gap_lower_bound_mm": 0.0,
+      "contact_possible_by_yz_only": true
+    },
+    {
+      "point": 10,
+      "xyz": [
+        -120.0,
+        -665.5,
+        460.0
+      ],
+      "tool_axial_extent_mm": [
+        -227.78179931640625,
+        -107.69999980926514
+      ],
+      "axial_gap_lower_bound_mm": 82.70000588711194,
+      "contact_possible_by_yz_only": false
+    },
+    {
+      "point": 11,
+      "xyz": [
+        120.0,
+        -665.5,
+        460.0
+      ],
+      "tool_axial_extent_mm": [
+        12.21820068359375,
+        132.30000019073486
+      ],
+      "axial_gap_lower_bound_mm": 0.0,
+      "contact_possible_by_yz_only": true
+    }
+  ],
+  "hardware_access": false,
+  "station_modified": false
+}

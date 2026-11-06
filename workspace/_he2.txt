@@ -1,0 +1,63 @@
+=== homeEncoder.json 现在 ===
+-rwxr-xr-x    1 root     root           627 Sep 18 19:27 /dobot/userdata/CR5_sys_files/project/settings/function/homeEncoder.json
+{
+    "encoder": [
+        {
+            "innerEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "outEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "jointHomeState": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "date": "2026-09-18",
+            "time": "19:27:04"
+        }
+    ]
+}
+=== 谁引用 homeEncoder ===
+/dobot/userdata/project/settings/function/homeEncoder.json
+/dobot/bin/gcontrol                                0
+/dobot/bin/lib/libdataSvr.so.1.0.0                 1
+/dobot/bin/lib/libdataSvrPlugin.so.1.0.0           0
+=== gcontrol log 里 homeEncoder / home 相关 ===
+=== lua / 脚本里引用 ===
+base.lua
+dobot.lua
+dobot_api.lua
+ftp.lua
+headers.lua
+http.lua
+lanes.lua
+ltn12.lua
+luaJson.lua
+mbox.lua
+mime.lua
+mobdebug.lua
+pallet_api.lua
+persistence.lua
+smtp.lua
+socket.lua
+tp.lua
+url.lua
+utils_api.lua
+/dobot/userdata/CR5_sys_files/project/logs/all/log
+=== 现在时间 ===
+Fri Sep 18 19:32:05 CST 2026

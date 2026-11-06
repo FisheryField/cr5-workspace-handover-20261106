@@ -1,0 +1,972 @@
+[
+ {
+  "name": "TxPDO assign",
+  "entry": 134367633,
+  "type": "u8",
+  "bits": 8,
+  "attr": 15,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 0f 00"
+ },
+ {
+  "name": "Analogue Input",
+  "entry": 134368208,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Analogue Input Offset Integer",
+  "entry": 134368325,
+  "type": "u8",
+  "bits": 8,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 3f 00"
+ },
+ {
+  "name": "Analogue Input Scaling Integer",
+  "entry": 134368457,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Write Analogue Output",
+  "entry": 134368590,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Analogue Input Offset Integer",
+  "entry": 134368714,
+  "type": "u8",
+  "bits": 8,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 3f 00"
+ },
+ {
+  "name": "Analogue Output Scaling Integer ",
+  "entry": 134368846,
+  "type": "u8",
+  "bits": 8,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 3f 00"
+ },
+ {
+  "name": "Facturer_specified1",
+  "entry": 134368981,
+  "type": "u8",
+  "bits": 8,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 3f 00"
+ },
+ {
+  "name": "Facturer_specified2",
+  "entry": 134369103,
+  "type": "i16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "03 00 10 00 3f 00"
+ },
+ {
+  "name": "Abort connection option code",
+  "entry": 134369129,
+  "type": "u16",
+  "bits": 16,
+  "attr": 7,
+  "access": "rw",
+  "std_index": 24583,
+  "rec": "06 00 10 00 07 00"
+ },
+ {
+  "name": "Error Code",
+  "entry": 134369164,
+  "type": "u16",
+  "bits": 16,
+  "attr": 127,
+  "access": "rw",
+  "std_index": 24639,
+  "rec": "06 00 10 00 7f 00"
+ },
+ {
+  "name": "Control Word",
+  "entry": 134369181,
+  "type": "u16",
+  "bits": 16,
+  "attr": 135,
+  "access": "ro",
+  "std_index": 24640,
+  "rec": "06 00 10 00 87 00"
+ },
+ {
+  "name": "Status Word",
+  "entry": 134369200,
+  "type": "i16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24641,
+  "rec": "03 00 10 00 3f 00"
+ },
+ {
+  "name": "Quickstop Option Code",
+  "entry": 134369218,
+  "type": "i16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "03 00 10 00 3f 00"
+ },
+ {
+  "name": "Shutdown Option Code",
+  "entry": 134369246,
+  "type": "i16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "03 00 10 00 3f 00"
+ },
+ {
+  "name": "Disable Operation Option Code",
+  "entry": 134369273,
+  "type": "i16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "03 00 10 00 3f 00"
+ },
+ {
+  "name": "Halt option code",
+  "entry": 134369309,
+  "type": "i16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "03 00 10 00 3f 00"
+ },
+ {
+  "name": "Fault Reaction Code",
+  "entry": 134369332,
+  "type": "i8",
+  "bits": 8,
+  "attr": 127,
+  "access": "rw",
+  "std_index": null,
+  "rec": "02 00 08 00 7f 00"
+ },
+ {
+  "name": "Modes of Operation",
+  "entry": 134369358,
+  "type": "i8",
+  "bits": 8,
+  "attr": 135,
+  "access": "ro",
+  "std_index": 24672,
+  "rec": "02 00 08 00 87 00"
+ },
+ {
+  "name": "Modes of Operation Display",
+  "entry": 134369383,
+  "type": "i32",
+  "bits": 32,
+  "attr": 7,
+  "access": "rw",
+  "std_index": 24673,
+  "rec": "04 00 20 00 07 00"
+ },
+ {
+  "name": "Position demand value",
+  "entry": 134369416,
+  "type": "i32",
+  "bits": 32,
+  "attr": 7,
+  "access": "rw",
+  "std_index": 24674,
+  "rec": "04 00 20 00 07 00"
+ },
+ {
+  "name": "Position actual internal value ",
+  "entry": 134369444,
+  "type": "i32",
+  "bits": 32,
+  "attr": 135,
+  "access": "ro",
+  "std_index": null,
+  "rec": "04 00 20 00 87 00"
+ },
+ {
+  "name": "Position Actual Value",
+  "entry": 134369482,
+  "type": "u32",
+  "bits": 32,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24676,
+  "rec": "07 00 20 00 3f 00"
+ },
+ {
+  "name": "Following error window",
+  "entry": 134369510,
+  "type": "u16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24677,
+  "rec": "06 00 10 00 3f 00"
+ },
+ {
+  "name": "Following error time out",
+  "entry": 134369539,
+  "type": "u32",
+  "bits": 32,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24678,
+  "rec": "07 00 20 00 3f 00"
+ },
+ {
+  "name": "Position window",
+  "entry": 134369570,
+  "type": "u16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24679,
+  "rec": "06 00 10 00 3f 00"
+ },
+ {
+  "name": "Following error time out",
+  "entry": 134369592,
+  "type": "i32",
+  "bits": 32,
+  "attr": 7,
+  "access": "rw",
+  "std_index": 24678,
+  "rec": "04 00 20 00 07 00"
+ },
+ {
+  "name": "Velocity sensor actual value",
+  "entry": 134369623,
+  "type": "i16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24681,
+  "rec": "03 00 10 00 3f 00"
+ },
+ {
+  "name": "Sensor selection code",
+  "entry": 134369658,
+  "type": "i32",
+  "bits": 32,
+  "attr": 7,
+  "access": "rw",
+  "std_index": 24682,
+  "rec": "04 00 20 00 07 00"
+ },
+ {
+  "name": "Velocity demand value",
+  "entry": 134369686,
+  "type": "i32",
+  "bits": 32,
+  "attr": 135,
+  "access": "ro",
+  "std_index": 24683,
+  "rec": "04 00 20 00 87 00"
+ },
+ {
+  "name": "Velocity Actual Value",
+  "entry": 134369714,
+  "type": "u16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24684,
+  "rec": "06 00 10 00 3f 00"
+ },
+ {
+  "name": "Velocity window",
+  "entry": 134369742,
+  "type": "u16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24685,
+  "rec": "06 00 10 00 3f 00"
+ },
+ {
+  "name": "Velocity window time",
+  "entry": 134369764,
+  "type": "u16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24686,
+  "rec": "06 00 10 00 3f 00"
+ },
+ {
+  "name": "Velocity threshold",
+  "entry": 134369791,
+  "type": "u16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24687,
+  "rec": "06 00 10 00 3f 00"
+ },
+ {
+  "name": "Velocity threshold time",
+  "entry": 134369816,
+  "type": "i16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "03 00 10 00 3f 00"
+ },
+ {
+  "name": "Target torque",
+  "entry": 134369846,
+  "type": "u16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24689,
+  "rec": "06 00 10 00 3f 00"
+ },
+ {
+  "name": "Max torque",
+  "entry": 134369866,
+  "type": "u16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24690,
+  "rec": "06 00 10 00 3f 00"
+ },
+ {
+  "name": "Max current",
+  "entry": 134369883,
+  "type": "i16",
+  "bits": 16,
+  "attr": 7,
+  "access": "rw",
+  "std_index": 24691,
+  "rec": "03 00 10 00 07 00"
+ },
+ {
+  "name": "Torque demand value",
+  "entry": 134369901,
+  "type": "u32",
+  "bits": 32,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24692,
+  "rec": "07 00 20 00 3f 00"
+ },
+ {
+  "name": "Motor rated current",
+  "entry": 134369927,
+  "type": "u32",
+  "bits": 32,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24693,
+  "rec": "07 00 20 00 3f 00"
+ },
+ {
+  "name": "Motor rated torque",
+  "entry": 134369953,
+  "type": "i16",
+  "bits": 16,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "03 00 10 00 07 00"
+ },
+ {
+  "name": "Torque Actual Value",
+  "entry": 134369978,
+  "type": "i16",
+  "bits": 16,
+  "attr": 7,
+  "access": "rw",
+  "std_index": 24695,
+  "rec": "03 00 10 00 07 00"
+ },
+ {
+  "name": "Current actual value",
+  "entry": 134370004,
+  "type": "u32",
+  "bits": 32,
+  "attr": 7,
+  "access": "rw",
+  "std_index": 24696,
+  "rec": "07 00 20 00 07 00"
+ },
+ {
+  "name": "DC link circuit voltage",
+  "entry": 134370031,
+  "type": "i32",
+  "bits": 32,
+  "attr": 127,
+  "access": "rw",
+  "std_index": 24697,
+  "rec": "04 00 20 00 7f 00"
+ },
+ {
+  "name": "Target Position",
+  "entry": 134370061,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": 24698,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Home offset",
+  "entry": 134370174,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": 24700,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Polarity",
+  "entry": 134370274,
+  "type": "u32",
+  "bits": 32,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24702,
+  "rec": "07 00 20 00 3f 00"
+ },
+ {
+  "name": "Max profile velocity",
+  "entry": 134370289,
+  "type": "u32",
+  "bits": 32,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24703,
+  "rec": "07 00 20 00 3f 00"
+ },
+ {
+  "name": "Max motor speed",
+  "entry": 134370316,
+  "type": "u32",
+  "bits": 32,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24704,
+  "rec": "07 00 20 00 3f 00"
+ },
+ {
+  "name": "Profile velocity",
+  "entry": 134370338,
+  "type": "u32",
+  "bits": 32,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24705,
+  "rec": "07 00 20 00 3f 00"
+ },
+ {
+  "name": "End velocity",
+  "entry": 134370361,
+  "type": "u32",
+  "bits": 32,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "07 00 20 00 3f 00"
+ },
+ {
+  "name": "Profile acceleration",
+  "entry": 134370380,
+  "type": "u32",
+  "bits": 32,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24707,
+  "rec": "07 00 20 00 3f 00"
+ },
+ {
+  "name": "Profile deceleration",
+  "entry": 134370407,
+  "type": "i32",
+  "bits": 32,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24708,
+  "rec": "04 00 20 00 3f 00"
+ },
+ {
+  "name": "Quickstop Declaration",
+  "entry": 134370434,
+  "type": "i16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "03 00 10 00 3f 00"
+ },
+ {
+  "name": "Motion profile type",
+  "entry": 134370462,
+  "type": "i32",
+  "bits": 32,
+  "attr": 63,
+  "access": "rw",
+  "std_index": 24710,
+  "rec": "04 00 20 00 3f 00"
+ },
+ {
+  "name": "Torque slope",
+  "entry": 134370488,
+  "type": "i16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "03 00 10 00 3f 00"
+ },
+ {
+  "name": "Torque profile type",
+  "entry": 134370507,
+  "type": "u8",
+  "bits": 8,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 3f 00"
+ },
+ {
+  "name": "Position notation index",
+  "entry": 134370533,
+  "type": "u8",
+  "bits": 8,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 3f 00"
+ },
+ {
+  "name": "Position dimension index",
+  "entry": 134370563,
+  "type": "u8",
+  "bits": 8,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 3f 00"
+ },
+ {
+  "name": "Velocity notation index",
+  "entry": 134370594,
+  "type": "u8",
+  "bits": 8,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 3f 00"
+ },
+ {
+  "name": "Velocity dimension index",
+  "entry": 134370624,
+  "type": "u8",
+  "bits": 8,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 3f 00"
+ },
+ {
+  "name": "Acceleration notation index",
+  "entry": 134370655,
+  "type": "u8",
+  "bits": 8,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 3f 00"
+ },
+ {
+  "name": "Acceleration dimension index",
+  "entry": 134370689,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Homing method",
+  "entry": 134371332,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": 24728,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Homing acceleration",
+  "entry": 134371446,
+  "type": "u8",
+  "bits": 8,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 3f 00"
+ },
+ {
+  "name": "Profile jerk_use",
+  "entry": 134371472,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Position Offset",
+  "entry": 134371642,
+  "type": "i32",
+  "bits": 32,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "04 00 20 00 3f 00"
+ },
+ {
+  "name": "Velocity Offset",
+  "entry": 134371664,
+  "type": "i16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "03 00 10 00 3f 00"
+ },
+ {
+  "name": "Torque Offset",
+  "entry": 134371686,
+  "type": "u16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "06 00 10 00 3f 00"
+ },
+ {
+  "name": "Touch probe function ",
+  "entry": 134371706,
+  "type": "u16",
+  "bits": 16,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "06 00 10 00 07 00"
+ },
+ {
+  "name": "Touch probe status ",
+  "entry": 134371734,
+  "type": "i32",
+  "bits": 32,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "04 00 20 00 07 00"
+ },
+ {
+  "name": "Touch probe pos1 pos value ",
+  "entry": 134371760,
+  "type": "i32",
+  "bits": 32,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "04 00 20 00 07 00"
+ },
+ {
+  "name": "Touch probe pos1 neg value",
+  "entry": 134371794,
+  "type": "i32",
+  "bits": 32,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "04 00 20 00 07 00"
+ },
+ {
+  "name": "Touch probe pos2 pos value ",
+  "entry": 134371827,
+  "type": "i32",
+  "bits": 32,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "04 00 20 00 07 00"
+ },
+ {
+  "name": "Touch probe pos2 neg value",
+  "entry": 134371861,
+  "type": "i16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "03 00 10 00 3f 00"
+ },
+ {
+  "name": " Interpolation sub mode select",
+  "entry": 134371894,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Max acceleration",
+  "entry": 134372533,
+  "type": "u32",
+  "bits": 32,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "07 00 20 00 3f 00"
+ },
+ {
+  "name": "Max deceleration",
+  "entry": 134372556,
+  "type": "u16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "06 00 10 00 3f 00"
+ },
+ {
+  "name": "Positioning option code",
+  "entry": 134372579,
+  "type": "i32",
+  "bits": 32,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "04 00 20 00 07 00"
+ },
+ {
+  "name": "Following error actual value",
+  "entry": 134372609,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Max slippage",
+  "entry": 134372853,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Control effort",
+  "entry": 134373036,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Position control parameter set",
+  "entry": 134373093,
+  "type": "i32",
+  "bits": 32,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "04 00 20 00 07 00"
+ },
+ {
+  "name": "Position demand value inc",
+  "entry": 134373130,
+  "type": "u32",
+  "bits": 32,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "07 00 20 00 07 00"
+ },
+ {
+  "name": "Digital inputs",
+  "entry": 134373162,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Target Velocity",
+  "entry": 134373243,
+  "type": "u16",
+  "bits": 16,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "06 00 10 00 3f 00"
+ },
+ {
+  "name": "Motor calibration date",
+  "entry": 134373367,
+  "type": "u32",
+  "bits": 32,
+  "attr": 63,
+  "access": "rw",
+  "std_index": null,
+  "rec": "07 00 20 00 3f 00"
+ },
+ {
+  "name": "Motor service period",
+  "entry": 134373396,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Motor data",
+  "entry": 134373615,
+  "type": "u32",
+  "bits": 32,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "07 00 20 00 07 00"
+ },
+ {
+  "name": "http drive catalog address",
+  "entry": 134373712,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Drive data",
+  "entry": 134373937,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Module profile list",
+  "entry": 134374057,
+  "type": "u8",
+  "bits": 8,
+  "attr": 15,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 0f 00"
+ },
+ {
+  "name": "Configured module Ident list",
+  "entry": 134374095,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Module detected list",
+  "entry": 134374142,
+  "type": "u32",
+  "bits": 32,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "07 00 20 00 07 00"
+ },
+ {
+  "name": "Device type",
+  "entry": 134374169,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Software version",
+  "entry": 134374249,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ },
+ {
+  "name": "Sync manager type",
+  "entry": 134374446,
+  "type": "u8",
+  "bits": 8,
+  "attr": 7,
+  "access": "rw",
+  "std_index": null,
+  "rec": "05 00 08 00 07 00"
+ }
+]

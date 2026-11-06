@@ -1,0 +1,523 @@
+offset 0xAF65E
+lue is obsolete. We strongly advise against using it in new code.
+
+
+
+
+Break condition detected by the hardware on the input line. This value is obsolete. We strongly advise against using it in new code.
+
+
+
+An I/O error occurred while writing the data.
+
+
+An I/O error occurred while reading the data.
+
+
+An I/O error occurred when a resource becomes unavailable, e.g. when the device is unexpectedly removed from the system.
+
+
+
+
+
+
+
+The requested device operation is not supported or prohibited by the running operating system.
+
+An unidentified error occurred.
+A timeout error occurred.
+
+
+
+
+
+
+his error occurs when an operation is executed that can only be successfully performed if the device is open.
+DecodeBase64 File error.
+
+JsonObject is empty or invalid format
+Miss the params keyword
+
+
+Don't find this function, please check your spelling
+
+
+
+Samba is close, please open samba serve
+binding failed
+invalied firmware
+File not exist
+Can not open file
+Can not write file
+Can not copy file
+File had opened
+Can not create the folder
+Folder already exist
+Folder not exist
+Can not open folder
+Can not rename folder
+Can not enter folder
+Can not remove folder
+
+
+
+
+File or Folder operation timeout
+Fail to start up samba serve.
+Fail to modify firewall rule.
+Device has not connected.
+Device has connected.
+Device connect timeout.
+invalid request.
+invalid plugin.
+invalid method.
+Dobotlink api is busy.
+device lost its connection.
+script download failed.
+device is not connected.
+communication timeout.
+command buffer full.
+action timeout.
+action canceled.
+
+debugger is running, please stop it first.
+debugger start failed.
+invalid debugger process.
+invalid debugger dpid.
+
+
+
+
+
+write to debugger process faild.
+Setup module failed.
+Invalid params.
+Prepare failed.
+No permission.
+File can not open.
+File can not write.
+modebug process start failed.
+
+
+
+
+
+
+modebug waitting client timeout.
+mobdeug tcp bind failed.
+mobdeug udp bind failed.
+mobdeug process crashed.
+mobdeug process stop timeout
+
+
+
+
+
+
+
+mobdeug process is not running
+
+No connection !!! please connect serialport first !!!
+No this GO general api !!!
+no this MagicianGo api !!!
+
+
+
+
+no this MagicianGo Camera api !!!
+no this MagicBox api !!!
+
+
+
+
+
+the cmd receive timeout ! maybe  connection interrupted !
+http curl error(%1).
+http qt error(%1).
+NUKNOWN ERROR
+jsonrpc
+WSport
+id
+result
+error
+code
+message
+method
+params
+dobotlink
+.
+2.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+C
+
+
+
+
+
+
+
+
+portName
+/properties/controllerType
+GetConnectionState
+/connection/state
+data
+SetControlMode
+/settings/controlMode
+SetCoordinateMode2
+/interface/coordinate
+SetJogMode2
+/interface/jogMode
+ClearAlarms2
+/interface/clearAlarms
+SetOutput2
+/interface/outputs
+SetExtendIO
+/interface/extendIO
+/project/settings/common.json
+
+
+
+
+/project/settings/teach/joint.json
+
+
+
+
+
+/project/settings/teach/coordinate.json
+/project/settings/teach/inch.json
+
+
+
+
+
+
+/project/settings/playback/joint.json
+
+
+/project/settings/playback/coordinate.json
+
+
+
+
+
+/project/settings/playback/arch.json
+
+
+
+/project/settings/coordinate/tool.json
+SetToolCoordinate2
+
+
+
+
+
+
+/project/settings/coordinate/user.json
+SetUserCoordinate2
+/interface/userCoordinate
+
+
+
+
+/project/settings/function/dragSensivity.json
+SetCalibrateToolCoor
+/calibrate/coordinate/tool
+SetCalibrateToolPosition
+
+/calibrate/coordinate/tool/position
+SetCalibrateToolPose
+
+
+
+
+
+
+
+/calibrate/coordinate/tool/pose
+SetCalibrateUserCoor
+/calibrate/coordinate/user
+SetCalibrateHome
+/calibrate/home
+SetCalibrateAxis
+/calibrate/homeSingleAxis
+GetDebuggerState
+/debugger/state
+isMobdebug
+SetDebuggerStepIn
+/debugger/stepIn
+SetDebuggerStepOver
+/debugger/stepOver
+SetDebuggerDelAllb
+/debugger/delallb
+GetEmergencyStop
+/panel/emergencyStop
+GetEthernet
+/interface/ethernet
+SetAP
+/interface/setAP
+GetAP
+GetManualSpeedRatio
+/interface/manualCommon
+
+
+/project/settings/function/gpioAO.json
+
+/project/settings/function/gpioAI.json
+SetGeneralSafeSetting
+
+
+
+/settings/function/generalSafeSetting
+SetAdvancedFunc
+
+
+/settings/function/advancedFunction
+
+
+
+
+/project/settings/function/collisionDect.json
+SetSafeParams
+/settings/safeparams
+SetElecSkinReset
+/interface/resetElecSkin
+GetElecSkinReset
+SetElecSkinParams
+
+
+/settings/function/elecSkinParams
+GetElecSkinParams
+SetGoHomeCmd
+/interface/goHome
+GetGoHomeCmd
+SetAxisJointBrake
+/interface/6axisJointBrake
+GetAxisJointBrake
+SetRecurrentTrack
+/interface/recurrentTrack
+SetDebugReTrace
+/interface/debugReTrace
+GetDebugReTrace
+SetInstallPosture
+/setting/installPosture
+SetSimulatedAxies
+/setting/setSimulatedAxies
+GetPropertyAxis
+/properties/axis
+GetBusinessType
+/properties/businessType
+SetRobottiqGripperEnable
+
+
+
+/setting/function/robotiqGripperEnable
+GetRobottiqGripperEnable
+SetRobottiqGripperEnableK
+
+
+
+
+
+
+/interface/robotiqGripperEnable
+SetHitbotGripperEnable
+/interface/hitbotGripper
+GetHitbotGripperEnable
+SetHitbotGripper
+/interface/DHGripper
+SetDHGripperEnable
+/interface/DHGripperEnable
+GetDHGripperEnable
+SetDHGripper
+GetDHGripper
+SetRobotiqSixForce
+
+
+
+
+
+/settings/function/robotiqSixForce
+GetRobotiqSixForce
+
+
+/project/settings/
+
+=== all path-like strings ===
+/Enable
+/FeatureName
+/calibrate/coordinate/tool
+/calibrate/coordinate/tool/pose
+/calibrate/coordinate/tool/position
+/calibrate/coordinate/user
+/calibrate/home
+/calibrate/homeSingleAxis
+/calibrate/leftRightHand
+/connection/state
+/debugger/delallb
+/debugger/delb
+/debugger/globalVar
+/debugger/run
+/debugger/setb
+/debugger/start
+/debugger/state
+/debugger/stepIn
+/debugger/stepOver
+/debugger/stop
+/debugger/suspend
+/firmware/upgrade
+/interface/6axisJointBrake
+/interface/DHGripper
+/interface/DHGripperEnable
+/interface/ForwardCal
+/interface/InverseCal
+/interface/apiUpdate
+/interface/clearAlarms
+/interface/coordinate
+/interface/debugReTrace
+/interface/ethernet
+/interface/extendIO
+/interface/getDIMode
+/interface/go
+/interface/goHome
+/interface/goR
+/interface/hardware
+/interface/hitbotGripper
+/interface/jogMode
+/interface/listenSensor
+/interface/manualCommon
+/interface/move
+/interface/moveJ
+/interface/moveR
+/interface/outputs
+/interface/powerControl
+/interface/readCurrentEncoder
+/interface/readSensorEncoder
+/interface/reboot
+/interface/recurrentTrack
+/interface/resetCollision
+/interface/resetElecSkin
+/interface/robotiqGripperEnable
+/interface/setAP
+/interface/setDIMode
+/interface/setDIValue
+/interface/userCoordinate
+/interface/visionCoordinate
+/json
+/online
+/panel/autoManual
+/panel/auxjog
+/panel/dragTeach
+/panel/emergencyStop
+/panel/jog
+/panel/threeSwitch
+/process/auxJoint/structure
+/process/auxJoint/switch
+/project/process/identify/
+/project/process/pallet/
+/project/process/pallet/matrixParams
+/project/process/trajectory/
+/project/project/IONote
+/project/project/globalVar
+/project/properties
+/project/properties/
+/project/properties/AdvancedFunction
+/project/properties/alarm_controller
+/project/properties/alarm_servo
+/project/properties/cabinetType
+/project/properties/controllerType
+/project/properties/default
+/project/properties/driverParams
+/project/properties/structure
+/project/settings/common
+/project/settings/coordinate/tool
+/project/settings/coordinate/user
+/project/settings/function/
+/project/settings/function/CustomPoint
+/project/settings/function/PackPoint
+/project/settings/function/collisionDect
+/project/settings/function/dragSensivity
+/project/settings/function/endAI
+/project/settings/function/gpioAI
+/project/settings/function/gpioAO
+/project/settings/function/install
+/project/settings/function/ioctrl
+/project/settings/function/loadParams
+/project/settings/function/modbusctrl
+/project/settings/function/reTraceParams
+/project/settings/function/remoteControl
+/project/settings/hot_key
+/project/settings/playback/arch
+/project/settings/playback/coordinate
+/project/settings/playback/joint
+/project/settings/productInfo/hardwareInfo
+/project/settings/productInfo/userParam
+/project/settings/teach/coordinate
+/project/settings/teach/inch
+/project/settings/teach/joint
+/project/teachFileDelete
+/project/teachFileUpdate
+/properties/advancedFunction
+/properties/axis
+/properties/businessType
+/properties/cabinetType
+/properties/controllerType
+/protocol/exchange
+/setting/function/robotiqGripperEnable
+/setting/installPosture
+/setting/setSimulatedAxies
+/settings/autoIdentify
+/settings/calcInstall
+/settings/common
+/settings/controlMode
+/settings/coordinate/tool
+/settings/coordinate/user
+/settings/driver/userParam
+/settings/function/advancedFunction
+/settings/function/ccboxVoltage
+/settings/function/collisionDect
+/settings/function/dragSensivity
+/settings/function/elecSkin
+/settings/function/elecSkinParams
+/settings/function/endAI
+/settings/function/generalSafeSetting
+/settings/function/gpioAI
+/settings/function/gpioAO
+/settings/function/install
+/settings/function/ioctrl
+/settings/function/loadParams
+/settings/function/modbusctrl
+/settings/function/postureCalc
+/settings/function/reTraceParams
+/settings/function/remoteControl
+/settings/function/robotiqSixForce
+/settings/function/safeSignal
+/settings/function/scriptParams
+/settings/function/workModeDI
+/settings/function/workModeDO
+/settings/playback/arch
+/settings/playback/auxJoint
+/settings/playback/coordinate
+/settings/playback/joint
+/settings/safeparams
+/settings/systemTime
+/settings/teach/auxJoint
+/settings/teach/coordinate
+/settings/teach/inch
+/settings/teach/joint
+/settings/version
+/settings/workTimeRec
+/user

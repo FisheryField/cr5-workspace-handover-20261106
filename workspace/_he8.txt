@@ -1,0 +1,86 @@
+=== nEncoderChannel ===
+
+=== 19:27:04 前后 60 行 ===
+[2026-09-18 19:26:58.972] [15] [info] [readJsonFile#3092] enter this function, read file:/dobot/userdata/project/settings/function/install.json.
+
+[INFO][algs_framework.cpp@algs_framework_run()#132] RealtimeHeartbeat: 675000 
+
+[2026-09-18 19:27:03.988] [15] [info] [conn_req_dir#11436] 192.168.5.100:55473 POST uri : /calibrate/home
+
+[INFO][algs/src/common/command.cpp@OnHOMECmd()#373] Command OnHOMECmd executed 
+
+[2026-09-18 19:27:03.996] [15] [info] [checkRequestLoop#595] isRequestCalihome true
+
+[2026-09-18 19:27:03.996] [15] [info] [updateEncoderData#489]  enter ...
+
+[2026-09-18 19:27:03.996] [15] [info] [updateEncoderData#507] HomeNumdone : 0
+
+[2026-09-18 19:27:03.996] [15] [info] [updateEncoderData#512] servo calihome not done , count:9
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2054] PoseTrace: gRobotAxisMove.nextPos:  -0.000000,12.731092,-3.427478,21.055884,15.903706,20.125541
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2055] PoseTrace: (PDO0x6062)Position demand value:  8.230689,12.731092,-3.427478,21.055884,15.903706,20.125541
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2056] PoseTrace: gActualPosition:  -0.000000,-0.011585,-0.911808,-0.572821,0.324016,2.180069
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2058] PoseTrace: nextPose: -187.209032, -239.487504, 1031.455166, -77.614814, 48.863424, -157.570369 
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2060] PoseTrace: DemandPose: -148.622280, -265.165804, 1031.455166, -77.614814, 48.863424, -148.825496 
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2062] PoseTrace: ActualPose: 10.588157, -245.240782, 1047.788448, -89.780494, 0.683490, -179.802836 
+
+[2026-09-18 19:27:04.296] [15] [info] [updateEncoderData#507] HomeNumdone : 2
+
+[2026-09-18 19:27:04.296] [15] [info] [updateEncoderData#512] servo calihome not done , count:8
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2054] PoseTrace: gRobotAxisMove.nextPos:  0.000000,0.000000,0.000000,-0.575316,15.903706,20.125541
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2055] PoseTrace: (PDO0x6062)Position demand value:  8.230689,12.523636,-3.431578,21.055884,15.903706,20.125541
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2056] PoseTrace: gActualPosition:  -0.000178,-0.003921,0.000356,-0.575316,0.322412,2.179891
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2058] PoseTrace: nextPose: 30.902568, -241.053606, 1047.627023, -89.922557, 19.555855, -164.204706 
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2060] PoseTrace: DemandPose: -145.417984, -264.702907, 1032.128745, -77.739734, 48.668550, -148.919327 
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2062] PoseTrace: ActualPose: 2.934283, -245.182966, 1047.912486, -89.770314, 1.600590, -179.804868 
+
+[2026-09-18 19:27:04.596] [15] [info] [updateEncoderData#507] HomeNumdone : 4
+
+[2026-09-18 19:27:04.596] [15] [info] [updateEncoderData#512] servo calihome not done , count:7
+
+[2026-09-18 19:27:04.896] [15] [info] [updateEncoderData#507] HomeNumdone : 6
+
+[2026-09-18 19:27:04.896] [15] [info] [updateEncoderData#509] servo calihome done ...
+
+[2026-09-18 19:27:04.896] [15] [info] [updateEncoderData#15707]  enter ...
+
+[2026-09-18 19:27:04.896] [15] [info] [updateEncoderData#15790]  enter ...
+
+[2026-09-18 19:27:04.896] [15] [info] [writeJsonFile#3114] enter this function, write file:/dobot/userdata/project/settings/function/homeEncoder.json.
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2054] PoseTrace: gRobotAxisMove.nextPos:  0.000000,0.000000,0.000000,0.000000,0.000000,0.000000
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2055] PoseTrace: (PDO0x6062)Position demand value:  8.230689,12.523636,-3.431578,21.034675,15.904241,20.123224
+
+=== 各二进制里的 offset/zero 符号 ===
+##### /dobot/bin/gcontrol
+_ZN10PluginBase16alloc_SetHOMECmdEP10tagHOMECmdi
+_ZN10PluginBase19alloc_SetHOMEParamsEP13tagHOMEParamsi
+##### /dobot/bin/lib/libdataSvr.so.1.0.0
+_ZN10PluginBase19alloc_SetHOMEParamsEP13tagHOMEParamsi
+_ZN10PluginBase16alloc_SetHOMECmdEP10tagHOMECmdi
+alloc_SetHOMECmd(&cmd, 0) error
+_ZN10PluginBase16alloc_SetHOMECmdEP10tagHOMECmdi
+_ZN10PluginBase19alloc_SetHOMEParamsEP13tagHOMEParamsi
+##### /usr/lib/libCmpDobot6Axes.so
+m_SetEncoderCnt
+m_PositionOffset
+m_EncoderCnt
+HomeFlag
+##### Application.app
+Axis orientation interpolation: configuration of offset position kinematics differs.
+Kinematics does not implement ISMPositionKinematics_Offset2 (internal error).
+Axis orientation interpolation: Konfiguration der Positions-Kinematik mit Offset unterschiedlich.
+Kinematik implementiert nicht ISMPositionKinematics_Offset2 (interner Fehler).
+=== libCmpDobot6Axes 符号 ===

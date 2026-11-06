@@ -1,0 +1,41 @@
+=== ls ===
+-rw-r--r--    1 root     root           627 Sep 18 19:27 /dobot/userdata/CR5_sys_files/project/settings/function/homeEncoder.json
+=== 内容 ===
+{
+    "encoder": [
+        {
+            "innerEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "outEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "jointHomeState": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "date": "2026-09-18",
+            "time": "19:27:04"
+        }
+    ]
+}
+=== settings/function 目录全览 ===
+=== 全盘搜 homeEncoder ===
+/dobot/userdata/CR5_sys_files/project/settings/function/homeEncoder.json
+=== 对照：projectOld 里有没有 ===
+=== 当前时间 ===
+Fri Sep 18 19:28:05 CST 2026

@@ -1,0 +1,82 @@
+[
+    {
+        "enable": true,
+        "params": {
+            "endHeight": 20,
+            "startHeight": 20,
+            "zLimit": 50
+        }
+    },
+    {
+        "enable": false,
+        "params": {
+            "endHeight": 20,
+            "startHeight": 20,
+            "zLimit": 50
+        }
+    },
+    {
+        "enable": false,
+        "params": {
+            "endHeight": 20,
+            "startHeight": 20,
+            "zLimit": 50
+        }
+    },
+    {
+        "enable": false,
+        "params": {
+            "endHeight": 20,
+            "startHeight": 20,
+            "zLimit": 50
+        }
+    },
+    {
+        "enable": false,
+        "params": {
+            "endHeight": 20,
+            "startHeight": 20,
+            "zLimit": 50
+        }
+    },
+    {
+        "enable": false,
+        "params": {
+            "endHeight": 20,
+            "startHeight": 20,
+            "zLimit": 50
+        }
+    },
+    {
+        "enable": false,
+        "params": {
+            "endHeight": 20,
+            "startHeight": 20,
+            "zLimit": 50
+        }
+    },
+    {
+        "enable": false,
+        "params": {
+            "endHeight": 20,
+            "startHeight": 20,
+            "zLimit": 50
+        }
+    },
+    {
+        "enable": false,
+        "params": {
+            "endHeight": 20,
+            "startHeight": 20,
+            "zLimit": 50
+        }
+    },
+    {
+        "enable": false,
+        "params": {
+            "endHeight": 20,
+            "startHeight": 20,
+            "zLimit": 50
+        }
+    }
+]

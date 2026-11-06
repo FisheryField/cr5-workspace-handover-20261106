@@ -1,0 +1,12 @@
+=== store J1 (slave 3) parameters ===
+slaves=9  mode=store
+store params on slave 3 (0x1010:01) -> wkc=0
+=== re-read ===
+slaves=9  mode=read
+  slave 3  pos=2976          home_offset=2976        
+  slave 4  pos=-132          home_offset=0           
+  slave 5  pos=-5019         home_offset=0           
+  slave 6  pos=3117          home_offset=0           
+  slave 7  pos=-1708         home_offset=0           
+  slave 8  pos=-12200        home_offset=0           
+=== reboot ===

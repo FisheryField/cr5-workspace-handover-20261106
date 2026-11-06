@@ -1,0 +1,53 @@
+=== libCmpDobot6Axes.so 里的文件路径/持久化 ===
+.data
+.data.rel.ro
+.init
+.init_array
+/home/dobot/Desktop/SVN/CmpDobot6Axes/CmpDobot6Axes_Corobot_V1.1/Linux
+/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/glibc.git~release~2.25~master/csu
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/7.5.0/include
+=== libCmpDobot6Axes.so 全部路径样字符串 ===
+/"KK
+/0////
+/K{D
+/home/dobot/Desktop/SVN/CmpDobot6Axes/CmpDobot6Axes_Corobot_V1.1/Linux
+/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/glibc.git~release~2.25~master/csu
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/7.5.0/include
+=== libIoDrvDobIO.so 路径 ===
+/home/dobot/Desktop/SVN/Linux/include/uapi/linux/spi
+/home/dobot/Desktop/SVN/SZYJ_0x1_CORTEX_Linux_V3.5.12.30_NwIvVus2YS/Components
+/home/dobot/Desktop/SVN/SZYJ_0x1_CORTEX_Linux_V3.5.12.30_NwIvVus2YS/Platforms/Linux
+/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/glibc.git~release~2.25~master/csu
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/asm-generic
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/types
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/7.5.0/include
+/opt/source/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/7.5.0/include-fixed
+P_tmpdir "/tmp"
+=== 找 CODESYS 运行时与 EtherCAT 主站库 ===
+/usr/lib/libCmpDobot6Axes.so
+/home/ftp/.lib/libCmpDobot6Axes.so
+=== /opt/codesys 目录树 ===
+/opt/codesys
+/opt/codesys/Platforms
+/opt/codesys/Platforms/Linux
+/opt/codesys/Platforms/Linux/Bin
+=== 当前 codesyscontrol 进程与 cwd ===
+  373 root       6:07 ./codesyscontrol

@@ -1,0 +1,60 @@
+{
+    "encoder": [
+        {
+            "innerEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "outEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "jointHomeState": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "date": "2026-09-18",
+            "time": "19:27:04"
+        },
+        {
+            "innerEncoder": [
+                588340.0,
+                -180525.0,
+                -580249.0,
+                389412.0,
+                -729378.0,
+                586714.0
+            ],
+            "outEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "jointHomeState": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "date": "2026-09-22",
+            "time": "12:01:40"
+        }
+    ]
+}

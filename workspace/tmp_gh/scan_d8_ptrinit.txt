@@ -1,0 +1,3 @@
+# program=v328d8.elf  mode=ptrinit
+### stores whose stored value or base points into 0x20000040..0x20000090
+

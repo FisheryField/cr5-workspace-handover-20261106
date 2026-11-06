@@ -1,0 +1,15 @@
+=== uptime ===
+618.25 2234.87
+ 15:37:35 up 10 min,  1 users,  load average: 0.92, 0.75, 0.40
+=== now ===
+Fri Sep 18 15:37:35 CST 2026
+=== boot-ish: smbd start time ===
+total 20
+drwxr-xr-x    5 root     root          4096 Sep 18 15:27 .
+drwxrwxr-x    9 1025     1025          4096 Sep 18 15:27 ..
+drwxr-xr-x    2 root     root          4096 Sep 18 15:27 private
+drwxr-xr-x    2 root     root          4096 Sep 18 15:27 swat
+drwxr-xr-x    5 root     root          4096 Sep 18 15:27 var
+=== who is on 445 ===
+=== dmesg-ish last boot ===
+cpu  14545 0 8167 223494 496 0 605 0 0 0

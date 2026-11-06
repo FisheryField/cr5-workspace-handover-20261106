@@ -1,0 +1,46 @@
+=== 哪些二进制包含 /calibrate/ 或 /properties/ ===
+33  /dobot/bin/gcontrol
+1  /dobot/bin/logServer
+40  /dobot/bin/lib/libdataSvr.so
+40  /dobot/bin/lib/libdataSvr.so.1
+40  /dobot/bin/lib/libdataSvr.so.1.0
+40  /dobot/bin/lib/libdataSvr.so.1.0.0
+33  /dobot/bin/lib/libdataSvrPlugin.so
+33  /dobot/bin/lib/libdataSvrPlugin.so.1
+33  /dobot/bin/lib/libdataSvrPlugin.so.1.0
+33  /dobot/bin/lib/libdataSvrPlugin.so.1.0.0
+=== 含 /calibrate/home 的文件 ===
+=== 22000 端口的进程与加载的库 ===
+tcp        0      0 0.0.0.0:22000           0.0.0.0:*               LISTEN      373/codesyscontrol
+pid=373
+/dobot/bin/lib/libalgs_framework.so.1.0.0
+/dobot/bin/lib/libdataSvr.so.1.0.0
+/dobot/bin/lib/libevent-2.1.so.6.0.2
+/dobot/bin/lib/libhiredis.so.0.13
+/dobot/bin/lib/libjemalloc.so.2
+/dobot/bin/lib/libmodbus.so
+/dobot/bin/lib/libsqlite3.so.0.8.6
+/dobot/bin/lib/libusb-1.0.so.0
+/dobot/bin/lib/libutils.so.1.0.0
+/dobot/bin/lib/libz.so.1
+/lib/ld-linux-armhf.so.3
+/lib/libc.so.6
+/lib/libdl.so.2
+/lib/libgcc_s.so.1
+/lib/libm.so.6
+/lib/libpthread.so.0
+/lib/librt.so.1
+/lib/libstdc++.so.6
+/usr/lib/libCmpDobot6Axes.so
+/usr/lib/libIoDrvDobIO.so
+/usr/local/qt-4.8.6/lib/libQtCore.so.4
+/usr/local/qt-4.8.6/lib/libQtNetwork.so.4
+/usr/local/qt-4.8.6/lib/libts-0.0.so.0
+=== fifo / 共享内存 ===
+prwxrwxrwx    1 root     root             0 Sep 18 16:56 /dobot/bin/fifoCodesys
+prwxrwxrwx    1 root     root             0 Sep 18 17:03 /dobot/bin/fifoGcontrol
+=== 进程列表(关键) ===
+  216 root       2:44 /dobot/bin/logServer
+  264 root       0:11 /dobot/bin/bin/redis-server 127.0.0.1:6379
+  303 root       2:11 /dobot/bin/gcontrol
+  373 root      29:38 ./codesyscontrol

@@ -1,0 +1,1904 @@
+=== code: <module> (file C:\RoboDK\api\robot\DobotCRDriver.py:1) ===
+  1           0 LOAD_CONST               0 (0)
+              2 LOAD_CONST               1 (None)
+              4 IMPORT_NAME              0 (socket)
+              6 STORE_NAME               0 (socket)
+
+  2           8 LOAD_CONST               0 (0)
+             10 LOAD_CONST               1 (None)
+             12 IMPORT_NAME              1 (struct)
+             14 STORE_NAME               1 (struct)
+
+  3          16 LOAD_CONST               0 (0)
+             18 LOAD_CONST               1 (None)
+             20 IMPORT_NAME              2 (sys)
+             22 STORE_NAME               2 (sys)
+
+  4          24 LOAD_CONST               0 (0)
+             26 LOAD_CONST               1 (None)
+             28 IMPORT_NAME              3 (re)
+             30 STORE_NAME               3 (re)
+
+  5          32 LOAD_CONST               0 (0)
+             34 LOAD_CONST               2 (('BytesIO',))
+             36 IMPORT_NAME              4 (io)
+             38 IMPORT_FROM              5 (BytesIO)
+             40 STORE_NAME               5 (BytesIO)
+             42 POP_TOP
+
+  6          44 LOAD_CONST               0 (0)
+             46 LOAD_CONST               1 (None)
+             48 IMPORT_NAME              6 (dobot_api)
+             50 STORE_NAME               6 (dobot_api)
+
+  7          52 LOAD_CONST               0 (0)
+             54 LOAD_CONST               3 (('*',))
+             56 IMPORT_NAME              6 (dobot_api)
+             58 IMPORT_STAR
+
+ 11          60 LOAD_CONST               4 (6)
+             62 STORE_NAME               7 (nDOFs_MIN)
+
+ 13          64 LOAD_CONST               5 (True)
+             66 STORE_NAME               8 (DEBUG)
+
+ 16          68 LOAD_CONST               6 ('RoboDK Driver for Dobot CR5 v2.0.1')
+             70 STORE_NAME               9 (DRIVER_VERSION)
+
+ 21          72 LOAD_BUILD_CLASS
+             74 LOAD_CONST               7 (<code object ComRobot at 0x000001C22A44E130, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 21>)
+             76 LOAD_CONST               8 ('ComRobot')
+             78 MAKE_FUNCTION            0
+             80 LOAD_CONST               8 ('ComRobot')
+             82 CALL_FUNCTION            2
+             84 STORE_NAME              10 (ComRobot)
+
+149          86 LOAD_NAME               10 (ComRobot)
+             88 CALL_FUNCTION            0
+             90 STORE_GLOBAL            11 (ROBOT)
+
+150          92 LOAD_CONST               9 ('192.168.5.1')
+             94 STORE_GLOBAL            12 (ROBOT_IP)
+
+151          96 LOAD_CONST              10 (29999)
+             98 STORE_GLOBAL            13 (ROBOT_PORT)
+
+152         100 LOAD_CONST              11 (False)
+            102 STORE_GLOBAL            14 (ROBOT_MOVING)
+
+157         104 LOAD_CONST              12 (<code object RobotConnect at 0x000001C22A44E1E0, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 157>)
+            106 LOAD_CONST              13 ('RobotConnect')
+            108 MAKE_FUNCTION            0
+            110 STORE_NAME              15 (RobotConnect)
+
+165         112 LOAD_CONST              14 (<code object RobotDisconnect at 0x000001C22A44E290, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 165>)
+            114 LOAD_CONST              15 ('RobotDisconnect')
+            116 MAKE_FUNCTION            0
+            118 STORE_NAME              16 (RobotDisconnect)
+
+176         120 LOAD_CONST              16 (<code object print_message at 0x000001C22A44E340, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 176>)
+            122 LOAD_CONST              17 ('print_message')
+            124 MAKE_FUNCTION            0
+            126 STORE_NAME              17 (print_message)
+
+186         128 LOAD_CONST              18 (<code object show_message at 0x000001C22A44E3F0, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 186>)
+            130 LOAD_CONST              19 ('show_message')
+            132 MAKE_FUNCTION            0
+            134 STORE_NAME              18 (show_message)
+
+192         136 LOAD_CONST              20 (<code object print_response at 0x000001C22A44E4A0, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 192>)
+            138 LOAD_CONST              21 ('print_response')
+            140 MAKE_FUNCTION            0
+            142 STORE_NAME              19 (print_response)
+
+202         144 LOAD_CONST              22 (<code object print_commands at 0x000001C22A44E550, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 202>)
+            146 LOAD_CONST              23 ('print_commands')
+            148 MAKE_FUNCTION            0
+            150 STORE_NAME              20 (print_commands)
+
+212         152 LOAD_CONST              43 ((False,))
+            154 LOAD_CONST              24 (<code object print_joints at 0x000001C22A44E810, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 212>)
+            156 LOAD_CONST              25 ('print_joints')
+            158 MAKE_FUNCTION            1 (defaults)
+            160 STORE_NAME              21 (print_joints)
+
+248         162 LOAD_CONST              26 (-1000)
+            164 STORE_NAME              22 (ROBOTCOM_UNKNOWN)
+
+249         166 LOAD_CONST              27 (-3)
+            168 STORE_NAME              23 (ROBOTCOM_CONNECTION_PROBLEMS)
+
+250         170 LOAD_CONST              28 (-2)
+            172 STORE_NAME              24 (ROBOTCOM_DISCONNECTED)
+
+251         174 LOAD_CONST              29 (-1)
+            176 STORE_NAME              25 (ROBOTCOM_NOT_CONNECTED)
+
+252         178 LOAD_CONST               0 (0)
+            180 STORE_NAME              26 (ROBOTCOM_READY)
+
+253         182 LOAD_CONST              30 (1)
+            184 STORE_NAME              27 (ROBOTCOM_WORKING)
+
+254         186 LOAD_CONST              31 (2)
+            188 STORE_NAME              28 (ROBOTCOM_WAITING)
+
+257         190 LOAD_NAME               24 (ROBOTCOM_DISCONNECTED)
+            192 STORE_GLOBAL            29 (STATUS)
+
+260         194 LOAD_CONST              44 ((None,))
+            196 LOAD_CONST              32 (<code object UpdateStatus at 0x000001C22A44E8C0, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 260>)
+            198 LOAD_CONST              33 ('UpdateStatus')
+            200 MAKE_FUNCTION            1 (defaults)
+            202 STORE_NAME              30 (UpdateStatus)
+
+289         204 LOAD_CONST              34 (<code object TestDriver at 0x000001C22A44E970, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 289>)
+            206 LOAD_CONST              35 ('TestDriver')
+            208 MAKE_FUNCTION            0
+            210 STORE_NAME              31 (TestDriver)
+
+308         212 LOAD_CONST              36 (<code object RunDriver at 0x000001C22A44EA20, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 308>)
+            214 LOAD_CONST              37 ('RunDriver')
+            216 MAKE_FUNCTION            0
+            218 STORE_NAME              32 (RunDriver)
+
+316         220 LOAD_CONST              38 (<code object RunCommand at 0x000001C22A44EB80, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 316>)
+            222 LOAD_CONST              39 ('RunCommand')
+            224 MAKE_FUNCTION            0
+            226 STORE_NAME              33 (RunCommand)
+
+564         228 LOAD_CONST              40 (<code object RunMain at 0x000001C22A44EC30, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 564>)
+            230 LOAD_CONST              41 ('RunMain')
+            232 MAKE_FUNCTION            0
+            234 STORE_NAME              34 (RunMain)
+
+611         236 LOAD_NAME               35 (__name__)
+            238 LOAD_CONST              42 ('__main__')
+            240 COMPARE_OP               2 (==)
+            242 POP_JUMP_IF_FALSE      128 (to 256)
+
+612         244 NOP
+
+614         246 LOAD_NAME               34 (RunMain)
+            248 CALL_FUNCTION            0
+            250 POP_TOP
+            252 LOAD_CONST               1 (None)
+            254 RETURN_VALUE
+
+611     >>  256 LOAD_CONST               1 (None)
+            258 RETURN_VALUE
+
+  === code: ComRobot (file C:\RoboDK\api\robot\DobotCRDriver.py:21) ===
+ 21           0 LOAD_NAME                0 (__name__)
+              2 STORE_NAME               1 (__module__)
+              4 LOAD_CONST               0 ('ComRobot')
+              6 STORE_NAME               2 (__qualname__)
+
+ 22           8 LOAD_CONST               1 ('\n    Communication class for Dobot CR robots.\n\n    This class handles communication between this driver (PC) and the robot.\n    ')
+             10 STORE_NAME               3 (__doc__)
+
+ 27          12 LOAD_CONST               2 (False)
+             14 STORE_NAME               4 (CONNECTED)
+
+ 30          16 LOAD_CONST               3 (<code object __init__ at 0x000001C22A44D6E0, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 30>)
+             18 LOAD_CONST               4 ('ComRobot.__init__')
+             20 MAKE_FUNCTION            0
+             22 STORE_NAME               5 (__init__)
+
+ 36          24 LOAD_CONST               5 (<code object disconnect at 0x000001C22A44D4D0, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 36>)
+             26 LOAD_CONST               6 ('ComRobot.disconnect')
+             28 MAKE_FUNCTION            0
+             30 STORE_NAME               6 (disconnect)
+
+ 46          32 LOAD_CONST              25 ((29999,))
+             34 LOAD_CONST               8 (<code object connect at 0x000001C22A44D9A0, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 46>)
+             36 LOAD_CONST               9 ('ComRobot.connect')
+             38 MAKE_FUNCTION            1 (defaults)
+             40 STORE_NAME               7 (connect)
+
+ 73          42 LOAD_CONST              26 ((None,))
+             44 LOAD_CONST              11 (<code object SendGetAngleCommands at 0x000001C22A44DA50, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 73>)
+             46 LOAD_CONST              12 ('ComRobot.SendGetAngleCommands')
+             48 MAKE_FUNCTION            1 (defaults)
+             50 STORE_NAME               8 (SendGetAngleCommands)
+
+ 80          52 LOAD_CONST              13 (<code object SendJointMovJCommands at 0x000001C22A44DB00, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 80>)
+             54 LOAD_CONST              14 ('ComRobot.SendJointMovJCommands')
+             56 MAKE_FUNCTION            0
+             58 STORE_NAME               9 (SendJointMovJCommands)
+
+ 96          60 LOAD_CONST              15 (<code object SendSpeedCommands at 0x000001C22A44DDC0, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 96>)
+             62 LOAD_CONST              16 ('ComRobot.SendSpeedCommands')
+             64 MAKE_FUNCTION            0
+             66 STORE_NAME              10 (SendSpeedCommands)
+
+115          68 LOAD_CONST              17 (<code object SendCommandDO at 0x000001C22A44DE70, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 115>)
+             70 LOAD_CONST              18 ('ComRobot.SendCommandDO')
+             72 MAKE_FUNCTION            0
+             74 STORE_NAME              11 (SendCommandDO)
+
+126          76 LOAD_CONST              19 (<code object SendCommandWaitDI at 0x000001C22A44DF20, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 126>)
+             78 LOAD_CONST              20 ('ComRobot.SendCommandWaitDI')
+             80 MAKE_FUNCTION            0
+             82 STORE_NAME              12 (SendCommandWaitDI)
+
+137          84 LOAD_CONST              21 (<code object SendCommandPause at 0x000001C22A44DFD0, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 137>)
+             86 LOAD_CONST              22 ('ComRobot.SendCommandPause')
+             88 MAKE_FUNCTION            0
+             90 STORE_NAME              13 (SendCommandPause)
+
+141          92 LOAD_CONST              23 (<code object SendCommand at 0x000001C22A44E080, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 141>)
+             94 LOAD_CONST              24 ('ComRobot.SendCommand')
+             96 MAKE_FUNCTION            0
+             98 STORE_NAME              14 (SendCommand)
+            100 LOAD_CONST              10 (None)
+            102 RETURN_VALUE
+
+    === code: __init__ (file C:\RoboDK\api\robot\DobotCRDriver.py:30) ===
+ 31           0 LOAD_CONST               1 (512)
+              2 LOAD_FAST                0 (self)
+              4 STORE_ATTR               0 (BUFFER_SIZE)
+
+ 32           6 LOAD_CONST               2 (300)
+              8 LOAD_FAST                0 (self)
+             10 STORE_ATTR               1 (TIMEOUT)
+
+ 33          12 LOAD_CONST               0 (None)
+             14 LOAD_FAST                0 (self)
+             16 STORE_ATTR               2 (sock)
+
+ 34          18 LOAD_CONST               0 (None)
+             20 LOAD_FAST                0 (self)
+             22 STORE_ATTR               3 (robot)
+             24 LOAD_CONST               0 (None)
+             26 RETURN_VALUE
+
+    === code: disconnect (file C:\RoboDK\api\robot\DobotCRDriver.py:36) ===
+ 38           0 LOAD_CONST               1 (False)
+              2 LOAD_FAST                0 (self)
+              4 STORE_ATTR               0 (CONNECTED)
+
+ 39           6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                1 (sock)
+             10 POP_JUMP_IF_FALSE       25 (to 50)
+
+ 40          12 SETUP_FINALLY            8 (to 30)
+
+ 41          14 LOAD_FAST                0 (self)
+             16 LOAD_ATTR                2 (robot)
+             18 LOAD_METHOD              3 (close)
+             20 CALL_METHOD              0
+             22 POP_TOP
+             24 POP_BLOCK
+
+ 44          26 LOAD_CONST               2 (True)
+             28 RETURN_VALUE
+
+ 42     >>   30 DUP_TOP
+             32 LOAD_GLOBAL              4 (OSError)
+             34 JUMP_IF_NOT_EXC_MATCH    24 (to 48)
+             36 POP_TOP
+             38 POP_TOP
+             40 POP_TOP
+
+ 43          42 POP_EXCEPT
+             44 LOAD_CONST               1 (False)
+             46 RETURN_VALUE
+
+ 42     >>   48 RERAISE                  0
+
+ 44     >>   50 LOAD_CONST               2 (True)
+             52 RETURN_VALUE
+
+    === code: connect (file C:\RoboDK\api\robot\DobotCRDriver.py:46) ===
+ 49           0 LOAD_FAST                0 (self)
+              2 LOAD_METHOD              0 (disconnect)
+              4 CALL_METHOD              0
+              6 POP_TOP
+
+ 50           8 LOAD_GLOBAL              1 (print_message)
+             10 LOAD_CONST               1 ('Connecting to robot %s:%i')
+             12 LOAD_FAST                1 (ip)
+             14 LOAD_FAST                2 (port)
+             16 BUILD_TUPLE              2
+             18 BINARY_MODULO
+             20 CALL_FUNCTION            1
+             22 POP_TOP
+
+ 52          24 LOAD_GLOBAL              2 (DobotApiExtendFromRoboDK)
+             26 LOAD_FAST                1 (ip)
+             28 LOAD_FAST                2 (port)
+             30 CALL_FUNCTION            2
+             32 LOAD_FAST                0 (self)
+             34 STORE_ATTR               3 (robot)
+
+ 53          36 LOAD_GLOBAL              4 (UpdateStatus)
+             38 LOAD_GLOBAL              5 (ROBOTCOM_WORKING)
+             40 CALL_FUNCTION            1
+             42 POP_TOP
+
+ 54          44 LOAD_CONST               2 (True)
+             46 LOAD_FAST                0 (self)
+             48 STORE_ATTR               6 (CONNECTED)
+
+ 55          50 NOP
+
+ 71          52 LOAD_CONST               2 (True)
+             54 RETURN_VALUE
+
+    === code: SendGetAngleCommands (file C:\RoboDK\api\robot\DobotCRDriver.py:73) ===
+ 75           0 LOAD_FAST                0 (self)
+              2 LOAD_ATTR                0 (CONNECTED)
+              4 POP_JUMP_IF_TRUE         9 (to 18)
+
+ 76           6 LOAD_GLOBAL              1 (UpdateStatus)
+              8 LOAD_GLOBAL              2 (ROBOTCOM_NOT_CONNECTED)
+             10 CALL_FUNCTION            1
+             12 POP_TOP
+
+ 77          14 LOAD_CONST               1 (False)
+             16 RETURN_VALUE
+
+ 78     >>   18 LOAD_FAST                0 (self)
+             20 LOAD_ATTR                3 (robot)
+             22 LOAD_METHOD              4 (getAngle)
+             24 CALL_METHOD              0
+             26 RETURN_VALUE
+
+    === code: SendJointMovJCommands (file C:\RoboDK\api\robot\DobotCRDriver.py:80) ===
+ 82           0 LOAD_FAST                0 (self)
+              2 LOAD_ATTR                0 (CONNECTED)
+              4 POP_JUMP_IF_TRUE         9 (to 18)
+
+ 83           6 LOAD_GLOBAL              1 (UpdateStatus)
+              8 LOAD_GLOBAL              2 (ROBOTCOM_NOT_CONNECTED)
+             10 CALL_FUNCTION            1
+             12 POP_TOP
+
+ 84          14 LOAD_CONST               1 (False)
+             16 RETURN_VALUE
+
+ 86     >>   18 LOAD_GLOBAL              3 (print)
+             20 LOAD_CONST               2 ('Enabling Robot..')
+             22 CALL_FUNCTION            1
+             24 POP_TOP
+
+ 87          26 SETUP_FINALLY            7 (to 42)
+
+ 88          28 LOAD_FAST                0 (self)
+             30 LOAD_ATTR                4 (robot)
+             32 LOAD_METHOD              5 (EnableRobot)
+             34 CALL_METHOD              0
+             36 POP_TOP
+             38 POP_BLOCK
+             40 JUMP_FORWARD            12 (to 66)
+
+ 89     >>   42 POP_TOP
+             44 POP_TOP
+             46 POP_TOP
+
+ 90          48 LOAD_GLOBAL              6 (print_message)
+             50 LOAD_CONST               3 ('Unable to enable the robot. Is the robot already connected?')
+             52 CALL_FUNCTION            1
+             54 POP_TOP
+
+ 91          56 LOAD_GLOBAL              7 (quit)
+             58 LOAD_CONST               4 (0)
+             60 CALL_FUNCTION            1
+             62 POP_TOP
+             64 POP_EXCEPT
+
+ 93     >>   66 LOAD_GLOBAL              3 (print)
+             68 LOAD_CONST               5 ('Start to MoveJoint..')
+             70 CALL_FUNCTION            1
+             72 POP_TOP
+
+ 94          74 LOAD_FAST                0 (self)
+             76 LOAD_ATTR                4 (robot)
+             78 LOAD_METHOD              8 (JointMovJ)
+             80 LOAD_FAST                1 (values)
+             82 LOAD_CONST               4 (0)
+             84 BINARY_SUBSCR
+             86 LOAD_FAST                1 (values)
+             88 LOAD_CONST               6 (1)
+             90 BINARY_SUBSCR
+             92 LOAD_FAST                1 (values)
+             94 LOAD_CONST               7 (2)
+             96 BINARY_SUBSCR
+             98 LOAD_FAST                1 (values)
+            100 LOAD_CONST               8 (3)
+            102 BINARY_SUBSCR
+            104 LOAD_FAST                1 (values)
+            106 LOAD_CONST               9 (4)
+            108 BINARY_SUBSCR
+            110 LOAD_FAST                1 (values)
+            112 LOAD_CONST              10 (5)
+            114 BINARY_SUBSCR
+            116 CALL_METHOD              6
+            118 POP_TOP
+            120 LOAD_CONST               0 (None)
+            122 RETURN_VALUE
+
+    === code: SendSpeedCommands (file C:\RoboDK\api\robot\DobotCRDriver.py:96) ===
+ 97           0 LOAD_FAST                0 (self)
+              2 LOAD_ATTR                0 (CONNECTED)
+              4 POP_JUMP_IF_TRUE         9 (to 18)
+
+ 98           6 LOAD_GLOBAL              1 (UpdateStatus)
+              8 LOAD_GLOBAL              2 (ROBOTCOM_NOT_CONNECTED)
+             10 CALL_FUNCTION            1
+             12 POP_TOP
+
+ 99          14 LOAD_CONST               1 (False)
+             16 RETURN_VALUE
+
+101     >>   18 LOAD_FAST                1 (cmd)
+             20 LOAD_CONST               2 (0)
+             22 BINARY_SUBSCR
+             24 LOAD_CONST               2 (0)
+             26 COMPARE_OP               4 (>)
+             28 POP_JUMP_IF_FALSE       25 (to 50)
+
+102          30 LOAD_FAST                0 (self)
+             32 LOAD_ATTR                3 (robot)
+             34 LOAD_METHOD              4 (AccL)
+             36 LOAD_GLOBAL              5 (int)
+             38 LOAD_FAST                1 (cmd)
+             40 LOAD_CONST               2 (0)
+             42 BINARY_SUBSCR
+             44 CALL_FUNCTION            1
+             46 CALL_METHOD              1
+             48 POP_TOP
+
+104     >>   50 LOAD_FAST                1 (cmd)
+             52 LOAD_CONST               3 (1)
+             54 BINARY_SUBSCR
+             56 LOAD_CONST               2 (0)
+             58 COMPARE_OP               4 (>)
+             60 POP_JUMP_IF_FALSE       41 (to 82)
+
+105          62 LOAD_FAST                0 (self)
+             64 LOAD_ATTR                3 (robot)
+             66 LOAD_METHOD              6 (AccJ)
+             68 LOAD_GLOBAL              5 (int)
+             70 LOAD_FAST                1 (cmd)
+             72 LOAD_CONST               3 (1)
+             74 BINARY_SUBSCR
+             76 CALL_FUNCTION            1
+             78 CALL_METHOD              1
+             80 POP_TOP
+
+107     >>   82 LOAD_FAST                1 (cmd)
+             84 LOAD_CONST               4 (2)
+             86 BINARY_SUBSCR
+             88 LOAD_CONST               2 (0)
+             90 COMPARE_OP               4 (>)
+             92 POP_JUMP_IF_FALSE       57 (to 114)
+
+108          94 LOAD_FAST                0 (self)
+             96 LOAD_ATTR                3 (robot)
+             98 LOAD_METHOD              7 (SpeedL)
+            100 LOAD_GLOBAL              5 (int)
+            102 LOAD_FAST                1 (cmd)
+            104 LOAD_CONST               4 (2)
+            106 BINARY_SUBSCR
+            108 CALL_FUNCTION            1
+            110 CALL_METHOD              1
+            112 POP_TOP
+
+110     >>  114 LOAD_FAST                1 (cmd)
+            116 LOAD_CONST               5 (3)
+            118 BINARY_SUBSCR
+            120 LOAD_CONST               2 (0)
+            122 COMPARE_OP               4 (>)
+            124 POP_JUMP_IF_FALSE       73 (to 146)
+
+111         126 LOAD_FAST                0 (self)
+            128 LOAD_ATTR                3 (robot)
+            130 LOAD_METHOD              8 (SpeedJ)
+            132 LOAD_GLOBAL              5 (int)
+            134 LOAD_FAST                1 (cmd)
+            136 LOAD_CONST               5 (3)
+            138 BINARY_SUBSCR
+            140 CALL_FUNCTION            1
+            142 CALL_METHOD              1
+            144 POP_TOP
+
+113     >>  146 LOAD_CONST               6 (True)
+            148 RETURN_VALUE
+
+    === code: SendCommandDO (file C:\RoboDK\api\robot\DobotCRDriver.py:115) ===
+116           0 LOAD_FAST                0 (self)
+              2 LOAD_ATTR                0 (CONNECTED)
+              4 POP_JUMP_IF_TRUE         9 (to 18)
+
+117           6 LOAD_GLOBAL              1 (UpdateStatus)
+              8 LOAD_GLOBAL              2 (ROBOTCOM_NOT_CONNECTED)
+             10 CALL_FUNCTION            1
+             12 POP_TOP
+
+118          14 LOAD_CONST               1 (False)
+             16 RETURN_VALUE
+
+120     >>   18 LOAD_GLOBAL              3 (int)
+             20 LOAD_FAST                1 (cmd)
+             22 LOAD_CONST               2 (0)
+             24 BINARY_SUBSCR
+             26 CALL_FUNCTION            1
+             28 STORE_FAST               2 (index)
+
+121          30 LOAD_GLOBAL              3 (int)
+             32 LOAD_FAST                1 (cmd)
+             34 LOAD_CONST               3 (1)
+             36 BINARY_SUBSCR
+             38 CALL_FUNCTION            1
+             40 STORE_FAST               3 (value)
+
+122          42 LOAD_FAST                0 (self)
+             44 LOAD_ATTR                4 (robot)
+             46 LOAD_METHOD              5 (DO)
+             48 LOAD_FAST                2 (index)
+             50 LOAD_FAST                3 (value)
+             52 CALL_METHOD              2
+             54 POP_TOP
+
+123          56 LOAD_CONST               4 (True)
+             58 RETURN_VALUE
+
+    === code: SendCommandWaitDI (file C:\RoboDK\api\robot\DobotCRDriver.py:126) ===
+128           0 LOAD_FAST                0 (self)
+              2 LOAD_ATTR                0 (CONNECTED)
+              4 POP_JUMP_IF_TRUE         9 (to 18)
+
+129           6 LOAD_GLOBAL              1 (UpdateStatus)
+              8 LOAD_GLOBAL              2 (ROBOTCOM_NOT_CONNECTED)
+             10 CALL_FUNCTION            1
+             12 POP_TOP
+
+130          14 LOAD_CONST               1 (False)
+             16 RETURN_VALUE
+
+131     >>   18 LOAD_GLOBAL              3 (int)
+             20 LOAD_FAST                1 (cmd)
+             22 LOAD_CONST               2 (0)
+             24 BINARY_SUBSCR
+             26 CALL_FUNCTION            1
+             28 STORE_FAST               2 (index)
+
+132          30 LOAD_GLOBAL              3 (int)
+             32 LOAD_FAST                1 (cmd)
+             34 LOAD_CONST               3 (1)
+             36 BINARY_SUBSCR
+             38 CALL_FUNCTION            1
+             40 STORE_FAST               3 (value)
+
+133          42 LOAD_GLOBAL              4 (print)
+             44 LOAD_FAST                2 (index)
+             46 LOAD_FAST                3 (value)
+             48 CALL_FUNCTION            2
+             50 POP_TOP
+
+135          52 LOAD_FAST                0 (self)
+             54 LOAD_ATTR                5 (robot)
+             56 LOAD_METHOD              6 (waitDI)
+             58 LOAD_FAST                2 (index)
+             60 LOAD_FAST                3 (value)
+             62 CALL_METHOD              2
+             64 POP_TOP
+             66 LOAD_CONST               0 (None)
+             68 RETURN_VALUE
+
+    === code: SendCommandPause (file C:\RoboDK\api\robot\DobotCRDriver.py:137) ===
+138           0 LOAD_CONST               1 (0)
+              2 LOAD_CONST               0 (None)
+              4 IMPORT_NAME              0 (time)
+              6 STORE_FAST               2 (time)
+
+139           8 LOAD_FAST                2 (time)
+             10 LOAD_METHOD              1 (sleep)
+             12 LOAD_FAST                1 (cmd)
+             14 CALL_METHOD              1
+             16 POP_TOP
+             18 LOAD_CONST               0 (None)
+             20 RETURN_VALUE
+
+    === code: SendCommand (file C:\RoboDK\api\robot\DobotCRDriver.py:141) ===
+142           0 LOAD_GLOBAL              0 (self)
+              2 LOAD_ATTR                1 (robot)
+              4 LOAD_METHOD              2 (send_data)
+              6 LOAD_FAST                0 (cmd_str)
+              8 CALL_METHOD              1
+             10 POP_TOP
+
+143          12 LOAD_GLOBAL              0 (self)
+             14 LOAD_ATTR                1 (robot)
+             16 LOAD_METHOD              3 (wait_reply)
+             18 CALL_METHOD              0
+             20 RETURN_VALUE
+
+  === code: RobotConnect (file C:\RoboDK\api\robot\DobotCRDriver.py:157) ===
+161           0 LOAD_GLOBAL              0 (ROBOT)
+              2 LOAD_METHOD              1 (connect)
+              4 LOAD_GLOBAL              2 (ROBOT_IP)
+              6 LOAD_GLOBAL              3 (ROBOT_PORT)
+              8 CALL_METHOD              2
+             10 RETURN_VALUE
+
+  === code: RobotDisconnect (file C:\RoboDK\api\robot\DobotCRDriver.py:165) ===
+167           0 LOAD_GLOBAL              0 (ROBOT)
+              2 LOAD_METHOD              1 (disconnect)
+              4 CALL_METHOD              0
+              6 POP_TOP
+
+168           8 LOAD_CONST               1 (True)
+             10 RETURN_VALUE
+
+  === code: print_message (file C:\RoboDK\api\robot\DobotCRDriver.py:176) ===
+182           0 LOAD_GLOBAL              0 (print)
+              2 LOAD_CONST               1 ('SMS:')
+              4 LOAD_FAST                0 (message)
+              6 BINARY_ADD
+              8 CALL_FUNCTION            1
+             10 POP_TOP
+
+183          12 LOAD_GLOBAL              1 (sys)
+             14 LOAD_ATTR                2 (stdout)
+             16 LOAD_METHOD              3 (flush)
+             18 CALL_METHOD              0
+             20 POP_TOP
+             22 LOAD_CONST               2 (None)
+             24 RETURN_VALUE
+
+  === code: show_message (file C:\RoboDK\api\robot\DobotCRDriver.py:186) ===
+188           0 LOAD_GLOBAL              0 (print)
+              2 LOAD_CONST               1 ('SMS2:')
+              4 LOAD_FAST                0 (message)
+              6 BINARY_ADD
+              8 CALL_FUNCTION            1
+             10 POP_TOP
+
+189          12 LOAD_GLOBAL              1 (sys)
+             14 LOAD_ATTR                2 (stdout)
+             16 LOAD_METHOD              3 (flush)
+             18 CALL_METHOD              0
+             20 POP_TOP
+             22 LOAD_CONST               2 (None)
+             24 RETURN_VALUE
+
+  === code: print_response (file C:\RoboDK\api\robot\DobotCRDriver.py:192) ===
+198           0 LOAD_GLOBAL              0 (print)
+              2 LOAD_CONST               1 ('RE:')
+              4 LOAD_FAST                0 (message)
+              6 BINARY_ADD
+              8 CALL_FUNCTION            1
+             10 POP_TOP
+
+199          12 LOAD_GLOBAL              1 (sys)
+             14 LOAD_ATTR                2 (stdout)
+             16 LOAD_METHOD              3 (flush)
+             18 CALL_METHOD              0
+             20 POP_TOP
+             22 LOAD_CONST               2 (None)
+             24 RETURN_VALUE
+
+  === code: print_commands (file C:\RoboDK\api\robot\DobotCRDriver.py:202) ===
+208           0 LOAD_GLOBAL              0 (print)
+              2 LOAD_CONST               1 ('CMDLIST:')
+              4 LOAD_FAST                0 (message)
+              6 BINARY_ADD
+              8 CALL_FUNCTION            1
+             10 POP_TOP
+
+209          12 LOAD_GLOBAL              1 (sys)
+             14 LOAD_ATTR                2 (stdout)
+             16 LOAD_METHOD              3 (flush)
+             18 CALL_METHOD              0
+             20 POP_TOP
+             22 LOAD_CONST               2 (None)
+             24 RETURN_VALUE
+
+  === code: print_joints (file C:\RoboDK\api\robot\DobotCRDriver.py:212) ===
+217           0 LOAD_CONST               1 (<code object Angles2Real at 0x000001C22A44E600, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 217>)
+              2 LOAD_CONST               2 ('print_joints.<locals>.Angles2Real')
+              4 MAKE_FUNCTION            0
+              6 STORE_FAST               2 (Angles2Real)
+
+230           8 LOAD_FAST                1 (is_moving)
+             10 POP_JUMP_IF_FALSE       32 (to 64)
+
+232          12 LOAD_GLOBAL              0 (ROBOT_MOVING)
+             14 POP_JUMP_IF_FALSE       31 (to 62)
+
+234          16 LOAD_GLOBAL              1 (isinstance)
+             18 LOAD_FAST                0 (joints)
+             20 LOAD_GLOBAL              2 (str)
+             22 CALL_FUNCTION            2
+             24 POP_JUMP_IF_FALSE       17 (to 34)
+
+235          26 LOAD_FAST                2 (Angles2Real)
+             28 LOAD_FAST                0 (joints)
+             30 CALL_FUNCTION            1
+             32 STORE_FAST               0 (joints)
+
+237     >>   34 LOAD_GLOBAL              3 (print)
+             36 LOAD_CONST               3 ('JNTS_MOVING: ')
+             38 LOAD_CONST               4 (' ')
+             40 LOAD_METHOD              4 (join)
+             42 LOAD_CONST               5 (<code object <genexpr> at 0x000001C22A44E6B0, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 237>)
+             44 LOAD_CONST               6 ('print_joints.<locals>.<genexpr>')
+             46 MAKE_FUNCTION            0
+             48 LOAD_FAST                0 (joints)
+             50 GET_ITER
+             52 CALL_FUNCTION            1
+             54 CALL_METHOD              1
+             56 BINARY_ADD
+             58 CALL_FUNCTION            1
+             60 POP_TOP
+        >>   62 JUMP_FORWARD            23 (to 110)
+
+239     >>   64 LOAD_GLOBAL              1 (isinstance)
+             66 LOAD_FAST                0 (joints)
+             68 LOAD_GLOBAL              2 (str)
+             70 CALL_FUNCTION            2
+             72 POP_JUMP_IF_FALSE       41 (to 82)
+
+240          74 LOAD_FAST                2 (Angles2Real)
+             76 LOAD_FAST                0 (joints)
+             78 CALL_FUNCTION            1
+             80 STORE_FAST               0 (joints)
+
+242     >>   82 LOAD_GLOBAL              3 (print)
+             84 LOAD_CONST               7 ('JNTS: ')
+             86 LOAD_CONST               4 (' ')
+             88 LOAD_METHOD              4 (join)
+             90 LOAD_CONST               8 (<code object <genexpr> at 0x000001C22A44E760, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 242>)
+             92 LOAD_CONST               6 ('print_joints.<locals>.<genexpr>')
+             94 MAKE_FUNCTION            0
+             96 LOAD_FAST                0 (joints)
+             98 GET_ITER
+            100 CALL_FUNCTION            1
+            102 CALL_METHOD              1
+            104 BINARY_ADD
+            106 CALL_FUNCTION            1
+            108 POP_TOP
+
+243     >>  110 LOAD_GLOBAL              5 (sys)
+            112 LOAD_ATTR                6 (stdout)
+            114 LOAD_METHOD              7 (flush)
+            116 CALL_METHOD              0
+            118 POP_TOP
+            120 LOAD_CONST               9 (None)
+            122 RETURN_VALUE
+
+    === code: Angles2Real (file C:\RoboDK\api\robot\DobotCRDriver.py:217) ===
+218           0 LOAD_FAST                0 (string)
+              2 LOAD_METHOD              0 (find)
+              4 LOAD_CONST               1 ('{')
+              6 CALL_METHOD              1
+              8 LOAD_CONST               2 (1)
+             10 BINARY_ADD
+             12 STORE_FAST               1 (Lower)
+
+219          14 LOAD_FAST                0 (string)
+             16 LOAD_METHOD              0 (find)
+             18 LOAD_CONST               3 ('}')
+             20 CALL_METHOD              1
+             22 STORE_FAST               2 (Upper)
+
+220          24 BUILD_LIST               0
+             26 STORE_FAST               3 (angles)
+
+221          28 LOAD_FAST                0 (string)
+             30 LOAD_FAST                1 (Lower)
+             32 LOAD_FAST                2 (Upper)
+             34 BUILD_SLICE              2
+             36 BINARY_SUBSCR
+             38 LOAD_METHOD              1 (split)
+             40 LOAD_CONST               4 (',')
+             42 CALL_METHOD              1
+             44 GET_ITER
+        >>   46 FOR_ITER                24 (to 96)
+             48 STORE_FAST               4 (word)
+
+222          50 SETUP_FINALLY           13 (to 78)
+
+223          52 LOAD_GLOBAL              2 (float)
+             54 LOAD_FAST                4 (word)
+             56 LOAD_METHOD              3 (strip)
+             58 CALL_METHOD              0
+             60 CALL_FUNCTION            1
+             62 STORE_FAST               5 (number)
+
+224          64 LOAD_FAST                3 (angles)
+             66 LOAD_METHOD              4 (append)
+             68 LOAD_FAST                5 (number)
+             70 CALL_METHOD              1
+             72 POP_TOP
+             74 POP_BLOCK
+             76 JUMP_ABSOLUTE           23 (to 46)
+
+225     >>   78 DUP_TOP
+             80 LOAD_GLOBAL              5 (ValueError)
+             82 JUMP_IF_NOT_EXC_MATCH    47 (to 94)
+             84 POP_TOP
+             86 POP_TOP
+             88 POP_TOP
+
+226          90 POP_EXCEPT
+             92 JUMP_ABSOLUTE           23 (to 46)
+
+225     >>   94 RERAISE                  0
+
+228     >>   96 LOAD_FAST                3 (angles)
+             98 RETURN_VALUE
+
+    === code: <genexpr> (file C:\RoboDK\api\robot\DobotCRDriver.py:237) ===
+              0 GEN_START                0
+
+237           2 LOAD_FAST                0 (.0)
+        >>    4 FOR_ITER                 8 (to 22)
+              6 STORE_FAST               1 (x)
+              8 LOAD_GLOBAL              0 (format)
+             10 LOAD_FAST                1 (x)
+             12 LOAD_CONST               0 ('.3f')
+             14 CALL_FUNCTION            2
+             16 YIELD_VALUE
+             18 POP_TOP
+             20 JUMP_ABSOLUTE            2 (to 4)
+        >>   22 LOAD_CONST               1 (None)
+             24 RETURN_VALUE
+
+    === code: <genexpr> (file C:\RoboDK\api\robot\DobotCRDriver.py:242) ===
+              0 GEN_START                0
+
+242           2 LOAD_FAST                0 (.0)
+        >>    4 FOR_ITER                 8 (to 22)
+              6 STORE_FAST               1 (x)
+              8 LOAD_GLOBAL              0 (format)
+             10 LOAD_FAST                1 (x)
+             12 LOAD_CONST               0 ('.6f')
+             14 CALL_FUNCTION            2
+             16 YIELD_VALUE
+             18 POP_TOP
+             20 JUMP_ABSOLUTE            2 (to 4)
+        >>   22 LOAD_CONST               1 (None)
+             24 RETURN_VALUE
+
+  === code: UpdateStatus (file C:\RoboDK\api\robot\DobotCRDriver.py:260) ===
+269           0 LOAD_FAST                0 (set_status)
+              2 LOAD_CONST               1 (None)
+              4 IS_OP                    1
+              6 POP_JUMP_IF_FALSE        6 (to 12)
+
+270           8 LOAD_FAST                0 (set_status)
+             10 STORE_GLOBAL             0 (STATUS)
+
+272     >>   12 LOAD_GLOBAL              0 (STATUS)
+             14 LOAD_GLOBAL              1 (ROBOTCOM_CONNECTION_PROBLEMS)
+             16 COMPARE_OP               2 (==)
+             18 POP_JUMP_IF_FALSE       16 (to 32)
+
+273          20 LOAD_GLOBAL              2 (print_message)
+             22 LOAD_CONST               2 ('Connection problems')
+             24 CALL_FUNCTION            1
+             26 POP_TOP
+             28 LOAD_CONST               1 (None)
+             30 RETURN_VALUE
+
+274     >>   32 LOAD_GLOBAL              0 (STATUS)
+             34 LOAD_GLOBAL              3 (ROBOTCOM_DISCONNECTED)
+             36 COMPARE_OP               2 (==)
+             38 POP_JUMP_IF_FALSE       26 (to 52)
+
+275          40 LOAD_GLOBAL              2 (print_message)
+             42 LOAD_CONST               3 ('Disconnected')
+             44 CALL_FUNCTION            1
+             46 POP_TOP
+             48 LOAD_CONST               1 (None)
+             50 RETURN_VALUE
+
+276     >>   52 LOAD_GLOBAL              0 (STATUS)
+             54 LOAD_GLOBAL              4 (ROBOTCOM_NOT_CONNECTED)
+             56 COMPARE_OP               2 (==)
+             58 POP_JUMP_IF_FALSE       36 (to 72)
+
+277          60 LOAD_GLOBAL              2 (print_message)
+             62 LOAD_CONST               4 ('Not connected')
+             64 CALL_FUNCTION            1
+             66 POP_TOP
+             68 LOAD_CONST               1 (None)
+             70 RETURN_VALUE
+
+278     >>   72 LOAD_GLOBAL              0 (STATUS)
+             74 LOAD_GLOBAL              5 (ROBOTCOM_READY)
+             76 COMPARE_OP               2 (==)
+             78 POP_JUMP_IF_FALSE       46 (to 92)
+
+279          80 LOAD_GLOBAL              2 (print_message)
+             82 LOAD_CONST               5 ('Ready')
+             84 CALL_FUNCTION            1
+             86 POP_TOP
+             88 LOAD_CONST               1 (None)
+             90 RETURN_VALUE
+
+280     >>   92 LOAD_GLOBAL              0 (STATUS)
+             94 LOAD_GLOBAL              6 (ROBOTCOM_WORKING)
+             96 COMPARE_OP               2 (==)
+             98 POP_JUMP_IF_FALSE       56 (to 112)
+
+281         100 LOAD_GLOBAL              2 (print_message)
+            102 LOAD_CONST               6 ('Working...')
+            104 CALL_FUNCTION            1
+            106 POP_TOP
+            108 LOAD_CONST               1 (None)
+            110 RETURN_VALUE
+
+282     >>  112 LOAD_GLOBAL              0 (STATUS)
+            114 LOAD_GLOBAL              7 (ROBOTCOM_WAITING)
+            116 COMPARE_OP               2 (==)
+            118 POP_JUMP_IF_FALSE       66 (to 132)
+
+283         120 LOAD_GLOBAL              2 (print_message)
+            122 LOAD_CONST               7 ('Waiting...')
+            124 CALL_FUNCTION            1
+            126 POP_TOP
+            128 LOAD_CONST               1 (None)
+            130 RETURN_VALUE
+
+285     >>  132 LOAD_GLOBAL              2 (print_message)
+            134 LOAD_CONST               8 ('Unknown status')
+            136 CALL_FUNCTION            1
+            138 POP_TOP
+            140 LOAD_CONST               1 (None)
+            142 RETURN_VALUE
+
+  === code: TestDriver (file C:\RoboDK\api\robot\DobotCRDriver.py:289) ===
+291           0 LOAD_GLOBAL              0 (RunCommand)
+              2 LOAD_CONST               1 ('CONNECT 192.168.110.2')
+              4 CALL_FUNCTION            1
+              6 POP_TOP
+
+296           8 LOAD_GLOBAL              0 (RunCommand)
+             10 LOAD_CONST               2 ('MOVJ 246.594543 -9.438217 -93.104939 12.970665 86.451469 -23.465175')
+             12 CALL_FUNCTION            1
+             14 POP_TOP
+
+299          16 LOAD_GLOBAL              0 (RunCommand)
+             18 LOAD_CONST               3 ('MOVL 244.424810 -10.598461 -91.957920 12.698777 92.342732 -149.246869 -357.835000 -431.013000 384.480000 -178.924000 -2.086000 -56.345000')
+             20 CALL_FUNCTION            1
+             22 POP_TOP
+             24 LOAD_CONST               0 (None)
+             26 RETURN_VALUE
+
+  === code: RunDriver (file C:\RoboDK\api\robot\DobotCRDriver.py:308) ===
+312           0 LOAD_GLOBAL              0 (sys)
+              2 LOAD_ATTR                1 (stdin)
+              4 GET_ITER
+        >>    6 FOR_ITER                 8 (to 24)
+              8 STORE_FAST               0 (line)
+
+313          10 LOAD_GLOBAL              2 (RunCommand)
+             12 LOAD_FAST                0 (line)
+             14 LOAD_METHOD              3 (strip)
+             16 CALL_METHOD              0
+             18 CALL_FUNCTION            1
+             20 POP_TOP
+             22 JUMP_ABSOLUTE            3 (to 6)
+
+312     >>   24 LOAD_CONST               1 (None)
+             26 RETURN_VALUE
+
+  === code: RunCommand (file C:\RoboDK\api\robot\DobotCRDriver.py:316) ===
+379           0 LOAD_FAST                0 (cmd_line)
+              2 LOAD_METHOD              0 (strip)
+              4 CALL_METHOD              0
+              6 LOAD_CONST               1 ('')
+              8 COMPARE_OP               2 (==)
+             10 POP_JUMP_IF_FALSE        8 (to 16)
+
+381          12 LOAD_CONST               2 (None)
+             14 RETURN_VALUE
+
+389     >>   16 LOAD_CONST               3 (<code object line_2_values at 0x000001C22A44EAD0, file "C:\RoboDK\api\robot\DobotCRDriver.py", line 389>)
+             18 LOAD_CONST               4 ('RunCommand.<locals>.line_2_values')
+             20 MAKE_FUNCTION            0
+             22 STORE_FAST               1 (line_2_values)
+
+399          24 LOAD_FAST                0 (cmd_line)
+             26 LOAD_METHOD              1 (split)
+             28 LOAD_CONST               5 (' ')
+             30 CALL_METHOD              1
+             32 STORE_FAST               2 (cmd_words)
+
+400          34 LOAD_FAST                2 (cmd_words)
+             36 LOAD_CONST               6 (0)
+             38 BINARY_SUBSCR
+             40 STORE_FAST               3 (cmd)
+
+401          42 LOAD_FAST                1 (line_2_values)
+             44 LOAD_FAST                2 (cmd_words)
+             46 LOAD_CONST               7 (1)
+             48 LOAD_CONST               2 (None)
+             50 BUILD_SLICE              2
+             52 BINARY_SUBSCR
+             54 CALL_FUNCTION            1
+             56 STORE_FAST               4 (cmd_values)
+
+402          58 LOAD_GLOBAL              2 (len)
+             60 LOAD_FAST                4 (cmd_values)
+             62 CALL_FUNCTION            1
+             64 STORE_FAST               5 (n_cmd_values)
+
+403          66 LOAD_GLOBAL              2 (len)
+             68 LOAD_FAST                2 (cmd_words)
+             70 CALL_FUNCTION            1
+             72 STORE_FAST               6 (n_cmd_words)
+
+404          74 LOAD_CONST               2 (None)
+             76 STORE_FAST               7 (received)
+
+406          78 LOAD_FAST                0 (cmd_line)
+             80 LOAD_METHOD              3 (startswith)
+             82 LOAD_CONST               8 ('CONNECT')
+             84 CALL_METHOD              1
+             86 POP_JUMP_IF_FALSE       57 (to 114)
+
+408          88 LOAD_FAST                6 (n_cmd_words)
+             90 LOAD_CONST               9 (2)
+             92 COMPARE_OP               5 (>=)
+             94 POP_JUMP_IF_FALSE       52 (to 104)
+
+409          96 LOAD_FAST                2 (cmd_words)
+             98 LOAD_CONST               7 (1)
+            100 BINARY_SUBSCR
+            102 STORE_GLOBAL             4 (ROBOT_IP)
+
+412     >>  104 LOAD_GLOBAL              5 (RobotConnect)
+            106 CALL_FUNCTION            0
+            108 STORE_FAST               7 (received)
+            110 EXTENDED_ARG             2
+            112 JUMP_FORWARD           599 (to 1312)
+
+419     >>  114 LOAD_FAST                5 (n_cmd_values)
+            116 LOAD_GLOBAL              6 (nDOFs_MIN)
+            118 COMPARE_OP               5 (>=)
+            120 POP_JUMP_IF_FALSE       83 (to 166)
+            122 LOAD_FAST                0 (cmd_line)
+            124 LOAD_METHOD              3 (startswith)
+            126 LOAD_CONST              10 ('MOVJ')
+            128 CALL_METHOD              1
+            130 POP_JUMP_IF_FALSE       83 (to 166)
+
+420         132 LOAD_GLOBAL              7 (UpdateStatus)
+            134 LOAD_GLOBAL              8 (ROBOTCOM_WORKING)
+            136 CALL_FUNCTION            1
+            138 POP_TOP
+
+422         140 LOAD_CONST              11 (True)
+            142 STORE_GLOBAL             9 (ROBOT_MOVING)
+
+424         144 LOAD_GLOBAL             10 (ROBOT)
+            146 LOAD_METHOD             11 (SendJointMovJCommands)
+            148 LOAD_FAST                4 (cmd_values)
+            150 CALL_METHOD              1
+            152 POP_TOP
+
+425         154 LOAD_GLOBAL              7 (UpdateStatus)
+            156 LOAD_GLOBAL             12 (ROBOTCOM_READY)
+            158 CALL_FUNCTION            1
+            160 POP_TOP
+            162 EXTENDED_ARG             2
+            164 JUMP_FORWARD           573 (to 1312)
+
+427     >>  166 LOAD_FAST                5 (n_cmd_values)
+            168 LOAD_GLOBAL              6 (nDOFs_MIN)
+            170 COMPARE_OP               5 (>=)
+            172 POP_JUMP_IF_FALSE      143 (to 286)
+            174 LOAD_FAST                0 (cmd_line)
+            176 LOAD_METHOD              3 (startswith)
+            178 LOAD_CONST              12 ('MOVLSEARCH')
+            180 CALL_METHOD              1
+            182 POP_JUMP_IF_FALSE      143 (to 286)
+
+428         184 LOAD_FAST                4 (cmd_values)
+            186 LOAD_GLOBAL              6 (nDOFs_MIN)
+            188 BINARY_SUBSCR
+            190 STORE_FAST               8 (x)
+
+429         192 LOAD_FAST                4 (cmd_values)
+            194 LOAD_GLOBAL              6 (nDOFs_MIN)
+            196 LOAD_CONST               7 (1)
+            198 BINARY_ADD
+            200 BINARY_SUBSCR
+            202 STORE_FAST               9 (y)
+
+430         204 LOAD_FAST                4 (cmd_values)
+            206 LOAD_GLOBAL              6 (nDOFs_MIN)
+            208 LOAD_CONST               9 (2)
+            210 BINARY_ADD
+            212 BINARY_SUBSCR
+            214 STORE_FAST              10 (z)
+
+431         216 LOAD_FAST                4 (cmd_values)
+            218 LOAD_GLOBAL              6 (nDOFs_MIN)
+            220 LOAD_CONST              13 (3)
+            222 BINARY_ADD
+            224 BINARY_SUBSCR
+            226 STORE_FAST              11 (rx)
+
+432         228 LOAD_FAST                4 (cmd_values)
+            230 LOAD_GLOBAL              6 (nDOFs_MIN)
+            232 LOAD_CONST              14 (4)
+            234 BINARY_ADD
+            236 BINARY_SUBSCR
+            238 STORE_FAST              12 (ry)
+
+433         240 LOAD_FAST                4 (cmd_values)
+            242 LOAD_GLOBAL              6 (nDOFs_MIN)
+            244 LOAD_CONST              15 (5)
+            246 BINARY_ADD
+            248 BINARY_SUBSCR
+            250 STORE_FAST              13 (rz)
+
+434         252 LOAD_GLOBAL             10 (ROBOT)
+            254 LOAD_ATTR               13 (robot)
+            256 LOAD_METHOD             14 (MovL)
+            258 LOAD_FAST                8 (x)
+            260 LOAD_FAST                9 (y)
+            262 LOAD_FAST               10 (z)
+            264 LOAD_FAST               11 (rx)
+            266 LOAD_FAST               12 (ry)
+            268 LOAD_FAST               13 (rz)
+            270 CALL_METHOD              6
+            272 STORE_FAST              14 (reply)
+
+435         274 LOAD_GLOBAL              7 (UpdateStatus)
+            276 LOAD_GLOBAL             12 (ROBOTCOM_READY)
+            278 CALL_FUNCTION            1
+            280 POP_TOP
+            282 EXTENDED_ARG             2
+            284 JUMP_FORWARD           513 (to 1312)
+
+437     >>  286 LOAD_FAST                5 (n_cmd_values)
+            288 LOAD_GLOBAL              6 (nDOFs_MIN)
+            290 COMPARE_OP               5 (>=)
+            292 POP_JUMP_IF_FALSE      203 (to 406)
+            294 LOAD_FAST                0 (cmd_line)
+            296 LOAD_METHOD              3 (startswith)
+            298 LOAD_CONST              16 ('MOVL')
+            300 CALL_METHOD              1
+            302 POP_JUMP_IF_FALSE      203 (to 406)
+
+438         304 LOAD_FAST                4 (cmd_values)
+            306 LOAD_GLOBAL              6 (nDOFs_MIN)
+            308 BINARY_SUBSCR
+            310 STORE_FAST               8 (x)
+
+439         312 LOAD_FAST                4 (cmd_values)
+            314 LOAD_GLOBAL              6 (nDOFs_MIN)
+            316 LOAD_CONST               7 (1)
+            318 BINARY_ADD
+            320 BINARY_SUBSCR
+            322 STORE_FAST               9 (y)
+
+440         324 LOAD_FAST                4 (cmd_values)
+            326 LOAD_GLOBAL              6 (nDOFs_MIN)
+            328 LOAD_CONST               9 (2)
+            330 BINARY_ADD
+            332 BINARY_SUBSCR
+            334 STORE_FAST              10 (z)
+
+441         336 LOAD_FAST                4 (cmd_values)
+            338 LOAD_GLOBAL              6 (nDOFs_MIN)
+            340 LOAD_CONST              13 (3)
+            342 BINARY_ADD
+            344 BINARY_SUBSCR
+            346 STORE_FAST              11 (rx)
+
+442         348 LOAD_FAST                4 (cmd_values)
+            350 LOAD_GLOBAL              6 (nDOFs_MIN)
+            352 LOAD_CONST              14 (4)
+            354 BINARY_ADD
+            356 BINARY_SUBSCR
+            358 STORE_FAST              12 (ry)
+
+443         360 LOAD_FAST                4 (cmd_values)
+            362 LOAD_GLOBAL              6 (nDOFs_MIN)
+            364 LOAD_CONST              15 (5)
+            366 BINARY_ADD
+            368 BINARY_SUBSCR
+            370 STORE_FAST              13 (rz)
+
+444         372 LOAD_GLOBAL             10 (ROBOT)
+            374 LOAD_ATTR               13 (robot)
+            376 LOAD_METHOD             14 (MovL)
+            378 LOAD_FAST                8 (x)
+            380 LOAD_FAST                9 (y)
+            382 LOAD_FAST               10 (z)
+            384 LOAD_FAST               11 (rx)
+            386 LOAD_FAST               12 (ry)
+            388 LOAD_FAST               13 (rz)
+            390 CALL_METHOD              6
+            392 STORE_FAST              14 (reply)
+
+445         394 LOAD_GLOBAL              7 (UpdateStatus)
+            396 LOAD_GLOBAL             12 (ROBOTCOM_READY)
+            398 CALL_FUNCTION            1
+            400 POP_TOP
+            402 EXTENDED_ARG             1
+            404 JUMP_FORWARD           453 (to 1312)
+
+447     >>  406 LOAD_FAST                5 (n_cmd_values)
+            408 LOAD_CONST               9 (2)
+            410 LOAD_GLOBAL              6 (nDOFs_MIN)
+            412 LOAD_CONST              17 (6)
+            414 BINARY_ADD
+            416 BINARY_MULTIPLY
+            418 COMPARE_OP               5 (>=)
+            420 EXTENDED_ARG             1
+            422 POP_JUMP_IF_FALSE      279 (to 558)
+            424 LOAD_FAST                0 (cmd_line)
+            426 LOAD_METHOD              3 (startswith)
+            428 LOAD_CONST              18 ('MOVC')
+            430 CALL_METHOD              1
+            432 EXTENDED_ARG             1
+            434 POP_JUMP_IF_FALSE      279 (to 558)
+
+448         436 LOAD_GLOBAL              7 (UpdateStatus)
+            438 LOAD_GLOBAL              8 (ROBOTCOM_WORKING)
+            440 CALL_FUNCTION            1
+            442 POP_TOP
+
+451         444 LOAD_FAST                4 (cmd_values)
+            446 LOAD_CONST              19 (-12)
+            448 LOAD_CONST               2 (None)
+            450 BUILD_SLICE              2
+            452 BINARY_SUBSCR
+            454 STORE_FAST              15 (xyzwpr12)
+
+452         456 LOAD_FAST               15 (xyzwpr12)
+            458 LOAD_CONST               2 (None)
+            460 LOAD_CONST              17 (6)
+            462 BUILD_SLICE              2
+            464 BINARY_SUBSCR
+            466 STORE_FAST              16 (p1)
+
+453         468 LOAD_FAST               15 (xyzwpr12)
+            470 LOAD_CONST              17 (6)
+            472 LOAD_CONST              20 (12)
+            474 BUILD_SLICE              2
+            476 BINARY_SUBSCR
+            478 STORE_FAST              17 (p2)
+
+454         480 LOAD_FAST               16 (p1)
+            482 UNPACK_SEQUENCE          6
+            484 STORE_FAST              18 (x1)
+            486 STORE_FAST              19 (y1)
+            488 STORE_FAST              20 (z1)
+            490 STORE_FAST              21 (a1)
+            492 STORE_FAST              22 (b1)
+            494 STORE_FAST              23 (c1)
+
+455         496 LOAD_FAST               17 (p2)
+            498 UNPACK_SEQUENCE          6
+            500 STORE_FAST              24 (x2)
+            502 STORE_FAST              25 (y2)
+            504 STORE_FAST              26 (z2)
+            506 STORE_FAST              27 (a2)
+            508 STORE_FAST              28 (b2)
+            510 STORE_FAST              29 (c2)
+
+456         512 LOAD_GLOBAL             10 (ROBOT)
+            514 LOAD_ATTR               13 (robot)
+            516 LOAD_METHOD             15 (Arc)
+            518 LOAD_FAST               18 (x1)
+            520 LOAD_FAST               19 (y1)
+            522 LOAD_FAST               20 (z1)
+            524 LOAD_FAST               21 (a1)
+            526 LOAD_FAST               22 (b1)
+            528 LOAD_FAST               23 (c1)
+            530 LOAD_FAST               24 (x2)
+            532 LOAD_FAST               25 (y2)
+            534 LOAD_FAST               26 (z2)
+            536 LOAD_FAST               27 (a2)
+            538 LOAD_FAST               28 (b2)
+            540 LOAD_FAST               29 (c2)
+            542 CALL_METHOD             12
+            544 STORE_FAST              14 (reply)
+
+457         546 LOAD_GLOBAL              7 (UpdateStatus)
+            548 LOAD_GLOBAL             12 (ROBOTCOM_READY)
+            550 CALL_FUNCTION            1
+            552 POP_TOP
+            554 EXTENDED_ARG             1
+            556 JUMP_FORWARD           377 (to 1312)
+
+460     >>  558 LOAD_FAST                0 (cmd_line)
+            560 LOAD_METHOD              3 (startswith)
+            562 LOAD_CONST              21 ('CJNT')
+            564 CALL_METHOD              1
+            566 EXTENDED_ARG             1
+            568 POP_JUMP_IF_FALSE      302 (to 604)
+
+461         570 LOAD_GLOBAL              7 (UpdateStatus)
+            572 LOAD_GLOBAL              8 (ROBOTCOM_WORKING)
+            574 CALL_FUNCTION            1
+            576 POP_TOP
+
+463         578 LOAD_GLOBAL             16 (print_joints)
+            580 LOAD_GLOBAL             10 (ROBOT)
+            582 LOAD_METHOD             17 (SendGetAngleCommands)
+            584 LOAD_CONST               1 ('')
+            586 CALL_METHOD              1
+            588 CALL_FUNCTION            1
+            590 POP_TOP
+
+464         592 LOAD_GLOBAL              7 (UpdateStatus)
+            594 LOAD_GLOBAL             12 (ROBOTCOM_READY)
+            596 CALL_FUNCTION            1
+            598 POP_TOP
+            600 EXTENDED_ARG             1
+            602 JUMP_FORWARD           354 (to 1312)
+
+467     >>  604 LOAD_FAST                5 (n_cmd_values)
+            606 LOAD_CONST               7 (1)
+            608 COMPARE_OP               5 (>=)
+            610 EXTENDED_ARG             1
+            612 POP_JUMP_IF_FALSE      351 (to 702)
+            614 LOAD_FAST                0 (cmd_line)
+            616 LOAD_METHOD              3 (startswith)
+            618 LOAD_CONST              22 ('SPEED')
+            620 CALL_METHOD              1
+            622 EXTENDED_ARG             1
+            624 POP_JUMP_IF_FALSE      351 (to 702)
+
+468         626 LOAD_GLOBAL              7 (UpdateStatus)
+            628 LOAD_GLOBAL              8 (ROBOTCOM_WORKING)
+            630 CALL_FUNCTION            1
+            632 POP_TOP
+
+471         634 BUILD_LIST               0
+            636 LOAD_CONST              23 ((-1, -1, -1, -1))
+            638 LIST_EXTEND              1
+            640 STORE_FAST              30 (speed_values)
+
+472         642 LOAD_GLOBAL             18 (range)
+            644 LOAD_GLOBAL             19 (min)
+            646 LOAD_CONST              14 (4)
+            648 LOAD_GLOBAL              2 (len)
+            650 LOAD_FAST                4 (cmd_values)
+            652 CALL_FUNCTION            1
+            654 CALL_FUNCTION            2
+            656 CALL_FUNCTION            1
+            658 GET_ITER
+        >>  660 FOR_ITER                 9 (to 680)
+            662 STORE_FAST              31 (i)
+
+473         664 LOAD_FAST                4 (cmd_values)
+            666 LOAD_FAST               31 (i)
+            668 BINARY_SUBSCR
+            670 LOAD_FAST               30 (speed_values)
+            672 LOAD_FAST               31 (i)
+            674 STORE_SUBSCR
+            676 EXTENDED_ARG             1
+            678 JUMP_ABSOLUTE          330 (to 660)
+
+479     >>  680 LOAD_GLOBAL             10 (ROBOT)
+            682 LOAD_METHOD             20 (SendSpeedCommands)
+            684 LOAD_FAST               30 (speed_values)
+            686 CALL_METHOD              1
+            688 POP_TOP
+
+480         690 LOAD_GLOBAL              7 (UpdateStatus)
+            692 LOAD_GLOBAL             12 (ROBOTCOM_READY)
+            694 CALL_FUNCTION            1
+            696 POP_TOP
+            698 EXTENDED_ARG             1
+            700 JUMP_FORWARD           305 (to 1312)
+
+482     >>  702 LOAD_FAST                5 (n_cmd_values)
+            704 LOAD_CONST              17 (6)
+            706 COMPARE_OP               5 (>=)
+            708 EXTENDED_ARG             1
+            710 POP_JUMP_IF_FALSE      376 (to 752)
+            712 LOAD_FAST                0 (cmd_line)
+            714 LOAD_METHOD              3 (startswith)
+            716 LOAD_CONST              24 ('SETTOOL')
+            718 CALL_METHOD              1
+            720 EXTENDED_ARG             1
+            722 POP_JUMP_IF_FALSE      376 (to 752)
+
+484         724 LOAD_GLOBAL              7 (UpdateStatus)
+            726 LOAD_GLOBAL              8 (ROBOTCOM_WORKING)
+            728 CALL_FUNCTION            1
+            730 POP_TOP
+
+486         732 LOAD_GLOBAL             21 (print_message)
+            734 LOAD_CONST              25 ('Set tool not supported. Command ingored. Make sure you define the same tool on the controller.')
+            736 CALL_FUNCTION            1
+            738 POP_TOP
+
+487         740 LOAD_GLOBAL              7 (UpdateStatus)
+            742 LOAD_GLOBAL             12 (ROBOTCOM_READY)
+            744 CALL_FUNCTION            1
+            746 POP_TOP
+            748 EXTENDED_ARG             1
+            750 JUMP_FORWARD           280 (to 1312)
+
+489     >>  752 LOAD_FAST                5 (n_cmd_values)
+            754 LOAD_CONST               7 (1)
+            756 COMPARE_OP               5 (>=)
+            758 EXTENDED_ARG             1
+            760 POP_JUMP_IF_FALSE      405 (to 810)
+            762 LOAD_FAST                0 (cmd_line)
+            764 LOAD_METHOD              3 (startswith)
+            766 LOAD_CONST              26 ('PAUSE')
+            768 CALL_METHOD              1
+            770 EXTENDED_ARG             1
+            772 POP_JUMP_IF_FALSE      405 (to 810)
+
+490         774 LOAD_GLOBAL              7 (UpdateStatus)
+            776 LOAD_GLOBAL             22 (ROBOTCOM_WAITING)
+            778 CALL_FUNCTION            1
+            780 POP_TOP
+
+491         782 LOAD_GLOBAL             10 (ROBOT)
+            784 LOAD_METHOD             23 (SendCommandPause)
+            786 LOAD_FAST                4 (cmd_values)
+            788 LOAD_CONST               6 (0)
+            790 BINARY_SUBSCR
+            792 LOAD_CONST              27 (1000.0)
+            794 BINARY_TRUE_DIVIDE
+            796 CALL_METHOD              1
+            798 POP_TOP
+
+492         800 LOAD_GLOBAL              7 (UpdateStatus)
+            802 LOAD_GLOBAL             12 (ROBOTCOM_READY)
+            804 CALL_FUNCTION            1
+            806 POP_TOP
+            808 JUMP_FORWARD           251 (to 1312)
+
+494     >>  810 LOAD_FAST                5 (n_cmd_values)
+            812 LOAD_CONST               7 (1)
+            814 COMPARE_OP               5 (>=)
+            816 EXTENDED_ARG             1
+            818 POP_JUMP_IF_FALSE      425 (to 850)
+            820 LOAD_FAST                0 (cmd_line)
+            822 LOAD_METHOD              3 (startswith)
+            824 LOAD_CONST              28 ('SETROUNDING')
+            826 CALL_METHOD              1
+            828 EXTENDED_ARG             1
+            830 POP_JUMP_IF_FALSE      425 (to 850)
+
+495         832 LOAD_GLOBAL             21 (print_message)
+            834 LOAD_CONST              29 ('Set rounding not supported')
+            836 CALL_FUNCTION            1
+            838 POP_TOP
+
+496         840 LOAD_GLOBAL              7 (UpdateStatus)
+            842 LOAD_GLOBAL             12 (ROBOTCOM_READY)
+            844 CALL_FUNCTION            1
+            846 POP_TOP
+            848 JUMP_FORWARD           231 (to 1312)
+
+499     >>  850 LOAD_FAST                5 (n_cmd_values)
+            852 LOAD_CONST               9 (2)
+            854 COMPARE_OP               5 (>=)
+            856 EXTENDED_ARG             1
+            858 POP_JUMP_IF_FALSE      450 (to 900)
+            860 LOAD_FAST                0 (cmd_line)
+            862 LOAD_METHOD              3 (startswith)
+            864 LOAD_CONST              30 ('SETDO')
+            866 CALL_METHOD              1
+            868 EXTENDED_ARG             1
+            870 POP_JUMP_IF_FALSE      450 (to 900)
+
+500         872 LOAD_GLOBAL              7 (UpdateStatus)
+            874 LOAD_GLOBAL              8 (ROBOTCOM_WORKING)
+            876 CALL_FUNCTION            1
+            878 POP_TOP
+
+503         880 LOAD_GLOBAL             10 (ROBOT)
+            882 LOAD_METHOD             24 (SendCommandDO)
+            884 LOAD_FAST                4 (cmd_values)
+            886 CALL_METHOD              1
+            888 POP_TOP
+
+505         890 LOAD_GLOBAL              7 (UpdateStatus)
+            892 LOAD_GLOBAL             12 (ROBOTCOM_READY)
+            894 CALL_FUNCTION            1
+            896 POP_TOP
+            898 JUMP_FORWARD           206 (to 1312)
+
+508     >>  900 LOAD_FAST                5 (n_cmd_values)
+            902 LOAD_CONST               9 (2)
+            904 COMPARE_OP               5 (>=)
+            906 EXTENDED_ARG             1
+            908 POP_JUMP_IF_FALSE      475 (to 950)
+            910 LOAD_FAST                0 (cmd_line)
+            912 LOAD_METHOD              3 (startswith)
+            914 LOAD_CONST              31 ('WAITDI')
+            916 CALL_METHOD              1
+            918 EXTENDED_ARG             1
+            920 POP_JUMP_IF_FALSE      475 (to 950)
+
+509         922 LOAD_GLOBAL              7 (UpdateStatus)
+            924 LOAD_GLOBAL              8 (ROBOTCOM_WORKING)
+            926 CALL_FUNCTION            1
+            928 POP_TOP
+
+512         930 LOAD_GLOBAL             10 (ROBOT)
+            932 LOAD_METHOD             25 (SendCommandWaitDI)
+            934 LOAD_FAST                4 (cmd_values)
+            936 CALL_METHOD              1
+            938 POP_TOP
+
+513         940 LOAD_GLOBAL              7 (UpdateStatus)
+            942 LOAD_GLOBAL             12 (ROBOTCOM_READY)
+            944 CALL_FUNCTION            1
+            946 POP_TOP
+            948 JUMP_FORWARD           181 (to 1312)
+
+515     >>  950 LOAD_FAST                5 (n_cmd_values)
+            952 LOAD_CONST               7 (1)
+            954 COMPARE_OP               5 (>=)
+            956 EXTENDED_ARG             2
+            958 POP_JUMP_IF_FALSE      553 (to 1106)
+            960 LOAD_FAST                6 (n_cmd_words)
+            962 LOAD_CONST              13 (3)
+            964 COMPARE_OP               5 (>=)
+            966 EXTENDED_ARG             2
+            968 POP_JUMP_IF_FALSE      553 (to 1106)
+            970 LOAD_FAST                0 (cmd_line)
+            972 LOAD_METHOD              3 (startswith)
+            974 LOAD_CONST              32 ('RUNPROG')
+            976 CALL_METHOD              1
+            978 EXTENDED_ARG             2
+            980 POP_JUMP_IF_FALSE      553 (to 1106)
+
+516         982 LOAD_GLOBAL              7 (UpdateStatus)
+            984 LOAD_GLOBAL              8 (ROBOTCOM_WORKING)
+            986 CALL_FUNCTION            1
+            988 POP_TOP
+
+517         990 LOAD_FAST                4 (cmd_values)
+            992 LOAD_CONST               6 (0)
+            994 BINARY_SUBSCR
+            996 STORE_FAST              32 (program_id)
+
+518         998 LOAD_FAST                2 (cmd_words)
+           1000 LOAD_CONST               9 (2)
+           1002 BINARY_SUBSCR
+           1004 STORE_FAST              33 (code)
+
+519        1006 LOAD_GLOBAL             26 (re)
+           1008 LOAD_METHOD             27 (search)
+           1010 LOAD_CONST              33 ('^(?P<program_name>.*)\\((?P<args>.*)\\)')
+           1012 LOAD_FAST               33 (code)
+           1014 CALL_METHOD              2
+           1016 STORE_FAST              34 (m)
+
+520        1018 LOAD_FAST               34 (m)
+           1020 LOAD_METHOD             28 (groupdict)
+           1022 CALL_METHOD              0
+           1024 STORE_FAST              35 (code_dict)
+
+521        1026 LOAD_FAST               35 (code_dict)
+           1028 LOAD_CONST              34 ('program_name')
+           1030 BINARY_SUBSCR
+           1032 STORE_FAST              36 (program_name)
+
+522        1034 LOAD_FAST               35 (code_dict)
+           1036 LOAD_CONST              35 ('args')
+           1038 BINARY_SUBSCR
+           1040 LOAD_METHOD             29 (replace)
+           1042 LOAD_CONST               5 (' ')
+           1044 LOAD_CONST               1 ('')
+           1046 CALL_METHOD              2
+           1048 LOAD_METHOD              1 (split)
+           1050 LOAD_CONST              36 (',')
+           1052 CALL_METHOD              1
+           1054 STORE_FAST              37 (args)
+
+523        1056 LOAD_GLOBAL             30 (print)
+           1058 LOAD_CONST              37 ('program_name: ')
+           1060 LOAD_FAST               36 (program_name)
+           1062 BINARY_ADD
+           1064 CALL_FUNCTION            1
+           1066 POP_TOP
+
+524        1068 LOAD_GLOBAL             30 (print)
+           1070 LOAD_CONST              38 ('args: ')
+           1072 LOAD_GLOBAL             31 (str)
+           1074 LOAD_FAST               37 (args)
+           1076 CALL_FUNCTION            1
+           1078 BINARY_ADD
+           1080 CALL_FUNCTION            1
+           1082 POP_TOP
+
+525        1084 LOAD_GLOBAL             10 (ROBOT)
+           1086 LOAD_ATTR               13 (robot)
+           1088 LOAD_METHOD             32 (RunScript)
+           1090 LOAD_FAST               33 (code)
+           1092 CALL_METHOD              1
+           1094 POP_TOP
+
+526        1096 LOAD_GLOBAL              7 (UpdateStatus)
+           1098 LOAD_GLOBAL             12 (ROBOTCOM_READY)
+           1100 CALL_FUNCTION            1
+           1102 POP_TOP
+           1104 JUMP_FORWARD           103 (to 1312)
+
+528     >> 1106 LOAD_FAST                6 (n_cmd_words)
+           1108 LOAD_CONST               9 (2)
+           1110 COMPARE_OP               5 (>=)
+           1112 EXTENDED_ARG             2
+           1114 POP_JUMP_IF_FALSE      583 (to 1166)
+           1116 LOAD_FAST                0 (cmd_line)
+           1118 LOAD_METHOD              3 (startswith)
+           1120 LOAD_CONST              39 ('POPUP ')
+           1122 CALL_METHOD              1
+           1124 EXTENDED_ARG             2
+           1126 POP_JUMP_IF_FALSE      583 (to 1166)
+
+529        1128 LOAD_GLOBAL              7 (UpdateStatus)
+           1130 LOAD_GLOBAL              8 (ROBOTCOM_WORKING)
+           1132 CALL_FUNCTION            1
+           1134 POP_TOP
+
+530        1136 LOAD_FAST                0 (cmd_line)
+           1138 LOAD_CONST              17 (6)
+           1140 LOAD_CONST               2 (None)
+           1142 BUILD_SLICE              2
+           1144 BINARY_SUBSCR
+           1146 STORE_FAST              38 (message)
+
+531        1148 LOAD_GLOBAL             33 (show_message)
+           1150 LOAD_FAST               38 (message)
+           1152 CALL_FUNCTION            1
+           1154 POP_TOP
+
+532        1156 LOAD_GLOBAL              7 (UpdateStatus)
+           1158 LOAD_GLOBAL             12 (ROBOTCOM_READY)
+           1160 CALL_FUNCTION            1
+           1162 POP_TOP
+           1164 JUMP_FORWARD            73 (to 1312)
+
+535     >> 1166 LOAD_FAST                0 (cmd_line)
+           1168 LOAD_METHOD              3 (startswith)
+           1170 LOAD_CONST              40 ('DISCONNECT')
+           1172 CALL_METHOD              1
+           1174 EXTENDED_ARG             2
+           1176 POP_JUMP_IF_FALSE      598 (to 1196)
+
+537        1178 LOAD_GLOBAL             10 (ROBOT)
+           1180 LOAD_METHOD             34 (disconnect)
+           1182 CALL_METHOD              0
+           1184 POP_TOP
+
+538        1186 LOAD_GLOBAL              7 (UpdateStatus)
+           1188 LOAD_GLOBAL             35 (ROBOTCOM_DISCONNECTED)
+           1190 CALL_FUNCTION            1
+           1192 POP_TOP
+           1194 JUMP_FORWARD            58 (to 1312)
+
+540     >> 1196 LOAD_FAST                0 (cmd_line)
+           1198 LOAD_METHOD              3 (startswith)
+           1200 LOAD_CONST              41 ('STOP')
+           1202 CALL_METHOD              1
+           1204 EXTENDED_ARG             2
+           1206 POP_JUMP_IF_TRUE       610 (to 1220)
+           1208 LOAD_FAST                0 (cmd_line)
+           1210 LOAD_METHOD              3 (startswith)
+           1212 LOAD_CONST              42 ('QUIT')
+           1214 CALL_METHOD              1
+           1216 EXTENDED_ARG             2
+           1218 POP_JUMP_IF_FALSE      623 (to 1246)
+
+542     >> 1220 LOAD_GLOBAL             10 (ROBOT)
+           1222 LOAD_METHOD             34 (disconnect)
+           1224 CALL_METHOD              0
+           1226 POP_TOP
+
+543        1228 LOAD_GLOBAL              7 (UpdateStatus)
+           1230 LOAD_GLOBAL             35 (ROBOTCOM_DISCONNECTED)
+           1232 CALL_FUNCTION            1
+           1234 POP_TOP
+
+544        1236 LOAD_GLOBAL             36 (quit)
+           1238 LOAD_CONST               6 (0)
+           1240 CALL_FUNCTION            1
+           1242 POP_TOP
+           1244 JUMP_FORWARD            33 (to 1312)
+
+546     >> 1246 LOAD_FAST                0 (cmd_line)
+           1248 LOAD_METHOD              3 (startswith)
+           1250 LOAD_CONST              43 ('c ')
+           1252 CALL_METHOD              1
+           1254 EXTENDED_ARG             2
+           1256 POP_JUMP_IF_FALSE      639 (to 1278)
+
+548        1258 LOAD_GLOBAL             10 (ROBOT)
+           1260 LOAD_METHOD             37 (SendCommand)
+           1262 LOAD_FAST                0 (cmd_line)
+           1264 LOAD_CONST               9 (2)
+           1266 LOAD_CONST               2 (None)
+           1268 BUILD_SLICE              2
+           1270 BINARY_SUBSCR
+           1272 CALL_METHOD              1
+           1274 POP_TOP
+           1276 JUMP_FORWARD            17 (to 1312)
+
+550     >> 1278 LOAD_FAST                0 (cmd_line)
+           1280 LOAD_CONST              44 ('t')
+           1282 COMPARE_OP               2 (==)
+           1284 EXTENDED_ARG             2
+           1286 POP_JUMP_IF_FALSE      648 (to 1296)
+
+552        1288 LOAD_GLOBAL             38 (TestDriver)
+           1290 CALL_FUNCTION            0
+           1292 POP_TOP
+           1294 JUMP_FORWARD             8 (to 1312)
+
+555     >> 1296 LOAD_GLOBAL             30 (print)
+           1298 LOAD_CONST              45 ('Unknown command: ')
+           1300 LOAD_GLOBAL             31 (str)
+           1302 LOAD_FAST                0 (cmd_line)
+           1304 CALL_FUNCTION            1
+           1306 BINARY_ADD
+           1308 CALL_FUNCTION            1
+           1310 POP_TOP
+
+557     >> 1312 LOAD_FAST                7 (received)
+           1314 LOAD_CONST               2 (None)
+           1316 IS_OP                    1
+           1318 EXTENDED_ARG             2
+           1320 POP_JUMP_IF_FALSE      665 (to 1330)
+
+558        1322 LOAD_GLOBAL              7 (UpdateStatus)
+           1324 LOAD_GLOBAL             12 (ROBOTCOM_READY)
+           1326 CALL_FUNCTION            1
+           1328 POP_TOP
+
+561     >> 1330 LOAD_CONST              46 (False)
+           1332 STORE_GLOBAL             9 (ROBOT_MOVING)
+           1334 LOAD_CONST               2 (None)
+           1336 RETURN_VALUE
+
+    === code: line_2_values (file C:\RoboDK\api\robot\DobotCRDriver.py:389) ===
+390           0 BUILD_LIST               0
+              2 STORE_FAST               1 (values)
+
+391           4 LOAD_FAST                0 (line)
+              6 GET_ITER
+        >>    8 FOR_ITER                22 (to 54)
+             10 STORE_FAST               2 (word)
+
+392          12 SETUP_FINALLY           11 (to 36)
+
+393          14 LOAD_GLOBAL              0 (float)
+             16 LOAD_FAST                2 (word)
+             18 CALL_FUNCTION            1
+             20 STORE_FAST               3 (number)
+
+394          22 LOAD_FAST                1 (values)
+             24 LOAD_METHOD              1 (append)
+             26 LOAD_FAST                3 (number)
+             28 CALL_METHOD              1
+             30 POP_TOP
+             32 POP_BLOCK
+             34 JUMP_ABSOLUTE            4 (to 8)
+
+395     >>   36 DUP_TOP
+             38 LOAD_GLOBAL              2 (ValueError)
+             40 JUMP_IF_NOT_EXC_MATCH    26 (to 52)
+             42 POP_TOP
+             44 POP_TOP
+             46 POP_TOP
+
+396          48 POP_EXCEPT
+             50 JUMP_ABSOLUTE            4 (to 8)
+
+395     >>   52 RERAISE                  0
+
+397     >>   54 LOAD_FAST                1 (values)
+             56 RETURN_VALUE
+
+  === code: RunMain (file C:\RoboDK\api\robot\DobotCRDriver.py:564) ===
+568           0 LOAD_GLOBAL              0 (print_message)
+              2 LOAD_CONST               1 ('RoboDK Driver v2.0 for Dobot CR Controller..')
+              4 CALL_FUNCTION            1
+              6 POP_TOP
+
+571           8 LOAD_CONST               2 (0)
+             10 LOAD_CONST               3 (None)
+             12 IMPORT_NAME              1 (atexit)
+             14 STORE_FAST               0 (atexit)
+
+573          16 LOAD_FAST                0 (atexit)
+             18 LOAD_METHOD              2 (register)
+             20 LOAD_GLOBAL              3 (RobotDisconnect)
+             22 CALL_METHOD              1
+             24 POP_TOP
+
+578          26 LOAD_CONST               4 ('')
+             28 STORE_FAST               1 (cmdlist)
+
+579          30 LOAD_FAST                1 (cmdlist)
+             32 LOAD_CONST               5 ('c PowerOn()|Poser On|')
+             34 INPLACE_ADD
+             36 STORE_FAST               1 (cmdlist)
+
+580          38 LOAD_FAST                1 (cmdlist)
+             40 LOAD_CONST               6 ('c EnableRobot()|Enable robot|')
+             42 INPLACE_ADD
+             44 STORE_FAST               1 (cmdlist)
+
+581          46 LOAD_FAST                1 (cmdlist)
+             48 LOAD_CONST               7 ('c ClearError()|Clear errors|')
+             50 INPLACE_ADD
+             52 STORE_FAST               1 (cmdlist)
+
+582          54 LOAD_FAST                1 (cmdlist)
+             56 LOAD_CONST               8 ('c ResetRobot()|Reset errors|')
+             58 INPLACE_ADD
+             60 STORE_FAST               1 (cmdlist)
+
+583          62 LOAD_FAST                1 (cmdlist)
+             64 LOAD_CONST               9 ('c User(0)|Set User frame 0|')
+             66 INPLACE_ADD
+             68 STORE_FAST               1 (cmdlist)
+
+584          70 LOAD_FAST                1 (cmdlist)
+             72 LOAD_CONST              10 ('c User(1)|Set User frame 1|')
+             74 INPLACE_ADD
+             76 STORE_FAST               1 (cmdlist)
+
+585          78 LOAD_FAST                1 (cmdlist)
+             80 LOAD_CONST              11 ('c User(2)|Set  2|')
+             82 INPLACE_ADD
+             84 STORE_FAST               1 (cmdlist)
+
+586          86 LOAD_FAST                1 (cmdlist)
+             88 LOAD_CONST              12 ('c Tool(0)|Set tool 0|')
+             90 INPLACE_ADD
+             92 STORE_FAST               1 (cmdlist)
+
+587          94 LOAD_FAST                1 (cmdlist)
+             96 LOAD_CONST              13 ('c Tool(1)|Set tool 1|')
+             98 INPLACE_ADD
+            100 STORE_FAST               1 (cmdlist)
+
+588         102 LOAD_FAST                1 (cmdlist)
+            104 LOAD_CONST              14 ('c Tool(2)|Set tool 2|')
+            106 INPLACE_ADD
+            108 STORE_FAST               1 (cmdlist)
+
+596         110 LOAD_GLOBAL              4 (print)
+            112 LOAD_CONST              15 ('CMDLIST:')
+            114 LOAD_FAST                1 (cmdlist)
+            116 BINARY_ADD
+            118 CALL_FUNCTION            1
+            120 POP_TOP
+
+597         122 LOAD_GLOBAL              5 (sys)
+            124 LOAD_ATTR                6 (stdout)
+            126 LOAD_METHOD              7 (flush)
+            128 CALL_METHOD              0
+            130 POP_TOP
+
+601         132 LOAD_GLOBAL              0 (print_message)
+            134 LOAD_GLOBAL              8 (DRIVER_VERSION)
+            136 CALL_FUNCTION            1
+            138 POP_TOP
+
+602         140 LOAD_GLOBAL              9 (UpdateStatus)
+            142 CALL_FUNCTION            0
+            144 POP_TOP
+
+605         146 LOAD_GLOBAL             10 (RunDriver)
+            148 CALL_FUNCTION            0
+            150 POP_TOP
+            152 LOAD_CONST               3 (None)
+            154 RETURN_VALUE
+

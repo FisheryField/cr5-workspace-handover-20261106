@@ -1,0 +1,14 @@
+{
+    "powerOnTime": {
+        "days": 18471,
+        "hour": 22,
+        "min": 54,
+        "sec": 45
+    },
+    "servoEnableTime": {
+        "days": 3,
+        "hour": 5,
+        "min": 16,
+        "sec": 57
+    }
+}

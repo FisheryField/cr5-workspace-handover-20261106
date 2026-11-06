@@ -1,0 +1,1141 @@
+﻿libdataSvr.so : 11986 functions in .symtab
+======================================================================================
+_ZN14DataSubProcess25parseAndReqSetServoParamsEPS_RN9rapidjson15GenericDocumentINS1_4UTF8IcEENS1_19MemoryPoolAllocatorINS1_12CrtAllocatorEEES6_EE  @0x000ebaf4  1352 B  505 insns
+======================================================================================
+  000ebaf4  push.w     {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+  000ebaf8  mov        fp, r0                          
+  000ebafa  ldr.w      r0, [pc, #0x4d4]                
+  000ebafe  sub        sp, #0x5c                       
+  000ebb00  mov        r4, r1                          
+  000ebb02  ldr.w      r5, [pc, #0x4d0]                
+  000ebb06  add        r0, pc                             ; PIC -> 0x0020b7b2
+  000ebb08  blx        #0xb5fb8                        
+  000ebb0c  ldr.w      r3, [pc, #0x4c8]                
+  000ebb10  add        r5, pc                             ; PIC -> 0x0020b7e8 "body"
+  000ebb12  mov        r0, r4                          
+  000ebb14  mov        r1, r5                          
+  000ebb16  add        r3, pc                             ; PIC -> 0x0026991e
+  000ebb18  str        r3, [sp, #0x1c]                 
+  000ebb1a  blx        #0xba750                        
+  000ebb1e  cbnz       r0, #0xebb2c                    
+  000ebb20  mov.w      r4, #-1                         
+  000ebb24  mov        r0, r4                          
+  000ebb26  add        sp, #0x5c                       
+  000ebb28  pop.w      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+  000ebb2c  mov        r0, r4                          
+  000ebb2e  mov        r1, r5                          
+  000ebb30  blx        #0xb4560                        
+  000ebb34  ldrh       r3, [r0, #0xe]                  
+  000ebb36  mov        r4, r0                          
+  000ebb38  cmp        r3, #4                          
+  000ebb3a  bne        #0xebb20                        
+  000ebb3c  add        r1, sp, #0x4c                   
+  000ebb3e  ldr.w      r3, [pc, #0x49c]                   ; = 0x00003510 "}"
+  000ebb42  mov        r7, r1                          
+  000ebb44  str        r1, [sp, #0x2c]                 
+  000ebb46  add        r2, sp, #0x54                   
+  000ebb48  ldr        r1, [sp, #0x1c]                 
+  000ebb4a  str        r2, [sp, #0x30]                 
+  000ebb4c  add.w      sl, sp, #0x50                   
+  000ebb50  ldr        r2, [r0]                        
+  000ebb52  ldr        r5, [r1, r3]                    
+  000ebb54  ldr.w      r6, [pc, #0x488]                
+  000ebb58  cmp.w      r2, #0x12c0                     
+  000ebb5c  mov        r3, r2                          
+  000ebb5e  it         hs                              
+  000ebb60  movhs.w    r3, #0x12c0                     
+  000ebb64  str        r3, [sp, #0x28]                 
+  000ebb66  add        r6, pc                             ; PIC -> 0x002150ba
+  000ebb68  str        r3, [r5]                        
+  000ebb6a  blx        #0xb7d04                        
+  000ebb6e  ldr        r3, [r0, #8]                    
+  000ebb70  mov        r0, r7                          
+  000ebb72  ldr.w      r8, [sp, #0x30]                 
+  000ebb76  mov        r1, r6                          
+  000ebb78  add.w      r3, r3, #0x40000                
+  000ebb7c  ldr        r3, [r3, #8]                    
+  000ebb7e  mov        r2, r8                          
+  000ebb80  sub.w      r7, r3, #1                      
+  000ebb84  clz        r7, r7                          
+  000ebb88  lsrs       r7, r7, #5                      
+  000ebb8a  str        r7, [sp, #0x38]                 
+  000ebb8c  blx        #0xb8b78                        
+  000ebb90  mov        r1, r6                          
+  000ebb92  mov        r2, r8                          
+  000ebb94  mov        r0, sl                          
+  000ebb96  blx        #0xb8b78                        
+  000ebb9a  ldr.w      r0, [pc, #0x448]                
+  000ebb9e  ldr.w      r3, [pc, #0x448]                   ; = 0x00002ec8
+  000ebba2  ldr        r2, [sp, #0x1c]                 
+  000ebba4  ldr        r1, [r5]                        
+  000ebba6  add        r0, pc                             ; PIC -> 0x0020b7ee
+  000ebba8  ldr        r6, [r2, r3]                    
+  000ebbaa  blx        #0xb5b64                        
+  000ebbae  ldr        r3, [sp, #0x28]                 
+  000ebbb0  cmp        r3, #0                          
+  000ebbb2  beq.w      #0xebe42                        
+  000ebbb6  ldrh       r3, [r4, #0xe]                  
+  000ebbb8  cmp        r3, #4                          
+  000ebbba  bne.w      #0xebf42                        
+  000ebbbe  ldr        r3, [r4]                        
+  000ebbc0  mov        r7, r3                          
+  000ebbc2  cmp        r3, #0                          
+  000ebbc4  beq.w      #0xebdaa                        
+  000ebbc8  ldr.w      r1, [pc, #0x420]                
+  000ebbcc  movs       r5, #0                          
+  000ebbce  ldr.w      r3, [pc, #0x420]                
+  000ebbd2  ldr.w      r2, [pc, #0x420]                   ; = 0x00002e98
+  000ebbd6  add        r1, pc                             ; PIC -> 0x0020b81a
+  000ebbd8  str        r1, [sp, #0x20]                 
+  000ebbda  add        r3, pc                             ; PIC -> 0x002083f6 "n::UTF8<>; StackAllocator = rapidjson::CrtAllocator]"
+  000ebbdc  ldr        r1, [sp, #0x1c]                 
+  000ebbde  addw       r3, r3, #0xb04                  
+  000ebbe2  ldr        r2, [r1, r2]                    
+  000ebbe4  str        r3, [sp, #0x44]                 
+  000ebbe6  ldr.w      r3, [pc, #0x410]                
+  000ebbea  ldr.w      r1, [pc, #0x410]                
+  000ebbee  add.w      r8, r2, #4                      
+  000ebbf2  str        r2, [sp, #0x34]                 
+  000ebbf4  add        r3, pc                             ; PIC -> 0x0020b82c "J1"
+  000ebbf6  str        r3, [sp, #0x3c]                 
+  000ebbf8  add        r1, pc                             ; PIC -> 0x0020b820 "servoNum"
+  000ebbfa  ldr.w      r3, [pc, #0x404]                
+  000ebbfe  str        r1, [sp, #0x24]                 
+  000ebc00  add        r3, pc                             ; PIC -> 0x0020b830 "J2"
+  000ebc02  str        r3, [sp, #0x40]                 
+  000ebc04  ldr        r3, [r4, #8]                    
+  000ebc06  lsl.w      sb, r5, #4                      
+  000ebc0a  ldr        r1, [sp, #0x20]                 
+  000ebc0c  add.w      r6, r3, sb                      
+  000ebc10  mov        r0, r6                          
+  000ebc12  blx        #0xba750                        
+  000ebc16  cbnz       r0, #0xebc3e                    
+  000ebc18  ldr        r3, [pc, #0x3cc]                   ; = 0x00002ec8
+  000ebc1a  mov.w      r4, #-1                         
+  000ebc1e  ldr        r2, [sp, #0x1c]                 
+  000ebc20  ldr        r6, [r2, r3]                    
+  000ebc22  ldr        r0, [sp, #0x50]                 
+  000ebc24  subs       r0, #0xc                        
+  000ebc26  cmp        r0, r6                          
+  000ebc28  bne.w      #0xebf20                        
+  000ebc2c  ldr        r0, [sp, #0x4c]                 
+  000ebc2e  subs       r0, #0xc                        
+  000ebc30  cmp        r0, r6                          
+  000ebc32  beq.w      #0xebb24                        
+  000ebc36  add        r1, sp, #0x48                   
+  000ebc38  bl         #0xe3e24                           ; _ZNSs4_Rep10_M_disposeERKSaIcE.part.8
+  000ebc3c  b          #0xebb24                        
+  000ebc3e  mov        r1, r5                          
+  000ebc40  mov        r0, r4                          
+  000ebc42  blx        #0xbc108                        
+  000ebc46  ldr        r1, [sp, #0x20]                 
+  000ebc48  blx        #0xb4560                        
+  000ebc4c  ldrh       r2, [r0, #0xe]                  
+  000ebc4e  lsls       r3, r2, #0x15                   
+  000ebc50  bpl        #0xebc18                        
+  000ebc52  cmp        r5, r7                          
+  000ebc54  bhs.w      #0xebdaa                        
+  000ebc58  mov        r0, r6                          
+  000ebc5a  ldr        r1, [sp, #0x20]                 
+  000ebc5c  blx        #0xb4560                        
+  000ebc60  ldrh       r3, [r0, #0xe]                  
+  000ebc62  lsls       r7, r3, #0x15                   
+  000ebc64  bpl.w      #0xebf72                        
+  000ebc68  lsls       r6, r3, #0x13                   
+  000ebc6a  ite        pl                              
+  000ebc6c  ldrpl      r6, [r0, #8]                    
+  000ebc6e  movmi      r6, r0                          
+  000ebc70  mov        r0, r6                          
+  000ebc72  blx        #0xba6b8                        
+  000ebc76  ldr        r3, [pc, #0x370]                   ; = 0x00002ec8
+  000ebc78  mov        r1, r6                          
+  000ebc7a  ldr        r6, [sp, #0x1c]                 
+  000ebc7c  mov        r2, r0                          
+  000ebc7e  ldr        r0, [sp, #0x2c]                 
+  000ebc80  ldr        r6, [r6, r3]                    
+  000ebc82  blx        #0xb53c8                        
+  000ebc86  ldrh       r3, [r4, #0xe]                  
+  000ebc88  cmp        r3, #4                          
+  000ebc8a  bne.w      #0xebf42                        
+  000ebc8e  ldr        r3, [r4]                        
+  000ebc90  cmp        r5, r3                          
+  000ebc92  bhs.w      #0xebdaa                        
+  000ebc96  ldr        r6, [r4, #8]                    
+  000ebc98  ldr        r1, [sp, #0x24]                 
+  000ebc9a  add        r6, sb                          
+  000ebc9c  mov        r0, r6                          
+  000ebc9e  blx        #0xba750                        
+  000ebca2  cmp        r0, #0                          
+  000ebca4  beq        #0xebc18                        
+  000ebca6  mov        r1, r5                          
+  000ebca8  mov        r0, r4                          
+  000ebcaa  blx        #0xbc108                        
+  000ebcae  ldr        r1, [sp, #0x24]                 
+  000ebcb0  blx        #0xb4560                        
+  000ebcb4  ldrh       r3, [r0, #0xe]                  
+  000ebcb6  lsls       r0, r3, #0x15                   
+  000ebcb8  bpl        #0xebc18                        
+  000ebcba  ldr        r1, [sp, #0x24]                 
+  000ebcbc  mov        r0, r6                          
+  000ebcbe  blx        #0xb4560                        
+  000ebcc2  ldrh       r3, [r0, #0xe]                  
+  000ebcc4  lsls       r1, r3, #0x15                   
+  000ebcc6  bpl.w      #0xebf72                        
+  000ebcca  lsls       r2, r3, #0x13                   
+  000ebccc  ite        pl                              
+  000ebcce  ldrpl      r6, [r0, #8]                    
+  000ebcd0  movmi      r6, r0                          
+  000ebcd2  mov        r0, r6                          
+  000ebcd4  blx        #0xba6b8                        
+  000ebcd8  ldr        r3, [pc, #0x30c]                   ; = 0x00002ec8
+  000ebcda  mov        r2, r0                          
+  000ebcdc  ldr        r7, [sp, #0x1c]                 
+  000ebcde  mov        r1, r6                          
+  000ebce0  mov        r0, sl                          
+  000ebce2  ldr        r6, [r7, r3]                    
+  000ebce4  blx        #0xb53c8                        
+  000ebce8  ldr        r3, [pc, #0x2fc]                   ; = 0x00002ec8
+  000ebcea  mov        r0, sl                          
+  000ebcec  ldr        r1, [sp, #0x3c]                 
+  000ebcee  ldr        r6, [r7, r3]                    
+  000ebcf0  blx        #0xb47d4                        
+  000ebcf4  cmp        r0, #0                          
+  000ebcf6  bne        #0xebdae                        
+  000ebcf8  ldr        r3, [sp, #0x38]                 
+  000ebcfa  rsb.w      r2, r3, #3                      
+  000ebcfe  ldrh       r3, [r4, #0xe]                  
+  000ebd00  str        r2, [r8, #-0x4]                 
+  000ebd04  cmp        r3, #4                          
+  000ebd06  bne.w      #0xebf42                        
+  000ebd0a  ldr        r3, [r4]                        
+  000ebd0c  cmp        r5, r3                          
+  000ebd0e  bhs        #0xebdaa                        
+  000ebd10  ldr        r3, [r4, #8]                    
+  000ebd12  ldr        r6, [pc, #0x2f0]                
+  000ebd14  add        sb, r3                          
+  000ebd16  add        r6, pc                             ; PIC -> 0x0020a256
+  000ebd18  mov        r0, sb                          
+  000ebd1a  mov        r1, r6                          
+  000ebd1c  blx        #0xba750                        
+  000ebd20  cmp        r0, #0                          
+  000ebd22  beq.w      #0xebc18                        
+  000ebd26  mov        r1, r5                          
+  000ebd28  mov        r0, r4                          
+  000ebd2a  blx        #0xbc108                        
+  000ebd2e  mov        r1, r6                          
+  000ebd30  blx        #0xb4560                        
+  000ebd34  ldrh       r3, [r0, #0xe]                  
+  000ebd36  lsls       r3, r3, #0x1b                   
+  000ebd38  bpl.w      #0xebc18                        
+  000ebd3c  mov        r1, r6                          
+  000ebd3e  mov        r0, sb                          
+  000ebd40  blx        #0xb4560                        
+  000ebd44  blx        #0xb60a8                        
+  000ebd48  vcvt.f32.f64 s0, d0                          
+  000ebd4c  ldr        r7, [sp, #0x30]                 
+  000ebd4e  ldr        r3, [pc, #0x298]                   ; = 0x00002ec8
+  000ebd50  ldr        r2, [sp, #0x1c]                 
+  000ebd52  vcvt.s32.f32 s0, s0                          
+  000ebd56  mov        r0, r7                          
+  000ebd58  ldr        r1, [sp, #0x2c]                 
+  000ebd5a  vstr       s0, [r8, #8]                    
+  000ebd5e  ldr        r6, [r2, r3]                    
+  000ebd60  blx        #0xb6090                        
+  000ebd64  add.w      r2, r8, #4                      
+  000ebd68  mov        r1, r8                          
+  000ebd6a  mov        r0, r7                          
+  000ebd6c  blx        #0xb86ec                        
+  000ebd70  ldr        r3, [pc, #0x274]                   ; = 0x00002ec8
+  000ebd72  mov        sb, r0                          
+  000ebd74  ldr        r2, [sp, #0x1c]                 
+  000ebd76  ldr        r0, [sp, #0x54]                 
+  000ebd78  ldr        r6, [r2, r3]                    
+  000ebd7a  subs       r0, #0xc                        
+  000ebd7c  cmp        r0, r6                          
+  000ebd7e  bne        #0xebdea                        
+  000ebd80  cmp.w      sb, #-1                         
+  000ebd84  beq        #0xebdc6                        
+  000ebd86  movs       r3, #2                          
+  000ebd88  adds       r5, #1                          
+  000ebd8a  str.w      r3, [r8, #0xc]                  
+  000ebd8e  ldr        r3, [sp, #0x28]                 
+  000ebd90  cmp        r5, r3                          
+  000ebd92  beq        #0xebe48                        
+  000ebd94  ldrh       r3, [r4, #0xe]                  
+  000ebd96  cmp        r3, #4                          
+  000ebd98  bne.w      #0xebf42                        
+  000ebd9c  ldr        r3, [r4]                        
+  000ebd9e  add.w      r8, r8, #0x18                   
+  000ebda2  cmp        r5, r3                          
+  000ebda4  mov        r7, r3                          
+  000ebda6  blo.w      #0xebc04                        
+  000ebdaa  bl         #0xbcc28                           ; _ZN9rapidjson12GenericValueINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAllocatorEEEEixEj.part.190
+  000ebdae  ldr        r3, [pc, #0x238]                   ; = 0x00002ec8
+  000ebdb0  mov        r0, sl                          
+  000ebdb2  ldr        r2, [sp, #0x1c]                 
+  000ebdb4  ldr        r1, [sp, #0x40]                 
+  000ebdb6  ldr        r6, [r2, r3]                    
+  000ebdb8  blx        #0xb47d4                        
+  000ebdbc  cbnz       r0, #0xebdf2                    
+  000ebdbe  ldr        r3, [sp, #0x38]                 
+  000ebdc0  rsb.w      r2, r3, #4                      
+  000ebdc4  b          #0xebcfe                        
+  000ebdc6  blx        #0xb4a54                        
+  000ebdca  ldr        r0, [pc, #0x23c]                
+  000ebdcc  movs       r3, #2                          
+  000ebdce  ldr        r1, [sp, #0x30]                 
+  000ebdd0  ldr        r7, [sp, #0x4c]                 
+  000ebdd2  add        r0, pc                             ; PIC -> 0x0020b83a
+  000ebdd4  ldr        r2, [sp, #0x44]                 
+  000ebdd6  str        r1, [sp, #4]                    
+  000ebdd8  movw       r1, #0x1235                     
+  000ebddc  str        r0, [sp]                        
+  000ebdde  mvn        r0, #0xf                        
+  000ebde2  str        r7, [sp, #0x54]                 
+  000ebde4  blx        #0xb3d7c                        
+  000ebde8  b          #0xebd86                        
+  000ebdea  add        r1, sp, #0x48                   
+  000ebdec  bl         #0xe3e24                           ; _ZNSs4_Rep10_M_disposeERKSaIcE.part.8
+  000ebdf0  b          #0xebd80                        
+  000ebdf2  ldr        r1, [pc, #0x218]                
+  000ebdf4  mov        r0, sl                          
+  000ebdf6  ldr        r3, [pc, #0x1f0]                   ; = 0x00002ec8
+  000ebdf8  ldr        r2, [sp, #0x1c]                 
+  000ebdfa  add        r1, pc                             ; PIC -> 0x0020b832
+  000ebdfc  ldr        r6, [r2, r3]                    
+  000ebdfe  blx        #0xb47d4                        
+  000ebe02  cbnz       r0, #0xebe0c                    
+  000ebe04  ldr        r3, [sp, #0x38]                 
+  000ebe06  rsb.w      r2, r3, #5                      
+  000ebe0a  b          #0xebcfe                        
+  000ebe0c  ldr        r1, [pc, #0x200]                
+  000ebe0e  mov        r0, sl                          
+  000ebe10  ldr        r3, [pc, #0x1d4]                   ; = 0x00002ec8
+  000ebe12  ldr        r2, [sp, #0x1c]                 
+  000ebe14  add        r1, pc                             ; PIC -> 0x0021962c "J4"
+  000ebe16  ldr        r6, [r2, r3]                    
+  000ebe18  blx        #0xb47d4                        
+  000ebe1c  cbnz       r0, #0xebe26                    
+  000ebe1e  ldr        r3, [sp, #0x38]                 
+  000ebe20  rsb.w      r2, r3, #6                      
+  000ebe24  b          #0xebcfe                        
+  000ebe26  ldr        r1, [pc, #0x1ec]                
+  000ebe28  mov        r0, sl                          
+  000ebe2a  ldr        r3, [pc, #0x1bc]                   ; = 0x00002ec8
+  000ebe2c  ldr        r2, [sp, #0x1c]                 
+  000ebe2e  add        r1, pc                             ; PIC -> 0x0021965a "itJ5"
+  000ebe30  ldr        r6, [r2, r3]                    
+  000ebe32  blx        #0xb47d4                        
+  000ebe36  cmp        r0, #0                          
+  000ebe38  bne        #0xebf28                        
+  000ebe3a  ldr        r3, [sp, #0x38]                 
+  000ebe3c  rsb.w      r2, r3, #7                      
+  000ebe40  b          #0xebcfe                        
+  000ebe42  ldr        r3, [pc, #0x1a4]                   ; = 0x00002ec8
+  000ebe44  ldr        r2, [sp, #0x1c]                 
+  000ebe46  ldr        r6, [r2, r3]                    
+  000ebe48  blx        #0xb4a54                        
+  000ebe4c  ldr        r2, [pc, #0x1c8]                
+  000ebe4e  movs       r3, #2                          
+  000ebe50  ldr        r4, [pc, #0x1c8]                
+  000ebe52  movw       r1, #0x123c                     
+  000ebe56  mvn        r0, #0xf                        
+  000ebe5a  add        r2, pc                             ; PIC -> 0x002083f6 "n::UTF8<>; StackAllocator = rapidjson::CrtAllocator]"
+  000ebe5c  add        r4, pc                             ; PIC -> 0x0020b854 "start write sdo tp codesys."
+  000ebe5e  addw       r2, r2, #0xb04                     ; PIC+0xb04 -> 0x0020c358 " return {}"
+  000ebe62  str        r4, [sp]                        
+  000ebe64  blx        #0xba8fc                        
+  000ebe68  ldr        r3, [pc, #0x1b4]                   ; = 0x00003660
+  000ebe6a  movs       r2, #4                          
+  000ebe6c  ldr        r1, [sp, #0x1c]                 
+  000ebe6e  ldr.w      sb, [r1, r3]                    
+  000ebe72  ldr        r3, [sp, #0x28]                 
+  000ebe74  str.w      r2, [sb]                        
+  000ebe78  cmp        r3, #0                          
+  000ebe7a  beq        #0xebf16                        
+  000ebe7c  ldr        r2, [pc, #0x174]                   ; = 0x00002e98
+  000ebe7e  movs       r4, #0                          
+  000ebe80  ldr        r1, [sp, #0x1c]                 
+  000ebe82  ldr        r3, [pc, #0x1a0]                
+  000ebe84  ldr.w      r8, [pc, #0x1a0]                
+  000ebe88  ldr        r2, [r1, r2]                    
+  000ebe8a  add        r3, pc                             ; PIC -> 0x002083f6 "n::UTF8<>; StackAllocator = rapidjson::CrtAllocator]"
+  000ebe8c  add        r8, pc                             ; PIC -> 0x0020b870 "sdo write fail,slave={},index={},subIndex={},value={}."
+  000ebe8e  addw       r7, r3, #0xb04                     ; PIC+0xb04 -> 0x0020c374 "rror!"
+  000ebe92  str        r2, [sp, #0x34]                 
+  000ebe94  mov        r5, r2                          
+  000ebe96  b          #0xebea2                        
+  000ebe98  ldr        r3, [sp, #0x28]                 
+  000ebe9a  adds       r4, #1                          
+  000ebe9c  adds       r5, #0x18                       
+  000ebe9e  cmp        r4, r3                          
+  000ebea0  beq        #0xebf16                        
+  000ebea2  lsls       r3, r4, #5                      
+  000ebea4  ldr        r2, [sp, #0x34]                 
+  000ebea6  sub.w      r3, r3, r4, lsl #3              
+  000ebeaa  add        r3, r2                          
+  000ebeac  add.w      r2, r3, #0xc                    
+  000ebeb0  ldm        r2, {r0, r1, r2}                
+  000ebeb2  stm.w      sp, {r0, r1, r2}                
+  000ebeb6  mov        r0, fp                          
+  000ebeb8  ldm        r3, {r1, r2, r3}                
+  000ebeba  blx        #0xbc780                        
+  000ebebe  movw       r0, #0xd090                     
+  000ebec2  movt       r0, #3                          
+  000ebec6  blx        #0xba8f0                        
+  000ebeca  ldr.w      r3, [fp, #0xe20]                
+  000ebece  ldr.w      r3, [r3, #0x4dc]                
+  000ebed2  sub.w      r3, r3, #1                      
+  000ebed6  clz        r3, r3                          
+  000ebeda  lsrs       r3, r3, #5                      
+  000ebedc  strb       r3, [r5, #0x14]                 
+  000ebede  cmp        r3, #0                          
+  000ebee0  bne        #0xebe98                        
+  000ebee2  blx        #0xb4a54                        
+  000ebee6  add.w      r2, r5, #0xc                    
+  000ebeea  add.w      r1, r5, #8                      
+  000ebeee  adds       r0, r5, #4                      
+  000ebef0  str        r2, [sp, #0x10]                 
+  000ebef2  str        r1, [sp, #0xc]                  
+  000ebef4  movs       r3, #2                          
+  000ebef6  str        r0, [sp, #8]                    
+  000ebef8  mov        r2, r7                          
+  000ebefa  str        r5, [sp, #4]                    
+  000ebefc  movw       r1, #0x1244                     
+  000ebf00  str.w      r8, [sp]                        
+  000ebf04  mvn        r0, #0xf                        
+  000ebf08  blx        #0xb8eec                        
+  000ebf0c  ldr        r3, [sp, #0x28]                 
+  000ebf0e  adds       r4, #1                          
+  000ebf10  adds       r5, #0x18                       
+  000ebf12  cmp        r4, r3                          
+  000ebf14  bne        #0xebea2                        
+  000ebf16  movs       r3, #6                          
+  000ebf18  movs       r4, #0                          
+  000ebf1a  str.w      r3, [sb]                        
+  000ebf1e  b          #0xebc22                        
+  000ebf20  add        r1, sp, #0x48                   
+  000ebf22  bl         #0xe3e24                           ; _ZNSs4_Rep10_M_disposeERKSaIcE.part.8
+  000ebf26  b          #0xebc2c                        
+  000ebf28  ldr        r1, [pc, #0x100]                
+  000ebf2a  mov        r0, sl                          
+  000ebf2c  ldr        r3, [pc, #0xb8]                    ; = 0x00002ec8
+  000ebf2e  ldr        r2, [sp, #0x1c]                 
+  000ebf30  add        r1, pc                             ; PIC -> 0x0020b838 "J6"
+  000ebf32  ldr        r6, [r2, r3]                    
+  000ebf34  blx        #0xb47d4                        
+  000ebf38  cbnz       r0, #0xebf5a                    
+  000ebf3a  ldr        r3, [sp, #0x38]                 
+  000ebf3c  rsb.w      r2, r3, #8                      
+  000ebf40  b          #0xebcfe                        
+  000ebf42  ldr        r3, [pc, #0xec]                 
+  000ebf44  movw       r2, #0x5d9                      
+  000ebf48  ldr        r1, [pc, #0xe8]                 
+  000ebf4a  ldr        r0, [pc, #0xec]                 
+  000ebf4c  add        r3, pc                             ; PIC -> 0x00205110 "double rapidjson::internal::Pow10(int)"
+  000ebf4e  add        r1, pc                             ; PIC -> 0x00209be6
+  000ebf50  add.w      r3, r3, #0x710                  
+  000ebf54  add        r0, pc                             ; PIC -> 0x00209c68 "IsArray()"
+  000ebf56  blx        #0xb7e04                        
+  000ebf5a  lsls       r2, r5, #5                      
+  000ebf5c  movs       r1, #0                          
+  000ebf5e  ldr        r3, [pc, #0x88]                    ; = 0x00002ec8
+  000ebf60  mov.w      r4, #-1                         
+  000ebf64  sub.w      r5, r2, r5, lsl #3              
+  000ebf68  ldr        r2, [sp, #0x34]                 
+  000ebf6a  str        r1, [r2, r5]                    
+  000ebf6c  ldr        r2, [sp, #0x1c]                 
+  000ebf6e  ldr        r6, [r2, r3]                    
+  000ebf70  b          #0xebc22                        
+  000ebf72  bl         #0xe3d40                           ; _ZNK9rapidjson12GenericValueINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAllocatorEEEE9GetStringEv.part.176
+  000ebf76  ldr        r0, [sp, #0x50]                 
+  000ebf78  subs       r0, #0xc                        
+  000ebf7a  cmp        r0, r6                          
+  000ebf7c  beq        #0xebf84                        
+  000ebf7e  add        r1, sp, #0x48                   
+  000ebf80  bl         #0xe3e24                           ; _ZNSs4_Rep10_M_disposeERKSaIcE.part.8
+  000ebf84  ldr        r0, [sp, #0x4c]                 
+  000ebf86  subs       r0, #0xc                        
+  000ebf88  cmp        r0, r6                          
+  000ebf8a  beq        #0xebf92                        
+  000ebf8c  add        r1, sp, #0x48                   
+  000ebf8e  bl         #0xe3e24                           ; _ZNSs4_Rep10_M_disposeERKSaIcE.part.8
+  000ebf92  blx        #0xb8a64                        
+  000ebf96  ldr        r3, [pc, #0x50]                    ; = 0x00002ec8
+  000ebf98  mov        r4, r0                          
+  000ebf9a  ldr        r2, [sp, #0x1c]                 
+  000ebf9c  mov        r5, r1                          
+  000ebf9e  ldr        r0, [sp, #0x54]                 
+  000ebfa0  ldr        r6, [r2, r3]                    
+  000ebfa2  subs       r0, #0xc                        
+  000ebfa4  cmp        r0, r6                          
+  000ebfa6  beq        #0xebfae                        
+  000ebfa8  add        r1, sp, #0x48                   
+  000ebfaa  bl         #0xe3e24                           ; _ZNSs4_Rep10_M_disposeERKSaIcE.part.8
+  000ebfae  mov        r0, r4                          
+  000ebfb0  mov        r1, r5                          
+  000ebfb2  cmp        r1, #1                          
+  000ebfb4  bne        #0xebf76                        
+  000ebfb6  mov.w      r4, #-1                         
+  000ebfba  blx        #0xb54bc                        
+  000ebfbe  blx        #0xbaf40                        
+  000ebfc2  b          #0xebc22                        
+  000ebfc4  ldr        r3, [pc, #0x20]                    ; = 0x00002ec8
+  000ebfc6  ldr        r2, [sp, #0x1c]                 
+  000ebfc8  ldr        r6, [r2, r3]                    
+  000ebfca  b          #0xebf84                        
+  000ebfcc  b          #0xebfb2                        
+  000ebfce  nop                                        
+  000ebfd0  stc2       p0, c0, [sl], #0x44             
+  000ebfd4  ldc2l      p0, c0, [r4], {0x11}            
+  000ebfd8  udf        #6                              
+  000ebfda  movs       r7, r2                          
+  000ebfdc  adds       r5, #0x10                       
+  000ebfde  movs       r0, r0                          
+  000ebfe0  str        r5, [sp, #0x148]                
+  000ebfe2  movs       r2, r2                          
+  000ebfe4  mcrr2      p0, #1, r0, r6, c1              
+  000ebfe8  cmp        r6, #0xc8                       
+  000ebfea  movs       r0, r0                          
+  000ebfec  mcrr2      p0, #1, r0, r2, c1              
+  000ebff0  ldm        r0!, {r1, r3, r4}               
+  000ebff2  movs       r1, r2                          
+  000ebff4  cmp        r6, #0x98                       
+  000ebff6  movs       r0, r0                          
+  000ebff8  ldc2       p0, c0, [r4], #-0x44            
+  000ebffc  stc2       p0, c0, [r4], #-0x44            
+  000ec000  stc2       p0, c0, [ip], #-0x44            
+  000ec004  b          #0xeba84                        
+  000ec006  movs       r1, r2                          
+
+======================================================================================
+_ZN14DataSubProcess25parseAndReqSetServoParamsEPS_RN9rapidjson15GenericDocumentINS1_4UTF8IcEENS1_19MemoryPoolAllocatorINS1_12CrtAllocatorEEES6_EE  @0x000ebaf4  1352 B  505 insns
+======================================================================================
+  000ebaf4  push.w     {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+  000ebaf8  mov        fp, r0                          
+  000ebafa  ldr.w      r0, [pc, #0x4d4]                
+  000ebafe  sub        sp, #0x5c                       
+  000ebb00  mov        r4, r1                          
+  000ebb02  ldr.w      r5, [pc, #0x4d0]                
+  000ebb06  add        r0, pc                             ; PIC -> 0x0020b7b2
+  000ebb08  blx        #0xb5fb8                        
+  000ebb0c  ldr.w      r3, [pc, #0x4c8]                
+  000ebb10  add        r5, pc                             ; PIC -> 0x0020b7e8 "body"
+  000ebb12  mov        r0, r4                          
+  000ebb14  mov        r1, r5                          
+  000ebb16  add        r3, pc                             ; PIC -> 0x0026991e
+  000ebb18  str        r3, [sp, #0x1c]                 
+  000ebb1a  blx        #0xba750                        
+  000ebb1e  cbnz       r0, #0xebb2c                    
+  000ebb20  mov.w      r4, #-1                         
+  000ebb24  mov        r0, r4                          
+  000ebb26  add        sp, #0x5c                       
+  000ebb28  pop.w      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+  000ebb2c  mov        r0, r4                          
+  000ebb2e  mov        r1, r5                          
+  000ebb30  blx        #0xb4560                        
+  000ebb34  ldrh       r3, [r0, #0xe]                  
+  000ebb36  mov        r4, r0                          
+  000ebb38  cmp        r3, #4                          
+  000ebb3a  bne        #0xebb20                        
+  000ebb3c  add        r1, sp, #0x4c                   
+  000ebb3e  ldr.w      r3, [pc, #0x49c]                   ; = 0x00003510 "}"
+  000ebb42  mov        r7, r1                          
+  000ebb44  str        r1, [sp, #0x2c]                 
+  000ebb46  add        r2, sp, #0x54                   
+  000ebb48  ldr        r1, [sp, #0x1c]                 
+  000ebb4a  str        r2, [sp, #0x30]                 
+  000ebb4c  add.w      sl, sp, #0x50                   
+  000ebb50  ldr        r2, [r0]                        
+  000ebb52  ldr        r5, [r1, r3]                    
+  000ebb54  ldr.w      r6, [pc, #0x488]                
+  000ebb58  cmp.w      r2, #0x12c0                     
+  000ebb5c  mov        r3, r2                          
+  000ebb5e  it         hs                              
+  000ebb60  movhs.w    r3, #0x12c0                     
+  000ebb64  str        r3, [sp, #0x28]                 
+  000ebb66  add        r6, pc                             ; PIC -> 0x002150ba
+  000ebb68  str        r3, [r5]                        
+  000ebb6a  blx        #0xb7d04                        
+  000ebb6e  ldr        r3, [r0, #8]                    
+  000ebb70  mov        r0, r7                          
+  000ebb72  ldr.w      r8, [sp, #0x30]                 
+  000ebb76  mov        r1, r6                          
+  000ebb78  add.w      r3, r3, #0x40000                
+  000ebb7c  ldr        r3, [r3, #8]                    
+  000ebb7e  mov        r2, r8                          
+  000ebb80  sub.w      r7, r3, #1                      
+  000ebb84  clz        r7, r7                          
+  000ebb88  lsrs       r7, r7, #5                      
+  000ebb8a  str        r7, [sp, #0x38]                 
+  000ebb8c  blx        #0xb8b78                        
+  000ebb90  mov        r1, r6                          
+  000ebb92  mov        r2, r8                          
+  000ebb94  mov        r0, sl                          
+  000ebb96  blx        #0xb8b78                        
+  000ebb9a  ldr.w      r0, [pc, #0x448]                
+  000ebb9e  ldr.w      r3, [pc, #0x448]                   ; = 0x00002ec8
+  000ebba2  ldr        r2, [sp, #0x1c]                 
+  000ebba4  ldr        r1, [r5]                        
+  000ebba6  add        r0, pc                             ; PIC -> 0x0020b7ee
+  000ebba8  ldr        r6, [r2, r3]                    
+  000ebbaa  blx        #0xb5b64                        
+  000ebbae  ldr        r3, [sp, #0x28]                 
+  000ebbb0  cmp        r3, #0                          
+  000ebbb2  beq.w      #0xebe42                        
+  000ebbb6  ldrh       r3, [r4, #0xe]                  
+  000ebbb8  cmp        r3, #4                          
+  000ebbba  bne.w      #0xebf42                        
+  000ebbbe  ldr        r3, [r4]                        
+  000ebbc0  mov        r7, r3                          
+  000ebbc2  cmp        r3, #0                          
+  000ebbc4  beq.w      #0xebdaa                        
+  000ebbc8  ldr.w      r1, [pc, #0x420]                
+  000ebbcc  movs       r5, #0                          
+  000ebbce  ldr.w      r3, [pc, #0x420]                
+  000ebbd2  ldr.w      r2, [pc, #0x420]                   ; = 0x00002e98
+  000ebbd6  add        r1, pc                             ; PIC -> 0x0020b81a
+  000ebbd8  str        r1, [sp, #0x20]                 
+  000ebbda  add        r3, pc                             ; PIC -> 0x002083f6 "n::UTF8<>; StackAllocator = rapidjson::CrtAllocator]"
+  000ebbdc  ldr        r1, [sp, #0x1c]                 
+  000ebbde  addw       r3, r3, #0xb04                  
+  000ebbe2  ldr        r2, [r1, r2]                    
+  000ebbe4  str        r3, [sp, #0x44]                 
+  000ebbe6  ldr.w      r3, [pc, #0x410]                
+  000ebbea  ldr.w      r1, [pc, #0x410]                
+  000ebbee  add.w      r8, r2, #4                      
+  000ebbf2  str        r2, [sp, #0x34]                 
+  000ebbf4  add        r3, pc                             ; PIC -> 0x0020b82c "J1"
+  000ebbf6  str        r3, [sp, #0x3c]                 
+  000ebbf8  add        r1, pc                             ; PIC -> 0x0020b820 "servoNum"
+  000ebbfa  ldr.w      r3, [pc, #0x404]                
+  000ebbfe  str        r1, [sp, #0x24]                 
+  000ebc00  add        r3, pc                             ; PIC -> 0x0020b830 "J2"
+  000ebc02  str        r3, [sp, #0x40]                 
+  000ebc04  ldr        r3, [r4, #8]                    
+  000ebc06  lsl.w      sb, r5, #4                      
+  000ebc0a  ldr        r1, [sp, #0x20]                 
+  000ebc0c  add.w      r6, r3, sb                      
+  000ebc10  mov        r0, r6                          
+  000ebc12  blx        #0xba750                        
+  000ebc16  cbnz       r0, #0xebc3e                    
+  000ebc18  ldr        r3, [pc, #0x3cc]                   ; = 0x00002ec8
+  000ebc1a  mov.w      r4, #-1                         
+  000ebc1e  ldr        r2, [sp, #0x1c]                 
+  000ebc20  ldr        r6, [r2, r3]                    
+  000ebc22  ldr        r0, [sp, #0x50]                 
+  000ebc24  subs       r0, #0xc                        
+  000ebc26  cmp        r0, r6                          
+  000ebc28  bne.w      #0xebf20                        
+  000ebc2c  ldr        r0, [sp, #0x4c]                 
+  000ebc2e  subs       r0, #0xc                        
+  000ebc30  cmp        r0, r6                          
+  000ebc32  beq.w      #0xebb24                        
+  000ebc36  add        r1, sp, #0x48                   
+  000ebc38  bl         #0xe3e24                           ; _ZNSs4_Rep10_M_disposeERKSaIcE.part.8
+  000ebc3c  b          #0xebb24                        
+  000ebc3e  mov        r1, r5                          
+  000ebc40  mov        r0, r4                          
+  000ebc42  blx        #0xbc108                        
+  000ebc46  ldr        r1, [sp, #0x20]                 
+  000ebc48  blx        #0xb4560                        
+  000ebc4c  ldrh       r2, [r0, #0xe]                  
+  000ebc4e  lsls       r3, r2, #0x15                   
+  000ebc50  bpl        #0xebc18                        
+  000ebc52  cmp        r5, r7                          
+  000ebc54  bhs.w      #0xebdaa                        
+  000ebc58  mov        r0, r6                          
+  000ebc5a  ldr        r1, [sp, #0x20]                 
+  000ebc5c  blx        #0xb4560                        
+  000ebc60  ldrh       r3, [r0, #0xe]                  
+  000ebc62  lsls       r7, r3, #0x15                   
+  000ebc64  bpl.w      #0xebf72                        
+  000ebc68  lsls       r6, r3, #0x13                   
+  000ebc6a  ite        pl                              
+  000ebc6c  ldrpl      r6, [r0, #8]                    
+  000ebc6e  movmi      r6, r0                          
+  000ebc70  mov        r0, r6                          
+  000ebc72  blx        #0xba6b8                        
+  000ebc76  ldr        r3, [pc, #0x370]                   ; = 0x00002ec8
+  000ebc78  mov        r1, r6                          
+  000ebc7a  ldr        r6, [sp, #0x1c]                 
+  000ebc7c  mov        r2, r0                          
+  000ebc7e  ldr        r0, [sp, #0x2c]                 
+  000ebc80  ldr        r6, [r6, r3]                    
+  000ebc82  blx        #0xb53c8                        
+  000ebc86  ldrh       r3, [r4, #0xe]                  
+  000ebc88  cmp        r3, #4                          
+  000ebc8a  bne.w      #0xebf42                        
+  000ebc8e  ldr        r3, [r4]                        
+  000ebc90  cmp        r5, r3                          
+  000ebc92  bhs.w      #0xebdaa                        
+  000ebc96  ldr        r6, [r4, #8]                    
+  000ebc98  ldr        r1, [sp, #0x24]                 
+  000ebc9a  add        r6, sb                          
+  000ebc9c  mov        r0, r6                          
+  000ebc9e  blx        #0xba750                        
+  000ebca2  cmp        r0, #0                          
+  000ebca4  beq        #0xebc18                        
+  000ebca6  mov        r1, r5                          
+  000ebca8  mov        r0, r4                          
+  000ebcaa  blx        #0xbc108                        
+  000ebcae  ldr        r1, [sp, #0x24]                 
+  000ebcb0  blx        #0xb4560                        
+  000ebcb4  ldrh       r3, [r0, #0xe]                  
+  000ebcb6  lsls       r0, r3, #0x15                   
+  000ebcb8  bpl        #0xebc18                        
+  000ebcba  ldr        r1, [sp, #0x24]                 
+  000ebcbc  mov        r0, r6                          
+  000ebcbe  blx        #0xb4560                        
+  000ebcc2  ldrh       r3, [r0, #0xe]                  
+  000ebcc4  lsls       r1, r3, #0x15                   
+  000ebcc6  bpl.w      #0xebf72                        
+  000ebcca  lsls       r2, r3, #0x13                   
+  000ebccc  ite        pl                              
+  000ebcce  ldrpl      r6, [r0, #8]                    
+  000ebcd0  movmi      r6, r0                          
+  000ebcd2  mov        r0, r6                          
+  000ebcd4  blx        #0xba6b8                        
+  000ebcd8  ldr        r3, [pc, #0x30c]                   ; = 0x00002ec8
+  000ebcda  mov        r2, r0                          
+  000ebcdc  ldr        r7, [sp, #0x1c]                 
+  000ebcde  mov        r1, r6                          
+  000ebce0  mov        r0, sl                          
+  000ebce2  ldr        r6, [r7, r3]                    
+  000ebce4  blx        #0xb53c8                        
+  000ebce8  ldr        r3, [pc, #0x2fc]                   ; = 0x00002ec8
+  000ebcea  mov        r0, sl                          
+  000ebcec  ldr        r1, [sp, #0x3c]                 
+  000ebcee  ldr        r6, [r7, r3]                    
+  000ebcf0  blx        #0xb47d4                        
+  000ebcf4  cmp        r0, #0                          
+  000ebcf6  bne        #0xebdae                        
+  000ebcf8  ldr        r3, [sp, #0x38]                 
+  000ebcfa  rsb.w      r2, r3, #3                      
+  000ebcfe  ldrh       r3, [r4, #0xe]                  
+  000ebd00  str        r2, [r8, #-0x4]                 
+  000ebd04  cmp        r3, #4                          
+  000ebd06  bne.w      #0xebf42                        
+  000ebd0a  ldr        r3, [r4]                        
+  000ebd0c  cmp        r5, r3                          
+  000ebd0e  bhs        #0xebdaa                        
+  000ebd10  ldr        r3, [r4, #8]                    
+  000ebd12  ldr        r6, [pc, #0x2f0]                
+  000ebd14  add        sb, r3                          
+  000ebd16  add        r6, pc                             ; PIC -> 0x0020a256
+  000ebd18  mov        r0, sb                          
+  000ebd1a  mov        r1, r6                          
+  000ebd1c  blx        #0xba750                        
+  000ebd20  cmp        r0, #0                          
+  000ebd22  beq.w      #0xebc18                        
+  000ebd26  mov        r1, r5                          
+  000ebd28  mov        r0, r4                          
+  000ebd2a  blx        #0xbc108                        
+  000ebd2e  mov        r1, r6                          
+  000ebd30  blx        #0xb4560                        
+  000ebd34  ldrh       r3, [r0, #0xe]                  
+  000ebd36  lsls       r3, r3, #0x1b                   
+  000ebd38  bpl.w      #0xebc18                        
+  000ebd3c  mov        r1, r6                          
+  000ebd3e  mov        r0, sb                          
+  000ebd40  blx        #0xb4560                        
+  000ebd44  blx        #0xb60a8                        
+  000ebd48  vcvt.f32.f64 s0, d0                          
+  000ebd4c  ldr        r7, [sp, #0x30]                 
+  000ebd4e  ldr        r3, [pc, #0x298]                   ; = 0x00002ec8
+  000ebd50  ldr        r2, [sp, #0x1c]                 
+  000ebd52  vcvt.s32.f32 s0, s0                          
+  000ebd56  mov        r0, r7                          
+  000ebd58  ldr        r1, [sp, #0x2c]                 
+  000ebd5a  vstr       s0, [r8, #8]                    
+  000ebd5e  ldr        r6, [r2, r3]                    
+  000ebd60  blx        #0xb6090                        
+  000ebd64  add.w      r2, r8, #4                      
+  000ebd68  mov        r1, r8                          
+  000ebd6a  mov        r0, r7                          
+  000ebd6c  blx        #0xb86ec                        
+  000ebd70  ldr        r3, [pc, #0x274]                   ; = 0x00002ec8
+  000ebd72  mov        sb, r0                          
+  000ebd74  ldr        r2, [sp, #0x1c]                 
+  000ebd76  ldr        r0, [sp, #0x54]                 
+  000ebd78  ldr        r6, [r2, r3]                    
+  000ebd7a  subs       r0, #0xc                        
+  000ebd7c  cmp        r0, r6                          
+  000ebd7e  bne        #0xebdea                        
+  000ebd80  cmp.w      sb, #-1                         
+  000ebd84  beq        #0xebdc6                        
+  000ebd86  movs       r3, #2                          
+  000ebd88  adds       r5, #1                          
+  000ebd8a  str.w      r3, [r8, #0xc]                  
+  000ebd8e  ldr        r3, [sp, #0x28]                 
+  000ebd90  cmp        r5, r3                          
+  000ebd92  beq        #0xebe48                        
+  000ebd94  ldrh       r3, [r4, #0xe]                  
+  000ebd96  cmp        r3, #4                          
+  000ebd98  bne.w      #0xebf42                        
+  000ebd9c  ldr        r3, [r4]                        
+  000ebd9e  add.w      r8, r8, #0x18                   
+  000ebda2  cmp        r5, r3                          
+  000ebda4  mov        r7, r3                          
+  000ebda6  blo.w      #0xebc04                        
+  000ebdaa  bl         #0xbcc28                           ; _ZN9rapidjson12GenericValueINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAllocatorEEEEixEj.part.190
+  000ebdae  ldr        r3, [pc, #0x238]                   ; = 0x00002ec8
+  000ebdb0  mov        r0, sl                          
+  000ebdb2  ldr        r2, [sp, #0x1c]                 
+  000ebdb4  ldr        r1, [sp, #0x40]                 
+  000ebdb6  ldr        r6, [r2, r3]                    
+  000ebdb8  blx        #0xb47d4                        
+  000ebdbc  cbnz       r0, #0xebdf2                    
+  000ebdbe  ldr        r3, [sp, #0x38]                 
+  000ebdc0  rsb.w      r2, r3, #4                      
+  000ebdc4  b          #0xebcfe                        
+  000ebdc6  blx        #0xb4a54                        
+  000ebdca  ldr        r0, [pc, #0x23c]                
+  000ebdcc  movs       r3, #2                          
+  000ebdce  ldr        r1, [sp, #0x30]                 
+  000ebdd0  ldr        r7, [sp, #0x4c]                 
+  000ebdd2  add        r0, pc                             ; PIC -> 0x0020b83a
+  000ebdd4  ldr        r2, [sp, #0x44]                 
+  000ebdd6  str        r1, [sp, #4]                    
+  000ebdd8  movw       r1, #0x1235                     
+  000ebddc  str        r0, [sp]                        
+  000ebdde  mvn        r0, #0xf                        
+  000ebde2  str        r7, [sp, #0x54]                 
+  000ebde4  blx        #0xb3d7c                        
+  000ebde8  b          #0xebd86                        
+  000ebdea  add        r1, sp, #0x48                   
+  000ebdec  bl         #0xe3e24                           ; _ZNSs4_Rep10_M_disposeERKSaIcE.part.8
+  000ebdf0  b          #0xebd80                        
+  000ebdf2  ldr        r1, [pc, #0x218]                
+  000ebdf4  mov        r0, sl                          
+  000ebdf6  ldr        r3, [pc, #0x1f0]                   ; = 0x00002ec8
+  000ebdf8  ldr        r2, [sp, #0x1c]                 
+  000ebdfa  add        r1, pc                             ; PIC -> 0x0020b832
+  000ebdfc  ldr        r6, [r2, r3]                    
+  000ebdfe  blx        #0xb47d4                        
+  000ebe02  cbnz       r0, #0xebe0c                    
+  000ebe04  ldr        r3, [sp, #0x38]                 
+  000ebe06  rsb.w      r2, r3, #5                      
+  000ebe0a  b          #0xebcfe                        
+  000ebe0c  ldr        r1, [pc, #0x200]                
+  000ebe0e  mov        r0, sl                          
+  000ebe10  ldr        r3, [pc, #0x1d4]                   ; = 0x00002ec8
+  000ebe12  ldr        r2, [sp, #0x1c]                 
+  000ebe14  add        r1, pc                             ; PIC -> 0x0021962c "J4"
+  000ebe16  ldr        r6, [r2, r3]                    
+  000ebe18  blx        #0xb47d4                        
+  000ebe1c  cbnz       r0, #0xebe26                    
+  000ebe1e  ldr        r3, [sp, #0x38]                 
+  000ebe20  rsb.w      r2, r3, #6                      
+  000ebe24  b          #0xebcfe                        
+  000ebe26  ldr        r1, [pc, #0x1ec]                
+  000ebe28  mov        r0, sl                          
+  000ebe2a  ldr        r3, [pc, #0x1bc]                   ; = 0x00002ec8
+  000ebe2c  ldr        r2, [sp, #0x1c]                 
+  000ebe2e  add        r1, pc                             ; PIC -> 0x0021965a "itJ5"
+  000ebe30  ldr        r6, [r2, r3]                    
+  000ebe32  blx        #0xb47d4                        
+  000ebe36  cmp        r0, #0                          
+  000ebe38  bne        #0xebf28                        
+  000ebe3a  ldr        r3, [sp, #0x38]                 
+  000ebe3c  rsb.w      r2, r3, #7                      
+  000ebe40  b          #0xebcfe                        
+  000ebe42  ldr        r3, [pc, #0x1a4]                   ; = 0x00002ec8
+  000ebe44  ldr        r2, [sp, #0x1c]                 
+  000ebe46  ldr        r6, [r2, r3]                    
+  000ebe48  blx        #0xb4a54                        
+  000ebe4c  ldr        r2, [pc, #0x1c8]                
+  000ebe4e  movs       r3, #2                          
+  000ebe50  ldr        r4, [pc, #0x1c8]                
+  000ebe52  movw       r1, #0x123c                     
+  000ebe56  mvn        r0, #0xf                        
+  000ebe5a  add        r2, pc                             ; PIC -> 0x002083f6 "n::UTF8<>; StackAllocator = rapidjson::CrtAllocator]"
+  000ebe5c  add        r4, pc                             ; PIC -> 0x0020b854 "start write sdo tp codesys."
+  000ebe5e  addw       r2, r2, #0xb04                     ; PIC+0xb04 -> 0x0020c358 " return {}"
+  000ebe62  str        r4, [sp]                        
+  000ebe64  blx        #0xba8fc                        
+  000ebe68  ldr        r3, [pc, #0x1b4]                   ; = 0x00003660
+  000ebe6a  movs       r2, #4                          
+  000ebe6c  ldr        r1, [sp, #0x1c]                 
+  000ebe6e  ldr.w      sb, [r1, r3]                    
+  000ebe72  ldr        r3, [sp, #0x28]                 
+  000ebe74  str.w      r2, [sb]                        
+  000ebe78  cmp        r3, #0                          
+  000ebe7a  beq        #0xebf16                        
+  000ebe7c  ldr        r2, [pc, #0x174]                   ; = 0x00002e98
+  000ebe7e  movs       r4, #0                          
+  000ebe80  ldr        r1, [sp, #0x1c]                 
+  000ebe82  ldr        r3, [pc, #0x1a0]                
+  000ebe84  ldr.w      r8, [pc, #0x1a0]                
+  000ebe88  ldr        r2, [r1, r2]                    
+  000ebe8a  add        r3, pc                             ; PIC -> 0x002083f6 "n::UTF8<>; StackAllocator = rapidjson::CrtAllocator]"
+  000ebe8c  add        r8, pc                             ; PIC -> 0x0020b870 "sdo write fail,slave={},index={},subIndex={},value={}."
+  000ebe8e  addw       r7, r3, #0xb04                     ; PIC+0xb04 -> 0x0020c374 "rror!"
+  000ebe92  str        r2, [sp, #0x34]                 
+  000ebe94  mov        r5, r2                          
+  000ebe96  b          #0xebea2                        
+  000ebe98  ldr        r3, [sp, #0x28]                 
+  000ebe9a  adds       r4, #1                          
+  000ebe9c  adds       r5, #0x18                       
+  000ebe9e  cmp        r4, r3                          
+  000ebea0  beq        #0xebf16                        
+  000ebea2  lsls       r3, r4, #5                      
+  000ebea4  ldr        r2, [sp, #0x34]                 
+  000ebea6  sub.w      r3, r3, r4, lsl #3              
+  000ebeaa  add        r3, r2                          
+  000ebeac  add.w      r2, r3, #0xc                    
+  000ebeb0  ldm        r2, {r0, r1, r2}                
+  000ebeb2  stm.w      sp, {r0, r1, r2}                
+  000ebeb6  mov        r0, fp                          
+  000ebeb8  ldm        r3, {r1, r2, r3}                
+  000ebeba  blx        #0xbc780                        
+  000ebebe  movw       r0, #0xd090                     
+  000ebec2  movt       r0, #3                          
+  000ebec6  blx        #0xba8f0                        
+  000ebeca  ldr.w      r3, [fp, #0xe20]                
+  000ebece  ldr.w      r3, [r3, #0x4dc]                
+  000ebed2  sub.w      r3, r3, #1                      
+  000ebed6  clz        r3, r3                          
+  000ebeda  lsrs       r3, r3, #5                      
+  000ebedc  strb       r3, [r5, #0x14]                 
+  000ebede  cmp        r3, #0                          
+  000ebee0  bne        #0xebe98                        
+  000ebee2  blx        #0xb4a54                        
+  000ebee6  add.w      r2, r5, #0xc                    
+  000ebeea  add.w      r1, r5, #8                      
+  000ebeee  adds       r0, r5, #4                      
+  000ebef0  str        r2, [sp, #0x10]                 
+  000ebef2  str        r1, [sp, #0xc]                  
+  000ebef4  movs       r3, #2                          
+  000ebef6  str        r0, [sp, #8]                    
+  000ebef8  mov        r2, r7                          
+  000ebefa  str        r5, [sp, #4]                    
+  000ebefc  movw       r1, #0x1244                     
+  000ebf00  str.w      r8, [sp]                        
+  000ebf04  mvn        r0, #0xf                        
+  000ebf08  blx        #0xb8eec                        
+  000ebf0c  ldr        r3, [sp, #0x28]                 
+  000ebf0e  adds       r4, #1                          
+  000ebf10  adds       r5, #0x18                       
+  000ebf12  cmp        r4, r3                          
+  000ebf14  bne        #0xebea2                        
+  000ebf16  movs       r3, #6                          
+  000ebf18  movs       r4, #0                          
+  000ebf1a  str.w      r3, [sb]                        
+  000ebf1e  b          #0xebc22                        
+  000ebf20  add        r1, sp, #0x48                   
+  000ebf22  bl         #0xe3e24                           ; _ZNSs4_Rep10_M_disposeERKSaIcE.part.8
+  000ebf26  b          #0xebc2c                        
+  000ebf28  ldr        r1, [pc, #0x100]                
+  000ebf2a  mov        r0, sl                          
+  000ebf2c  ldr        r3, [pc, #0xb8]                    ; = 0x00002ec8
+  000ebf2e  ldr        r2, [sp, #0x1c]                 
+  000ebf30  add        r1, pc                             ; PIC -> 0x0020b838 "J6"
+  000ebf32  ldr        r6, [r2, r3]                    
+  000ebf34  blx        #0xb47d4                        
+  000ebf38  cbnz       r0, #0xebf5a                    
+  000ebf3a  ldr        r3, [sp, #0x38]                 
+  000ebf3c  rsb.w      r2, r3, #8                      
+  000ebf40  b          #0xebcfe                        
+  000ebf42  ldr        r3, [pc, #0xec]                 
+  000ebf44  movw       r2, #0x5d9                      
+  000ebf48  ldr        r1, [pc, #0xe8]                 
+  000ebf4a  ldr        r0, [pc, #0xec]                 
+  000ebf4c  add        r3, pc                             ; PIC -> 0x00205110 "double rapidjson::internal::Pow10(int)"
+  000ebf4e  add        r1, pc                             ; PIC -> 0x00209be6
+  000ebf50  add.w      r3, r3, #0x710                  
+  000ebf54  add        r0, pc                             ; PIC -> 0x00209c68 "IsArray()"
+  000ebf56  blx        #0xb7e04                        
+  000ebf5a  lsls       r2, r5, #5                      
+  000ebf5c  movs       r1, #0                          
+  000ebf5e  ldr        r3, [pc, #0x88]                    ; = 0x00002ec8
+  000ebf60  mov.w      r4, #-1                         
+  000ebf64  sub.w      r5, r2, r5, lsl #3              
+  000ebf68  ldr        r2, [sp, #0x34]                 
+  000ebf6a  str        r1, [r2, r5]                    
+  000ebf6c  ldr        r2, [sp, #0x1c]                 
+  000ebf6e  ldr        r6, [r2, r3]                    
+  000ebf70  b          #0xebc22                        
+  000ebf72  bl         #0xe3d40                           ; _ZNK9rapidjson12GenericValueINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAllocatorEEEE9GetStringEv.part.176
+  000ebf76  ldr        r0, [sp, #0x50]                 
+  000ebf78  subs       r0, #0xc                        
+  000ebf7a  cmp        r0, r6                          
+  000ebf7c  beq        #0xebf84                        
+  000ebf7e  add        r1, sp, #0x48                   
+  000ebf80  bl         #0xe3e24                           ; _ZNSs4_Rep10_M_disposeERKSaIcE.part.8
+  000ebf84  ldr        r0, [sp, #0x4c]                 
+  000ebf86  subs       r0, #0xc                        
+  000ebf88  cmp        r0, r6                          
+  000ebf8a  beq        #0xebf92                        
+  000ebf8c  add        r1, sp, #0x48                   
+  000ebf8e  bl         #0xe3e24                           ; _ZNSs4_Rep10_M_disposeERKSaIcE.part.8
+  000ebf92  blx        #0xb8a64                        
+  000ebf96  ldr        r3, [pc, #0x50]                    ; = 0x00002ec8
+  000ebf98  mov        r4, r0                          
+  000ebf9a  ldr        r2, [sp, #0x1c]                 
+  000ebf9c  mov        r5, r1                          
+  000ebf9e  ldr        r0, [sp, #0x54]                 
+  000ebfa0  ldr        r6, [r2, r3]                    
+  000ebfa2  subs       r0, #0xc                        
+  000ebfa4  cmp        r0, r6                          
+  000ebfa6  beq        #0xebfae                        
+  000ebfa8  add        r1, sp, #0x48                   
+  000ebfaa  bl         #0xe3e24                           ; _ZNSs4_Rep10_M_disposeERKSaIcE.part.8
+  000ebfae  mov        r0, r4                          
+  000ebfb0  mov        r1, r5                          
+  000ebfb2  cmp        r1, #1                          
+  000ebfb4  bne        #0xebf76                        
+  000ebfb6  mov.w      r4, #-1                         
+  000ebfba  blx        #0xb54bc                        
+  000ebfbe  blx        #0xbaf40                        
+  000ebfc2  b          #0xebc22                        
+  000ebfc4  ldr        r3, [pc, #0x20]                    ; = 0x00002ec8
+  000ebfc6  ldr        r2, [sp, #0x1c]                 
+  000ebfc8  ldr        r6, [r2, r3]                    
+  000ebfca  b          #0xebf84                        
+  000ebfcc  b          #0xebfb2                        
+  000ebfce  nop                                        
+  000ebfd0  stc2       p0, c0, [sl], #0x44             
+  000ebfd4  ldc2l      p0, c0, [r4], {0x11}            
+  000ebfd8  udf        #6                              
+  000ebfda  movs       r7, r2                          
+  000ebfdc  adds       r5, #0x10                       
+  000ebfde  movs       r0, r0                          
+  000ebfe0  str        r5, [sp, #0x148]                
+  000ebfe2  movs       r2, r2                          
+  000ebfe4  mcrr2      p0, #1, r0, r6, c1              
+  000ebfe8  cmp        r6, #0xc8                       
+  000ebfea  movs       r0, r0                          
+  000ebfec  mcrr2      p0, #1, r0, r2, c1              
+  000ebff0  ldm        r0!, {r1, r3, r4}               
+  000ebff2  movs       r1, r2                          
+  000ebff4  cmp        r6, #0x98                       
+  000ebff6  movs       r0, r0                          
+  000ebff8  ldc2       p0, c0, [r4], #-0x44            
+  000ebffc  stc2       p0, c0, [r4], #-0x44            
+  000ec000  stc2       p0, c0, [ip], #-0x44            
+  000ec004  b          #0xeba84                        
+  000ec006  movs       r1, r2                          
+
+======================================================================================
+_ZN14DataSubProcess8writeSDOEPS_8_SDOInfo  @0x000eb974  152 B  57 insns
+======================================================================================
+  000eb974  sub        sp, #0x10                       
+  000eb976  push       {r4, r5, r6, r7, lr}            
+  000eb978  sub        sp, #0x1c                       
+  000eb97a  add        r4, sp, #0x34                   
+  000eb97c  stm.w      r4, {r1, r2, r3}                
+  000eb980  cbz        r0, #0xeb992                    
+  000eb982  ldr.w      r3, [r0, #0xe20]                
+  000eb986  ldr.w      r3, [r3, #0x4c4]                
+  000eb98a  cmp        r3, #3                          
+  000eb98c  it         ne                              
+  000eb98e  cmpne      r3, #6                          
+  000eb990  beq        #0xeb9a0                        
+  000eb992  mov.w      r0, #-1                         
+  000eb996  add        sp, #0x1c                       
+  000eb998  pop.w      {r4, r5, r6, r7, lr}            
+  000eb99c  add        sp, #0x10                       
+  000eb99e  bx         lr                              
+  000eb9a0  mov        r5, r0                          
+  000eb9a2  adds       r6, r4, #4                      
+  000eb9a4  blx        #0xb4a54                        
+  000eb9a8  ldr        r2, [pc, #0x58]                 
+  000eb9aa  add        r1, sp, #0x40                   
+  000eb9ac  ldr        r3, [pc, #0x58]                 
+  000eb9ae  add        r0, sp, #0x3c                   
+  000eb9b0  str        r4, [sp, #4]                    
+  000eb9b2  add        r2, pc                             ; PIC -> 0x002083f6 "n::UTF8<>; StackAllocator = rapidjson::CrtAllocator]"
+  000eb9b4  str        r6, [sp, #8]                    
+  000eb9b6  add        r3, pc                             ; PIC -> 0x0020b712
+  000eb9b8  str        r1, [sp, #0x10]                 
+  000eb9ba  str        r3, [sp]                        
+  000eb9bc  add.w      r2, r2, #0xaf0                  
+  000eb9c0  str        r0, [sp, #0xc]                  
+  000eb9c2  movs       r3, #2                          
+  000eb9c4  movw       r1, #0x11f3                     
+  000eb9c8  mvn        r0, #0xf                        
+  000eb9cc  blx        #0xb8eec                        
+  000eb9d0  ldr.w      r3, [r5, #0xe20]                
+  000eb9d4  movs       r1, #2                          
+  000eb9d6  ldr        r7, [sp, #0x34]                 
+  000eb9d8  movs       r2, #4                          
+  000eb9da  ldr        r6, [sp, #0x38]                 
+  000eb9dc  movs       r0, #0                          
+  000eb9de  ldr        r5, [sp, #0x3c]                 
+  000eb9e0  ldr        r4, [sp, #0x40]                 
+  000eb9e2  str.w      r7, [r3, #0x4c8]                
+  000eb9e6  str.w      r6, [r3, #0x4cc]                
+  000eb9ea  str.w      r5, [r3, #0x4d0]                
+  000eb9ee  str.w      r4, [r3, #0x4d4]                
+  000eb9f2  str.w      r1, [r3, #0x4d8]                
+  000eb9f6  str.w      r2, [r3, #0x4c4]                
+  000eb9fa  add        sp, #0x1c                       
+  000eb9fc  pop.w      {r4, r5, r6, r7, lr}            
+  000eba00  add        sp, #0x10                       
+  000eba02  bx         lr                              
+  000eba04  ldm        r2!, {r1, r6}                   
+  000eba06  movs       r1, r2                          
+  000eba08  ldc2l      p0, c0, [sl, #-0x44]            
+
+======================================================================================
+_ZN14DataSubProcess8writeSDOEPS_8_SDOInfo  @0x000eb974  152 B  57 insns
+======================================================================================
+  000eb974  sub        sp, #0x10                       
+  000eb976  push       {r4, r5, r6, r7, lr}            
+  000eb978  sub        sp, #0x1c                       
+  000eb97a  add        r4, sp, #0x34                   
+  000eb97c  stm.w      r4, {r1, r2, r3}                
+  000eb980  cbz        r0, #0xeb992                    
+  000eb982  ldr.w      r3, [r0, #0xe20]                
+  000eb986  ldr.w      r3, [r3, #0x4c4]                
+  000eb98a  cmp        r3, #3                          
+  000eb98c  it         ne                              
+  000eb98e  cmpne      r3, #6                          
+  000eb990  beq        #0xeb9a0                        
+  000eb992  mov.w      r0, #-1                         
+  000eb996  add        sp, #0x1c                       
+  000eb998  pop.w      {r4, r5, r6, r7, lr}            
+  000eb99c  add        sp, #0x10                       
+  000eb99e  bx         lr                              
+  000eb9a0  mov        r5, r0                          
+  000eb9a2  adds       r6, r4, #4                      
+  000eb9a4  blx        #0xb4a54                        
+  000eb9a8  ldr        r2, [pc, #0x58]                 
+  000eb9aa  add        r1, sp, #0x40                   
+  000eb9ac  ldr        r3, [pc, #0x58]                 
+  000eb9ae  add        r0, sp, #0x3c                   
+  000eb9b0  str        r4, [sp, #4]                    
+  000eb9b2  add        r2, pc                             ; PIC -> 0x002083f6 "n::UTF8<>; StackAllocator = rapidjson::CrtAllocator]"
+  000eb9b4  str        r6, [sp, #8]                    
+  000eb9b6  add        r3, pc                             ; PIC -> 0x0020b712
+  000eb9b8  str        r1, [sp, #0x10]                 
+  000eb9ba  str        r3, [sp]                        
+  000eb9bc  add.w      r2, r2, #0xaf0                  
+  000eb9c0  str        r0, [sp, #0xc]                  
+  000eb9c2  movs       r3, #2                          
+  000eb9c4  movw       r1, #0x11f3                     
+  000eb9c8  mvn        r0, #0xf                        
+  000eb9cc  blx        #0xb8eec                        
+  000eb9d0  ldr.w      r3, [r5, #0xe20]                
+  000eb9d4  movs       r1, #2                          
+  000eb9d6  ldr        r7, [sp, #0x34]                 
+  000eb9d8  movs       r2, #4                          
+  000eb9da  ldr        r6, [sp, #0x38]                 
+  000eb9dc  movs       r0, #0                          
+  000eb9de  ldr        r5, [sp, #0x3c]                 
+  000eb9e0  ldr        r4, [sp, #0x40]                 
+  000eb9e2  str.w      r7, [r3, #0x4c8]                
+  000eb9e6  str.w      r6, [r3, #0x4cc]                
+  000eb9ea  str.w      r5, [r3, #0x4d0]                
+  000eb9ee  str.w      r4, [r3, #0x4d4]                
+  000eb9f2  str.w      r1, [r3, #0x4d8]                
+  000eb9f6  str.w      r2, [r3, #0x4c4]                
+  000eb9fa  add        sp, #0x1c                       
+  000eb9fc  pop.w      {r4, r5, r6, r7, lr}            
+  000eba00  add        sp, #0x10                       
+  000eba02  bx         lr                              
+  000eba04  ldm        r2!, {r1, r6}                   
+  000eba06  movs       r1, r2                          
+  000eba08  ldc2l      p0, c0, [sl, #-0x44]            
+

@@ -1,0 +1,143 @@
+=== rcS starts: netd/nope ===
+total 16
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 .
+drwxrwxr-x    3 1025     1025          4096 Jan  1  1970 ..
+-rwxrwxr-x    1 1025     1025           193 Mar 20  2017 httpd
+-rwxrwxr-x    1 1025     1025           199 Mar 20  2017 netd
+--- nope ---
+=== who references helper binaries ===
+/dobot/bin/dobot.sh:159:/dobot/bin/logServer &  
+/dobot/bin/dobot.sh:306:		/dobot/bin/getVersion > /dobot/userdata/SlaveLog
+/dobot/bin/dobot.sh:159:/dobot/bin/logServer &  
+/dobot/bin/dobot.sh:306:		/dobot/bin/getVersion > /dobot/userdata/SlaveLog
+=== who references port ===
+=== /etc/fstab ===
+#device		mount-point	type	options		dump	fsck order
+/dev/mmcblk3p3	/dobot		ext3	defaults		0	0
+/dev/mmcblk3p6	/dobot/userdata	ext3	defaults		0	0
+proc		/proc		proc	defaults		0	0
+tmpfs		/tmp		tmpfs	defaults		0	0
+sysfs		/sys		sysfs	defaults		0	0
+tmpfs		/dev		tmpfs	defaults		0	0
+var		/dev		tmpfs	defaults		0	0
+ramfs		/dev		ramfs	defaults		0	0
+=== /etc/profile ===
+# Ash profile 
+# vim: syntax=sh
+
+# No core files by default
+#ulimit -S -c 0 > /dev/null 2>&1
+
+export set HOME=/root
+
+USER="`id -un`"
+LOGNAME=$USER
+PS1='[\u@\h \W]# '
+PATH=$PATH
+
+HOSTNAME=`/bin/hostname`
+
+export USER LOGNAME PS1 PATH
+#export PYTHONHOME=/opt/source/python-2.7.6
+#export PYTHONPATH=/opt/source/python-2.7.6/lib
+=== /etc/version.conf ===
+2.1.0=== udisk CODESYSControl.cfg head ===
+[ComponentManager]
+Component.1=CmpDobot
+Component.2=CmpDobot6Axes
+Component.3=IoDrvDobIO
+[SysTask]
+;StackSize=0x10000000
+; Max Linux priority(99)-OSPriority = effective Linux priority
+; e.g. map IEC prio 0..15 to Linux prio 54..39 ,
+;OSPriority.Realtime.Base=45
+;OSPriority.Realtime.End=77
+; avoid overlapping ranges:
+;OSPriority.High.Base=78
+;OSPriority.High.End=95
+
+[CmpOPCUAServer]
+Security.Activation=DEACTIVATED
+
+[CmpSettings]
+FileReference.0=SysFileMap.cfg, SysFileMap
+;SplitDatabases=1
+;FileReference.1=/etc/Configurationfile.cfg
+
+[SysFile]
+PlcLogicPrefix=1
+FilePath=/home/ftp
+=== 3S.dat ===
+–N#Ê∫êÁ¸"Ö‡|N#Ê∫"ï§ˇ{#Êí∂/;#Êª¥Kùß"Ö¸¥√˛#≥˙Ä©‡NâÈùßÅ§§â
+--- SysFileMap.cfg ---
+[SysFileMap]
+/home/ftp/PlcLogic/Application/Application.app=0x104324, 0x567137D9, 567137D9.app
+=== ftp PlcLogic/Application ===
+total 1060
+drwxrwxr-x    2 1025     1025          4096 Sep 18 14:12 .
+drwxrwxr-x    9 1025     1025          4096 Jan  1  1970 ..
+-rwxr-xr-x    1 root     root       1065764 Sep 18 14:12 Application.app
+-rwxr-xr-x    1 root     root            20 Sep 18 14:12 Application.crc
+=== projectOld ===
+total 10
+drwxr-xr-x    8 1022     1024          1024 Dec 30  2022 .
+drwxr-xr-x   24 root     1024          1024 Dec 30  2022 ..
+drwxr-xr-x    2 root     root          1024 Aug 21  1975 logs
+drwxr-xr-x    7 1022     1024          1024 Dec 30  2022 process
+drwxr-xr-x   27 1022     1024          1024 Dec 30  2022 project
+drwxr-xr-x    2 1022     1024          1024 Dec 30  2022 properties
+drwxr-xr-x    2 root     root          1024 Feb 19  1976 redis
+drwxr-xr-x    9 1022     1024          1024 Dec 30  2022 settings
+-rwxr-xr-x    1 root     root          1554 Nov 22  2025 test.lua
+=== CR5 project/project ===
+CR5Packaging
+CR5SkinEagingTest
+CR5seriestest
+Demarcate
+FullTEST_Angle_CR5
+Functional instruction
+GB-CR5
+HOME
+Motion instruction
+Multithreading
+SkinEagingTest
+SkinTest
+TCP communication
+TOOLIO
+TerminalIOTEST
+UniIOTEST
+calibration
+debug_6
+eaging TEST PRO2
+eaging test
+ff
+identify
+packaging
+test1
+zbzz
+=== test.lua head ===
+
+--test
+print('======TEST START====')
+
+print("start test:cp(1)")
+CP(1)
+print("start test:cp(0)")
+CP(0)
+
+print("start test:Arch(0)")
+Arch(0)
+print("start test:Arch(1)")
+Arch(1)
+
+print("start test:LimZ(48)")
+LimZ(48)
+
+print("start test:SpeedFactor(48)")
+SpeedFactor(48)
+
+print("start test:Speed(48)")
+Speed(48)
+
+print("start test:Accel(48)")
+Accel(48)

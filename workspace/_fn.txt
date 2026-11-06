@@ -1,0 +1,98 @@
+=== settings/function 完整列表 ===
+total 56
+drwxr-xr-x    2 1026     1028          1024 Sep 18 19:27 .
+drwxr-xr-x    9 1026     1028          1024 Sep 18 19:20 ..
+-rwxr-xr-x    1 root     root            90 Sep 18 10:33 CustomPoint.json
+-rwxr-xr-x    1 root     root            23 Feb 19  1976 DHGripperEnable.json
+-rwxr-xr-x    1 1026     1028            38 Jul 18  2023 PackPoint.json
+-rwxr-xr-x    1 1026     1028          5442 Jul 18  2023 accFactor.json
+-rwxr-xr-x    1 1026     1028           600 Jul 18  2023 collisionDect.json
+-rwxr-xr-x    1 root     root            87 Feb 19  1976 dragSensivity.json
+-rwxr-xr-x    1 root     root          1628 Feb 19  1976 dynamicsParams.json
+-rwxr-xr-x    1 root     root            15 Feb 19  1976 elecSkin.json
+-rwxr-xr-x    1 root     root           425 Feb 19  1976 elecSkinDefault.json
+-rwxr-xr-x    1 root     root           109 Feb 19  1976 elecSkinParams.json
+-rwxr-xr-x    1 root     root            43 Feb 19  1976 endAI.json
+-rwxr-xr-x    1 root     root          1277 Feb 19  1976 functionApi.json
+-rwxr-xr-x    1 root     root           789 Feb 19  1976 functionSystem.json
+-rwxr-xr-x    1 root     root           107 Feb 19  1976 generalSafeSetting.json
+-rwxr-xr-x    1 root     root            21 Feb 19  1976 gpioAI.json
+-rwxr-xr-x    1 root     root            43 Feb 19  1976 gpioAO.json
+-rwxr-xr-x    1 root     root            16 Feb 19  1976 hitbotGripperEnable.json
+-rw-r--r--    1 root     root           627 Sep 18 19:27 homeEncoder.json
+-rwxr-xr-x    1 root     root            47 Feb 19  1976 install.json
+-rwxr-xr-x    1 root     root           335 Feb 19  1976 ioctrl.json
+-rwxr-xr-x    1 root     root           211 Feb 19  1976 jointMaxParas.json
+-rwxr-xr-x    1 root     root            78 Sep 18 19:26 loadParams.json
+-rwxr-xr-x    1 1026     1028          6865 Jul 18  2023 logServerConfig.json
+-rwxr-xr-x    1 root     root           327 Feb 19  1976 minicab_ioctrl.json
+-rwxr-xr-x    1 root     root            35 Feb 19  1976 modbusConf.json
+-rwxr-xr-x    1 1022     1024           356 Mar  3  2023 modbusctrl.json
+-rwxr-xr-x    1 root     root            50 Feb 19  1976 reTraceParams.json
+-rwxr-xr-x    1 root     root            36 Sep 18 18:00 remoteControl.json
+-rwxr-xr-x    1 root     root            16 Feb 19  1976 robotiqGripperEnable.json
+-rwxr-xr-x    1 root     root            24 Feb 19  1976 robotiqSixForce.json
+-rwxr-xr-x    1 root     root           430 Feb 19  1976 safeSignal.json
+-rwxr-xr-x    1 root     root           284 Feb 19  1976 sixForceParams.json
+-rwxr-xr-x    1 1026     1028            20 Jul 18  2023 tcp30005Feedback.json
+-rwxr-xr-x    1 1026     1028          2804 Jul 18  2023 tcp30006Feedback.json
+-rwxr-xr-x    1 1026     1028           806 Jul 18  2023 tcpipSecurity.json
+-rwxr-xr-x    1 1026     1028          4061 Jul 18  2023 torquelimit.json
+=== 最近 1 小时内修改/新建的文件（排除 logs）===
+/dobot/userdata/SlaveLog
+/dobot/userdata/CR5_sys_files/project/properties/controlCabType.json
+/dobot/userdata/CR5_sys_files/project/redis/stdout
+/dobot/userdata/CR5_sys_files/project/redis/dump.rdb
+/dobot/userdata/CR5_sys_files/project/settings/function/homeEncoder.json
+/dobot/userdata/CR5_sys_files/project/settings/function/loadParams.json
+/dobot/userdata/CR5_sys_files/project/settings/workTime/WorkTimeRec.json
+/dobot/userdata/CR5_sys_files/project/settings/teach/inch.json
+/home/ftp/PlcLogic/Recipe/SlaveInfos.SlaveInfos.txtrecipe
+/home/ftp/PlcLogic/Recipe/SavePos.txt
+/home/ftp/PlcLogic/Recipe/Update.txt
+/home/ftp/PlcLogic/Application/Application.app
+/home/ftp/PlcLogic/Application/Application.crc
+/home/ftp/.dobotConfig/StartCnt
+/etc/resolv.conf
+=== projectOld 里的 settings/function ===
+total 49
+drwxr-xr-x    2 1022     1024          1024 Dec 30  2022 .
+drwxr-xr-x    9 1022     1024          1024 Dec 30  2022 ..
+-rwxr-xr-x    1 root     root            90 Aug 29  1975 CustomPoint.json
+-rwxr-xr-x    1 root     root            23 Nov 22  2025 DHGripperEnable.json
+-rwxr-xr-x    1 root     root            38 Jul 14  2022 PackPoint.json
+-rwxr-xr-x    1 root     root          2925 Jul 14  2022 accFactor.json
+-rwxr-xr-x    1 root     root           533 Aug 29  1975 collisionDect.json
+-rwxr-xr-x    1 root     root            87 Aug 29  1975 dragSensivity.json
+-rwxr-xr-x    1 root     root          1628 Nov 22  2025 dynamicsParams.json
+-rwxr-xr-x    1 root     root            15 Nov 22  2025 elecSkin.json
+-rwxr-xr-x    1 root     root           425 Nov 22  2025 elecSkinDefault.json
+-rwxr-xr-x    1 root     root           109 Nov 22  2025 elecSkinParams.json
+-rwxr-xr-x    1 root     root            43 Nov 22  2025 endAI.json
+-rwxr-xr-x    1 root     root          1277 Nov 22  2025 functionApi.json
+-rwxr-xr-x    1 root     root           789 Nov 22  2025 functionSystem.json
+-rwxr-xr-x    1 root     root           107 Nov 22  2025 generalSafeSetting.json
+-rwxr-xr-x    1 root     root            21 Nov 22  2025 gpioAI.json
+-rwxr-xr-x    1 root     root            43 Nov 22  2025 gpioAO.json
+-rwxr-xr-x    1 root     root            16 Nov 22  2025 hitbotGripperEnable.json
+-rwxr-xr-x    1 root     root            47 Aug 29  1975 install.json
+-rwxr-xr-x    1 root     root           335 Jul 14  2022 ioctrl.json
+-rwxr-xr-x    1 root     root           211 Nov 22  2025 jointMaxParas.json
+-rwxr-xr-x    1 root     root            78 Feb 11  1976 loadParams.json
+-rwxr-xr-x    1 root     root          6848 Jul 14  2022 logServerConfig.json
+-rwxr-xr-x    1 root     root           327 Nov 22  2025 minicab_ioctrl.json
+-rwxr-xr-x    1 root     root            35 Nov 22  2025 modbusConf.json
+-rwxr-xr-x    1 root     root           331 Jul 14  2022 modbusctrl.json
+-rwxr-xr-x    1 root     root            50 Nov 22  2025 reTraceParams.json
+-rwxr-xr-x    1 root     root            23 Nov 22  2025 remoteControl.json
+-rwxr-xr-x    1 root     root            16 Nov 22  2025 robotiqGripperEnable.json
+-rwxr-xr-x    1 root     root            24 Nov 22  2025 robotiqSixForce.json
+-rwxr-xr-x    1 root     root           430 Jul 14  2022 safeSignal.json
+-rwxr-xr-x    1 root     root           284 Nov 22  2025 sixForceParams.json
+-rwxr-xr-x    1 root     root          2804 Jul 14  2022 tcp30006Feedback.json
+-rwxr-xr-x    1 root     root           806 Nov 22  2025 tcpipSecurity.json
+-rwxr-xr-x    1 root     root          1254 Nov 22  2025 torquelimit.json
+=== 其它机型目录里有没有 homeEncoder.json ===
+/dobot/userdata/CR5_sys_files/project/settings/function/homeEncoder.json
+=== 现在时间 ===
+Fri Sep 18 19:28:15 CST 2026

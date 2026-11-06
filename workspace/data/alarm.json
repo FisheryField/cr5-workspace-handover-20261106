@@ -1,0 +1,2304 @@
+﻿[
+    {
+        "id": 0,
+        "level": 0,
+        "en": {
+            "description" : "No error",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "无错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 10,
+        "level": 0,
+        "en": {
+            "description" : "Inverse kinematics error with singularity",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "逆解算奇异",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 11,
+        "level": 0,
+        "en": {
+            "description" : "Inverse kinematics error with no solution",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "逆解算无解",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 12,
+        "level": 0,
+        "en": {
+            "description" : "Inverse kinematics error with result out of working area",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "逆解算限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    }, 
+    {
+        "id": 13,
+        "level": 0,
+        "en": {
+            "description" : "Duplicated data",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "数据重复",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 14,
+        "level": 0,
+        "en": {
+            "description" : "Wrong input parameters for arc",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "圆弧输入参数错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 15,
+        "level": 0,
+        "en": {
+            "description" : "Wrong JUMP parameters",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "JUMP参数错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 16,
+        "level": 0,
+        "en": {
+            "description" : "Wrong arm orientation switch",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "左右手切换错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 17,
+        "level": 0,
+        "en": {
+            "description" : "Plan point during linear motion out of working area",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "直线运动过程中规划点超出工作空间",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 18,
+        "level": 0,
+        "en": {
+            "description" : "Plan point during circular arc motion out of working area",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "圆弧运动过程中规划点超出工作空间",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 19,
+        "level": 0,
+        "en": {
+            "description" : "Wrong mode for motion instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "运动指令模式错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 1A,
+        "level": 0,
+        "en": {
+            "description" : "Wrong input parameters for speed",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "速度输入参数错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 1B,
+        "level": 0,
+        "en": {
+            "description" : "Wrong trajectory motion plan of continuous path",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "CP轨迹运动规划错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 20,
+        "level": 0,
+        "en": {
+            "description" : "Inverse kinematics singularity during moving",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "运动过程逆解算奇异",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 21,
+        "level": 0,
+        "en": {
+            "description" : "Inverse kinematics with no solution during moving",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "运动过程逆解算无解",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 22,
+        "level": 0,
+        "en": {
+            "description" : "Inverse kinematcis with result out of working area during moving",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "运动过程逆解算限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 30,
+        "level": 0,
+        "en": {
+            "description" : "Joint1 overspeed",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节1超速",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 31,
+        "level": 0,
+        "en": {
+            "description" : "Joint2 overspeed",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节2超速",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 32,
+        "level": 0,
+        "en": {
+            "description" : "Joint3 overspeed",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节3超速",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 33,
+        "level": 0,
+        "en": {
+            "description" : "Joint4 overspeed",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节4超速",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 34,
+        "level": 0,
+        "en": {
+            "description" : "Joint5 overspeed",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节5超速",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 35,
+        "level": 0,
+        "en": {
+            "description" : "Joint6 overspeed",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节6超速",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 40,
+        "level": 0,
+        "en": {
+            "description" : "Joint1 exceeds positive limit",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节1正向限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 41,
+        "level": 0,
+        "en": {
+            "description" : "Joint1 exceeds negative limit",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节1负向限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 42,
+        "level": 0,
+        "en": {
+            "description" : "Joint2 exceeds positive limit",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节2正向限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 43,
+        "level": 0,
+        "en": {
+            "description" : "Joint2 exceeds negative limit",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节2负向限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 44,
+        "level": 0,
+        "en": {
+            "description" : "Joint3 exceeds positive limit",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节3正向限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 45,
+        "level": 0,
+        "en": {
+            "description" : "Joint3 exceeds negative limit",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节3负向限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 46,
+        "level": 0,
+        "en": {
+            "description" : "Joint4 exceeds positive limit",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节4正向限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 47,
+        "level": 0,
+        "en": {
+            "description" : "Joint4 exceeds negative limit",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节4负向限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 48,
+        "level": 0,
+        "en": {
+            "description" : "Joint5 exceeds positive limit",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节5正向限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 49,
+        "level": 0,
+        "en": {
+            "description" : "Joint5 exceeds negative limit",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节5负向限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 4A,
+        "level": 0,
+        "en": {
+            "description" : "Joint6 exceeds positive limit",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节6正向限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 4B,
+        "level": 0,
+        "en": {
+            "description" : "Joint6 exceeds negative limit",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "关节6负向限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 1000,
+        "level": 0,
+        "en": {
+            "description" : "Faield to open mechanical file",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "打开机械参数文件失败",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 2000,
+        "level": 0,
+        "en": {
+            "description" : "Faield to open project file",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "打开工程文件失败",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 2001,
+        "level": 0,
+        "en": {
+            "description" : "Faield to open program file",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "打开程序文件失败",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 2002,
+        "level": 0,
+        "en": {
+            "description" : "Faield to open global variable file",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "打开变量文件失败",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 2003,
+        "level": 0,
+        "en": {
+            "description" : "Failed to open teaching point file",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "打开示教点文件失败",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 2004,
+        "level": 0,
+        "en": {
+            "description" : "Failed to start debugger process",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "启动调试进程失败",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 3000,
+        "level": 0,
+        "en": {
+            "description" : "Emergency stop detected",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "紧急停止按键按下",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 3001,
+        "level": 0,
+        "en": {
+            "description" : "External emergency stop detected",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "检测到外部急停",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8100,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for CP instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "CP指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8101,
+        "level": 0,
+        "en": {
+            "description" : "Input parameters of CP instruction out of range",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "CP指令参数超出范围",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8200,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for Arch instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Arch指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8201,
+        "level": 0,
+        "en": {
+            "description" : "Index parameter of Arch instruction out of range",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Arch指令索引超出范围",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8202,
+        "level": 0,
+        "en": {
+            "description" : "Index parameter of Arch instruction not configured yet",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Arch指令索引对应参数尚未设置",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8300,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for LimZ instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "LimZ指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8301,
+        "level": 0,
+        "en": {
+            "description" : "Input parameters of LimZ instruction out of range",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "LimZ指令参数超出范围",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8400,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for Speed instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Speed指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8401,
+        "level": 0,
+        "en": {
+            "description" : "Ratio parameter of Speed instruction out of range [1, 100]",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Speed指令比例参数超出范围[1, 100]",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8500,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for Accel instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Accel指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8501,
+        "level": 0,
+        "en": {
+            "description" : "Ratio parameter of Accel instruction out of range [1, 100]",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Accel指令比例参数超出范围[1, 100]",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8600,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for Jerk instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Jerk指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8601,
+        "level": 0,
+        "en": {
+            "description" : "Ratio parameter of Jerk instruction out of range [1, 100]",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Jerk指令比例参数超出范围[1, 100]",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8700,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for SpeedS instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SpeedS指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8701,
+        "level": 0,
+        "en": {
+            "description" : "Ratio parameter of SpeedS instruction out of range [1, 100]",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SpeedS指令比例参数超出范围[1, 100]",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8800,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for SpeedR instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SpeedR指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8801,
+        "level": 0,
+        "en": {
+            "description" : "Ratio parameter of SpeedR instruction out of range [1, 100]",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SpeedR指令比例参数超出范围[1, 100]",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8900,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for AccelS instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "AccelS指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8901,
+        "level": 0,
+        "en": {
+            "description" : "Ratio parameter of AccelS instruction out of range [1, 100]",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "AccelS指令比例参数超出范围[1, 100]",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8A00,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for AccelR instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "AccelR指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8A01,
+        "level": 0,
+        "en": {
+            "description" : "Ratio parameter of AccelR instruction out of range [1, 100]",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "AccelR指令比例参数超出范围[1, 100]",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8B00,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for JerkS instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "JerkS指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8B01,
+        "level": 0,
+        "en": {
+            "description" : "Ratio parameter of JerkS instruction out of range [1, 100]",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "JerkS指令比例参数超出范围[1, 100]",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8C00,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for JerkR instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "JerkR指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8C01,
+        "level": 0,
+        "en": {
+            "description" : "Ratio parameter of JerkR instruction out of range [1, 100]",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "JerkR指令比例参数超出范围[1, 100]",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8D00,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for Go instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Go指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8D01,
+        "level": 0,
+        "en": {
+            "description" : "No motion point parameter for Go instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Go指令缺少坐标点参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8D02,
+        "level": 0,
+        "en": {
+            "description" : "Incorrect motion point for Go instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Go指令坐标点参数错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8D03,
+        "level": 0,
+        "en": {
+            "description" : "Incorrect control parameter for Go instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Go指令控制参数错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8E00,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for Move instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Move指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8E01,
+        "level": 0,
+        "en": {
+            "description" : "No motion point parameter for Move instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Move指令缺少坐标点参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8E02,
+        "level": 0,
+        "en": {
+            "description" : "Incorrect motion point for Move instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Move指令坐标点参数错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8E03,
+        "level": 0,
+        "en": {
+            "description" : "Incorrect control parameter for Move instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Move指令控制参数错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8F00,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for Arch3 instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Arch3指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8F01,
+        "level": 0,
+        "en": {
+            "description" : "No motion point parameter for Arch3 instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Arch3指令缺少坐标点参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8F02,
+        "level": 0,
+        "en": {
+            "description" : "Incorrect motion point for Arch3 instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Arch3指令坐标点参数错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8F03,
+        "level": 0,
+        "en": {
+            "description" : "Incorrect control parameter for Arch3 instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Arch3指令控制参数错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 9000,
+        "level": 0,
+        "en": {
+            "description" : "No input parameters for Jump instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Jump指令无输入参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 9001,
+        "level": 0,
+        "en": {
+            "description" : "No motion point parameter for Jump instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Jump指令缺少坐标点参数",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 9002,
+        "level": 0,
+        "en": {
+            "description" : "Incorrect motion point for Jump instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Jump指令坐标点参数错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 9003,
+        "level": 0,
+        "en": {
+            "description" : "Incorrect control parameter for Jump instruction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "Jump指令控制参数错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+]
+```
+
+伺服报警说明：
+```
+[
+    {
+        "id": 0,
+        "level": 0,
+        "en": {
+            "description" : "No error",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "无错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 1,
+        "level": 0,
+        "en": {
+            "description" : "Communication error",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "通讯错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 2,
+        "level": 0,
+        "en": {
+            "description" : "Axis error",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SoftMotion轴错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 3,
+        "level": 0,
+        "en": {
+            "description" : "Fieldbus has lost synchronism",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "总线同步模式失效",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": A,
+        "level": 0,
+        "en": {
+            "description" : "Position outside of permissible range of SWLimit",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "当前位置已超出软限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": B,
+        "level": 0,
+        "en": {
+            "description" : "Hardware end switch is active",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "当前位置已达硬限位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": C,
+        "level": 0,
+        "en": {
+            "description" : "This error occurs if a linear axis has more than 2^15 32-bit overflows of the position in increments",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SoftMotion直线轴位置指令溢出",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": D,
+        "level": 0,
+        "en": {
+            "description" : "Drive status Halt or Quickstop is not supported",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "该伺服不支持急停/快停",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": E,
+        "level": 0,
+        "en": {
+            "description" : "Drive has no power",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "伺服未上电",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": F,
+        "level": 0,
+        "en": {
+            "description" : "This error is no longer used",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "保留",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 10,
+        "level": 0,
+        "en": {
+            "description" : "Position lag error. Difference between set and current position exceeds the given limit",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "位置指令与当前位置出现超差",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 11,
+        "level": 0,
+        "en": {
+            "description" : "Homing error reported by axis",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "回零错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+        {
+        "id": 12,
+        "level": 0,
+        "en": {
+            "description" : "A problem with the license occurred",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "许可证缺失",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 14,
+        "level": 0,
+        "en": {
+            "description" : "Controller enable not done or brake applied",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "运动前尚未使能伺服",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 15,
+        "level": 0,
+        "en": {
+            "description" : "Axis in wrong controller mode",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SoftMotion轴控制模式错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 19,
+        "level": 0,
+        "en": {
+            "description" : "Invalid action at logical axis",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "当前SoftMotion轴为逻辑轴，不支持该操作",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 1E,
+        "level": 0,
+        "en": {
+            "description" : "Motion creating module has not been called again before end of the motion",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "运动过程结束前，插补模块未被再次调用",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 1F,
+        "level": 0,
+        "en": {
+            "description" : "Type of given AXIS_REF variable is not AXIS_REF",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SoftMotion模块输入并非AXIS_REF类型",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 20,
+        "level": 0,
+        "en": {
+            "description" : "AXIS_REF variable has been exchanged while the module was active",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SoftMotion模块调用中AXIS_REF变量被替换",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 21,
+        "level": 0,
+        "en": {
+            "description" : "Axis disabled while being moved. MC_Power.bRegulatorOn",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SoftMotion轴运行中，被下使能，请查看MC_Power.bRegulatorOn",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 22,
+        "level": 0,
+        "en": {
+            "description" : "Axis in its current state cannot execute a motion command, because the axis doesn’t signal currently that it follows the target values",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SoftMotion轴当前状态不能执行运动命令",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 23,
+        "level": 0,
+        "en": {
+            "description" : "The drive reported an error during an ongoing movement.",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SoftMotion运行中，伺服驱动器报错",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 28,
+        "level": 0,
+        "en": {
+            "description" : "Maximum velocity fMaxVelocity exceeded",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "运行速度超过SoftMotion轴限制",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 29,
+        "level": 0,
+        "en": {
+            "description" : "Maximum acceleration fMaxAcceleration exceeded",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "运行加速度超过SoftMotion轴限制",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 2A,
+        "level": 0,
+        "en": {
+            "description" : "Maximum deceleration fMaxDeceleration exceeded",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "运行减速度超过SoftMotion轴限制",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 32,
+        "level": 0,
+        "en": {
+            "description" : "Invalid velocity or acceleration values",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "速度或加速度不合适",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 33,
+        "level": 0,
+        "en": {
+            "description" : "Mode requests for safety reasons use of end switches",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "为安全考虑，本模式需使用硬限位，请在SoftMotion轴中进行配置",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 3C,
+        "level": 0,
+        "en": {
+            "description" : "No free handle has been sent to open file",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "无法打开CNC文件",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 46,
+        "level": 0,
+        "en": {
+            "description" : "Mode not supported",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "不支持当前的控制模式",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 47,
+        "level": 0,
+        "en": {
+            "description" : "In current mode, controller mode cannot be changed",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "当前模式下，控制器模式不可改变",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 48,
+        "level": 0,
+        "en": {
+            "description" : "SMC_SetControllerMode has been interrupted by MC_Stop or errorstop",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SMC_SetControllerMode的执行被MC_Stop或errorstop状态打断",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 4B,
+        "level": 0,
+        "en": {
+            "description" : "Axis not in correct controller mode. Deprecated, no longer returned by SMC_SetTorque",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SoftMotion轴控制模式错误（已被弃用）",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 50,
+        "level": 0,
+        "en": {
+            "description" : "Error at startup of the axis group",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SoftMotion轴组初始化错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 51,
+        "level": 0,
+        "en": {
+            "description" : "The axis is not yet in the required state",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "SoftMotion轴尚未切换到对应状态",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 55,
+        "level": 0,
+        "en": {
+            "description" : "The function block does not support virtual or logical axes",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "调用的功能块不支持虚拟或者逻辑模式",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 56,
+        "level": 0,
+        "en": {
+            "description" : "The number of absolute bits is invalid, must be in the range 8 - 32",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "绝对位宽不合适，必须在8~32之间",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 5A,
+        "level": 0,
+        "en": {
+            "description" : "Invalid values",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "错误的输入值",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 5B,
+        "level": 0,
+        "en": {
+            "description" : "Gearing parameters must not be changed as long as the drive is under control",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "在控制伺服过程中，减速比参数不可改变",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 5C,
+        "level": 0,
+        "en": {
+            "description" : "Invalid modulo period (<= 0 or greater than half the bus bandwidth)",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "不合适的模数配置",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 5D,
+        "level": 0,
+        "en": {
+            "description" : "The modulo period in increments is not an integer, but the modulo-handling is done by the drive",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "模数配置换算到脉冲值，并非整型",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 6E,
+        "level": 0,
+        "en": {
+            "description" : "Axis contain no information on cycle time (fTaskCycle = 0).",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "fTaskCycle被设置为0",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 78,
+        "level": 0,
+        "en": {
+            "description" : "Axis without error",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "复位中无错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 79,
+        "level": 0,
+        "en": {
+            "description" : "Axis does not perform error-reset",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "伺服对复位命令无响应",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 7A,
+        "level": 0,
+        "en": {
+            "description" : "Error could not be reset",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "错误无法被复位",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 7B,
+        "level": 0,
+        "en": {
+            "description" : "Communication with the axis did not work",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "伺服通讯未工作",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": AA,
+        "level": 0,
+        "en": {
+            "description" : "Axis has not been in standstill state",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "轴尚未在使能状态",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": AB,
+        "level": 0,
+        "en": {
+            "description" : "Error at start of homing action.",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "回零操作出错：SoftMotion轴未开始回零",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": AC,
+        "level": 0,
+        "en": {
+            "description" : "Error at start of homing action.",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "回零操作出错：SoftMotion未响应",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": AD,
+        "level": 0,
+        "en": {
+            "description" : "Error at stop after homing. Deceleration may not be set.",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "回零操作出错：回零停止错误，减加速度未配置",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": AE,
+        "level": 0,
+        "en": {
+            "description" : "Drive is in errorstop status. Homing cannot be executed.",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "回零操作出错：伺服在错误状态，无法回零",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 3E8,
+        "level": 0,
+        "en": {
+            "description" : "Target is not licensed for CNC.",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "CNC许可证缺失",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 1388,
+        "level": 0,
+        "en": {
+            "description" : "Nominator of the conversion factor dwRatioTechUnitsDenom of the Encoder reference is 0",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "减速比分母为零",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": EE01,
+        "level": 0,
+        "en": {
+            "description" : "Communication error. ",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "通讯错误",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 2230,
+        "level": 0,
+        "en": {
+            "description" : "IPM abnormal protection ",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "IPM异常保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 2320,
+        "level": 0,
+        "en": {
+            "description" : "Software overcurrent protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "软件过流保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 2380,
+        "level": 0,
+        "en": {
+            "description" : "Zero point current bias too large protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "零点电流偏置过大保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 7580,
+        "level": 0,
+        "en": {
+            "description" : "EtherCAT communication abnormal protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "EtherCAT通讯异常保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8480,
+        "level": 0,
+        "en": {
+            "description" : "Exceeding max speed protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "超过最大转速保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8481,
+        "level": 0,
+        "en": {
+            "description" : "Speed error too large protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "速度偏差过大保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8482,
+        "level": 0,
+        "en": {
+            "description" : "Motor lost speed protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "电机失速保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 7380,
+        "level": 0,
+        "en": {
+            "description" : "Encoder communication abnormal protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "编码器通信断线异常保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 7381,
+        "level": 0,
+        "en": {
+            "description" : "Encoder malfunction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "编码器异常故障",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 7382,
+        "level": 0,
+        "en": {
+            "description" : "Encoder battery abnormal protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "编码器电池异常保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8611,
+        "level": 0,
+        "en": {
+            "description" : "Postion error too large protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "位置偏差过大保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 8612,
+        "level": 0,
+        "en": {
+            "description" : "Postion setting out of range",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "位置给定超限保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 3220,
+        "level": 0,
+        "en": {
+            "description" : "Power between PN low protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "PN间电压不足保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 3210,
+        "level": 0,
+        "en": {
+            "description" : "Power between PN high protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "PN间过电压保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 4310,
+        "level": 0,
+        "en": {
+            "description" : "Driver temperature high protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "驱动器过热保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 2350,
+        "level": 0,
+        "en": {
+            "description" : "Module overload protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "模块过载保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 3380,
+        "level": 0,
+        "en": {
+            "description" : "Driver output phase error protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "驱动器输出相序错误保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 3381,
+        "level": 0,
+        "en": {
+            "description" : "Driver output phase lost protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "驱动器输出缺相保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 3130,
+        "level": 0,
+        "en": {
+            "description" : "Driver input phase lost protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "驱动器输入缺相保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 5441,
+        "level": 0,
+        "en": {
+            "description" : "Dirver connection abnormal protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "驱动板连接异常保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 5210,
+        "level": 0,
+        "en": {
+            "description" : "Driver recognition abnormal protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "驱动板辨识异常保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 5280,
+        "level": 0,
+        "en": {
+            "description" : "Internal error 1",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "内部错误1（FPGA配置错误）",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 5281,
+        "level": 0,
+        "en": {
+            "description" : "Internal error 2",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "内部错误2",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 5282,
+        "level": 0,
+        "en": {
+            "description" : "STO safety wiring fault protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "STO安全接线故障保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 7180,
+        "level": 0,
+        "en": {
+            "description" : "Motor overload protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "电机过载保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 4210,
+        "level": 0,
+        "en": {
+            "description" : "Manufacturer testing 32",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "厂家检测32",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 7181,
+        "level": 0,
+        "en": {
+            "description" : "Brake malfunction",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "抱闸故障",
+            "cause" : "",
+            "solution" : "",
+        }
+    },
+    {
+        "id": 7182,
+        "level": 0,
+        "en": {
+            "description" : "External brake resistors overload protection",
+            "cause" : "",
+            "solution" : "",
+        },
+        "zh_CN": {
+            "description" : "外接制动电阻过载保护",
+            "cause" : "",
+            "solution" : "",
+        }
+    }
+]

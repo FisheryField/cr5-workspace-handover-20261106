@@ -1,0 +1,108 @@
+=== SavePos.txt (100B) ===
+0000000 8b b2 1f 64 30 25 1e 40 21 68 37 24 0c cb 2f 40
+0000016 f8 98 06 78 6b 2a 06 c0 11 7c 12 58 66 c6 34 40
+0000032 16 4a 6b 42 86 82 2c 40 81 a1 b3 bd de ee 34 40
+0000048 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+*
+0000096 00 00 00 00
+0000100
+=== SavePos as float32 ===
+0000000   1.1783591e+22   2.4710197e+00   3.9770000e-17   2.7467680e+00
+0000016   1.0919849e+34  -2.0963390e+00   6.4424624e+14   2.8246093e+00
+0000032   5.8822350e+01   2.6954665e+00  -8.7710388e-02   2.8270793e+00
+0000048   0.0000000e+00   0.0000000e+00   0.0000000e+00   0.0000000e+00
+*
+0000096   0.0000000e+00
+0000100
+=== slaveinfo first 128B ===
+0000000 7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+0000016 02 00 28 00 01 00 00 00 f9 89 00 00 34 00 00 00
+0000032 9c 00 03 00 02 00 00 05 34 00 20 00 08 00 28 00
+0000048 26 00 23 00 01 00 00 70 78 28 01 00 78 a8 01 00
+0000064 78 a8 01 00 18 00 00 00 18 00 00 00 04 00 00 00
+0000080 04 00 00 00 06 00 00 00 34 00 00 00 34 80 00 00
+0000096 34 80 00 00 00 01 00 00 00 01 00 00 05 00 00 00
+0000112 04 00 00 00 03 00 00 00 34 01 00 00 34 81 00 00
+0000128 34 81 00 00 19 00 00 00 19 00 00 00 04 00 00 00
+0000144 01 00 00 00 01 00 00 00 00 00 00 00 00 80 00 00
+=== slaveinfo strings ===
+/lib/ld-linux-armhf.so.3
+libc.so.6
+strcpy
+sprintf
+strncmp
+strncpy
+puts
+putchar
+abort
+memset
+memcpy
+strcat
+__libc_start_main
+libm.so.6
+__gmon_start__
+_Jv_RegisterClasses
+pthread_mutex_init
+htons
+socket
+setsockopt
+ioctl
+bind
+close
+pthread_mutex_lock
+pthread_mutex_unlock
+send
+recv
+ntohs
+nanosleep
+pthread_attr_init
+=== port tool strings ===
+/lib/ld-linux-armhf.so.3
+[h9v:
+libstdc++.so.6
+_ZNKSs5c_strEv
+__gmon_start__
+_Jv_RegisterClasses
+_ZNSaIcEC1Ev
+_ZNSsC1EPKcRKSaIcE
+_ITM_deregisterTMCloneTable
+_ZNSsD1Ev
+__aeabi_atexit
+_ITM_registerTMCloneTable
+__gxx_personality_v0
+__cxa_end_cleanup
+_ZNSt8ios_base4InitD1Ev
+_ZNSsaSEPKc
+_ZNSt8ios_base4InitC1Ev
+__pthread_key_create
+_ZNSaIcED1Ev
+libm.so.6
+libgcc_s.so.1
+__aeabi_unwind_cpp_pr1
+libc.so.6
+socket
+htons
+=== tty2ssh strings ===
+/lib/ld-linux-armhf.so.3
+|gU,)
+__gmon_start__
+libc.so.6
+perror
+puts
+abort
+printf
+ttyname
+ioctl
+close
+open
+strcmp
+__libc_start_main
+GLIBC_2.4
+x`9`O
+?0F9FBF
+miss argument
+tty_name: %s
+ioctl TIOCCONS
+=== other model sysfiles zero/calib files ===
+/dobot/userdata/projectOld/process/vision_calibrate.json
+/dobot/userdata/projectOld/project/calibration

@@ -1,0 +1,22 @@
+{
+    "SkinSens": {
+        "max": 3.0,
+        "min": 0.0,
+        "def": 3.0
+    },
+    "avoidVel": {
+        "max": 360.0,
+        "min": 1.0,
+        "def": 180.0
+    },
+    "avoidAcc": {
+        "max": 1000.0,
+        "min": 1.0,
+        "def": 500.0
+    },
+    "avoidJerk": {
+        "max": 10000.0,
+        "min": 1.0,
+        "def": 5000.0
+    }
+}

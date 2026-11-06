@@ -1,0 +1,322 @@
+[
+  {
+    "type": "TCP",
+    "values": [
+      500.0,
+      0.0,
+      460.0,
+      180.0,
+      0.0,
+      0.0
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      0.0,
+      -697.0,
+      460.0,
+      -90.0,
+      0.0,
+      180.0
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      120.0,
+      -697.0,
+      460.0,
+      -90.0,
+      0.0,
+      180.0
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      120.0,
+      -697.0,
+      460.0,
+      90.0,
+      0.0,
+      0.0
+    ],
+    "singular": true,
+    "spin360": false,
+    "j6_delta": 180
+  },
+  {
+    "type": "TCP",
+    "values": [
+      -120.0,
+      -697.0,
+      460.0,
+      90.0,
+      0.0,
+      0.0
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      0.0,
+      -560.0,
+      460.0,
+      90.0,
+      0.0,
+      0.0
+    ],
+    "singular": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      0.0,
+      -560.0,
+      460.0,
+      180.0,
+      0.0,
+      0.0
+    ],
+    "singular": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      0.0,
+      -684.5,
+      457.5,
+      180.0,
+      0.0,
+      0.0
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      -100.0,
+      -684.5,
+      457.5,
+      180.0,
+      0.0,
+      0.0
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      -100.0,
+      -684.5,
+      457.5,
+      180.0,
+      0.0,
+      180.0
+    ],
+    "singular": true,
+    "spin360": false,
+    "j6_delta": 180
+  },
+  {
+    "type": "TCP",
+    "values": [
+      100.0,
+      -684.5,
+      457.5,
+      180.0,
+      0.0,
+      180.0
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      40.0,
+      -654.0,
+      460.0,
+      90.0,
+      0.0,
+      90.0
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      30.0,
+      -684.0,
+      460.0,
+      90.0,
+      -0.0,
+      90.0
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      40.0,
+      -654.0,
+      460.0,
+      0.0,
+      90.0,
+      0.0
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      30.0,
+      -684.0,
+      460.0,
+      0.0,
+      90.0,
+      0.0
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      40.0,
+      -654.0,
+      460.0,
+      0.0,
+      -90.0,
+      180.0
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      30.0,
+      -684.0,
+      460.0,
+      0.0,
+      -90.0,
+      180.0
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      50.0,
+      -654.0,
+      460.0,
+      -88.932,
+      -59.663,
+      -90.936
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      40.0,
+      -684.0,
+      460.0,
+      -88.932,
+      -59.663,
+      -90.936
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 180
+  },
+  {
+    "type": "TCP",
+    "values": [
+      50.0,
+      -654.0,
+      460.0,
+      90.0,
+      0.0,
+      90.0
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      40.0,
+      -684.0,
+      460.0,
+      -88.932,
+      59.663,
+      -90.936
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 180
+  },
+  {
+    "type": "TCP",
+    "values": [
+      40.0,
+      -624.0,
+      570.0,
+      -88.932,
+      59.663,
+      -90.936
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 0
+  },
+  {
+    "type": "TCP",
+    "values": [
+      -600.0,
+      0.0,
+      460.0,
+      180.0,
+      0.0,
+      -90.0
+    ],
+    "singular": false,
+    "spin360": false,
+    "j6_delta": 180
+  }
+]

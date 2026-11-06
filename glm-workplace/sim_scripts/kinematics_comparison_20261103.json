@@ -1,0 +1,70 @@
+{
+  "robodk_nominal_mm": {
+    "base": 147,
+    "upper_arm": 427,
+    "forearm": 357,
+    "wrist_offset": 141,
+    "wrist_height": 116,
+    "terminal_link": 100.5
+  },
+  "controller_structure": {
+    "L1": 147,
+    "L2": 0,
+    "L3": 0,
+    "L4": 140.42088317871094,
+    "L5": 115.88533020019531,
+    "L6": 104.5,
+    "L7": 0,
+    "a1": 0.8393999934196472,
+    "a2": -427.6878356933594,
+    "a3": -357.0046691894531,
+    "a4": -0.1258630007505417,
+    "a5": -0.736253023147583,
+    "a6": 0,
+    "alpha1": 90.02828979492188,
+    "alpha2": 0.4404959976673126,
+    "alpha3": -0.3043549954891205,
+    "alpha4": 90.08969116210938,
+    "alpha5": -89.82854461669922,
+    "alpha6": 0,
+    "armSingularity12": 10,
+    "elbowSingularity12": 2,
+    "inclinationAngle": 0.66,
+    "limits": [
+      [
+        -178,
+        178
+      ],
+      [
+        -178,
+        178
+      ],
+      [
+        -160,
+        160
+      ],
+      [
+        -178,
+        178
+      ],
+      [
+        -178,
+        178
+      ],
+      [
+        -357,
+        357
+      ]
+    ],
+    "rotationAngle": 0.55,
+    "wristSingularity12": 2
+  },
+  "findings": [
+    "Controller terminal link L6=104.5 vs RoboDK terminal offset100.5; model dimension mismatch4mm separate from TCP130.",
+    "PositiveSolution matches actual GetPose at zero joints.",
+    "InverseSolution fails even for known zero-joint FK pose; unsuitable as sole reachability validator near tested configuration.",
+    "Radian-input apparent success reconstructs changed orientation (-3.138506,0.000338,3.141104) degrees, not original attitude."
+  ],
+  "controller_modified": false,
+  "robodk_kinematics_modified": false
+}

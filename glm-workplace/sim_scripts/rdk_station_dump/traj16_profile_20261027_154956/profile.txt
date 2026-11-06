@@ -1,0 +1,78 @@
+         269055 function calls (267141 primitive calls) in 101.977 seconds
+
+   Ordered by: cumulative time
+   List reduced from 174 to 70 due to restriction <70>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.003    0.003  101.985  101.985 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1849(_plan_continuous_trajectory)
+     4136  101.706    0.025  101.706    0.025 {method 'recv' of '_socket.socket' objects}
+     1726    0.004    0.000  101.401    0.059 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:968(_rec_int)
+        1    0.000    0.000   49.016   49.016 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1727(_verify_obstacle_plan)
+       70    0.006    0.000   48.994    0.700 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:1032(_rec_matrix)
+       17    0.000    0.000   48.991    2.882 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:7014(InstructionListJoints)
+      136    0.002    0.000   42.356    0.311 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:618(_movej_test_cached)
+       96    0.002    0.000   42.343    0.441 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:6027(MoveJ_Test)
+        1    0.000    0.000   13.327   13.327 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1894(<listcomp>)
+       22    0.001    0.000    9.719    0.442 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1576(_linear_path_endpoint)
+       14    0.000    0.000    9.718    0.694 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1586(_linear_path_endpoint_uncached)
+       22    0.000    0.000    9.407    0.428 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:6088(MoveL_Test)
+        4    0.000    0.000    3.575    0.894 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:2024(lookahead_ok)
+        2    0.000    0.000    3.574    1.787 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1780(_nearest_ik_from_current_lookahead)
+     1237    0.002    0.000    0.437    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:792(_check_status)
+        1    0.000    0.000    0.334    0.334 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1512(_enable_obstacle_checks)
+       17    0.000    0.000    0.318    0.019 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:4228(Delete)
+        8    0.000    0.000    0.290    0.036 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1618(_linear_waypoints)
+       93    0.001    0.000    0.244    0.003 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:880(_rec_item)
+       37    0.000    0.000    0.172    0.005 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:2564(setCollisionActivePair)
+       17    0.000    0.000    0.150    0.009 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:2241(AddProgram)
+      136    0.001    0.000    0.120    0.001 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1554(_trajectory_pose)
+19273/17359    0.009    0.000    0.095    0.000 {built-in method builtins.max}
+      116    0.000    0.000    0.076    0.001 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:2009(<genexpr>)
+     3940    0.073    0.000    0.073    0.000 {method 'send' of '_socket.socket' objects}
+       12    0.000    0.000    0.070    0.006 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:4377(Parent)
+      620    0.006    0.000    0.070    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:932(_rec_pose)
+       56    0.001    0.000    0.064    0.001 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:1058(_moveX)
+       22    0.002    0.000    0.052    0.002 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1793(_nearest_ik_from_current)
+       56    0.000    0.000    0.050    0.001 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:6315(WaitMove)
+      244    0.000    0.000    0.047    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robomath.py:352(invH)
+      244    0.002    0.000    0.047    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robomath.py:1694(invH)
+      206    0.001    0.000    0.045    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:5430(PoseTool)
+      206    0.001    0.000    0.041    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:5444(PoseFrame)
+     1231    0.004    0.000    0.037    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:854(_send_line)
+       32    0.000    0.000    0.037    0.001 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:5911(MoveJ)
+     1173    0.014    0.000    0.037    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robomath.py:1599(__mul__)
+        4    0.000    0.000    0.033    0.008 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:1516(ItemList)
+       53    0.000    0.000    0.030    0.001 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:630(_tcp_target_to_flange)
+      244    0.003    0.000    0.028    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robomath.py:1644(isHomogeneous)
+       24    0.000    0.000    0.028    0.001 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:5931(MoveL)
+       16    0.000    0.000    0.026    0.002 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:1464(Item)
+     1557    0.018    0.000    0.025    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robomath.py:1487(tr)
+      136    0.001    0.000    0.025    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:5535(SolveFK)
+        2    0.000    0.000    0.025    0.012 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:2501(Render)
+       10    0.001    0.000    0.024    0.002 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1751(_ik_branch_candidates)
+        1    0.000    0.000    0.024    0.024 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:2550(setCollisionActive)
+       54    0.000    0.000    0.024    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:5307(setJoints)
+     1236    0.003    0.000    0.024    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:871(_send_item)
+     5262    0.013    0.000    0.022    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robomath.py:1275(__init__)
+       76    0.001    0.000    0.022    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:988(_rec_array)
+     3598    0.002    0.000    0.021    0.000 {built-in method builtins.any}
+      485    0.003    0.000    0.020    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:974(_send_array)
+       10    0.000    0.000    0.018    0.002 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:5129(Joints)
+      879    0.002    0.000    0.015    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:960(_send_int)
+       14    0.000    0.000    0.013    0.001 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1506(_collision_details)
+     3735    0.006    0.000    0.011    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robomath.py:1389(__getitem__)
+       17    0.000    0.000    0.011    0.001 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:4424(setVisible)
+       53    0.000    0.000    0.011    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:5686(SolveIK_All)
+     1220    0.005    0.000    0.010    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robomath.py:1424(__setitem__)
+     3373    0.002    0.000    0.010    0.000 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1810(<genexpr>)
+       14    0.000    0.000    0.009    0.001 {method 'join' of 'str' objects}
+       34    0.000    0.000    0.009    0.000 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1508(<genexpr>)
+       40    0.000    0.000    0.009    0.000 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:4504(Name)
+     1512    0.006    0.000    0.009    0.000 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1055(_real_limit_ok)
+        1    0.000    0.000    0.009    0.009 D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py:2757(RunMode)
+        1    0.000    0.000    0.008    0.008 {method 'sort' of 'list' objects}
+        8    0.000    0.000    0.008    0.001 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1895(<lambda>)
+        8    0.000    0.000    0.008    0.001 D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_profile_20261027_154956\station_p2p.py:1660(_obstacle_posture_key)
+    12771    0.004    0.000    0.008    0.000 {built-in method builtins.min}
+
+

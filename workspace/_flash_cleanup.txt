@@ -1,0 +1,34 @@
+=== A. stop mToolServer (it holds the EtherCAT bus) ===
+  303 root       1:12 /dobot/bin/gcontrol
+
+=== B. did codesyscontrol come back? ===
+  303 root       1:12 /dobot/bin/gcontrol
+
+=== C. servo fault codes in the main log (last 10) ===
+[2026-09-23 18:41:40.005] [15] [error] [logServoError#584] servo3 error ID update : 0 -> 60945 
+[2026-09-23 18:41:40.026] [15] [error] [logServoError#584] servo4 error ID update : 0 -> 60945 
+[2026-09-23 18:41:40.042] [15] [error] [logServoError#584] servo5 error ID update : 0 -> 60945 
+[2026-09-23 18:41:40.058] [15] [error] [logServoError#584] servo6 error ID update : 0 -> 60945 
+[2026-09-23 18:50:51.083] [15] [error] [logServoError#584] servo1 error ID update : 0 -> 60945 
+[2026-09-23 18:50:51.097] [15] [error] [logServoError#584] servo2 error ID update : 0 -> 60945 
+[2026-09-23 18:50:51.111] [15] [error] [logServoError#584] servo3 error ID update : 0 -> 60945 
+[2026-09-23 18:50:51.131] [15] [error] [logServoError#584] servo4 error ID update : 0 -> 60945 
+[2026-09-23 18:50:51.147] [15] [error] [logServoError#584] servo5 error ID update : 0 -> 60945 
+[2026-09-23 18:50:51.164] [15] [error] [logServoError#584] servo6 error ID update : 0 -> 60945 
+
+=== D. main log line count now (was 635816) ===
+635970
+
+=== E. listening ports now ===
+tcp        0      0 0.0.0.0:60000           0.0.0.0:*               LISTEN      303/gcontrol
+tcp        0      0 0.0.0.0:29999           0.0.0.0:*               LISTEN      303/gcontrol
+tcp        0      0 0.0.0.0:6000            0.0.0.0:*               LISTEN      303/gcontrol
+tcp        0      0 0.0.0.0:22001           0.0.0.0:*               LISTEN      303/gcontrol
+tcp        0      0 0.0.0.0:30003           0.0.0.0:*               LISTEN      303/gcontrol
+tcp        0      0 0.0.0.0:30004           0.0.0.0:*               LISTEN      303/gcontrol
+tcp        0      0 0.0.0.0:30005           0.0.0.0:*               LISTEN      303/gcontrol
+tcp        0      0 0.0.0.0:30006           0.0.0.0:*               LISTEN      303/gcontrol
+
+=== F. mToolServer really gone? ===
+port 22002 closed - OK
+=== DONE ===

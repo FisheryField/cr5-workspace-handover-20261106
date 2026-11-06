@@ -1,0 +1,67 @@
+﻿--- 3150 tail after store (call path to +0x238) [08024B40..08024B74]
+   08024B40  str        r0, [r1, #4]
+   08024B42  ldr.w      r0, [sb, #0x234]
+   08024B46  ldr        r1, [r4, #0xc]
+   08024B48  sdiv       r2, r0, r1
+   08024B4C  mls        r0, r1, r2, r0
+   08024B50  add        r0, r1
+   08024B52  ldr        r1, [pc, #0x5c]
+   08024B54  str        r0, [r1]
+   08024B56  ldr.w      r1, [sb, #0x234]
+   08024B5A  ldr        r0, [pc, #0x58]
+   08024B5C  ldr        r2, [r0, #8]
+   08024B5E  mov        r0, r8
+   08024B60  blx        r2
+   08024B62  str.w      r0, [sb, #0x238]
+   08024B66  ldr        r0, [pc, #0x30]
+   08024B68  ldrb       r0, [r0]
+   08024B6A  cmp        r0, #1
+   08024B6C  bne        #0x8024b7a
+   08024B6E  movs       r0, #0xb4
+   08024B70  ldr        r0, [r0, r4]
+   08024B72  cbnz       r0, #0x8024b7a
+
+--- 328d8 tail after store (call path to +0x238) [080255EE..0802560A]
+   080255EE  asrs       r4, r6, #8
+   080255F0  ldr        r0, [sp, #0x14]
+   080255F2  ldr.w      r1, [r0, #0x234]
+   080255F6  ldr        r0, [pc, #0x34]
+   080255F8  ldr        r2, [r0, #8]
+   080255FA  mov        r0, r8
+   080255FC  blx        r2
+   080255FE  mov        r1, r0
+   08025600  ldr        r0, [sp, #0x14]
+   08025602  str.w      r1, [r0, #0x238]
+   08025606  add        sp, #0x1c
+
+--- 3150 literal pool A [08024B98..08024BC0]
+   08024B98 : 20000022  <-- RAM global
+   08024B9C : 20000010  <-- RAM global
+   08024BA0 : 20003D8C  <-- RAM global
+   08024BA4 : 00000000
+   08024BA8 : 3FE00000
+   08024BAC : 20000020  <-- RAM global
+   08024BB0 : 20003DB0  <-- RAM global
+   08024BB4 : 20000074  <-- RAM global
+   08024BB8 : 4602B513
+   08024BBC : 1142EBC2
+
+--- 328d8 literal pool D8 [0802562C..08025640]
+   0802562C : 20000078  <-- RAM global
+   08025630 : 4602B513
+   08025634 : 1142EBC2
+   08025638 : EB034B74
+   0802563C : F89D00C1
+
+== stores to #0xb0 (D8) / #0xa8 (3150) anywhere in image
+python : Traceback (most recent call last):
+所在位置 行:1 字符: 153
++ ... $false); cd D:\mydata\workspace; python tools\t2_tail.py 2>&1 | Out-F ...
++                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\mydata\workspace\tools\t2_tail.py", line 57, in <module>
+    print('  %s #0x%02X :' % (t, o), ' '.join('%08X' % x for x in find_store(t, o)))
+                                                                  ~~~~~~~~~~^^^^^^
+TypeError: find_store() missing 1 required positional argument: 'rn_op'

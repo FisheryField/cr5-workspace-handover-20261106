@@ -1,0 +1,50 @@
+﻿--- 328d8 pool [08025600..08025630]
+   08025600 : F8C09805
+   08025604 : B0071238
+   08025608 : 8FF0E8BD
+   0802560C : 20003E84
+   08025610 : 2000138C
+   08025614 : 20003D24
+   08025618 : 2000C6C8
+   0802561C : 20007224
+   08025620 : 20000020
+   08025624 : 20000010
+   08025628 : 20003ED4
+   0802562C : 20000078
+
+--- 3150 pool [08024980..080249B0]
+   08024980 : 68404887
+   08024984 : 68C94986
+   08024988 : 19801A40
+   0802498C : 61884984
+   08024990 : 69804608
+   08024994 : DA032800
+   08024998 : 61482000
+   0802499C : E0A2E022
+   080249A0 : ED90487F
+   080249A4 : EEF80A06
+   080249A8 : ED940AC0
+   080249AC : EEB80A03
+
+== rounding census: vmov.f32 sX,#5.0e-01 and the following FP op
+-- 3150 : 0 site(s)
+     positive control present: n/a
+-- 328d8 : 0 site(s)
+     positive control present: False
+
+== literals 0x20003DB0 (3150) / 0x20003EF8 (D8) : loaders + following insns
+python : Traceback (most recent call last):
+所在位置 行:1 字符: 153
++ ... w($false); cd D:\mydata\workspace; python tools\t2_q2.py 2>&1 | Out-F ...
++                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\mydata\workspace\tools\t2_q2.py", line 68, in <module>
+    L = loaders_of(t, g)
+  File "D:\mydata\workspace\tools\t2_q2.py", line 33, in loaders_of
+    if i.mnemonic.startswith('ldr') and len(i.operands) == 2:
+                                            ^^^^^^^^^^
+  File "D:\configure\python\Lib\site-packages\capstone\__init__.py", line 782, in __getattr__
+    raise CsError(CS_ERR_DETAIL)
+capstone.CsError: Details are unavailable (CS_ERR_DETAIL)

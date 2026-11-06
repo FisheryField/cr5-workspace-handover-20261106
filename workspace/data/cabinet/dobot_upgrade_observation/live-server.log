@@ -1,0 +1,86 @@
+[2026-09-16 17:31:24][INFO][http_server.cpp@httpCallback()#1276]the content of post is 
+{
+    "cabType": "big",
+    "cabVersion": "V1",
+    "operationType": "start",
+    "slaveId": 3,
+    "updateFile": "CR5_Servo_ST_FOE_V3.2.D.8.bin",
+    "updateFile2": "",
+    "updateType": "firmware"
+}
+
+[2026-09-16 17:31:24][INFO][http_server.cpp@httpCallback()#1293]request : post /update/CR/singleFwAndXml.
+[2026-09-16 17:31:24][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#602]request update type is start.
+[2026-09-16 17:31:24][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#651]type:firmware,file1:CR5_Servo_ST_FOE_V3.2.D.8.bin,file2:.
+[2026-09-16 17:31:24][INFO][dobot_info.cpp@createUpdateThd()#92]<--- enter this function
+[2026-09-16 17:31:24][INFO][dobot_info.cpp@createUpdateThd()#97]ready to create update thread
+[2026-09-16 17:31:24][INFO][dobot_foe.cpp@singleUpdateThdFunc()#995]<--- enter this function
+[2026-09-16 17:31:24][INFO][dobot_info.cpp@createUpdateThd()#126]setting thread affinity successfully.
+[2026-09-16 17:31:24][INFO][http_server.cpp@updateFunc_CRSingleFwAndXml()#660]success create update thread.
+[2026-09-16 17:31:24][DEBUG][http_server.cpp@updateFunc_CRSingleFwAndXml()#661]return url:/update/CR/singleFwAndXml.
+[2026-09-16 17:31:27][INFO][general_tools.cpp@pkillCodesysControl()#417]run '/dobot/bin/bin/redis/redis-cli BGSAVE' successfully.
+[2026-09-16 17:31:28][INFO][general_tools.cpp@pkillCodesysControl()#435]pkill -9 codesyscontrol successfully.
+[2026-09-16 17:31:28][INFO][dobot_foe.cpp@sendRSToServoBySDO()#1229]eth0 init success.
+[2026-09-16 17:31:28][INFO][dobot_foe.cpp@sendRSToServoBySDO()#1237]slaves config read done.
+[2026-09-16 17:31:28][INFO][dobot_foe.cpp@sendRSToServoBySDO()#1246]wkc = 1, data = 1.
+[2026-09-16 17:31:31][INFO][dobot_foe.cpp@init()#162]Start initializing eth0.
+[2026-09-16 17:31:31][INFO][dobot_foe.cpp@SavePose()#60]create socket to save points.
+[2026-09-16 17:31:31][INFO][dobot_foe.cpp@SavePose()#76]net name: eth2.
+[2026-09-16 17:31:31][INFO][dobot_foe.cpp@SavePose()#77]ip: 192.168.5.1 .
+[2026-09-16 17:31:31][INFO][dobot_foe.cpp@SavePose()#83]local addrIP:192.168.5.1
+[2026-09-16 17:31:31][INFO][dobot_foe.cpp@SavePose()#95]connect port 30005 success.
+[2026-09-16 17:31:31][INFO][dobot_foe.cpp@SavePose()#104]date length:-1 from port 30005.
+[2026-09-16 17:31:31][INFO][dobot_foe.cpp@SavePose()#104]date length:-1 from port 30005.
+[2026-09-16 17:31:31][INFO][dobot_foe.cpp@SavePose()#104]date length:-1 from port 30005.
+[2026-09-16 17:31:31][INFO][dobot_foe.cpp@SavePose()#104]date length:1440 from port 30005.
+[2026-09-16 17:31:31][INFO][dobot_foe.cpp@SavePose()#124]Joint1:91.668781,Joint2:96.747352,Joint3:-5.353040,Joint4:448.226689,Joint5:71.785272,Joint6:-252.372440.
+[2026-09-16 17:31:31][INFO][dobot_foe.cpp@SavePose()#151]SavePos data 91.668781, 96.747352, -5.353040, 448.226689, 71.785272, -252.372440.
+[2026-09-16 17:31:31][INFO][dobot_foe.cpp@init()#168]run '/dobot/bin/bin/redis/redis-cli BGSAVE' successfully.
+[2026-09-16 17:31:31][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 17:31:34][INFO][general_tools.cpp@pkillCodesysControl()#417]run '/dobot/bin/bin/redis/redis-cli BGSAVE' successfully.
+[2026-09-16 17:31:34][INFO][general_tools.cpp@pkillCodesysControl()#435]pkill -9 codesyscontrol successfully.
+[2026-09-16 17:31:36][INFO][http_server.cpp@httpCallback()#1290]request : get /update/singleStatus.
+[2026-09-16 17:31:40][INFO][dobot_foe.cpp@init()#182]eth0 init success.
+[2026-09-16 17:31:41][INFO][dobot_foe.cpp@init()#190]slaves config read done.
+[2026-09-16 17:31:41][INFO][dobot_foe.cpp@init()#203]9 slaves found and configured, start to update firmware and xml.
+[2026-09-16 17:31:41][INFO][dobot_foe.cpp@init()#210]End of initialization eth0.
+[2026-09-16 17:31:41][INFO][dobot_foe.cpp@updateSlaveFW()#246]starting update firmware of slave:3 using file:CR5_Servo_ST_FOE_V3.2.D.8.bin.
+[2026-09-16 17:31:41][INFO][dobot_foe.cpp@updateSlaveFW()#250]change slave[3] state to init=1.
+[2026-09-16 17:31:42][INFO][ethercatmain.c@ecx_statecheck_new()#969]state=1,reqstate=1,isTimeout=0,rval=0x1.
+[2026-09-16 17:31:42][INFO][dobot_foe.cpp@updateSlaveFW()#273]sm0 data=0x2001800.
+[2026-09-16 17:31:42][INFO][dobot_foe.cpp@updateSlaveFW()#284]sm1 data=0x2001a30.
+[2026-09-16 17:31:42][INFO][dobot_foe.cpp@updateSlaveFW()#294]SM0 A:1800 L: 512 F:00010026.
+[2026-09-16 17:31:42][INFO][dobot_foe.cpp@updateSlaveFW()#296]SM1 A:1a30 L: 512 F:00010022.
+[2026-09-16 17:31:42][INFO][dobot_foe.cpp@updateSlaveFW()#302]change slave[3] state to boot=3.
+[2026-09-16 17:31:42][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 17:31:43][INFO][ethercatmain.c@ecx_statecheck_new()#969]state=3,reqstate=3,isTimeout=0,rval=0x3.
+[2026-09-16 17:31:43][INFO][dobot_foe.cpp@updateSlaveFW()#316]change slave[3] state to init=1.
+[2026-09-16 17:31:44][INFO][ethercatmain.c@ecx_statecheck_new()#969]state=1,reqstate=1,isTimeout=0,rval=0x1.
+[2026-09-16 17:31:44][INFO][dobot_foe.cpp@updateSlaveFW()#324]switch state to init successfully.
+[2026-09-16 17:31:44][INFO][dobot_foe.cpp@updateSlaveFW()#326]change slave[3] state to boot=3.
+[2026-09-16 17:31:45][INFO][ethercatmain.c@ecx_statecheck_new()#969]state=3,reqstate=3,isTimeout=0,rval=0x3.
+[2026-09-16 17:31:45][INFO][dobot_foe.cpp@updateSlaveFW()#334]switch state to boot successfully.
+[2026-09-16 17:31:45][INFO][general_tools.cpp@readSpecifyFile()#33]readSpecifyFile:/tmp/tUpdate/slave/CR5_Servo_ST_FOE_V3.2.D.8.bin.
+[2026-09-16 17:31:45][INFO][dobot_foe.cpp@updateSlaveFW()#339]File read OK,name:CR5_Servo_ST_FOE_V3.2.D.8.bin, 338104 bytes.
+[2026-09-16 17:31:45][INFO][dobot_foe.cpp@updateSlaveFW()#341]start FoE write....,updateFileName=CR5_Servo_ST_FOE_V3.2.D.8.bin,filesize=338104.
+[2026-09-16 17:31:51][INFO][dobot_foe.cpp@updateSlaveFW()#345]foe write result is success.g_TempFoeWriteErrCode=0
+[2026-09-16 17:31:51][INFO][dobot_foe.cpp@updateSlaveFW()#369]after write file, changing slave 3 state to init.
+[2026-09-16 17:31:53][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 17:31:53][INFO][ethercatmain.c@ecx_statecheck_new()#969]state=3,reqstate=1,isTimeout=1,rval=0x3.
+[2026-09-16 17:31:53][WARNING][dobot_foe.cpp@updateSlaveFW()#372]failed to switch state to init, actual state=3.
+[2026-09-16 17:31:54][INFO][ethercatmain.c@ecx_statecheck_new()#969]state=1,reqstate=1,isTimeout=0,rval=0x1.
+[2026-09-16 17:31:54][INFO][dobot_foe.cpp@updateSlaveFW()#387]switch state to init successfully.
+[2026-09-16 17:31:54][INFO][dobot_foe.cpp@singleUpdateThdFunc()#1072]<--- exit this function. ret=1,ret2=1.
+[2026-09-16 17:31:54][INFO][dobot_info.cpp@exitUpdateThd()#140]end update pthread.
+[2026-09-16 17:32:03][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 17:32:14][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 17:32:24][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 17:32:35][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 17:32:45][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 17:32:56][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 17:33:06][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 17:33:17][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 17:33:27][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 17:33:38][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 17:33:49][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.
+[2026-09-16 17:33:59][INFO][http_server.cpp@httpCallback()#1293]request : get /protocol/version.

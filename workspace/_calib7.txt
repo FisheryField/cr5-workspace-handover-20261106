@@ -1,0 +1,220 @@
+=== .ash_history (full) ===
+ls
+hot
+hotp
+ping 192.168.1.20
+passwd admin
+ls /home/
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+cat dobot/userdata/SlaveLog 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+cat dobot/userdata/SlaveLog 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+cd /dobot/userdata/project 
+tar -zcvf CR5_CC162_V3.5.4.1-stable-a014bd6f-2212301029_20260916_Backup.tar.gz --exclude=logs * 
+exit 
+cd /dobot/userdata/project 
+rm -rf CR5_CC162_V3.5.4.1-stable-a014bd6f-2212301029_20260916_Backup.tar.gz 
+exit 
+cd /dobot/userdata/project 
+tar -xvf CR5_CC162_V3.5.4.1-stable-a014bd6f-2212301029_20260916_Backup.tar.gz 
+rm -rf CR5_CC162_V3.5.4.1-stable-a014bd6f-2212301029_20260916_Backup.tar.gz 
+exit 
+ls
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+rm -rf /tmp/tUpdate/slave/ 
+mkdir /tmp/tUpdate/slave/ 
+exit 
+=== who references save.sh (broad) ===
+=== default.json calib-ish keys ===
+=== tslib (touchscreen, not robot) ===
+-rwxrwxr-x    1 1025     1025         26801 Mar 20  2017 /bin/ts_calibrate
+-rwxrwxr-x    1 1025     1025           645 Mar 20  2017 /etc/ts.conf
+=== settings/function ===
+total 54
+drwxr-xr-x    2 1022     1024          1024 Sep 18 09:28 .
+drwxr-xr-x    9 1022     1024          1024 Sep 18 09:28 ..
+-rwxr-xr-x    1 root     root            90 Sep 18 10:33 CustomPoint.json
+-rwxr-xr-x    1 root     root            23 Feb 19  1976 DHGripperEnable.json
+-rwxr-xr-x    1 1022     1024            38 Dec 30  2022 PackPoint.json
+-rwxr-xr-x    1 1022     1024          5442 Dec 30  2022 accFactor.json
+-rwxr-xr-x    1 1022     1024           600 Dec 30  2022 collisionDect.json
+-rwxr-xr-x    1 root     root            87 Feb 19  1976 dragSensivity.json
+-rwxr-xr-x    1 root     root          1628 Feb 19  1976 dynamicsParams.json
+-rwxr-xr-x    1 root     root            15 Feb 19  1976 elecSkin.json
+-rwxr-xr-x    1 root     root           425 Feb 19  1976 elecSkinDefault.json
+-rwxr-xr-x    1 root     root           109 Feb 19  1976 elecSkinParams.json
+-rwxr-xr-x    1 root     root            43 Feb 19  1976 endAI.json
+-rwxr-xr-x    1 root     root          1277 Feb 19  1976 functionApi.json
+-rwxr-xr-x    1 root     root           789 Feb 19  1976 functionSystem.json
+-rwxr-xr-x    1 root     root           107 Feb 19  1976 generalSafeSetting.json
+-rwxr-xr-x    1 root     root            21 Feb 19  1976 gpioAI.json
+-rwxr-xr-x    1 root     root            43 Feb 19  1976 gpioAO.json
+-rwxr-xr-x    1 root     root            16 Feb 19  1976 hitbotGripperEnable.json
+-rwxr-xr-x    1 root     root            47 Feb 19  1976 install.json
+-rwxr-xr-x    1 root     root           335 Feb 19  1976 ioctrl.json
+-rwxr-xr-x    1 root     root           211 Feb 19  1976 jointMaxParas.json
+-rwxr-xr-x    1 root     root            78 Sep 18 14:16 loadParams.json
+-rwxr-xr-x    1 1022     1024          6848 Dec 30  2022 logServerConfig.json
+-rwxr-xr-x    1 root     root           327 Feb 19  1976 minicab_ioctrl.json
+-rwxr-xr-x    1 root     root            35 Feb 19  1976 modbusConf.json
+-rwxr-xr-x    1 1022     1024           356 Dec 30  2022 modbusctrl.json
+-rwxr-xr-x    1 root     root            50 Feb 19  1976 reTraceParams.json
+-rwxr-xr-x    1 root     root            36 Sep 18 11:25 remoteControl.json
+-rwxr-xr-x    1 root     root            16 Feb 19  1976 robotiqGripperEnable.json
+-rwxr-xr-x    1 root     root            24 Feb 19  1976 robotiqSixForce.json
+-rwxr-xr-x    1 root     root           430 Feb 19  1976 safeSignal.json
+-rwxr-xr-x    1 root     root           284 Feb 19  1976 sixForceParams.json
+-rwxr-xr-x    1 1022     1024          2804 Dec 30  2022 tcp30006Feedback.json
+-rwxr-xr-x    1 1022     1024           806 Dec 30  2022 tcpipSecurity.json
+-rwxr-xr-x    1 1022     1024          4061 Dec 30  2022 torquelimit.json
+=== redis dump dir ===
+total 6
+drwxr-xr-x    2 root     root          1024 Sep 18 14:12 .
+drwxr-xr-x    8 1022     1024          1024 Dec 30  2022 ..
+-rwxr-xr-x    1 root     root             0 Feb 19  1976 appendonly.aof
+-rwxr-xr-x    1 root     root            92 Sep 17 09:47 dump.rdb
+-rw-r--r--    1 root     root          2141 Sep 18 14:12 stdout
+=== alarm_servo lines 690-830 sample ===
+        "level": 0,
+        "en": {
+            "description" : "The current offset of homing point is too high",
+            "cause" : "",
+            "solution" : "Reset the Zero point current offset"
+        },
+        "zh_CN": {
+            "description" : "零点电流偏置过大保护",
+            "cause" : "",
+            "solution" : "重新设置零点电流偏置"
+        }
+        "zh_CN": {
+            "description" : "编码器异常故障",
+            "cause" : "",
+            "solution" : "检查硬件是否正常，或联系技术支持工程师"
+        }
+    },
+    {
+        "id": 29570,
+        "level": 0,
+        "en": {
+            "description" : "Encoder battery is abnormal",
+            "cause" : "",
+            "solution" : "Please contact technical support engineer"
+        },
+        "zh_CN": {
+            "description" : "编码器电池异常保护",
+            "cause" : "",
+            "solution" : "请联系技术支持工程师"
+        }
+    },
+	{

@@ -1,0 +1,85 @@
+# program=v328d8.elf
+
+================================
+## 080145a8 -> FUN_080145a8 @080145a8
+================================
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_080145a8(undefined4 param_1,int param_2,int param_3)
+
+{
+  uint *puVar1;
+  int unaff_r4;
+  int iVar2;
+  uint uVar3;
+  int unaff_r6;
+  
+  iVar2 = param_3 * (unaff_r4 + 0x29) + unaff_r6;
+  puVar1 = (uint *)(_DAT_08014610 + param_3 * 4);
+  uVar3 = *(int *)(param_2 + 0x3a) - *(int *)(param_2 + 4);
+  if (*(int *)(param_2 + 0xc) != -1) {
+    if ((int)uVar3 < 0) {
+      uVar3 = -uVar3;
+    }
+    if (*(uint *)(param_2 + 0xc) < uVar3) {
+      if (*puVar1 < (uint)*(ushort *)(param_2 + 0x10) << 1) {
+        *puVar1 = *puVar1 + 1;
+        return;
+      }
+      *(byte *)(iVar2 + 0x141) = (*(byte *)(iVar2 + 0x141) & 0xdf) + 0x20;
+      return;
+    }
+  }
+  if (1 < *puVar1) {
+    *puVar1 = *puVar1 - 1;
+  }
+  *(byte *)(iVar2 + 0x141) = *(byte *)(iVar2 + 0x141) & 0xdf;
+  return;
+}
+
+
+---- listing ----
+   080145a8  adds r4,#0x29
+   080145aa  muls r4,r2
+   080145ac  add r4,r6
+   080145ae  add.w r3,r4,#0x140
+   080145b2  ldr r4,[0x08014610]
+   080145b4  add.w r0,r4,r2, lsl #0x2
+   080145b8  ldr.w r4,[r1,#0x3a]
+   080145bc  ldr r6,[r1,#0x4]
+   080145be  subs r5,r4,r6
+   080145c0  ldr r6,[r1,#0xc]
+   080145c2  adds r6,r6,#0x1
+   080145c4  cbz r6,0x080145f4
+   080145c6  subs r4,r5,#0x0
+   080145c8  blt 0x080145ce
+   080145ca  mov r6,r4
+   080145cc  b 0x080145d0
+   080145ce  rsbs r6,r4
+   080145d0  ldr r7,[r1,#0xc]
+   080145d2  cmp r6,r7
+   080145d4  bls 0x080145f4
+   080145d6  ldrh r6,[r1,#0x10]
+   080145d8  ldr r4,[r0,#0x0]
+   080145da  cmp.w r4,r6, lsl #0x1
+   080145de  bcs 0x080145e8
+   080145e0  ldr r4,[r0,#0x0]
+   080145e2  adds r4,r4,#0x1
+   080145e4  str r4,[r0,#0x0]
+   080145e6  b 0x08014608
+   080145e8  ldrb r4,[r3,#0x1]
+   080145ea  bic r4,r4,#0x20
+   080145ee  adds r4,#0x20
+   080145f0  strb r4,[r3,#0x1]
+   080145f2  b 0x08014608
+   080145f4  ldr r4,[r0,#0x0]
+   080145f6  cmp r4,#0x1
+   080145f8  bls 0x08014600
+   080145fa  ldr r4,[r0,#0x0]
+   080145fc  subs r4,r4,#0x1
+   080145fe  str r4,[r0,#0x0]
+   08014600  ldrb r4,[r3,#0x1]
+   08014602  bic r4,r4,#0x20
+   08014606  strb r4,[r3,#0x1]
+   08014608  pop {r4,r5,r6,r7,pc}

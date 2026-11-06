@@ -1,0 +1,14 @@
+Collecting paramiko
+ERROR: Could not install packages due to an OSError: [Errno 13] Permission denied: 'D:\\mydata\\Workspace\\.tmp\\pip-unpack-ki4tm8o_\\paramiko-5.0.0-py3-none-any.whl.metadata'
+Consider using the `--user` option or check the permissions.
+
+WARNING: Failed to remove contents in a temporary directory 'D:\mydata\Workspace\.tmp\pip-build-tracker-tlj2qybi'.
+You can safely remove it manually.
+WARNING: Failed to remove contents in a temporary directory 'D:\mydata\Workspace\.tmp\pip-target-21zq4k30'.
+You can safely remove it manually.
+WARNING: Failed to remove contents in a temporary directory 'D:\mydata\Workspace\.tmp\pip-unpack-ki4tm8o_'.
+You can safely remove it manually.
+WARNING: Failed to remove contents in a temporary directory 'D:\mydata\Workspace\.tmp\pip-ephem-wheel-cache-ebvoyx19'.
+You can safely remove it manually.
+WARNING: Failed to remove contents in a temporary directory 'D:\mydata\Workspace\.tmp\pip-install-5_15o0pm'.
+You can safely remove it manually.

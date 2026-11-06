@@ -1,0 +1,26 @@
+=== gcontrol keyword counts ===
+zero: 0
+calib: 0
+encoder: 0
+battery: 0
+homing: 0
+=== all/log keyword counts ===
+zero: 0
+calib: 7
+encoder: 153
+battery: 0
+=== all/log zero context ===
+=== all/log encoder context ===
+=== codesys log zero/encoder ===
+/dobot/userdata/project/logs/codesys/log:PositonScalingDen[0]:1.000params->structureParams.EncoderResolution[0]:19999params->structureParams.jointPa
+/dobot/userdata/project/logs/codesys/log:PositonScalingDen[1]:1.000params->structureParams.EncoderResolution[1]:19999params->structureParams.jointPa
+/dobot/userdata/project/logs/codesys/log:PositonScalingDen[2]:1.000params->structureParams.EncoderResolution[2]:19999params->structureParams.jointPa
+/dobot/userdata/project/logs/codesys/log:PositonScalingDen[3]:1.000params->structureParams.EncoderResolution[3]:19999params->structureParams.jointPa
+/dobot/userdata/project/logs/codesys/log:PositonScalingDen[4]:1.000params->structureParams.EncoderResolution[4]:19999params->structureParams.jointPa
+/dobot/userdata/project/logs/codesys/log:PositonScalingDen[5]:1.000params->structureParams.EncoderResolution[5]:19999params->structureParams.jointPa
+/dobot/userdata/project/logs/codesys/log.1:PositonScalingDen[0]:1.000params->structureParams.EncoderResolution[0]:19999params->structureParams.jointPa
+/dobot/userdata/project/logs/codesys/log.1:PositonScalingDen[1]:1.000params->structureParams.EncoderResolution[1]:19999params->structureParams.jointPa
+/dobot/userdata/project/logs/codesys/log.1:PositonScalingDen[2]:1.000params->structureParams.EncoderResolution[2]:19999params->structureParams.jointPa
+/dobot/userdata/project/logs/codesys/log.1:PositonScalingDen[3]:1.000params->structureParams.EncoderResolution[3]:19999params->structureParams.jointPa
+/dobot/userdata/project/logs/codesys/log.1:PositonScalingDen[4]:1.000params->structureParams.EncoderResolution[4]:19999params->structureParams.jointPa
+/dobot/userdata/project/logs/codesys/log.1:PositonScalingDen[5]:1.000params->structureParams.EncoderResolution[5]:19999params->structureParams.jointPa

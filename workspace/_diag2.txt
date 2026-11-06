@@ -1,0 +1,32 @@
+=== date / uptime ===
+Fri Sep 18 18:47:52 CST 2026
+263.32 949.53
+=== processes ===
+  220 root       0:00 /dobot/bin/logServer
+  268 root       0:00 /dobot/bin/bin/redis-server 127.0.0.1:6379
+  307 root       0:08 /dobot/bin/gcontrol
+  376 root       1:27 ./codesyscontrol
+=== SlaveLog ===
+ec_init on eth0 succeeded.
+9 slaves found and configured.
+Calculated workcounter 27
+
+Slave:1
+Slave:2
+Slave:3
+Slave:4
+Slave:5
+Slave:6
+Slave:7
+Slave:8
+Slave:9
+00 vid:0x00000a62 pid:0x00000221 rev:0x00000103 CoRobot Safety IO
+
+01 vid:0x00000a62 pid:0x00000222 rev:0x00000103 CoRobot Uni IO
+
+02 vid:0x00000a62 pid:0x00000121 rev:0x00020001 Dobot DS121
+
+03 vid:0x00000a62 pid:0x00000121 rev:0x00020001 Dobot DS121
+=== gcontrol log tail ===
+[robotMap::robotMap] create shm success,key:-385810405;shmid:851994;shm entry:0x74ee4000,size:10485760[robotMap::robotMap]  init this memoryenter ModbusRtuSlave_Handler function.create the modbus context success!start create shm.open only shm success.modbus rtu init success!m_cx = 1951401072enterwhile ....can not open file modbus_io_config.json!!!!!!LoadModbusTCPConf err !!!!.[init] bind and listen port:30004 success!befor accept...[init] bind and listen port:30005 success!befor accept...[start_tcp_server] : bind success.enter StartHttpServer[start_tcp_server] : listen success.[StartHttpServer] bind port 22001 success![init] bind and listen port:30006 success!befor accept..."-178""178""-178""178""-160""160""-178""178""-178""178""-357""357"=== codesys log tail ===
+DrvEtherCAT, Class=1, Error=0, Info=0, pszInfo= SDO write ok: Address: 1003 Index: 16#1A00 SubIndex: 0 Data: 16#13 Result: 16#001789728264: Cmp=IoDrvEtherCAT, Class=1, Error=0, Info=0, pszInfo= SDO write ok: Address: 1003 Index: 16#1C13 SubIndex: 1 Data: 16#1A00 Result: 16#001789728264: Cmp=IoDrvEtherCAT, Class=1, Error=0, Info=0, pszInfo= SDO write ok: Address: 1003 Index: 16#1C13 SubIndex: 0 Data: 16#01 Result: 16#00[TRACE|processProtocolPacket@subProcess/coreSubProcess.cpp,257] try_count: 2, id: 193, diff: 2000 ms, Package timeout...[END] id: 193, recv_flag is true !!! reset .1789728265: Cmp=IoDrvEtherCAT, Class=1, Error=0, Info=0, pszInfo= All slaves safe-operational1789728265: Cmp=IoDrvEtherCAT, Class=1, Error=0, Info=0, pszInfo= Set operational mode1789728266: Cmp=IoDrvEtherCAT, Class=1, Error=0, Info=0, pszInfo= All slaves operational1789728266: Cmp=IoDrvEtherCAT, Class=1, Error=0, Info=0, pszInfo= All slaves done !1789728266: Cmp=IoDrvEtherCAT, Class=1, Error=0, Info=0, pszInfo= InitSlaves successfull[DetectStatesLoop], into ...[TRACE|processProtocolPacket@subProcess/coreSubProcess.cpp,257] try_count: 2, id: 193, diff: 2000 ms, Package timeout...[END] id: 193, recv_flag is true !!! reset .[TRACE|processProtocolPacket@subProcess/coreSubProcess.cpp,257] try_count: 2, id: 193, diff: 2000 ms, Package timeout...[END] id: 193, recv_flag is true !!! reset .[TRACE|processProtocolPacket@subProcess/coreSubProcess.cpp,257] try_count: 2, id: 193, diff: 2000 ms, Package timeout...

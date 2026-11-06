@@ -1,0 +1,14 @@
+{
+  "file": "CR5_Servo_ST_FOE_V3.2.D.8_REBUILT.bin",
+  "bytes": 338104,
+  "md5": "8f5a1901152c8d300f2b2030603eaa16",
+  "header_hex": "d4c3b2a10f5d836c1d99998a4146b3e71e6f04ff9828050008000000ffffffff",
+  "payload_bytes": 338072,
+  "payload_md5": "0f5d836c1d99998a4146b3e71e6f04ff",
+  "payload_md5_in_original_header": "0f5d836c1d99998a4146b3e71e6f04ff",
+  "source_hex": "D:\\mydata\\working things\\机械臂控制柜数据\\servo_hex_comparison\\CR5_Servo_ST_FOE_V3.2.D.8_APP_08010000.hex",
+  "source_hex_sha256": "667e23ca3ada535e7b83ef871f3d3ced025ef5a2388685ec1addf1c603f83197",
+  "expected_vendor_md5": "8f5a1901152c8d300f2b2030603eaa16",
+  "verified": "MD5 of rebuilt file equals vendor-recorded MD5; payload MD5 equals the MD5 embedded in the vendor header",
+  "provenance": "Built from a byte-exact re-encoding of the vendor file's application region; do not treat as an independent vendor copy."
+}

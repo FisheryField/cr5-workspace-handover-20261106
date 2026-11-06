@@ -1,0 +1,518 @@
+=== CR5_sys_files ===
+total 232
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 .
+drwxr-xr-x   24 root     1024          1024 Dec 30  2022 ..
+-rwxr-xr-x    1 1022     1024         14280 Dec 30  2022 port
+drwxr-xr-x    8 1022     1024          1024 Dec 30  2022 project
+-rwxr-xr-x    1 1022     1024        210427 Dec 30  2022 slaveinfo
+-rwxr-xr-x    1 1022     1024          6720 Dec 30  2022 tty2ssh
+=== CR5 project ===
+total 13
+drwxr-xr-x    8 1022     1024          1024 Dec 30  2022 .
+drwxr-xr-x    3 1022     1024          1024 Sep 18 09:28 ..
+drwxr-xr-x   11 root     root          4096 Aug 21  1975 logs
+drwxr-xr-x    8 1022     1024          1024 Dec 30  2022 process
+drwxr-xr-x   27 1022     1024          1024 Dec 30  2022 project
+drwxr-xr-x    2 1022     1024          1024 Sep 18 09:28 properties
+drwxr-xr-x    2 root     root          1024 Sep 18 14:12 redis
+drwxr-xr-x    9 1022     1024          1024 Sep 18 09:28 settings
+-rwxr-xr-x    1 root     root          1554 Feb 19  1976 test.lua
+=== api.ini ===
+[DO]
+key=SYNC
+
+[ToolDO]
+key=SYNC
+
+[AO]
+key=SYNC
+
+[SetABZPPC]
+key=SYNC
+
+[ECP]
+key=SYNC
+
+[LoadSet]
+key=SYNC
+
+[LoadSwitch]
+key=SYNC
+
+[ECPSet]
+key=SYNC
+
+[MoveJ]
+key=CP,Speed,Accel,SYNC
+
+[CP]
+key=SYNC
+
+[Arch]
+key=SYNC
+
+[LimZ]
+key=SYNC
+
+[SpeedFactor]
+key=SYNC
+
+[Speed]
+key=SYNC
+
+[Accel]
+key=SYNC
+
+[Jerk]
+key=SYNC
+
+[SpeedS]
+key=SYNC
+
+[SpeedR]
+key=SYNC
+
+[AccelS]
+key=SYNC
+
+[AccelR]
+key=SYNC
+
+[JerkS]
+key=SYNC
+
+[JerkR]
+key=SYNC
+
+[Go]
+key=ARM,User,Tool,CP,Speed,Accel,SYNC
+
+[ServoJ]
+key=User,Tool,CP,Speed,Accel,SYNC
+
+[Move]
+key=ARM,User,Tool,CP,SpeedS,AccelS,ForceControl,STOP,SYNC
+
+[ServoP]
+key=User,Tool,CP,SpeedS,AccelS,SYNC
+
+[Jump]
+key=ARM,User,Tool,SpeedS,AccelS,Start,End,ZLimit,Arch,SYNC
+
+[Arc3]
+key=ARM,User,Tool,CP,SpeedS,AccelS,SYNC
+
+[Circle3]
+key=ARM,User,Tool,CP,SpeedS,AccelS,SYNC
+
+[SetExcitMode]
+key=SYNC
+
+[GoR]
+key=ARM,User,Tool,CP,Speed,Accel,SYNC
+
+[MoveR]
+key=ARM,User,Tool,CP,SpeedS,AccelS,SYNC
+
+[MoveJR]
+key=CP,Speed,Accel,SYNC
+
+[MovePallet]
+key=User,Tool,CP,SpeedS,AccelS,SYNC
+
+[Spiral]
+key=ARM,User,Tool,Dirction,SpeedC,Force,Insertion,Perturn,PeckMode,MaxValue,SYNC
+
+[Rotation]
+key=ARM,User,Tool,Dirction,SpeedC,Force,RotationSpeed,MaxTorque,PeckMode,MaxValue,SYNC
+
+[Linear]
+key=ARM,User,Tool,Dirction,SpeedC,Force,MaxValue,SYNC
+
+[SixForceHome]
+key=SYNC
+
+[FCSetGain]
+key=SYNC
+
+[StartPath]
+key=Sample,freq,Multi,isConst,isCart,isRev,isRel,Tool,User
+
+[SetSafeSkin]
+key=SYNC
+
+[Linear]
+key=ARM,User,Tool,Dirction,SpeedC,Force,MaxValue,SYNC
+
+[FCAct]
+key=SYNC
+
+[FCDeact]
+key=SYNC
+
+[FCSetCompliance]
+key=SYNC
+
+[FCLoadID]
+key=SYNC
+
+[FCCalib]
+key=SYNC
+
+[FCCondForce]
+key=SYNC
+
+[FCCondTCPSpeed]
+key=SYNC
+
+[FCCondTorque]
+key=SYNC
+
+[FCCondDisplac]
+key=SYNC
+
+[FCRefForce]
+key=SpeedF,SpeedL,Tool,IsForce,Force,IsTorque,Torque,TimeOut,SYNC
+
+[FCRefTorque]
+key=SpeedF,SpeedL,Tool,IsForce,Force,IsTorque,Torque,TimeOut,SYNC
+
+[FCRefLine]
+key=SpeedF,SpeedL,Tool,IsForce,Force,IsTorque,Torque,TimeOut,SYNC,CP
+
+[FCRefRot]
+key=SpeedF,SpeedL,Tool,IsForce,Force,IsTorque,Torque,TimeOut,Dircet,Distance,SYNC
+
+[FCRefSpiral]
+key=SpeedF,SpeedL,Tool,IsForce,Force,IsTorque,Torque,TimeOut,Dircet,Distance,SYNC
+
+[FCRefDirect]
+key=SpeedF,SpeedL,Tool,IsForce,Force,IsTorque,Torque,TimeOut,Dircet,Distance,SYNC
+
+[FCRefTorAdjust]
+key=SYNC
+
+[IceCreamR]
+key=SYNC
+[SetWeldParams]
+key=SYNC,Tool,User
+[Arc3Weave]
+key=SYNC,Tool,User
+[MoveWeave]
+key=SYNC,Tool,User
+[GoToolR]
+key=Speed,Accel,CP,User,SYNC
+[GoUserR]
+key=Speed,Accel,CP,Tool,SYNC
+[MoveToolR]
+key=SpeedS,AccelS,CP,User,SYNC
+[MoveUserR]
+key=SpeedS,AccelS,CP,Tool,SYNC
+=== ioctrl.json ===
+{
+	"in":{
+		"clear_alarm":11,
+		 "continue":12, 
+		 "pause_pin":13, 
+		 "stop_pin":14, 
+		 "start_pin":15,
+		 "emergencystop":16
+	}
+	"out":{
+		"readystatus":13, 
+		"pausestatus":14, 
+		"alarmstatus":15, 
+		"runstatus":16
+	}
+}=== modbusctrl.json ===
+{
+	"coils":{
+		"clear_alarm":5,
+		 "continue":2, 
+		 "pause_pin":1, 
+		 "stop_pin":3, 
+		 "start_pin":0,
+		 "emergencystop":4
+	}
+	"inBits":{
+		"readystatus":1, 
+		"pausestatus":2, 
+		"alarmstatus":4, 
+		"runstatus":3
+	}
+}=== smb.conf ===
+[global]
+        workgroup = root
+        security = user
+        client lanman auth = yes
+        lanman auth = yes
+        map to guest = bad user
+        guest account = root
+        protocol = SMB2
+
+[project]
+        comment = project
+        path = /dobot/userdata/project
+        available = yes
+        browseable = yes
+        public = yes
+        guest ok = yes
+        writable = yes
+
+=== codesys.json ===
+[
+    {
+        "path":"/dobot/userdata/codesys/allST/",
+        "pid":[
+            545,546,289,289,289,289,289,289,560
+        ],
+        "rev":[
+            259,259,131073,131073,131073,131073,131073,131073,259
+        ],
+        "controlCab":"NormalCab"
+    },
+    {
+        "path":"/dobot/userdata/codesys/StRx/",
+        "pid":[
+            545,546,3136,3136,3136,3136,3136,3136,400
+        ],
+        "rev":[
+            259,259,131099,131099,131099,131099,131099,131099,512
+        ],
+        "controlCab":"NormalCab"
+    },
+    {
+        "path":"/dobot/userdata/codesys/miniST/",
+        "pid":[
+            409,289,289,289,289,289,289,560
+        ],
+        "rev":[
+            768,131073,131073,131073,131073,131073,131073,259
+        ],
+        "controlCab":"MiniCab"
+    },
+    {
+        "path":"/dobot/userdata/codesys/Nova/",
+        "pid":[
+            409,3136,3136,3136,3136,3136,3136,514
+        ],
+        "rev":[
+            768,131099,131099,131099,131099,131099,131099,260
+        ],
+        "controlCab":"MiniCab"
+    },
+    {
+        "path":"/dobot/userdata/codesys/RxSt/",
+        "pid":[
+            405,405,289,289,289,289,289,289,560
+        ],
+        "rev":[
+            512,512,131073,131073,131073,131073,131073,131073,259
+        ],
+        "controlCab":"NormalCab"
+    },
+    {
+        "path":"/dobot/userdata/codesys/allRX/",
+        "pid":[
+            405,405,3136,3136,3136,3136,3136,3136,400
+        ],
+        "rev":[
+            512,512,131099,131099,131099,131099,131099,131099,512
+        ],
+        "controlCab":"NormalCab"
+    },
+    {
+        "path":"/dobot/userdata/codesys/miniRX/",
+        "pid":[
+            409,3136,3136,3136,3136,3136,3136,400
+        ],
+        "rev":[
+            768,131099,131099,131099,131099,131099,131099,512
+        ],
+        "controlCab":"MiniCab"
+    },
+    {
+        "path": "/dobot/userdata/codesys/MG/",
+        "pid": [
+            569, 3136, 3136, 3136, 3136, 3136, 3136, 551
+        ],
+        "rev": [
+            257, 131083, 131083, 131083, 131083, 131083, 131083, 256
+        ],
+        "controlCab": "MiniCab"
+    }
+]
+=== settings jsons ===
+{
+	"common":
+	{
+		"ratio":{ 
+			"max":100,
+			"min":1,
+			"def":50 
+		}
+	},
+	"teach":
+	{
+		"joint_vel":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"joint_acc":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"coord_vel":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"coord_acc":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		}
+	},
+	"playback":{
+		"joint_vel":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"joint_acc":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"joint_jerk":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"coord_vel":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"coord_acc":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"coord_jerk":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"arch_startHeight":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"arch_endHeight":{ "max":100, "min":1, "def":50 },
+		"arch_zLimit":{ "max":100, "min":1, "def":50 }
+  }
+}---
+{
+    "ratio": 31
+}
+---
+["ForceTorqueSensor"]=== SlaveLog ===
+ec_init on eth0 succeeded.
+9 slaves found and configured.
+Calculated workcounter 27
+
+Slave:1
+Slave:2
+Slave:3
+Slave:4
+Slave:5
+Slave:6
+Slave:7
+Slave:8
+=== file magic (4 bytes) ===
+ELF <-port
+ELF <-tty2ssh
+ELF <-gcontrol
+ELF <-getVersion
+=== /etc top ===
+total 172
+drwxrwxr-x   10 1025     1025          4096 Sep 18 09:28 .
+drwxr-xr-x   22 root     root          4096 Sep 18 14:12 ..
+drwxrwxr-x    4 1025     1025          4096 Jan  1  1970 Wireless
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 boa
+-rwxrwxr-x    1 1025     1025           338 Jan 21  2021 fstab
+-rwxrwxr-x    1 1025     1025            76 Mar 20  2017 ftpchroot
+-rwxrwxr-x    1 1025     1025            92 Nov 21  2017 ftpusers
+-rwxrwxr-x    1 1025     1025           883 Nov  1  2017 fw_env.config
+-rwxrwxr-x    1 1025     1025           298 Jan  1  1970 group
+-rwxrwxr-x    1 1025     1025            17 Mar 20  2017 host.conf
+-rwxrwxr-x    1 1025     1025           252 Nov 10  2020 hostapd.conf
+-rwxrwxr-x    1 1025     1025            52 Mar 20  2017 hosts
+-rwxrwxr-x    1 1025     1025          2949 Nov 21  2017 inetd.conf
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 init.d
+-rwxrwxr-x    1 1025     1025           163 Mar 20  2017 inittab
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 iproute2
+lrwxrwxrwx    1 root     root            33 Sep 18 09:28 localtime -> /usr/share/zoneinfo/Asia/Shanghai
+-rwxrwxr-x    1 1025     1025          6084 Mar 20  2017 login.defs
+-rwxrwxr-x    1 1025     1025           555 Jul 26  2017 mdev.conf
+-rwxrwxr-x    1 1025     1025         12682 Mar 20  2017 mime.types
+-rwxrwxr-x    1 1025     1025             0 Mar 20  2017 mtab
+-rwxrwxr-x    1 1025     1025            83 Mar 20  2017 net.conf
+-rwxrwxr-x    1 1025     1025            20 Mar 20  2017 nettype.conf
+-rwxrwxr-x    1 1025     1025           405 Jan  1  1970 passwd
+drwxrwxr-x    5 1025     1025          4096 Jan  1  1970 ppp
+-rwxrwxr-x    1 1025     1025           325 Jul 30  2018 profile
+-rwxrwxr-x    1 1025     1025          1748 Mar 20  2017 protocols
+drwxrwxr-x    3 1025     1025          4096 Jan  1  1970 rc.d
+-rw-r--r--    1 root     root            21 Sep 18 09:06 resolv.conf
+-rwxrwxr-x    1 1025     1025           738 Mar 20  2017 services
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 sysconfig
+-rwxrwxr-x    1 1025     1025           645 Mar 20  2017 ts.conf
+-rwxrwxr-x    1 1025     1025          3542 Nov  2  2020 udhcpd.conf
+-rwxrwxr-x    1 1025     1025          3540 Nov  2  2020 udhcpd1.conf
+-rwxrwxr-x    1 1025     1025           142 Mar 20  2017 uniconf.conf
+drwxrwxr-x    2 1025     1025          4096 Jan  1  1970 usb-configures
+-rwxrwxrwx    1 root     root             5 Jul 14  2022 version.conf
+-rwxrwxr-x    1 1025     1025           151 Jan  1  1970 wap.conf
+-rwxrwxr-x    1 1025     1025          4224 Mar 20  2017 wgetrc
+-rwxrwxr-x    1 1025     1025           235 Jul 30  2018 wpa_supplicant.conf
+=== /etc/mac ===
+cat: can't open '/etc/mac': No such file or directory
+=== /etc/CPU_TYPE ===
+cat: can't open '/etc/CPU_TYPE': No such file or directory
+=== netd ===
+#!/bin/sh
+
+base=inetd
+
+# See how we were called.
+case "$1" in
+  start)
+		/usr/sbin/$base
+        ;;
+  stop)
+	pid=`/bin/pidof $base`
+	if [ -n "$pid" ]; then
+		kill -9 $pid
+	fi
+        ;;
+esac
+
+exit 0
+=== misc mounts ===
+/sddisk:
+total 8
+drwxrwxr-x    2 1025     1025          4096 Mar 20  2017 .
+drwxr-xr-x   22 root     root          4096 Sep 18 14:12 ..
+
+/udisk:
+total 22
+drwxr-xr-x    3 root     root          1024 Sep 18 14:12 .
+drwxr-xr-x   22 root     root          4096 Sep 18 14:12 ..
+-rwxr-xr-x    1 root     root            62 Sep 18 14:12 3S.dat
+-rwxr-xr-x    1 root     root          2596 Sep 18 14:12 CODESYSControl.cfg
+-rw-r--r--    1 root     root            95 Sep 18 14:12 SysFileMap.cfg
+drwxr-xr-x    2 root     root         12288 Sep 18 14:12 lost+found

@@ -1,0 +1,46 @@
+[
+  {
+    "point": 2,
+    "mesh_clearance_mm": 1.0005274077602728
+  },
+  {
+    "point": 3,
+    "mesh_clearance_mm": 1.0029510250246894
+  },
+  {
+    "point": 5,
+    "mesh_clearance_mm": 0.9866767319465849
+  },
+  {
+    "point": 8,
+    "mesh_clearance_mm": 1.0054137455265648
+  },
+  {
+    "point": 9,
+    "mesh_clearance_mm": 1.0009846839614567
+  },
+  {
+    "point": 11,
+    "mesh_clearance_mm": 1.0105827272205636
+  },
+  {
+    "point": 13,
+    "mesh_clearance_mm": 1.0009813018886269
+  },
+  {
+    "point": 15,
+    "mesh_clearance_mm": 1.0060833979943773
+  },
+  {
+    "point": 17,
+    "mesh_clearance_mm": 1.0011672216087517
+  },
+  {
+    "point": 19,
+    "mesh_clearance_mm": 1.0021123092720927
+  },
+  {
+    "point": 22,
+    "mesh_clearance_mm": 0.9990430732371638
+  }
+]

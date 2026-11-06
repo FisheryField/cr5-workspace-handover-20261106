@@ -1,0 +1,5 @@
+机器人: Dobot CR5
+程序就绪。v15.19-20261103 ｜ 模式：RUNMODE_RUN_ROBOT + robot.Connect() ｜ 文件日志：D:\mydata\glm-workplace\sim_scripts\real_gui_log_p2p.txt
+单点：输入坐标 -> 检测可达性 -> 执行 MoveL/MoveJ
+目标关节：输入 J1~J6 -> 实机 MoveJ（不经过 TCP/Fanuc 转换和 IK）
+连续运动（P2P v15.19）：短直线段(≤210mm/姿态恒定)强制 MoveL 直走；前视选解+绑定执行；弧碰退回 MoveL 细分（步长20mm）；死路分支救援+避障选解；换向自动换向/回绕/切分支；首点种子枚举+整段重试；法兰补偿MOVL 默认开；规划与预检不变。

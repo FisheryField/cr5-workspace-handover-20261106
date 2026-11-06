@@ -1,0 +1,139 @@
+=== /opt/.zero ===
+0
+0
+0
+0
+0
+0
+0
+0
+0
+--- save.sh ---
+#!/bin/sh
+
+FILEPATH=/opt/.zero
+
+echo -e "$1\n$2\n$3\n$4\n$5\n$6\n$7\n$8\n$9" > ${FILEPATH}
+=== tools available ===
+strings: /usr/bin/strings
+sqlite3: /bin/sqlite3
+redis-cli: MISSING
+objdump: MISSING
+=== grep calib/zero in configs+lua+sh ===
+/dobot/bin/etc/redis.conf:117:# If non-zero, use SO_KEEPALIVE to send TCP ACKs to clients in absence
+/dobot/bin/etc/redis.conf:248:# RDB files created with checksum disabled have a checksum of zero that will
+/dobot/bin/etc/redis.conf:769:# Specify a percentage of zero in order to disable the automatic AOF
+/dobot/bin/etc/redis.conf:897:# Zero is the only value able to guarantee that when all the partitions heal
+/dobot/bin/etc/redis.conf:997:# a value of zero forces the logging of every command.
+/dobot/bin/etc/redis.conf:1016:# to zero, the latency monitor is turned off.
+/dobot/bin/etc/redis.conf:1053:#  of zero or multiple characters. The empty string means that notifications
+/dobot/bin/etc/redis.conf:1142:# zero, the limit is ignored, so for instance it is possible to set just a
+/dobot/bin/etc/redis.conf:1200:# Both the hard or the soft limit can be disabled by setting them to zero.
+/dobot/bin/etc/iscara.conf:26:posZero1=1
+/dobot/bin/etc/iscara.conf:27:posZero1=2
+/dobot/bin/etc/iscara.conf:28:posZero1=3
+/dobot/bin/etc/iscara.conf:29:posZero1=4
+/dobot/bin/etc/api.ini:112:[SixForceHome]
+/dobot/bin/etc/api.ini:139:[FCCalib]
+/dobot/userdata/project/settings/iscara.conf:26:posZero1=1
+/dobot/userdata/project/settings/iscara.conf:27:posZero1=2
+/dobot/userdata/project/settings/iscara.conf:28:posZero1=3
+/dobot/userdata/project/settings/iscara.conf:29:posZero1=4
+/dobot/bin/lua/dobot_api.lua:76:SixForceHome=dobot.SixForceHome
+/dobot/bin/lua/dobot_api.lua:82:--FCCalib=dobot.FCCalib
+/dobot/bin/lua/dobot_api.lua:201:queue_cmd_table["SixForceHome"] = dobot.SixForceHome
+/dobot/bin/lua/headers.lua:62:    ["original-envelope-id"] = "Original-Envelope-ID",
+/dobot/bin/lua/headers.lua:63:    ["original-recipient"] = "Original-Recipient",
+/dobot/bin/lua/mobdebug.lua:57:-- Instead, the "original" coroutine.* methods are used.
+/dobot/bin/lua/mobdebug.lua:173:  local alphanumsort = type(opts.sortkeys) == 'function' and opts.sortkeys or function(k, o, n) -- k=keys, o=originaltable, n=padding
+/dobot/bin/lua/mobdebug.lua:287:    -- if so, return substring of the original path (to not lowercase it)
+/dobot/bin/lua/mobdebug.lua:753:  -- intependently and to preserve "original" comments
+/dobot/bin/lua/mobdebug.lua:1136:        -- direct call to debug.traceback: return the original.
+/dobot/bin/lua/mobdebug.lua:1502:          -- that was for the original command that was aborted
+/dobot/bin/dobot.sh:12:	if [ -d "/dobot/system/home/ftp/PlcLogic/Application" ];then
+/dobot/bin/dobot.sh:13:		cp -rf /dobot/system/home/ftp/PlcLogic/Application /home/ftp/PlcLogic
+/dobot/bin/dobot.sh:14:		rm -rf /dobot/system/home/ftp/PlcLogic/Application
+/dobot/bin/dobot.sh:39:			if [ ! -d "/dobot/system/home/ftp/PlcLogic/Application" ];then
+/dobot/bin/dobot.sh:40:				mkdir "/dobot/system/home/ftp/PlcLogic/Application"
+/dobot/bin/dobot.sh:42:			if [ -d "/dobot/system/home/ftp/PlcLogic/Application" ];then
+/dobot/bin/dobot.sh:43:                cp -rf /dobot/system/home/ftp/PlcLogic/Application /home/ftp/PlcLogic
+/dobot/bin/dobot.sh:44:                rm -rf /dobot/system/home/ftp/PlcLogic/Application
+/dobot/bin/dobot.sh:59:if [ ! -d "/home/ftp/PlcLogic/Application" ];then # 2021-11-08 if not exist dir make it .
+/dobot/bin/dobot.sh:60:	mkdir -p "/home/ftp/PlcLogic/Application"
+/dobot/bin/dobot.sh:65:	mv "/dobot/Application.app" "/home/ftp/PlcLogic/Application/"
+/dobot/bin/dobot.sh:70:	mv "/dobot/Application.crc" "/home/ftp/PlcLogic/Application/"
+/dobot/bin/dobot.sh:161:if [ -d "/home/ovalgee/Projects/RobotController_4R/project/Robot4Axis_win/bin" ]; then
+/dobot/bin/dobot.sh:162:	topdir=/home/ovalgee/Projects/RobotController_4R/project/Robot4Axis_win/bin
+/dobot/bin/dobot.sh:163:	export PATH=/home/ovalgee/Projects/toolchain/arm-linux-gcc-6.3.1/bin:/home/ovalgee/Projects/iSCARA/Linux/toolchain/i686-linux-gcc-5.1.0/bin:$PATH
+/dobot/bin/dobot.sh:164:	export LD_LIBRARY_PATH=/home/ovalgee/Projects/toolchain/i686-linux-gcc-5.1.0/lib:$LD_LIBRARY_PATH
+/dobot/bin/dobot.sh:166:elif [ -d "/home/ovalgee/Projects/iSCARA/RobotController_4R/trunk/RobotController/Linux/project/Robot4Axis_win/bin" ]; then
+/dobot/bin/dobot.sh:167:	topdir=/home/ovalgee/Projects/iSCARA/RobotController_4R/trunk/RobotController/Linux/project/Robot4Axis_win/bin
+/dobot/bin/dobot.sh:168:	export PATH=/home/ovalgee/Projects/iSCARA/Linux/toolchain/arm-linux-gcc-6.3.1/bin:/home/ovalgee/Projects/iSCARA/Linux/toolchain/i686-linux-gcc-5.1.0/bin:$PATH
+/dobot/bin/dobot.sh:169:	export LD_LIBRARY_PATH=/home/ovalgee/Projects/iSCARA/Linux/toolchain/i686-linux-gcc-5.1.0/lib:$LD_LIBRARY_PATH
+/dobot/bin/dobot.sh:182:export PATH=$PYTHONHOME/bin:/usr/local/samba/bin:/usr/local/samba/sbin:$PATH
+/dobot/bin/dobot.sh:313:				rm -r /home/ftp/PlcLogic/Application/*
+/dobot/bin/dobot.sh:314:				cp $(cat /tmp/codesysBoot)* /home/ftp/PlcLogic/Application/ -rf
+/dobot/bin/dobot.sh:329:			cp /home/ftp/.dobotConfig/CODESYSControl.cfg ./CODESYSControl.cfg
+/etc/init.d/dbStart.sh:12:	echo "...... cp /dobot/bin/project/bin.tar.gz /home/ftp"
+/etc/init.d/dbStart.sh:13:	cp /dobot/bin/project/bin.tar.gz /home/ftp
+/etc/init.d/dbStart.sh:16:	echo "...... cp /home/ftp/bin.tar.gz /dobot"
+/etc/init.d/dbStart.sh:17:	mv /home/ftp/bin.tar.gz /dobot
+/etc/init.d/rcS:41:ln -s /home/ip /bin/ip
+/etc/init.d/rcS:155:	vmcore-dmesg /proc/vmcore > /home/ftp/$destFile
+/etc/init.d/rcS:156:	touch /home/ftp/kPanic
+/etc/init.d/rcS:179:if [ -f "/home/ftp/dbStart.sh" ]; then
+/etc/init.d/rcS:180:	mv /home/ftp/dbStart.sh /etc/init.d/
+/etc/init.d/rcS:196:cd /home/ftp/affinity
+/etc/init.d/RebootCheck.sh:23:	if [ ! -f /home/ftp/.dobotConfig/StartCnt ]; then
+/etc/init.d/RebootCheck.sh:24:		touch /home/ftp/.dobotConfig/StartCnt
+/etc/init.d/RebootCheck.sh:25:		echo "0" > /home/ftp/.dobotConfig/StartCnt
+/etc/init.d/RebootCheck.sh:27:	startCnt=`cat /home/ftp/.dobotConfig/StartCnt`
+/etc/init.d/RebootCheck.sh:36:	echo $startCnt1 > /home/ftp/.dobotConfig/StartCnt
+=== dobot.db tables ===
+dobot_file     dobot_setting  dobot_user   
+=== dobot.db schema ===
+CREATE TABLE IF NOT EXISTS "dobot_user" (
+"uid"  INTEGER NOT NULL,
+"username"  TEXT NOT NULL,
+"passwd"  TEXT NOT NULL,
+"ugroup"  INTEGER NOT NULL DEFAULT 0,
+PRIMARY KEY ("uid")
+);
+CREATE TABLE IF NOT EXISTS "dobot_file" (
+"id"  INTEGER NOT NULL,
+"filename"  TEXT NOT NULL,
+"path"  TEXT NOT NULL,
+"date"  INTEGER NOT NULL,
+"type"  INTEGER NOT NULL DEFAULT 0,
+"isboot"  INTEGER NOT NULL DEFAULT 0,
+PRIMARY KEY ("id" ASC)
+);
+CREATE TABLE IF NOT EXISTS "dobot_setting" (
+"key"  TEXT NOT NULL,
+"value"  TEXT NOT NULL,
+"type"  TEXT NOT NULL DEFAULT -1
+);
+=== calibration/Demarcate project dirs ===
+total 5
+drwxr-xr-x    2 root     root          1024 Sep 16 16:27 .
+drwxr-xr-x   27 1022     1024          1024 Dec 30  2022 ..
+-rwxr-xr-x    1 root     root             0 Feb 19  1976 global.lua
+-rwxr-xr-x    1 root     root             2 Feb 19  1976 point.json
+-rwxr-xr-x    1 root     root             0 Feb 19  1976 point.json.lua
+-rwxr-xr-x    1 root     root            70 Feb 19  1976 prj.json
+-rwxr-xr-x    1 root     root           139 Feb 19  1976 src0.lua
+---
+total 5
+drwxr-xr-x    2 root     root          1024 Sep 16 16:27 .
+drwxr-xr-x   27 1022     1024          1024 Dec 30  2022 ..
+-rwxr-xr-x    1 root     root             0 Feb 19  1976 global.lua
+-rwxr-xr-x    1 root     root             2 Feb 19  1976 point.json
+-rwxr-xr-x    1 root     root             0 Feb 19  1976 point.json.lua
+-rwxr-xr-x    1 root     root            70 Feb 19  1976 prj.json
+-rwxr-xr-x    1 root     root           132 Feb 19  1976 src0.lua
+=== settings/coordinate ===
+total 5
+drwxr-xr-x    2 root     root          1024 Sep 16 16:27 .
+drwxr-xr-x    9 1022     1024          1024 Sep 18 09:28 ..
+-rwxr-xr-x    1 root     root          1832 Feb 19  1976 tool.json
+-rwxr-xr-x    1 root     root           688 Feb 19  1976 user.json

@@ -1,0 +1,35 @@
+=== log.smbd ===
+[2026/09/18 15:27:36,  0] smbd/server.c:1072(main)
+  smbd version 3.6.25 started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2011
+[2026/09/18 15:27:36.911358,  0] printing/print_standard.c:68(std_pcap_cache_reload)
+  Unable to open printcap file /etc/printcap for read!
+[2026/09/18 15:32:37.787039,  0] ../lib/util/charset/codepoints.c:319(get_conv_handle)
+  dos charset 'CP850' unavailable - using ASCII
+[2026/09/18 15:35:29.651683,  0] ../lib/util/charset/codepoints.c:319(get_conv_handle)
+  dos charset 'CP850' unavailable - using ASCII
+=== log.nmbd ===
+[2026/09/18 15:27:36,  0] nmbd/nmbd.c:861(main)
+  nmbd version 3.6.25 started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2011
+[2026/09/18 15:28:08,  0] nmbd/nmbd_become_lmb.c:397(become_local_master_stage2)
+  *****
+  
+  Samba name server DOBOT is now a local master browser for workgroup ROOT on subnet 192.168.1.6
+  
+  *****
+[2026/09/18 15:28:08,  0] nmbd/nmbd_become_lmb.c:397(become_local_master_stage2)
+  *****
+  
+  Samba name server DOBOT is now a local master browser for workgroup ROOT on subnet 192.168.5.1
+  
+  *****
+[2026/09/18 15:28:08,  0] nmbd/nmbd_become_lmb.c:397(become_local_master_stage2)
+  *****
+  
+  Samba name server DOBOT is now a local master browser for workgroup ROOT on subnet 192.168.100.6
+  
+  *****
+=== smbd version ===
+Version 3.6.25
+=== does server signing param exist? ===

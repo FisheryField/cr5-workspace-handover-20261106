@@ -1,0 +1,58 @@
+[2026-11-03 15:15:05.266] [15] [info] [CallProcess#203] recv = RunScript(Tool(0))
+[2026-11-03 15:15:05.266] [15] [info] [CallProcess#269] ready to call function:runscript.
+[2026-11-03 15:15:05.266] [15] [info] [RunScript#3963]  arg[0]=Tool0
+[2026-11-03 15:15:05.266] [15] [info] [RegexProjectFile#1570] Check lua project path:/dobot/userdata/project/project/Tool0/prj.json
+[2026-11-03 15:15:05.267] [15] [error] [RegexProjectFile#1588] ### read file[/dobot/userdata/project/project/Tool0/prj.json] error: no find this file ###
+[2026-11-03 15:15:05.267] [15] [info] [CallProcess#275] ret = 20, func = runscript args = Tool0 return = -1RunScript(Tool(0);.
+[2026-11-03 15:15:05.288] [15] [info] [CallProcess#203] recv = RunScript(User(0))
+[2026-11-03 15:15:05.288] [15] [info] [CallProcess#269] ready to call function:.
+[2026-11-03 15:15:05.288] [15] [info] [CallProcess#275] ret = 12, func =  args =  return = -10000,{},);.
+[2026-11-03 15:15:05.289] [15] [info] [CallProcess#269] ready to call function:runscript.
+[2026-11-03 15:15:05.289] [15] [info] [RunScript#3963]  arg[0]=User0
+[2026-11-03 15:15:05.402] [15] [info] [CallProcess#203] recv = MovL(119.991436,-683.978442,590.035603,-179.997212,0.001108,-180.000000)
+[2026-11-03 15:15:05.402] [15] [info] [CallProcess#269] ready to call function:.
+[2026-11-03 15:15:05.403] [15] [info] [CallProcess#275] ret = 12, func =  args =  return = -10000,{},);.
+[2026-11-03 15:15:05.403] [15] [info] [CallProcess#269] ready to call function:movl.
+[2026-11-03 15:15:05.403] [15] [info] [MovL#802]  arg[0]=119.991436 arg[1]=-683.978442 arg[2]=590.035603 arg[3]=-179.997212 arg[4]=0.001108 arg[5]=-180.000000
+[2026-11-03 15:15:05.408] [15] [info] [MovL#859] Motion args is legal!
+[2026-11-03 15:15:05.411] [15] [info] [MovL#878] movL not set tool or user!!!
+[2026-11-03 15:15:05.411] [15] [info] [CallProcess#275] ret = 78, func = movl args = 119.991436,-683.978442,590.035603,-179.997212,0.001108,-180.000000 return = 0,{},MovL(119.991436,-683.978442,590.035603,-179.997212,0.001108,-180.000000);.
+[2026-11-03 15:15:05.422] [15] [info] [Output#59] alarmstatus inBits[4]  status change 0->1 output true value 1 to  0x73a82714
+
+[INFO][algs/src/PTP/MOVL.cpp@MOVLPreDeal()#415] lineMove->initialPos: -88.235878,-43.755211,-5.060724,-41.184067,90.000000,1.764124
+
+[ERROR][algs/src/Kinematics/rtKinematicCalc.cpp@Inverse()#579] fabs(c3) > 1.0, c3: 1.007708
+
+[ERROR][algs/src/Kinematics/rtKinematicCalc.cpp@Inverse()#579] fabs(c3) > 1.0, c3: 1.007708
+
+[WARN][algs/src/PTP/commonptp.cpp@PointCheck()#143] position xyzabc: 119.991432,-683.978455,590.035583,-3.141544,0.000019,3.141593
+
+[WARN][algs/src/PTP/commonptp.cpp@PointCheck()#144] cmd handtype RDNC: 0,0,0,0
+
+[WARN][algs/src/PTP/commonptp.cpp@PointCheck()#145] q_ref -88.235878,-43.755211,-5.060724,-41.184067,90.000000,1.764124
+
+[WARN][algs/src/PTP/commonptp.cpp@PointCheck()#146] toolParams xyzabc: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000
+
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x11,isOn=1
+
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x11,isOn=1
+
+[ERROR][algs/src/Kinematics/rtKinematicCalc.cpp@Inverse()#579] fabs(c3) > 1.0, c3: 1.007708
+
+[WARN][algs/src/PTP/commonptp.cpp@PointCheck()#143] position xyzabc: 119.991432,-683.978455,590.035583,-3.141544,0.000019,3.141593
+
+[WARN][algs/src/PTP/commonptp.cpp@PointCheck()#144] cmd handtype RDNC: 0,0,0,0
+
+[WARN][algs/src/PTP/commonptp.cpp@PointCheck()#145] q_ref -88.235878,-43.755211,-5.060724,-41.184067,90.000000,1.764124
+
+[WARN][algs/src/PTP/commonptp.cpp@PointCheck()#146] toolParams xyzabc: 0.000000,0.000000,0.000000,0.000000,0.000000,0.000000
+
+[ERROR][algs/inc/alarms.h@AlarmSysSetBit()#407] index=0x11,isOn=1
+
+[tcpDispenser::_send] client 1 socket:28 send return = -1!
+[INFO][algs/src/common/run.cpp@ServoControl()#2085] Stop FollowError: gActualVelocity:  -0.000000,-0.000000,0.000000,-0.000000,-0.000000,-0.000000
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2086] Stop FollowError: VeloThreshold setting:  0.010000,0.010000,0.010000,0.010000,0.010000,0.010000
+
+[INFO][algs/src/common/run.cpp@ServoControl()#2087] Stop FollowError: FollowErrorThreshold setting:  0.050000,0.050000,0.050000,0.050000,0.050000,0.050000
+

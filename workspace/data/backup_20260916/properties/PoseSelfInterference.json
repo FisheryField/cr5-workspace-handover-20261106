@@ -1,0 +1,121 @@
+{
+    "CR3": {
+        "KeypadLimitJ4": [
+            141.0
+        ],
+        "KeypadLimitJ5": [
+            64.0,
+            44.0
+        ],
+        "EndLimitJ4": [
+            127.0,
+            138.0
+        ],
+        "EndLimitJ5": [
+            138.0,
+            53.0
+        ]
+    },
+    "CR3L": {
+        "KeypadLimitJ4": [
+            137.0
+        ],
+        "KeypadLimitJ5": [
+            65.0,
+            46.0
+        ],
+        "EndLimitJ4": [
+            127.0,
+            133.0
+        ],
+        "EndLimitJ5": [
+            133.0,
+            111.0
+        ]
+    },
+    "CR5": {
+        "KeypadLimitJ4": [
+            141.0
+        ],
+        "KeypadLimitJ5": [
+            60.0,
+            43.0
+        ],
+        "EndLimitJ4": [
+            128.0,
+            135.0
+        ],
+        "EndLimitJ5": [
+            136.0,
+            115.0
+        ]
+    },
+    "CR7": {
+        "KeypadLimitJ4": [
+            141.0
+        ],
+        "KeypadLimitJ5": [
+            60.0,
+            43.0
+        ],
+        "EndLimitJ4": [
+            128.0,
+            135.0
+        ],
+        "EndLimitJ5": [
+            136.0,
+            115.0
+        ]
+    },
+    "CR10": {
+        "KeypadLimitJ4": [
+            132.0
+        ],
+        "KeypadLimitJ5": [
+            65.0,
+            47.0
+        ],
+        "EndLimitJ4": [
+            125.0,
+            132.0
+        ],
+        "EndLimitJ5": [
+            132.0,
+            110.0
+        ]
+    },
+    "CR12": {
+        "KeypadLimitJ4": [
+            132.0
+        ],
+        "KeypadLimitJ5": [
+            65.0,
+            47.0
+        ],
+        "EndLimitJ4": [
+            125.0,
+            132.0
+        ],
+        "EndLimitJ5": [
+            132.0,
+            110.0
+        ]
+    },
+    "CR16": {
+        "KeypadLimitJ4": [
+            132.0
+        ],
+        "KeypadLimitJ5": [
+            65.0,
+            47.0
+        ],
+        "EndLimitJ4": [
+            125.0,
+            128.0
+        ],
+        "EndLimitJ5": [
+            130.0,
+            112.0
+        ]
+    }
+}

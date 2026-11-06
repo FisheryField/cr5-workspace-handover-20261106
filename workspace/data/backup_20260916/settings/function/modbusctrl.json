@@ -1,0 +1,22 @@
+{
+	"coils":{
+		"clear_alarm":5,
+		"continue":2, 
+		"pause_pin":1, 
+		"stop_pin":3, 
+		"start_pin":0,
+		"emergencystop":4,
+		"poweron":6
+	},
+	"inBits":{
+		"readystatus":1, 
+		"pausestatus":2, 
+		"alarmstatus":4, 
+		"runstatus":3,
+		"warningstatus":7,
+		"powerstatus":8,
+		"remotestatus":9,
+		"collisionStatus":10
+	},
+	"triggermode": 1
+}

@@ -1,0 +1,43 @@
+{
+ "before": {
+  "global": {
+   "Trace_Render_Style": 0.0,
+   "TraceStyle": null,
+   "Trace": null,
+   "Trace_References": null,
+   "Trace_Render_References": null,
+   "Show_Trace": null,
+   "Trace_Active": null
+  },
+  "station": {
+   "Trace_Render_Style": "b''",
+   "TraceStyle": "b''",
+   "Trace": "b''",
+   "Trace_References": "b''",
+   "Trace_Render_References": "b''",
+   "Show_Trace": "b''",
+   "Trace_Active": "b''"
+  }
+ },
+ "after": {
+  "global": {
+   "Trace_Render_Style": 0.0,
+   "TraceStyle": null,
+   "Trace": null,
+   "Trace_References": null,
+   "Trace_Render_References": null,
+   "Show_Trace": null,
+   "Trace_Active": null
+  },
+  "station": {
+   "Trace_Render_Style": "b''",
+   "TraceStyle": "b''",
+   "Trace": "b''",
+   "Trace_References": "b''",
+   "Trace_Render_References": "b''",
+   "Show_Trace": "b''",
+   "Trace_Active": "b''"
+  }
+ },
+ "done": false
+}

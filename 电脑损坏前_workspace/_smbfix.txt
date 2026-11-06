@@ -1,0 +1,42 @@
+=== backup ===
+-rwxrwxrwx    1 1022     1024           395 Dec 30  2022 /dobot/bin/etc/smb.conf
+-rwxr-xr-x    1 root     root           395 Sep 18 15:38 /dobot/bin/etc/smb.conf.bak-20260918
+=== new smb.conf ===
+[global]
+        workgroup = root
+        security = user
+        client lanman auth = yes
+        lanman auth = yes
+        map to guest = bad user
+        guest account = root
+        protocol = SMB2
+        max protocol = SMB2
+        server signing = mandatory
+        client signing = mandatory
+
+[project]
+        comment = project
+        path = /dobot/userdata/project
+        available = yes
+        browseable = yes
+        public = yes
+        guest ok = yes
+        writable = yes
+=== restarting samba ===
+=== processes ===
+=== ports ===
+=== log tail ===
+[2026/09/18 15:27:36,  0] smbd/server.c:1072(main)
+  smbd version 3.6.25 started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2011
+[2026/09/18 15:27:36.911358,  0] printing/print_standard.c:68(std_pcap_cache_reload)
+  Unable to open printcap file /etc/printcap for read!
+[2026/09/18 15:32:37.787039,  0] ../lib/util/charset/codepoints.c:319(get_conv_handle)
+  dos charset 'CP850' unavailable - using ASCII
+[2026/09/18 15:35:29.651683,  0] ../lib/util/charset/codepoints.c:319(get_conv_handle)
+  dos charset 'CP850' unavailable - using ASCII
+[2026/09/18 15:38:40,  0] smbd/server.c:1072(main)
+  smbd version 3.6.25 started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2011
+[2026/09/18 15:38:40.518430,  0] lib/pidfile.c:154(pidfile_create)
+  ERROR: can't open /usr/local/samba/var/locks/smbd-smb.conf.pid: Error was File exists

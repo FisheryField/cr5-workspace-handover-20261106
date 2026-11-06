@@ -1,0 +1,22 @@
+{
+  "source": "D:\\software\\DobotStudio\\V1.3.4-stable\\V1.3.4-stable\\upgradeFiles\\3.5.6\\3.5.6.1\\files\\CR5_Servo_ST_FOE_V3.2.D.8.bin",
+  "source_sha256": "644fe9361f69ff8d4aaf933a56351c4e55f1b9bc946657a1f3fa55c80366dbe7",
+  "removed_header_hex": "d4c3b2a10f5d836c1d99998a4146b3e71e6f04ff9828050008000000ffffffff",
+  "payload_bytes": 338072,
+  "assumed_load_address": "0x8010000",
+  "last_address": "0x8062897",
+  "hex": "C:\\Users\\FisheryField\\Desktop\\servo_hex_comparison\\CR5_Servo_ST_FOE_V3.2.D.8_APP_08010000.hex",
+  "hex_sha256": "667e23ca3ada535e7b83ef871f3d3ced025ef5a2388685ec1addf1c603f83197",
+  "roundtrip_verified": true,
+  "comparison": {
+    "original_hex_total_bytes": 1048576,
+    "overlapping_addresses": 338072,
+    "equal_bytes_at_same_address": 18787,
+    "different_bytes_at_same_address": 319285
+  },
+  "limitations": [
+    "Address base inferred from firmware vectors and prior HEX analysis, not manufacturer confirmed.",
+    "Application-only comparison image; no bootloader, no FOE header, no original tail padding.",
+    "Not validated for direct flashing."
+  ]
+}

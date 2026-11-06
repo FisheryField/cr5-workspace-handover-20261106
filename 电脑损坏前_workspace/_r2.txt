@@ -1,0 +1,132 @@
+########## /dobot/bin/gcontrol ##########
+/home/ovalgee/Projects/DobotLinux/application/lib_release/arm-linux-gnueabihf-4.7.3/tslib-1.4/lib:/home/ovalgee/Projects/DobotLinux/application/lib_release/qt-4.8.6-linux-arm/lib
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/destdir/i686-pc-linux-gnu/lib/gcc/arm-linux-gnueabihf/4.9.4/include
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/i686-pc-linux-gnu/arm-linux-gnueabihf/eglibc.git~linaro_eglibc-2_19/csu/abi-note.o
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/_build/builds/i686-pc-linux-gnu/arm-linux-gnueabihf/eglibc.git~linaro_eglibc-2_19/csu/start.o
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/csu
+_ZN10PluginBase16alloc_SetHOMECmdEP10tagHOMECmdi
+_ZN10PluginBase19alloc_GetHOMEParamsEv
+_ZN10PluginBase19alloc_SetHOMEParamsEP13tagHOMEParamsi
+_ZN10PluginBase24alloc_SetSixForceHomeCmdEi
+_ZN10PluginBase29alloc_GetLRHandCalibrateValueEv
+_ZN10PluginBase29alloc_SetLRHandCalibrateValueEf
+_ZN3fmt2v86detail6bigint20remove_leading_zerosEv
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_14big_decimal_fpEcEET_S5_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESA_E4zero
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_9dragonbox10decimal_fpIdEEcEET_S7_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESC_E4zero
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_9dragonbox10decimal_fpIfEEcEET_S7_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESC_E4zero
+bzero
+bzero@@GLIBC_2.4
+zero
+########## /dobot/bin/lib/libdataSvr.so.1.0.0 ##########
+/home/ovalgee/Projects/DobotLinux/application/lib_release/arm-linux-gnueabihf-4.7.3/tslib-1.4/lib:/home/ovalgee/Projects/DobotLinux/application/lib_release/qt-4.8.6-linux-arm/lib
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/csu
+Calibrate tool coord result:{}
+Calibrate tool pos1:{}, pos2:{}
+Calibrate user coord result:{}
+Calibrate user pos1:{}, pos2:{}
+Stop GoHome......:{}
+_ZN10PluginBase16alloc_SetHOMECmdEP10tagHOMECmdi
+_ZN10PluginBase19alloc_GetHOMEParamsEv
+_ZN10PluginBase19alloc_SetHOMEParamsEP13tagHOMEParamsi
+_ZN10PluginBase24alloc_SetSixForceHomeCmdEi
+_ZN10PluginBase29alloc_GetLRHandCalibrateValueEv
+_ZN10PluginBase29alloc_SetLRHandCalibrateValueEf
+_ZN14DataSubProcess6goHomeEP14evhttp_requestPv
+_ZN3fmt2v86detail6bigint20remove_leading_zerosEv
+_ZZN14DataSubProcess6goHomeEP14evhttp_requestPvE12__FUNCTION__
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_14big_decimal_fpEcEET_S5_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESA_E4zero
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_9dragonbox10decimal_fpIdEEcEET_S7_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESC_E4zero
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_9dragonbox10decimal_fpIfEEcEET_S7_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESC_E4zero
+_ZZN6fadbad1FIdLj0EE1dEjE4zero
+alloc_SetHOMECmd(&cmd, 0) error
+bzero
+bzero@@GLIBC_2.4
+calibrate
+goHome
+########## /dobot/bin/lib/libdataSvrPlugin.so.1.0.0 ##########
+/home/ovalgee/Projects/DobotLinux/application/lib_release/arm-linux-gnueabihf-4.7.3/tslib-1.4/lib:/home/ovalgee/Projects/DobotLinux/application/lib_release/qt-4.8.6-linux-arm/lib
+/home/tcwg-buildslave/workspace/tcwg-make-release/label/docker-trusty-i386-tcwg-build/target/arm-linux-gnueabihf/snapshots/eglibc.git~linaro_eglibc-2_19/libc/csu
+_ZN10PluginBase16alloc_SetHOMECmdEP10tagHOMECmdi
+_ZN10PluginBase19alloc_GetHOMEParamsEv
+_ZN10PluginBase19alloc_SetHOMEParamsEP13tagHOMEParamsi
+_ZN10PluginBase24alloc_SetSixForceHomeCmdEi
+_ZN10PluginBase29alloc_GetLRHandCalibrateValueEv
+_ZN10PluginBase29alloc_SetLRHandCalibrateValueEf
+_ZN3fmt2v86detail6bigint20remove_leading_zerosEv
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_14big_decimal_fpEcEET_S5_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESA_E4zero
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_9dragonbox10decimal_fpIdEEcEET_S7_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESC_E4zero
+_ZZN3fmt2v86detail11write_floatINS0_8appenderENS1_9dragonbox10decimal_fpIfEEcEET_S7_RKT0_RKNS0_18basic_format_specsIT1_EENS1_11float_specsESC_E4zero
+bzero
+bzero@@GLIBC_2.4
+end alloc_SetSixForceHomeCmd.
+########## /usr/lib/libCmpDobot6Axes.so ##########
+/home/dobot/Desktop/SVN/CmpDobot6Axes/CmpDobot6Axes_Corobot_V1.1/Linux
+/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/glibc.git~release~2.25~master/csu
+m_SetEncoderCnt
+m_ZeroVelocity
+########## /home/ftp/.lib/libCmpDobot6Axes.so ##########
+/home/dobot/Desktop/SVN/CmpDobot6Axes/CmpDobot6Axes_Corobot_V1.1/Linux
+/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/glibc.git~release~2.25~master/csu
+m_SetEncoderCnt
+m_ZeroVelocity
+=== libdataSvr 里所有 /xxx 形式路由（前 60）===
+/ F+
+/(F+
+/(F;`
+/0!F
+/0////
+/0F+
+/@FH
+/F7`
+/F8F
+/Ff`
+/H9FxD
+/HxD
+/I FyD
+/I/HyDxD
+/I8FyD
+/I{D/J
+/J/KzD{D
+/J0K-
+/JchzD	
+/K F/J
+/K/J
+/K/J{DzDV
+/K0FY
+/K8h
+/K@"
+/KyD
+/K{D
+/K{D	
+/K|D
+/Q}D
+/`o`
+/a|DzD
+/dobot/bin/bin/lua
+/dobot/bin/dobotM1Semphore
+/dobot/bin/fifoCodesys
+/dobot/bin/lua/dobot.lua
+/dobot/userdata/project
+/dobot/userdata/project/optitrack_bindata
+/dobot/userdata/project/project
+/dobot/userdata/project/project/%1/%2
+/dobot/userdata/project/project/globalVar.json
+/dobot/userdata/project/properties/AdvancedFunction.json
+/dobot/userdata/project/properties/PoseSelfInterference.json
+/dobot/userdata/project/properties/axis.json
+/dobot/userdata/project/properties/businessType.json
+/dobot/userdata/project/properties/controlCabType.json
+/dobot/userdata/project/properties/controllerType.json
+/dobot/userdata/project/properties/default.json
+/dobot/userdata/project/properties/ratio_default.json
+/dobot/userdata/project/properties/structure.json
+/dobot/userdata/project/settings/api.lua
+/dobot/userdata/project/settings/common.json
+/dobot/userdata/project/settings/coordinate/tool.json
+/dobot/userdata/project/settings/coordinate/user.json
+/dobot/userdata/project/settings/datasvr
+/dobot/userdata/project/settings/datasvr/config.json
+/dobot/userdata/project/settings/function/DHGripperEnable.json
+/dobot/userdata/project/settings/function/accFactor.json
+/dobot/userdata/project/settings/function/ccboxVoltage.json
+/dobot/userdata/project/settings/function/collisionDect.json

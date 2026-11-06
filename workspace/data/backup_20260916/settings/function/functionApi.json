@@ -1,0 +1,115 @@
+{
+	"function": [
+		"CP",
+		"Arch",
+		"LimZ",
+		"Speed",
+		"SpeedS",
+		"Accel",
+		"AccelS",
+		"Go",
+		"Move",
+		"Arc3",
+		"Jump",
+		"Circle3"
+	],
+	"CP":[
+		{
+			"type": "switch",
+			"max": "ON",
+			"min": "OFF"
+		}		
+	],
+	"Arch":[
+		{
+			"type": "num",
+			"max": 9,
+			"min": 0
+		}		
+	],
+	"LimZ":[
+		{
+			"type": "num",
+			"max": 1300,
+			"min": 1
+		}		
+	],	
+	"Speed":[
+		{
+			"type": "num",
+			"max": 100,
+			"min": 1
+		}		
+	],
+	"SpeedS":[
+		{
+			"type": "num",
+			"max": 100,
+			"min": 1
+		}		
+	],	
+	"Accel":[
+		{
+			"type": "num",
+			"max": 100,
+			"min": 1
+		}		
+	],
+	"AccelS":[
+		{
+			"type": "num",
+			"max": 100,
+			"min": 1
+		}		
+	],
+	"Go":[
+		{
+			"type": "point",
+			"max": 999,
+			"min": 1
+		}		
+	],	
+	"Move":[
+		{
+			"type": "point",
+			"max": 999,
+			"min": 1
+		}		
+	],
+	"Arc3":[
+		{
+			"type": "point",
+			"max": 999,
+			"min": 1
+		},
+		{
+			"type": "point",
+			"max": 999,
+			"min": 1
+		}		
+	],
+	"Circle3":[
+		{
+			"type": "point",
+			"max": 999,
+			"min": 1
+		},
+		{
+			"type": "point",
+			"max": 999,
+			"min": 1
+		},	
+		{
+			"type": "num",
+			"max": 999,
+			"min": 1
+		}
+	],
+	"Jump":[
+		{
+			"type": "point",
+			"max": 999,
+			"min": 1
+		}		
+	]
+}

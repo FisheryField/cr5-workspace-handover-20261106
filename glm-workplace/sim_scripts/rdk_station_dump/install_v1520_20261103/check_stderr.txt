@@ -1,0 +1,16 @@
+Timeout (0:00:20)!
+Thread 0x00003998 (most recent call first):
+  File "D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py", line 970 in _rec_int
+  File "D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py", line 1034 in _rec_matrix
+  File "D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py", line 7057 in InstructionListJoints
+  File "D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\install_v1520_20261103\TCP\u771f\u5b9e\u8fd0\u52a8_P2P\u7248.py", line 2007 in _verify_obstacle_plan
+  File "D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\install_v1520_20261103\TCP\u771f\u5b9e\u8fd0\u52a8_P2P\u7248.py", line 2680 in _plan_continuous_trajectory
+  File "D:\mydata\glm-workplace\tools\precheck_v1520.py", line 57 in <module>
+Timeout (0:00:20)!
+Thread 0x00003998 (most recent call first):
+  File "D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py", line 970 in _rec_int
+  File "D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py", line 1034 in _rec_matrix
+  File "D:\software\RoboDK\Python-Embedded\lib\site-packages\robodk\robolink.py", line 7057 in InstructionListJoints
+  File "D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\install_v1520_20261103\TCP\u771f\u5b9e\u8fd0\u52a8_P2P\u7248.py", line 2106 in _certify_traj16_direct
+  File "D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\install_v1520_20261103\TCP\u771f\u5b9e\u8fd0\u52a8_P2P\u7248.py", line 2681 in _plan_continuous_trajectory
+  File "D:\mydata\glm-workplace\tools\precheck_v1520.py", line 57 in <module>

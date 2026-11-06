@@ -1,0 +1,68 @@
+{
+  "large": [
+    {
+      "path": "D:\\mydata\\workspace\\.tools\\zig.zip",
+      "bytes": 82229343
+    },
+    {
+      "path": "D:\\mydata\\workspace\\.tools\\zig\\zig-x86_64-windows-0.14.1\\zig.exe",
+      "bytes": 168132608
+    },
+    {
+      "path": "D:\\mydata\\workspace\\data\\codex_b\\ethercat_pcap\\capture315_ethercat.pcap0",
+      "bytes": 64000100
+    },
+    {
+      "path": "D:\\mydata\\workspace\\data\\codex_b\\ethercat_pcap\\zero32_calibration.pcap",
+      "bytes": 82304654
+    },
+    {
+      "path": "D:\\mydata\\workspace\\tools_dl\\TEdit-stable-Portable.zip",
+      "bytes": 97871720
+    }
+  ],
+  "secret_candidates": [
+    {
+      "path": "D:\\mydata\\电脑损坏前_workspace\\.ssh_agent\\id_ed25519",
+      "types": [
+        "0"
+      ]
+    },
+    {
+      "path": "D:\\mydata\\workspace\\.ssh_agent\\id_ed25519",
+      "types": [
+        "0"
+      ]
+    },
+    {
+      "path": "D:\\mydata\\workspace\\Python\\pythoncore-3.14-64\\Doc\\html\\contents.html",
+      "types": [
+        "3"
+      ]
+    },
+    {
+      "path": "D:\\mydata\\workspace\\Python\\pythoncore-3.14-64\\Doc\\html\\searchindex.js",
+      "types": [
+        "3"
+      ]
+    },
+    {
+      "path": "D:\\mydata\\workspace\\Python\\pythoncore-3.14-64\\Doc\\html\\library\\asyncio-extending.html",
+      "types": [
+        "3"
+      ]
+    },
+    {
+      "path": "D:\\mydata\\workspace\\Python\\pythoncore-3.14-64\\Doc\\html\\_sources\\library\\ssl.rst.txt",
+      "types": [
+        "0"
+      ]
+    },
+    {
+      "path": "D:\\mydata\\workspace\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\pip\\_vendor\\packaging\\licenses\\_spdx.py",
+      "types": [
+        "3"
+      ]
+    }
+  ]
+}

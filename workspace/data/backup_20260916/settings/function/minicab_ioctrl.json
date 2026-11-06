@@ -1,0 +1,22 @@
+{
+	"in":{
+		"poweron":0,
+		"clear_alarm":0,
+		"continue":0, 
+		"pause_pin":0, 
+		"stop_pin":0, 
+		"start_pin":0,
+		"emergencystop":0
+
+	},
+	"out":{
+		"readystatus":0, 
+		"pausestatus":0, 
+		"alarmstatus":0, 
+		"runstatus":0,
+		"warningstatus":0,
+		"powerstatus":0,
+		"remotestatus":0
+	},
+	"triggermode": 1
+}

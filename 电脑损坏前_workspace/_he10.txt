@@ -1,0 +1,764 @@
+=== properties 目录 ===
+total 323
+drwxr-xr-x    2 1026     1028          1024 Sep 18 19:20 .
+drwxr-xr-x    8 1026     1028          1024 Jul 18  2023 ..
+-rwxr-xr-x    1 1026     1028           983 Jul 18  2023 AdvancedFunction.json
+-rwxr-xr-x    1 1026     1028          2049 Jul 18  2023 PoseSelfInterference.json
+-rwxr-xr-x    1 root     root         59785 Feb 19  1976 alarm.json
+-rwxr-xr-x    1 1026     1028        202386 Jul 18  2023 alarm_controller.json
+-rwxr-xr-x    1 1026     1028         40958 Jul 18  2023 alarm_servo.json
+-rwxr-xr-x    1 1026     1028            14 Jul 18  2023 axis.json
+-rwxr-xr-x    1 1026     1028            26 Jul 18  2023 businessType.json
+-rwxr-xr-x    1 root     root            26 Sep 18 19:29 controlCabType.json
+-rwxr-xr-x    1 1026     1028            34 Jul 18  2023 controllerType.json
+-rwxr-xr-x    1 1026     1028          4867 Jul 18  2023 default.json
+-rwxr-xr-x    1 root     root           975 Feb 19  1976 ratio_default.json
+-rwxr-xr-x    1 root     root          4539 Feb 19  1976 structure.json
+-rwxr-xr-x    1 1026     1028           155 Jul 18  2023 suppressionConfig.json
+-rwxr-xr-x    1 1026     1028            56 Jul 18  2023 vibrationDetection.json
+
+=== axis.json ===
+{
+  "axis":6
+}
+=== structure.json ===
+{
+    "motors": [
+        {
+            "composite": false,
+            "encoder": {
+                "bitNum": 14.287712097167969,
+                "type": ""
+            },
+            "gearBox": {
+                "den": 101,
+                "num": 1
+            },
+            "motor": {
+                "inverted": true,
+                "limit": 3500,
+                "rated": 3000,
+                "type": ""
+            },
+            "positionScaling": {
+                "den": 1,
+                "num": 360
+            },
+            "simulated": false
+        },
+        {
+            "composite": false,
+            "encoder": {
+                "bitNum": 14.287712097167969,
+                "type": ""
+            },
+            "gearBox": {
+                "den": 101,
+                "num": 1
+            },
+            "motor": {
+                "inverted": true,
+                "limit": 3500,
+                "rated": 3000,
+                "type": ""
+            },
+            "positionScaling": {
+                "den": 1,
+                "num": 360
+            },
+            "simulated": false
+        },
+        {
+            "composite": false,
+            "encoder": {
+                "bitNum": 14.287712097167969,
+                "type": ""
+            },
+            "gearBox": {
+                "den": 101,
+                "num": 1
+            },
+            "motor": {
+                "inverted": false,
+                "limit": 3500,
+                "rated": 3000,
+                "type": ""
+            },
+            "positionScaling": {
+                "den": 1,
+                "num": 360
+            },
+            "simulated": false
+        },
+        {
+            "composite": false,
+            "encoder": {
+                "bitNum": 14.287712097167969,
+                "type": ""
+            },
+            "gearBox": {
+                "den": 101,
+                "num": 1
+            },
+            "motor": {
+                "inverted": true,
+                "limit": 3500,
+                "rated": 3000,
+                "type": ""
+            },
+            "positionScaling": {
+                "den": 1,
+                "num": 360
+            },
+            "simulated": false
+        },
+        {
+            "composite": false,
+            "encoder": {
+                "bitNum": 14.287712097167969,
+                "type": ""
+            },
+            "gearBox": {
+                "den": 101,
+                "num": 1
+            },
+            "motor": {
+                "inverted": true,
+                "limit": 3500,
+                "rated": 3000,
+                "type": ""
+            },
+            "positionScaling": {
+                "den": 1,
+                "num": 360
+            },
+            "simulated": false
+        },
+        {
+            "composite": false,
+            "encoder": {
+                "bitNum": 14.287712097167969,
+                "type": ""
+            },
+            "gearBox": {
+                "den": 101,
+                "num": 1
+            },
+            "motor": {
+                "inverted": true,
+                "limit": 3500,
+                "rated": 3000,
+                "type": ""
+            },
+            "positionScaling": {
+                "den": 1,
+                "num": 360
+            },
+            "simulated": false
+        }
+    ],
+    "structure": {
+        "L1": 147,
+        "L2": 0,
+        "L3": 0,
+        "L4": 140.42088317871094,
+        "L5": 115.88533020019531,
+        "L6": 104.5,
+        "L7": 0,
+        "a1": 0.8393999934196472,
+        "a2": -427.6878356933594,
+        "a3": -357.0046691894531,
+        "a4": -0.1258630007505417,
+        "a5": -0.736253023147583,
+        "a6": 0,
+        "alpha1": 90.02828979492188,
+        "alpha2": 0.4404959976673126,
+        "alpha3": -0.3043549954891205,
+        "alpha4": 90.08969116210938,
+        "alpha5": -89.82854461669922,
+        "alpha6": 0,
+        "armSingularity12": 10,
+        "elbowSingularity12": 2,
+        "inclinationAngle": 0.66,
+        "limits": [
+            [
+                -178,
+                178
+            ],
+            [
+                -178,
+                178
+            ],
+            [
+                -160,
+                160
+            ],
+            [
+                -178,
+                178
+            ],
+            [
+                -178,
+                178
+            ],
+            [
+                -357,
+                357
+            ]
+        ],
+        "rotationAngle": 0.55,
+        "wristSingularity12": 2
+    }
+}
+
+=== ratio_default.json ===
+{
+	"common":
+	{
+		"ratio":{ 
+			"max":100,
+			"min":1,
+			"def":50 
+		}
+	},
+	"teach":
+	{
+		"joint_vel":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"joint_acc":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"coord_vel":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"coord_acc":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		}
+	},
+	"playback":{
+		"joint_vel":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"joint_acc":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"joint_jerk":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"coord_vel":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"coord_acc":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"coord_jerk":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"arch_startHeight":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"arch_endHeight":{ "max":100, "min":1, "def":50 },
+		"arch_zLimit":{ "max":100, "min":1, "def":50 }
+  }
+}
+=== properties/default.json ===
+{
+	"common":{
+		"ratio":{
+			"max":100,
+			"min":1,
+			"def":50
+		}
+	},
+	"teach":{
+		"joint":{
+			"velocity":[
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				}
+			],
+			"acceleration":[
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				}
+			]
+		},
+		"coordinate":{
+			"velocity":[
+				{
+					"max":200,
+					"min":1,
+					"def":50
+				},
+				{
+					"max":200,
+					"min":1,
+					"def":50
+				},
+				{
+					"max":200,
+					"min":1,
+					"def":50
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				},
+				{
+					"max":100,
+					"min":1,
+					"def":12
+				}
+			],
+			"acceleration":[
+				{
+					"max":1000,
+					"min":1,
+					"def":300
+				},
+				{
+					"max":1000,
+					"min":1,
+					"def":300
+				},
+				{
+					"max":1000,
+					"min":1,
+					"def":300
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				},
+				{
+					"max":500,
+					"min":1,
+					"def":100
+				}
+			]
+		}
+	},
+	"playback":{
+		"joint":{
+			"velocity":[
+				{
+					"max":207,
+					"min":1,
+					"def":180
+				},
+				{
+					"max":207,
+					"min":1,
+					"def":180
+				},
+				{
+					"max":207,
+					"min":1,
+					"def":180
+				},
+				{
+					"max":207,
+					"min":1,
+					"def":180
+				},
+				{
+					"max":207,
+					"min":1,
+					"def":180
+				},
+				{
+					"max":207,
+					"min":1,
+					"def":180
+				}
+			],
+			"acceleration":[
+				{
+					"max":2100,
+					"min":1,
+					"def":200
+				},
+				{
+					"max":2100,
+					"min":1,
+					"def":200
+				},
+				{
+					"max":2100,
+					"min":1,
+					"def":200
+				},
+				{
+					"max":2100,
+					"min":1,
+					"def":500
+				},
+				{
+					"max":2100,
+					"min":1,
+					"def":500
+				},
+				{
+					"max":2100,
+					"min":1,
+					"def":500
+				}
+			],
+			"jerk":[
+				{
+					"max":100000,
+					"min":1,
+					"def":2000
+				},
+				{
+					"max":100000,
+					"min":1,
+					"def":2000
+				},
+				{
+					"max":100000,
+					"min":1,
+					"def":2000
+				},
+				{
+					"max":100000,
+					"min":1,
+					"def":5000
+				},
+				{
+					"max":100000,
+					"min":1,
+					"def":5000
+				},
+				{
+					"max":100000,
+					"min":1,
+					"def":5000
+				}
+			]
+		},
+		"coordinate":{
+			"velocity":[
+				{
+					"max":3000,
+					"min":1,
+					"def":2000
+				},
+				{
+					"max":3000,
+					"min":1,
+					"def":2000
+				},
+				{
+					"max":3000,
+					"min":1,
+					"def":2000
+				},
+				{
+					"max":200,
+					"min":1,
+					"def":180
+				},
+				{
+					"max":200,
+					"min":1,
+					"def":180
+				},
+				{
+					"max":200,
+					"min":1,
+					"def":180
+				}
+			],
+			"acceleration":[
+				{
+					"max":20000,
+					"min":1,
+					"def":10000
+				},
+				{
+					"max":20000,
+					"min":1,
+					"def":10000
+				},
+				{
+					"max":20000,
+					"min":1,
+					"def":10000
+				},
+				{
+					"max":2000,
+					"min":1,
+					"def":900
+				},
+				{
+					"max":2000,
+					"min":1,
+					"def":900
+				},
+				{
+					"max":2000,
+					"min":1,
+					"def":900
+				}
+			],
+			"jerk":[
+				{
+					"max":400000,
+					"min":1,
+					"def":18000
+				},
+				{
+					"max":400000,
+					"min":1,
+					"def":18000
+				},
+				{
+					"max":400000,
+					"min":1,
+					"def":18000
+				},
+				{
+					"max":40000,
+					"min":1,
+					"def":9000
+				},
+				{
+					"max":40000,
+					"min":1,
+					"def":9000
+				},
+				{
+					"max":40000,
+					"min":1,
+					"def":9000
+				}
+			]
+		},
+		"arch":{
+			"startHeight":{
+				"max":1300,
+				"min":1,
+				"def":20
+			},
+			"endHeight":{
+				"max":1300,
+				"min":1,
+				"def":20
+			},
+			"zLimit":{
+				"max":1300,
+				"min":1,
+				"def":50
+			}
+		}
+	},
+	"dragSensivity":{
+		"j1":{
+			"max":90,
+			"min":1,
+			"def":50
+		},
+		"j2":{
+			"max":90,
+			"min":1,
+			"def":50
+		},
+		"j3":{
+			"max":90,
+			"min":1,
+			"def":50
+		},
+		"j4":{
+			"max":90,
+			"min":1,
+			"def":50
+		},
+		"j5":{
+			"max":90,
+			"min":1,
+			"def":50
+		},
+		"j6":{
+			"max":90,
+			"min":1,
+			"def":50
+		}
+	}
+}
+=== settings/default.json ===
+{
+	"common":
+	{
+		"ratio":{ 
+			"max":100,
+			"min":1,
+			"def":50 
+		}
+	},
+	"teach":
+	{
+		"joint_vel":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"joint_acc":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"coord_vel":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"coord_acc":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		}
+	},
+	"playback":{
+		"joint_vel":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"joint_acc":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"joint_jerk":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"coord_vel":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"coord_acc":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"coord_jerk":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"arch_startHeight":{
+			"max":100, 
+			"min":1, 
+			"def":50 
+		},
+		"arch_endHeight":{ "max":100, "min":1, "def":50 },
+		"arch_zLimit":{ "max":100, "min":1, "def":50 }
+  }
+}
+=== settings/common.json ===
+{
+    "ratio": 31
+}
+
+=== 全盘搜 8.23 / 12.52 之类的偏移常量 ===
+=== datasvr/config.json ===
+{
+	"coordinate" : 
+	{
+		"tool" : 0,
+		"user" : 0
+	}
+}

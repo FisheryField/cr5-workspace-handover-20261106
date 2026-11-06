@@ -1,0 +1,625 @@
+.dynsym    0x000940cc size=1964   shndx=11  _Z25CheckErrorOfDemandAndNextv
+    # capstone decoded 622 insns, reached 0x000947d8 of 0x00094878 (PARTIAL)
+    000940cc  push.w   {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+    000940d0  sub      sp, #0x174
+    000940d2  ldr.w    r7, [pc, #0x6ec]
+    000940d6  ldr.w    r3, [pc, #0x6ec]
+    000940da  ldr.w    r2, [pc, #0x6ec]
+    000940de  add      r7, pc
+    000940e0  ldr.w    sb, [r7, r3]
+    000940e4  ldr      r2, [r7, r2]
+    000940e6  add.w    r3, sb, #0x4b0
+    000940ea  vldr     d7, [r2]
+    000940ee  vldr     d6, [r3]
+    000940f2  vabs.f64 d7, d7
+    000940f6  vcmpe.f64 d7, d6
+    000940fa  vmrs     apsr_nzcv, fpscr
+    000940fe  bpl      #0x9411a
+    00094100  vldr     d7, [r2, #8]
+    00094104  add.w    r3, sb, #0x4b8
+    00094108  vldr     d6, [r3]
+    0009410c  vabs.f64 d7, d7
+    00094110  vcmpe.f64 d7, d6
+    00094114  vmrs     apsr_nzcv, fpscr
+    00094118  bmi      #0x94122
+    0009411a  movs     r0, #0
+    0009411c  add      sp, #0x174
+    0009411e  pop.w    {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+    00094122  vldr     d7, [r2, #0x10]
+    00094126  add.w    r3, sb, #0x4c0
+    0009412a  vldr     d6, [r3]
+    0009412e  vabs.f64 d7, d7
+    00094132  vcmpe.f64 d7, d6
+    00094136  vmrs     apsr_nzcv, fpscr
+    0009413a  bpl      #0x9411a
+    0009413c  vldr     d7, [r2, #0x18]
+    00094140  add.w    r3, sb, #0x4c8
+    00094144  vldr     d6, [r3]
+    00094148  vabs.f64 d7, d7
+    0009414c  vcmpe.f64 d7, d6
+    00094150  vmrs     apsr_nzcv, fpscr
+    00094154  bpl      #0x9411a
+    00094156  vldr     d7, [r2, #0x20]
+    0009415a  add.w    r3, sb, #0x4d0
+    0009415e  vldr     d6, [r3]
+    00094162  vabs.f64 d7, d7
+    00094166  vcmpe.f64 d7, d6
+    0009416a  vmrs     apsr_nzcv, fpscr
+    0009416e  bpl      #0x9411a
+    00094170  vldr     d7, [r2, #0x28]
+    00094174  add.w    r3, sb, #0x4d8
+    00094178  vldr     d6, [r3]
+    0009417c  vabs.f64 d7, d7
+    00094180  vcmpe.f64 d7, d6
+    00094184  vmrs     apsr_nzcv, fpscr
+    00094188  bpl      #0x9411a
+    0009418a  ldr.w    r1, [pc, #0x640]
+    0009418e  movs     r2, #0
+    00094190  add      r0, sp, #0x40
+    00094192  str      r2, [sp, #0x44]
+    00094194  str      r2, [sp, #0x48]
+    00094196  mov      r4, r2
+    00094198  str      r2, [sp, #0x4c]
+    0009419a  mov      r5, r2
+    0009419c  str      r2, [sp, #0x50]
+    0009419e  mov      fp, r0
+    000941a0  str      r2, [sp, #0x54]
+    000941a2  add.w    sl, sb, #0x510
+    000941a6  str      r2, [sp, #0x58]
+    000941a8  str      r2, [sp, #0x5c]
+    000941aa  str      r2, [sp, #0x60]
+    000941ac  str      r0, [sp, #0x30]
+    000941ae  str      r2, [sp, #0x64]
+    000941b0  str      r2, [sp, #0x68]
+    000941b2  str      r2, [sp, #0x6c]
+    000941b4  str      r2, [r0]
+    000941b6  ldr      r3, [r7, r1]
+    000941b8  str      r3, [sp, #0x34]
+    000941ba  mov      r6, r3
+    000941bc  ldr.w    r3, [pc, #0x610]
+    000941c0  ldr.w    r8, [r7, r3]
+    000941c4  ldr.w    r3, [r8]
+    000941c8  addw     r2, r4, #0x5d5
+    000941cc  vldmia   r6!, {d7}
+    000941d0  vldmia   sl!, {d5}
+    000941d4  add.w    r3, r3, r2, lsl #3
+    000941d8  vldr     d6, [r3]
+    000941dc  vsub.f64 d7, d6, d7
+    000941e0  vabs.f64 d7, d7
+    000941e4  vcmpe.f64 d7, d5
+    000941e8  vmrs     apsr_nzcv, fpscr
+    000941ec  vstmia   fp!, {d7}
+    000941f0  ble      #0x941fc
+    000941f2  add.w    r0, r4, #0xf8
+    000941f6  movs     r5, #1
+    000941f8  bl       #0x9208c
+    000941fc  adds     r4, #1
+    000941fe  cmp      r4, #6
+    00094200  bne      #0x941c4
+    00094202  ldr.w    r2, [pc, #0x5d0]
+    00094206  movw     r3, #0x8a6
+    0009420a  str      r3, [sp, #4]
+    0009420c  add      r4, sp, #0x70
+    0009420e  ldr.w    r3, [pc, #0x5c8]
+    00094212  mov.w    r1, #0x100
+    00094216  add      r2, pc
+    00094218  mov      r0, r4
+    0009421a  add.w    r2, r2, #0x408
+    0009421e  str      r2, [sp]
+    00094220  add      r3, pc
+    00094222  ldr.w    r2, [pc, #0x5b8]
+    00094226  add      r2, pc
+    00094228  blx      #0x49ee4
+    0009422c  ldr.w    r2, [pc, #0x5b0]
+    00094230  uxth     r6, r0
+    00094232  mov      r3, r5
+    00094234  rsb.w    sl, r6, #0x100
+    00094238  adds     r0, r4, r6
+    0009423a  add      r2, pc
+    0009423c  mov      r1, sl
+    0009423e  blx      #0x49ee4
+    00094242  uxth     r0, r0
+    00094244  cmp      sl, r0
+    00094246  it       lo
+    00094248  uxthlo.w r0, sl
+    0009424c  add      r6, r0
+    0009424e  uxth     r6, r6
+    00094250  cmp      r6, #0xfd
+    00094252  itttt    ls
+    00094254  movls    r2, #0xa
+    00094256  addls    r1, r6, #1
+    00094258  strbls   r2, [r4, r6]
+    0009425a  addls    r3, r4, r6
+    0009425c  ittet    ls
+    0009425e  uxthls   r6, r1
+    00094260  movls    r2, #0
+    00094262  movhi    r6, #0xfe
+    00094264  strbls   r2, [r3, #1]
+    00094266  blx      #0x49398
+    0009426a  mov      r1, r6
+    0009426c  mov      r0, r4
+    0009426e  bl       #0x91b2c
+    00094272  cbnz     r5, #0x9427c
+    00094274  mov      r0, r5
+    00094276  add      sp, #0x174
+    00094278  pop.w    {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+    0009427c  ldr.w    r1, [pc, #0x564]
+    00094280  add      r6, sp, #0x3c
+    00094282  add.w    r2, sb, #0x510
+    00094286  mov      r0, r6
+    00094288  add      r1, pc
+    0009428a  blx      #0x4bee4
+    0009428e  ldr.w    lr, [pc, #0x558]
+    00094292  movw     r3, #0x8a8
+    00094296  str      r3, [sp, #4]
+    00094298  mov.w    r1, #0x100
+    0009429c  ldr.w    r3, [pc, #0x54c]
+    000942a0  mov      r0, r4
+    000942a2  ldr.w    r2, [pc, #0x54c]
+    000942a6  add      lr, pc
+    000942a8  add.w    lr, lr, #0x408
+    000942ac  add      r3, pc
+    000942ae  str.w    lr, [sp]
+    000942b2  add      r2, pc
+    000942b4  blx      #0x49ee4
+    000942b8  uxth.w   sb, r0
+    000942bc  ldr      r2, [r6]
+    000942be  rsb.w    sl, sb, #0x100
+    000942c2  add.w    r0, r4, sb
+    000942c6  mov      r1, sl
+    000942c8  blx      #0x49ee4
+    000942cc  uxth     r0, r0
+    000942ce  cmp      sl, r0
+    000942d0  it       lo
+    000942d2  uxthlo.w r0, sl
+    000942d6  add      sb, r0
+    000942d8  uxth.w   sb, sb
+    000942dc  cmp.w    sb, #0xfd
+    000942e0  itttt    ls
+    000942e2  movls    r2, #0xa
+    000942e4  addls.w  r1, sb, #1
+    000942e8  strbls.w r2, [r4, sb]
+    000942ec  addls.w  r3, r4, sb
+    000942f0  ittet    ls
+    000942f2  uxthls.w sb, r1
+    000942f6  movls    r2, #0
+    000942f8  movhi.w  sb, #0xfe
+    000942fc  strbls   r2, [r3, #1]
+    000942fe  blx      #0x49398
+    00094302  mov      r1, sb
+    00094304  mov      r0, r4
+    00094306  bl       #0x91b2c
+    0009430a  ldr.w    r3, [pc, #0x4e8]
+    0009430e  ldr      r0, [r6]
+    00094310  ldr.w    sb, [r7, r3]
+    00094314  subs     r0, #0xc
+    00094316  cmp      r0, sb
+    00094318  bne.w    #0x94766
+    0009431c  ldr.w    r1, [pc, #0x4d8]
+    00094320  mov      r0, r6
+    00094322  ldr      r2, [sp, #0x30]
+    00094324  add      r1, pc
+    00094326  blx      #0x4bee4
+    0009432a  ldr.w    lr, [pc, #0x4d0]
+    0009432e  movw     r3, #0x8a9
+    00094332  str      r3, [sp, #4]
+    00094334  mov.w    r1, #0x100
+    00094338  ldr.w    r3, [pc, #0x4c4]
+    0009433c  mov      r0, r4
+    0009433e  ldr.w    r2, [pc, #0x4c4]
+    00094342  add      lr, pc
+    00094344  add.w    lr, lr, #0x408
+    00094348  add      r3, pc
+    0009434a  str.w    lr, [sp]
+    0009434e  add      r2, pc
+    00094350  blx      #0x49ee4
+    00094354  uxth.w   sl, r0
+    00094358  ldr      r2, [r6]
+    0009435a  rsb.w    fp, sl, #0x100
+    0009435e  add.w    r0, r4, sl
+    00094362  mov      r1, fp
+    00094364  blx      #0x49ee4
+    00094368  uxth     r0, r0
+    0009436a  cmp      fp, r0
+    0009436c  it       lo
+    0009436e  uxthlo.w r0, fp
+    00094372  add      sl, r0
+    00094374  uxth.w   sl, sl
+    00094378  cmp.w    sl, #0xfd
+    0009437c  itttt    ls
+    0009437e  movls    r2, #0xa
+    00094380  addls.w  r1, sl, #1
+    00094384  strbls.w r2, [r4, sl]
+    00094388  addls.w  r3, r4, sl
+    0009438c  ittet    ls
+    0009438e  uxthls.w sl, r1
+    00094392  movls    r2, #0
+    00094394  movhi.w  sl, #0xfe
+    00094398  strbls   r2, [r3, #1]
+    0009439a  blx      #0x49398
+    0009439e  mov      r1, sl
+    000943a0  mov      r0, r4
+    000943a2  bl       #0x91b2c
+    000943a6  ldr      r0, [r6]
+    000943a8  subs     r0, #0xc
+    000943aa  cmp      r0, sb
+    000943ac  bne.w    #0x94786
+    000943b0  ldr.w    r1, [pc, #0x454]
+    000943b4  mov      r0, r6
+    000943b6  ldr      r2, [sp, #0x34]
+    000943b8  add      r1, pc
+    000943ba  blx      #0x4bee4
+    000943be  ldr.w    lr, [pc, #0x44c]
+    000943c2  movw     r3, #0x8aa
+    000943c6  str      r3, [sp, #4]
+    000943c8  mov.w    r1, #0x100
+    000943cc  ldr.w    r3, [pc, #0x440]
+    000943d0  mov      r0, r4
+    000943d2  ldr.w    r2, [pc, #0x440]
+    000943d6  add      lr, pc
+    000943d8  add.w    lr, lr, #0x408
+    000943dc  add      r3, pc
+    000943de  str.w    lr, [sp]
+    000943e2  add      r2, pc
+    000943e4  blx      #0x49ee4
+    000943e8  uxth.w   sl, r0
+    000943ec  ldr      r2, [r6]
+    000943ee  rsb.w    fp, sl, #0x100
+    000943f2  add.w    r0, r4, sl
+    000943f6  mov      r1, fp
+    000943f8  blx      #0x49ee4
+    000943fc  uxth     r0, r0
+    000943fe  cmp      fp, r0
+    00094400  it       lo
+    00094402  uxthlo.w r0, fp
+    00094406  add      sl, r0
+    00094408  uxth.w   sl, sl
+    0009440c  cmp.w    sl, #0xfd
+    00094410  itttt    ls
+    00094412  movls    r2, #0xa
+    00094414  addls.w  r1, sl, #1
+    00094418  strbls.w r2, [r4, sl]
+    0009441c  addls.w  r3, r4, sl
+    00094420  ittet    ls
+    00094422  uxthls.w sl, r1
+    00094426  movls    r2, #0
+    00094428  movhi.w  sl, #0xfe
+    0009442c  strbls   r2, [r3, #1]
+    0009442e  blx      #0x49398
+    00094432  mov      r1, sl
+    00094434  mov      r0, r4
+    00094436  bl       #0x91b2c
+    0009443a  ldr      r0, [r6]
+    0009443c  subs     r0, #0xc
+    0009443e  cmp      r0, sb
+    00094440  bne.w    #0x9477e
+    00094444  ldr.w    r2, [r8]
+    00094448  mov      r0, r6
+    0009444a  ldr      r1, [pc, #0x3cc]
+    0009444c  add.w    r2, r2, #0x2e80
+    00094450  add      r1, pc
+    00094452  adds     r2, #0x28
+    00094454  blx      #0x4bee4
+    00094458  ldr.w    lr, [pc, #0x3c0]
+    0009445c  movw     r3, #0x8ab
+    00094460  str      r3, [sp, #4]
+    00094462  mov.w    r1, #0x100
+    00094466  ldr      r3, [pc, #0x3b8]
+    00094468  mov      r0, r4
+    0009446a  ldr      r2, [pc, #0x3b8]
+    0009446c  add      lr, pc
+    0009446e  add.w    lr, lr, #0x408
+    00094472  add      r3, pc
+    00094474  str.w    lr, [sp]
+    00094478  add      r2, pc
+    0009447a  blx      #0x49ee4
+    0009447e  uxth.w   r8, r0
+    00094482  ldr      r2, [r6]
+    00094484  rsb.w    sl, r8, #0x100
+    00094488  add.w    r0, r4, r8
+    0009448c  mov      r1, sl
+    0009448e  blx      #0x49ee4
+    00094492  uxth     r0, r0
+    00094494  cmp      sl, r0
+    00094496  it       lo
+    00094498  uxthlo.w r0, sl
+    0009449c  add      r8, r0
+    0009449e  uxth.w   r8, r8
+    000944a2  cmp.w    r8, #0xfd
+    000944a6  itttt    ls
+    000944a8  movls    r2, #0xa
+    000944aa  addls.w  r1, r8, #1
+    000944ae  strbls.w r2, [r4, r8]
+    000944b2  addls.w  r3, r4, r8
+    000944b6  ittet    ls
+    000944b8  uxthls.w r8, r1
+    000944bc  movls    r2, #0
+    000944be  movhi.w  r8, #0xfe
+    000944c2  strbls   r2, [r3, #1]
+    000944c4  blx      #0x49398
+    000944c8  mov      r1, r8
+    000944ca  mov      r0, r4
+    000944cc  bl       #0x91b2c
+    000944d0  ldr      r0, [r6]
+    000944d2  subs     r0, #0xc
+    000944d4  cmp      r0, sb
+    000944d6  bne.w    #0x94776
+    000944da  ldr      r3, [pc, #0x34c]
+    000944dc  mov      r0, r6
+    000944de  ldr      r1, [pc, #0x34c]
+    000944e0  ldr      r2, [r7, r3]
+    000944e2  add      r1, pc
+    000944e4  blx      #0x4bee4
+    000944e8  ldr.w    lr, [pc, #0x344]
+    000944ec  movw     r3, #0x8ac
+    000944f0  str      r3, [sp, #4]
+    000944f2  mov.w    r1, #0x100
+    000944f6  ldr      r3, [pc, #0x33c]
+    000944f8  mov      r0, r4
+    000944fa  ldr      r2, [pc, #0x33c]
+    000944fc  add      lr, pc
+    000944fe  add.w    lr, lr, #0x408
+    00094502  add      r3, pc
+    00094504  str.w    lr, [sp]
+    00094508  add      r2, pc
+    0009450a  blx      #0x49ee4
+    0009450e  uxth.w   r8, r0
+    00094512  ldr      r2, [r6]
+    00094514  rsb.w    sl, r8, #0x100
+    00094518  add.w    r0, r4, r8
+    0009451c  mov      r1, sl
+    0009451e  blx      #0x49ee4
+    00094522  uxth     r0, r0
+    00094524  cmp      sl, r0
+    00094526  it       lo
+    00094528  uxthlo.w r0, sl
+    0009452c  add      r8, r0
+    0009452e  uxth.w   r8, r8
+    00094532  cmp.w    r8, #0xfd
+    00094536  itttt    ls
+    00094538  movls    r2, #0xa
+    0009453a  addls.w  r1, r8, #1
+    0009453e  strbls.w r2, [r4, r8]
+    00094542  addls.w  r3, r4, r8
+    00094546  ittet    ls
+    00094548  uxthls.w r8, r1
+    0009454c  movls    r2, #0
+    0009454e  movhi.w  r8, #0xfe
+    00094552  strbls   r2, [r3, #1]
+    00094554  blx      #0x49398
+    00094558  mov      r1, r8
+    0009455a  mov      r0, r4
+    0009455c  bl       #0x91b2c
+    00094560  ldr      r0, [r6]
+    00094562  subs     r0, #0xc
+    00094564  cmp      r0, sb
+    00094566  bne.w    #0x9476e
+    0009456a  ldr      r6, [pc, #0x2d0]
+    0009456c  movw     r3, #0x8ae
+    00094570  str      r3, [sp, #4]
+    00094572  mov.w    r1, #0x100
+    00094576  ldr      r3, [pc, #0x2c8]
+    00094578  mov      r0, r4
+    0009457a  ldr      r2, [pc, #0x2c8]
+    0009457c  add      r6, pc
+    0009457e  add.w    r6, r6, #0x408
+    00094582  add      r3, pc
+    00094584  str      r6, [sp]
+    00094586  add      r2, pc
+    00094588  blx      #0x49ee4
+    0009458c  ldr      r3, [pc, #0x2b8]
+    0009458e  uxth     r6, r0
+    00094590  vldr     d4, [pc, #0x224]
+    00094594  ldr      r2, [pc, #0x2b4]
+    00094596  rsb.w    sl, r6, #0x100
+    0009459a  ldr      r3, [r7, r3]
+    0009459c  mov      r1, sl
+    0009459e  adds     r0, r4, r6
+    000945a0  add      r2, pc
+    000945a2  vldr     d5, [r3, #0x28]
+    000945a6  vldr     d6, [r3, #0x20]
+    000945aa  vldr     d7, [r3, #0x18]
+    000945ae  ldrd     r8, sb, [r3, #0x10]
+    000945b2  vmul.f64 d5, d5, d4
+    000945b6  vmul.f64 d6, d6, d4
+    000945ba  strd     r8, sb, [sp, #0x10]
+    000945be  vmul.f64 d7, d7, d4
+    000945c2  ldrd     r8, sb, [r3]
+    000945c6  vldr     d4, [r3, #8]
+    000945ca  vstr     d5, [sp, #0x28]
+    000945ce  vstr     d6, [sp, #0x20]
+    000945d2  vstr     d7, [sp, #0x18]
+    000945d6  vstr     d4, [sp, #8]
+    000945da  strd     r8, sb, [sp]
+    000945de  blx      #0x49ee4
+    000945e2  uxth     r0, r0
+    000945e4  cmp      sl, r0
+    000945e6  it       lo
+    000945e8  uxthlo.w r0, sl
+    000945ec  add      r6, r0
+    000945ee  uxth     r6, r6
+    000945f0  cmp      r6, #0xfd
+    000945f2  itttt    ls
+    000945f4  addls    r1, r6, #1
+    000945f6  movls    r0, #0xa
+    000945f8  addls    r3, r4, r6
+    000945fa  strbls   r0, [r4, r6]
+    000945fc  ittet    ls
+    000945fe  uxthls   r6, r1
+    00094600  movls    r2, #0
+    00094602  movhi    r6, #0xfe
+    00094604  strbls   r2, [r3, #1]
+    00094606  blx      #0x49398
+    0009460a  mov      r1, r6
+    0009460c  mov      r0, r4
+    0009460e  ldr      r6, [pc, #0x240]
+    00094610  bl       #0x91b2c
+    00094614  mov.w    r3, #0x8b0
+    00094618  ldr      r2, [pc, #0x238]
+    0009461a  str      r3, [sp, #4]
+    0009461c  add      r6, pc
+    0009461e  ldr      r3, [pc, #0x238]
+    00094620  add.w    r6, r6, #0x408
+    00094624  mov.w    r1, #0x100
+    00094628  add      r2, pc
+    0009462a  str      r6, [sp]
+    0009462c  mov      r0, r4
+    0009462e  add      r3, pc
+    00094630  blx      #0x49ee4
+    00094634  ldr      r3, [pc, #0x224]
+    00094636  uxth     r6, r0
+    00094638  vldr     d4, [pc, #0x17c]
+    0009463c  ldr      r2, [pc, #0x220]
+    0009463e  rsb.w    sl, r6, #0x100
+    00094642  ldr      r3, [r7, r3]
+    00094644  mov      r1, sl
+    00094646  adds     r0, r4, r6
+    00094648  add      r2, pc
+    0009464a  vldr     d5, [r3, #0x28]
+    0009464e  vldr     d6, [r3, #0x20]
+    00094652  vldr     d7, [r3, #0x18]
+    00094656  ldrd     r8, sb, [r3, #0x10]
+    0009465a  vmul.f64 d5, d5, d4
+    0009465e  vmul.f64 d6, d6, d4
+    00094662  strd     r8, sb, [sp, #0x10]
+    00094666  vmul.f64 d7, d7, d4
+    0009466a  ldrd     r8, sb, [r3]
+    0009466e  vldr     d4, [r3, #8]
+    00094672  vstr     d5, [sp, #0x28]
+    00094676  vstr     d6, [sp, #0x20]
+    0009467a  vstr     d7, [sp, #0x18]
+    0009467e  vstr     d4, [sp, #8]
+    00094682  strd     r8, sb, [sp]
+    00094686  blx      #0x49ee4
+    0009468a  uxth     r0, r0
+    0009468c  cmp      sl, r0
+    0009468e  it       lo
+    00094690  uxthlo.w r0, sl
+    00094694  add      r6, r0
+    00094696  uxth     r6, r6
+    00094698  cmp      r6, #0xfd
+    0009469a  itttt    ls
+    0009469c  addls    r1, r6, #1
+    0009469e  movls    r0, #0xa
+    000946a0  addls    r3, r4, r6
+    000946a2  strbls   r0, [r4, r6]
+    000946a4  ittet    ls
+    000946a6  uxthls   r6, r1
+    000946a8  movls    r2, #0
+    000946aa  movhi    r6, #0xfe
+    000946ac  strbls   r2, [r3, #1]
+    000946ae  blx      #0x49398
+    000946b2  mov      r1, r6
+    000946b4  mov      r0, r4
+    000946b6  ldr      r6, [pc, #0x1ac]
+    000946b8  bl       #0x91b2c
+    000946bc  movw     r3, #0x8b2
+    000946c0  ldr      r2, [pc, #0x1a4]
+    000946c2  str      r3, [sp, #4]
+    000946c4  add      r6, pc
+    000946c6  ldr      r3, [pc, #0x1a4]
+    000946c8  add.w    r6, r6, #0x408
+    000946cc  mov.w    r1, #0x100
+    000946d0  add      r2, pc
+    000946d2  str      r6, [sp]
+    000946d4  mov      r0, r4
+    000946d6  add      r3, pc
+    000946d8  blx      #0x49ee4
+    000946dc  ldr      r3, [pc, #0x190]
+    000946de  uxth     r6, r0
+    000946e0  vldr     d4, [pc, #0xd4]
+    000946e4  ldr      r2, [pc, #0x18c]
+    000946e6  rsb.w    sl, r6, #0x100
+    000946ea  ldr      r3, [r7, r3]
+    000946ec  mov      r1, sl
+    000946ee  adds     r0, r4, r6
+    000946f0  add      r2, pc
+    000946f2  vldr     d5, [r3, #0x28]
+    000946f6  vldr     d6, [r3, #0x20]
+    000946fa  vldr     d7, [r3, #0x18]
+    000946fe  ldrd     r8, sb, [r3, #0x10]
+    00094702  vmul.f64 d5, d5, d4
+    00094706  vmul.f64 d6, d6, d4
+    0009470a  strd     r8, sb, [sp, #0x10]
+    0009470e  vmul.f64 d7, d7, d4
+    00094712  ldrd     r8, sb, [r3]
+    00094716  vldr     d4, [r3, #8]
+    0009471a  vstr     d5, [sp, #0x28]
+    0009471e  vstr     d6, [sp, #0x20]
+    00094722  vstr     d7, [sp, #0x18]
+    00094726  vstr     d4, [sp, #8]
+    0009472a  strd     r8, sb, [sp]
+    0009472e  blx      #0x49ee4
+    00094732  uxth     r0, r0
+    00094734  cmp      sl, r0
+    00094736  it       lo
+    00094738  uxthlo.w r0, sl
+    0009473c  add      r6, r0
+    0009473e  uxth     r6, r6
+    00094740  cmp      r6, #0xfd
+    00094742  itttt    ls
+    00094744  addls    r1, r6, #1
+    00094746  movls    r0, #0xa
+    00094748  addls    r3, r4, r6
+    0009474a  strbls   r0, [r4, r6]
+    0009474c  ittet    ls
+    0009474e  uxthls   r6, r1
+    00094750  movls    r2, #0
+    00094752  movhi    r6, #0xfe
+    00094754  strbls   r2, [r3, #1]
+    00094756  blx      #0x49398
+    0009475a  mov      r0, r4
+    0009475c  mov      r1, r6
+    0009475e  bl       #0x91b2c
+    00094762  mov      r0, r5
+    00094764  b        #0x94276
+    00094766  mov      r1, r4
+    00094768  bl       #0x91974
+    0009476c  b        #0x9431c
+    0009476e  mov      r1, r4
+    00094770  bl       #0x91974
+    00094774  b        #0x9456a
+    00094776  mov      r1, r4
+    00094778  bl       #0x91974
+    0009477c  b        #0x944da
+    0009477e  mov      r1, r4
+    00094780  bl       #0x91974
+    00094784  b        #0x94444
+    00094786  mov      r1, r4
+    00094788  bl       #0x91974
+    0009478c  b        #0x943b0
+    0009478e  ldr      r0, [r6]
+    00094790  subs     r0, #0xc
+    00094792  cmp      r0, sb
+    00094794  bne      #0x947a6
+    00094796  blx      #0x4a948
+    0009479a  ldr      r3, [pc, #0x58]
+    0009479c  ldr      r0, [r6]
+    0009479e  ldr      r3, [r7, r3]
+    000947a0  subs     r0, #0xc
+    000947a2  cmp      r0, r3
+    000947a4  beq      #0x94796
+    000947a6  mov      r1, r4
+    000947a8  bl       #0x91974
+    000947ac  b        #0x94796
+    000947ae  b        #0x9478e
+    000947b0  b        #0x9478e
+    000947b2  b        #0x9478e
+    000947b4  nop.w    
+    000947b8  stm      r1!, {r3, r4, r5, r6, r7}
+    000947ba  subs     r3, r4, r1
+    000947bc  adr      r5, #0x370
+    000947be  eors     r4, r1
+    000947c0  ldrb     r6, [r4, #0x10]
+    000947c2  movs     r4, r2
+    000947c4  asrs     r4, r6, #0x1d
+    000947c6  movs     r0, r0
+    000947c8  adds     r4, r5, r1
+    000947ca  movs     r0, r0
+    000947cc  asrs     r4, r2, #0x17
+    000947ce  movs     r0, r0
+    000947d0  asrs     r4, r2, #0x18
+    000947d2  movs     r0, r0
+    000947d4  add      sp, #0x158
+    000947d6  movs     r1, r2
+# matches shown: 1

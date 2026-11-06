@@ -1,0 +1,126 @@
+//
+/0
+/0////
+/0F
+/0W
+/0s
+/1
+/1o
+/2
+/3o
+/4
+/8
+/8F
+/8h
+/9
+/A
+/AF
+/B
+/C
+/D
+/Di
+/Dz
+/F
+/F8F
+/H
+/H9FxD
+/HF
+/HxD
+/I
+/I/HyDxD
+/J
+/J0K-
+/JO
+/JchzD
+/K
+/K/J
+/K0FY
+/KV
+/KX
+/KyD
+/L
+/LD
+/M
+/N
+/O
+/P
+/Q
+/Qo
+/R
+/S
+/T
+/V
+/W
+/Y
+/Z
+/_
+/a2Fo
+/b
+/bT
+/cjc
+/d
+/dobot/bin/bin/lua
+/dobot/bin/dobotM1Semphore
+/dobot/bin/fifoCodesys
+/dobot/userdata/project
+/dobot/userdata/project/optitrack_bindata
+/dobot/userdata/project/process/screw/
+/dobot/userdata/project/process/trajectory
+/dobot/userdata/project/process/trajectory/
+/dobot/userdata/project/project
+/dobot/userdata/project/settings/datasvr
+/e
+/f
+/h
+/hQ
+/hhh
+/hlh
+/hnh
+/htl
+/i
+/ihi
+/jh
+/k
+/lil
+/o
+/p
+/proc/net/route
+/q
+/qo
+/r
+/rF
+/root/
+/sys/class/gpio/export
+/sys/class/gpio/unexport
+/sys/class/thermal/thermal_zone0/temp
+/t
+/tmp/dobot_lua_lock
+/tmp/maxfile
+/udisk/
+/v
+/x
+/xD
+/z
+
+=== clearError / reset / alarm contexts ===
+--- clearError count=13
+   0level_enumES5_DpOT_ | _ZN6spdlog11logTerminal8basicLogIIhhhhhEEEviiPKcNS_5level10level_enumES3_DpOT_ | _ZN6spdlog11logTerminal8basicLogIJhhhhhEEEviiPKcNS_5level10level_enumES3_DpOT_ | _ZN14DataSubProcess10clearErrorEv | _ZN10TeachTrace10stopRecordERb | _ZN14DataSubProcess10startQueueEv | _ZN14DataSubProcess9stopQueueEv | _ZN14DataSubProcess14stopClearQueueEv | _ZN14DataSubProcess8exitDragEv | _ZN14DataSubProcess16
+   5level10level_enumES5_DpOT_ | _ZN6spdlog11logTerminal8basicLogIIiiEEEviiPKcNS_5level10level_enumES3_DpOT_ | _ZN6spdlog11logTerminal8basicLogIJiiEEEviiPKcNS_5level10level_enumES3_DpOT_ | _ZN13robot_control10clearErrorEv | _ZN13robot_control18checkEmergencyStopEPS_ | _ZN13robot_control10startQueueEv | _ZN13robot_control9resetSkinEv | _ZN13robot_control9stopQueueEv | _ZN13robot_control14stopClearQueueEv | _ZN13robot_c
+   odbusProjectName | checkIOProcess | getControllerAlarmStatus | getAlarmStatus | startRunScript | stopRunScript | pauseRunScript | continueRunScript | sendPointToAlgs | multiCalibration | GetAllStatus | clearError | startQueue | stopQueue | stopClearQueue | exitDrag | panelThreeSwitch | HandleEmergencyStop | collisionDrag | resetSkin
+   cript_status  change to suspend ....  |  script_status  change to runnning ....  | sendPointToAlgs:{} | [multiCalibration post]: {} | [multiCalibration] : {} | axesGroupRef is null! |  [DataSubProcess::clearError] enter ... | refuse to clear error g_isUnderEmergency = {} ,g_isSoftEmergency = {} g_isSafeEmergencyStopStatus = {} |  [DataSubProcess::clearError] clear collision warning  ... |  axesGroupRef 
+--- clearAlarm count=5
+   tp_requestPv | _ZN6spdlog11logTerminal8basicLogIIRA18_KciEEEviiPS2_NS_5level10level_enumES5_DpOT_ | _ZN6spdlog11logTerminal8basicLogIJRA18_KciEEEviiPS2_NS_5level10level_enumES5_DpOT_ | _ZN14DataSubProcess11clearAlarmsEP14evhttp_requestPv | _ZN14DataSubProcess11setHardwareEP14evhttp_requestPv | _ZNK4Json5Value6isBoolEv | _ZN14DataSubProcess17writeDataToModbusEP13ModbusRequesti | _ZN14DataSubProcess17getDataFromM
+   caliLeftRightHand | prjTeachFileDelete | basic_system | positiveSolution | inverseSolution | interForwardCal | interInverseCal | setAP | setTool485 | toolDataExchange | toolPowerControl | setCoordinate | clearAlarms | setHardware | writeDataToModbus | getDataFromModbus | setModbusData | getModbusData | getCoorDAndSendToAlgs | InitScaraParams
+   goR | moveR | positiveSolution | inverseSolution | ForwardCal | InverseCal | setAP | setTool485 | toolPowerControl | toolDataExchange | apiUpdate | readCurrentEncoder | readSensorEncoder | listenSensor | clearAlarms | extendIO | hardware | getModbusData | setModbusData | ToolRCalc
+   4evhttp_requestPvE12__FUNCTION__ | _ZZN14DataSubProcess16toolPowerControlEP14evhttp_requestPvE12__FUNCTION__ | _ZZN14DataSubProcess13setCoordinateEP14evhttp_requestPvE12__FUNCTION__ | _ZZN14DataSubProcess11clearAlarmsEP14evhttp_requestPvE12__FUNCTION__ | _ZZN14DataSubProcess11setHardwareEP14evhttp_requestPvE12__FUNCTION__ | _ZZN14DataSubProcess17writeDataToModbusEP13ModbusRequestiE12__FUNCTION__ | _ZZN14DataS
+--- resetAlarm count=0
+--- ClearError count=9
+   level10level_enumES6_DpOT_ | _ZN6spdlog11logTerminal8basicLogIJRiRKiEEEviiPKcNS_5level10level_enumES6_DpOT_ | _ZN10periodTask27recordAxisVoltageAndCurrentEv | _ZN10periodTaskC2Ev | _ZN10periodTask20backSafeIOClearErrorEv | _ZN10periodTask11handleErrorEi | _ZN10periodTask15monitorSysPowerEv | _ZN10periodTask18monitorServoUptimeEv | _ZN10periodTask26recoveryParamsAfterLuaStopEv | prctl | _ZTINSt6thread5_ImplISt12_Bind_
+   alloc_SetvibrationDetection(&params) error | exit... | {"status": false } | {"value":"occupied"} | currtime value = {}, exchange time value = {} | connectState alloc_GetHHTTrigOutputEnabled ERROR | ClearError alloc_GetDragTeachEnabled ERROR |  connectState: controlMode={};dragMode={} | {"value":"connected"} | http client request to stop lua. | alloc_SetQueuedCmdStopClear() error | alloc_SetControl
+    [DataSubProcess::clearError] clear collision warning  ... |  axesGroupRef is a nullptr ,can not clear collision warning  |  [DataSubProcess::clearError] exit ... | alloc_SetDragTeachEnabled(1) error | ClearError SetDrag Disabled | ClearError controlMode={};this->statusData.lastAlarmHappened={};dragMode={};ErroCode:{},CleraError:{} | this->m_isTrack:{} | this->m_isExitTrace:{} |  [DataSubProcess::stopQu
+   ] clear collision warning  ... |  axesGroupRef is a nullptr ,can not clear collision warning  |  [DataSubProcess::clearError] exit ... | alloc_SetDragTeachEnabled(1) error | ClearError SetDrag Disabled | ClearError controlMode={};this->statusData.lastAlarmHappened={};dragMode={};ErroCode:{},CleraError:{} | this->m_isTrack:{} | this->m_isExitTrace:{} |  [DataSubProcess::stopQueue] enter ... |  [DataSubPro
+--- /settings/ count=50
+   vr starting core... | [%s|%s@%s,%d] DataSvr starting data... | [%s|%s@%s,%d] DataSvr starting lua... | [%s|%s@%s,%d] DataSvr starting debug... | [%s|%s@%s,%d] DataSvr started | /dobot/userdata/project/settings/iscara.conf | /dobot/bin/etc/iscara.conf | cp %s %s && sync | DataSvr | broadcast_port | broadcast_chkmsg | WhoisDobotM1 | broadcast_msg | dobotM1 | timeout | datasvr_data_port | datasvr_lua_por
+   uaSubProcess | LuaSubProcess | DEBUG | [%s|%s@%s,%d] sigchld_handler:%d | subProcess/luaSubProcess.cpp | [%s] recv a raw cmd %s | [%s] pack2->header.payloadLen = %d,buf = %s | /dobot/userdata/project/settings/api.lua | load api.lua ... | not find api.lua ... | /dobot/bin/lua/dobot.lua | /dobot/bin/bin/lua | %s %s %s "%s" "%s" "%s" "%s" & | [%s|%s@%s,%d] Lua script process[%d] running! | subProc
+   sys. | sdo write fail,slave={},index={},subIndex={},value={}. | start read sdo from codesys. | addr%x0%d | addr%x%d | pack addr = {}. | exist sdo wr thd, end sdo write and read. | /dobot/userdata/project/settings/function/servoParams.json | writeSDOthd.IsWriteFromFile={}. | start to parse And Req Set Servo Params. | joint | paramsJOGJoint acceleration j1:%f,j2:%f,j3:%f,j4:%f,j5:%f,j6:%f | alloc_S
+   30006 return {} | The request is NULL! | dobot::common::util::JsonUtil::GetJointLimts return {} | dobot::common::util::JsonUtil::SetJointLimts return {} | The request is error! | /dobot/userdata/project/settings/function/ioctrl.json | /dobot/userdata/project/settings/function/minicab_ioctrl.json | remote io setting write success. | remote io setting write error. | /dobot/userdata/project/settings/fu

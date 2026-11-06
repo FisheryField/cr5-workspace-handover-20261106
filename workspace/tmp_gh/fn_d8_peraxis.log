@@ -1,0 +1,370 @@
+INFO  Using log config file: jar:file:/D:/software/disassembly/ghidra/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\FisheryField\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\FisheryField\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (668 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (1987 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    D:\mydata\workspace\tools
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\software\disassembly\ghproj_servo_a\servo328d8 (HeadlessAnalyzer)  
+INFO  Opening project: D:\software\disassembly\ghproj_servo_a\servo328d8 (HeadlessProject)  
+INFO  REPORT: Processing project file: /v328d8.elf (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: zf_fn.java '08020A38'  (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\mydata\workspace\tools\zf_fn.java (HeadlessAnalyzer)  
+INFO  zf_fn.java> # program=v328d8.elf (GhidraScript)  
+INFO  zf_fn.java>  (GhidraScript)  
+INFO  zf_fn.java> ================================ (GhidraScript)  
+INFO  zf_fn.java> ## 08020a38 -> FUN_08020a38 @08020a38 (GhidraScript)  
+INFO  zf_fn.java> ================================ (GhidraScript)  
+INFO  zf_fn.java> 
+void FUN_08020a38(int param_1)
+
+{
+  char cVar1;
+  int iVar2;
+  uint uVar3;
+  char *pcVar4;
+  char *pcVar5;
+  int iVar6;
+  undefined1 *puVar7;
+  undefined4 *puVar8;
+  int iVar9;
+  undefined4 uVar10;
+  undefined4 local_70 [18];
+  char *local_28;
+  
+  iVar9 = DAT_08020d68 + param_1 * 0x2c;
+  pcVar5 = (char *)(DAT_08020d6c + param_1 * 0x80);
+  puVar8 = (undefined4 *)(DAT_08020d70 + param_1 * 0x50);
+  pcVar4 = (char *)(DAT_08020d74 + param_1 * 0xb4);
+  iVar6 = param_1 * 0x329 + DAT_08020d78;
+  puVar7 = (undefined1 *)(DAT_08020d74 + param_1 * 0xb4);
+  if ((-1 < (int)((uint)(byte)puVar7[2] << 0x1b)) && (-1 < (int)((uint)(byte)puVar7[2] << 0x1d))) {
+    (*(code *)*DAT_08020d7c)(param_1,*puVar7,puVar7 + 1);
+  }
+  FUN_0801472c(param_1,puVar7[1]);
+  (*(code *)DAT_08020d7c[1])(param_1,*puVar7);
+  local_28 = puVar7 + 4;
+  FUN_080002e6(local_70,puVar8 + 2,0x48);
+  iVar2 = (**(code **)(DAT_08020d80 + 0x10))(param_1,pcVar5,*puVar8,puVar8[1]);
+  if (iVar2 != 0) {
+    (**(code **)(DAT_08020d80 + 8))(param_1,puVar7 + 4);
+  }
+  if (*pcVar5 == '\0') {
+    *(ushort *)(pcVar4 + 2) = *(ushort *)(pcVar4 + 2) & 0x8fff;
+    *(undefined4 *)(iVar6 + 0x26a) = *(undefined4 *)(iVar6 + 0x234);
+    uVar10 = (**(code **)(DAT_08020d8c + 8))(param_1,*(undefined4 *)(iVar6 + 0x26a));
+    *(undefined4 *)(iVar6 + 0x230) = uVar10;
+  }
+  else {
+    uVar3 = (*(ushort *)(pcVar4 + 2) & 0x7fff) >> 0xc;
+    if (uVar3 == 0) {
+      if (*pcVar4 == '\x06') {
+        (*(code *)*DAT_08020d84)(param_1,pcVar5,*(undefined4 *)(iVar9 + 0x1c));
+        pcVar5[0x60] = '\x01';
+        *(ushort *)(pcVar4 + 2) = (*(ushort *)(pcVar4 + 2) & 0x8fff) + 0x1000;
+      }
+      else if (*pcVar4 == '\a') {
+        (*(code *)DAT_08020d84[1])
+                  (param_1,pcVar5,*(undefined4 *)(iVar9 + 0x1c),(int)*(short *)(iVar6 + 0x14a));
+        pcVar5[0x60] = '\x01';
+        *(ushort *)(pcVar4 + 2) = (*(ushort *)(pcVar4 + 2) & 0x8fff) + 0x1000;
+      }
+      else if ((int)((uint)(byte)pcVar4[2] << 0x19) < 0) {
+        (*(code *)DAT_08020d84[1])
+                  (param_1,pcVar5,*(undefined4 *)(iVar9 + 0x1c),(int)*(short *)(iVar6 + 0x148));
+        pcVar5[0x60] = '\x01';
+        *(ushort *)(pcVar4 + 2) = (*(ushort *)(pcVar4 + 2) & 0x8fff) + 0x1000;
+      }
+      else if ((int)((uint)(byte)pcVar4[2] << 0x1b) < 0) {
+        (*(code *)DAT_08020d84[2])
+                  (param_1,pcVar5,*(undefined4 *)(iVar9 + 0x1c),(int)*(short *)(iVar6 + 0x144));
+        pcVar5[0x60] = '\x01';
+        *(ushort *)(pcVar4 + 2) = (*(ushort *)(pcVar4 + 2) & 0x8fff) + 0x1000;
+      }
+      else if ((int)((uint)(byte)pcVar4[2] << 0x1d) < 0) {
+        (*(code *)DAT_08020d84[2])
+                  (param_1,pcVar5,*(undefined4 *)(iVar9 + 0x1c),(int)*(short *)(iVar6 + 0x142));
+        pcVar5[0x60] = '\x01';
+        *(ushort *)(pcVar4 + 2) = (*(ushort *)(pcVar4 + 2) & 0x8fff) + 0x1000;
+      }
+      else if (pcVar5[4] == '\0') {
+        local_28 = pcVar4 + 4;
+        FUN_080002e6(local_70,puVar8 + 2,0x48);
+        cVar1 = (**(code **)(DAT_08020d80 + 4))(param_1,pcVar5,*puVar8,puVar8[1]);
+        pcVar5[4] = cVar1;
+        *(char *)(DAT_08020d88 + param_1) = pcVar4[0x1c];
+        *(int *)(iVar6 + 0x26a) = *(int *)(pcVar4 + 0xb0) + puVar8[5];
+        uVar10 = (**(code **)(DAT_08020d8c + 8))(param_1,*(undefined4 *)(iVar6 + 0x26a));
+        *(undefined4 *)(iVar6 + 0x230) = uVar10;
+      }
+      if (*(short *)(DAT_08020d90 + 0xba) == 0) {
+        uVar10 = (**(code **)(DAT_08020d8c + 0x58))(param_1,*(undefined4 *)(pcVar5 + 0x18));
+        *(undefined4 *)(pcVar5 + 0xc) = uVar10;
+      }
+      else {
+        *(undefined4 *)(pcVar5 + 0xc) = DAT_08020d94;
+      }
+      uVar10 = (**(code **)(DAT_08020d8c + 0x44))((int)*(short *)(iVar6 + 0x327));
+      *(undefined4 *)(pcVar5 + 0x10) = uVar10;
+    }
+    else if (uVar3 == 1) {
+      local_70[0] = 6;
+      iVar6 = (*(code *)DAT_08020d84[3])(param_1,0,(int)((float)puVar8[10] * DAT_08020d98),0x4189);
+      if (iVar6 == 1) {
+        *(ushort *)(pcVar4 + 2) = (*(ushort *)(pcVar4 + 2) & 0x8fff) + 0x2000;
+      }
+    }
+    else if (uVar3 == 2) {
+      if (*pcVar4 == '\x06') {
+        *(ushort *)(pcVar4 + 2) = (*(ushort *)(pcVar4 + 2) & 0xfffd) + 2;
+      }
+      else if ((int)((uint)(byte)pcVar4[2] << 0x1b) < 0) {
+        *(ushort *)(pcVar4 + 2) = (*(ushort *)(pcVar4 + 2) & 0xffdf) + 0x20;
+      }
+      else if ((int)((uint)(byte)pcVar4[2] << 0x1d) < 0) {
+        *(ushort *)(pcVar4 + 2) = (*(ushort *)(pcVar4 + 2) & 0xfff7) + 8;
+      }
+      else if (*pcVar4 == '\a') {
+        *(ushort *)(pcVar4 + 2) = (*(ushort *)(pcVar4 + 2) & 0xfeff) + 0x100;
+      }
+      else if ((*(byte *)(iVar6 + 0x13f) & 1) == 0) {
+        *(ushort *)(pcVar4 + 2) = *(ushort *)(pcVar4 + 2) & 0x8fff;
+      }
+      pcVar5[4] = '\0';
+      pcVar5[0x18] = '\0';
+      pcVar5[0x19] = '\0';
+      pcVar5[0x1a] = '\0';
+      pcVar5[0x1b] = '\0';
+      *(undefined4 *)(pcVar5 + 8) = DAT_08020d94;
+      *(undefined4 *)(pcVar5 + 0x14) = DAT_08020d94;
+      pcVar5[0x60] = '\0';
+      pcVar5[0x61] = '\0';
+      *(undefined4 *)(pcVar5 + 0xc) = DAT_08020d94;
+      *(undefined4 *)(pcVar5 + 0x10) = DAT_08020d94;
+    }
+  }
+  FUN_08015398(param_1);
+  return;
+}
+
+ (GhidraScript)  
+INFO  zf_fn.java> ---- listing ---- (GhidraScript)  
+INFO  zf_fn.java>    08020a38  push {r4,r5,r6,r7,r8,r9,r10,lr} (GhidraScript)  
+INFO  zf_fn.java>    08020a3c  sub sp,#0x50 (GhidraScript)  
+INFO  zf_fn.java>    08020a3e  mov r7,r0 (GhidraScript)  
+INFO  zf_fn.java>    08020a40  add.w r0,r7,r7, lsl #0x1 (GhidraScript)  
+INFO  zf_fn.java>    08020a44  add.w r0,r0,r7, lsl #0x3 (GhidraScript)  
+INFO  zf_fn.java>    08020a48  ldr r1,[0x08020d68] (GhidraScript)  
+INFO  zf_fn.java>    08020a4a  add.w r10,r1,r0, lsl #0x2 (GhidraScript)  
+INFO  zf_fn.java>    08020a4e  ldr r0,[0x08020d6c] (GhidraScript)  
+INFO  zf_fn.java>    08020a50  add.w r5,r0,r7, lsl #0x7 (GhidraScript)  
+INFO  zf_fn.java>    08020a54  add.w r0,r7,r7, lsl #0x2 (GhidraScript)  
+INFO  zf_fn.java>    08020a58  ldr r1,[0x08020d70] (GhidraScript)  
+INFO  zf_fn.java>    08020a5a  add.w r9,r1,r0, lsl #0x4 (GhidraScript)  
+INFO  zf_fn.java>    08020a5e  rsb r0,r7,r7, lsl #0x4 (GhidraScript)  
+INFO  zf_fn.java>    08020a62  add.w r0,r0,r0, lsl #0x1 (GhidraScript)  
+INFO  zf_fn.java>    08020a66  ldr r1,[0x08020d74] (GhidraScript)  
+INFO  zf_fn.java>    08020a68  add.w r4,r1,r0, lsl #0x2 (GhidraScript)  
+INFO  zf_fn.java>    08020a6c  movw r0,#0x329 (GhidraScript)  
+INFO  zf_fn.java>    08020a70  muls r0,r7 (GhidraScript)  
+INFO  zf_fn.java>    08020a72  ldr r1,[0x08020d78] (GhidraScript)  
+INFO  zf_fn.java>    08020a74  adds r6,r0,r1 (GhidraScript)  
+INFO  zf_fn.java>    08020a76  rsb r0,r7,r7, lsl #0x4 (GhidraScript)  
+INFO  zf_fn.java>    08020a7a  add.w r0,r0,r0, lsl #0x1 (GhidraScript)  
+INFO  zf_fn.java>    08020a7e  ldr r1,[0x08020d74] (GhidraScript)  
+INFO  zf_fn.java>    08020a80  add.w r8,r1,r0, lsl #0x2 (GhidraScript)  
+INFO  zf_fn.java>    08020a84  ldrb.w r0,[r8,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020a88  ubfx r0,r0,#0x4,#0x1 (GhidraScript)  
+INFO  zf_fn.java>    08020a8c  cbnz r0,0x08020aa8 (GhidraScript)  
+INFO  zf_fn.java>    08020a8e  ldrb.w r0,[r8,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020a92  ubfx r0,r0,#0x2,#0x1 (GhidraScript)  
+INFO  zf_fn.java>    08020a96  cbnz r0,0x08020aa8 (GhidraScript)  
+INFO  zf_fn.java>    08020a98  ldrb.w r1,[r8,#0x0] (GhidraScript)  
+INFO  zf_fn.java>    08020a9c  ldr r0,[0x08020d7c] (GhidraScript)  
+INFO  zf_fn.java>    08020a9e  add.w r2,r8,#0x1 (GhidraScript)  
+INFO  zf_fn.java>    08020aa2  ldr r3,[r0,#0x0] (GhidraScript)  
+INFO  zf_fn.java>    08020aa4  mov r0,r7 (GhidraScript)  
+INFO  zf_fn.java>    08020aa6  blx r3 (GhidraScript)  
+INFO  zf_fn.java>    08020aa8  ldrb.w r1,[r8,#0x1] (GhidraScript)  
+INFO  zf_fn.java>    08020aac  mov r0,r7 (GhidraScript)  
+INFO  zf_fn.java>    08020aae  bl 0x0801472c (GhidraScript)  
+INFO  zf_fn.java>    08020ab2  ldrb.w r1,[r8,#0x0] (GhidraScript)  
+INFO  zf_fn.java>    08020ab6  ldr r0,[0x08020d7c] (GhidraScript)  
+INFO  zf_fn.java>    08020ab8  ldr r2,[r0,#0x4] (GhidraScript)  
+INFO  zf_fn.java>    08020aba  mov r0,r7 (GhidraScript)  
+INFO  zf_fn.java>    08020abc  blx r2 (GhidraScript)  
+INFO  zf_fn.java>    08020abe  add.w r0,r8,#0x4 (GhidraScript)  
+INFO  zf_fn.java>    08020ac2  movs r2,#0x48 (GhidraScript)  
+INFO  zf_fn.java>    08020ac4  add.w r1,r9,#0x8 (GhidraScript)  
+INFO  zf_fn.java>    08020ac8  str r0,[sp,#0x48] (GhidraScript)  
+INFO  zf_fn.java>    08020aca  mov r0,sp (GhidraScript)  
+INFO  zf_fn.java>    08020acc  bl 0x080002e6 (GhidraScript)  
+INFO  zf_fn.java>    08020ad0  ldr r0,[0x08020d80] (GhidraScript)  
+INFO  zf_fn.java>    08020ad2  ldr.w r12,[r0,#0x10] (GhidraScript)  
+INFO  zf_fn.java>    08020ad6  mov r1,r5 (GhidraScript)  
+INFO  zf_fn.java>    08020ad8  mov r0,r7 (GhidraScript)  
+INFO  zf_fn.java>    08020ada  ldrd r2,r3,[r9,#0x0] (GhidraScript)  
+INFO  zf_fn.java>    08020ade  blx r12 (GhidraScript)  
+INFO  zf_fn.java>    08020ae0  cbz r0,0x08020aee (GhidraScript)  
+INFO  zf_fn.java>    08020ae2  ldr r0,[0x08020d80] (GhidraScript)  
+INFO  zf_fn.java>    08020ae4  add.w r1,r8,#0x4 (GhidraScript)  
+INFO  zf_fn.java>    08020ae8  ldr r2,[r0,#0x8] (GhidraScript)  
+INFO  zf_fn.java>    08020aea  mov r0,r7 (GhidraScript)  
+INFO  zf_fn.java>    08020aec  blx r2 (GhidraScript)  
+INFO  zf_fn.java>    08020aee  ldrb r0,[r5,#0x0] (GhidraScript)  
+INFO  zf_fn.java>    08020af0  cmp r0,#0x0 (GhidraScript)  
+INFO  zf_fn.java>    08020af2  beq 0x08020bec (GhidraScript)  
+INFO  zf_fn.java>    08020af4  ldrh r0,[r4,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020af6  ubfx r0,r0,#0xc,#0x3 (GhidraScript)  
+INFO  zf_fn.java>    08020afa  cbz r0,0x08020b06 (GhidraScript)  
+INFO  zf_fn.java>    08020afc  cmp r0,#0x1 (GhidraScript)  
+INFO  zf_fn.java>    08020afe  beq 0x08020bee (GhidraScript)  
+INFO  zf_fn.java>    08020b00  cmp r0,#0x2 (GhidraScript)  
+INFO  zf_fn.java>    08020b02  bne 0x08020bf0 (GhidraScript)  
+INFO  zf_fn.java>    08020b04  b 0x08020ca6 (GhidraScript)  
+INFO  zf_fn.java>    08020b06  ldrb r0,[r4,#0x0] (GhidraScript)  
+INFO  zf_fn.java>    08020b08  cmp r0,#0x6 (GhidraScript)  
+INFO  zf_fn.java>    08020b0a  bne 0x08020b2e (GhidraScript)  
+INFO  zf_fn.java>    08020b0c  ldr r0,[0x08020d84] (GhidraScript)  
+INFO  zf_fn.java>    08020b0e  ldr.w r2,[r10,#0x1c] (GhidraScript)  
+INFO  zf_fn.java>    08020b12  mov r1,r5 (GhidraScript)  
+INFO  zf_fn.java>    08020b14  ldr r3,[r0,#0x0] (GhidraScript)  
+INFO  zf_fn.java>    08020b16  mov r0,r7 (GhidraScript)  
+INFO  zf_fn.java>    08020b18  blx r3 (GhidraScript)  
+INFO  zf_fn.java>    08020b1a  movs r0,#0x1 (GhidraScript)  
+INFO  zf_fn.java>    08020b1c  strb.w r0,[r5,#0x60] (GhidraScript)  
+INFO  zf_fn.java>    08020b20  ldrh r0,[r4,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020b22  bic r0,r0,#0x7000 (GhidraScript)  
+INFO  zf_fn.java>    08020b26  add.w r0,r0,#0x1000 (GhidraScript)  
+INFO  zf_fn.java>    08020b2a  strh r0,[r4,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020b2c  b 0x08020c3c (GhidraScript)  
+INFO  zf_fn.java>    08020b2e  ldrb r0,[r4,#0x0] (GhidraScript)  
+INFO  zf_fn.java>    08020b30  cmp r0,#0x7 (GhidraScript)  
+INFO  zf_fn.java>    08020b32  bne 0x08020b5c (GhidraScript)  
+INFO  zf_fn.java>    08020b34  ldrsh.w r3,[r6,#0x14a] (GhidraScript)  
+INFO  zf_fn.java>    08020b38  ldr r0,[0x08020d84] (GhidraScript)  
+INFO  zf_fn.java>    08020b3a  ldr.w r2,[r10,#0x1c] (GhidraScript)  
+INFO  zf_fn.java>    08020b3e  mov r1,r5 (GhidraScript)  
+INFO  zf_fn.java>    08020b40  ldr.w r12,[r0,#0x4] (GhidraScript)  
+INFO  zf_fn.java>    08020b44  mov r0,r7 (GhidraScript)  
+INFO  zf_fn.java>    08020b46  blx r12 (GhidraScript)  
+INFO  zf_fn.java>    08020b48  movs r0,#0x1 (GhidraScript)  
+INFO  zf_fn.java>    08020b4a  strb.w r0,[r5,#0x60] (GhidraScript)  
+INFO  zf_fn.java>    08020b4e  ldrh r0,[r4,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020b50  bic r0,r0,#0x7000 (GhidraScript)  
+INFO  zf_fn.java>    08020b54  add.w r0,r0,#0x1000 (GhidraScript)  
+INFO  zf_fn.java>    08020b58  strh r0,[r4,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020b5a  b 0x08020c3c (GhidraScript)  
+INFO  zf_fn.java>    08020b5c  ldrb r0,[r4,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020b5e  ubfx r0,r0,#0x6,#0x1 (GhidraScript)  
+INFO  zf_fn.java>    08020b62  cbz r0,0x08020b8c (GhidraScript)  
+INFO  zf_fn.java>    08020b64  ldrsh.w r3,[r6,#0x148] (GhidraScript)  
+INFO  zf_fn.java>    08020b68  ldr r0,[0x08020d84] (GhidraScript)  
+INFO  zf_fn.java>    08020b6a  ldr.w r2,[r10,#0x1c] (GhidraScript)  
+INFO  zf_fn.java>    08020b6e  mov r1,r5 (GhidraScript)  
+INFO  zf_fn.java>    08020b70  ldr.w r12,[r0,#0x4] (GhidraScript)  
+INFO  zf_fn.java>    08020b74  mov r0,r7 (GhidraScript)  
+INFO  zf_fn.java>    08020b76  blx r12 (GhidraScript)  
+INFO  zf_fn.java>    08020b78  movs r0,#0x1 (GhidraScript)  
+INFO  zf_fn.java>    08020b7a  strb.w r0,[r5,#0x60] (GhidraScript)  
+INFO  zf_fn.java>    08020b7e  ldrh r0,[r4,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020b80  bic r0,r0,#0x7000 (GhidraScript)  
+INFO  zf_fn.java>    08020b84  add.w r0,r0,#0x1000 (GhidraScript)  
+INFO  zf_fn.java>    08020b88  strh r0,[r4,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020b8a  b 0x08020c3c (GhidraScript)  
+INFO  zf_fn.java>    08020b8c  ldrb r0,[r4,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020b8e  ubfx r0,r0,#0x4,#0x1 (GhidraScript)  
+INFO  zf_fn.java>    08020b92  cbz r0,0x08020bbc (GhidraScript)  
+INFO  zf_fn.java>    08020b94  ldrsh.w r3,[r6,#0x144] (GhidraScript)  
+INFO  zf_fn.java>    08020b98  ldr r0,[0x08020d84] (GhidraScript)  
+INFO  zf_fn.java>    08020b9a  ldr.w r2,[r10,#0x1c] (GhidraScript)  
+INFO  zf_fn.java>    08020b9e  mov r1,r5 (GhidraScript)  
+INFO  zf_fn.java>    08020ba0  ldr.w r12,[r0,#0x8] (GhidraScript)  
+INFO  zf_fn.java>    08020ba4  mov r0,r7 (GhidraScript)  
+INFO  zf_fn.java>    08020ba6  blx r12 (GhidraScript)  
+INFO  zf_fn.java>    08020ba8  movs r0,#0x1 (GhidraScript)  
+INFO  zf_fn.java>    08020baa  strb.w r0,[r5,#0x60] (GhidraScript)  
+INFO  zf_fn.java>    08020bae  ldrh r0,[r4,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020bb0  bic r0,r0,#0x7000 (GhidraScript)  
+INFO  zf_fn.java>    08020bb4  add.w r0,r0,#0x1000 (GhidraScript)  
+INFO  zf_fn.java>    08020bb8  strh r0,[r4,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020bba  b 0x08020c3c (GhidraScript)  
+INFO  zf_fn.java>    08020bbc  ldrb r0,[r4,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020bbe  ubfx r0,r0,#0x2,#0x1 (GhidraScript)  
+INFO  zf_fn.java>    08020bc2  cbz r0,0x08020bf2 (GhidraScript)  
+INFO  zf_fn.java>    08020bc4  ldrsh.w r3,[r6,#0x142] (GhidraScript)  
+INFO  zf_fn.java>    08020bc8  ldr r0,[0x08020d84] (GhidraScript)  
+INFO  zf_fn.java>    08020bca  ldr.w r2,[r10,#0x1c] (GhidraScript)  
+INFO  zf_fn.java>    08020bce  mov r1,r5 (GhidraScript)  
+INFO  zf_fn.java>    08020bd0  ldr.w r12,[r0,#0x8] (GhidraScript)  
+INFO  zf_fn.java>    08020bd4  mov r0,r7 (GhidraScript)  
+INFO  zf_fn.java>    08020bd6  blx r12 (GhidraScript)  
+INFO  zf_fn.java>    08020bd8  movs r0,#0x1 (GhidraScript)  
+INFO  zf_fn.java>    08020bda  strb.w r0,[r5,#0x60] (GhidraScript)  
+INFO  zf_fn.java>    08020bde  ldrh r0,[r4,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020be0  bic r0,r0,#0x7000 (GhidraScript)  
+INFO  zf_fn.java>    08020be4  add.w r0,r0,#0x1000 (GhidraScript)  
+INFO  zf_fn.java>    08020be8  strh r0,[r4,#0x2] (GhidraScript)  
+INFO  zf_fn.java>    08020bea  b 0x08020c3c (GhidraScript)  
+INFO  zf_fn.java>    08020bec  b 0x08020d3c (GhidraScript)  
+INFO  zf_fn.java>    08020bee  b 0x08020c6c (GhidraScript)  
+INFO  zf_fn.java>    08020bf0  b 0x08020d38 (GhidraScript)  
+INFO  zf_fn.java>    08020bf2  ldrb r0,[r5,#0x4] (GhidraScript)  
+INFO  zf_fn.java>    08020bf4  cbnz r0,0x08020c3c (GhidraScript)  
+INFO  zf_fn.java>    08020bf6  adds r0,r4,#0x4 (GhidraScript)  
+INFO  zf_fn.java>    08020bf8  movs r2,#0x48 (GhidraScript)  
+INFO  zf_fn.java>    08020bfa  add.w r1,r9,#0x8 (GhidraScript)  
+INFO  zf_fn.java>    08020bfe  str r0,[sp,#0x48] (GhidraScript)  
+INFO  zf_fn.java>    08020c00  mov r0,sp (GhidraScript)  
+INFO  zf_fn.java>    08020c02  bl 0x080002e6 (GhidraScript)  
+INFO  zf_fn.java>    08020c06  ldr r0,[0x08020d80] (GhidraScript)  
+INFO  zf_fn.java>    08020c08  ldr.w r12,[r0,#0x4] (GhidraScript)  
+INFO  zf_fn.java>    08020c0c  mov r1,r5 (GhidraScript)  
+INFO  zf_fn.java>    08020c0e  mov r0,r7 (GhidraScript)  
+INFO  zf_fn.java>    08020c10  ldrd r2,r3,[r9,#0x0] (GhidraScript)  
+INFO  zf_fn.java>    08020c14  blx r12 (GhidraScript)  
+INFO  zf_fn.java>    08020c16  strb r0,[r5,#0x4] (GhidraScript)  
+INFO  zf_fn.java>    08020c18  ldrb r0,[r4,#0x1c] (GhidraScript)  
+INFO  zf_fn.java>    08020c1a  ldr r1,[0x08020d88] (GhidraScript)  
+INFO  zf_fn.java>    08020c1c  strb r0,[r1,r7] (GhidraScript)  
+INFO  zf_fn.java>    08020c1e  ldr.w r0,[r9,#0x14] (GhidraScript)  
+INFO  zf_fn.java>    08020c22  ldr.w r1,[r4,#0xb0] (GhidraScript)  
+INFO  zf_fn.java>    08020c26  add r1,r0 (GhidraScript)  
+INFO  zf_fn.java>    08020c28  str.w r1,[r6,#0x26a] (GhidraScript)  
+INFO  zf_fn.java>    08020c2c  ldr.w r1,[r6,#0x26a] (GhidraScript)  
+INFO  zf_fn.java>    08020c30  ldr r0,[0x08020d8c] (GhidraScript)  
+INFO  zf_fn.java>    08020c32  ldr r2,[r0,#0x8] (GhidraScript)  
+INFO  zf_fn.java>    08020c34  mov r0,r7 (GhidraScript)  
+INFO  zf_fn.java>    08020c36  blx r2 (GhidraScript)  
+INFO  zf_fn.java>    08020c38  str.w r0,[r6,#0x230] (GhidraScript)  
+INFO  zf_fn.java> [zf_fn] wrote D:\mydata\workspace\tmp_gh\fn_d8_peraxis.txt (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /v328d8.elf (HeadlessAnalyzer)  

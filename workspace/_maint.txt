@@ -1,0 +1,122 @@
+=== BEFORE ===
+Fri Sep 18 18:22:32 CST 2026
+  305 root       0:51 /dobot/bin/gcontrol
+  374 root       9:49 ./codesyscontrol
+=== 停止应用栈 ===
+stopped
+=== eth0 状态 ===
+eth0      Link encap:Ethernet  HWaddr 62:00:D7:C1:B5:1F  
+          inet6 addr: fe80::6000:d7ff:fec1:b51f/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:384816 errors:1 dropped:0 overruns:0 frame:1
+=== 运行只读 SDO 读取工具 ===
+=== SOEM EtherCAT SDO READER (READ-ONLY) ===
+ec_init(eth0) ok
+slaves found: 9
+
+slave 1: CoRobot Safety IO        man=0x00000A62 id=0x00000221 rev=0x00000103
+slave 2: CoRobot Uni IO           man=0x00000A62 id=0x00000222 rev=0x00000103
+slave 3: Dobot DS121              man=0x00000A62 id=0x00000121 rev=0x00020001
+slave 4: Dobot DS121              man=0x00000A62 id=0x00000121 rev=0x00020001
+slave 5: Dobot DS121              man=0x00000A62 id=0x00000121 rev=0x00020001
+slave 6: Dobot DS121              man=0x00000A62 id=0x00000121 rev=0x00020001
+slave 7: Dobot DS121              man=0x00000A62 id=0x00000121 rev=0x00020001
+slave 8: Dobot DS121              man=0x00000A62 id=0x00000121 rev=0x00020001
+slave 9: CoRobot Terminal IO      man=0x00000A62 id=0x00000230 rev=0x00000103
+
+slave 1 skipped (not DS121)
+slave 2 skipped (not DS121)
+----- servo slave 3 (Dobot DS121) -----
+  0x6064:00  position actual value      =         2976   (0x00000BA0) size=4
+  0x607C:00  home offset                =            0   (0x00000000) size=4
+  0x6060:00  modes of operation         =            8   (0x00000008) size=1
+  0x6061:00  modes display              =            8   (0x00000008) size=1
+  0x6098:00  homing method              =           35   (0x00000023) size=1
+  0x608F:01  pos encoder res num        =        20000   (0x00004E20) size=4
+  0x608F:02  pos encoder res den        =            1   (0x00000001) size=4
+  0x6091:01  gear ratio motor           =            1   (0x00000001) size=4
+  0x6091:02  gear ratio shaft           =            1   (0x00000001) size=4
+  0x607D:01  sw pos limit min           =  -2147483648   (0x80000000) size=4
+  0x607D:02  sw pos limit max           =   2147483647   (0x7FFFFFFF) size=4
+  0x6081:00  profile velocity           =      3553600   (0x00363940) size=4
+  0x6502:00  supported drive modes      =         1005   (0x000003ED) size=4
+
+----- servo slave 4 (Dobot DS121) -----
+  0x6064:00  position actual value      =          365   (0x0000016D) size=4
+  0x607C:00  home offset                =            0   (0x00000000) size=4
+  0x6060:00  modes of operation         =            8   (0x00000008) size=1
+  0x6061:00  modes display              =            8   (0x00000008) size=1
+  0x6098:00  homing method              =           35   (0x00000023) size=1
+  0x608F:01  pos encoder res num        =        20000   (0x00004E20) size=4
+  0x608F:02  pos encoder res den        =            1   (0x00000001) size=4
+  0x6091:01  gear ratio motor           =            1   (0x00000001) size=4
+  0x6091:02  gear ratio shaft           =            1   (0x00000001) size=4
+  0x607D:01  sw pos limit min           =  -2147483648   (0x80000000) size=4
+  0x607D:02  sw pos limit max           =   2147483647   (0x7FFFFFFF) size=4
+  0x6081:00  profile velocity           =      3553600   (0x00363940) size=4
+  0x6502:00  supported drive modes      =         1005   (0x000003ED) size=4
+
+----- servo slave 5 (Dobot DS121) -----
+  0x6064:00  position actual value      =        -5019   (0xFFFFEC65) size=4
+  0x607C:00  home offset                =            0   (0x00000000) size=4
+  0x6060:00  modes of operation         =            8   (0x00000008) size=1
+  0x6061:00  modes display              =            8   (0x00000008) size=1
+  0x6098:00  homing method              =           35   (0x00000023) size=1
+  0x608F:01  pos encoder res num        =        20000   (0x00004E20) size=4
+  0x608F:02  pos encoder res den        =            1   (0x00000001) size=4
+  0x6091:01  gear ratio motor           =            1   (0x00000001) size=4
+  0x6091:02  gear ratio shaft           =            1   (0x00000001) size=4
+  0x607D:01  sw pos limit min           =  -2147483648   (0x80000000) size=4
+  0x607D:02  sw pos limit max           =   2147483647   (0x7FFFFFFF) size=4
+  0x6081:00  profile velocity           =      3553600   (0x00363940) size=4
+  0x6502:00  supported drive modes      =         1005   (0x000003ED) size=4
+
+----- servo slave 6 (Dobot DS121) -----
+  0x6064:00  position actual value      =         3118   (0x00000C2E) size=4
+  0x607C:00  home offset                =            0   (0x00000000) size=4
+  0x6060:00  modes of operation         =            8   (0x00000008) size=1
+  0x6061:00  modes display              =            8   (0x00000008) size=1
+  0x6098:00  homing method              =           35   (0x00000023) size=1
+  0x608F:01  pos encoder res num        =        20000   (0x00004E20) size=4
+  0x608F:02  pos encoder res den        =            1   (0x00000001) size=4
+  0x6091:01  gear ratio motor           =            1   (0x00000001) size=4
+  0x6091:02  gear ratio shaft           =            1   (0x00000001) size=4
+  0x607D:01  sw pos limit min           =  -2147483648   (0x80000000) size=4
+  0x607D:02  sw pos limit max           =   2147483647   (0x7FFFFFFF) size=4
+  0x6081:00  profile velocity           =      3553600   (0x00363940) size=4
+  0x6502:00  supported drive modes      =         1005   (0x000003ED) size=4
+
+----- servo slave 7 (Dobot DS121) -----
+  0x6064:00  position actual value      =        -1708   (0xFFFFF954) size=4
+  0x607C:00  home offset                =            0   (0x00000000) size=4
+  0x6060:00  modes of operation         =            8   (0x00000008) size=1
+  0x6061:00  modes display              =            8   (0x00000008) size=1
+  0x6098:00  homing method              =           35   (0x00000023) size=1
+  0x608F:01  pos encoder res num        =        20000   (0x00004E20) size=4
+  0x608F:02  pos encoder res den        =            1   (0x00000001) size=4
+  0x6091:01  gear ratio motor           =            1   (0x00000001) size=4
+  0x6091:02  gear ratio shaft           =            1   (0x00000001) size=4
+  0x607D:01  sw pos limit min           =  -2147483648   (0x80000000) size=4
+  0x607D:02  sw pos limit max           =   2147483647   (0x7FFFFFFF) size=4
+  0x6081:00  profile velocity           =      3553600   (0x00363940) size=4
+  0x6502:00  supported drive modes      =         1005   (0x000003ED) size=4
+
+----- servo slave 8 (Dobot DS121) -----
+  0x6064:00  position actual value      =       -12200   (0xFFFFD058) size=4
+  0x607C:00  home offset                =            0   (0x00000000) size=4
+  0x6060:00  modes of operation         =            8   (0x00000008) size=1
+  0x6061:00  modes display              =            8   (0x00000008) size=1
+  0x6098:00  homing method              =           35   (0x00000023) size=1
+  0x608F:01  pos encoder res num        =        20000   (0x00004E20) size=4
+  0x608F:02  pos encoder res den        =            1   (0x00000001) size=4
+  0x6091:01  gear ratio motor           =            1   (0x00000001) size=4
+  0x6091:02  gear ratio shaft           =            1   (0x00000001) size=4
+  0x607D:01  sw pos limit min           =  -2147483648   (0x80000000) size=4
+  0x607D:02  sw pos limit max           =   2147483647   (0x7FFFFFFF) size=4
+  0x6081:00  profile velocity           =      3553600   (0x00363940) size=4
+  0x6502:00  supported drive modes      =         1005   (0x000003ED) size=4
+
+slave 9 skipped (not DS121)
+done
+READER_RC=0
+=== READ_DONE ===

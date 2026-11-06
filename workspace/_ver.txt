@@ -1,0 +1,43 @@
+=== /etc/version.conf ===
+2.1.0
+=== /dobot/bin/etc/version.conf ===
+010000
+
+=== files containing 3.5.4 ===
+=== gcontrol version strings ===
+0.0.0.0
+192.168.5.1
+255.255.255.0
+127.0.0.1
+=== userdata version-ish files ===
+=== properties ===
+total 310
+drwxr-xr-x    2 1022     1024          1024 Sep 18 09:28 .
+drwxr-xr-x    8 1022     1024          1024 Dec 30  2022 ..
+-rwxr-xr-x    1 1022     1024          1003 Dec 30  2022 AdvancedFunction.json
+-rwxr-xr-x    1 1022     1024          2049 Dec 30  2022 PoseSelfInterference.json
+-rwxr-xr-x    1 root     root         59785 Feb 19  1976 alarm.json
+-rwxr-xr-x    1 1022     1024        190994 Dec 30  2022 alarm_controller.json
+-rwxr-xr-x    1 1022     1024         40958 Dec 30  2022 alarm_servo.json
+-rwxr-xr-x    1 1022     1024            14 Dec 30  2022 axis.json
+-rwxr-xr-x    1 1022     1024            26 Dec 30  2022 businessType.json
+-rwxr-xr-x    1 root     root            26 Sep 18 14:55 controlCabType.json
+-rwxr-xr-x    1 1022     1024            34 Dec 30  2022 controllerType.json
+-rwxr-xr-x    1 1022     1024          4867 Dec 30  2022 default.json
+-rwxr-xr-x    1 root     root           975 Feb 19  1976 ratio_default.json
+-rwxr-xr-x    1 root     root          4539 Feb 19  1976 structure.json
+=== controllerType/version json ===
+{
+  "version":1,
+  "name":"CR5"
+}
+
+=== codesys.json path ===
+[
+    {
+        "path":"/dobot/userdata/codesys/allST/",
+        "pid":[
+            545,546,289,289,289,289,289,289,560
+        ],
+        "rev":[
+            259,259,131073,131073,131073,131073,1310

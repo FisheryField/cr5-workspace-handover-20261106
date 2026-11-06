@@ -1,0 +1,902 @@
+[
+ {
+  "x": -12,
+  "phi": 0,
+  "y": -670.22,
+  "z": 300.0,
+  "ik": 30,
+  "ok": 25,
+  "other_col": 0,
+  "note": "CONTACT-ONLY"
+ },
+ {
+  "x": -6,
+  "phi": 0,
+  "y": -670.22,
+  "z": 300.0,
+  "ik": 34,
+  "ok": 25,
+  "other_col": 0,
+  "note": "CONTACT-ONLY"
+ },
+ {
+  "x": 0,
+  "phi": 0,
+  "y": -670.22,
+  "z": 300.0,
+  "ik": 17,
+  "ok": 13,
+  "other_col": 0,
+  "note": "CONTACT-ONLY"
+ },
+ {
+  "x": 6,
+  "phi": 0,
+  "y": -670.22,
+  "z": 300.0,
+  "ik": 24,
+  "ok": 15,
+  "other_col": 0,
+  "note": "CONTACT-ONLY"
+ },
+ {
+  "x": 12,
+  "phi": 0,
+  "y": -670.22,
+  "z": 300.0,
+  "ik": 17,
+  "ok": 13,
+  "other_col": 0,
+  "note": "CONTACT-ONLY"
+ },
+ {
+  "x": 18,
+  "phi": 0,
+  "y": -670.22,
+  "z": 300.0,
+  "ik": 24,
+  "ok": 15,
+  "other_col": 0,
+  "note": "CONTACT-ONLY"
+ },
+ {
+  "x": -12,
+  "phi": 10,
+  "y": -674.56,
+  "z": 349.63,
+  "ik": 17,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": -6,
+  "phi": 10,
+  "y": -674.56,
+  "z": 349.63,
+  "ik": 20,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 0,
+  "phi": 10,
+  "y": -674.56,
+  "z": 349.63,
+  "ik": 15,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 6,
+  "phi": 10,
+  "y": -674.56,
+  "z": 349.63,
+  "ik": 20,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 12,
+  "phi": 10,
+  "y": -674.56,
+  "z": 349.63,
+  "ik": 15,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 18,
+  "phi": 10,
+  "y": -674.56,
+  "z": 349.63,
+  "ik": 24,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": -12,
+  "phi": -10,
+  "y": -674.56,
+  "z": 250.37,
+  "ik": 17,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": -6,
+  "phi": -10,
+  "y": -674.56,
+  "z": 250.37,
+  "ik": 24,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 0,
+  "phi": -10,
+  "y": -674.56,
+  "z": 250.37,
+  "ik": 17,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 6,
+  "phi": -10,
+  "y": -674.56,
+  "z": 250.37,
+  "ik": 25,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 12,
+  "phi": -10,
+  "y": -674.56,
+  "z": 250.37,
+  "ik": 21,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 18,
+  "phi": -10,
+  "y": -674.56,
+  "z": 250.37,
+  "ik": 30,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": -12,
+  "phi": 20,
+  "y": -687.45,
+  "z": 397.74,
+  "ik": 7,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": -6,
+  "phi": 20,
+  "y": -687.45,
+  "z": 397.74,
+  "ik": 8,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 0,
+  "phi": 20,
+  "y": -687.45,
+  "z": 397.74,
+  "ik": 7,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 6,
+  "phi": 20,
+  "y": -687.45,
+  "z": 397.74,
+  "ik": 8,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 12,
+  "phi": 20,
+  "y": -687.45,
+  "z": 397.74,
+  "ik": 10,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 18,
+  "phi": 20,
+  "y": -687.45,
+  "z": 397.74,
+  "ik": 8,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": -12,
+  "phi": -20,
+  "y": -687.45,
+  "z": 202.26,
+  "ik": 26,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": -6,
+  "phi": -20,
+  "y": -687.45,
+  "z": 202.26,
+  "ik": 21,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 0,
+  "phi": -20,
+  "y": -687.45,
+  "z": 202.26,
+  "ik": 21,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 6,
+  "phi": -20,
+  "y": -687.45,
+  "z": 202.26,
+  "ik": 30,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 12,
+  "phi": -20,
+  "y": -687.45,
+  "z": 202.26,
+  "ik": 21,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 18,
+  "phi": -20,
+  "y": -687.45,
+  "z": 202.26,
+  "ik": 30,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": -12,
+  "phi": 30,
+  "y": -708.51,
+  "z": 442.89,
+  "ik": 7,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": -6,
+  "phi": 30,
+  "y": -708.51,
+  "z": 442.89,
+  "ik": 8,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 0,
+  "phi": 30,
+  "y": -708.51,
+  "z": 442.89,
+  "ik": 6,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 6,
+  "phi": 30,
+  "y": -708.51,
+  "z": 442.89,
+  "ik": 6,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 12,
+  "phi": 30,
+  "y": -708.51,
+  "z": 442.89,
+  "ik": 6,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 18,
+  "phi": 30,
+  "y": -708.51,
+  "z": 442.89,
+  "ik": 6,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": -12,
+  "phi": -30,
+  "y": -708.51,
+  "z": 157.11,
+  "ik": 23,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": -6,
+  "phi": -30,
+  "y": -708.51,
+  "z": 157.11,
+  "ik": 36,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 0,
+  "phi": -30,
+  "y": -708.51,
+  "z": 157.11,
+  "ik": 32,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 6,
+  "phi": -30,
+  "y": -708.51,
+  "z": 157.11,
+  "ik": 21,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 12,
+  "phi": -30,
+  "y": -708.51,
+  "z": 157.11,
+  "ik": 30,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 18,
+  "phi": -30,
+  "y": -708.51,
+  "z": 157.11,
+  "ik": 21,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": -12,
+  "phi": 45,
+  "y": -753.92,
+  "z": 502.08,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": -6,
+  "phi": 45,
+  "y": -753.92,
+  "z": 502.08,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 0,
+  "phi": 45,
+  "y": -753.92,
+  "z": 502.08,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 6,
+  "phi": 45,
+  "y": -753.92,
+  "z": 502.08,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 12,
+  "phi": 45,
+  "y": -753.92,
+  "z": 502.08,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 18,
+  "phi": 45,
+  "y": -753.92,
+  "z": 502.08,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": -12,
+  "phi": -45,
+  "y": -753.92,
+  "z": 97.92,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": -6,
+  "phi": -45,
+  "y": -753.92,
+  "z": 97.92,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 0,
+  "phi": -45,
+  "y": -753.92,
+  "z": 97.92,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 6,
+  "phi": -45,
+  "y": -753.92,
+  "z": 97.92,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 12,
+  "phi": -45,
+  "y": -753.92,
+  "z": 97.92,
+  "ik": 18,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": 18,
+  "phi": -45,
+  "y": -753.92,
+  "z": 97.92,
+  "ik": 10,
+  "ok": 0,
+  "other_col": 0,
+  "note": "no contact registered (delta too small?)"
+ },
+ {
+  "x": -12,
+  "phi": 60,
+  "y": -813.11,
+  "z": 547.49,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": -6,
+  "phi": 60,
+  "y": -813.11,
+  "z": 547.49,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 0,
+  "phi": 60,
+  "y": -813.11,
+  "z": 547.49,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 6,
+  "phi": 60,
+  "y": -813.11,
+  "z": 547.49,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 12,
+  "phi": 60,
+  "y": -813.11,
+  "z": 547.49,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 18,
+  "phi": 60,
+  "y": -813.11,
+  "z": 547.49,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": -12,
+  "phi": -60,
+  "y": -813.11,
+  "z": 52.51,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": -6,
+  "phi": -60,
+  "y": -813.11,
+  "z": 52.51,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 0,
+  "phi": -60,
+  "y": -813.11,
+  "z": 52.51,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 6,
+  "phi": -60,
+  "y": -813.11,
+  "z": 52.51,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 12,
+  "phi": -60,
+  "y": -813.11,
+  "z": 52.51,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 18,
+  "phi": -60,
+  "y": -813.11,
+  "z": 52.51,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": -12,
+  "phi": 75,
+  "y": -882.03,
+  "z": 576.04,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": -6,
+  "phi": 75,
+  "y": -882.03,
+  "z": 576.04,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 0,
+  "phi": 75,
+  "y": -882.03,
+  "z": 576.04,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 6,
+  "phi": 75,
+  "y": -882.03,
+  "z": 576.04,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 12,
+  "phi": 75,
+  "y": -882.03,
+  "z": 576.04,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 18,
+  "phi": 75,
+  "y": -882.03,
+  "z": 576.04,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": -12,
+  "phi": -75,
+  "y": -882.03,
+  "z": 23.96,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": -6,
+  "phi": -75,
+  "y": -882.03,
+  "z": 23.96,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 0,
+  "phi": -75,
+  "y": -882.03,
+  "z": 23.96,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 6,
+  "phi": -75,
+  "y": -882.03,
+  "z": 23.96,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 12,
+  "phi": -75,
+  "y": -882.03,
+  "z": 23.96,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 18,
+  "phi": -75,
+  "y": -882.03,
+  "z": 23.96,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": -12,
+  "phi": 90,
+  "y": -956.0,
+  "z": 585.78,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": -6,
+  "phi": 90,
+  "y": -956.0,
+  "z": 585.78,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 0,
+  "phi": 90,
+  "y": -956.0,
+  "z": 585.78,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 6,
+  "phi": 90,
+  "y": -956.0,
+  "z": 585.78,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 12,
+  "phi": 90,
+  "y": -956.0,
+  "z": 585.78,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 18,
+  "phi": 90,
+  "y": -956.0,
+  "z": 585.78,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": -12,
+  "phi": -90,
+  "y": -956.0,
+  "z": 14.22,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": -6,
+  "phi": -90,
+  "y": -956.0,
+  "z": 14.22,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 0,
+  "phi": -90,
+  "y": -956.0,
+  "z": 14.22,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 6,
+  "phi": -90,
+  "y": -956.0,
+  "z": 14.22,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 12,
+  "phi": -90,
+  "y": -956.0,
+  "z": 14.22,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ },
+ {
+  "x": 18,
+  "phi": -90,
+  "y": -956.0,
+  "z": 14.22,
+  "ik": 0,
+  "ok": 0,
+  "other_col": null,
+  "note": "no IK"
+ }
+]

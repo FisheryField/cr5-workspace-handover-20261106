@@ -1,0 +1,162 @@
+﻿############ 3150  WINDOW around store 08024B04
+  08024AD0  mov        r6, r0
+  08024AD2  str.w      r6, [r5, #0xa8]
+  08024AD6  b          #0x8024ae0
+  08024AD8  ldr.w      r0, [r5, #0xa0]
+  08024ADC  str.w      r0, [r5, #0xa8]
+  08024AE0  movs       r0, #1
+  08024AE2  ldr        r1, [pc, #0xb4]
+  08024AE4  strb       r0, [r1]
+  08024AE6  ldr        r0, [pc, #0xc4]
+  08024AE8  ldrh       r0, [r0]
+  08024AEA  cmp        r0, #1
+  08024AEC  bne        #0x8024af4
+  08024AEE  movs       r0, #0
+  08024AF0  ldr        r1, [pc, #0xbc]
+  08024AF2  str        r0, [r1, #0x18]
+  08024AF4  ldr        r0, [sp, #0x14]
+  08024AF6  ldr        r0, [r0, #0x10]
+  08024AF8  ldr.w      r1, [r5, #0xa8]
+  08024AFC  add        r0, r1
+  08024AFE  ldr        r1, [pc, #0xb0]
+  08024B00  ldr        r1, [r1, #0x18]
+  08024B02  add        r1, r0
+  08024B04  str.w      r1, [sb, #0x234]  <<<
+  08024B08  ldr.w      r0, [sb, #0x234]
+  08024B0C  cmp        r0, #0
+  08024B0E  blt        #0x8024b32
+  08024B10  ldr.w      r0, [sb, #0x234]
+  08024B14  ldr        r1, [r4, #0xc]
+  08024B16  sdiv       r0, r0, r1
+  08024B1A  ldr        r1, [pc, #0x94]
+  08024B1C  str        r0, [r1, #4]
+  08024B1E  ldr.w      r0, [sb, #0x234]
+  08024B22  ldr        r1, [r4, #0xc]
+  08024B24  sdiv       r2, r0, r1
+  08024B28  mls        r0, r1, r2, r0
+  08024B2C  ldr        r1, [pc, #0x80]
+  08024B2E  str        r0, [r1]
+  08024B30  b          #0x8024b56
+  08024B32  ldr.w      r0, [sb, #0x234]
+  08024B36  ldr        r1, [r4, #0xc]
+  08024B38  sdiv       r0, r0, r1
+  08024B3C  subs       r0, r0, #1
+  08024B3E  ldr        r1, [pc, #0x70]
+  08024B40  str        r0, [r1, #4]
+
+############ 328d8  WINDOW around store 080255EC
+  080255B8  stm        r1!, {r0, r3}
+  080255BA  mla        r0, r2, r0, r1
+  080255BE  mov.w      r2, #0x20000
+  080255C2  strd       r3, r0, [sp, #8]
+  080255C6  movs       r3, #0
+  080255C8  ldrd       r0, r1, [sp, #8]
+  080255CC  bl         #0x8010222
+  080255D0  mov        r6, r0
+  080255D2  str.w      r6, [r4, #0xb0]
+  080255D6  b          #0x80255e0
+  080255D8  ldr.w      r0, [r4, #0xa8]
+  080255DC  str.w      r0, [r4, #0xb0]
+  080255E0  ldr        r0, [sp, #0x18]
+  080255E2  ldr        r0, [r0, #0x10]
+  080255E4  ldr.w      r1, [r4, #0xb0]
+  080255E8  add        r1, r0
+  080255EA  ldr        r0, [sp, #0x14]
+  080255EC  str.w      r1, [r0, #0x234]  <<<
+  080255F0  ldr        r0, [sp, #0x14]
+  080255F2  ldr.w      r1, [r0, #0x234]
+  080255F6  ldr        r0, [pc, #0x34]
+  080255F8  ldr        r2, [r0, #8]
+  080255FA  mov        r0, r8
+  080255FC  blx        r2
+  080255FE  mov        r1, r0
+  08025600  ldr        r0, [sp, #0x14]
+  08025602  str.w      r1, [r0, #0x238]
+  08025606  add        sp, #0x1c
+  08025608  pop.w      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+  0802560C  subs       r6, #0x84
+  0802560E  movs       r0, #0
+  08025610  asrs       r4, r1, #0xe
+  08025612  movs       r0, #0
+  08025614  subs       r5, #0x24
+  08025616  movs       r0, #0
+  08025618  stm        r6!, {r3, r6, r7}
+  0802561A  movs       r0, #0
+  0802561C  strb       r4, [r4, #8]
+  0802561E  movs       r0, #0
+  08025620  movs       r0, r4
+  08025622  movs       r0, #0
+  08025624  movs       r0, r2
+  08025626  movs       r0, #0
+  08025628  subs       r6, #0xd4
+  0802562A  movs       r0, #0
+
+############ normalized numeric-skeleton diff (prologue -> store)
+  =   2 lines identical
+  REPLACE 3150[2:4] add R, R, R, lsl #3 | add R, R, R, lsl #3
+       d8 [2:4] add R, R, R, lsl #2 | add R, R, R, lsl #4
+  =   2 lines identical
+  REPLACE 3150[6:9] add R, R, R | movs R, #0x2b | mul R, R, R
+       d8 [6:9] add R, R | rsb R, R, R, lsl #4 | add R, R, R, lsl #1
+  =   1 lines identical
+  DELETE 3150[10:11] rsb R, R, R, lsl #3
+       d8 [10:10] 
+  =   7 lines identical
+  REPLACE 3150[18:20] add R, R, R, lsl #3 | add R, R, R, lsl #3
+       d8 [17:19] add R, R, R, lsl #2 | add R, R, R, lsl #4
+  =   7 lines identical
+  REPLACE 3150[27:28] movs R, #0xb4
+       d8 [26:27] movs R, #0xcc
+  =   1 lines identical
+  REPLACE 3150[29:33] add R, R, R, lsl #3 | add R, R, R, lsl #3 | add R, R, R, lsl #3 | add R, R, R, lsl #3
+       d8 [28:32] add R, R, R, lsl #2 | add R, R, R, lsl #4 | add R, R, R, lsl #2 | add R, R, R, lsl #4
+  =   3 lines identical
+  REPLACE 3150[36:37] asrs R, R, #0x1f
+       d8 [35:36] asr R, R, #0x1f
+  =   4 lines identical
+  DELETE 3150[41:42] mov R, R
+       d8 [40:40] 
+  =  18 lines identical
+  REPLACE 3150[60:66] vmov R, s0 | mov R, R | vmov d9, R, R | vldr d0, [R, #0x1d4] | vmov R, R, d0 | vmov d8, R, R
+       d8 [58:62] vmov.f32 s1, #5.000000e-01 | vadd.f32 s0, s0, s1 | vcvt.s32.f32 s0, s0 | vstr s0, [R, #0x14]
+  =  14 lines identical
+  REPLACE 3150[80:86] vmov R, s0 | mov R, R | vmov d9, R, R | vldr d0, [R, #0x158] | vmov R, R, d0 | vmov d8, R, R
+       d8 [76:80] vmov.f32 s1, #5.000000e-01 | vsub.f32 s0, s0, s1 | vcvt.s32.f32 s0, s0 | vstr s0, [R, #0x14]
+  =   4 lines identical
+  REPLACE 3150[90:91] movs R, #0xb4
+       d8 [84:85] movs R, #0xcc
+  =   1 lines identical
+  INSERT 3150[92:92] 
+       d8 [86:87] mov R, #0x20000
+  =   1 lines identical
+  INSERT 3150[93:93] 
+       d8 [88:89] movw R, #0x4e20
+  =   5 lines identical
+  REPLACE 3150[98:99] asrs R, R, #0x1f
+       d8 [94:96] mov R, #0x20000 | movs R, #0
+  =   1 lines identical
+  DELETE 3150[100:105] mov R, R | mov R, R | movs R, #1 | cmp R, #1 | movs R, #0
+       d8 [97:97] 
+  =   1 lines identical
+  DELETE 3150[106:107] add R, R
+       d8 [98:98] 
+  ratio 0.702  (3150 107 / d8 98 numeric insns)
+
+python : Traceback (most recent call last):
+所在位置 行:1 字符: 153
++ ... ($false); cd D:\mydata\workspace; python tools\t2_cmp.py 2>&1 | Out-F ...
++                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\mydata\workspace\tools\t2_cmp.py", line 97, in <module>
+    field_census(t, G[t])
+    ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\mydata\workspace\tools\t2_cmp.py", line 66, in field_census
+    pm = pcref_map(t)
+  File "D:\mydata\workspace\tools\t2_cmp.py", line 54, in pcref_map
+    if i.mnemonic.startswith('ldr') and i.operands:
+                                        ^^^^^^^^^^
+  File "D:\configure\python\Lib\site-packages\capstone\__init__.py", line 782, in __getattr__
+    raise CsError(CS_ERR_DETAIL)
+capstone.CsError: Details are unavailable (CS_ERR_DETAIL)

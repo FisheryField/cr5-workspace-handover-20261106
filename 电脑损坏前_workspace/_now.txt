@@ -1,0 +1,13 @@
+=== date/uptime ===
+Fri Sep 18 16:02:08 CST 2026
+109.15 398.53
+=== SavePos ===
+-rw-r--r--    1 root     root           100 Sep 18 15:59 /home/ftp/PlcLogic/Recipe/SavePos.txt
+0000000 00 00 00 00 00 00 00 80 f2 1a b0 1b e0 b5 83 bf
+0000016 63 38 87 7b c2 70 54 bf 81 fd d8 bb fd fa 62 bf
+0000032 00 00 00 00 00 00 00 80 9e c2 2a fc 38 85 51 bf
+0000048 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=== samba/startcnt ===
+total 20
+drwxr-xr-x    5 root     root          4096 Sep 18 16:00 .
+drwxrwxr-x    9 1025     1025          4096 Sep 18 16:00 ..

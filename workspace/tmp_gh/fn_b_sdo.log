@@ -1,0 +1,60 @@
+INFO  Using log config file: jar:file:/D:/software/disassembly/ghidra/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\FisheryField\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\FisheryField\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (800 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (2102 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    D:\mydata\workspace\tools
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\software\disassembly\ghidra\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\software\disassembly\ghproj_servo_b\servo3150 (HeadlessAnalyzer)  
+INFO  Opening project: D:\software\disassembly\ghproj_servo_b\servo3150 (HeadlessProject)  
+INFO  REPORT: Processing project file: /v3150.elf (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: zf_fn.java '0801420C'  (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\mydata\workspace\tools\zf_fn.java (HeadlessAnalyzer)  
+INFO  zf_fn.java> # program=v3150.elf (GhidraScript)  
+INFO  zf_fn.java>  (GhidraScript)  
+INFO  zf_fn.java> ================================ (GhidraScript)  
+INFO  zf_fn.java> ## 0801420c -> FUN_0801420c @0801420c (GhidraScript)  
+INFO  zf_fn.java> ================================ (GhidraScript)  
+INFO  zf_fn.java> 
+void FUN_0801420c(int param_1,undefined4 param_2)
+
+{
+  *(undefined4 *)(param_1 + 0x38) = param_2;
+  return;
+}
+
+ (GhidraScript)  
+INFO  zf_fn.java> ---- listing ---- (GhidraScript)  
+INFO  zf_fn.java>    0801420c  str r1,[r0,#0x38] (GhidraScript)  
+INFO  zf_fn.java>    0801420e  bx lr (GhidraScript)  
+INFO  zf_fn.java> [zf_fn] wrote D:\mydata\workspace\tmp_gh\fn_b_sdo.txt (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /v3150.elf (HeadlessAnalyzer)  

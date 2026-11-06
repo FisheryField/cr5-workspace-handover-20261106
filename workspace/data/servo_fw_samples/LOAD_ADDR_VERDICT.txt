@@ -1,0 +1,63 @@
+==========================================================================
+M1  hex overlay  (byte-equal count at the same flash address)
+==========================================================================
+  reference : 3.1.5.hex  (1048576 data bytes)
+  reference : D8 APP hex (338072 data bytes)
+
+  D8  (3.2.D.8)  payload 338072 B (0x52898)  MD5 0f5d836c1d99998a4146b3e71e6f04ff
+      vs full 3.1.5 image @ 0x08000000 :   10730/338072 equal  =   3.1739%
+      vs full 3.1.5 image @ 0x08010000 :   18787/338072 equal  =   5.5571%
+      vs D8 APP hex       @ 0x08000000 :   10175/338072 equal  =   3.0097%
+      vs D8 APP hex       @ 0x08010000 :  338072/338072 equal  = 100.0000%
+
+  3150(3.1.5.0)  payload 328860 B (0x5049c)  MD5 f4f8d656fc02488bd946112c6130d068
+      vs full 3.1.5 image @ 0x08000000 :   13072/328860 equal  =   3.9749%
+      vs full 3.1.5 image @ 0x08010000 :  328860/328860 equal  = 100.0000%
+      vs D8 APP hex       @ 0x08000000 :   10504/328860 equal  =   3.1941%
+      vs D8 APP hex       @ 0x08010000 :   18692/328860 equal  =   5.6839%
+
+==========================================================================
+M2  region check  (what FoE is allowed to overwrite)
+==========================================================================
+  D8  (3.2.D.8) : needs 0x52898 bytes
+  3150(3.1.5.0) : needs 0x5049c bytes
+  bootloader occupies 0x08000000..0x08002897  (independent of the
+  FoE application region 0x08010000..)
+    if base = 0x08000000 -> image spans 0x08000000..0x08052897  OVERWRITES BOOTLOADER
+    if base = 0x08010000 -> image spans 0x08010000..0x08062897  OK
+    if base = 0x08000000 -> image spans 0x08000000..0x0805049b  OVERWRITES BOOTLOADER
+    if base = 0x08010000 -> image spans 0x08010000..0x0806049b  OK
+
+==========================================================================
+M3  reset vector decode  (must be real code at exactly one base)
+==========================================================================
+  D8  (3.2.D.8)  SP=0x20017f70  Reset=0x0801019d (thumb bit set: True)
+      base 0x08000000 -> offset 0x1019c : ble #0x80101a6 | vldr s0, [r4, #0x5c] | vmov.f32 s24, s0 | vldr s0, [r4, #0x48]
+         (undecodable in first 4: 1)
+      base 0x08010000 -> offset 0x0019c : ldr r0, [pc, #0x18] | blx r0 | ldr r0, [pc, #0x18] | bx r0
+         (undecodable in first 4: 0)
+      base 0x08000000 : vector entries outside image = 0/15 
+      base 0x08010000 : vector entries outside image = 0/15 
+
+  3150(3.1.5.0)  SP=0x20017a40  Reset=0x0801019d (thumb bit set: True)
+      base 0x08000000 -> offset 0x1019c : .byte 0xfc, 0xf8 | mls r0, ip, r8, r0 | str r0, [r1, #0x74] | nop 
+         (undecodable in first 4: 1)
+      base 0x08010000 -> offset 0x0019c : ldr r0, [pc, #0x18] | blx r0 | ldr r0, [pc, #0x18] | bx r0
+         (undecodable in first 4: 0)
+      base 0x08000000 : vector entries outside image = 0/15 
+      base 0x08010000 : vector entries outside image = 0/15 
+
+==========================================================================
+VERDICT
+==========================================================================
+  M1 : 3150 payload vs 3.1.5.0 full flash -> 100.0000% at 0x08010000,
+       4.0% at 0x08000000  (4% = coincidental zero/FF agreement only)
+  M2 : 0x08000000 would erase the bootloader; FoE cannot do that
+  M3 : reset vector decodes cleanly only at 0x08010000
+  => both payloads load at 0x08010000.  The manifest value is RIGHT
+     and the earlier 0x08000000 conclusion is WRONG.
+
+  CONSEQUENCE for the patch: payload offset is unchanged (0x14AFE was
+  found by byte pattern, not by address arithmetic), but its flash
+  address relabels 0x08014AFE -> 0x08024AFE, and every disassembly
+  address in the session notes shifts by +0x10000.

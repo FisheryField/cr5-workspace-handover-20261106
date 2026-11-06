@@ -1,0 +1,73 @@
+--- controller alarm 96 ---
+    "id": 96,
+    "level": 0,
+    "en": {
+      "description": "Joint1 status is wrong ",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+--- controller alarm 99 ---
+    "id": 99,
+    "level": 0,
+    "en": {
+      "description": "Joint2 status is wrong",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+--- controller alarm 102 ---
+    "id": 102,
+    "level": 0,
+    "en": {
+      "description": "Joint3 status is wrong ",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+--- controller alarm 105 ---
+    "id": 105,
+    "level": 0,
+    "en": {
+      "description": "Joint4 status is wrong ",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+--- controller alarm 108 ---
+    "id": 108,
+    "level": 0,
+    "en": {
+      "description": "Joint5 status is wrong ",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+--- controller alarm 111 ---
+    "id": 111,
+    "level": 0,
+    "en": {
+      "description": "Joint6 status is wrong ",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+--- controller alarm 131 ---
+    "id": 131,
+    "level": 0,
+    "en": {
+      "description": "Terminal IO board offline",
+      "cause": "",
+      "solution": "Check whether the hardware is working properly, and restart the controller， or contact technical support engineer"
+    },
+--- controller alarm 12294 ---
+    "id": 12294,
+    "level": 0,
+    "en": {
+      "description": "Axis5 not in Bus Mode",
+      "cause": "",
+      "solution": "System error, please contact technical support engineer"
+    },
+=== servo alarm 60948 ===
+    "id": 60948,
+    "level": 0,
+    "en": {
+      "description": "Not in OP state, in SAFEOP state, the system will try to switch from station to Op.",
+      "cause": "",
+      "solution": "Check whether the hardware is working properly, and restart the controller， or contact technical support engineer."
+    },
+=== servo alarm 0xEE14 / ee14 ===

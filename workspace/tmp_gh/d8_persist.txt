@@ -1,0 +1,437 @@
+# program=v328d8.elf  imageBase=00000000  lang=ARM:LE:32:Cortex
+### const 0xbe6d4a8b  (flash log record magic)
+    hit 08001854  [.text]
+      refFrom 0800180a  FUN_080017d0@080017d0
+
+### const 0xa1b2c3d4  (param block magic)
+    hit 080017c0  [.text]
+      refFrom 0800171a  FUN_08001708@08001708
+    hit .header::00000000  [.header]
+      refFrom _elfSectionHeaders::0000005c  (no func)
+
+### const 0x45670123  (FLASH_KEY1)
+    hit 08004508  [.text]
+      refFrom 080044f6  FUN_080044ec@080044ec
+
+### const 0xcdef89ab  (FLASH_KEY2)
+    hit 0800450c  [.text]
+      refFrom 080044fe  FUN_080044ec@080044ec
+
+### const 0x40023c00  (FLASH reg base)
+    hit 0800435c  [.text]
+      refFrom 0800433e  FUN_0800433c@0800433c
+      refFrom 08004346  FUN_0800433c@0800433c
+      refFrom 0800434c  FUN_0800433c@0800433c
+      refFrom 08004354  FUN_0800433c@0800433c
+    hit 0800a928  [.text]
+      (no references recorded)
+
+### const 0x0800c000  (log area / param save area start)
+    hit 08001858  [.text]
+      refFrom 0800181a  FUN_08001818@08001818
+    hit 08001894  [.text]
+      refFrom 0800186a  FUN_0800185c@0800185c
+    hit 08009c74  [.text]
+      refFrom 08009c0e  FUN_08009bf8@08009bf8
+
+### const 0x08080000  (log high-water mark)
+    hit 080017cc  [.text]
+      refFrom 080017a6  FUN_0800179e@0800179e
+    hit 0800184c  [.text]
+      refFrom 080017e0  FUN_080017d0@080017d0
+      refFrom 080017ec  FUN_080017d0@080017d0
+    hit 08001898  [.text]
+      refFrom 08001874  FUN_0800185c@0800185c
+      refFrom 08001884  FUN_0800185c@0800185c
+    hit 08009c88  [.text]
+      refFrom 08009c40  FUN_08009bf8@08009bf8
+    hit 08026e52  [.text]
+      (no references recorded)
+    hit 0802703e  [.text]
+      (no references recorded)
+    hit 080270aa  [.text]
+      (no references recorded)
+    hit 0802710a  [.text]
+      (no references recorded)
+    hit 0802714e  [.text]
+      (no references recorded)
+    hit 080271d6  [.text]
+      (no references recorded)
+    hit 08027242  [.text]
+      (no references recorded)
+    hit 0802737a  [.text]
+      (no references recorded)
+    hit 080273be  [.text]
+      (no references recorded)
+    hit 080273e6  [.text]
+      (no references recorded)
+    hit 0802746e  [.text]
+      (no references recorded)
+    hit 080276b6  [.text]
+      (no references recorded)
+    hit 080276fa  [.text]
+      (no references recorded)
+    hit 0802776e  [.text]
+      (no references recorded)
+    hit 080279ae  [.text]
+      (no references recorded)
+
+
+================================================================================
+## requested 0x08001708  addr=08001708 -> FUN_08001708 entry=08001708
+================================================================================
+
+undefined4 FUN_08001708(int *param_1,uint param_2)
+
+{
+  undefined4 uVar1;
+  uint uVar2;
+  uint uVar3;
+  
+  if (*DAT_080017bc == '\0') {
+    if ((param_2 < 0x20) || (*param_1 != DAT_080017c0)) {
+      return 0x800d;
+    }
+    FUN_080002e6(DAT_080017c4,param_1,0x20);
+    *DAT_080017bc = '\x01';
+    param_1 = param_1 + 8;
+    param_2 = param_2 - 0x20 & 0xffff;
+  }
+  for (uVar2 = 0; (int)uVar2 < (int)param_2; uVar2 = uVar2 + 4 & 0xffff) {
+    FUN_0800449c(*DAT_080017c8,*param_1);
+    *DAT_080017c8 = *DAT_080017c8 + 4;
+    param_1 = param_1 + 1;
+  }
+  uVar2 = param_2 + ((int)(param_2 + ((uint)((int)param_2 >> 0x1f) >> 0x1e)) >> 2) * -4 & 0xffff;
+  if (uVar2 != 0) {
+    for (uVar3 = 0; uVar3 < uVar2; uVar3 = uVar3 + 1 & 0xffff) {
+      FUN_08004450(*DAT_080017c8,(char)*param_1);
+      *DAT_080017c8 = *DAT_080017c8 + 1;
+      param_1 = (int *)((int)param_1 + 1);
+    }
+  }
+  if ((uint)(*DAT_080017c8 - DAT_080017cc) < *(uint *)(DAT_080017c4 + 0x14)) {
+    uVar1 = 0;
+  }
+  else {
+    uVar1 = FUN_080017d0();
+  }
+  return uVar1;
+}
+
+
+---- listing ----
+   08001708  push {r4,r5,r6,r7,r8,lr}
+   0800170c  mov r5,r0
+   0800170e  mov r4,r1
+   08001710  ldr r0,[0x080017bc]
+   08001712  ldrb r0,[r0,#0x0]
+   08001714  cbnz r0,0x08001744
+   08001716  cmp r4,#0x20
+   08001718  bcc 0x0800173c
+   0800171a  ldr r1,[0x080017c0]
+   0800171c  ldr r0,[r5,#0x0]
+   0800171e  cmp r0,r1
+   08001720  bne 0x0800173c
+   08001722  movs r2,#0x20
+   08001724  mov r1,r5
+   08001726  ldr r0,[0x080017c4]
+   08001728  bl 0x080002e6
+   0800172c  movs r0,#0x1
+   0800172e  ldr r1,[0x080017bc]
+   08001730  strb r0,[r1,#0x0]
+   08001732  adds r5,#0x20
+   08001734  sub.w r0,r4,#0x20
+   08001738  uxth r4,r0
+   0800173a  b 0x08001744
+   0800173c  movw r0,#0x800d
+
+================================================================================
+## requested 0x080017D0  addr=080017d0 -> FUN_080017d0 entry=080017d0
+================================================================================
+
+undefined4 FUN_080017d0(void)
+
+{
+  ushort uVar1;
+  int iVar2;
+  undefined4 uVar3;
+  undefined1 *puVar4;
+  undefined1 auStack_84 [88];
+  undefined1 local_2c [16];
+  int local_1c;
+  undefined4 local_18;
+  
+  FUN_08000318(local_2c,0x18);
+  local_1c = *DAT_08001848 - DAT_0800184c;
+  FUN_08006b10(auStack_84);
+  FUN_08007308(auStack_84,DAT_0800184c,local_1c);
+  FUN_08006abc(auStack_84,local_2c);
+  iVar2 = FUN_0800033c(local_2c,DAT_08001850,0x10);
+  if (iVar2 == 0) {
+    local_18 = DAT_08001854;
+    puVar4 = local_2c;
+    iVar2 = DAT_08001858;
+    for (uVar1 = 0; uVar1 < 0x18; uVar1 = uVar1 + 1) {
+      FUN_08004450(iVar2,*puVar4);
+      iVar2 = iVar2 + 1;
+      puVar4 = puVar4 + 1;
+    }
+    FUN_0800433c(1);
+    FUN_0800443c();
+    uVar3 = 0x7ffc;
+  }
+  else {
+    uVar3 = 0x800d;
+  }
+  return uVar3;
+}
+
+
+---- listing ----
+   080017d0  push {r4,r5,r6,r7,lr}
+   080017d2  sub sp,#0x74
+   080017d4  movs r1,#0x18
+   080017d6  add r0,sp,#0x5c
+   080017d8  bl 0x08000318
+   080017dc  ldr r0,[0x08001848]
+   080017de  ldr r0,[r0,#0x0]
+   080017e0  ldr r1,[0x0800184c]
+   080017e2  subs r0,r0,r1
+   080017e4  str r0,[sp,#0x6c]
+   080017e6  add r0,sp,#0x4
+   080017e8  bl 0x08006b10
+   080017ec  ldr r1,[0x0800184c]
+   080017ee  add r0,sp,#0x4
+   080017f0  ldr r2,[sp,#0x6c]
+   080017f2  bl 0x08007308
+   080017f6  add r1,sp,#0x5c
+   080017f8  add r0,sp,#0x4
+   080017fa  bl 0x08006abc
+   080017fe  movs r2,#0x10
+   08001800  ldr r1,[0x08001850]
+   08001802  add r0,sp,#0x5c
+   08001804  bl 0x0800033c
+   08001808  cbnz r0,0x08001810
+   0800180a  ldr r0,[0x08001854]
+   0800180c  str r0,[sp,#0x70]
+   0800180e  b 0x08001818
+   08001810  movw r0,#0x800d
+
+================================================================================
+## requested 0x0800185C  addr=0800185c -> FUN_0800185c entry=0800185c
+================================================================================
+
+undefined4 FUN_0800185c(void)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  
+  FUN_080044ec();
+  FUN_08004c3c(DAT_08001894,0x4000);
+  iVar1 = FUN_08004c3c(DAT_08001898,0x80000);
+  if (iVar1 == 0) {
+    *DAT_0800189c = DAT_08001898;
+    uVar2 = 0;
+    *DAT_080018a0 = 0;
+  }
+  else {
+    uVar2 = 0x800b;
+  }
+  return uVar2;
+}
+
+
+---- listing ----
+   0800185c  push {r4,r5,r6,lr}
+   0800185e  mov r5,r0
+   08001860  movs r4,#0x0
+   08001862  bl 0x080044ec
+   08001866  mov.w r1,#0x4000
+   0800186a  ldr r0,[0x08001894]
+   0800186c  bl 0x08004c3c
+   08001870  mov.w r1,#0x80000
+   08001874  ldr r0,[0x08001898]
+   08001876  bl 0x08004c3c
+   0800187a  mov r4,r0
+   0800187c  cbz r4,0x08001884
+   0800187e  movw r0,#0x800b
+   08001884  ldr r0,[0x08001898]
+   08001886  ldr r1,[0x0800189c]
+   08001888  str r0,[r1,#0x0]
+   0800188a  movs r0,#0x0
+   0800188c  ldr r1,[0x080018a0]
+   0800188e  strb r0,[r1,#0x0]
+   08001890  nop
+   08001892  b 0x08001882
+
+================================================================================
+## requested 0x080044EC  addr=080044ec -> FUN_080044ec entry=080044ec
+================================================================================
+
+void FUN_080044ec(void)
+
+{
+  uint *puVar1;
+  
+  if ((*DAT_08004504 & 0x80000000) != 0) {
+    puVar1 = DAT_08004504 + -3;
+    *puVar1 = DAT_08004508;
+    *puVar1 = DAT_0800450c;
+  }
+  return;
+}
+
+
+---- listing ----
+   080044ec  ldr r0,[0x08004504]
+   080044ee  ldr r0,[r0,#0x0]
+   080044f0  and r0,r0,#0x80000000
+   080044f4  cbz r0,0x08004502
+   080044f6  ldr r0,[0x08004508]
+   080044f8  ldr r1,[0x08004504]
+   080044fa  subs r1,#0xc
+   080044fc  str r0,[r1,#0x0]
+   080044fe  ldr r0,[0x0800450c]
+   08004500  str r0,[r1,#0x0]
+   08004502  bx lr
+
+================================================================================
+## requested 0x0800433C  addr=0800433c -> FUN_0800433c entry=0800433c
+================================================================================
+
+void FUN_0800433c(int param_1)
+
+{
+  if (param_1 == 0) {
+    *DAT_0800435c = *DAT_0800435c & 0xfffffbff;
+  }
+  else {
+    *DAT_0800435c = *DAT_0800435c | 0x400;
+  }
+  return;
+}
+
+
+---- listing ----
+   0800433c  cbz r0,0x0800434c
+   0800433e  ldr r1,[0x0800435c]
+   08004340  ldr r1,[r1,#0x0]
+   08004342  orr r1,r1,#0x400
+   08004346  ldr r2,[0x0800435c]
+   08004348  str r1,[r2,#0x0]
+   0800434a  b 0x08004358
+   0800434c  ldr r1,[0x0800435c]
+   0800434e  ldr r1,[r1,#0x0]
+   08004350  bic r1,r1,#0x400
+   08004354  ldr r2,[0x0800435c]
+   08004356  str r1,[r2,#0x0]
+
+================================================================================
+## requested 0x08009BF8  addr=08009bf8 -> FUN_08009bf8 entry=08009bf8
+================================================================================
+
+undefined4 FUN_08009bf8(uint param_1)
+
+{
+  undefined4 uVar1;
+  
+  if (param_1 < DAT_08009c6c) {
+    uVar1 = 0;
+  }
+  else if (param_1 < DAT_08009c70) {
+    uVar1 = 8;
+  }
+  else if (param_1 < DAT_08009c74) {
+    uVar1 = 0x10;
+  }
+  else if (param_1 < DAT_08009c78) {
+    uVar1 = 0x18;
+  }
+  else if (param_1 < DAT_08009c7c) {
+    uVar1 = 0x20;
+  }
+  else if (param_1 < DAT_08009c80) {
+    uVar1 = 0x28;
+  }
+  else if (param_1 < DAT_08009c84) {
+    uVar1 = 0x30;
+  }
+  else if (param_1 < DAT_08009c88) {
+    uVar1 = 0x38;
+  }
+  else if (param_1 < DAT_08009c8c) {
+    uVar1 = 0x40;
+  }
+  else if (param_1 < DAT_08009c90) {
+    uVar1 = 0x48;
+  }
+  else if (param_1 < DAT_08009c94) {
+    uVar1 = 0x50;
+  }
+  else {
+    uVar1 = 0x58;
+  }
+  return uVar1;
+}
+
+
+---- listing ----
+   08009bf8  mov r1,r0
+   08009bfa  ldr r0,[0x08009c6c]
+   08009bfc  cmp r1,r0
+   08009bfe  bcs 0x08009c04
+   08009c00  movs r0,#0x0
+   08009c04  ldr r0,[0x08009c70]
+   08009c06  cmp r1,r0
+   08009c08  bcs 0x08009c0e
+   08009c0a  movs r0,#0x8
+   08009c0c  b 0x08009c02
+   08009c0e  ldr r0,[0x08009c74]
+   08009c10  cmp r1,r0
+   08009c12  bcs 0x08009c18
+   08009c14  movs r0,#0x10
+   08009c16  b 0x08009c02
+   08009c18  ldr r0,[0x08009c78]
+   08009c1a  cmp r1,r0
+   08009c1c  bcs 0x08009c22
+   08009c1e  movs r0,#0x18
+   08009c20  b 0x08009c02
+   08009c22  ldr r0,[0x08009c7c]
+   08009c24  cmp r1,r0
+   08009c26  bcs 0x08009c2c
+   08009c28  movs r0,#0x20
+   08009c2a  b 0x08009c02
+   08009c2c  ldr r0,[0x08009c80]
+   08009c2e  cmp r1,r0
+   08009c30  bcs 0x08009c36
+   08009c32  movs r0,#0x28
+   08009c34  b 0x08009c02
+   08009c36  ldr r0,[0x08009c84]
+   08009c38  cmp r1,r0
+   08009c3a  bcs 0x08009c40
+   08009c3c  movs r0,#0x30
+   08009c3e  b 0x08009c02
+   08009c40  ldr r0,[0x08009c88]
+   08009c42  cmp r1,r0
+   08009c44  bcs 0x08009c4a
+   08009c46  movs r0,#0x38
+   08009c48  b 0x08009c02
+   08009c4a  ldr r0,[0x08009c8c]
+   08009c4c  cmp r1,r0
+   08009c4e  bcs 0x08009c54
+   08009c50  movs r0,#0x40
+   08009c52  b 0x08009c02
+   08009c54  ldr r0,[0x08009c90]
+   08009c56  cmp r1,r0
+   08009c58  bcs 0x08009c5e
+   08009c5a  movs r0,#0x48
+   08009c5c  b 0x08009c02
+   08009c5e  ldr r0,[0x08009c94]
+   08009c60  cmp r1,r0
+   08009c62  bcs 0x08009c68
+   08009c64  movs r0,#0x50
+   08009c66  b 0x08009c02
+   08009c68  movs r0,#0x58
+   08009c6a  b 0x08009c02

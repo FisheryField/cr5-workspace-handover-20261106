@@ -1,0 +1,31 @@
+# amscan anchors: <hex file_offset> <len> <hexbytes>
+# offset 0 => "base" column equals the hit address (we search for values, not for
+# a relocated image).
+#
+# Purpose: locate the master's EtherCAT TxPDO input image in codesyscontrol.
+#
+# Why these bytes:
+#   0x6075 (motor rated current) and 0x6076 (motor rated torque) are per-drive
+#   CONSTANTS and they are adjacent mapped entries in every slave's TxPDO block.
+#   Measured by SDO on 2026-09-24 15:58:
+#       J6 (slave 8, 3.1.5.0):  0x6075 = 2800 = 0x0AF0 , 0x6076 = 300  = 0x012C
+#       J1 (slave 3, 3.2.D.8):  0x6075 = 17500 = 0x445C, 0x6076 = 2000 = 0x07D0
+#   so the two pairs are different -> each anchor should hit exactly ONE slave
+#   block, and if both hit the same buffer we have the whole TxPDO image.
+#
+# In J6's 24-entry TxPDO block, byte offsets are:
+#   0x6041 (2) @0    0x6061 (1) @2   0x6064 (4) @3    0x606C (4) @7
+#   0x6077 (2) @11   0x6075 (4) @13  0x6076 (4) @17   0x603F (2) @21
+#   0x6079 (4) @23   0x6078 (2) @27  0x5000:01 (2) @29 ... 0x5001:06 (4) @41
+#   0x5001:07 (4) @45  0x5001:10 (4) @49  0x5002:03 (4) @53
+#   0x5002:04 (4) @57  0x5002:06 (2) @61  0x606B (4) @63  0x6062 (4) @67   = 71 B
+# so once we find the 0x6075 pair at address A, the block base is A-13 and the
+# position slot to examine is A-13+3 = A-10.
+0 8 f00a00002c010000
+0 8 5c440000d0070000
+# fallback / second opinion: the 0x5000:06|0x5000:07 (=version word 0x3150) pair
+# of slave 8, at block offsets 35..38
+0 6 003a005031
+# same trick for a D8 axis: 0x5000:07 = 13016 = 0x32D8
+0 2 5031
+0 2 d832

@@ -1,0 +1,424 @@
+round=1 t=7478.00 region=1 name=/SYSV13039711 diffs=7 pages=1 first=336031 last=336076
+    pages: 82:7 
+    firstchange_at_round=1 t=7478.00
+round=1 t=7478.00 region=6 name=/SYSVe901001b diffs=87 pages=2 first=269849 last=547438
+    pages: 65:2 133:85 
+    firstchange_at_round=1 t=7478.00
+round=2 t=7478.98 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=2 t=7478.98 region=6 name=/SYSVe901001b diffs=77 pages=3 first=269849 last=547438
+    pages: 65:2 132:6 133:69 
+round=3 t=7479.83 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=3 t=7479.83 region=6 name=/SYSVe901001b diffs=59 pages=3 first=269849 last=547438
+    pages: 65:2 132:5 133:52 
+round=4 t=7480.69 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=4 t=7480.69 region=6 name=/SYSVe901001b diffs=81 pages=3 first=269849 last=547447
+    pages: 65:3 132:4 133:74 
+round=5 t=7481.58 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=5 t=7481.58 region=6 name=/SYSVe901001b diffs=74 pages=3 first=269849 last=547438
+    pages: 65:3 132:5 133:66 
+round=6 t=7482.44 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=6 t=7482.44 region=2 name=/SYSV18039711 diffs=1 pages=1 first=157334 last=157334
+    pages: 38:1 
+    firstchange_at_round=6 t=7482.44
+round=6 t=7482.44 region=6 name=/SYSVe901001b diffs=70 pages=3 first=269849 last=547438
+    pages: 65:3 132:3 133:64 
+round=7 t=7483.34 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=7 t=7483.34 region=6 name=/SYSVe901001b diffs=86 pages=3 first=269849 last=547438
+    pages: 65:3 132:3 133:80 
+round=8 t=7484.17 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=8 t=7484.17 region=6 name=/SYSVe901001b diffs=300 pages=3 first=269261 last=547702
+    pages: 65:4 132:18 133:278 
+round=9 t=7485.02 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=9 t=7485.02 region=6 name=/SYSVe901001b diffs=441 pages=3 first=269849 last=547701
+    pages: 65:3 132:53 133:385 
+round=10 t=7485.89 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=10 t=7485.89 region=6 name=/SYSVe901001b diffs=433 pages=3 first=269849 last=547701
+    pages: 65:3 132:50 133:380 
+round=11 t=7486.77 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=11 t=7486.77 region=6 name=/SYSVe901001b diffs=449 pages=3 first=269849 last=547701
+    pages: 65:3 132:55 133:391 
+round=12 t=7487.64 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=12 t=7487.64 region=6 name=/SYSVe901001b diffs=434 pages=3 first=269849 last=547701
+    pages: 65:3 132:52 133:379 
+round=13 t=7488.48 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=13 t=7488.48 region=6 name=/SYSVe901001b diffs=454 pages=4 first=266237 last=547701
+    pages: 64:1 65:3 132:54 133:396 
+round=14 t=7489.33 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=14 t=7489.33 region=6 name=/SYSVe901001b diffs=567 pages=4 first=266237 last=547701
+    pages: 64:1 65:3 132:75 133:488 
+round=15 t=7490.22 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=15 t=7490.22 region=6 name=/SYSVe901001b diffs=515 pages=4 first=266237 last=547701
+    pages: 64:1 65:3 132:67 133:444 
+round=16 t=7491.09 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=16 t=7491.09 region=6 name=/SYSVe901001b diffs=513 pages=4 first=266237 last=547701
+    pages: 64:1 65:3 132:67 133:442 
+round=17 t=7491.96 region=1 name=/SYSV13039711 diffs=7 pages=1 first=336027 last=336076
+    pages: 82:7 
+round=17 t=7491.96 region=6 name=/SYSVe901001b diffs=524 pages=4 first=266237 last=547701
+    pages: 64:1 65:3 132:67 133:453 
+round=18 t=7492.83 region=1 name=/SYSV13039711 diffs=7 pages=1 first=336027 last=336076
+    pages: 82:7 
+round=18 t=7492.83 region=6 name=/SYSVe901001b diffs=518 pages=4 first=266237 last=547701
+    pages: 64:1 65:3 132:67 133:447 
+round=19 t=7493.68 region=1 name=/SYSV13039711 diffs=8 pages=1 first=336027 last=336076
+    pages: 82:8 
+round=19 t=7493.68 region=6 name=/SYSVe901001b diffs=521 pages=4 first=266237 last=547701
+    pages: 64:1 65:3 132:67 133:450 
+round=20 t=7494.56 region=1 name=/SYSV13039711 diffs=7 pages=1 first=336027 last=336076
+    pages: 82:7 
+round=20 t=7494.56 region=6 name=/SYSVe901001b diffs=506 pages=4 first=266237 last=547701
+    pages: 64:1 65:3 132:64 133:438 
+round=21 t=7495.42 region=1 name=/SYSV13039711 diffs=7 pages=1 first=336027 last=336076
+    pages: 82:7 
+round=21 t=7495.42 region=6 name=/SYSVe901001b diffs=643 pages=4 first=266237 last=547702
+    pages: 64:1 65:3 132:106 133:533 
+round=22 t=7496.28 region=1 name=/SYSV13039711 diffs=8 pages=1 first=336027 last=336076
+    pages: 82:8 
+round=22 t=7496.28 region=4 name=/SYSV18039711 diffs=1 pages=1 first=157334 last=157334
+    pages: 38:1 
+    firstchange_at_round=22 t=7496.28
+round=22 t=7496.28 region=6 name=/SYSVe901001b diffs=672 pages=4 first=266237 last=547701
+    pages: 64:1 65:3 132:112 133:556 
+round=23 t=7497.19 region=1 name=/SYSV13039711 diffs=7 pages=1 first=336027 last=336076
+    pages: 82:7 
+round=23 t=7497.19 region=6 name=/SYSVe901001b diffs=642 pages=4 first=266237 last=547701
+    pages: 64:1 65:3 132:112 133:526 
+round=24 t=7498.07 region=1 name=/SYSV13039711 diffs=7 pages=1 first=336027 last=336076
+    pages: 82:7 
+round=24 t=7498.07 region=6 name=/SYSVe901001b diffs=499 pages=3 first=269849 last=547700
+    pages: 65:3 132:56 133:440 
+round=25 t=7498.99 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=25 t=7498.99 region=6 name=/SYSVe901001b diffs=430 pages=3 first=269849 last=547700
+    pages: 65:3 132:52 133:375 
+round=26 t=7499.85 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=26 t=7499.85 region=6 name=/SYSVe901001b diffs=435 pages=3 first=269849 last=547700
+    pages: 65:3 132:47 133:385 
+round=27 t=7500.71 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=27 t=7500.71 region=6 name=/SYSVe901001b diffs=433 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:385 
+round=28 t=7501.54 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=28 t=7501.54 region=6 name=/SYSVe901001b diffs=433 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:385 
+round=29 t=7502.39 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=29 t=7502.39 region=6 name=/SYSVe901001b diffs=423 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:375 
+round=30 t=7503.27 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=30 t=7503.27 region=6 name=/SYSVe901001b diffs=425 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:376 
+round=31 t=7504.13 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=31 t=7504.13 region=6 name=/SYSVe901001b diffs=418 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:370 
+round=32 t=7504.99 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=32 t=7504.99 region=6 name=/SYSVe901001b diffs=422 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:373 
+round=33 t=7505.86 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=33 t=7505.86 region=6 name=/SYSVe901001b diffs=429 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:381 
+round=34 t=7506.72 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=34 t=7506.72 region=6 name=/SYSVe901001b diffs=430 pages=3 first=269849 last=547700
+    pages: 65:3 132:44 133:383 
+round=35 t=7507.62 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=35 t=7507.62 region=6 name=/SYSVe901001b diffs=428 pages=3 first=269849 last=547700
+    pages: 65:3 132:47 133:378 
+round=36 t=7508.54 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=36 t=7508.54 region=6 name=/SYSVe901001b diffs=433 pages=3 first=269849 last=547700
+    pages: 65:3 132:47 133:383 
+round=37 t=7509.49 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=37 t=7509.49 region=6 name=/SYSVe901001b diffs=423 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:375 
+round=38 t=7510.35 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=38 t=7510.35 region=6 name=/SYSVe901001b diffs=421 pages=3 first=269849 last=547700
+    pages: 65:3 132:44 133:374 
+round=39 t=7511.22 region=1 name=/SYSV13039711 diffs=7 pages=1 first=336031 last=336076
+    pages: 82:7 
+round=39 t=7511.22 region=6 name=/SYSVe901001b diffs=432 pages=3 first=269849 last=547700
+    pages: 65:3 132:42 133:387 
+round=40 t=7512.08 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=40 t=7512.08 region=6 name=/SYSVe901001b diffs=424 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:376 
+round=41 t=7512.96 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=41 t=7512.96 region=6 name=/SYSVe901001b diffs=423 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:374 
+round=42 t=7513.79 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=42 t=7513.79 region=6 name=/SYSVe901001b diffs=425 pages=3 first=269849 last=547700
+    pages: 65:3 132:44 133:378 
+round=43 t=7514.67 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=43 t=7514.67 region=6 name=/SYSVe901001b diffs=418 pages=3 first=269849 last=547700
+    pages: 65:3 132:48 133:367 
+round=44 t=7515.54 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=44 t=7515.54 region=6 name=/SYSVe901001b diffs=409 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:361 
+round=45 t=7516.48 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=45 t=7516.48 region=6 name=/SYSVe901001b diffs=425 pages=3 first=269849 last=547700
+    pages: 65:3 132:47 133:375 
+round=46 t=7517.37 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=46 t=7517.37 region=6 name=/SYSVe901001b diffs=425 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:377 
+round=47 t=7518.24 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=47 t=7518.24 region=6 name=/SYSVe901001b diffs=421 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:373 
+round=48 t=7519.13 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=48 t=7519.13 region=6 name=/SYSVe901001b diffs=423 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:374 
+round=49 t=7519.99 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=49 t=7519.99 region=6 name=/SYSVe901001b diffs=415 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:366 
+round=50 t=7520.85 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=50 t=7520.85 region=6 name=/SYSVe901001b diffs=436 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:388 
+round=51 t=7521.76 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=51 t=7521.76 region=6 name=/SYSVe901001b diffs=433 pages=3 first=269849 last=547700
+    pages: 65:3 132:48 133:382 
+round=52 t=7522.66 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=52 t=7522.66 region=6 name=/SYSVe901001b diffs=429 pages=3 first=269849 last=547700
+    pages: 65:3 132:44 133:382 
+round=53 t=7523.53 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=53 t=7523.53 region=6 name=/SYSVe901001b diffs=430 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:381 
+round=54 t=7524.44 region=1 name=/SYSV13039711 diffs=7 pages=1 first=336027 last=336076
+    pages: 82:7 
+round=54 t=7524.44 region=6 name=/SYSVe901001b diffs=433 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:385 
+round=55 t=7525.30 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=55 t=7525.30 region=6 name=/SYSVe901001b diffs=432 pages=3 first=269849 last=547700
+    pages: 65:3 132:43 133:386 
+round=56 t=7526.15 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=56 t=7526.15 region=6 name=/SYSVe901001b diffs=434 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:386 
+round=57 t=7527.00 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=57 t=7527.00 region=6 name=/SYSVe901001b diffs=423 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:374 
+round=58 t=7527.89 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=58 t=7527.89 region=6 name=/SYSVe901001b diffs=424 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:376 
+round=59 t=7528.77 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=59 t=7528.77 region=6 name=/SYSVe901001b diffs=428 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:380 
+round=60 t=7529.68 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=60 t=7529.68 region=6 name=/SYSVe901001b diffs=435 pages=3 first=269849 last=547700
+    pages: 65:3 132:44 133:388 
+round=61 t=7530.55 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=61 t=7530.55 region=2 name=/SYSV18039711 diffs=1 pages=1 first=145 last=145
+    pages: 0:1 
+round=61 t=7530.55 region=6 name=/SYSVe901001b diffs=423 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:375 
+round=62 t=7531.45 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=62 t=7531.45 region=6 name=/SYSVe901001b diffs=424 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:375 
+round=63 t=7532.27 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=63 t=7532.27 region=6 name=/SYSVe901001b diffs=432 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:383 
+round=64 t=7533.13 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=64 t=7533.13 region=6 name=/SYSVe901001b diffs=435 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:386 
+round=65 t=7534.03 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=65 t=7534.03 region=6 name=/SYSVe901001b diffs=422 pages=3 first=269849 last=547700
+    pages: 65:3 132:44 133:375 
+round=66 t=7534.92 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=66 t=7534.92 region=6 name=/SYSVe901001b diffs=424 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:375 
+round=67 t=7535.79 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=67 t=7535.79 region=6 name=/SYSVe901001b diffs=439 pages=3 first=269849 last=547700
+    pages: 65:3 132:47 133:389 
+round=68 t=7536.66 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=68 t=7536.66 region=6 name=/SYSVe901001b diffs=427 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:379 
+round=69 t=7537.49 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=69 t=7537.49 region=6 name=/SYSVe901001b diffs=420 pages=3 first=269849 last=547700
+    pages: 65:3 132:43 133:374 
+round=70 t=7538.40 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=70 t=7538.40 region=6 name=/SYSVe901001b diffs=432 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:384 
+round=71 t=7539.28 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=71 t=7539.28 region=6 name=/SYSVe901001b diffs=440 pages=3 first=269849 last=547700
+    pages: 65:3 132:47 133:390 
+round=72 t=7540.14 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=72 t=7540.14 region=6 name=/SYSVe901001b diffs=441 pages=3 first=269849 last=547700
+    pages: 65:3 132:43 133:395 
+round=73 t=7540.98 region=1 name=/SYSV13039711 diffs=7 pages=1 first=336027 last=336076
+    pages: 82:7 
+round=73 t=7540.98 region=6 name=/SYSVe901001b diffs=428 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:379 
+round=74 t=7541.83 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=74 t=7541.83 region=6 name=/SYSVe901001b diffs=423 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:375 
+round=75 t=7542.72 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=75 t=7542.72 region=6 name=/SYSVe901001b diffs=424 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:376 
+round=76 t=7543.59 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=76 t=7543.59 region=6 name=/SYSVe901001b diffs=425 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:377 
+round=77 t=7544.45 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=77 t=7544.45 region=6 name=/SYSVe901001b diffs=432 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:383 
+round=78 t=7545.33 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=78 t=7545.33 region=6 name=/SYSVe901001b diffs=426 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:378 
+round=79 t=7546.23 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=79 t=7546.23 region=6 name=/SYSVe901001b diffs=435 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:386 
+round=80 t=7547.10 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=80 t=7547.10 region=6 name=/SYSVe901001b diffs=433 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:384 
+round=81 t=7547.96 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=81 t=7547.96 region=6 name=/SYSVe901001b diffs=434 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:386 
+round=82 t=7548.87 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=82 t=7548.87 region=6 name=/SYSVe901001b diffs=434 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:386 
+round=83 t=7549.73 region=1 name=/SYSV13039711 diffs=7 pages=1 first=336031 last=336076
+    pages: 82:7 
+round=83 t=7549.73 region=6 name=/SYSVe901001b diffs=433 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:384 
+round=84 t=7550.57 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=84 t=7550.57 region=6 name=/SYSVe901001b diffs=426 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:378 
+round=85 t=7551.45 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=85 t=7551.45 region=6 name=/SYSVe901001b diffs=433 pages=3 first=269849 last=547700
+    pages: 65:3 132:43 133:387 
+round=86 t=7552.36 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=86 t=7552.36 region=6 name=/SYSVe901001b diffs=424 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:375 
+round=87 t=7553.28 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336027 last=336076
+    pages: 82:6 
+round=87 t=7553.28 region=6 name=/SYSVe901001b diffs=433 pages=3 first=269849 last=547700
+    pages: 65:3 132:44 133:386 
+round=88 t=7554.20 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=88 t=7554.20 region=6 name=/SYSVe901001b diffs=433 pages=3 first=269849 last=547700
+    pages: 65:3 132:47 133:383 
+round=89 t=7555.12 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=89 t=7555.12 region=6 name=/SYSVe901001b diffs=438 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:390 
+round=90 t=7555.99 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336039 last=336076
+    pages: 82:5 
+round=90 t=7555.99 region=6 name=/SYSVe901001b diffs=426 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:378 
+round=91 t=7556.91 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=91 t=7556.91 region=6 name=/SYSVe901001b diffs=432 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:384 
+round=92 t=7557.80 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=92 t=7557.80 region=6 name=/SYSVe901001b diffs=423 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:375 
+round=93 t=7558.69 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=93 t=7558.69 region=6 name=/SYSVe901001b diffs=429 pages=3 first=269849 last=547700
+    pages: 65:3 132:48 133:378 
+round=94 t=7559.59 region=1 name=/SYSV13039711 diffs=7 pages=1 first=336031 last=336076
+    pages: 82:7 
+round=94 t=7559.59 region=6 name=/SYSVe901001b diffs=434 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:385 
+round=95 t=7560.46 region=1 name=/SYSV13039711 diffs=7 pages=1 first=336031 last=336076
+    pages: 82:7 
+round=95 t=7560.46 region=4 name=/SYSV18039711 diffs=1 pages=1 first=157334 last=157334
+    pages: 38:1 
+round=95 t=7560.46 region=6 name=/SYSVe901001b diffs=441 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:393 
+round=96 t=7561.39 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=96 t=7561.39 region=6 name=/SYSVe901001b diffs=430 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:382 
+round=97 t=7562.23 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=97 t=7562.23 region=6 name=/SYSVe901001b diffs=425 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:377 
+round=98 t=7563.06 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=98 t=7563.06 region=6 name=/SYSVe901001b diffs=432 pages=3 first=269849 last=547700
+    pages: 65:3 132:47 133:382 
+round=99 t=7563.92 region=1 name=/SYSV13039711 diffs=6 pages=1 first=336031 last=336076
+    pages: 82:6 
+round=99 t=7563.92 region=6 name=/SYSVe901001b diffs=425 pages=3 first=269849 last=547700
+    pages: 65:3 132:45 133:377 
+round=100 t=7564.86 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=100 t=7564.86 region=6 name=/SYSVe901001b diffs=424 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:375 
+round=101 t=7565.71 region=1 name=/SYSV13039711 diffs=5 pages=1 first=336031 last=336076
+    pages: 82:5 
+round=101 t=7565.71 region=6 name=/SYSVe901001b diffs=429 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:380 
+round=102 t=7566.57 region=1 name=/SYSV13039711 diffs=7 pages=1 first=336031 last=336076
+    pages: 82:7 
+round=102 t=7566.57 region=6 name=/SYSVe901001b diffs=434 pages=3 first=269849 last=547700
+    pages: 65:3 132:46 133:385 
+round=103 t=7567.44 region=1 name=/SYSV13039711 diffs=7 pages=1 first=336031 last=336076
+    pages: 82:7 
+round=103 t=7567.44 region=6 name=/SYSVe901001b diffs=441 pages=3 first=269849 last=547700
+    pages: 65:3 132:47 133:391 

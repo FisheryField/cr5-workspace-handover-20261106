@@ -1,0 +1,27 @@
+{
+	"avoidDistance" :{
+		"max":200,
+        "min":0,
+        "def":80
+		         },
+	"avoidVel" :{
+		"max":500,
+        "min":1,
+        "def":100
+		         },
+	"avoidAcc" :{
+		"max":50000,
+        "min":1,
+        "def":1000
+		         },
+	"resumeVel" :{
+		"max":500,
+        "min":1,
+        "def":100
+		         },
+	"resumeAcc" :{
+		"max":50000,
+        "min":1,
+        "def":1000
+		         }
+}

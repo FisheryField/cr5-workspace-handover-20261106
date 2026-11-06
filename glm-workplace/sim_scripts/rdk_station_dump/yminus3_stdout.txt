@@ -1,0 +1,8 @@
+Starting D:/software/robodk/bin/RoboDK.exe
+
+RoboDK Application not properly started. Command:
+['D:/software/robodk/bin/RoboDK.exe', '-PORT=20500', '-PORT=20501']
+paired_P8_P11 v15.20：启用已验证轨迹16的校准本体分支搜索；两段直线将在本次预检重新认证。
+CASE_FAIL paired_P8_P11 ValueError: 目标点不可达，尚未搜索连接路径：P9：没有逆解；换算后的法兰中心（基座系）XYZ=(-120.0, -684.5, 587.5) mm，法兰Z轴方向=(0.0, -0.0, -1.0)；P11：没有逆解；换算后的法兰中心（基座系）XYZ=(120.0, -684.5, 587.5) mm，法兰Z轴方向=(0.0, 0.0, -1.0)
+CASE_RESULT paired_P8_P11 FAIL
+REPORT D:\mydata\glm-workplace\sim_scripts\rdk_station_dump\traj16_yminus3_20261103_181808\result.json

@@ -1,0 +1,2173 @@
+{
+  "generated": "2026-09-22T09:28:18",
+  "note": "工作区内的权威数据副本。工作区外同名目录见 external_refs，回收站副本经比对为逐字节重复，无独有内容。",
+  "file_count": 267,
+  "total_bytes": 66013933,
+  "files": [
+    {
+      "path": "manifest.json",
+      "bytes": 88858,
+      "sha256": "d69e4d3a8c6fa2dfc83c8bd573a9f26f28fb94d43f2bf177c3a1d49c78f049f1",
+      "mtime": "2026-09-21T15:54:19",
+      "what": "未分类",
+      "origin": "未知"
+    },
+    {
+      "path": "backup_20260916/test.lua",
+      "bytes": 1554,
+      "sha256": "1c89a1856b16a7bcb8ea41b57a45e89b6e552d0ae33250c454b8d8295ac47b33",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/process/pallet.json",
+      "bytes": 2141,
+      "sha256": "76b03c1d029c205aa5af2634475284c68ce64a6ffa51bde53802c4856e38f871",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/process/vision_calibrate.json",
+      "bytes": 3091,
+      "sha256": "88cf8e381d61ef83e3ef59e51e0be9acde2e5af031f89e6ac94f854eafbf4f4f",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/process/elecSkin/avoidParams.json",
+      "bytes": 336,
+      "sha256": "3a5b8d6da9ed755ecee5e61649dc276b3e2ec142ef5a2a4f9a61379db379217d",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/process/elecSkin/default.json",
+      "bytes": 355,
+      "sha256": "8ceb1e5a0d5e554454cab932433595f1fbab5a788c3c5ed28a3dd867fb085bd7",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/process/elecSkin/jointLimit.json",
+      "bytes": 404,
+      "sha256": "538d2f90d8645dc4fd61c3322681e2c232764bcb66dac5c67a23ef5d6b2162ad",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/process/elecSkin/sensitivity.json",
+      "bytes": 67,
+      "sha256": "ec3131c300b28b9ae0d34af1df46bb49a38f753871b413481a84422cf2b7d6c8",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/process/elecSkin/switch.json",
+      "bytes": 22,
+      "sha256": "ce0d5bbbf12bb05c40be2019c12bdd32f249cd77726fd3b9896ead686b164b4b",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/process/screw/Fuse.json",
+      "bytes": 486,
+      "sha256": "a73a7fa692278e4a852a401a7162c497305d10417195aebf2929171e8eabfd42",
+      "mtime": "2022-12-30T10:29:46",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/process/sixForce/caliParams.json",
+      "bytes": 353,
+      "sha256": "f47dab29ea645448a9619d39b05359ade721fa0445b0abb8ffd82e301ce13531",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/process/sixForce/config.json",
+      "bytes": 44,
+      "sha256": "6fcdb79a0b510955ff21918830b832f99bea4bbdea2fbabed37a95c9c1aa589a",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/process/sixForce/switch.json",
+      "bytes": 22,
+      "sha256": "ce0d5bbbf12bb05c40be2019c12bdd32f249cd77726fd3b9896ead686b164b4b",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/process/trajectory/button_drag_track.json",
+      "bytes": 98405,
+      "sha256": "57582f4f57b0762427109101f0784c7de387e7b473aa5e0e0f1b2543980b29a2",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/calibration/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/calibration/point.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/calibration/point.json.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/calibration/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/calibration/src0.lua",
+      "bytes": 139,
+      "sha256": "47ab523371577277457135d1283e0bb920805e0643c47870b0dac6e8b9316655",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5Packaging/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5Packaging/ioData.json",
+      "bytes": 4997,
+      "sha256": "7d3722fcd9d8075678637ebcdca13c5ae75221a2c399596f379d4b3d3406e9f7",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5Packaging/point.json",
+      "bytes": 152,
+      "sha256": "f21d146d723a56c31283a95b9f6a22f8f6ac21f5622e2987b42278abb432b18e",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5Packaging/point.json.lua",
+      "bytes": 210,
+      "sha256": "f934c2fb9a6de8a7f5519f9f0aa80dfdc3bc542b1871452c9746efad8a05386a",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5Packaging/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5Packaging/src0.lua",
+      "bytes": 46,
+      "sha256": "e8a723b35969874f40cfa62488472c1e667603da41cbe73745d42a1c764c07d8",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5seriestest/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5seriestest/point.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5seriestest/point.json.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5seriestest/prj.json",
+      "bytes": 70,
+      "sha256": "6a98bf4f9db6215825b08d284dc778311ee5eab4a3edffb78bc204d1850b5cb1",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5seriestest/src0.lua",
+      "bytes": 220,
+      "sha256": "a236ddb4b1a25c46cd0a3a177efdc60608fee2474727c10c44cbd957e99fd3fb",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5SkinEagingTest/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5SkinEagingTest/ioData.json",
+      "bytes": 5013,
+      "sha256": "18351608e6ae6a4babd0d3a80ea4b9d4e38923997fe9ed212baf0acb7d1b0fd2",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5SkinEagingTest/point.json",
+      "bytes": 12153,
+      "sha256": "002833f883f153c6a907f9da562eca892dd91436003f493b3115ac44245f7f99",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5SkinEagingTest/point.json.lua",
+      "bytes": 2756,
+      "sha256": "e7b9974bf0bf4f94b96514d8af762d1ea1d301d798c78c3f7efecd7b9e3d0caf",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5SkinEagingTest/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/CR5SkinEagingTest/src0.lua",
+      "bytes": 781,
+      "sha256": "82464933b83fee92b20598d2bda9395fb2e3fb7787f4d9a3ad9d8d4a7001eb2d",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/debug_6/111.lua",
+      "bytes": 451,
+      "sha256": "c98405911d3e8ad8c446fc2df5301baa7477a74e9cf8a86c97291df69694fe20",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/debug_6/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/debug_6/point.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/debug_6/point.json.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/debug_6/prj.json",
+      "bytes": 71,
+      "sha256": "45b920a01f01a0827cc73b58c18695d3bc06c35e1a16395c424b7de741caeafb",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/debug_6/qpack6.txt",
+      "bytes": 54300,
+      "sha256": "e5407278730fff6d1e611504df15ed3b294160e248dd04038d976157f0c80a54",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/debug_6/qpackUR.txt",
+      "bytes": 54302,
+      "sha256": "a4ece990a0253715205c288bab1b6ef39ea992f4270a02782673fa2aaa6883b1",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/debug_6/src0.lua",
+      "bytes": 753,
+      "sha256": "763bf756d87ad14265a151e8dd09b0bdad055052c56bc42f93fb8f71da56cd28",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/debug_6/0823VISION/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/debug_6/0823VISION/point.json",
+      "bytes": 795,
+      "sha256": "75eae954fb42f7f2623fde852d080e640978832f685669115743f1f0cb65a0e9",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/debug_6/0823VISION/point.json.lua",
+      "bytes": 691,
+      "sha256": "058ea240bd8969b35045accdac8bf251249fd6d7da9476f10eaeb7f111dfd384",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/debug_6/0823VISION/prj.json",
+      "bytes": 71,
+      "sha256": "45b920a01f01a0827cc73b58c18695d3bc06c35e1a16395c424b7de741caeafb",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/debug_6/0823VISION/src0.lua",
+      "bytes": 3351,
+      "sha256": "87cb81f1baf1be5a575aead2520f51df6dd8848522c1fc83b72916193b4c233d",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Demarcate/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Demarcate/point.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Demarcate/point.json.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Demarcate/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Demarcate/src0.lua",
+      "bytes": 132,
+      "sha256": "8cec9891dcc1a0e345a6a8694726c7262ec70ac8fde23f2ef054bf34928c2d2c",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/eaging test/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/eaging test/point.json",
+      "bytes": 280,
+      "sha256": "2ee3096c3cc03d35cba4ebe5ff9b3526e98e1cf56f3fd8db178376e01d6b5631",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/eaging test/point.json.lua",
+      "bytes": 223,
+      "sha256": "9e01de79fc31bddf736970446e7b4cd03754f65830429f89caa0774d364475f4",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/eaging test/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/eaging test/src0.lua",
+      "bytes": 890,
+      "sha256": "4ca98ef9260a66472b4a338903a11f6e969b1b017ee2cdc8d41af326c4562b7d",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/eaging TEST PRO2/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/eaging TEST PRO2/point.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/eaging TEST PRO2/point.json.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/eaging TEST PRO2/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/eaging TEST PRO2/src0.lua",
+      "bytes": 1673,
+      "sha256": "f1857e0b450720d036ed74425117892f50d630929a3aea7e4db1ea0a88999644",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/ff/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/ff/point.json",
+      "bytes": 664,
+      "sha256": "672d715122601a15a4ace2464cd4136b6603d4856695bbdfe92497784c658046",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/ff/point.json.lua",
+      "bytes": 523,
+      "sha256": "8bb5a014e49d4d3297536621ff50e27904e1f26951be6f676dd41e950e1955ea",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/ff/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/ff/src0.lua",
+      "bytes": 144,
+      "sha256": "b2008fc493466824262d06e6a31d6569fd284493c1db6511dbcd79b864ad1b28",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/FullTEST_Angle_CR5/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/FullTEST_Angle_CR5/guanjiedianwei.txt",
+      "bytes": 4963,
+      "sha256": "6498c901e48fd093f181728bf2e6ea8942507c7b19804bf38e083a5fda9c2a96",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/FullTEST_Angle_CR5/point.json",
+      "bytes": 7018,
+      "sha256": "dfca0db68b34a709e891fd90bc9e6f150d7830b9b5e59f56bb027419611a98d8",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/FullTEST_Angle_CR5/point.json.lua",
+      "bytes": 5617,
+      "sha256": "d0aff2b2313255bf5ffae96f5443654cd877fb96c3fbf4a7bb4fcc458eeff45f",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/FullTEST_Angle_CR5/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/FullTEST_Angle_CR5/src0.lua",
+      "bytes": 337,
+      "sha256": "9b03f43aae820647ce6b2e383da0035525bab9e10c99be827559851b0d090db0",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Functional instruction/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Functional instruction/point.json",
+      "bytes": 260,
+      "sha256": "1edb5eb3aada4caf77ff48f7b7065de50d6ddef7ed1f9c3b7aa06f3290dacd5b",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Functional instruction/point.json.lua",
+      "bytes": 225,
+      "sha256": "3a9a84e119195a5d1f1d3a046aed92ade46d42a71452af42c4d9f600ad5d8b3f",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Functional instruction/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Functional instruction/src0.lua",
+      "bytes": 844,
+      "sha256": "d96291a4a0ea386050436d7b27788c6f5a961b24dc08ff37b906566d557fab92",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/GB-CR5/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/GB-CR5/point.json",
+      "bytes": 1212,
+      "sha256": "ed1b9165ae42e4bbd6312f1cd0dfcf90d96cda37f9349d22aa7fe967122c803c",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/GB-CR5/point.json.lua",
+      "bytes": 931,
+      "sha256": "c87561b05459f516f29d7030547a26f1ab5494ae068e9f63e2170393ca6a82dd",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/GB-CR5/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/GB-CR5/src0.lua",
+      "bytes": 169,
+      "sha256": "30a6f44ef5016249f7bb265471573003f640b313978f7015677cf29070a3cf04",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/HOME/global.lua",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/HOME/point.json",
+      "bytes": 4,
+      "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/HOME/point.json.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/HOME/prj.json",
+      "bytes": 104,
+      "sha256": "190e5e95997cfdee93462ba7d504a41628e8bd870a7125eafb8c5dfd80837c5b",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/HOME/src0.lua",
+      "bytes": 132,
+      "sha256": "6adfe7e99ff3083a0a0adecd9d305dca28f174f0f330cf88174e95473f1bd9f1",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/identify/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/identify/point.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/identify/point.json.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/identify/prj.json",
+      "bytes": 71,
+      "sha256": "45b920a01f01a0827cc73b58c18695d3bc06c35e1a16395c424b7de741caeafb",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/identify/src0.lua",
+      "bytes": 1672,
+      "sha256": "e87d6083815b2d2b3bfbde4dc61678247746d65ae4577ba5bc6f916c4981bec2",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Motion instruction/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Motion instruction/point.json",
+      "bytes": 646,
+      "sha256": "f05940e8e80eb15a1f2d399f113c41602cb8bc6731f02c8abb54c6e2d083b71f",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Motion instruction/point.json.lua",
+      "bytes": 560,
+      "sha256": "71307f32e557d8be9b88b4ac9b1aff094214f22c7f8bb4490019feaa84d61a90",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Motion instruction/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Motion instruction/src0.lua",
+      "bytes": 1841,
+      "sha256": "caa2b9547ebe4257e72fa1e2d134676ce9e0673bc899c8cc206e2548f444f34b",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Multithreading/global.lua",
+      "bytes": 23,
+      "sha256": "53cc56f88cfba0437d8f24b71692e8583ac1e76c7f4417ca5bbc129b69e69fb4",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Multithreading/point.json",
+      "bytes": 775,
+      "sha256": "a339142a0231f8a6d25decc2d3ffd62d1a9a6561190ffc80b8a937e2ac8a4c9e",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Multithreading/point.json.lua",
+      "bytes": 672,
+      "sha256": "42313a36d29d3009f5b260d83ea78a92a2a1cc04e51b8f57070e8bf2a4a703f2",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Multithreading/prj.json",
+      "bytes": 81,
+      "sha256": "9f469d8418528e815808859c58ae1a876858b586afca8b3911c09328c474869b",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Multithreading/src0.lua",
+      "bytes": 224,
+      "sha256": "72591988d4ce614c29266248be82dfa625953f1591e7c883b25ea50ab24b773f",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/Multithreading/src1.lua",
+      "bytes": 57,
+      "sha256": "37d77f3f7812f43fb2da99571f20a8495280f55751b8e8f423163ae25f365be7",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/packaging/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/packaging/point.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/packaging/point.json.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/packaging/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/packaging/src0.lua",
+      "bytes": 47,
+      "sha256": "0600b48dd95911261b446d43dc4b573e41bd88f7fd3617c54240e3a4412117b0",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/SkinEagingTest/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/SkinEagingTest/point.json",
+      "bytes": 2573,
+      "sha256": "2641b42618dddcd4def1c6433460b820af1a56a91df07fefbf8575bb40503517",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/SkinEagingTest/point.json.lua",
+      "bytes": 2061,
+      "sha256": "34f983f76cc7405251688f74ee8706c36096a1457b28992f3e27dcb4037e1d44",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/SkinEagingTest/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/SkinEagingTest/src0.lua",
+      "bytes": 753,
+      "sha256": "5b114cd4f9774d02e88d835eecea05a4ad3f5760e1df3f986cd1d645c9190f3f",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/SkinTest/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/SkinTest/point.json",
+      "bytes": 283,
+      "sha256": "b9714e08ed37def65e00700f1c481afb5ea3bae2191fc1a761744c61ca7116ad",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/SkinTest/point.json.lua",
+      "bytes": 226,
+      "sha256": "0d5f9d5a035d78fbd00ed62bf7c7a9a5e61ed203e40f7d44c1ee6a3b535defd5",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/SkinTest/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/SkinTest/src0.lua",
+      "bytes": 59,
+      "sha256": "82ae5d4ee5724bfba425ddbd17dbe1b9ff9832b2aedb93903f2a9191f359a270",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/TCP communication/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/TCP communication/point.json",
+      "bytes": 260,
+      "sha256": "1edb5eb3aada4caf77ff48f7b7065de50d6ddef7ed1f9c3b7aa06f3290dacd5b",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/TCP communication/point.json.lua",
+      "bytes": 225,
+      "sha256": "3a9a84e119195a5d1f1d3a046aed92ade46d42a71452af42c4d9f600ad5d8b3f",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/TCP communication/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/TCP communication/src0.lua",
+      "bytes": 1042,
+      "sha256": "37b2ee2c72e43439697eccc6970e0b0a32675a3fe5b91def33f96e0a754ee3de",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/TerminalIOTEST/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/TerminalIOTEST/point.json",
+      "bytes": 4,
+      "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/TerminalIOTEST/point.json.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/TerminalIOTEST/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/TerminalIOTEST/src0.lua",
+      "bytes": 3862,
+      "sha256": "dd1014ff30d3e38236c41f2e736e6ef259d181417279ffa1093e07a318ac6ade",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/test1/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/test1/point.json",
+      "bytes": 279,
+      "sha256": "96cb8be978e84087d7dcba74bc70cd08617c85afea06a340e3fd7e1ef0aa5caf",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/test1/point.json.lua",
+      "bytes": 222,
+      "sha256": "dd9c70590c7f6ac9a70c7f1ea93823d1c1982e990409029a0ef6cdfad5ec8055",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/test1/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/test1/src0.lua",
+      "bytes": 173,
+      "sha256": "e3ee3ccf476cd0a896f5242043a01d28c6a3d8c232790a62f9cd73f535c2868b",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/TOOLIO/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/TOOLIO/point.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/TOOLIO/point.json.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/TOOLIO/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/TOOLIO/src0.lua",
+      "bytes": 1812,
+      "sha256": "0797b09db6b12a861f4972628e23c7aedd89e8686cae9993a0bff6d444698024",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/UniIOTEST/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/UniIOTEST/point.json",
+      "bytes": 4,
+      "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/UniIOTEST/point.json.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/UniIOTEST/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/UniIOTEST/src0.lua",
+      "bytes": 1764,
+      "sha256": "2a1cb3defca3a66f57c1a591d82e61df7be2cbc4d0544136751ba80b8c913247",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/zbzz/global.lua",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/zbzz/point.json",
+      "bytes": 797,
+      "sha256": "0de0c9df718efb94b06f6c03cd0beac126ae17d0b7a9514ca0b5bfc32cd643d1",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/zbzz/point.json.lua",
+      "bytes": 628,
+      "sha256": "7ca52121e0771e957575d1b87360db7b1180f8008fcf136909daebc400f15fa8",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/zbzz/prj.json",
+      "bytes": 70,
+      "sha256": "883acb96ce6ab30ea67ef93b4fdb4331d3bb18c48e258eef4ae2e547c642e015",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/project/zbzz/src0.lua",
+      "bytes": 165,
+      "sha256": "4bdba170dc0d7df71d08f871a9298294303588ae56dcb96ecfb785ec494f6af5",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/properties/AdvancedFunction.json",
+      "bytes": 1003,
+      "sha256": "a522973acd1c8eff199f23ec0921198120775f80a5444bc9f58ab6b4592f0963",
+      "mtime": "2022-12-30T10:29:44",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/properties/PoseSelfInterference.json",
+      "bytes": 2049,
+      "sha256": "d0bcfbb8914300035f721b05f6d2efde05f57c8dbf174fed9c12f0c280903de6",
+      "mtime": "2022-12-30T10:29:46",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/properties/alarm.json",
+      "bytes": 59785,
+      "sha256": "755daee3805acd7b4733e6ad52ad2b5cacd30043e07646d5c306312b3ce9804f",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/properties/alarm_controller.json",
+      "bytes": 190994,
+      "sha256": "3de8d3a181369571f06059b48457c56f3db7f8fe38b921927ecea7cfca36f835",
+      "mtime": "2022-12-30T10:29:45",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/properties/alarm_servo.json",
+      "bytes": 40958,
+      "sha256": "78005898ed2ea286a60a6bc049f2cbf2e9091d3e8126beb5b0f843e4c3933a8c",
+      "mtime": "2022-12-30T10:29:45",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/properties/axis.json",
+      "bytes": 14,
+      "sha256": "d9224d1b7f22c6d9ffdab63f4c5780c5c041144bea7c794e118f5d5b2abdffde",
+      "mtime": "2022-12-30T10:29:45",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/properties/businessType.json",
+      "bytes": 26,
+      "sha256": "f0b2d7303b7de29134d42ec3ceed52595bfbfaa9feb17f95021137a7c3c74022",
+      "mtime": "2022-12-30T10:29:46",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/properties/controlCabType.json",
+      "bytes": 26,
+      "sha256": "aa3e49ad2b2d3a71e1f5d78a2a24c5e4bc2c53f5b7cb4592bcddcd3d7025cbcc",
+      "mtime": "2026-09-16T15:32:20",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/properties/controllerType.json",
+      "bytes": 34,
+      "sha256": "d68ba7bfce7c5d32eea4565f1b9d8a5a2362233a3898838acedc1f621d40e640",
+      "mtime": "2022-12-30T10:29:45",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/properties/default.json",
+      "bytes": 4867,
+      "sha256": "400139616dd01fb5e71283d78e3cbdfd1fe532fcca156ad99e11a65061713b46",
+      "mtime": "2022-12-30T10:29:45",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/properties/ratio_default.json",
+      "bytes": 975,
+      "sha256": "a8b62dfb0152af972bf5d4fdc0f04b3fe06e87d89c96fe6640e17a70616bbe4d",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/properties/structure.json",
+      "bytes": 4539,
+      "sha256": "e7a07cfd73c14602fe2dbbba004a3b174a373f18ee2992620ee0c356e2f05e12",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/redis/appendonly.aof",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/redis/dump.rdb",
+      "bytes": 92,
+      "sha256": "6417071387ce923a442d27a02b3e8058d833fc4cfe7213e2f152635e84bab584",
+      "mtime": "2026-09-16T15:30:32",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/redis/stdout",
+      "bytes": 2141,
+      "sha256": "ee7b21fd2170bbefde94473ab9b3b1158109192306445f48a96b744702105737",
+      "mtime": "2026-09-16T15:32:11",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/Dobot+.json",
+      "bytes": 21,
+      "sha256": "02a938137deb3fe8a2265d8208e5514e3bb54137c70ffd2721131842e44a5dc3",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/My.lua",
+      "bytes": 103,
+      "sha256": "fdebde1ea60793b65a1815bb48f00778ea3dc975bd8a35c72d9eab516a2f5c25",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/My_api.lua",
+      "bytes": 98,
+      "sha256": "d418899c04298bbf21d93a3507bd28e27750f89dc43a559af23442c70f068d78",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/Plugin.lua",
+      "bytes": 1584,
+      "sha256": "aa78912333b21da7773fa88fe52057b8010a1ca4449ef719bf9295e547b6eb57",
+      "mtime": "2022-12-30T10:29:45",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/api.lua",
+      "bytes": 240,
+      "sha256": "8fb643bcca3b8e87ee0cc3d365ea2f73ec0b2f0fa617ba56ca01711f0d80003c",
+      "mtime": "2022-12-30T10:29:45",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/common.json",
+      "bytes": 20,
+      "sha256": "179bc1d32393d69ead7ba9dd18bb583a35d0ac2532483fea52672a0b09e30ce3",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/default.json",
+      "bytes": 975,
+      "sha256": "a8b62dfb0152af972bf5d4fdc0f04b3fe06e87d89c96fe6640e17a70616bbe4d",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/hot_key.json",
+      "bytes": 135,
+      "sha256": "0b4454c802b810dc2231e6e194473582854faf96b5de4eeefb575ca3fd6a3dfd",
+      "mtime": "2022-12-30T10:29:45",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/iscara.conf",
+      "bytes": 584,
+      "sha256": "02ff973f817c49fb60bea4ba4f45dc1dd035767e1068bd8fa77f87fbedac7841",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/coordinate/tool.json",
+      "bytes": 1832,
+      "sha256": "10d7a2a2e5187ee6267562558f6ee68e9dd59b383723b7c06304512d88547655",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/coordinate/user.json",
+      "bytes": 688,
+      "sha256": "5af6182e3d7c69dc12ed24b9b3139a587e872ea29892078509162c1a63188874",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/datasvr/config.json",
+      "bytes": 54,
+      "sha256": "44947a415596a66e46e668440bc9450e65575320d6f70856f19982d2d0d662ef",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/CustomPoint.json",
+      "bytes": 90,
+      "sha256": "433a94128ba3f1b4772adac26e0216c1e7db0031354da75fdffd20220b446a45",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/DHGripperEnable.json",
+      "bytes": 23,
+      "sha256": "0198dabfcefeae14a1a5116ecd63d179007d464c61951c8b826a6c4732ac5585",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/PackPoint.json",
+      "bytes": 38,
+      "sha256": "4998a5e8bde6aa03cc64ccfae97cbc93e34846a4bac42652602b2b2a4b787891",
+      "mtime": "2022-12-30T10:29:45",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/accFactor.json",
+      "bytes": 5442,
+      "sha256": "596bfc6d9e919ce4cc628f264968c9916cacbc10b3d3db04d56c01fcdc3a85ce",
+      "mtime": "2022-12-30T10:29:46",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/collisionDect.json",
+      "bytes": 600,
+      "sha256": "d4fe707c614f43aca52330e8b1920f60e0e40528de839e85f9095fd2cbf1db2d",
+      "mtime": "2022-12-30T10:29:44",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/dragSensivity.json",
+      "bytes": 87,
+      "sha256": "46941f163a7a9797880a85d51c331ee3ceaa645869137faf80f6257b7383cdd7",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/dynamicsParams.json",
+      "bytes": 1628,
+      "sha256": "99fb49531242b849e147fe41a5d6cf311b2ccacc26eaf5c778572bd823124ff2",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/elecSkin.json",
+      "bytes": 15,
+      "sha256": "1e544d43b574a8e36402bd746d6a6260b4e1169718052ad5354a5b58c6ad01c5",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/elecSkinDefault.json",
+      "bytes": 425,
+      "sha256": "f23975727584d29e35e29e3a68f8213d32ce8f22dfa540fe71295dc62372fe64",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/elecSkinParams.json",
+      "bytes": 109,
+      "sha256": "c89e7f6ee0201763cdd5fc99898880cb25b118471156b4bdbdf289174d1e7c6e",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/endAI.json",
+      "bytes": 43,
+      "sha256": "a47c62f738fa0d78d5cdf1b8dba8896d5007d8c58668be2248123eb87eeb42f7",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/functionApi.json",
+      "bytes": 1277,
+      "sha256": "5bcf37052f396ee975789042b34f10aab4eb191f82abb721ee292cf417e635ed",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/functionSystem.json",
+      "bytes": 789,
+      "sha256": "d39cfb3b08538820116497b95b665dee517dd14e3aad3afe0236fecd7516d2cf",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/generalSafeSetting.json",
+      "bytes": 107,
+      "sha256": "52ac540d86ea5fde5308b3bce2c6e36af372ea3e6abb4468accd49a8c8dd3f89",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/gpioAI.json",
+      "bytes": 21,
+      "sha256": "be2d61884b8d1fba54f84923b8499c26c21ec5e14aa4ddef9807431fc62ab4e5",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/gpioAO.json",
+      "bytes": 43,
+      "sha256": "3086ccb082d367af8e93dedcde848c37eb8e63fce12bce7abffabb8f699458ba",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/hitbotGripperEnable.json",
+      "bytes": 16,
+      "sha256": "29ae093b7cb27e1c0c5f97dde205cd57655c993e838f5d3d2cbf7bc1fcbb7abc",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/install.json",
+      "bytes": 47,
+      "sha256": "29e917c4c9c013c7bf00582070b01f4aaccfaf5f6c3f597446eff59729053ea2",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/ioctrl.json",
+      "bytes": 335,
+      "sha256": "96d9a184f9db28689b3d2496992d42d1facfc7aae8697c92a76a4edf881d2d27",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/jointMaxParas.json",
+      "bytes": 211,
+      "sha256": "ca5691b0203464a1b212eba036b889a4d0e49fa0b56af58e8e92faf2b2cfaca9",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/loadParams.json",
+      "bytes": 78,
+      "sha256": "75d574792cbe2cc04236ef67d4b5ef01360c46ec0910e709dcf2183be771167e",
+      "mtime": "2026-09-16T15:35:35",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/logServerConfig.json",
+      "bytes": 6848,
+      "sha256": "dd6c15fac7e5a92c8f4aa13a0fc0c5d8f91a7a802cedc771d4c8b574f34851ed",
+      "mtime": "2022-12-30T10:29:46",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/minicab_ioctrl.json",
+      "bytes": 327,
+      "sha256": "4c341476078c6708a7b565152ac5414e0327ef94b6542482c3c5e281d7f82335",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/modbusConf.json",
+      "bytes": 35,
+      "sha256": "972b8ede48fbc9bda48c2e3d1afbe36bc4c7d476e2a64fb302c8e66a655e0590",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/modbusctrl.json",
+      "bytes": 356,
+      "sha256": "fd191f70c43a9820d0e7cf3135b04cb9805ebc8347adb71f321ae844546dac27",
+      "mtime": "2022-12-30T10:29:46",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/reTraceParams.json",
+      "bytes": 50,
+      "sha256": "e39232d4a3e91c70e24c7e50ba61379ded1416134367330977d3af8c71505d75",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/remoteControl.json",
+      "bytes": 36,
+      "sha256": "0bcf3593bfadc706e1428a4779514f37a320c93f65b2e5d7ed0d97fbe850678a",
+      "mtime": "2026-09-16T12:01:08",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/robotiqGripperEnable.json",
+      "bytes": 16,
+      "sha256": "29ae093b7cb27e1c0c5f97dde205cd57655c993e838f5d3d2cbf7bc1fcbb7abc",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/robotiqSixForce.json",
+      "bytes": 24,
+      "sha256": "c1cb831abd761c098ebcd13e13ad52444ff808f8e95a127254ab0d7391d9c7e4",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/safeSignal.json",
+      "bytes": 430,
+      "sha256": "783490b1dc77c1a283d1a350012339ec5c5e18061075f558305fe6fc2336d0a6",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/sixForceParams.json",
+      "bytes": 284,
+      "sha256": "7cbbd2c50a503af22d1f369bc0d288251edd4e42d304ea000a95abd50a32192a",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/tcp30006Feedback.json",
+      "bytes": 2804,
+      "sha256": "c7f9dc5759c2e2c7eb62ad2512c7db95c48d1ae723792786005745b76a2e31bb",
+      "mtime": "2022-12-30T10:29:46",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/tcpipSecurity.json",
+      "bytes": 806,
+      "sha256": "7a188b38bfe531a538b60b0f5db3d513e554884810aa25f3a7e5b84982309d53",
+      "mtime": "2022-12-30T10:29:46",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/function/torquelimit.json",
+      "bytes": 4061,
+      "sha256": "4d3d0ecc140bc05ab538bf6f10e4d4543fee64f68b1fc8a0d2f6d5942873ef78",
+      "mtime": "2022-12-30T10:29:46",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/playback/arch.json",
+      "bytes": 1532,
+      "sha256": "d2e8eea79c33023f3b6d65651b2b3a87e2eb91d7ed890f814607e4f356bf2ba3",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/playback/coordinate.json",
+      "bytes": 203,
+      "sha256": "b6e637992b3e9dc11cdc6a4faab7a27db657f0ee3f885348c005e4c468428397",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/playback/joint.json",
+      "bytes": 154,
+      "sha256": "9a7390d8d6a71c5796088a0a04802fcb480db045eab6e051a2499212ec69853c",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/teach/coordinate.json",
+      "bytes": 73,
+      "sha256": "a7203e4800147809408bd36aa6c52506916154c576c54b7c50d85579eea83835",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/teach/inch.json",
+      "bytes": 38,
+      "sha256": "6a231d1ad5b1a086f044ba3638902d82840210e5f794c41874c53dd67552acc4",
+      "mtime": "2026-09-16T11:58:20",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/teach/joint.json",
+      "bytes": 73,
+      "sha256": "44bd7e47de270873c918d0df6fcdba9fb99806231189eccc48024bac5d5397ab",
+      "mtime": "1976-02-19T01:18:17",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "backup_20260916/settings/workTime/WorkTimeRec.json",
+      "bytes": 217,
+      "sha256": "e6dc6c9728864a18df0c56e41a293e5d4904e8b5916660a7b0a223304a684808",
+      "mtime": "2026-09-16T16:24:53",
+      "what": "9/16 /dobot/userdata/project 备份解压内容",
+      "origin": "现场 tar 备份，zip 口令 dobot123"
+    },
+    {
+      "path": "cabinet/3.1.5.hex",
+      "bytes": 2525325,
+      "sha256": "4996320d0deaf00b505fb3172780e7d82c4cedfa94bb955b7364380281b4bc21",
+      "mtime": "2026-09-16T15:59:33",
+      "what": "Dobot 伺服 V3.1.5.0 整片 flash 转储",
+      "origin": "现场从驱动器读出"
+    },
+    {
+      "path": "cabinet/3.1.5_candidate_upgrade/CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin",
+      "bytes": 328892,
+      "sha256": "36fd7a8e103aca025953c3eb9c8dbc63da23f356bd35a7cb2db5381589017cd1",
+      "mtime": "2026-09-16T16:23:32",
+      "what": "自制 FoE 包（3.1.5.0 同版本候选）",
+      "origin": "自制，未上机验证过跨版本"
+    },
+    {
+      "path": "cabinet/3.1.5_candidate_upgrade/README.txt",
+      "bytes": 556,
+      "sha256": "30df3c72d673f855c6a24ee4b6022c5e2003eca9cb11c072d8b0133085204dca",
+      "mtime": "2026-09-16T16:23:32",
+      "what": "自制 FoE 包（3.1.5.0 同版本候选）",
+      "origin": "自制，未上机验证过跨版本"
+    },
+    {
+      "path": "cabinet/3.1.5_candidate_upgrade/manifest.json",
+      "bytes": 1613,
+      "sha256": "f9ddd8234bc3ece9eabe4ecc430d3d8e20a0c8f45572d1eaeea4e43f2d40f7e5",
+      "mtime": "2026-09-16T16:23:32",
+      "what": "自制 FoE 包（3.1.5.0 同版本候选）",
+      "origin": "自制，未上机验证过跨版本"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.1-stable-a014bd6f-2212301029/dobot_update.bat",
+      "bytes": 3220,
+      "sha256": "89a0dc45d7894f77608f5d9a366d06caea973bca3c21eb46507743fc41d97801",
+      "mtime": "2022-12-30T10:29:50",
+      "what": "控制器升级包 3.5.4.1",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.1-stable-a014bd6f-2212301029/tool_update.bat",
+      "bytes": 3253,
+      "sha256": "82b989cd9b1c305942c15485ff298154c4ed1169fa339c75cd970440c4969bdc",
+      "mtime": "2022-12-30T10:29:50",
+      "what": "控制器升级包 3.5.4.1",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.1-stable-a014bd6f-2212301029/src/afterUpdate.sh",
+      "bytes": 4519,
+      "sha256": "d6202b77da9ad3fdbfe33b13a8ed51300dea8e8690693e319e73d59a678100bc",
+      "mtime": "2022-12-30T10:29:50",
+      "what": "控制器升级包 3.5.4.1",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.1-stable-a014bd6f-2212301029/src/bin.tar.gz",
+      "bytes": 29091978,
+      "sha256": "ec8339eceab9ac3637c324aa27a3faf5d78b6417f46128f36b6aa0421375b0ed",
+      "mtime": "2024-10-17T20:33:06",
+      "what": "控制器升级包 3.5.4.1",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.1-stable-a014bd6f-2212301029/src/dobot.sh",
+      "bytes": 12399,
+      "sha256": "aa2f5d706545b95800bb4f1e710a2265f1814c6d947278dcf48b81e9faf2afec",
+      "mtime": "2022-12-30T10:29:50",
+      "what": "控制器升级包 3.5.4.1",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.1-stable-a014bd6f-2212301029/src/i2cset",
+      "bytes": 13771,
+      "sha256": "baa5cebec685f4f370caeac8a6be30e749e9b60efa6c943efb7925c94a90c99d",
+      "mtime": "2024-10-17T20:33:06",
+      "what": "控制器升级包 3.5.4.1",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.1-stable-a014bd6f-2212301029/src/plink.exe",
+      "bytes": 617048,
+      "sha256": "4f81b422c9f73f4a6167267e03d3d51c76f894b12d500ff1fb1f8bfc249931d2",
+      "mtime": "2022-12-30T10:29:50",
+      "what": "控制器升级包 3.5.4.1",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.1-stable-a014bd6f-2212301029/src/pscp.exe",
+      "bytes": 626744,
+      "sha256": "9ffc7e4333d3be11b244d5f83b02ebcd194a671539f7faf1b5597d9209cc25c3",
+      "mtime": "2022-12-30T10:29:50",
+      "what": "控制器升级包 3.5.4.1",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.1-stable-a014bd6f-2212301029/src/setthreadaffinity.sh",
+      "bytes": 686,
+      "sha256": "0a2a56c4d9df846374bdd4698bcce8e62dafab09eb4356f58bbd855043f8aa52",
+      "mtime": "2022-12-30T10:29:50",
+      "what": "控制器升级包 3.5.4.1",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.1-stable-a014bd6f-2212301029/src/setthreadpriority.sh",
+      "bytes": 397,
+      "sha256": "ffda185c37cd4b58090106a57313ca1ecaa552c0d73ea06c742d5f2c68e2f2de",
+      "mtime": "2022-12-30T10:29:50",
+      "what": "控制器升级包 3.5.4.1",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/dobot_update.bat",
+      "bytes": 3220,
+      "sha256": "89a0dc45d7894f77608f5d9a366d06caea973bca3c21eb46507743fc41d97801",
+      "mtime": "2023-03-03T10:19:34",
+      "what": "控制器升级包 3.5.4.2",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/src/afterUpdate.sh",
+      "bytes": 4581,
+      "sha256": "51f8a02e7ed89fac0c986106d524f9491fd295c65687191a084b3079879d4635",
+      "mtime": "2023-03-03T10:19:34",
+      "what": "控制器升级包 3.5.4.2",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/src/bin.tar.gz",
+      "bytes": 29118518,
+      "sha256": "ebde9888f90b90765567afee4402334f01af015a81bb36e7ade976ec36161007",
+      "mtime": "2024-10-17T20:33:14",
+      "what": "控制器升级包 3.5.4.2",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/src/dobot.sh",
+      "bytes": 12379,
+      "sha256": "2a829430fa5a9f16de35af4a3290d1355003a7a469640de77f33bb83f2627a6e",
+      "mtime": "2023-03-03T10:19:34",
+      "what": "控制器升级包 3.5.4.2",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/src/i2cset",
+      "bytes": 13771,
+      "sha256": "baa5cebec685f4f370caeac8a6be30e749e9b60efa6c943efb7925c94a90c99d",
+      "mtime": "2024-10-17T20:33:14",
+      "what": "控制器升级包 3.5.4.2",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/src/plink.exe",
+      "bytes": 617048,
+      "sha256": "4f81b422c9f73f4a6167267e03d3d51c76f894b12d500ff1fb1f8bfc249931d2",
+      "mtime": "2023-03-03T10:19:34",
+      "what": "控制器升级包 3.5.4.2",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/src/pscp.exe",
+      "bytes": 626744,
+      "sha256": "9ffc7e4333d3be11b244d5f83b02ebcd194a671539f7faf1b5597d9209cc25c3",
+      "mtime": "2023-03-03T10:19:34",
+      "what": "控制器升级包 3.5.4.2",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/src/setthreadaffinity.sh",
+      "bytes": 686,
+      "sha256": "0a2a56c4d9df846374bdd4698bcce8e62dafab09eb4356f58bbd855043f8aa52",
+      "mtime": "2023-03-03T10:19:34",
+      "what": "控制器升级包 3.5.4.2",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/src/setthreadpriority.sh",
+      "bytes": 397,
+      "sha256": "ffda185c37cd4b58090106a57313ca1ecaa552c0d73ea06c742d5f2c68e2f2de",
+      "mtime": "2023-03-03T10:19:34",
+      "what": "控制器升级包 3.5.4.2",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/CR_update_V3.5.4.2-stable-4d06cd8a-2303031019/tool/tool_update.bat",
+      "bytes": 3253,
+      "sha256": "82b989cd9b1c305942c15485ff298154c4ed1169fa339c75cd970440c4969bdc",
+      "mtime": "2023-03-03T10:19:34",
+      "what": "控制器升级包 3.5.4.2",
+      "origin": "Dobot 原厂"
+    },
+    {
+      "path": "cabinet/dobot_upgrade_observation/before.txt",
+      "bytes": 6169,
+      "sha256": "141230666b64359e6830c5cabbde068bebc9eee8332ce249a85acdcdcf97dcee",
+      "mtime": "2026-09-16T17:25:08",
+      "what": "9/16 J1 原厂同版本升级观察记录",
+      "origin": "现场记录"
+    },
+    {
+      "path": "cabinet/dobot_upgrade_observation/file-changes.log",
+      "bytes": 34083,
+      "sha256": "7452ddc5d48b25a08cc51cd807a077cd1d2bb17aaa84855ee7f5fb92eca71c07",
+      "mtime": "2026-09-16T17:34:06",
+      "what": "9/16 J1 原厂同版本升级观察记录",
+      "origin": "现场记录"
+    },
+    {
+      "path": "cabinet/dobot_upgrade_observation/live-server.log",
+      "bytes": 7972,
+      "sha256": "cba991ae75cfe13cf7d20f8b66c459afb3d10e0e25cb824e22b622049e134ba5",
+      "mtime": "2026-09-16T17:34:03",
+      "what": "9/16 J1 原厂同版本升级观察记录",
+      "origin": "现场记录"
+    },
+    {
+      "path": "cabinet/dobot_upgrade_observation/result.md",
+      "bytes": 1616,
+      "sha256": "613366de6621030b9fccc9e76dfc5fa55f35766b85c20131347027cdb17761a7",
+      "mtime": "2026-09-16T17:34:06",
+      "what": "9/16 J1 原厂同版本升级观察记录",
+      "origin": "现场记录"
+    },
+    {
+      "path": "cabinet/servo_hex_comparison/CR5_Servo_ST_FOE_V3.2.D.8_APP_08010000.hex",
+      "bytes": 813604,
+      "sha256": "667e23ca3ada535e7b83ef871f3d3ced025ef5a2388685ec1addf1c603f83197",
+      "mtime": "2026-09-16T17:38:03",
+      "what": "原厂 3.2.D.8 应用区 hex 与其清单",
+      "origin": "由原厂 bin 派生"
+    },
+    {
+      "path": "cabinet/servo_hex_comparison/README.txt",
+      "bytes": 631,
+      "sha256": "32cf934da37f653325b42716345c30202c20615a6b64f5bc672af2bcabc2f455",
+      "mtime": "2026-09-16T17:38:03",
+      "what": "原厂 3.2.D.8 应用区 hex 与其清单",
+      "origin": "由原厂 bin 派生"
+    },
+    {
+      "path": "cabinet/servo_hex_comparison/manifest.json",
+      "bytes": 1118,
+      "sha256": "b60c66facc37d96cdd20be021b6cde4075fb07107f9eb9bbabc4d53aa0ebe65b",
+      "mtime": "2026-09-16T17:38:03",
+      "what": "原厂 3.2.D.8 应用区 hex 与其清单",
+      "origin": "由原厂 bin 派生"
+    },
+    {
+      "path": "official/SHA256SUMS.txt",
+      "bytes": 1487,
+      "sha256": "1d98e87e1d4b9ede1d63356b8d6cc0adf1a448303581cd7b5e9b4ecaf3855a5c",
+      "mtime": "2026-09-22T09:27:39",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "official/pkg/3.5.4.1detailChinese.txt",
+      "bytes": 762,
+      "sha256": "5e803f14ebb4f842967845a89022ed6441fdfbedc9a7d64026001958f4b5232b",
+      "mtime": "2024-03-04T09:25:02",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "official/pkg/3.5.4.1upgrade.ini",
+      "bytes": 187,
+      "sha256": "8262a234913238f0f0b4e8e99ed252677ab6dea5f8a9c6885e808fe8bb52d05d",
+      "mtime": "2024-03-04T09:25:51",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "official/pkg/3.5.6.1detailChinese.txt",
+      "bytes": 468,
+      "sha256": "24f9e4cc02051baf92cedf45776bfc8f61d7c12b3ad582a11cbfc43d9db95f82",
+      "mtime": "2024-03-04T09:22:37",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "official/pkg/3.5.6.1upgrade.ini",
+      "bytes": 192,
+      "sha256": "e301f4eae1f773a82b4ce8f6021550ab9ee01a81676d9f4ed37d6e12eaa224b1",
+      "mtime": "2024-03-04T09:22:55",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "official/pkg/CR5_Servo_ST_FOE_V3.2.D.8.bin",
+      "bytes": 338104,
+      "sha256": "644fe9361f69ff8d4aaf933a56351c4e55f1b9bc946657a1f3fa55c80366dbe7",
+      "mtime": "2024-03-04T09:25:36",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "official/pkg/CR_Servo_ST_XML_V3.0.0.bin",
+      "bytes": 2048,
+      "sha256": "0d7aeb74b4dde969d37ff294c69fe5f867a23076609320ed714d3c4230b95784",
+      "mtime": "2024-03-04T09:26:04",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "official/pkg/allVersion.ini",
+      "bytes": 116,
+      "sha256": "f3133920007d543fe6dcf6b867e12e86c36adffd2684b9d62bfecb360a74400e",
+      "mtime": "2024-03-04T09:22:17",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "official/servoCSV/J1.csv",
+      "bytes": 10321,
+      "sha256": "edeabafc8e1b2fae3830fb1021358f3c05ddc3483845e98e3ecefb714c6332f5",
+      "mtime": "2024-03-04T09:25:12",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "official/servoCSV/J2.csv",
+      "bytes": 10321,
+      "sha256": "5f996ec985d37ef71423192d249a3679220e11810c588b723813d606542969b8",
+      "mtime": "2024-03-04T09:24:51",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "official/servoCSV/J3.csv",
+      "bytes": 10321,
+      "sha256": "b02c23ef400835a22e52760fef7638e808ab311cbd40a9778b81c4fb2b7f4488",
+      "mtime": "2024-03-04T09:25:43",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "official/servoCSV/J4.csv",
+      "bytes": 10323,
+      "sha256": "d80928cadbe8905d8522c921b15863e156b478e8798d095c4d6318123c751fa4",
+      "mtime": "2024-03-04T09:24:39",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "official/servoCSV/J5.csv",
+      "bytes": 10323,
+      "sha256": "d80928cadbe8905d8522c921b15863e156b478e8798d095c4d6318123c751fa4",
+      "mtime": "2024-03-04T09:25:35",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "official/servoCSV/J6.csv",
+      "bytes": 10323,
+      "sha256": "d80928cadbe8905d8522c921b15863e156b478e8798d095c4d6318123c751fa4",
+      "mtime": "2024-03-04T09:25:28",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "official/servoCSV/param.csv",
+      "bytes": 41203,
+      "sha256": "3813ce7fc5ece88c40f8da14164fed487e07301b6af6927103f00256148bf92d",
+      "mtime": "2024-03-04T09:25:47",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "official/servoCSV/readme重要.txt",
+      "bytes": 426,
+      "sha256": "45948ceb4ceff029afc8414cc98ab8d3e609b4a79b0c44c88f102e0681bf3701",
+      "mtime": "2024-03-04T09:22:36",
+      "what": "官方 3.5.4.1 / 3.5.6.1 升级材料（伺服固件、PDO XML、伺服参数表、upgrade.ini）",
+      "origin": "Dobot 原厂；固件 SHA-256 与旧 manifest 记录的原厂参考值一致"
+    },
+    {
+      "path": "../servo_fw/CR5_Servo_ST_FOE_V3.2.D.8_REBUILT.bin",
+      "bytes": 338104,
+      "sha256": "644fe9361f69ff8d4aaf933a56351c4e55f1b9bc946657a1f3fa55c80366dbe7",
+      "mtime": "2026-09-21T15:47:52",
+      "what": "重建的原厂 CR5 伺服固件 V3.2.D.8（可上机 FoE 镜像）",
+      "origin": "由 3.2.D.8 应用区 hex + 32 字节 FoE 头重建；整文件 MD5 8f5a1901152c8d300f2b2030603eaa16 与原厂记录一致",
+      "md5": "8f5a1901152c8d300f2b2030603eaa16"
+    }
+  ],
+  "external_refs": [
+    {
+      "path": "D:\\mydata\\working things\\机械臂控制柜数据",
+      "relation": "data/cabinet 的来源（已完整复制）"
+    },
+    {
+      "path": "D:\\mydata\\working things\\dobot_arm",
+      "relation": "RoboDK 工程 / ROS 包 / 手册，与本任务无直接关系，未纳入"
+    },
+    {
+      "path": "D:\\mydata\\workspace-旧版数据",
+      "relation": "旧工作区冷备（内容已并入本工作区根目录）"
+    },
+    {
+      "path": "D:\\$RECYCLE.BIN\\S-1-5-21-3003449410-212866346-2127617813-1001\\$RRT678O",
+      "relation": "9/21 10:17 D:\\mydata 被换下时的快照；与活动目录逐文件一致，无独有内容"
+    }
+  ],
+  "lost_assets": [
+    "D:\\software\\DobotStudio\\V1.3.4-stable\\V1.3.4-stable\\upgradeFiles\\3.5.6\\3.5.6.1\\files\\CR_Servo_ST_XML_V3.0.0.bin",
+    "...\\servoCSV\\CR\\CR5\\J1.csv ~ J6.csv",
+    "...\\servoCSV\\CR\\param.csv",
+    "...\\files\\CR5_Servo_ST_FOE_V4.1.4.0.bin",
+    "...\\files\\CR_TerminalIO_ST_FOE_V3.3.5.0.bin 等其余从站固件",
+    "...\\3.5.6.1upgrade.ini",
+    "...\\3.5.6.1detailChinese.txt",
+    "→ 全盘与回收站均已确认不存在；需从 DobotStudio Pro 重新获取"
+  ]
+}

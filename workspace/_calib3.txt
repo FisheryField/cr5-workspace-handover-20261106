@@ -1,0 +1,154 @@
+=== who references save.sh ===
+=== who references /opt/.zero ===
+=== gcontrol strings ===
+timeout: can't execute '20': No such file or directory
+=== algs framework strings ===
+timeout: can't execute '20': No such file or directory
+=== Application.app strings ===
+timeout: can't execute '30': No such file or directory
+=== dobot_setting ===
+timeout: can't execute '15': No such file or directory
+=== redis keys ===
+=== calibration project files ===
+local J1 ={joint ={1,1,1,1,1,1}}
+local J2 ={joint ={-1,-1,-1,-1,-1,-1}}
+local home ={joint ={0,0,0,0,0,0}}
+MoveJ(J1)
+MoveJ(J2)
+MoveJ(home)
+--- prj.json ---
+{"cpus":["src0.lua"],"global":"global.lua","teach_point":"point.json"}
+--- Demarcate src0.lua ---
+local P1={joint={1,1,1,1,1,1}}
+local P2={joint={-1,-1,-1,-1,-1,-1}}
+local home={joint={0,0,0,0,0,0}}
+MoveJ(P1)
+MoveJ(P2)
+MoveJ(home)=== calibration-like project dirs across models ===
+/dobot/userdata/CR5_sys_files/project/project/Demarcate
+/dobot/userdata/CR5_sys_files/project/project/calibration
+=== tool.json / user.json ===
+[
+    {
+        "alias": "",
+        "enable": true,
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "alias": "",
+        "enable": true,
+        "params": [
+            -25.27668571472168,
+            -80.94178009033203,
+            62.848148345947266,
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "alias": "",
+        "enable": false,
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "alias": "",
+        "enable": false,
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "alias": "",
+        "enable": false,
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "alias": "",
+        "enable": false,
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "alias": "",
+        "enable": false,
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "alias": "",
+        "enable": false,
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "alias": "",
+        "enable": false,
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "alias": "",
+        "enable": false,
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    }
+]
+---
+[{"enable":true,"params":[0.0,0.0,0.0,0.0,0.0,0.0]},{"enable":false,"params":[-68.6285,707.6564,1037.48,-0.0041,8.0E-4,0.0034]},{"enable":false,"params":[-49.5183,-737.7135,1045.3739,90.0,0.0012,0.0]},{"enable":false,"params":[0.0,0.0,0.0,0.0,0.0,0.0]},{"enable":false,"params":[-68.6285,707.6564,1037.48,-0.0041,8.0E-4,0.0034]},{"enable":false,"params":[-49.5183,-737.7135,1045.3739,90.0,0.0012,0.0]},{"enable":false,"params":[0.0,0.0,0.0,0.0,0.0,0.0]},{"enable":false,"params":[-68.6285,707.6564,1037.48,-0.0041,8.0E-4,0.0034]},{"enable":false,"params":[-49.5183,-737.7135,1045.3739,90.0,0.0012,0.0]},{"type":"Plane","enable":false,"params":[-432.3273,-352.7761,563.7837,0.0,-0.0,0.0]}]

@@ -1,0 +1,6 @@
+机器人: Dobot CR5
+程序就绪。v15.21-20261103 ｜ 模式：RUNMODE_RUN_ROBOT + robot.Connect() ｜ 文件日志：D:\mydata\glm-workplace\sim_scripts\real_gui_log_p2p.txt
+单点：输入坐标 -> 检测可达性 -> 执行 MoveL/MoveJ
+目标关节：输入 J1~J6 -> 实机 MoveJ（不经过 TCP/Fanuc 转换和 IK）
+连续运动（P2P v15.21）：修改点位后仍启用分支搜索、防停走及逐段重新认证；无法认证的直线在发送运动前停止；130mm TCP。
+已导入23点：D:/mydata/working things/dobot_arm/RoboDK files 2/连续轨迹16.json。执行前将从实机当前关节重新预检。

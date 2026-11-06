@@ -1,0 +1,96 @@
+10-10 09:15:51 | ===== watchdog start, self pid=15888（自身进程的生灭请忽略）=====
+10-10 09:15:51 | 初始 python 进程: [14088]
+10-10 09:51:04 | DEATH pid=14088 —— 近2分钟应用错误/挂起事件：
+10-10 09:51:05 | (no events)
+10-10 09:51:17 | BIRTH pid=10376 cmd=D:\software\RoboDK\Python-Embedded\python.exe  D:/software/RoboDK/api/robot/DobotCRDriver.py
+10-10 09:57:08 | DEATH pid=10376 —— 近2分钟应用错误/挂起事件：
+10-10 09:57:08 | (no events)
+10-10 10:15:32 | BIRTH pid=21168 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_alarm_sinking.sh
+10-10 10:15:44 | DEATH pid=21168 —— 近2分钟应用错误/挂起事件：
+10-10 10:15:44 | (no events)
+10-10 10:19:45 | BIRTH pid=2612 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_timeline.sh
+10-10 10:19:57 | DEATH pid=2612 —— 近2分钟应用错误/挂起事件：
+10-10 10:19:57 | (no events)
+10-10 10:30:17 | BIRTH pid=17944 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\enable_gate.sh
+10-10 10:30:25 | DEATH pid=17944 —— 近2分钟应用错误/挂起事件：
+10-10 10:30:25 | (no events)
+10-10 10:35:30 | BIRTH pid=12328 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\enable_gate.sh
+10-10 10:35:37 | DEATH pid=12328 —— 近2分钟应用错误/挂起事件：
+10-10 10:35:38 | (no events)
+10-10 10:37:11 | BIRTH pid=25888 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\pre_enable_final.sh
+10-10 10:37:18 | DEATH pid=25888 —— 近2分钟应用错误/挂起事件：
+10-10 10:37:18 | (no events)
+10-10 10:41:30 | BIRTH pid=21740 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_wiggle.sh
+10-10 10:41:40 | DEATH pid=21740 —— 近2分钟应用错误/挂起事件：
+10-10 10:41:41 | 2026/10/10 10:40:20 Microsoft-Windows-Security-SPP 许可证激活(slui.exe)失败，返回以下错误代码:
+
+2026/10/10 10:40:10 Microsoft-Windows-Security-SPP 许可证激活(slui.exe)失败，返回以下错误代码:
+10-10 10:44:25 | BIRTH pid=13752 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_driver_frame.sh
+10-10 10:44:35 | DEATH pid=13752 —— 近2分钟应用错误/挂起事件：
+10-10 10:44:35 | (no events)
+10-10 11:00:26 | BIRTH pid=15668 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_persist1.sh
+10-10 11:00:46 | DEATH pid=15668 —— 近2分钟应用错误/挂起事件：
+10-10 11:00:46 | (no events)
+10-10 11:04:50 | BIRTH pid=16860 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_persist2.sh
+10-10 11:05:06 | DEATH pid=16860 —— 近2分钟应用错误/挂起事件：
+10-10 11:05:06 | (no events)
+10-10 11:08:33 | BIRTH pid=5360 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_persist3.sh
+10-10 11:09:08 | DEATH pid=5360 —— 近2分钟应用错误/挂起事件：
+10-10 11:09:08 | (no events)
+10-10 11:10:27 | BIRTH pid=20824 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_persist4.sh
+10-10 11:12:01 | DEATH pid=20824 —— 近2分钟应用错误/挂起事件：
+10-10 11:12:01 | (no events)
+10-10 11:13:01 | BIRTH pid=21652 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_persist5.sh
+10-10 11:13:02 | DEATH pid=21652 —— 近2分钟应用错误/挂起事件：
+10-10 11:13:02 | (no events)
+10-10 11:17:33 | BIRTH pid=13160 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_persist6.sh
+10-10 11:17:37 | DEATH pid=13160 —— 近2分钟应用错误/挂起事件：
+10-10 11:17:37 | (no events)
+10-10 11:23:06 | BIRTH pid=24596 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_final1.sh
+10-10 11:23:22 | DEATH pid=24596 —— 近2分钟应用错误/挂起事件：
+10-10 11:23:22 | (no events)
+10-10 11:24:56 | BIRTH pid=18792 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_final2.sh
+10-10 11:25:11 | DEATH pid=18792 —— 近2分钟应用错误/挂起事件：
+10-10 11:25:11 | (no events)
+10-10 11:28:25 | BIRTH pid=19116 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_restore_src.sh
+10-10 11:28:31 | DEATH pid=19116 —— 近2分钟应用错误/挂起事件：
+10-10 11:28:31 | (no events)
+10-10 11:32:33 | BIRTH pid=22520 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_homepath.sh
+10-10 11:32:44 | DEATH pid=22520 —— 近2分钟应用错误/挂起事件：
+10-10 11:32:44 | (no events)
+10-10 11:34:50 | BIRTH pid=2080 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_consumer.sh
+10-10 11:35:00 | DEATH pid=2080 —— 近2分钟应用错误/挂起事件：
+10-10 11:35:01 | (no events)
+10-10 11:35:45 | BIRTH pid=5988 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\diag_consumer2.sh
+10-10 11:36:23 | DEATH pid=5988 —— 近2分钟应用错误/挂起事件：
+10-10 11:36:23 | (no events)
+10-10 11:39:25 | BIRTH pid=11644 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" D:\mydata\glm-workplace\tools\rssh.py -f D:\mydata\glm-workplace\sim_scripts\read_homeoffset.sh
+10-10 11:40:02 | DEATH pid=11644 —— 近2分钟应用错误/挂起事件：
+10-10 11:40:02 | (no events)
+10-10 11:48:03 | BIRTH pid=18788 cmd=
+10-10 11:48:04 | DEATH pid=18788 —— 近2分钟应用错误/挂起事件：
+10-10 11:48:04 | (no events)
+10-10 11:48:15 | BIRTH pid=2892 cmd=
+10-10 11:48:16 | DEATH pid=2892 —— 近2分钟应用错误/挂起事件：
+10-10 11:48:17 | (no events)
+10-10 11:54:57 | BIRTH pid=16748 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" tools\rssh.py -f sim_scripts\diag_verify_boot.sh
+10-10 11:55:05 | DEATH pid=16748 —— 近2分钟应用错误/挂起事件：
+10-10 11:55:05 | (no events)
+10-10 11:57:00 | BIRTH pid=17884 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" tools\rssh.py -f sim_scripts\diag_verify_boot2.sh
+10-10 11:57:11 | DEATH pid=17884 —— 近2分钟应用错误/挂起事件：
+10-10 11:57:11 | (no events)
+10-10 11:59:14 | BIRTH pid=11464 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" tools\rssh.py -f sim_scripts\diag_verify_boot3.sh
+10-10 11:59:23 | DEATH pid=11464 —— 近2分钟应用错误/挂起事件：
+10-10 11:59:23 | (no events)
+10-10 12:00:12 | BIRTH pid=25660 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" tools\rssh.py -f sim_scripts\diag_verify_boot4.sh
+10-10 12:00:20 | DEATH pid=25660 —— 近2分钟应用错误/挂起事件：
+10-10 12:00:20 | (no events)
+10-10 12:06:31 | BIRTH pid=22772 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" tools\rssh.py -f sim_scripts\diag_forensic_1.sh
+10-10 12:06:44 | DEATH pid=22772 —— 近2分钟应用错误/挂起事件：
+10-10 12:06:45 | (no events)
+10-10 12:09:54 | BIRTH pid=26036 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" tools\rssh.py -f sim_scripts\diag_forensic_2.sh
+10-10 12:10:06 | DEATH pid=26036 —— 近2分钟应用错误/挂起事件：
+10-10 12:10:07 | (no events)
+10-10 12:12:04 | BIRTH pid=9148 cmd="D:\software\GLM\AutoClaw2\resources\vendor\python\python.exe" tools\rssh.py -f sim_scripts\diag_forensic_3.sh
+10-10 12:12:22 | DEATH pid=9148 —— 近2分钟应用错误/挂起事件：
+10-10 12:12:22 | (no events)

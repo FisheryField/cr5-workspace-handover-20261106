@@ -1,0 +1,9 @@
+{
+	"safeconfig" : 
+	{
+		"forceConstr":65,
+		"powerConstr":12,
+		"velConstr":14,
+		"monentumConstr":15	
+	}
+}

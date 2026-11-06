@@ -1,0 +1,1109 @@
+# program=v3150.elf  imageBase=00000000
+
+================================================================================
+## requested 0x08011748 -> function FUN_08011748 entry=08011748
+================================================================================
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_08011748(void)
+
+{
+  char cVar1;
+  uint uVar2;
+  char *unaff_r4;
+  int unaff_r6;
+  int iVar3;
+  byte *unaff_r8;
+  uint in_fpscr;
+  float fVar4;
+  
+  iVar3 = _DAT_08011808 + unaff_r6 * 0x160;
+  uVar2 = (*unaff_r8 & 0x7f) >> 4;
+  if (uVar2 == 0) {
+    if (*unaff_r4 == '\0') {
+      cVar1 = (**(code **)(_DAT_0801180c + 8))(_UNK_08011810);
+      *unaff_r4 = cVar1;
+    }
+  }
+  else if (uVar2 == 1) {
+    if (*unaff_r4 == '\0') {
+      *(undefined4 *)(unaff_r8 + 0x24) = _UNK_08011810;
+      cVar1 = (**(code **)(_DAT_08011814 + 0xc))(_UNK_08011810);
+      *unaff_r4 = cVar1;
+    }
+  }
+  else if ((uVar2 == 2) && (*unaff_r4 == '\0')) {
+    cVar1 = (**(code **)(_DAT_08011818 + 0xc))();
+    *unaff_r4 = cVar1;
+    for (uVar2 = 0; uVar2 < *(ushort *)(unaff_r4 + 2); uVar2 = uVar2 + 1 & 0xffff) {
+      fVar4 = (float)VectorSignedToFloat(*(undefined4 *)(unaff_r4 + uVar2 * 4 + 0xcc),
+                                         (byte)(in_fpscr >> 0x16) & 3);
+      *(float *)(unaff_r4 + uVar2 * 4 + 0x194) = fVar4 / *(float *)(iVar3 + 8);
+    }
+  }
+  return;
+}
+
+
+
+---- listing 08011748 .. 080117fd ----
+   08011748  lsls r0,r0,#0x12
+   0801174a  add.w r0,r6,r6, lsl #0x1
+   0801174e  add.w r0,r0,r6, lsl #0x3
+   08011752  ldr r1,[0x08011808]
+   08011754  add.w r7,r1,r0, lsl #0x5
+   08011758  ldrb.w r0,[r8,#0x0]
+   0801175c  ubfx r0,r0,#0x4,#0x3
+   08011760  cbz r0,0x0801176c
+   08011762  cmp r0,#0x1
+   08011764  beq 0x08011786
+   08011766  cmp r0,#0x2
+   08011768  bne 0x080117f6
+   0801176a  b 0x080117a8
+   0801176c  ldrb r0,[r4,#0x0]
+   0801176e  cbnz r0,0x08011784
+   08011770  ldr r0,[0x0801180c]
+   08011772  add.w r2,r7,#0x100
+   08011776  adds r1,r4,#0x4
+   08011778  vldr.32 s0,[pc,#0x94]
+   0801177c  ldr r3,[r0,#0x8]
+   0801177e  mov r0,r6
+   08011780  blx r3
+   08011782  strb r0,[r4,#0x0]
+   08011784  b 0x080117f8
+   08011786  ldrb r0,[r4,#0x0]
+   08011788  cbnz r0,0x080117a6
+   0801178a  vldr.32 s0,[pc,#0x84]
+   0801178e  vstr.32 s0,[r8,#0x24]
+   08011792  ldr r0,[0x08011814]
+   08011794  add.w r2,r7,#0x90
+   08011798  adds r1,r4,#0x4
+   0801179a  vldr.32 s0,[pc,#0x74]
+   0801179e  ldr r3,[r0,#0xc]
+   080117a0  mov r0,r6
+   080117a2  blx r3
+   080117a4  strb r0,[r4,#0x0]
+   080117a6  b 0x080117f8
+   080117a8  ldrb r0,[r4,#0x0]
+   080117aa  cbnz r0,0x080117f4
+   080117ac  ldr r0,[0x08011818]
+   080117ae  add.w r3,r7,#0x10
+   080117b2  add.w r2,r4,#0xcc
+   080117b6  movs r1,#0x0
+   080117b8  ldr.w r12,[r0,#0xc]
+   080117bc  mov r0,r6
+   080117be  blx r12
+   080117c0  strb r0,[r4,#0x0]
+   080117c2  movs r5,#0x0
+   080117c4  b 0x080117ee
+   080117c6  add.w r0,r4,#0xcc
+   080117ca  ldr.w r0,[r0,r5,lsl #0x2]
+   080117ce  vmov s0,r0
+   080117d2  vcvt.f32.s32 s0,s0
+   080117d6  vldr.32 s1,[r7,#0x8]
+   080117da  vdiv.f32 s2,s0,s1
+   080117de  add.w r0,r4,#0x194
+   080117e2  add.w r0,r0,r5, lsl #0x2
+   080117e6  vstr.32 s2,[r0]
+   080117ea  adds r0,r5,#0x1
+   080117ec  uxth r5,r0
+   080117ee  ldrh r0,[r4,#0x2]
+   080117f0  cmp r0,r5
+   080117f2  bgt 0x080117c6
+   080117f4  b 0x080117f8
+   080117f6  nop
+   080117f8  nop
+   080117fa  pop.w {r4,r5,r6,r7,r8,pc}
+
+
+================================================================================
+## requested 0x08011810 -> function FUN_08011810 entry=08011810
+================================================================================
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_08011810(void)
+
+{
+  float *pfVar1;
+  int iVar2;
+  int *piVar3;
+  uint in_fpscr;
+  float fVar4;
+  float fVar5;
+  float fVar6;
+  
+  piVar3 = _DAT_08011994;
+  iVar2 = _DAT_08011990;
+  pfVar1 = _DAT_0801198c;
+  fVar4 = (float)VectorUnsignedToFloat
+                           (*(uint *)(_DAT_08011990 + 0x156) / *(uint *)(_DAT_08011990 + 0x15a),
+                            (byte)(in_fpscr >> 0x16) & 3);
+  *_DAT_0801198c = fVar4;
+  fVar4 = (float)VectorUnsignedToFloat
+                           (*(uint *)(iVar2 + 0x16a) / *(uint *)(iVar2 + 0x16e),
+                            (byte)(in_fpscr >> 0x16) & 3);
+  pfVar1[1] = fVar4;
+  fVar4 = (float)VectorUnsignedToFloat
+                           (*(uint *)(iVar2 + 0x174) / *(uint *)(iVar2 + 0x178),
+                            (byte)(in_fpscr >> 0x16) & 3);
+  pfVar1[2] = fVar4;
+  pfVar1[4] = (*pfVar1 * pfVar1[1]) / pfVar1[2];
+  fVar4 = (float)VectorUnsignedToFloat
+                           (*(uint *)(iVar2 + 0x160) / *(uint *)(iVar2 + 0x164),
+                            (byte)(in_fpscr >> 0x16) & 3);
+  pfVar1[3] = fVar4;
+  pfVar1[5] = (pfVar1[3] * pfVar1[1]) / pfVar1[2];
+  pfVar1[7] = pfVar1[2] / (pfVar1[1] * DAT_08011998);
+  pfVar1[8] = 1.0;
+  pfVar1[9] = (float)(0x1000000 / *piVar3);
+  fVar4 = (float)VectorSignedToFloat(*piVar3,(byte)(in_fpscr >> 0x16) & 3);
+  pfVar1[10] = 1.0 / fVar4;
+  if (piVar3[4] == 0) {
+    fVar4 = (float)VectorUnsignedToFloat(piVar3[1],(byte)(in_fpscr >> 0x16) & 3);
+    fVar5 = (float)VectorSignedToFloat(*piVar3,(byte)(in_fpscr >> 0x16) & 3);
+    pfVar1[0xb] = (float)piVar3[3] * fVar4 * fVar5;
+  }
+  else {
+    fVar4 = (float)VectorUnsignedToFloat(piVar3[1],(byte)(in_fpscr >> 0x16) & 3);
+    fVar5 = (float)VectorSignedToFloat(*piVar3,(byte)(in_fpscr >> 0x16) & 3);
+    fVar6 = (float)VectorSignedToFloat(piVar3[4],(byte)(in_fpscr >> 0x16) & 3);
+    pfVar1[0xb] = ((float)piVar3[3] * fVar4 * fVar5) / fVar6;
+  }
+  fVar5 = (float)VectorSignedToFloat(*piVar3,(byte)(in_fpscr >> 0x16) & 3);
+  fVar4 = (float)VectorUnsignedToFloat(piVar3[2],(byte)(in_fpscr >> 0x16) & 3);
+  pfVar1[0xc] = (pfVar1[5] * DAT_08011998) / (fVar5 * fVar4);
+  return;
+}
+
+
+
+---- listing 08011810 .. 080118ed ----
+   08011810  movs r0,r0
+   08011812  movs r0,r0
+   08011814  asrs r4,r6,#0x5
+   08011816  movs r0,#0x0
+   08011818  asrs r0,r3,#0x4
+   0801181a  movs r0,#0x0
+   0801181c  push {r4,r5,lr}
+   0801181e  mov r3,r0
+   08011820  add.w r4,r3,r3, lsl #0x2
+   08011824  add.w r4,r4,r3, lsl #0x3
+   08011828  ldr r5,[0x0801198c]
+   0801182a  add.w r0,r5,r4, lsl #0x2
+   0801182e  movw r4,#0x329
+   08011832  muls r4,r3
+   08011834  ldr r5,[0x08011990]
+   08011836  add r4,r5
+   08011838  add.w r2,r4,#0x14e
+   0801183c  add.w r4,r3,r3, lsl #0x2
+   08011840  ldr r5,[0x08011994]
+   08011842  add.w r1,r5,r4, lsl #0x2
+   08011846  ldr r5,[r2,#0x8]
+   08011848  ldr r4,[r2,#0xc]
+   0801184a  udiv r4,r5,r4
+   0801184e  vmov s0,r4
+   08011852  vcvt.f32.u32 s0,s0
+   08011856  vstr.32 s0,[r0]
+   0801185a  ldr r5,[r2,#0x1c]
+   0801185c  ldr r4,[r2,#0x20]
+   0801185e  udiv r4,r5,r4
+   08011862  vmov s0,r4
+   08011866  vcvt.f32.u32 s0,s0
+   0801186a  vstr.32 s0,[r0,#0x4]
+   0801186e  ldr.w r5,[r2,#0x26]
+   08011872  ldr.w r4,[r2,#0x2a]
+   08011876  udiv r4,r5,r4
+   0801187a  vmov s0,r4
+   0801187e  vcvt.f32.u32 s0,s0
+   08011882  vstr.32 s0,[r0,#0x8]
+   08011886  vldr.32 s0,[r0]
+   0801188a  vldr.32 s1,[r0,#0x4]
+   0801188e  vmul.f32 s0,s0,s1
+   08011892  vldr.32 s1,[r0,#0x8]
+   08011896  vdiv.f32 s2,s0,s1
+   0801189a  vstr.32 s2,[r0,#0x10]
+   0801189e  ldr.w r5,[r2,#0x12]
+   080118a2  ldr.w r4,[r2,#0x16]
+   080118a6  udiv r4,r5,r4
+   080118aa  vmov s0,r4
+   080118ae  vcvt.f32.u32 s0,s0
+   080118b2  vstr.32 s0,[r0,#0xc]
+   080118b6  vldr.32 s0,[r0,#0xc]
+   080118ba  vldr.32 s1,[r0,#0x4]
+   080118be  vmul.f32 s0,s0,s1
+   080118c2  vldr.32 s1,[r0,#0x8]
+   080118c6  vdiv.f32 s2,s0,s1
+   080118ca  vstr.32 s2,[r0,#0x14]
+   080118ce  vldr.32 s0,[r0,#0x8]
+   080118d2  vldr.32 s1,[r0,#0x4]
+   080118d6  vldr.32 s2,[pc,#0xc0]
+   080118da  vmul.f32 s1,s1,s2
+   080118de  vdiv.f32 s2,s0,s1
+   080118e2  vstr.32 s2,[r0,#0x1c]
+   080118e6  vmov.f32 s0,0x3f800000
+   080118ea  vstr.32 s0,[r0,#0x20]
+
+
+================================================================================
+## requested 0x0801420C -> function FUN_0801420c entry=0801420c
+================================================================================
+
+void FUN_0801420c(int param_1,undefined4 param_2)
+
+{
+  *(undefined4 *)(param_1 + 0x38) = param_2;
+  return;
+}
+
+
+
+---- listing 0801420c .. 0801420f ----
+   0801420c  str r1,[r0,#0x38]
+   0801420e  bx lr
+
+
+================================================================================
+## requested 0x08014100 -> function thunk_FUN_0801413e entry=08014100
+================================================================================
+
+void thunk_FUN_0801413e(void)
+
+{
+  return;
+}
+
+
+
+---- listing 08014100 .. 08014101 ----
+   08014100  b 0x0801413e
+
+
+================================================================================
+## requested 0x08013FC4 -> function FUN_08013fc4 entry=08013fc4
+================================================================================
+
+undefined4 FUN_08013fc4(undefined4 param_1)
+
+{
+  return param_1;
+}
+
+
+
+---- listing 08013fc4 .. 08013fc9 ----
+   08013fc4  movs r0,r0
+   08013fc6  movs r0,r0
+   08013fc8  bx lr
+
+
+================================================================================
+## requested 0x080148A0 -> function FUN_08014864 entry=08014864
+================================================================================
+
+void FUN_08014864(int param_1)
+
+{
+  int *piVar1;
+  int *piVar2;
+  int iVar3;
+  int iVar4;
+  undefined4 uVar5;
+  int *piVar6;
+  int iVar7;
+  int iVar8;
+  int iVar9;
+  int iVar10;
+  bool bVar11;
+  uint in_fpscr;
+  float fVar12;
+  float fVar13;
+  longlong lVar14;
+  undefined8 uVar15;
+  
+  iVar3 = DAT_08014b84 + param_1 * 0x48;
+  iVar8 = param_1 * 0x329 + DAT_08014b88;
+  iVar7 = DAT_08014b8c + param_1 * 0xac;
+  piVar6 = (int *)(DAT_08014b90 + param_1 * 0xe4);
+  iVar4 = DAT_08014b94 + param_1 * 600;
+  bVar11 = *DAT_08014b98 == '\0';
+  do {
+    if (!bVar11) goto LAB_08014ae6;
+    bVar11 = *DAT_08014b9c == '\x01';
+  } while (!bVar11);
+  iVar9 = *(int *)(DAT_08014b84 + param_1 * 0x48 + 0xc);
+  if (piVar6[1] < *(int *)(iVar7 + 0xa0) + iVar9) {
+    iVar10 = -1;
+  }
+  else if (*(int *)(iVar7 + 0xa0) + iVar9 < -piVar6[1]) {
+    iVar10 = 1;
+  }
+  else {
+    iVar10 = 0;
+  }
+  if (piVar6[0x2d] == 3) {
+    DAT_08014ba0[2] = *(int *)(DAT_08014b84 + param_1 * 0x48 + 0xc);
+    piVar1 = DAT_08014ba0;
+    DAT_08014ba0[3] = *(int *)(DAT_08014b84 + param_1 * 0x48 + 0x18);
+    *piVar1 = *(int *)(iVar7 + 0xa0);
+    piVar1[1] = *(int *)(iVar7 + 0xa4);
+    piVar1[8] = *(int *)(iVar3 + 0x10);
+    lVar14 = (longlong)(*piVar6 * iVar10 + *(int *)(iVar7 + 0xa0) + iVar9) * (longlong)piVar6[3] *
+             (longlong)*(int *)(iVar4 + 0x22c);
+    iVar4 = *piVar6;
+    lVar14 = FUN_08000222((int)lVar14,(int)((ulonglong)lVar14 >> 0x20),iVar4,iVar4 >> 0x1f,lVar14,
+                          iVar4,iVar4 >> 0x1f);
+    piVar1 = DAT_08014ba0;
+    if (lVar14 < 0) {
+      DAT_08014ba0[6] = (DAT_08014ba0[1] - DAT_08014ba0[3]) + (int)lVar14;
+      piVar2 = DAT_08014ba0;
+      if (piVar1[6] < 1) {
+        fVar13 = (float)VectorSignedToFloat(DAT_08014ba0[6],(byte)(in_fpscr >> 0x16) & 3);
+        fVar12 = (float)VectorSignedToFloat(piVar6[3],(byte)(in_fpscr >> 0x16) & 3);
+        DAT_08014ba0[4] = (int)(fVar13 / fVar12);
+        uVar15 = FUN_08000720(piVar2[4]);
+        FUN_080004aa((int)uVar15,(int)((ulonglong)uVar15 >> 0x20),(int)DAT_08014ba4,
+                     (int)((ulonglong)DAT_08014ba4 >> 0x20));
+        iVar4 = FUN_080006e2();
+        DAT_08014ba0[5] = iVar4;
+      }
+      else {
+        piVar1[5] = 0;
+      }
+      DAT_08014ba0[7] = (piVar6[3] * DAT_08014ba0[5] - DAT_08014ba0[1]) + DAT_08014ba0[3];
+    }
+    else {
+      DAT_08014ba0[6] = (DAT_08014ba0[1] - DAT_08014ba0[3]) + (int)lVar14;
+      piVar2 = DAT_08014ba0;
+      if (piVar1[6] < 0) {
+        piVar1[5] = 0;
+      }
+      else {
+        fVar13 = (float)VectorSignedToFloat(DAT_08014ba0[6],(byte)(in_fpscr >> 0x16) & 3);
+        fVar12 = (float)VectorSignedToFloat(piVar6[3],(byte)(in_fpscr >> 0x16) & 3);
+        DAT_08014ba0[4] = (int)(fVar13 / fVar12);
+        uVar15 = FUN_08000720(piVar2[4]);
+        FUN_08000368((int)uVar15,(int)((ulonglong)uVar15 >> 0x20),(int)DAT_08014ba4,
+                     (int)((ulonglong)DAT_08014ba4 >> 0x20));
+        iVar4 = FUN_080006e2();
+        DAT_08014ba0[5] = iVar4;
+      }
+      DAT_08014ba0[7] = (DAT_08014ba0[5] * piVar6[3] + DAT_08014ba0[3]) - DAT_08014ba0[1];
+    }
+    *(int *)(iVar7 + 0xa8) = DAT_08014ba0[7] - DAT_08014ba0[8];
+  }
+  else if (piVar6[0x2d] == 0) {
+    lVar14 = (longlong)(*piVar6 * iVar10 + *(int *)(iVar7 + 0xa0) + iVar9) * (longlong)piVar6[3] *
+             (longlong)*(int *)(iVar4 + 0x22c);
+    iVar4 = *piVar6;
+    uVar5 = FUN_08000222((int)lVar14,(int)((ulonglong)lVar14 >> 0x20),iVar4,iVar4 >> 0x1f,lVar14,
+                         iVar4,iVar4 >> 0x1f);
+    *(undefined4 *)(iVar7 + 0xa8) = uVar5;
+  }
+  else {
+    *(undefined4 *)(iVar7 + 0xa8) = *(undefined4 *)(iVar7 + 0xa0);
+  }
+  *DAT_08014b98 = '\x01';
+LAB_08014ae6:
+  if (*DAT_08014bac == 1) {
+    DAT_08014bb0[6] = 0;
+  }
+  *(int *)(iVar8 + 0x234) = DAT_08014bb0[6] + *(int *)(iVar3 + 0x10) + *(int *)(iVar7 + 0xa8);
+  if (*(int *)(iVar8 + 0x234) < 0) {
+    DAT_08014bb0[1] = *(int *)(iVar8 + 0x234) / piVar6[3] + -1;
+    iVar3 = piVar6[3];
+    *DAT_08014bb0 = (*(int *)(iVar8 + 0x234) - iVar3 * (*(int *)(iVar8 + 0x234) / iVar3)) + iVar3;
+  }
+  else {
+    DAT_08014bb0[1] = *(int *)(iVar8 + 0x234) / piVar6[3];
+    *DAT_08014bb0 = *(int *)(iVar8 + 0x234) - piVar6[3] * (*(int *)(iVar8 + 0x234) / piVar6[3]);
+  }
+  uVar5 = (**(code **)(DAT_08014bb4 + 8))(param_1,*(undefined4 *)(iVar8 + 0x234));
+  *(undefined4 *)(iVar8 + 0x238) = uVar5;
+  if ((*DAT_08014b98 == '\x01') && (piVar6[0x2d] == 0)) {
+    FUN_08015778(0);
+  }
+  return;
+}
+
+
+
+---- listing 08014864 .. 08014b83 ----
+   08014864  push {r4,r5,r6,r7,r8,r9,r10,r11,lr}
+   08014868  vpush {d8,d9}
+   0801486c  sub sp,#0x1c
+   0801486e  mov r8,r0
+   08014870  add.w r0,r8,r8, lsl #0x3
+   08014874  ldr r1,[0x08014b84]
+   08014876  add.w r0,r1,r0, lsl #0x3
+   0801487a  str r0,[sp,#0x14]
+   0801487c  movw r0,#0x329
+   08014880  mul r0,r8,r0
+   08014884  ldr r1,[0x08014b88]
+   08014886  add.w r9,r0,r1
+   0801488a  movs r0,#0x2b
+   0801488c  mul r0,r8,r0
+   08014890  ldr r1,[0x08014b8c]
+   08014892  add.w r5,r1,r0, lsl #0x2
+   08014896  rsb r0,r8,r8, lsl #0x3
+   0801489a  rsb r0,r0,r8, lsl #0x6
+   0801489e  ldr r1,[0x08014b90]
+   080148a0  add.w r4,r1,r0, lsl #0x2
+   080148a4  rsb r0,r8,r8, lsl #0x4
+   080148a8  add.w r0,r0,r0, lsl #0x2
+   080148ac  ldr r1,[0x08014b94]
+   080148ae  add.w r0,r1,r0, lsl #0x3
+   080148b2  str r0,[sp,#0x10]
+   080148b4  ldr r0,[0x08014b98]
+   080148b6  ldrb r0,[r0,#0x0]
+   080148b8  cmp r0,#0x0
+   080148ba  bne 0x0801499e
+   080148bc  ldr r0,[0x08014b9c]
+   080148be  ldrb r0,[r0,#0x0]
+   080148c0  cmp r0,#0x1
+   080148c2  bne 0x080148ba
+   080148c4  add.w r0,r8,r8, lsl #0x3
+   080148c8  ldr r1,[0x08014b84]
+   080148ca  add.w r0,r1,r0, lsl #0x3
+   080148ce  ldr.w r10,[r0,#0xc]
+   080148d2  ldr.w r0,[r5,#0xa0]
+   080148d6  add r0,r10
+   080148d8  ldr r1,[r4,#0x4]
+   080148da  cmp r0,r1
+   080148dc  ble 0x080148e4
+   080148de  mov.w r11,#0xffffffff
+   080148e2  b 0x080148fc
+   080148e4  ldr.w r0,[r5,#0xa0]
+   080148e8  add r0,r10
+   080148ea  ldr r1,[r4,#0x4]
+   080148ec  rsbs r1,r1
+   080148ee  cmp r0,r1
+   080148f0  bge 0x080148f8
+   080148f2  mov.w r11,#0x1
+   080148f6  b 0x080148fc
+   080148f8  mov.w r11,#0x0
+   080148fc  movs r0,#0xb4
+   080148fe  ldr r0,[r0,r4]
+   08014900  cmp r0,#0x3
+   08014902  bne 0x080149fe
+   08014904  add.w r0,r8,r8, lsl #0x3
+   08014908  ldr r1,[0x08014b84]
+   0801490a  add.w r0,r1,r0, lsl #0x3
+   0801490e  ldr r0,[r0,#0xc]
+   08014910  ldr r1,[0x08014ba0]
+   08014912  str r0,[r1,#0x8]
+   08014914  add.w r0,r8,r8, lsl #0x3
+   08014918  ldr r1,[0x08014b84]
+   0801491a  add.w r0,r1,r0, lsl #0x3
+   0801491e  ldr r0,[r0,#0x18]
+   08014920  ldr r1,[0x08014ba0]
+   08014922  str r0,[r1,#0xc]
+   08014924  ldr.w r0,[r5,#0xa0]!
+   08014928  str r0,[r1,#0x0]
+   0801492a  ldr r0,[r5,#0x4]
+   0801492c  str r0,[r1,#0x4]
+   0801492e  ldr r0,[sp,#0x14]
+   08014930  ldr r0,[r0,#0x10]
+   08014932  str r0,[r1,#0x20]
+   08014934  ldr.w r0,[r5],#-0xa0
+   08014938  add r0,r10
+   0801493a  ldr r1,[r4,#0x0]
+   0801493c  mla r0,r1,r11,r0
+   08014940  ldr r1,[r4,#0xc]
+   08014942  smull r1,r2,r0,r1
+   08014946  ldr r0,[sp,#0x10]
+   08014948  ldr.w r0,[r0,#0x22c]
+   0801494c  asrs r3,r0,#0x1f
+   0801494e  umull r12,lr,r1,r0
+   08014952  mla r0,r2,r0,lr
+   08014956  mla r0,r1,r3,r0
+   0801495a  strd r12,r0,[sp,#0x0]
+   0801495e  ldr r0,[r4,#0x0]
+   08014960  asrs r1,r0,#0x1f
+   08014962  mov r2,r0
+   08014964  mov r3,r1
+   08014966  strd r0,r1,[sp,#0x8]
+   0801496a  mov r0,r12
+   0801496c  ldr r1,[sp,#0x4]
+   0801496e  bl 0x08000222
+   08014972  mov r6,r0
+   08014974  mov r7,r1
+   08014976  movs r3,#0x0
+   08014978  subs r0,r6,r3
+   0801497a  sbcs.w r1,r7,r3
+   0801497e  blt 0x08014a00
+   08014980  ldr r0,[0x08014ba0]
+   08014982  ldr r0,[r0,#0x4]
+   08014984  ldr r1,[0x08014ba0]
+   08014986  ldr r1,[r1,#0xc]
+   08014988  subs r0,r0,r1
+   0801498a  adds r0,r0,r6
+   0801498c  ldr r1,[0x08014ba0]
+   0801498e  str r0,[r1,#0x18]
+   08014990  mov r0,r1
+   08014992  ldr r0,[r0,#0x18]
+   08014994  cmp r0,#0x0
+   08014996  bge 0x080149a0
+   08014998  movs r0,#0x0
+   0801499a  str r0,[r1,#0x14]
+   0801499c  b 0x080149e4
+   0801499e  b 0x08014ae6
+   080149a0  ldr r0,[0x08014ba0]
+   080149a2  vldr.32 s0,[r0,#0x18]
+   080149a6  vcvt.f32.s32 s1,s0
+   080149aa  vldr.32 s0,[r4,#0xc]
+   080149ae  vcvt.f32.s32 s0,s0
+   080149b2  vdiv.f32 s2,s1,s0
+   080149b6  vstr.32 s2,[r0,#0x10]
+   080149ba  vldr.32 s0,[r0,#0x10]
+   080149be  vmov r1,s0
+   080149c2  mov r0,r1
+   080149c4  bl 0x08000720
+   080149c8  vmov d9,r0,r1
+   080149cc  vldr.64 d0,[pc,#0x1d4]
+   080149d0  vmov r2,r3,d0
+   080149d4  bl 0x08000368
+   080149d8  vmov d8,r0,r1
+   080149dc  bl 0x080006e2
+   080149e0  ldr r1,[0x08014ba0]
+   080149e2  str r0,[r1,#0x14]
+   080149e4  ldr r0,[0x08014ba0]
+   080149e6  ldr r0,[r0,#0xc]
+   080149e8  ldr r1,[0x08014ba0]
+   080149ea  ldr r1,[r1,#0x14]
+   080149ec  ldr r2,[r4,#0xc]
+   080149ee  mla r0,r1,r2,r0
+   080149f2  ldr r1,[0x08014ba0]
+   080149f4  ldr r1,[r1,#0x4]
+   080149f6  subs r0,r0,r1
+   080149f8  ldr r1,[0x08014ba0]
+   080149fa  str r0,[r1,#0x1c]
+   080149fc  b 0x08014a7a
+   080149fe  b 0x08014a8a
+   08014a00  ldr r0,[0x08014ba0]
+   08014a02  ldr r0,[r0,#0x4]
+   08014a04  ldr r1,[0x08014ba0]
+   08014a06  ldr r1,[r1,#0xc]
+   08014a08  subs r0,r0,r1
+   08014a0a  adds r0,r0,r6
+   08014a0c  ldr r1,[0x08014ba0]
+   08014a0e  str r0,[r1,#0x18]
+   08014a10  mov r0,r1
+   08014a12  ldr r0,[r0,#0x18]
+   08014a14  cmp r0,#0x0
+   08014a16  ble 0x08014a1e
+   08014a18  movs r0,#0x0
+   08014a1a  str r0,[r1,#0x14]
+   08014a1c  b 0x08014a62
+   08014a1e  ldr r0,[0x08014ba0]
+   08014a20  vldr.32 s0,[r0,#0x18]
+   08014a24  vcvt.f32.s32 s1,s0
+   08014a28  vldr.32 s0,[r4,#0xc]
+   08014a2c  vcvt.f32.s32 s0,s0
+   08014a30  vdiv.f32 s2,s1,s0
+   08014a34  vstr.32 s2,[r0,#0x10]
+   08014a38  vldr.32 s0,[r0,#0x10]
+   08014a3c  vmov r1,s0
+   08014a40  mov r0,r1
+   08014a42  bl 0x08000720
+   08014a46  vmov d9,r0,r1
+   08014a4a  vldr.64 d0,[pc,#0x158]
+   08014a4e  vmov r2,r3,d0
+   08014a52  bl 0x080004aa
+   08014a56  vmov d8,r0,r1
+   08014a5a  bl 0x080006e2
+   08014a5e  ldr r1,[0x08014ba0]
+   08014a60  str r0,[r1,#0x14]
+   08014a62  ldr r0,[0x08014ba0]
+   08014a64  ldr r0,[r0,#0x14]
+   08014a66  ldr r1,[r4,#0xc]
+   08014a68  muls r0,r1
+   08014a6a  ldr r1,[0x08014ba0]
+   08014a6c  ldr r1,[r1,#0x4]
+   08014a6e  subs r0,r0,r1
+   08014a70  ldr r1,[0x08014ba0]
+   08014a72  ldr r1,[r1,#0xc]
+   08014a74  add r0,r1
+   08014a76  ldr r1,[0x08014ba0]
+   08014a78  str r0,[r1,#0x1c]
+   08014a7a  ldr r0,[0x08014ba0]
+   08014a7c  ldr r0,[r0,#0x1c]
+   08014a7e  ldr r1,[0x08014ba0]
+   08014a80  ldr r1,[r1,#0x20]
+   08014a82  subs r0,r0,r1
+   08014a84  str.w r0,[r5,#0xa8]
+   08014a88  b 0x08014ae0
+   08014a8a  movs r0,#0xb4
+   08014a8c  ldr r0,[r0,r4]
+   08014a8e  cbnz r0,0x08014ad8
+   08014a90  ldr.w r0,[r5,#0xa0]
+   08014a94  add r0,r10
+   08014a96  ldr r1,[r4,#0x0]
+   08014a98  mla r0,r1,r11,r0
+   08014a9c  ldr r1,[r4,#0xc]
+   08014a9e  smull r2,r3,r0,r1
+   08014aa2  ldr r0,[sp,#0x10]
+   08014aa4  ldr.w r0,[r0,#0x22c]
+   08014aa8  asr.w r12,r0, asr #0x1f
+   08014aac  umull r1,lr,r2,r0
+   08014ab0  mla r0,r3,r0,lr
+   08014ab4  mla r0,r2,r12,r0
+   08014ab8  strd r1,r0,[sp,#0x0]
+   08014abc  ldr r0,[r4,#0x0]
+   08014abe  asrs r1,r0,#0x1f
+   08014ac0  mov r2,r0
+   08014ac2  mov r3,r1
+   08014ac4  strd r0,r1,[sp,#0x8]
+   08014ac8  ldrd r0,r1,[sp,#0x0]
+   08014acc  bl 0x08000222
+   08014ad0  mov r6,r0
+   08014ad2  str.w r6,[r5,#0xa8]
+   08014ad6  b 0x08014ae0
+   08014ad8  ldr.w r0,[r5,#0xa0]
+   08014adc  str.w r0,[r5,#0xa8]
+   08014ae0  movs r0,#0x1
+   08014ae2  ldr r1,[0x08014b98]
+   08014ae4  strb r0,[r1,#0x0]
+   08014ae6  ldr r0,[0x08014bac]
+   08014ae8  ldrh r0,[r0,#0x0]
+   08014aea  cmp r0,#0x1
+   08014aec  bne 0x08014af4
+   08014aee  movs r0,#0x0
+   08014af0  ldr r1,[0x08014bb0]
+   08014af2  str r0,[r1,#0x18]
+   08014af4  ldr r0,[sp,#0x14]
+   08014af6  ldr r0,[r0,#0x10]
+   08014af8  ldr.w r1,[r5,#0xa8]
+   08014afc  add r0,r1
+   08014afe  ldr r1,[0x08014bb0]
+   08014b00  ldr r1,[r1,#0x18]
+   08014b02  add r1,r0
+   08014b04  str.w r1,[r9,#0x234]
+   08014b08  ldr.w r0,[r9,#0x234]
+   08014b0c  cmp r0,#0x0
+   08014b0e  blt 0x08014b32
+   08014b10  ldr.w r0,[r9,#0x234]
+   08014b14  ldr r1,[r4,#0xc]
+   08014b16  sdiv r0,r0,r1
+   08014b1a  ldr r1,[0x08014bb0]
+   08014b1c  str r0,[r1,#0x4]
+   08014b1e  ldr.w r0,[r9,#0x234]
+   08014b22  ldr r1,[r4,#0xc]
+   08014b24  sdiv r2,r0,r1
+   08014b28  mls r0,r1,r2,r0
+   08014b2c  ldr r1,[0x08014bb0]
+   08014b2e  str r0,[r1,#0x0]
+   08014b30  b 0x08014b56
+   08014b32  ldr.w r0,[r9,#0x234]
+   08014b36  ldr r1,[r4,#0xc]
+   08014b38  sdiv r0,r0,r1
+   08014b3c  subs r0,r0,#0x1
+   08014b3e  ldr r1,[0x08014bb0]
+   08014b40  str r0,[r1,#0x4]
+   08014b42  ldr.w r0,[r9,#0x234]
+   08014b46  ldr r1,[r4,#0xc]
+   08014b48  sdiv r2,r0,r1
+   08014b4c  mls r0,r1,r2,r0
+   08014b50  add r0,r1
+   08014b52  ldr r1,[0x08014bb0]
+   08014b54  str r0,[r1,#0x0]
+   08014b56  ldr.w r1,[r9,#0x234]
+   08014b5a  ldr r0,[0x08014bb4]
+   08014b5c  ldr r2,[r0,#0x8]
+   08014b5e  mov r0,r8
+   08014b60  blx r2
+   08014b62  str.w r0,[r9,#0x238]
+   08014b66  ldr r0,[0x08014b98]
+   08014b68  ldrb r0,[r0,#0x0]
+   08014b6a  cmp r0,#0x1
+   08014b6c  bne 0x08014b7a
+   08014b6e  movs r0,#0xb4
+   08014b70  ldr r0,[r0,r4]
+   08014b72  cbnz r0,0x08014b7a
+   08014b74  movs r0,#0x0
+   08014b76  bl 0x08015778
+   08014b7a  add sp,#0x1c
+   08014b7c  vpop {d8,d9}
+   08014b80  pop.w {r4,r5,r6,r7,r8,r9,r10,r11,pc}
+
+
+================================================================================
+## requested 0x080195A0 -> function FUN_0801956c entry=0801956c
+================================================================================
+
+void FUN_0801956c(int param_1,int param_2,int param_3,int param_4,int param_5,int param_6,
+                 int param_7,int param_8,int param_9,int param_10,int param_11,int param_12,
+                 int param_13,int param_14)
+
+{
+  int *piVar1;
+  code *UNRECOVERED_JUMPTABLE;
+  uint in_fpscr;
+  float fVar2;
+  undefined4 uVar3;
+  float fVar4;
+  
+  piVar1 = (int *)(DAT_0801972c + param_1 * 0xe4);
+  piVar1[0x2c] = param_2;
+  piVar1[0x2d] = param_3;
+  piVar1[0x2e] = param_4;
+  piVar1[0x2f] = param_5;
+  piVar1[0x30] = param_6;
+  piVar1[0x31] = param_7;
+  piVar1[0x32] = param_8;
+  piVar1[0x33] = param_9;
+  piVar1[0x34] = param_10;
+  piVar1[0x35] = param_11;
+  piVar1[0x36] = param_12;
+  piVar1[0x37] = param_13;
+  piVar1[0x38] = param_14;
+  fVar2 = (float)VectorSignedToFloat(piVar1[0x32],(byte)(in_fpscr >> 0x16) & 3);
+  piVar1[8] = (int)(1.0 / fVar2);
+  piVar1[0x1e] = 0x32;
+  piVar1[0x1f] = 0;
+  piVar1[0x20] = 0x32;
+  piVar1[0x21] = 0;
+  piVar1[0x22] = 0x32;
+  piVar1[0x23] = 0;
+  if (piVar1[0x35] == 0) {
+    *piVar1 = piVar1[0x38] << 2;
+  }
+  else {
+    *piVar1 = 1 << (sbyte)piVar1[0x36];
+  }
+  piVar1[2] = *piVar1 + -1;
+  piVar1[1] = *piVar1 / 2;
+  if (piVar1[0x2d] == 0) {
+    piVar1[3] = piVar1[0x30] << 2;
+  }
+  else {
+    piVar1[3] = 1 << (sbyte)piVar1[0x2e];
+  }
+  piVar1[5] = piVar1[3] + -1;
+  piVar1[4] = piVar1[3] / 2;
+  if (piVar1[0x2c] == 0) {
+    fVar2 = (float)VectorSignedToFloat(piVar1[0x31],(byte)(in_fpscr >> 0x16) & 3);
+    uVar3 = VectorFloatToUnsigned(fVar2 * DAT_08019730,3);
+    *(short *)(piVar1 + 0xc) = (short)uVar3;
+  }
+  else {
+    *(undefined2 *)(piVar1 + 0xc) = 0;
+  }
+  fVar2 = (float)VectorSignedToFloat(piVar1[3],(byte)(in_fpscr >> 0x16) & 3);
+  fVar4 = (float)VectorSignedToFloat(piVar1[0x33],(byte)(in_fpscr >> 0x16) & 3);
+  piVar1[6] = (int)((DAT_08019734 / fVar2) * fVar4);
+  fVar2 = (float)VectorSignedToFloat(piVar1[0x34],(byte)(in_fpscr >> 0x16) & 3);
+  piVar1[7] = (int)(fVar2 * (float)piVar1[8] * DAT_08019738);
+  fVar4 = (float)VectorSignedToFloat(piVar1[3] * piVar1[0x34],(byte)(in_fpscr >> 0x16) & 3);
+  fVar2 = (float)VectorSignedToFloat(piVar1[0x33],(byte)(in_fpscr >> 0x16) & 3);
+  piVar1[9] = (int)((fVar2 * DAT_0801973c) / fVar4);
+  piVar1[10] = DAT_08019740 / piVar1[0x32];
+  if (piVar1[0x2d] == 1) {
+    *(undefined2 *)(piVar1 + 0xd) = 3;
+  }
+  else if (piVar1[0x2d] == 2) {
+    *(undefined2 *)(piVar1 + 0xd) = 0x14;
+  }
+  else if (piVar1[0x2d] == 3) {
+    *(undefined2 *)(piVar1 + 0xd) = 0x14;
+  }
+  else if (piVar1[0x2d] == 4) {
+    *(undefined2 *)(piVar1 + 0xd) = 0;
+  }
+  FUN_080186a8(param_1);
+                    /* WARNING: Could not recover jumptable at 0x08019726. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*UNRECOVERED_JUMPTABLE)();
+  return;
+}
+
+
+
+---- listing 0801956c .. 0801963f ----
+   0801956c  push {r0,r1,r2,r3}
+   0801956e  push {r4,r5,r6,lr}
+   08019570  mov r5,r0
+   08019572  rsb r0,r5,r5, lsl #0x3
+   08019576  rsb r0,r0,r5, lsl #0x6
+   0801957a  ldr r1,[0x0801972c]
+   0801957c  add.w r4,r1,r0, lsl #0x2
+   08019580  ldr r0,[sp,#0x14]
+   08019582  str.w r0,[r4,#0xb0]
+   08019586  movs r0,#0xb4
+   08019588  ldr r1,[sp,#0x18]
+   0801958a  str r1,[r0,r4]
+   0801958c  movs r0,#0xb8
+   0801958e  ldr r1,[sp,#0x1c]
+   08019590  str r1,[r0,r4]
+   08019592  movs r0,#0xbc
+   08019594  ldr r1,[sp,#0x20]
+   08019596  str r1,[r0,r4]
+   08019598  movs r0,#0xc0
+   0801959a  ldr r1,[sp,#0x24]
+   0801959c  str r1,[r0,r4]
+   0801959e  movs r0,#0xc4
+   080195a0  ldr r1,[sp,#0x28]
+   080195a2  str r1,[r0,r4]
+   080195a4  movs r0,#0xc8
+   080195a6  ldr r1,[sp,#0x2c]
+   080195a8  str r1,[r0,r4]
+   080195aa  movs r0,#0xcc
+   080195ac  ldr r1,[sp,#0x30]
+   080195ae  str r1,[r0,r4]
+   080195b0  movs r0,#0xd0
+   080195b2  ldr r1,[sp,#0x34]
+   080195b4  str r1,[r0,r4]
+   080195b6  movs r0,#0xd4
+   080195b8  ldr r1,[sp,#0x38]
+   080195ba  str r1,[r0,r4]
+   080195bc  movs r0,#0xd8
+   080195be  ldr r1,[sp,#0x3c]
+   080195c0  str r1,[r0,r4]
+   080195c2  movs r0,#0xdc
+   080195c4  ldr r1,[sp,#0x40]
+   080195c6  str r1,[r0,r4]
+   080195c8  movs r0,#0xe0
+   080195ca  ldr r1,[sp,#0x44]
+   080195cc  str r1,[r0,r4]
+   080195ce  vldr.32 s0,[r4,#0xc8]
+   080195d2  vcvt.f32.s32 s0,s0
+   080195d6  vmov.f32 s1,0x3f800000
+   080195da  vdiv.f32 s2,s1,s0
+   080195de  adds r4,#0x20
+   080195e0  vstr.32 s2,[r4]
+   080195e4  movs r0,#0x32
+   080195e6  str r0,[r4,#0x58]
+   080195e8  movs r0,#0x0
+   080195ea  str r0,[r4,#0x5c]
+   080195ec  movs r0,#0x32
+   080195ee  str r0,[r4,#0x60]
+   080195f0  movs r0,#0x0
+   080195f2  str r0,[r4,#0x64]
+   080195f4  movs r0,#0x32
+   080195f6  str r0,[r4,#0x68]
+   080195f8  movs r0,#0x0
+   080195fa  str r0,[r4,#0x6c]
+   080195fc  subs r4,#0x20
+   080195fe  movs r0,#0xd4
+   08019600  ldr r0,[r0,r4]
+   08019602  cbnz r0,0x0801960e
+   08019604  movs r0,#0xe0
+   08019606  ldr r0,[r0,r4]
+   08019608  lsls r0,r0,#0x2
+   0801960a  str r0,[r4,#0x0]
+   0801960c  b 0x08019618
+   0801960e  ldrb.w r1,[r4,#0xd8]
+   08019612  movs r0,#0x1
+   08019614  lsls r0,r1
+   08019616  str r0,[r4,#0x0]
+   08019618  ldr r0,[r4,#0x0]
+   0801961a  subs r0,r0,#0x1
+   0801961c  str r0,[r4,#0x8]
+   0801961e  ldr r0,[r4,#0x0]
+   08019620  add.w r1,r0,r0, lsr #0x1f
+   08019624  asrs r1,r1,#0x1
+   08019626  str r1,[r4,#0x4]
+   08019628  movs r0,#0xb4
+   0801962a  ldr r0,[r0,r4]
+   0801962c  cbnz r0,0x08019638
+   0801962e  movs r0,#0xc0
+   08019630  ldr r0,[r0,r4]
+   08019632  lsls r0,r0,#0x2
+   08019634  str r0,[r4,#0xc]
+   08019636  b 0x08019642
+   08019638  movs r0,#0xb8
+   0801963a  ldrb r1,[r0,r4]
+   0801963c  movs r0,#0x1
+   0801963e  lsls r0,r1
+
+
+================================================================================
+## requested 0x080195E8 -> function FUN_0801956c entry=0801956c
+================================================================================
+
+void FUN_0801956c(int param_1,int param_2,int param_3,int param_4,int param_5,int param_6,
+                 int param_7,int param_8,int param_9,int param_10,int param_11,int param_12,
+                 int param_13,int param_14)
+
+{
+  int *piVar1;
+  code *UNRECOVERED_JUMPTABLE;
+  uint in_fpscr;
+  float fVar2;
+  undefined4 uVar3;
+  float fVar4;
+  
+  piVar1 = (int *)(DAT_0801972c + param_1 * 0xe4);
+  piVar1[0x2c] = param_2;
+  piVar1[0x2d] = param_3;
+  piVar1[0x2e] = param_4;
+  piVar1[0x2f] = param_5;
+  piVar1[0x30] = param_6;
+  piVar1[0x31] = param_7;
+  piVar1[0x32] = param_8;
+  piVar1[0x33] = param_9;
+  piVar1[0x34] = param_10;
+  piVar1[0x35] = param_11;
+  piVar1[0x36] = param_12;
+  piVar1[0x37] = param_13;
+  piVar1[0x38] = param_14;
+  fVar2 = (float)VectorSignedToFloat(piVar1[0x32],(byte)(in_fpscr >> 0x16) & 3);
+  piVar1[8] = (int)(1.0 / fVar2);
+  piVar1[0x1e] = 0x32;
+  piVar1[0x1f] = 0;
+  piVar1[0x20] = 0x32;
+  piVar1[0x21] = 0;
+  piVar1[0x22] = 0x32;
+  piVar1[0x23] = 0;
+  if (piVar1[0x35] == 0) {
+    *piVar1 = piVar1[0x38] << 2;
+  }
+  else {
+    *piVar1 = 1 << (sbyte)piVar1[0x36];
+  }
+  piVar1[2] = *piVar1 + -1;
+  piVar1[1] = *piVar1 / 2;
+  if (piVar1[0x2d] == 0) {
+    piVar1[3] = piVar1[0x30] << 2;
+  }
+  else {
+    piVar1[3] = 1 << (sbyte)piVar1[0x2e];
+  }
+  piVar1[5] = piVar1[3] + -1;
+  piVar1[4] = piVar1[3] / 2;
+  if (piVar1[0x2c] == 0) {
+    fVar2 = (float)VectorSignedToFloat(piVar1[0x31],(byte)(in_fpscr >> 0x16) & 3);
+    uVar3 = VectorFloatToUnsigned(fVar2 * DAT_08019730,3);
+    *(short *)(piVar1 + 0xc) = (short)uVar3;
+  }
+  else {
+    *(undefined2 *)(piVar1 + 0xc) = 0;
+  }
+  fVar2 = (float)VectorSignedToFloat(piVar1[3],(byte)(in_fpscr >> 0x16) & 3);
+  fVar4 = (float)VectorSignedToFloat(piVar1[0x33],(byte)(in_fpscr >> 0x16) & 3);
+  piVar1[6] = (int)((DAT_08019734 / fVar2) * fVar4);
+  fVar2 = (float)VectorSignedToFloat(piVar1[0x34],(byte)(in_fpscr >> 0x16) & 3);
+  piVar1[7] = (int)(fVar2 * (float)piVar1[8] * DAT_08019738);
+  fVar4 = (float)VectorSignedToFloat(piVar1[3] * piVar1[0x34],(byte)(in_fpscr >> 0x16) & 3);
+  fVar2 = (float)VectorSignedToFloat(piVar1[0x33],(byte)(in_fpscr >> 0x16) & 3);
+  piVar1[9] = (int)((fVar2 * DAT_0801973c) / fVar4);
+  piVar1[10] = DAT_08019740 / piVar1[0x32];
+  if (piVar1[0x2d] == 1) {
+    *(undefined2 *)(piVar1 + 0xd) = 3;
+  }
+  else if (piVar1[0x2d] == 2) {
+    *(undefined2 *)(piVar1 + 0xd) = 0x14;
+  }
+  else if (piVar1[0x2d] == 3) {
+    *(undefined2 *)(piVar1 + 0xd) = 0x14;
+  }
+  else if (piVar1[0x2d] == 4) {
+    *(undefined2 *)(piVar1 + 0xd) = 0;
+  }
+  FUN_080186a8(param_1);
+                    /* WARNING: Could not recover jumptable at 0x08019726. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*UNRECOVERED_JUMPTABLE)();
+  return;
+}
+
+
+
+---- listing 0801956c .. 0801963f ----
+   0801956c  push {r0,r1,r2,r3}
+   0801956e  push {r4,r5,r6,lr}
+   08019570  mov r5,r0
+   08019572  rsb r0,r5,r5, lsl #0x3
+   08019576  rsb r0,r0,r5, lsl #0x6
+   0801957a  ldr r1,[0x0801972c]
+   0801957c  add.w r4,r1,r0, lsl #0x2
+   08019580  ldr r0,[sp,#0x14]
+   08019582  str.w r0,[r4,#0xb0]
+   08019586  movs r0,#0xb4
+   08019588  ldr r1,[sp,#0x18]
+   0801958a  str r1,[r0,r4]
+   0801958c  movs r0,#0xb8
+   0801958e  ldr r1,[sp,#0x1c]
+   08019590  str r1,[r0,r4]
+   08019592  movs r0,#0xbc
+   08019594  ldr r1,[sp,#0x20]
+   08019596  str r1,[r0,r4]
+   08019598  movs r0,#0xc0
+   0801959a  ldr r1,[sp,#0x24]
+   0801959c  str r1,[r0,r4]
+   0801959e  movs r0,#0xc4
+   080195a0  ldr r1,[sp,#0x28]
+   080195a2  str r1,[r0,r4]
+   080195a4  movs r0,#0xc8
+   080195a6  ldr r1,[sp,#0x2c]
+   080195a8  str r1,[r0,r4]
+   080195aa  movs r0,#0xcc
+   080195ac  ldr r1,[sp,#0x30]
+   080195ae  str r1,[r0,r4]
+   080195b0  movs r0,#0xd0
+   080195b2  ldr r1,[sp,#0x34]
+   080195b4  str r1,[r0,r4]
+   080195b6  movs r0,#0xd4
+   080195b8  ldr r1,[sp,#0x38]
+   080195ba  str r1,[r0,r4]
+   080195bc  movs r0,#0xd8
+   080195be  ldr r1,[sp,#0x3c]
+   080195c0  str r1,[r0,r4]
+   080195c2  movs r0,#0xdc
+   080195c4  ldr r1,[sp,#0x40]
+   080195c6  str r1,[r0,r4]
+   080195c8  movs r0,#0xe0
+   080195ca  ldr r1,[sp,#0x44]
+   080195cc  str r1,[r0,r4]
+   080195ce  vldr.32 s0,[r4,#0xc8]
+   080195d2  vcvt.f32.s32 s0,s0
+   080195d6  vmov.f32 s1,0x3f800000
+   080195da  vdiv.f32 s2,s1,s0
+   080195de  adds r4,#0x20
+   080195e0  vstr.32 s2,[r4]
+   080195e4  movs r0,#0x32
+   080195e6  str r0,[r4,#0x58]
+   080195e8  movs r0,#0x0
+   080195ea  str r0,[r4,#0x5c]
+   080195ec  movs r0,#0x32
+   080195ee  str r0,[r4,#0x60]
+   080195f0  movs r0,#0x0
+   080195f2  str r0,[r4,#0x64]
+   080195f4  movs r0,#0x32
+   080195f6  str r0,[r4,#0x68]
+   080195f8  movs r0,#0x0
+   080195fa  str r0,[r4,#0x6c]
+   080195fc  subs r4,#0x20
+   080195fe  movs r0,#0xd4
+   08019600  ldr r0,[r0,r4]
+   08019602  cbnz r0,0x0801960e
+   08019604  movs r0,#0xe0
+   08019606  ldr r0,[r0,r4]
+   08019608  lsls r0,r0,#0x2
+   0801960a  str r0,[r4,#0x0]
+   0801960c  b 0x08019618
+   0801960e  ldrb.w r1,[r4,#0xd8]
+   08019612  movs r0,#0x1
+   08019614  lsls r0,r1
+   08019616  str r0,[r4,#0x0]
+   08019618  ldr r0,[r4,#0x0]
+   0801961a  subs r0,r0,#0x1
+   0801961c  str r0,[r4,#0x8]
+   0801961e  ldr r0,[r4,#0x0]
+   08019620  add.w r1,r0,r0, lsr #0x1f
+   08019624  asrs r1,r1,#0x1
+   08019626  str r1,[r4,#0x4]
+   08019628  movs r0,#0xb4
+   0801962a  ldr r0,[r0,r4]
+   0801962c  cbnz r0,0x08019638
+   0801962e  movs r0,#0xc0
+   08019630  ldr r0,[r0,r4]
+   08019632  lsls r0,r0,#0x2
+   08019634  str r0,[r4,#0xc]
+   08019636  b 0x08019642
+   08019638  movs r0,#0xb8
+   0801963a  ldrb r1,[r0,r4]
+   0801963c  movs r0,#0x1
+   0801963e  lsls r0,r1
+

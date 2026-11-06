@@ -1,0 +1,4 @@
+for off in 0x1800 0x1a30 0x0800 0x1a00; do
+  echo "===== 0x$off ====="
+  /tmp/ecat_mbx peek eth0 0x3f0 $off 8
+done

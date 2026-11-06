@@ -1,0 +1,78 @@
+# program=v328d8.elf  imageBase=00000000  lang=ARM:LE:32:Cortex
+### const 0xbe6d4a8b  (flash log record magic)
+    hit 08001854  [.text]
+      refFrom 0800180a  FUN_080017d0@080017d0
+
+### const 0xa1b2c3d4  (param block magic)
+    hit 080017c0  [.text]
+      refFrom 0800171a  FUN_08001708@08001708
+    hit .header::00000000  [.header]
+      refFrom _elfSectionHeaders::0000005c  (no func)
+
+### const 0x45670123  (FLASH_KEY1)
+    hit 08004508  [.text]
+      refFrom 080044f6  FUN_080044ec@080044ec
+
+### const 0xcdef89ab  (FLASH_KEY2)
+    hit 0800450c  [.text]
+      refFrom 080044fe  FUN_080044ec@080044ec
+
+### const 0x40023c00  (FLASH reg base)
+    hit 0800435c  [.text]
+      refFrom 0800433e  FUN_0800433c@0800433c
+      refFrom 08004346  FUN_0800433c@0800433c
+      refFrom 0800434c  FUN_0800433c@0800433c
+      refFrom 08004354  FUN_0800433c@0800433c
+    hit 0800a928  [.text]
+      (no references recorded)
+
+### const 0x0800c000  (log area / param save area start)
+    hit 08001858  [.text]
+      refFrom 0800181a  FUN_080017d0@080017d0
+    hit 08001894  [.text]
+      refFrom 0800186a  FUN_0800185c@0800185c
+    hit 08009c74  [.text]
+      refFrom 08009c0e  FUN_08009bf8@08009bf8
+
+### const 0x08080000  (log high-water mark)
+    hit 080017cc  [.text]
+      refFrom 080017a6  FUN_08001708@08001708
+    hit 0800184c  [.text]
+      refFrom 080017e0  FUN_080017d0@080017d0
+      refFrom 080017ec  FUN_080017d0@080017d0
+    hit 08001898  [.text]
+      refFrom 08001874  FUN_0800185c@0800185c
+      refFrom 08001884  FUN_0800185c@0800185c
+    hit 08009c88  [.text]
+      refFrom 08009c40  FUN_08009bf8@08009bf8
+    hit 08026e52  [.text]
+      (no references recorded)
+    hit 0802703e  [.text]
+      (no references recorded)
+    hit 080270aa  [.text]
+      (no references recorded)
+    hit 0802710a  [.text]
+      (no references recorded)
+    hit 0802714e  [.text]
+      (no references recorded)
+    hit 080271d6  [.text]
+      (no references recorded)
+    hit 08027242  [.text]
+      (no references recorded)
+    hit 0802737a  [.text]
+      (no references recorded)
+    hit 080273be  [.text]
+      (no references recorded)
+    hit 080273e6  [.text]
+      (no references recorded)
+    hit 0802746e  [.text]
+      (no references recorded)
+    hit 080276b6  [.text]
+      (no references recorded)
+    hit 080276fa  [.text]
+      (no references recorded)
+    hit 0802776e  [.text]
+      (no references recorded)
+    hit 080279ae  [.text]
+      (no references recorded)
+

@@ -1,0 +1,104 @@
+=== A. uptime (did the cabinet get power-cycled?) ===
+215.92 778.72
+date now: Thu Sep 24 15:03:50 CST 2026
+
+=== B. last settVersion block ===
+638582:[2026-09-24 15:01:47.961] [15] [info] [settVersion#5127] algs    :1.5.19
+638584:[2026-09-24 15:01:47.961] [15] [info] [settVersion#5128] codesys :3.5.4
+638586:[2026-09-24 15:01:47.961] [15] [info] [settVersion#5129] control :3.5.6.1-stable-c3db2f8d3-202307181618
+638588:[2026-09-24 15:01:47.961] [15] [info] [settVersion#5130] feedback:2.3.3.0
+638590:[2026-09-24 15:01:47.961] [15] [info] [settVersion#5131] safeio  :2.4.0.0
+638592:[2026-09-24 15:01:47.961] [15] [info] [settVersion#5132] servo1  :3.2.d.8
+638594:[2026-09-24 15:01:47.961] [15] [info] [settVersion#5133] servo2  :3.2.d.8
+638596:[2026-09-24 15:01:47.961] [15] [info] [settVersion#5134] servo3  :3.2.d.8
+638598:[2026-09-24 15:01:47.961] [15] [info] [settVersion#5135] servo4  :3.2.d.8
+638600:[2026-09-24 15:01:47.961] [15] [info] [settVersion#5136] servo5  :3.2.d.8
+638602:[2026-09-24 15:01:47.961] [15] [info] [settVersion#5137] servo6  :3.1.5.0
+638604:[2026-09-24 15:01:47.961] [15] [info] [settVersion#5138] system  :2.1.0
+638606:[2026-09-24 15:01:47.961] [15] [info] [settVersion#5139] terminal:3.3.2.0
+638608:[2026-09-24 15:01:47.961] [15] [info] [settVersion#5140] unio    :2.3.2.0
+
+=== C. calibrate / calihome events (last 20) ===
+500141:[2026-09-23 11:26:52.543] [15] [info] [conn_req_dir#11436] 192.168.5.2:53299 POST uri : /calibrate/home
+500151:[2026-09-23 11:26:52.550] [15] [info] [updateEncoderData#512] servo calihome not done , count:9
+500169:[2026-09-23 11:26:52.850] [15] [info] [updateEncoderData#512] servo calihome not done , count:8
+500185:[2026-09-23 11:26:53.150] [15] [info] [updateEncoderData#512] servo calihome not done , count:7
+500189:[2026-09-23 11:26:53.450] [15] [info] [updateEncoderData#509] servo calihome done ...
+517852:[2026-09-23 15:55:09.265] [15] [info] [conn_req_dir#11436] 192.168.5.2:49698 POST uri : /calibrate/home
+517862:[2026-09-23 15:55:09.269] [15] [info] [updateEncoderData#512] servo calihome not done , count:9
+517878:[2026-09-23 15:55:09.569] [15] [info] [updateEncoderData#512] servo calihome not done , count:8
+517894:[2026-09-23 15:55:09.869] [15] [info] [updateEncoderData#512] servo calihome not done , count:7
+517900:[2026-09-23 15:55:10.169] [15] [info] [updateEncoderData#509] servo calihome done ...
+613441:[2026-09-23 18:40:39.963] [15] [info] [conn_req_dir#11436] 192.168.5.2:54646 POST uri : /calibrate/home
+613451:[2026-09-23 18:40:39.968] [15] [info] [updateEncoderData#512] servo calihome not done , count:9
+613467:[2026-09-23 18:40:40.268] [15] [info] [updateEncoderData#512] servo calihome not done , count:8
+613483:[2026-09-23 18:40:40.569] [15] [info] [updateEncoderData#512] servo calihome not done , count:7
+613487:[2026-09-23 18:40:40.869] [15] [info] [updateEncoderData#509] servo calihome done ...
+638616:[2026-09-24 15:01:54.871] [15] [info] [conn_req_dir#11436] 192.168.5.2:64702 POST uri : /calibrate/home
+638626:[2026-09-24 15:01:54.879] [15] [info] [updateEncoderData#512] servo calihome not done , count:9
+638642:[2026-09-24 15:01:55.179] [15] [info] [updateEncoderData#512] servo calihome not done , count:8
+638658:[2026-09-24 15:01:55.479] [15] [info] [updateEncoderData#512] servo calihome not done , count:7
+638662:[2026-09-24 15:01:55.780] [15] [info] [updateEncoderData#509] servo calihome done ...
+
+=== D. homeEncoder.json LAST entry only ===
+        {
+            "innerEncoder": [
+                2509.0,
+                -13710.0,
+                7842.0,
+                -7517.0,
+                2385.0,
+                0.0
+            ],
+            "outEncoder": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "jointHomeState": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "date": "2026-09-24",
+            "time": "15:01:55"
+        }
+    ]
+}
+=== E. all 2026-09-24 errors ===
+[2026-09-24 15:01:34.784] [15] [error] [brakeControl#11186] <---- enter this function.
+[2026-09-24 15:02:05.741] [15] [error] [brakeControl#11186] <---- enter this function.
+[2026-09-24 15:02:09.491] [15] [error] [TryLockForRead#41] lock_num: -1, writting
+[2026-09-24 15:02:09.491] [15] [error] [AcquireBlockToRead#435] index:[9], failed >>>>>>>>>>>>>>>>>>>>>>>
+[2026-09-24 15:03:07.163] [15] [error] [TryLockForWrite#31]  end fail m_lock_num:1, rw_lock_free:1 ...
+[2026-09-24 15:03:27.004] [15] [error] [TryLockForReadNoBlock#82] while-lock_num: 0, writting
+[2026-09-24 15:03:27.004] [15] [error] [AcquireBlockToReadNoBlock#448] index:[16], failed >>>>>>>>>>>>>>>>>>>>>>>
+[2026-09-24 15:03:35.402] [15] [error] [TryLockForWrite#31]  end fail m_lock_num:1, rw_lock_free:1 ...
+[2026-09-24 15:03:50.526] [15] [error] [TryLockForRead#41] lock_num: -1, writting
+[2026-09-24 15:03:50.526] [15] [error] [AcquireBlockToRead#435] index:[9], failed >>>>>>>>>>>>>>>>>>>>>>>
+[2026-09-24 15:03:52.730] [15] [error] [TryLockForRead#41] lock_num: -1, writting
+[2026-09-24 15:03:52.730] [15] [error] [AcquireBlockToRead#435] index:[9], failed >>>>>>>>>>>>>>>>>>>>>>>
+
+=== F. servo related today ===
+[2026-09-24 15:01:47.916] [15] [info] [settVersion#5137] servo6  :3.1.5.0
+[2026-09-24 15:01:47.961] [15] [info] [settVersion#5132] servo1  :3.2.d.8
+[2026-09-24 15:01:47.961] [15] [info] [settVersion#5133] servo2  :3.2.d.8
+[2026-09-24 15:01:47.961] [15] [info] [settVersion#5134] servo3  :3.2.d.8
+[2026-09-24 15:01:47.961] [15] [info] [settVersion#5135] servo4  :3.2.d.8
+[2026-09-24 15:01:47.961] [15] [info] [settVersion#5136] servo5  :3.2.d.8
+[2026-09-24 15:01:47.961] [15] [info] [settVersion#5137] servo6  :3.1.5.0
+[2026-09-24 15:01:54.879] [15] [info] [updateEncoderData#512] servo calihome not done , count:9
+[2026-09-24 15:01:55.179] [15] [info] [updateEncoderData#512] servo calihome not done , count:8
+[2026-09-24 15:01:55.479] [15] [info] [updateEncoderData#512] servo calihome not done , count:7
+[2026-09-24 15:01:55.780] [15] [info] [updateEncoderData#509] servo calihome done ...
+[2026-09-24 15:01:58.779] [15] [info] [monitorServoUptime#534] robot disabled,this enable last 17 sec ,all enable at this poweron 21, all 367897
+[2026-09-24 15:02:11.132] [15] [info] [monitorServoUptime#527] robot enabled ,begin to record enable robot time ...
+[2026-09-24 15:02:16.628] [15] [info] [conn_terminaltrans#12134] Record Run time to file .... controller 1596128261 ,servo 367902
+[2026-09-24 15:03:16.628] [15] [info] [conn_terminaltrans#12134] Record Run time to file .... controller 1596128321 ,servo 367962
+=== DONE ===

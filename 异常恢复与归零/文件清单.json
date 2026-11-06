@@ -1,0 +1,92 @@
+[
+  {
+    "source": "glm-workplace/ZEROING_SOP.md",
+    "copy": "历史资料/ZEROING_SOP.md",
+    "bytes": 13510,
+    "sha256": "f85ca4082ea47f44b577f05e76242db1b811691401a837c10ab2109f6427b80e"
+  },
+  {
+    "source": "glm-workplace/ZERO_RECOVERY_RUNBOOK.md",
+    "copy": "历史资料/ZERO_RECOVERY_RUNBOOK.md",
+    "bytes": 11321,
+    "sha256": "82e555873a4c96fc94adb84076aa31a7b321e438b9ef8ad9c68d289036b1fbb0"
+  },
+  {
+    "source": "glm-workplace/sim_scripts/flash_32d8_baseline.md",
+    "copy": "历史资料/flash_32d8_baseline.md",
+    "bytes": 7412,
+    "sha256": "f8fac4b2590b91f8ecdddef1cca34f61447c02b36ac7ebcc3a5eaae5377abc6c"
+  },
+  {
+    "source": "workspace/ALARM_086_FINDING.md",
+    "copy": "历史资料/ALARM_086_FINDING.md",
+    "bytes": 29986,
+    "sha256": "c47d49818e61a5cbcb10f3b7a5f6ad238ed2360ba4b311b46e3a8f4697af5a76"
+  },
+  {
+    "source": "workspace/SERVO_ZERO_FIX_README.md",
+    "copy": "历史资料/SERVO_ZERO_FIX_README.md",
+    "bytes": 8830,
+    "sha256": "4f8cf4eefe90015ca746503191a530896a9d5e82292ea82e61a6bc7ac441c27a"
+  },
+  {
+    "source": "workspace/data/cabinet/3.1.5_candidate_upgrade/CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin",
+    "copy": "固件与主控/CR5_Servo_ST_FOE_V3.1.5.0_UNVERIFIED.bin",
+    "bytes": 328892,
+    "sha256": "36fd7a8e103aca025953c3eb9c8dbc63da23f356bd35a7cb2db5381589017cd1"
+  },
+  {
+    "source": "workspace/data/cabinet/Application_fixed_all6.app",
+    "copy": "固件与主控/Application_fixed_all6.app",
+    "bytes": 1076068,
+    "sha256": "155f691b705e44dcc98d1f1b4fd8815863f665f9be0fee7adb8116158de59a45"
+  },
+  {
+    "source": "workspace/data/cabinet/Application_fixed_all6.crc",
+    "copy": "固件与主控/Application_fixed_all6.crc",
+    "bytes": 28,
+    "sha256": "43af57002892f4b4d2be08ec113b50215c03a3bd8f18e7ef4b071a72e21dff1b"
+  },
+  {
+    "source": "workspace/tools/servo_zero_fix.py",
+    "copy": "脚本快照/servo_zero_fix.py.txt",
+    "bytes": 25279,
+    "sha256": "ed566142ba29f514426ca785359798b8b6ad089397b2bc2dff6fd049e5bb1c5b"
+  },
+  {
+    "source": "workspace/tools/verify_zero.py",
+    "copy": "脚本快照/verify_zero.py.txt",
+    "bytes": 3761,
+    "sha256": "2bdf79df2b55bb8717c0887f7dac114321859a97e5f0db8998e64c8d2f4bd8ea"
+  },
+  {
+    "source": "workspace/tools/rollback_to_stock.py",
+    "copy": "脚本快照/rollback_to_stock.py.txt",
+    "bytes": 1975,
+    "sha256": "3134c929bc1dcf8c8643c49cd8860a70a7b271b5a24246fa0dbb67d7468e03be"
+  },
+  {
+    "source": "workspace/tools/calihome_now.py",
+    "copy": "脚本快照/calihome_now.py.txt",
+    "bytes": 3028,
+    "sha256": "b1a22a617b0efc87387addabf142d292b08925bce973eed58f8750b0a2754e47"
+  },
+  {
+    "source": "workspace/tools/apply_patch_now.py",
+    "copy": "脚本快照/apply_patch_now.py.txt",
+    "bytes": 4328,
+    "sha256": "472be1e320f85918c3ee444ca7f2540580167e9d81801628f35f1a73d4d2b133"
+  },
+  {
+    "source": "workspace/tools/rezero_all6.py",
+    "copy": "脚本快照/rezero_all6.py.txt",
+    "bytes": 3856,
+    "sha256": "34f9aad07fa92b10eb2c1813ad5f7079863529c1b80309e928e39b697e789302"
+  },
+  {
+    "source": "workspace/tools/recover_and_rezero.py",
+    "copy": "脚本快照/recover_and_rezero.py.txt",
+    "bytes": 5732,
+    "sha256": "5f726dc1fc1929ebac4e4f212918ffec344bf16c922a4cf7ec82e38022a8c50b"
+  }
+]

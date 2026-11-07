@@ -1,0 +1,398 @@
+[
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\controller_ik_27_readonly.json",
+    "path": "工程与原始记录/controller_ik_27_readonly.json",
+    "bytes": 48006,
+    "sha256": "5acefe600b2e51a0e763e52e78ad89d19e1750778e568faf0b1eab29c8b1da7a"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\first_movel_pose_probe.lua",
+    "path": "工程与原始记录/first_movel_pose_probe.lua",
+    "bytes": 815,
+    "sha256": "eb1b8026e456832a81dbcd9b8ced8d789b417d817857e699dda5ce7f65996d75"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\trajectory17_certified_plan.json",
+    "path": "工程与原始记录/trajectory17_certified_plan.json",
+    "bytes": 43159,
+    "sha256": "8a760f2802a757fd5f964fce7d5f4dceb88d2e9803e6af9515d64c02543e6ddf"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\uploader_before_start.py",
+    "path": "工程与原始记录/uploader_before_start.py",
+    "bytes": 4201,
+    "sha256": "06639b1a07a9f0960e517b0b6fd7942e7760ab4f032595d5bd42b08aa165aa7b"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\uploader_first_movel_readback.py",
+    "path": "工程与原始记录/uploader_first_movel_readback.py",
+    "bytes": 6705,
+    "sha256": "4ef61b2974ad7073c51da83d59d2b14e768ace243675ab56bd6dcd5ae7749eba"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\uploader_station_readback.py",
+    "path": "工程与原始记录/uploader_station_readback.py",
+    "bytes": 6643,
+    "sha256": "7a6dc6225f88d4357e9684ea77cb046a72f71ff256c98160b31c3ddbef904273"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_LinkProbe_Wait20s\\global.lua",
+    "path": "工程与原始记录/CR5_LinkProbe_Wait20s/global.lua",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_LinkProbe_Wait20s\\point.json",
+    "path": "工程与原始记录/CR5_LinkProbe_Wait20s/point.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_LinkProbe_Wait20s\\point.json.lua",
+    "path": "工程与原始记录/CR5_LinkProbe_Wait20s/point.json.lua",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_LinkProbe_Wait20s\\prj.json",
+    "path": "工程与原始记录/CR5_LinkProbe_Wait20s/prj.json",
+    "bytes": 92,
+    "sha256": "14f1471434bc39ae6f11944fdff35eff23d14d9e65682650c694a0375f86ce9c"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_LinkProbe_Wait20s\\src0.lua",
+    "path": "工程与原始记录/CR5_LinkProbe_Wait20s/src0.lua",
+    "bytes": 68,
+    "sha256": "232758a4464b7a58abbb1826eeea2e67ce4bc31c6d7c6cdfe2ba65472b20a58e"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_FirstMoveL_Verified\\global.lua",
+    "path": "工程与原始记录/CR5_Traj17_FirstMoveL_Verified/global.lua",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_FirstMoveL_Verified\\point.json",
+    "path": "工程与原始记录/CR5_Traj17_FirstMoveL_Verified/point.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_FirstMoveL_Verified\\point.json.lua",
+    "path": "工程与原始记录/CR5_Traj17_FirstMoveL_Verified/point.json.lua",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_FirstMoveL_Verified\\prj.json",
+    "path": "工程与原始记录/CR5_Traj17_FirstMoveL_Verified/prj.json",
+    "bytes": 92,
+    "sha256": "14f1471434bc39ae6f11944fdff35eff23d14d9e65682650c694a0375f86ce9c"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_FirstMoveL_Verified\\src0.lua",
+    "path": "工程与原始记录/CR5_Traj17_FirstMoveL_Verified/src0.lua",
+    "bytes": 2256,
+    "sha256": "d89b6197882d33f8fff5659586368e16f86c2e04061af7baa72dbffa91e511c2"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full27\\global.lua",
+    "path": "工程与原始记录/CR5_Traj17_Full27/global.lua",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full27\\point.json",
+    "path": "工程与原始记录/CR5_Traj17_Full27/point.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full27\\point.json.lua",
+    "path": "工程与原始记录/CR5_Traj17_Full27/point.json.lua",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full27\\prj.json",
+    "path": "工程与原始记录/CR5_Traj17_Full27/prj.json",
+    "bytes": 92,
+    "sha256": "14f1471434bc39ae6f11944fdff35eff23d14d9e65682650c694a0375f86ce9c"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full27\\src0.lua",
+    "path": "工程与原始记录/CR5_Traj17_Full27/src0.lua",
+    "bytes": 7386,
+    "sha256": "27bd83969660ceeed48c451638e553b1f3411b58dbd12e27e871973f108e0848"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full27_Normal\\global.lua",
+    "path": "工程与原始记录/CR5_Traj17_Full27_Normal/global.lua",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full27_Normal\\point.json",
+    "path": "工程与原始记录/CR5_Traj17_Full27_Normal/point.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full27_Normal\\point.json.lua",
+    "path": "工程与原始记录/CR5_Traj17_Full27_Normal/point.json.lua",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full27_Normal\\prj.json",
+    "path": "工程与原始记录/CR5_Traj17_Full27_Normal/prj.json",
+    "bytes": 92,
+    "sha256": "14f1471434bc39ae6f11944fdff35eff23d14d9e65682650c694a0375f86ce9c"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full27_Normal\\src0.lua",
+    "path": "工程与原始记录/CR5_Traj17_Full27_Normal/src0.lua",
+    "bytes": 7387,
+    "sha256": "837314b7810eeb2a499778b03ad5ad48f00e07aca668e6e8ad7e60e60479ee9d"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full27_RoboDKPace\\global.lua",
+    "path": "工程与原始记录/CR5_Traj17_Full27_RoboDKPace/global.lua",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full27_RoboDKPace\\point.json",
+    "path": "工程与原始记录/CR5_Traj17_Full27_RoboDKPace/point.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full27_RoboDKPace\\point.json.lua",
+    "path": "工程与原始记录/CR5_Traj17_Full27_RoboDKPace/point.json.lua",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full27_RoboDKPace\\prj.json",
+    "path": "工程与原始记录/CR5_Traj17_Full27_RoboDKPace/prj.json",
+    "bytes": 92,
+    "sha256": "14f1471434bc39ae6f11944fdff35eff23d14d9e65682650c694a0375f86ce9c"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full27_RoboDKPace\\src0.lua",
+    "path": "工程与原始记录/CR5_Traj17_Full27_RoboDKPace/src0.lua",
+    "bytes": 7388,
+    "sha256": "377a4d50c6be66a7f172615620e3c2dfbea6974c79de756984039c388a01cd41"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full28_RoboDKPace\\global.lua",
+    "path": "工程与原始记录/CR5_Traj17_Full28_RoboDKPace/global.lua",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full28_RoboDKPace\\point.json",
+    "path": "工程与原始记录/CR5_Traj17_Full28_RoboDKPace/point.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full28_RoboDKPace\\point.json.lua",
+    "path": "工程与原始记录/CR5_Traj17_Full28_RoboDKPace/point.json.lua",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full28_RoboDKPace\\prj.json",
+    "path": "工程与原始记录/CR5_Traj17_Full28_RoboDKPace/prj.json",
+    "bytes": 92,
+    "sha256": "14f1471434bc39ae6f11944fdff35eff23d14d9e65682650c694a0375f86ce9c"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_Full28_RoboDKPace\\src0.lua",
+    "path": "工程与原始记录/CR5_Traj17_Full28_RoboDKPace/src0.lua",
+    "bytes": 7661,
+    "sha256": "5889e022a43365d78f85ab650097dabf7ff66018b7a2c0044cdb4f4f95aacb05"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_P2_LinearCheck\\global.lua",
+    "path": "工程与原始记录/CR5_Traj17_P2_LinearCheck/global.lua",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_P2_LinearCheck\\point.json",
+    "path": "工程与原始记录/CR5_Traj17_P2_LinearCheck/point.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_P2_LinearCheck\\point.json.lua",
+    "path": "工程与原始记录/CR5_Traj17_P2_LinearCheck/point.json.lua",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_P2_LinearCheck\\prj.json",
+    "path": "工程与原始记录/CR5_Traj17_P2_LinearCheck/prj.json",
+    "bytes": 92,
+    "sha256": "14f1471434bc39ae6f11944fdff35eff23d14d9e65682650c694a0375f86ce9c"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_P2_LinearCheck\\src0.lua",
+    "path": "工程与原始记录/CR5_Traj17_P2_LinearCheck/src0.lua",
+    "bytes": 1942,
+    "sha256": "cbed700ba2af9c2a124efc2831107cab44ba280fca77d60e444d480fd93967fe"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_ZeroToFirstMoveL\\global.lua",
+    "path": "工程与原始记录/CR5_Traj17_ZeroToFirstMoveL/global.lua",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_ZeroToFirstMoveL\\point.json",
+    "path": "工程与原始记录/CR5_Traj17_ZeroToFirstMoveL/point.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_ZeroToFirstMoveL\\point.json.lua",
+    "path": "工程与原始记录/CR5_Traj17_ZeroToFirstMoveL/point.json.lua",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_ZeroToFirstMoveL\\prj.json",
+    "path": "工程与原始记录/CR5_Traj17_ZeroToFirstMoveL/prj.json",
+    "bytes": 92,
+    "sha256": "14f1471434bc39ae6f11944fdff35eff23d14d9e65682650c694a0375f86ce9c"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_ZeroToFirstMoveL\\src0.lua",
+    "path": "工程与原始记录/CR5_Traj17_ZeroToFirstMoveL/src0.lua",
+    "bytes": 1983,
+    "sha256": "481da55f95ee781931c7cefdb89dfee91854a544684f3d3b2856227ead004d9e"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_ZeroToP1\\global.lua",
+    "path": "工程与原始记录/CR5_Traj17_ZeroToP1/global.lua",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_ZeroToP1\\point.json",
+    "path": "工程与原始记录/CR5_Traj17_ZeroToP1/point.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_ZeroToP1\\point.json.lua",
+    "path": "工程与原始记录/CR5_Traj17_ZeroToP1/point.json.lua",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_ZeroToP1\\prj.json",
+    "path": "工程与原始记录/CR5_Traj17_ZeroToP1/prj.json",
+    "bytes": 92,
+    "sha256": "14f1471434bc39ae6f11944fdff35eff23d14d9e65682650c694a0375f86ce9c"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\cr5_controller_deployment_check\\CR5_Traj17_ZeroToP1\\src0.lua",
+    "path": "工程与原始记录/CR5_Traj17_ZeroToP1/src0.lua",
+    "bytes": 640,
+    "sha256": "c66c50b254430aadf534d1c7742c74fdf04aac4593f4b490c3d254d51c0740ae"
+  },
+  {
+    "source": "glm-workplace\\tools\\CR5_FirstMoveL_Verified.py",
+    "path": "启动脚本/CR5_FirstMoveL_Verified.py",
+    "bytes": 6748,
+    "sha256": "9b217e6c226680932e464888f9c5971a6487e2968a42cabf63511bd4f90118a0"
+  },
+  {
+    "source": "glm-workplace\\tools\\CR5_P2_LinearCheck.py",
+    "path": "启动脚本/CR5_P2_LinearCheck.py",
+    "bytes": 6716,
+    "sha256": "62810410efbc5a0442275249456b0b117e43e50a43ea0a98d9fc6af792958fee"
+  },
+  {
+    "source": "glm-workplace\\tools\\CR5_Traj17_Full27.py",
+    "path": "启动脚本/CR5_Traj17_Full27.py",
+    "bytes": 6706,
+    "sha256": "241a67e88558e278b9e3acdbf68027e24c66b8032a5c7fb44271270de3d07505"
+  },
+  {
+    "source": "glm-workplace\\tools\\CR5_Traj17_Full27_Normal.py",
+    "path": "启动脚本/CR5_Traj17_Full27_Normal.py",
+    "bytes": 8619,
+    "sha256": "9f2902279461b8c8e7c21c7d75059be3f1ee127e5ef86119273e945977138ae7"
+  },
+  {
+    "source": "glm-workplace\\tools\\CR5_Traj17_Full27_RoboDKPace.py",
+    "path": "启动脚本/CR5_Traj17_Full27_RoboDKPace.py",
+    "bytes": 8623,
+    "sha256": "423b3a5c10cf86249df1d2e6b5802bb2e5e111cc2ee7a31f0a31533dc57d8ecb"
+  },
+  {
+    "source": "glm-workplace\\tools\\CR5_Traj17_Full28_RoboDKPace.py",
+    "path": "启动脚本/CR5_Traj17_Full28_RoboDKPace.py",
+    "bytes": 13944,
+    "sha256": "a3b5193113ef5435e9bd3a9ad184ba9d843e1c4f8188d4454a8ac8f39187622a"
+  },
+  {
+    "source": "glm-workplace\\tools\\CR5_零位到P1_上传.py",
+    "path": "启动脚本/CR5_零位到P1_上传.py",
+    "bytes": 6643,
+    "sha256": "7a6dc6225f88d4357e9684ea77cb046a72f71ff256c98160b31c3ddbef904273"
+  },
+  {
+    "source": "glm-workplace\\tools\\CR5_首段MoveL_上传.py",
+    "path": "启动脚本/CR5_首段MoveL_上传.py",
+    "bytes": 6705,
+    "sha256": "4ef61b2974ad7073c51da83d59d2b14e768ace243675ab56bd6dcd5ae7749eba"
+  },
+  {
+    "source": "glm-workplace\\tools\\build_current_replay27.py",
+    "path": "辅助工具/build_current_replay27.py",
+    "bytes": 3234,
+    "sha256": "1f02b4ddf8703ff40413800e300f5dbf85b2c8620eb3ab8ca9eec4ef042e0b80"
+  },
+  {
+    "source": "glm-workplace\\tools\\compare_controller_ik_readonly.py",
+    "path": "辅助工具/compare_controller_ik_readonly.py",
+    "bytes": 1784,
+    "sha256": "5562475af516b57dc4fc9991f473a2918affb4e297a6b65fc79b8ccff99b5eda"
+  },
+  {
+    "source": "glm-workplace\\tools\\precheck_v1522_traj17.py",
+    "path": "辅助工具/precheck_v1522_traj17.py",
+    "bytes": 5724,
+    "sha256": "7cd8c1214945c9cf1410f414b640035a93e0acaafd576baa7f4e4a8bff4ab4d1"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\traj17_v1522_20261104_173421\\current.json",
+    "path": "28点预检记录/current.json",
+    "bytes": 6279,
+    "sha256": "0cdcd66a93f493ca21bf1cc30b24de7b9783a3138d65600a95814e070b6556b1"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\traj17_v1522_20261104_173421\\result.json",
+    "path": "28点预检记录/result.json",
+    "bytes": 58273,
+    "sha256": "57fde438cd7ad1e71114155fdc6b7ce7929bf8ed01535eb24ed77c42efdcb4c2"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\traj17_v1522_20261104_173421\\scene_snapshot.json",
+    "path": "28点预检记录/scene_snapshot.json",
+    "bytes": 10622,
+    "sha256": "57291f5401dcc5a4690b5f90fb8ad191bd0e603be9ce4c9f9246642dbc104a00"
+  },
+  {
+    "source": "glm-workplace\\sim_scripts\\rdk_station_dump\\traj17_v1522_20261104_173421\\station_p2p.py",
+    "path": "28点预检记录/station_p2p.py",
+    "bytes": 165353,
+    "sha256": "39495c84267fe0d33de58a797bb2bca569610e32742b5c91d37fc9b783db45f6"
+  }
+]
